@@ -97,6 +97,7 @@
     const id = MatchAnalysis.fixtureId(fixture), pick = state.picks.get(id), canPick = PredictionStore.canPick(fixture, Date.now());
     const row = el("article", "pick-row" + (state.highlighted === id ? " is-highlighted" : "")); row.dataset.matchId = id;
     const time = el("div", "pick-time"); time.append(el("strong", "", fixture.time || "미정"), el("span", "", shortLeagues[fixture.league] || MatchAnalysis.leagueLabel(fixture.league)));
+    if(window.NinetyMinCountdown){const remaining=el("span","pick-countdown");window.NinetyMinCountdown.set(remaining,fixture,fixture.status==="finished"?"finished":PredictionStore.canPick(fixture,Date.now())?"scheduled":"unverified");time.append(remaining);}
     const match = el("div", "pick-match"), teams = el("div", "pick-teams");
     ["home", "away"].forEach((side, index) => {
       if (index) teams.append(el("span", "pick-versus", "vs"));
@@ -150,7 +151,9 @@
     sorted.forEach(pick => {
       const fixture = fixtureFor(pick), locked = lockedPick(pick), available = fixture && PredictionStore.canPick(fixture, Date.now());
       const card = el("div", "selected-pick"), top = el("div", "selected-pick-top");
-      top.append(el("span", "selected-pick-time", fixture ? shortDate(fixture.date) + " · " + (fixture.time || "시간 미정") + " · " + (shortLeagues[fixture.league] || fixture.league) : "경기 정보 확인 중"));
+      const timeLabel=el("span","selected-pick-time",fixture?shortDate(fixture.date)+" · "+(fixture.time||"시간 미정")+" · "+(shortLeagues[fixture.league]||fixture.league):"경기 정보 확인 중");
+      top.append(timeLabel);
+      if(fixture&&window.NinetyMinCountdown){const remaining=el("span","selected-pick-countdown");window.NinetyMinCountdown.set(remaining,fixture,fixture.status==="finished"?"finished":available?"scheduled":"unverified");top.append(remaining);}
       if (!locked) { const remove = el("button", "remove-pick", "제외"); remove.type = "button"; remove.dataset.remove = pick.fixtureId; remove.setAttribute("aria-label", (fixture ? teamName(fixture, "home") + " 대 " + teamName(fixture, "away") : "선택한 경기") + " 제외"); top.append(remove); }
       else top.append(el("span", "locked-label", "선택 마감"));
       const pickClubs=el("div","selected-pick-clubs");
