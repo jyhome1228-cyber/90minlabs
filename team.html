@@ -361,7 +361,7 @@ function renderUEFAOverview(profile,table){
  }
  container.hidden=!shown;
 }
-async function getJSON(url){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8500);try{const resp=await fetch(url,{signal:controller.signal,cache:"no-store"});if(!resp.ok)throw Error("HTTP "+resp.status);return await resp.json();}finally{clearTimeout(timeout)}}
+async function getJSON(url){if(/^data\/[a-z0-9._/-]+\.json$/i.test(url)&&window.NinetyMinData)return window.NinetyMinData.get(url);const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8500);try{const resp=await fetch(url,{signal:controller.signal,cache:"no-store"});if(!resp.ok)throw Error("HTTP "+resp.status);return await resp.json();}finally{clearTimeout(timeout)}}
 async function getWikiIntro(title){
  if(!title)return null;
  const url="https://ko.wikipedia.org/w/api.php?"+new URLSearchParams({action:"query",prop:"extracts",exintro:"1",explaintext:"1",format:"json",origin:"*",titles:title});
