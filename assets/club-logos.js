@@ -26,14 +26,35 @@ function badge(container,opts){
    const article=opts.wikiTitle||opts.searchName||opts.name;
    if(!article)return null;
    const key="w:"+article;
-   if(!cache.has(key))cache.set(key,fetch("https://en.wikipedia.org/w/api.php?"+new URLSearchParams({
-      action:"query",format:"json",origin:"*",redirects:"1",prop:"pageimages",
-      pithumbsize:"180",titles:article
-    }).toString()).then(r=>r.ok?r.json():null).then(data=>{
-      const page=Object.values(data?.query?.pages||{})[0];
-      const url=safe(page?.thumbnail?.source);
-      return url&&/upload\.wikimedia\.org\//i.test(url)?url:null;
-    }).catch(()=>null));
+   if(!cache.has(key))cache.set(key,(async()=>{
+     const base="https://en.wikipedia.org/w/api.php?";
+     const query=async params=>{
+       const response=await fetch(base+new URLSearchParams(Object.assign({action:"query",format:"json",origin:"*"},params)));
+       if(!response.ok)throw new Error("Wikipedia image lookup failed");
+       return response.json();
+     };
+     const info=await query({redirects:"1",prop:"pageimages|images",pithumbsize:"180",imlimit:"max",titles:article});
+     const page=Object.values(info?.query?.pages||{}).find(x=>!x.missing);
+     if(!page)return null;
+     const looksLikeLogo=name=>/logo|crest|badge|emblem|escudo|wappen|herb/i.test(String(name||""));
+     const imageName=page.pageimage||"";
+     if(looksLikeLogo(imageName)&&safe(page.thumbnail?.source))return page.thumbnail.source;
+     const options=(page.images||[]).map(x=>x.title).filter(looksLikeLogo);
+     if(!options.length)return null;
+     const tokens=[opts.name,opts.searchName,article].join(" ").normalize("NFKD").toLowerCase()
+       .split(/[^a-z0-9]+/).filter(t=>t.length>3&&!["club","football","united","sporting","athletic","logo"].includes(t));
+     options.sort((x,y)=>{
+       const score=str=>(/logo/i.test(str)?4:0)+(/crest|badge|wappen/i.test(str)?3:0)+
+         (tokens.some(t=>norm(str).includes(t))?4:0)-(/old|former|historic|2009|2010|away|shirt/i.test(str)?3:0);
+       return score(y)-score(x);
+     });
+     const top=options[0];
+     if(!tokens.some(t=>norm(top).includes(t)))return null;
+     const image=await query({titles:top,prop:"imageinfo",iiprop:"url",iiurlwidth:"180"});
+     const item=Object.values(image?.query?.pages||{}).find(x=>x.imageinfo?.[0]);
+     const url=safe(item?.imageinfo?.[0]?.thumburl||item?.imageinfo?.[0]?.url);
+     return url&&/upload\.wikimedia\.org\//i.test(url)?url:null;
+   })().catch(()=>null));
    return cache.get(key);
  }
  function next(){
