@@ -56,7 +56,7 @@ function translate(){
  while((node=walker.nextNode())){
   const prior=tracked.get(node),now=node.nodeValue;
   const original=prior&&now===prior.shown?prior.original:now;
-  const next=lang==="ko"?convert(original,"ko"):convert(convert(original,"ko"),"en");
+  const next=convert(original,lang);
   if(next!==now)node.nodeValue=next;
   tracked.set(node,{original,shown:next});
  }
