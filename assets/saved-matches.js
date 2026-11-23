@@ -61,7 +61,7 @@ function updateButton(){
  if(!current){button.disabled=true;button.textContent=tr("경기 확인 중","Loading match");return;}
  try{
   const saved=has(ident(current));button.disabled=false;button.setAttribute("aria-pressed",String(saved));
-  button.textContent=saved?tr("담기 완료","Saved to My Page"):tr("마이페이지에 경기 담기","Save match to My Page");
+  button.textContent=saved?tr("저장됨","Saved"):tr("경기 저장","Save match");
   if(link)link.hidden=!saved;
  }catch(e){button.disabled=true;button.textContent=tr("저장 불가","Storage unavailable");detailStatus(e.message);}
 }
@@ -72,8 +72,8 @@ function onSave(){
  if(!current)return;
  try{
   const id=ident(current);
-  if(has(id)){remove(id);detailStatus(tr("담은 경기에서 제외했습니다.","Match removed from saved list."));}
-  else{add(current);detailStatus(tr("마이페이지에 담았습니다. 승·무·패 선택은 별도로 기록할 수 있습니다.","Saved to My Page. Predictions can be made separately."));}
+  if(has(id)){remove(id);detailStatus(tr("경기 저장을 취소했습니다.","Match removed from saved list."));}
+  else{add(current);detailStatus(tr("경기를 마이페이지에 저장했습니다.","Saved to My Page."));}
   updateButton();
  }catch(e){detailStatus(e.message);}
 }
@@ -88,7 +88,7 @@ function render(){
  holder.replaceChildren();let items;
  try{items=list();error="";}catch(e){error=e.message;holder.append(node("p","saved-match-error",error));if(expand)expand.hidden=true;return;}
  if(count)count.textContent=items.length+tr("경기"," matches");
- if(!items.length){holder.append(node("p","saved-match-empty",tr("아직 담은 경기가 없습니다. 경기 상세에서 '마이페이지에 경기 담기'를 선택해 보세요.","No saved matches yet. Open a match and choose Save to My Page.")));if(expand)expand.hidden=true;return;}
+ if(!items.length){holder.append(node("p","saved-match-empty",tr("아직 담은 경기가 없습니다. 경기 상세에서 '경기 저장'를 선택해 보세요.","No saved matches yet. Open a match and choose Save to My Page.")));if(expand)expand.hidden=true;return;}
  const map=new Map((calendar?.matches||[]).map(f=>[root.MatchAnalysis.fixtureId(f),f]));
  const entries=items.map(item=>{
   const found=map.get(item.id),f=found||item;
