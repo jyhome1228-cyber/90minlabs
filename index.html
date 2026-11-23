@@ -74,7 +74,7 @@ section.block{padding:89px 0}
 .weekly-picks-link:hover{color:#666}
 @media(max-width:650px){.weekly-picks-link{display:block;width:fit-content;margin:9px 0 0;font-size:13.333px}}
 </style>
-<link rel="stylesheet" href="./assets/home.css?v=20261123-clean-grid2">
+<link rel="stylesheet" href="./assets/home.css?v=20261123-dual-copy">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-type1pt">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
 <script src="assets/site-shell.js?v=20261123-today" defer></script>
@@ -220,6 +220,6 @@ document.querySelector("#previewBtn").addEventListener("click",()=>{const t=docu
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
 <script src="./assets/match-analysis.js?v=20261123-analysis" defer></script>
-<script src="./assets/home.js?v=20261123-clean-grid" defer></script>
+<script src="./assets/home.js?v=20261123-dual-copy" defer></script>
 <script src="./assets/matches.js?v=20261123-fast1" defer></script>
 </body></html>
