@@ -14,7 +14,8 @@
   <script src="assets/site-shell.js?v=20261123-mypage" defer></script>
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
   <script src="assets/prediction-store.js?v=20261123-weekly" defer></script>
-  <script src="assets/mypage.js?v=20261123-weekly" defer></script>
+  <script src="assets/mypage.js?v=20261123-account" defer></script>
+  <script type="module" src="assets/account.js?v=20261123-account"></script>
 </head>
 <body>
   <a class="skip-link" href="#myPageMain">내 예측으로 이동</a>
@@ -38,7 +39,8 @@
       <div><h1 id="pageTitle">마이페이지</h1><p>한 주의 경기를 고르고, 나의 예측을 기록하세요.</p></div>
       <a class="text-link" href="#savedPredictions">저장한 기록 보기 <span id="savedCount">0</span></a>
     </section>
-    <div class="storage-note"><span>이 브라우저에 저장됩니다. 다른 기기와는 동기화되지 않습니다.</span><button class="text-button" id="exportRecords" type="button" disabled>기록 내보내기</button></div>
+    <section class="account-panel" aria-labelledby="accountTitle"><div class="account-heading"><div><h2 id="accountTitle">내 계정</h2><p id="accountStatus" role="status">계정 연결 상태를 확인하고 있습니다.</p></div><button id="accountSignout" type="button" class="outline-button" hidden>로그아웃</button></div><div id="accountAuth" hidden><div class="account-fields"><label>이메일<input id="accountEmail" type="email" autocomplete="email" maxlength="254" placeholder="email@example.com"></label><label>비밀번호<input id="accountPassword" type="password" autocomplete="current-password" minlength="8" maxlength="128" placeholder="8자 이상"></label><label id="accountNicknameWrap" hidden>닉네임<input id="accountNickname" type="text" maxlength="24" autocomplete="nickname" placeholder="사용할 닉네임"></label></div><div class="account-actions"><button id="accountLogin" class="solid-button" type="button">로그인</button><button id="accountRegister" class="outline-button" type="button">회원가입</button><button id="accountReset" class="text-button" type="button">비밀번호 재설정</button></div></div><div id="accountConnected" hidden><strong id="accountDisplay"></strong><p id="accountSyncStatus">계정별 예측 기록을 확인하고 있습니다.</p><div class="account-actions"><button id="accountImport" type="button" class="outline-button">이 브라우저의 기록 가져오기</button><button id="accountSync" type="button" class="outline-button">계정 기록 새로고침</button></div></div><p id="accountMessage" class="account-message" role="alert"></p></section>
+    <div class="storage-note"><span id="storageScope">로그인 전에는 이 브라우저에만 기록됩니다. 계정 동기화는 로그인 후 이용할 수 있습니다.</span><button class="text-button" id="exportRecords" type="button" disabled>기록 내보내기</button></div>
     <div id="pageNotice" class="page-notice" role="status" aria-live="polite" hidden></div>
     <div id="storageError" class="error-notice" role="alert" hidden><p id="storageErrorMessage"></p><button class="text-button" id="retryStorage" type="button">저장 공간 다시 확인</button></div>
     <section class="record-stats" aria-label="나의 예측 기록 요약">
