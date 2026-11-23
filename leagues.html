@@ -79,6 +79,9 @@ main#leagues{scroll-margin-top:82px}
 .switch[hidden]{display:none}
 .club-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:720px){.tabs{gap:22px}.club-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Club crest fallback */
+.club-initial{width:24px;height:24px;border-radius:50%;background:#F0F0F0;color:#555;font-size:10px;font-weight:700;display:inline-flex;flex:0 0 24px;justify-content:center;align-items:center}
 </style>
 </head>
 <body>
@@ -139,16 +142,36 @@ document.addEventListener('error',event=>{
 },true);
 function clubLink(name,lg=state.league){return 'team.html?team='+encodeURIComponent(name||'')+'&league='+encodeURIComponent(lg);}
 function scorerCell(r){const label=esc(r.player)+(r.team?' <span style="color:#919191;font-weight:400">· '+esc(r.team)+'</span>':'');return r.team?'<a class="teamlink" href="'+esc(clubLink(r.team))+'">'+crest(r.team)+label+'</a>':label;}
+const badgeCache=new Map();
+function retrieveBadge(query){
+ if(!badgeCache.has(query)){
+  const url="https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t="+encodeURIComponent(query);
+  badgeCache.set(query,fetch(url).then(r=>r.ok?r.json():null).then(d=>{
+   const norm=s=>String(s||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]/g,"");
+   const options=(d?.teams||[]).filter(t=>t.strSport==="Soccer"&&t.strBadge?.startsWith("https://"));
+   const result=options.find(t=>norm(t.strTeam)===norm(query)||norm(t.strTeamAlternate)===norm(query))
+    ||options.find(t=>norm(t.strTeam).includes(norm(query))||norm(query).includes(norm(t.strTeam)));
+   return result?.strBadge||null;
+  }).catch(()=>null));
+ }
+ return badgeCache.get(query);
+}
 function renderClubGrid(){
  const root=document.querySelector("#clubList");if(!root)return;root.replaceChildren();
  if(!state.registry)return;
  const all=state.league==="ucl"
-  ?(state.registry.uclParticipants?.teams||[]).map(c=>({name:c.team,league:c.league,wikiKo:c.displayName,crestId:c.crestId,cityKo:c.cityKo}))
+  ?(state.registry.uclParticipants?.teams||[]).map(c=>({name:c.team,league:c.league,wikiKo:c.displayName,crestId:c.crestId,searchName:state.registry.clubs[c.league+":"+c.team]?.searchName,cityKo:c.cityKo}))
   :Object.values(state.registry.clubs||{}).filter(x=>x.league===state.league);
  const rows=all.slice().sort((a,b)=>a.name.localeCompare(b.name));
  for(const c of rows){
   const a=document.createElement("a");a.className="club-link";a.href=clubLink(c.name,c.league);a.title=c.name;
   if(c.crestId){const img=document.createElement("img");img.alt="";img.loading="lazy";img.src="https://crests.football-data.org/"+c.crestId+".png";img.onerror=()=>img.remove();a.append(img)}
+  else{
+   const fallback=document.createElement("span");fallback.className="club-initial";fallback.textContent=c.name.slice(0,2).toUpperCase();a.append(fallback);
+   if(c.searchName&&(state.league==="ucl"||state.league==="laliga")){
+    retrieveBadge(c.searchName).then(url=>{if(!url||!fallback.isConnected)return;const img=document.createElement("img");img.alt="";img.loading="lazy";img.src=url;img.onerror=()=>img.replaceWith(fallback);fallback.replaceWith(img)});
+   }
+  }
   const span=document.createElement("span");span.textContent=c.wikiKo||c.name;a.append(span);root.append(a);
  }
  const head=document.querySelector(".club-section h3");if(head)head.textContent=state.league==="ucl"?"2026/27 참가팀 "+rows.length+"개":"구단별 상세 정보";
