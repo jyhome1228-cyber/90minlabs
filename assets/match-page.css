@@ -84,3 +84,40 @@
  .comparison-table td.is-stronger .compare-number,
  .comparison-table td.is-weaker .compare-number{font-size:inherit}
 }
+
+
+/* Match conclusion and three-way reference percentages. No success-rate claims. */
+.report-forecast{margin-bottom:6px}
+.report-forecast>span{color:#646464}
+.report-forecast strong{font-size:18px;letter-spacing:-.02em}
+.report-conclusion-reason{font-size:13px;color:#626262;line-height:1.75;margin:0 0 24px}
+.outcome-probabilities{width:min(100%,910px);border-top:1px solid #dcdcdc;border-bottom:1px solid #e9e9e9;padding:21px 0 19px;margin:0 0 26px}
+.outcome-prob-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}
+.outcome-prob-heading strong{font-size:14px;font-weight:650}
+.outcome-prob-heading>span{font-size:12px;color:#7b7b7b}
+.outcome-prob-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.outcome-prob-item{min-width:0}
+.outcome-prob-top{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:9px}
+.outcome-prob-labels{display:flex;flex-direction:column;min-width:0}
+.outcome-prob-labels span{font-size:13px;font-weight:650;white-space:nowrap}
+.outcome-prob-labels small{font-size:11px;font-weight:450;color:#777;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.outcome-prob-top strong{font-size:24px;font-weight:650;line-height:1.22;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.outcome-prob-track{height:6px;background:#e9edf0;overflow:hidden}
+.outcome-prob-fill{height:100%;min-width:0;background:#16784f}
+.outcome-draw .outcome-prob-fill{background:#8b949e}
+.outcome-away .outcome-prob-fill{background:#2f66ab}
+.outcome-home .outcome-prob-top strong{color:#16784f}
+.outcome-draw .outcome-prob-top strong{color:#68717d}
+.outcome-away .outcome-prob-top strong{color:#2f66ab}
+.outcome-prob-note{font-size:11px;line-height:1.7;color:#7c7c7c;margin:14px 0 0}
+.outcome-unavailable{grid-column:1/-1;padding:8px 0;margin:0;color:#767676;font-size:13px;line-height:1.75}
+@media(max-width:650px){
+ .report-conclusion-reason{margin-bottom:20px;font-size:12px}
+ .outcome-probabilities{padding:18px 0;margin-bottom:20px}
+ .outcome-prob-grid{gap:12px}
+ .outcome-prob-top{display:block;margin-bottom:9px}
+ .outcome-prob-top strong{display:block;margin-top:6px;font-size:23px}
+ .outcome-prob-labels span{font-size:12px}
+ .outcome-prob-labels small{font-size:10px}
+ .outcome-prob-note{font-size:11px}
+}
