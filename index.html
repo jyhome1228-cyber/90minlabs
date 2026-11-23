@@ -74,6 +74,7 @@ section.block{padding:89px 0}
 .weekly-picks-link:hover{color:#666}
 @media(max-width:650px){.weekly-picks-link{display:block;width:fit-content;margin:9px 0 0;font-size:13.333px}}
 </style>
+<link rel="stylesheet" href="./assets/home.css?v=20261123-today1">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-type1pt">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
 <script src="assets/site-shell.js?v=20261123-mypage" defer></script>
@@ -97,6 +98,34 @@ section.block{padding:89px 0}
 </header>
 <noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
 <main class="wrap">
+<section id="home" class="view home-view" aria-label="90MIN LABS 메인">
+  <div class="home-hero">
+    <div class="home-copy">
+      <div>
+        <span class="home-overline">FOOTBALL. EVERY DAY.</span>
+        <h1 class="home-brandline">오늘의 경기,<br><span>한눈에 확인하세요.</span></h1>
+        <p class="home-lead">매일 달라지는 경기 일정과 최종 결과를 확인하고, 원하는 경기의 분석과 나만의 승무패 예측을 이어가세요.</p>
+      </div>
+      <div class="home-actions"><a class="home-action" id="homeFixtureLink" href="index.html#matches">오늘 경기 일정</a><a class="home-action secondary" href="mypage.html">주간 예측 만들기</a></div>
+    </div>
+    <div class="home-visual">
+      <img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084548-image-336-e1d96f23.webp" alt="축구 유니폼, 하늘색과 흰색 스트라이프 상의 및 반바지" decoding="async" fetchpriority="high">
+      <small>90MIN LABS / FOOTBALL STUDIES</small>
+    </div>
+  </div>
+  <section class="home-daily" id="today" aria-labelledby="homeFixturesTitle">
+    <div class="home-daily-top">
+      <div><span class="home-overline">MATCH CENTRE · KST</span><h2 class="home-daily-title" id="homeFixturesTitle">오늘의 경기</h2><p class="home-daily-date"><span id="homeTodayDate">오늘 날짜 확인 중</span> <span class="home-daily-sub" id="homeCurrentTime"></span></p></div>
+      <div class="home-daily-meta"><span class="home-daily-sub" id="homeMatchCount">경기 확인 중</span><a id="homeAllMatches" href="index.html#matches">전체 일정 보기</a></div>
+    </div>
+    <div class="home-daily-head"><span id="homeFixturesNote">모든 경기 시간은 한국시간 기준입니다.</span><span id="homeFixturesLabel"></span></div>
+    <div id="homeFixtures" aria-live="polite"><div class="daily-empty">경기 일정 불러오는 중…</div></div>
+  </section>
+  <section class="home-feature" aria-label="경기 전망 소개">
+    <div class="home-feature-photo"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084547-image-334-9f0ce814.webp" alt="조명이 비치는 경기장에서 서 있는 줄무늬 유니폼의 축구 선수" loading="lazy" decoding="async"></div>
+    <div class="home-feature-content"><span class="home-overline">BEYOND THE SCORE</span><h2>경기 결과를 넘어,<br>흐름까지 읽습니다.</h2><p>최근 경기력과 홈·원정 기록을 바탕으로 다음 경기를 살펴보세요. 분석 리포트를 확인하고 주간 예측 폴더에 관심 경기를 저장할 수 있습니다.</p><a href="index.html#predictions">경기 전망 살펴보기</a></div>
+  </section>
+</section>
 <div id="predictions" class="view hidden page">
   <div class="eyebrow">MATCH PREVIEW</div>
   <h1>경기 전망</h1>
@@ -161,13 +190,13 @@ section.block{padding:89px 0}
 </main>
 <footer><div class="wrap foot"><span><strong>90MIN LABS.</strong> © 2026 · Independent Football Research</span><span>경기 전망은 확률적 분석이며 결과를 보장하지 않습니다. 베팅 기능 및 도박 사이트 연결은 제공하지 않습니다.</span></div></footer>
 <script>
-const pages=["predictions","matches","columns","write"];
+const pages=["home","predictions","matches","columns","write"];
 function route(){
- const id=location.hash.slice(1),page=pages.includes(id)?id:"matches";
- if(id==="home")history.replaceState(null,"",location.pathname+location.search+"#matches");
+ const id=location.hash.slice(1),page=pages.includes(id)?id:"home";
+ 
  document.querySelectorAll(".view").forEach(el=>el.classList.toggle("hidden",el.id!==page));
  if(window.SiteShell)window.SiteShell.refresh();
- window.scrollTo(0,0);document.title=({predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
+ window.scrollTo(0,0);document.title=({home:"오늘의 경기",predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
 }
 window.addEventListener("hashchange",route);route();
 const fields=["category","author","draftTitle","draftBody"];function formText(){return "90MIN LABS 칼럼 초안\n카테고리: "+document.querySelector("#category").value+"\n필명: "+document.querySelector("#author").value+"\n제목: "+document.querySelector("#draftTitle").value+"\n\n"+document.querySelector("#draftBody").value}
@@ -175,5 +204,6 @@ document.querySelector("#previewBtn").addEventListener("click",()=>{const t=docu
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
 <script src="./assets/match-analysis.js?v=20261123-analysis" defer></script>
+<script src="./assets/home.js?v=20261123-today1" defer></script>
 <script src="./assets/matches.js?v=20261123-fast1" defer></script>
 </body></html>
