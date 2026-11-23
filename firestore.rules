@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/private/predictions {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['payload','cloudRevision','updatedAt'])
+        && request.resource.data.payload is map
+        && request.resource.data.payload.version == 1
+        && request.resource.data.payload.sets is list
+        && request.resource.data.payload.sets.size() <= 250
+        && request.resource.data.cloudRevision is int
+        && request.resource.data.cloudRevision >= 1
+        && request.resource.data.updatedAt is string
+        && request.resource.data.updatedAt.size() <= 40
+        && request.resource.size() < 900000
+        && (!exists(/databases/$(database)/documents/users/$(uid)/private/predictions)
+            || request.resource.data.cloudRevision == resource.data.cloudRevision + 1);
+      allow delete: if false;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}
