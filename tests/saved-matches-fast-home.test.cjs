@@ -62,7 +62,7 @@ test('corrupt saved lists are never silently replaced',()=>{
 test('saved-matches archive and list buttons exist in both views',()=>{
  assert.match(read('mypage.html'),/id="savedMatchesList"/);
  assert.match(read('mypage.html'),/id="savedMatchesMore"/);
- assert.match(read('assets/matches.js'),/data\.saveMatchId/);
+ assert.match(read('assets/matches.js'),/dataset\.saveMatchId/);
  assert.match(read('index.html'),/assets\/saved-matches\.js/);
  assert.match(read('match.html'),/assets\/saved-matches\.js/);
  assert.match(read('assets/matches.css'),/\.match-item-actions/);
