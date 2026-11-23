@@ -1,0 +1,651 @@
+{
+  "checkedAt": "2026-11-23",
+  "source": "local match-calendar and team-profiles; does not test the user's browser or external image availability",
+  "clubs": 210,
+  "coverage": {
+    "crest-id": 99,
+    "profile-image": 1,
+    "verified-override": 5,
+    "external-fallback": 105
+  },
+  "verifiedAdded": [
+    "R. Racing Club",
+    "Le Mans FC",
+    "Málaga CF",
+    "Monza",
+    "Paris FC"
+  ],
+  "externalFallbackTeams": [
+    {
+      "name": "Wolverhampton Wanderers",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Blackburn Rovers",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Bolton Wanderers",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Preston North End",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Bristol City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Millwall",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Charlton Athletic",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Derby County",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Middlesbrough",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Lincoln City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Norwich City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "West Bromwich Albion",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Portsmouth",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Queens Park Rangers",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Stoke City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Swansea City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Sheffield United",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Birmingham City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Watford",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Southampton",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Burnley",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "West Ham United",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "RC Deportivo",
+      "competitions": [
+        "laliga"
+      ]
+    },
+    {
+      "name": "Cardiff City",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "Wrexham",
+      "competitions": [
+        "championship"
+      ]
+    },
+    {
+      "name": "RC Strasbourg Alsace",
+      "competitions": [
+        "ligue1"
+      ]
+    },
+    {
+      "name": "Coventry",
+      "competitions": [
+        "epl"
+      ]
+    },
+    {
+      "name": "Hull",
+      "competitions": [
+        "epl"
+      ]
+    },
+    {
+      "name": "AJ Auxerre",
+      "competitions": [
+        "ligue1"
+      ]
+    },
+    {
+      "name": "Estac Troyes",
+      "competitions": [
+        "ligue1"
+      ]
+    },
+    {
+      "name": "Angers SCO",
+      "competitions": [
+        "ligue1"
+      ]
+    },
+    {
+      "name": "Havre Athletic Club",
+      "competitions": [
+        "ligue1"
+      ]
+    },
+    {
+      "name": "Frosinone",
+      "competitions": [
+        "seriea"
+      ]
+    },
+    {
+      "name": "Venezia",
+      "competitions": [
+        "seriea"
+      ]
+    },
+    {
+      "name": "SC Paderborn 07",
+      "competitions": [
+        "bundesliga"
+      ]
+    },
+    {
+      "name": "SV 07 Elversberg",
+      "competitions": [
+        "bundesliga"
+      ]
+    },
+    {
+      "name": "AEK Athens",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "LASK",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Club Brugge",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Porto",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Feyenoord",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Viking",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "S. Bratislava",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Sporting CP",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Galatasaray",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Fenerbahçe",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "PSV",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Shakhtar",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Bodø/Glimt",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Sabah",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Slavia Praha",
+      "competitions": [
+        "ucl"
+      ]
+    },
+    {
+      "name": "Ararat-Armenia",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Sparta Praha",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Omonia",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Anderlecht",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "H. Beer-Sheva",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "GNK Dinamo",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Celje",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Olympiacos",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Jagiellonia",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Sturm Graz",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "AZ Alkmaar",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Levski Sofia",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Salzburg",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "OFI Crete",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Besiktas",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Celtic",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Ferencváros",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Lech Poznan",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "N.E.C.",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Lillestrøm",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Torreense",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Viktoria Plzen",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "Union SG",
+      "competitions": [
+        "uel"
+      ]
+    },
+    {
+      "name": "CSKA Sofia",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Egnatia",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Midtjylland",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Gent",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Aarhus",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Hajduk Split",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Ajax",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "KuPS Kuopio",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Trabzonspor",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Lugano",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Crvena Zvezda",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Mjällby",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Inter Escaldes",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Panathinaikos",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Borac",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Riga",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Kairat Almaty",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "U. Craiova",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Pafos",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Brann",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "L. Red Imps",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Kauno Žalgiris",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Copenhagen",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Braga",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Jablonec",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Hearts",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Nordsjælland",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Sint-Truidense",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Iberia Tbilisi",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Twente",
+      "competitions": [
+        "uecl"
+      ]
+    },
+    {
+      "name": "Thun",
+      "competitions": [
+        "uecl"
+      ]
+    }
+  ],
+  "note": "external-fallback teams may display their initials when SportsDB/Wikipedia images are missing or blocked; do not claim 100% logos display."
+}
