@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="90MIN LABS 구단 프로필: 구단 역사, 감독, 선수단, 홈구장, 참가 대회와 최근 경기.">
+<title>구단 정보 | 90MIN LABS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#152238;--muted:#667487;--line:#e3e8ed;--soft:#f6f8fb;--navy:#193b61}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font:14px/1.65 "DM Sans","Noto Sans KR",sans-serif;word-break:keep-all}a{color:inherit;text-decoration:none}
+button,input{font:inherit}button{cursor:pointer}
+.container{max-width:1440px;margin:auto;padding:0 44px}
+header{height:82px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(10px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-size:23px;font-weight:800;letter-spacing:-1px;white-space:nowrap}
+.links{display:flex;align-items:center;gap:26px}.links a{font-size:12px;font-weight:700;color:#617186}
+.links a.active,.links a:hover{color:#162740}
+main{padding-top:42px;padding-bottom:100px}.breadcrumb{display:flex;gap:8px;color:#78879a;font-size:12px;margin-bottom:28px;flex-wrap:wrap}.breadcrumb a{color:#506985}.breadcrumb a:hover{text-decoration:underline}
+.hero{display:flex;gap:28px;align-items:center;padding-bottom:35px;border-bottom:1px solid var(--line)}
+.crest{width:114px;height:114px;flex-shrink:0;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;padding:19px}
+.crest img{height:100%;width:100%;object-fit:contain}.crest-fallback{font-size:34px;font-weight:800;color:#1d4167}
+.eyebrow{color:#687e98;font-weight:700;font-size:11px;letter-spacing:.08em}
+h1{font-size:clamp(28px,3vw,43px);letter-spacing:-1.2px;line-height:1.35;margin:9px 0 7px}
+.subname{color:#718197;font-size:14px}
+.meta-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.pill{background:#f3f6f9;border:1px solid #e4eaf1;border-radius:4px;padding:5px 10px;font-size:11px;color:#526984}
+.layout{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(290px,.75fr);gap:48px;margin-top:38px}
+.section{margin-bottom:53px}.section h2{font-size:22px;letter-spacing:-.6px;margin:0 0 17px}.section small,.small{color:#8290a0;font-size:12px}
+.description{font-size:14px;line-height:1.94;color:#445366;white-space:pre-line;max-width:860px;margin:0}
+.keylist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.key{border-bottom:1px solid #e8edf2;padding:13px 0;min-width:0}
+.key .label{display:block;font-size:11px;color:#8290a0;margin-bottom:6px}
+.key .value{font-weight:650;overflow-wrap:anywhere}
+.key .value a{color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.box{border:1px solid var(--line);padding:21px;background:white}
+.box h3{font-size:14px;margin:0 0 10px}.box p{margin:0;color:#718196;font-size:12px}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid #d7dee7}
+.list li{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #e9edf2;padding:13px 6px}
+.list .right{text-align:right;white-space:nowrap;font-size:12px;color:#66768a}
+.result-date{font-size:11px;color:#8896a6;min-width:89px}
+.match{display:grid;grid-template-columns:85px minmax(0,1fr) 85px;align-items:center;gap:14px;padding:14px 7px;border-bottom:1px solid #e9edf2}
+.match .teams{font-size:13px;font-weight:600}
+.match .competition{display:block;font-size:11px;color:#8795a5;margin-top:3px;font-weight:400}
+.score{font-weight:750;text-align:right;font-size:16px}
+.status{font-size:10px;color:#7f8c9c;font-weight:600;display:inline-block;margin-left:6px}
+.b-note{padding:12px 15px;background:#f6f8fa;color:#66798e;font-size:12px;margin:13px 0;line-height:1.75}
+.group{margin-top:19px}.group h3{font-size:12px;color:#546a84;margin:0 0 9px;font-weight:700}
+.squad{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px}
+.player{border-bottom:1px solid #eef1f4;padding:11px 3px;font-size:13px;display:flex;justify-content:space-between;gap:8px}
+.player span{color:#7d8b9a;font-size:11px}
+.sidebox{background:#f8fafc;border:1px solid #ebf0f4;padding:23px;margin-bottom:20px}
+.sidebox h3{font-size:15px;letter-spacing:-.25px;margin:0 0 17px}.sidebox .key{padding:10px 0}
+.sidebox a.external{display:block;margin-top:12px;font-size:12px;color:#1d4771;text-decoration:underline;text-underline-offset:3px}
+.error{border:1px solid #e1e7ed;padding:40px;background:#f8fafc;color:#617387;text-align:center}
+.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{border:1px solid #dee5ed;background:white;padding:6px 10px;border-radius:4px;font-size:12px;color:#435771}
+.source{font-size:11px;color:#8492a2;margin-top:12px;line-height:1.7}.source a{color:#47678a;text-decoration:underline;text-underline-offset:2px}
+.nav-clubs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+.nav-clubs a{padding:10px 0;border-bottom:1px solid #e9edf2;font-size:12px;color:#50647d}
+.nav-clubs a:hover{color:#0e365f}
+footer{border-top:1px solid var(--line);padding:33px 0;color:#8290a0;font-size:12px}
+footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){.layout{grid-template-columns:1fr;gap:4px}.links{gap:13px}.links a{font-size:10px}.container{padding:0 22px}}
+@media(max-width:650px){header{height:70px}.nav{flex-wrap:wrap;justify-content:center;gap:4px;align-content:center}.brand{font-size:20px}.links{width:100%;justify-content:center;gap:12px}.links a{font-size:9px}.hero{gap:15px}.crest{width:78px;height:78px;padding:12px}main{padding-top:24px}.section h2{font-size:19px}.keylist{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.match{grid-template-columns:64px 1fr 60px;gap:8px}.result-date{min-width:0;font-size:10px}.squad{grid-template-columns:1fr}.layout{margin-top:29px}}
+</style></head>
+<body>
+<header><div class="container nav"><a class="brand" href="index.html#home">90MIN LABS.</a>
+<nav class="links" aria-label="메인 메뉴"><a href="index.html#home">HOME</a><a href="index.html#predictions">PREDICTIONS</a><a href="index.html#matches">MATCHES</a><a class="active" href="leagues.html">LEAGUES</a><a href="index.html#columns">COLUMNS</a></nav></div></header>
+<main class="container">
+<div class="breadcrumb"><a href="index.html#home">홈</a><span>›</span><a id="crumbLeague" href="leagues.html">리그 순위</a><span>›</span><span id="crumbTeam">구단 정보</span></div>
+<div id="invalid" class="error" hidden>선택한 구단을 찾을 수 없어. <a href="leagues.html">리그 순위에서 다시 선택하기</a></div>
+<div id="content" hidden>
+<div class="hero">
+<div class="crest" id="crest"><span class="crest-fallback">FC</span></div>
+<div><div class="eyebrow" id="heroLeague">LEAGUE</div><h1 id="teamTitle"></h1><div class="subname" id="teamEnglish"></div><div class="meta-pills" id="pills"></div></div>
+</div>
+<div class="layout">
+<div>
+<section class="section" id="clubHistory"><h2>구단 소개와 역사</h2><p class="description" id="history">구단 소개를 불러오는 중이야.</p><div class="source" id="historySource"></div></section>
+<section class="section" id="teamStructure"><h2>감독과 선수단</h2><div class="two-col"><div class="box"><h3>감독</h3><p id="manager">최신 명단 확인 중</p></div><div class="box"><h3>선수단 구성</h3><p id="squadSummary">선수 정보 확인 중</p></div></div><div id="squadGroups"></div><div class="source" id="squadSource">데이터 출처를 확인 중이야.</div></section>
+<section class="section" id="recentMatches"><h2>최근 10경기</h2><div class="b-note" id="matchNotice">공식적으로 확인할 수 있는 경기 기록을 조회하고 있어.</div><div id="matches"></div><div class="source"><a id="resultsSource" href="https://www.thesportsdb.com" target="_blank" rel="noopener noreferrer">경기 기록 제공처</a></div></section>
+<section class="section" id="clubNow"><h2>최근 팀 소식</h2><p class="description" id="recentDesc">팀 소식은 해당 구단의 공식 채널과 최신 기사에서 확인할 수 있어. 확인되지 않은 기사 제목이나 이적 소식은 임의로 게시하지 않아.</p><div class="two-col" style="margin-top:20px"><a class="box" id="officialNews" target="_blank" rel="noopener noreferrer"><h3>구단 공식 홈페이지</h3><p>구단이 발표한 최근 뉴스와 공지 확인</p></a><a class="box" id="newsSearch" target="_blank" rel="noopener noreferrer"><h3>관련 뉴스 검색</h3><p>구단별 최신 축구 기사 검색</p></a></div></section>
+</div>
+<aside>
+<div class="sidebox"><h3>구단 기본 정보</h3><div class="keylist">
+<div class="key"><span class="label">소속 리그</span><span class="value" id="detailLeague">확인 중</span></div>
+<div class="key"><span class="label">창단</span><span class="value" id="founded">자료 대기</span></div>
+<div class="key"><span class="label">연고지</span><span class="value" id="location">자료 대기</span></div>
+<div class="key"><span class="label">홈구장</span><span class="value" id="stadium">자료 대기</span></div>
+</div><a class="external" id="maplink" target="_blank" rel="noopener noreferrer" hidden>홈구장 지도 보기</a></div>
+<div class="sidebox"><h3>참가 대회</h3><div class="tags" id="competitions"><span class="tag" id="fallbackLeague">리그 확인 중</span></div><div class="source">대회 정보는 데이터 제공처에 등록된 기준이며, 이번 시즌 참가 확정과 다를 수 있어.</div></div>
+<div class="sidebox"><h3>같은 리그의 다른 구단</h3><div class="nav-clubs" id="otherClubs"></div></div>
+</aside>
+</div></div></main>
+<footer><div class="container"><span>90MIN LABS. © 2026</span><span>비상업적 축구 연구 사이트 · 구단 및 대회와 공식 제휴 관계가 없습니다.</span></div></footer>
+<script>
+const names={epl:"프리미어리그",seriea:"세리에 A",bundesliga:"분데스리가",ligue1:"리그앙"};
+const expectedCountry={epl:["England","United Kingdom"],seriea:["Italy"],bundesliga:["Germany"],ligue1:["France","Monaco"]};
+const params=new URLSearchParams(location.search);
+const teamName=params.get("team")||"";
+const league=params.get("league")||"";
+const pageKey=league+":"+teamName;
+const show=(id,s)=>{document.getElementById(id).textContent=s||"자료 확인 중";};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const select=id=>document.getElementById(id);
+const api="https://www.thesportsdb.com/api/v1/json/123/";
+const validUrl=u=>{try{const url=new URL(u.startsWith("http")?u:"https://"+u);return url.protocol==="https:"?url.href:""}catch{return ""}};
+const teamLink=(name,lg)=>"team.html?team="+encodeURIComponent(name)+"&league="+encodeURIComponent(lg);
+function addPill(text){const node=document.createElement("span");node.className="pill";node.textContent=text;select("pills").append(node);}
+function setCrest(url,name){const target=select("crest");target.replaceChildren();if(!url){const x=document.createElement("span");x.className="crest-fallback";x.textContent=name.slice(0,3).toUpperCase();target.append(x);return;}const img=document.createElement("img");img.src=url;img.alt=name+" 구단 엠블럼";img.addEventListener("error",()=>setCrest("",name),{once:true});target.append(img);}
+async function getJSON(url){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8500);try{const resp=await fetch(url,{signal:controller.signal,cache:"no-store"});if(!resp.ok)throw Error("HTTP "+resp.status);return await resp.json();}finally{clearTimeout(timeout)}}
+async function getWikiIntro(title){
+ if(!title)return null;
+ const url="https://ko.wikipedia.org/w/api.php?"+new URLSearchParams({action:"query",prop:"extracts",exintro:"1",explaintext:"1",format:"json",origin:"*",titles:title});
+ const data=await getJSON(url);const pages=data.query?.pages||{};const page=Object.values(pages).find(p=>p.extract&&!p.missing);
+ return page?.extract?{text:page.extract.slice(0,1500),url:"https://ko.wikipedia.org/wiki/"+encodeURIComponent(title.replace(/ /g,"_"))}:null;
+}
+function summaryOf(name,catalog){const other=catalog.filter(c=>c.name!==name).slice(0,12);const root=select("otherClubs");root.replaceChildren();for(const c of other){const a=document.createElement("a");a.href=teamLink(c.name,league);a.textContent=c.name;root.append(a);}}
+function setHistory(local){
+ const text=local.historyKo;
+ if(text){show("history",text);select("historySource").textContent="90MIN LABS 편집 소개. 역사적 주요 사실 중심으로 정리했으며 최신 소식은 별도로 확인해 줘.";}
+ else{show("history","한국어 구단 소개를 확인하고 있어. 자료를 불러오지 못하면 출처 링크에서 확인해 줘.");}
+ if(!local.wikiKo)return;
+ getWikiIntro(local.wikiKo).then(w=>{
+  if(!w)return;
+  if(!text)show("history",w.text);
+  const a=document.createElement("a");a.href=w.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="한국어 위키백과 구단 역사";
+  select("historySource").append(" · ",a);
+ }).catch(()=>{});
+}
+function renderCompetitions(team){
+ const list=[names[league]];for(let i=1;i<=7;i++){const x=team["strLeague"+(i===1?"":i)];if(x&&x!=="Unknown"&&!list.some(y=>y.toLowerCase()===x.toLowerCase()))list.push(x);}
+ const box=select("competitions");box.replaceChildren();list.forEach(x=>{const span=document.createElement("span");span.className="tag";span.textContent=x;box.append(span)});
+}
+function renderTeamDetails(team){
+ if(!team)return;
+ if(team.strBadge&&/^https:\/\//.test(team.strBadge))setCrest(team.strBadge,teamName);
+ if(team.strLocation)show("location",team.strLocation);
+ if(team.strStadium)show("stadium",team.strStadium);
+ if(team.intFormedYear)show("founded",String(team.intFormedYear)+"년 (제공처 기록)");
+ if(team.strKeywords)addPill(team.strKeywords.split(",")[0].trim());
+ renderCompetitions(team);
+ const loc=[team.strStadium,team.strLocation].filter(Boolean).join(", ");
+ if(loc){select("maplink").hidden=false;select("maplink").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(loc);}
+ const official=validUrl(team.strWebsite||"");
+ if(official)select("officialNews").href=official;
+ else select("officialNews").removeAttribute("href");
+}
+function renderSquad(list){
+ const players=(list||[]).filter(x=>x&&x.strPlayer&&x.strSport==="Soccer");
+ const manager=players.find(x=>/^(manager|head coach)$/i.test((x.strPosition||"").trim())&&x.strStatus!=="Inactive");
+ show("manager",manager?manager.strPlayer+" (제공처 등록)":"현재 감독 정보 미확인 · 구단 공식 발표 기준 확인 필요");
+ const active=players.filter(x=>x!==manager&&!/coach|manager/i.test(x.strPosition||"")&&x.strStatus!=="Inactive");
+ show("squadSummary",active.length?active.length+"명 표시 중 (제공처에서 반환된 일부 명단)":"선수 명단 확인 대기");
+ const groups={"골키퍼":[],"수비수":[],"미드필더":[],"공격수":[],"기타":[]};
+ for(const p of active){const pos=(p.strPosition||"").toLowerCase();let k=/goalkeeper/.test(pos)?"골키퍼":/defend|back/.test(pos)?"수비수":/midfield/.test(pos)?"미드필더":/forward|striker|winger|attack/.test(pos)?"공격수":"기타";groups[k].push(p);}
+ const box=select("squadGroups");box.replaceChildren();
+ for(const [label,roster] of Object.entries(groups)){if(!roster.length)continue;const sec=document.createElement("div");sec.className="group";const h=document.createElement("h3");h.textContent=label;sec.append(h);const grid=document.createElement("div");grid.className="squad";for(const p of roster){const item=document.createElement("div");item.className="player";const name=document.createElement("strong");name.textContent=p.strPlayer;const other=document.createElement("span");other.textContent=(p.strNumber?"#"+p.strNumber+" · ":"")+(p.strPosition||"");item.append(name,other);grid.append(item);}sec.append(grid);box.append(sec);}
+ }
+ select("squadSource").textContent="선수단은 TheSportsDB에서 제공한 일부 명단이야. 현재 시즌의 전체 등록 선수나 공식 감독 명단을 뜻하지 않아.";
+}
+function parseMatch(item){
+ if(!item||!item.dateEvent||item.intHomeScore===null||item.intAwayScore===null||item.intHomeScore===undefined||item.intAwayScore===undefined)return null;
+ const home=Number(item.intHomeScore),away=Number(item.intAwayScore);
+ if(!Number.isFinite(home)||!Number.isFinite(away))return null;
+ const key=item.idEvent||[item.dateEvent,item.strHomeTeam,item.strAwayTeam].join(":");
+ return {key,date:item.dateEvent,home:item.strHomeTeam||"홈팀",away:item.strAwayTeam||"원정팀",homeScore:home,awayScore:away,comp:item.strLeague||"",idHome:item.idHomeTeam,idAway:item.idAwayTeam};
+}
+function showMatches(events,tid){
+ const unique=new Map();
+ for(const event of events){const p=parseMatch(event);if(p&&p.date<="2026-11-23"&&!unique.has(p.key))unique.set(p.key,p);}
+ const sorted=[...unique.values()].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10);
+ const box=select("matches");box.replaceChildren();
+ if(!sorted.length){const e=document.createElement("div");e.className="error";e.textContent="확인 가능한 최종 경기 기록이 없습니다.";box.append(e);}
+ for(const item of sorted){
+ const row=document.createElement("div");row.className="match";
+ const date=document.createElement("span");date.className="result-date";date.textContent=item.date;
+ const desc=document.createElement("div");desc.className="teams";desc.textContent=item.home+" – "+item.away;
+ const league=document.createElement("span");league.className="competition";league.textContent=item.comp;desc.append(league);
+ const score=document.createElement("span");score.className="score";score.textContent=item.homeScore+" : "+item.awayScore;
+ row.append(date,desc,score);box.append(row);
+ }
+ show("matchNotice",sorted.length===10?"최근 10개의 최종 경기 기록을 표시합니다.":"무료 데이터 제공 범위에서 확인된 "+sorted.length+"경기만 표시했어. 전체 10경기 기록은 추가 데이터 연동이 필요해.");
+}
+async function loadTeam(){
+ const [reg,standings]=await Promise.all([getJSON("data/team-profiles.json"),getJSON("data/league-data.json")]);
+ const local=reg.clubs?.[pageKey];
+ const leagueData=standings.leagues?.[league];
+ if(!local||!leagueData){select("invalid").hidden=false;return}
+ select("content").hidden=false;
+ document.title=teamName+" 구단 정보 | 90MIN LABS";
+ show("teamTitle",local.wikiKo||teamName);show("teamEnglish",teamName);
+ show("crumbTeam",teamName);show("heroLeague",names[league]);show("detailLeague",names[league]);addPill("2026–27 시즌");
+ select("crumbLeague").href="leagues.html?league="+encodeURIComponent(league);
+ summaryOf(teamName,(leagueData.standings?.rows||[]).map(x=>({name:x.team})));
+ setCrest("",teamName);
+ setHistory(local);
+ const query=local.searchName||teamName;
+ select("newsSearch").href="https://news.google.com/search?q="+encodeURIComponent(query+" football")+"&hl=ko&gl=KR&ceid=KR:ko";
+ select("officialNews").removeAttribute("href");select("officialNews").style.opacity=".6";
+ try{
+  const result=await getJSON(api+"searchteams.php?t="+encodeURIComponent(query));
+  const list=(result.teams||[]).filter(x=>x.strSport==="Soccer");
+  const comparable=x=>String(x||"").toLowerCase().replace(/[^a-z0-9]/g,"");
+  const wanted=comparable(query);
+  const match=list.find(x=>{
+    const given=comparable(x.strTeam),alias=comparable(x.strTeamAlternate);
+    const country=(x.strCountry||"").toLowerCase();
+    return ((given&&wanted&&(wanted===given||wanted.includes(given)||given.includes(wanted)))||alias.includes(wanted))&&(!country||expectedCountry[league].some(c=>country===c.toLowerCase()));
+  });
+  if(!match){show("manager","최신 감독 데이터 연결 대기");show("squadSummary","선수단 데이터 연결 대기");show("matchNotice","이 팀의 경기 기록 제공처 연결 대기");return;}
+  renderTeamDetails(match);
+  select("officialNews").style.opacity="1";
+  const tid=match.idTeam,leagueId=match.idLeague;
+  const season="2026-2027";
+  const jobs=[
+    getJSON(api+"lookup_all_players.php?id="+encodeURIComponent(tid)).then(x=>renderSquad(x.player||[])).catch(()=>{show("manager","현재 감독 정보 미확인");show("squadSummary","선수 정보 조회 실패");}),
+    (async()=>{
+      const results=await Promise.allSettled([getJSON(api+"eventslast.php?id="+encodeURIComponent(tid)),leagueId?getJSON(api+"eventsseason.php?id="+encodeURIComponent(leagueId)+"&s="+season):Promise.resolve({events:[]})]);
+      const all=[];
+      for(const r of results){if(r.status==="fulfilled"){const d=r.value;all.push(...(d.results||d.events||[]));}}
+      const filtered=all.filter(x=>String(x.idHomeTeam)===String(tid)||String(x.idAwayTeam)===String(tid));
+      showMatches(filtered,tid);
+    })()
+  ];
+  await Promise.allSettled(jobs);
+ }catch(err){show("manager","연결된 감독 데이터가 없어 확인이 필요해");show("squadSummary","선수단 API 연결 대기");show("matchNotice","경기 기록 API 연결을 확인할 수 없어. 확인되지 않은 점수는 표시하지 않아.");}
+}
+loadTeam().catch(()=>{select("invalid").hidden=false;select("invalid").textContent="구단 정보를 불러오지 못했어. 잠시 후 다시 시도하거나 리그 순위에서 선택해 줘."});
+</script></body></html>
