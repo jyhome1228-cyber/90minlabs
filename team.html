@@ -90,7 +90,7 @@ footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:
 <div class="key"><span class="label">창단</span><span class="value" id="founded">자료 대기</span></div>
 <div class="key"><span class="label">연고지</span><span class="value" id="location">자료 대기</span></div>
 <div class="key"><span class="label">홈구장</span><span class="value" id="stadium">자료 대기</span></div>
-</div><a class="external" id="maplink" target="_blank" rel="noopener noreferrer" hidden>홈구장 지도 보기</a></div>
+</div><a class="external" id="maplink" target="_blank" rel="noopener noreferrer" hidden>홈구장 지도 보기</a><a class="external" id="stadiumSource" target="_blank" rel="noopener noreferrer" hidden>경기장 공식 안내</a></div>
 <div class="sidebox"><h3>참가 대회</h3><div class="tags" id="competitions"><span class="tag" id="fallbackLeague">리그 확인 중</span></div><div class="source">대회 정보는 데이터 제공처에 등록된 기준이며, 이번 시즌 참가 확정과 다를 수 있어.</div></div>
 <div class="sidebox"><h3>같은 리그의 다른 구단</h3><div class="nav-clubs" id="otherClubs"></div></div>
 </aside>
@@ -136,7 +136,7 @@ function renderTeamDetails(team){
  if(!team)return;
  if(team.strBadge&&/^https:\/\//.test(team.strBadge))setCrest(team.strBadge,teamName);
  if(team.strLocation)show("location",team.strLocation);
- if(team.strStadium)show("stadium",team.strStadium);
+ if(team.strStadium&&select("stadium").textContent==="자료 대기")show("stadium",team.strStadium);
  if(team.intFormedYear&&select("founded").textContent==="자료 대기")show("founded",String(team.intFormedYear)+"년 (제공처 기록)");
  if(team.strKeywords)addPill(team.strKeywords.split(",")[0].trim());
  renderCompetitions(team);
@@ -226,6 +226,8 @@ async function loadTeam(){
  summaryOf(teamName,Object.values(reg.clubs||{}).filter(c=>c.league===league).map(c=>({name:c.name})));
  setCrest(local.crestId?"https://crests.football-data.org/"+local.crestId+".png":"",teamName);
  if(local.cityKo)show("location",local.cityKo);
+ if(local.stadium){show("stadium",local.stadium);const loc=[local.stadium,local.cityKo].filter(Boolean).join(", ");select("maplink").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(loc);select("maplink").hidden=false;}
+ if(local.stadiumSourceUrl){select("stadiumSource").href=local.stadiumSourceUrl;select("stadiumSource").hidden=false;}
  if(local.foundedYear)show("founded",local.foundedYear+"년 (구단 역사)");
  setHistory(local);
  const recent=matchHistory?.teams?.[pageKey];
