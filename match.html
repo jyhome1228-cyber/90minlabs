@@ -4,36 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="90MIN LABS 경기 심층 분석. 팀별 최근 흐름, 공격과 수비, 홈·원정 차이와 경기 시나리오를 기록과 함께 읽습니다.">
+  <meta name="description" content="90MIN LABS 경기 리포트. 최근 흐름과 홈·원정 기록을 연결해 경기 전망을 간결하게 읽습니다.">
   <title>경기 분석 | 90MIN LABS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/match-page.css?v=20261123-editorial">
+  <link rel="stylesheet" href="assets/match-page.css?v=20261123-compact">
+  <link rel="stylesheet" href="assets/site-shell.css?v=20261123-mypage">
+  <script src="assets/site-shell.js?v=20261123-mypage" defer></script>
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
-  <script src="assets/match-editorial.js?v=20261123-editorial" defer></script>
-  <script src="assets/match-page.js?v=20261123-editorial" defer></script>
+  <script src="assets/match-editorial.js?v=20261123-compact" defer></script>
+  <script src="assets/match-page.js?v=20261123-compact" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#matchMain">경기 분석으로 이동</a>
-  <header class="site-header">
-    <div class="page-wrap header-inner">
-      <a class="brand" href="index.html#matches">90MIN LABS.</a>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
-      <nav class="site-nav" id="siteNav" aria-label="사이트 메뉴">
-        <a href="index.html#predictions">PREDICTIONS</a>
-        <a class="active" href="index.html#matches" aria-current="page">MATCHES</a>
-        <a href="leagues.html">LEAGUES</a>
-        <a href="index.html#columns">COLUMNS</a>
-        <a class="write-link" href="index.html#write">칼럼 작성</a>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header" data-site-header data-active="matches" data-menu-open="false">
+  <div class="shell-inner">
+    <a class="shell-brand" href="index.html#matches">90MIN LABS.</a>
+    <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
+    <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
+      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
+      <a class="shell-nav-link is-active" data-nav-key="matches" href="index.html#matches" aria-current="page">MATCHES</a>
+      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">LEAGUES</a>
+      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">COLUMNS</a>
+      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">MY PAGE</a>
+      <a class="shell-nav-link shell-nav-write" data-nav-key="write" href="index.html#write">칼럼 작성</a>
+    </nav>
+  </div>
+</header>
+<noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
 
   <main class="page-wrap" id="matchMain">
     <div class="page-tools">
       <a class="back-link" id="backToMatches" href="index.html#matches"><span aria-hidden="true">‹</span> 경기 목록</a>
       <span class="page-kicker">MATCH ANALYSIS</span>
+      <a class="match-pick-link" id="recordPrediction" href="mypage.html" hidden>승무패 기록하기</a>
       <button class="copy-link" id="copyLink" type="button" disabled>링크 복사</button>
     </div>
     <p class="copy-status" id="copyStatus" role="status"></p>
@@ -59,26 +64,18 @@
       </section>
 
       <nav class="analysis-nav" aria-label="경기 분석 목차">
-        <a href="#overview" class="active">분석 요약</a><a href="#report">심층 분석</a><a href="#comparison">전력 비교</a><a href="#recent">최근 경기</a><a href="#headtohead">맞대결</a><a href="#standings">시즌 순위</a><a href="#sources">분석 기준</a>
+        <a href="#overview" class="active">경기 리포트</a><a href="#comparison">전력 비교</a><a href="#recent">최근 경기</a><a href="#headtohead">맞대결</a><a href="#standings">시즌 순위</a>
       </nav>
 
-      <section class="analysis-section overview-section" id="overview" aria-labelledby="overviewTitle">
-        <div class="section-heading overview-heading"><div><p class="eyebrow">MATCH INSIGHTS</p><h2 id="overviewTitle">이번 경기를 어떻게 읽을 것인가</h2></div>
-          <div class="analysis-controls"><div class="segmented-control" role="group" aria-label="최근 경기 표본"><button type="button" data-limit="5" aria-pressed="true">최근 5경기</button><button type="button" data-limit="10" aria-pressed="false">최근 10경기</button></div><label class="scope-label"><span class="sr-only">분석 대회 범위</span><select id="analysisScope" aria-label="분석 대회 범위"><option value="all">전체 대회</option><option value="competition">해당 대회</option></select></label></div>
+      <section class="analysis-section overview-section" id="overview" aria-labelledby="reportTitle">
+        <div class="section-heading overview-heading"><div><p class="eyebrow">MATCH REPORT</p><h2 id="reportTitle">경기 전망</h2></div>
+          <div class="analysis-controls"><div class="segmented-control" role="group" aria-label="최근 경기 범위"><button type="button" data-limit="5" aria-pressed="true">최근 5경기</button><button type="button" data-limit="10" aria-pressed="false">최근 10경기</button></div><label class="scope-label"><span class="sr-only">분석 대회 범위</span><select id="analysisScope" aria-label="분석 대회 범위"><option value="all">전체 대회</option><option value="competition">해당 대회</option></select></label></div>
         </div>
-        <p class="overview-sample" id="overviewContext"></p>
-        <div class="overview-grid"><div id="insightSummary" class="insight-summary"></div><aside id="modelPanel" class="model-panel" aria-label="득점 기록 기반 참고 분포"></aside></div>
-      </section>
-
-      <section class="analysis-section report-section" id="report" aria-labelledby="reportTitle">
-        <div class="section-heading"><div><p class="eyebrow">MATCH REPORT</p><h2 id="reportTitle">경기를 깊이 읽는 분석</h2></div><span class="report-reading" id="reportReading"></span></div>
-        <p class="report-coverage" id="reportCoverage"></p>
-        <div class="report-layout">
-          <aside class="report-sidebar" aria-label="심층 분석 안내">
-            <div class="report-sidebar-inner"><p class="report-sidebar-title">이 경기의 분석 흐름</p><nav id="reportOutline" class="report-outline" aria-label="심층 분석 목차"></nav><div class="report-sidebar-context" id="reportContext"></div></div>
-          </aside>
-          <div class="report-main"><div id="reportBody" class="report-body"></div><section id="reportVerdict" class="report-verdict" aria-labelledby="reportVerdictTitle"></section></div>
-        </div>
+        <p class="report-sample" id="overviewContext"></p>
+        <article class="compact-report" aria-label="경기 흐름과 전망">
+          <div class="report-forecast"><span id="forecastLabel">예상 방향</span><strong id="reportForecast"></strong></div>
+          <div id="reportBody" class="compact-report-copy"></div>
+        </article>
       </section>
 
       <section class="analysis-section" id="comparison" aria-labelledby="comparisonTitle">
@@ -105,12 +102,6 @@
         <p class="section-note" id="standingsNote"></p><div id="standingsContent" class="standings-content"></div>
       </section>
 
-      <section class="analysis-section sources-section" id="sources" aria-labelledby="sourcesTitle">
-        <div class="section-heading"><div><p class="eyebrow">DATA &amp; METHODOLOGY</p><h2 id="sourcesTitle">분석 기준과 출처</h2></div><span class="section-context" id="dataUpdated"></span></div>
-        <div class="method-grid"><div><h3>경기 시작 이전의 기록으로 계산합니다.</h3><p id="methodIntro"></p><div id="sourceLinks" class="source-links"></div></div>
-          <details class="method-details"><summary>지표와 참고 분포 계산 방법</summary><div class="method-body"><p>최근 성적은 선택한 대회 범위에서 확인된 종료 경기 중 최근 5경기 또는 10경기입니다. 승점은 승리 3점, 무승부 1점으로 계산하며, 평균 득점과 실점은 실제 표본 수로 나눕니다.</p><p>홈·원정 비교는 같은 범위의 기록에서 홈팀의 홈 경기, 원정팀의 원정 경기만 따로 추려 계산합니다. 무실점은 실점이 없는 경기, 양 팀 득점은 두 팀 모두 득점한 경기, 3골 이상은 합산 득점이 3 이상인 경기의 비율입니다.</p><p id="modelMethod"></p><p>참고 분포는 기록 기반 계산값이며 보정·성능 검증을 마친 예측 모델이 아닙니다. 선수 구성, 결장, 전술, 슈팅 기반 기대득점(xG)은 반영하지 않습니다. 종료 경기의 수치는 현재 저장된 과거 기록으로 재계산한 값이며 당시 발행된 예측이 아닙니다.</p><p>날짜만 있는 보완 기록은 시차를 고려해 확실히 이전인 경기만 포함합니다. 분석 수치는 자료가 보완되면 달라질 수 있습니다. 순위표는 별도로 표시한 자료 확인 시점의 스냅샷입니다.</p></div></details>
-        </div>
-      </section>
       <section class="related-section" aria-labelledby="relatedTitle"><div class="section-heading"><h2 id="relatedTitle">같은 대회의 다른 경기</h2><a id="relatedListLink" class="text-link" href="index.html#matches">경기 목록</a></div><div id="relatedMatches" class="related-matches"></div></section>
     </div>
     <noscript><p class="error-state">경기 분석을 보려면 브라우저에서 JavaScript를 허용해 주세요. <a href="index.html#matches">경기 목록으로 이동</a></p></noscript>

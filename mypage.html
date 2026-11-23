@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="한 주의 축구 경기를 골라 승·무·패를 예측하고 나의 기록을 모아보세요.">
+  <title>마이페이지 | 90MIN LABS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/mypage.css?v=20261123-weekly">
+  <link rel="stylesheet" href="assets/site-shell.css?v=20261123-mypage">
+  <script src="assets/site-shell.js?v=20261123-mypage" defer></script>
+  <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
+  <script src="assets/prediction-store.js?v=20261123-weekly" defer></script>
+  <script src="assets/mypage.js?v=20261123-weekly" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#myPageMain">내 예측으로 이동</a>
+  <header class="site-header" data-site-header data-active="mypage" data-menu-open="false">
+  <div class="shell-inner">
+    <a class="shell-brand" href="index.html#matches">90MIN LABS.</a>
+    <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
+    <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
+      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
+      <a class="shell-nav-link" data-nav-key="matches" href="index.html#matches">MATCHES</a>
+      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">LEAGUES</a>
+      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">COLUMNS</a>
+      <a class="shell-nav-link is-active" data-nav-key="mypage" href="mypage.html" aria-current="page">MY PAGE</a>
+      <a class="shell-nav-link shell-nav-write" data-nav-key="write" href="index.html#write">칼럼 작성</a>
+    </nav>
+  </div>
+</header>
+<noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
+  <main class="mypage-wrap" id="myPageMain">
+    <section class="mypage-heading" aria-labelledby="pageTitle">
+      <div><h1 id="pageTitle">마이페이지</h1><p>한 주의 경기를 고르고, 나의 예측을 기록하세요.</p></div>
+      <a class="text-link" href="#savedPredictions">저장한 기록 보기 <span id="savedCount">0</span></a>
+    </section>
+    <div class="storage-note"><span>이 브라우저에 저장됩니다. 다른 기기와는 동기화되지 않습니다.</span><button class="text-button" id="exportRecords" type="button" disabled>기록 내보내기</button></div>
+    <div id="pageNotice" class="page-notice" role="status" aria-live="polite" hidden></div>
+    <div id="storageError" class="error-notice" role="alert" hidden><p id="storageErrorMessage"></p><button class="text-button" id="retryStorage" type="button">저장 공간 다시 확인</button></div>
+    <section class="record-stats" aria-label="나의 예측 기록 요약">
+      <div><span>예측 묶음</span><strong id="statSets">0</strong></div>
+      <div><span>기록한 경기</span><strong id="statPicks">0</strong></div>
+      <div><span>맞힌 경기</span><strong id="statCorrect">—</strong></div>
+      <div><span>적중률</span><strong id="statAccuracy">—</strong><small id="statSettled">결과 확인 전</small></div>
+    </section>
+    <section id="predictionBuilder" class="prediction-builder" aria-labelledby="builderTitle">
+      <div class="section-heading"><h2 id="builderTitle">주간 예측 만들기</h2><span>월요일–일요일 · 한국시간</span></div>
+      <div class="week-toolbar">
+        <div class="week-navigation"><button class="outline-button" id="prevWeek" type="button">이전 주</button><h3 id="weekLabel"></h3><button class="outline-button" id="nextWeek" type="button">다음 주</button></div>
+        <div class="week-tools"><button class="text-button" id="currentWeek" type="button">이번 주</button><label for="weekDate">주간 이동</label><input id="weekDate" type="date" aria-label="보고 싶은 주의 날짜"></div>
+      </div>
+      <div id="fixturesLoading" class="loading-state" role="status">이번 주 경기를 불러오고 있습니다.</div>
+      <div id="fixturesError" class="load-error" hidden><p>경기 일정을 불러오지 못했습니다.</p><button id="retryFixtures" class="outline-button" type="button">다시 불러오기</button></div>
+      <div id="builderContent" class="builder-grid" hidden>
+        <div class="fixture-picker">
+          <div class="picker-filters">
+            <label class="sr-only" for="leagueFilter">대회 선택</label><select id="leagueFilter"><option value="all">전체 대회</option></select>
+            <label class="sr-only" for="fixtureSearch">팀 이름 검색</label><input id="fixtureSearch" type="search" placeholder="팀 이름 검색" autocomplete="off">
+            <label class="sr-only" for="fixtureFilter">경기 표시</label><select id="fixtureFilter"><option value="available">선택 가능한 경기</option><option value="all">전체 경기</option><option value="selected">선택한 경기</option></select>
+          </div>
+          <div class="picker-caption"><span id="fixtureCount"></span><span>승·무·패는 홈팀 기준</span></div>
+          <div id="fixtureList"></div>
+        </div>
+        <aside class="prediction-slip" aria-labelledby="slipTitle">
+          <form id="predictionForm">
+            <div class="slip-heading"><h3 id="slipTitle">나의 예측</h3><button class="text-button" id="newSet" type="button">새 묶음</button></div>
+            <label class="set-title-label" for="setTitle">묶음 이름</label><input id="setTitle" type="text" maxlength="80" placeholder="예: 이번 주 관심 경기" autocomplete="off">
+            <div class="slip-meta"><span id="slipWeek"></span><strong id="selectionCount">0경기 선택</strong></div>
+            <div id="selectedPicks"></div>
+            <p class="slip-note">경기 시작 전까지 선택을 변경할 수 있습니다.</p>
+            <button id="saveSet" class="solid-button save-button" type="submit" disabled>예측 묶음 저장</button>
+            <p id="saveStatus" class="save-status" role="status" aria-live="polite"></p>
+          </form>
+        </aside>
+      </div>
+    </section>
+    <section id="savedPredictions" class="saved-section" aria-labelledby="savedTitle">
+      <div class="section-heading"><div><h2 id="savedTitle">저장한 예측</h2><p>주간별 선택과 경기 결과를 함께 확인하세요.</p></div><label><span class="sr-only">기록 주간 선택</span><select id="historyWeek"><option value="all">모든 주간</option></select></label></div>
+      <div id="savedSets"></div>
+    </section>
+  </main>
+  <footer class="mypage-footer"><div class="mypage-wrap"><span>90MIN LABS. © 2026 Independent Football Research</span><a href="index.html#matches">경기 일정 및 결과</a></div></footer>
+  <dialog id="confirmDialog" class="confirm-dialog" aria-labelledby="confirmTitle" aria-describedby="confirmMessage">
+    <form method="dialog"><h2 id="confirmTitle">확인해 주세요</h2><p id="confirmMessage"></p><div class="dialog-actions"><button class="outline-button" value="cancel" autofocus>취소</button><button class="solid-button" id="confirmAction" value="confirm">확인</button></div></form>
+  </dialog>
+</body>
+</html>

@@ -7,98 +7,94 @@ const A = require("../assets/match-analysis.js");
 const E = require("../assets/match-editorial.js");
 const load = file => JSON.parse(fs.readFileSync(path.join(__dirname, "../data/", file + ".json"), "utf8"));
 const context = A.createContext({ calendar: load("match-calendar"), results: load("team-results"), profiles: load("team-profiles"), standings: load("league-data"), uefa: load("uefa-standings") });
-const originalNow = Date.now;
-const fixedNow = () => Date.parse("2026-11-23T15:00:00+09:00");
-function analysis(home, date, options = {}) {
+function analyze(home, date, options = {}) {
   const fixture = context.matches.find(row => row.home === home && row.date === date);
   assert.ok(fixture);
-  Date.now = fixedNow;
+  const originalNow = Date.now;
+  Date.now = () => Date.parse("2026-11-23T15:00:00+09:00");
   try { return A.analyze(context, fixture, options); } finally { Date.now = originalNow; }
 }
-const prose = article => [article.headline].concat(article.deck, article.verdict.paragraphs, article.sections.flatMap(section => section.paragraphs)).join("\n");
+const prose = article => article.sentences.join(" ");
 
-test("Monza article explains the specific form/model disagreement and scoring concentration", () => {
-  const a = analysis("Monza", "2026-11-24"), article = E.build(a), text = prose(article);
-  assert.ok(text.length >= 1800 && text.length <= 3200, text.length + " characters");
-  assert.equal(article.sections.length, 6);
-  assert.match(text, /최근 4경기 연속/);
-  assert.match(text, /3경기는 한 골 차 패배/);
-  assert.match(text, /전체 8골 중 50\.0%/);
-  assert.match(text, /합계 4득점·10실점/);
+test("Monza report has a compact evidence-to-forecast flow without calculation chatter", () => {
+  const report = E.build(analyze("Monza", "2026-11-24"), { profiles: context.profiles });
+  const text = prose(report);
+  assert.ok(report.sentences.length >= 5 && report.sentences.length <= 10);
+  assert.ok(report.paragraphs.length <= 3);
+  assert.ok(text.length < 900);
+  assert.equal(report.forecast.direction, "close");
+  assert.equal(report.forecast.label, "접전 예상");
+  assert.match(text, /최근 4경기 연속 패배/);
+  assert.match(text, /8득점 중 4골이 칼리아리 칼초전 4–0/);
   assert.match(text, /3경기 모두 두 골씩/);
-  assert.match(text, /1\.8골과 피오렌티나의 원정 평균 실점 2\.4골/);
-  assert.match(text, /기준값은 2\.10/);
-  assert.match(text, /원정 기준값 1\.90/);
-  assert.match(text, /홈 약 43\.5%, 무승부 약 20\.6%, 원정 약 35\.8%/);
-  assert.match(article.sections.find(section => section.id === "venue-story").paragraphs.join(" "), /홈팀 3\/5회, 원정팀 4\/5회/);
-  assert.match(text, /2–1도 7\.7%/);
-  assert.match(text, /앞선 5경기에서 최근 5경기로/);
-  assert.match(text, /평균 득점은 1\.4골에서 2골/);
-  assert.equal(new Set(article.sections.map(section => section.id)).size, article.sections.length);
-  assert.ok(article.sections.every(section => /^[a-z][a-z-]+$/.test(section.id)));
-  assert.doesNotMatch(text, /(?:undefined|NaN|Infinity|2\.10는|1\.8와)/);
+  assert.match(text, /양 팀의 득점이 이어지고 실점도 반복된다면/);
+  assert.match(text, /접전으로 예상/);
+  assert.doesNotMatch(text, /포아송|기준값|계산|xG|출처|방법론|검증|보정|모델|NaN|undefined|Infinity/);
 });
 
-test("10-match view keeps the actual five-game venue sample and uses disjoint trend windows", () => {
-  const a = analysis("Monza", "2026-11-24", { limit: 10 }), article = E.build(a), text = prose(article);
-  assert.match(text, /10경기 2승 1무 7패/);
-  assert.match(text, /홈 5경기와 원정 5경기/);
-  assert.match(text, /최근 10경기를 겹치지 않는 두 구간/);
-  assert.match(text, /앞선 5경기에서 최근 5경기로 경기당 승점은 0\.8점에서 0\.6점/);
-  assert.match(text, /홈 약 43\.5%, 무승부 약 20\.6%, 원정 약 35\.8%/);
-  assert.doesNotMatch(text, /홈 10경기와 원정 10경기/);
+test("the ten-match control updates the narrative while retaining actual venue counts", () => {
+  const report = E.build(analyze("Monza", "2026-11-24", { limit: 10 }));
+  assert.match(prose(report), /최근 10경기 2승 1무 7패/);
+  assert.match(prose(report), /홈 5경기는/);
+  assert.match(prose(report), /원정 5경기는/);
+  assert.doesNotMatch(prose(report), /홈 10경기는|원정 10경기는/);
+  assert.match(report.sampleLabel, /홈 10경기 · 원정 10경기/);
 });
 
-test("optional profiles localize opponents while prose dates stay concise and evidence retains precision", () => {
-  const a = analysis("Monza", "2026-11-24"), before = JSON.stringify(a);
-  const article = E.build(a, { profiles: context.profiles });
-  const home = article.sections.find(section => section.id === "home-story");
-  assert.match(home.paragraphs.join(" "), /11월 8일 아탈란타 BC전/);
-  assert.match(home.paragraphs.join(" "), /10월 20일 칼리아리 칼초전/);
-  assert.ok(home.evidence.some(item => item.label.includes("2026-11-08 (한국시간)")));
-  assert.equal(JSON.stringify(a), before, "editorial decoration must not mutate analysis records");
+test("completed fixtures are reviews and their final scores cannot affect the pre-match report", () => {
+  const a = analyze("R. Racing Club", "2026-11-23"), report = E.build(a, { profiles: context.profiles });
+  const changedScore = { ...a, fixture: { ...a.fixture, score: [99, 98] } };
+  const alternate = E.build(changedScore, { profiles: context.profiles });
+  assert.equal(report.title, "경기 전 흐름 리뷰");
+  assert.match(report.sampleLabel, /경기 전 기록 리뷰/);
+  assert.ok(report.sentences.length >= 5 && report.sentences.length <= 10);
+  assert.deepEqual(alternate.sentences, report.sentences);
+  assert.deepEqual(alternate.forecast, report.forecast);
+  assert.doesNotMatch(prose(report), /99|98|이미 예측|예상됩니다|승리가 확실/);
+  assert.ok(report.evidence.every(item => item.id !== a.id));
 });
 
-test("completed Racing article distinguishes retrospective analysis from the final score", () => {
-  const a = analysis("R. Racing Club", "2026-11-23"), article = E.build(a), text = prose(article);
-  assert.match(article.deck.join(" "), /이미 종료/);
-  assert.match(article.deck.join(" "), /당시 발행한 예측문을 뜻하지는/);
-  assert.match(text, /라싱 산탄데르는 5경기 2승 1무 2패/);
-  assert.match(article.verdict.paragraphs.join(" "), /확정 결과는 3–2, 라싱 산탄데르의 승리/);
-  assert.match(article.sections.find(section => section.id === "scenario-story").paragraphs[0], /세울 수 있었던 조건부 시나리오/);
-  assert.ok(!article.sections.flatMap(section => section.evidence).some(item => item.url === A.matchUrl(a.fixture)));
-  assert.ok(!article.sections.flatMap(section => section.paragraphs).some(p => /현재 .*순위표/.test(p)), "current standings must not become a past prematch premise");
+test("empty early-season histories stay honest and do not force a five-sentence prediction", () => {
+  const a = A.analyze(context, context.matches[0]), report = E.build(a);
+  assert.equal(a.home.records.length, 0); assert.equal(a.away.records.length, 0);
+  assert.equal(report.forecast.direction, "insufficient");
+  assert.equal(report.forecast.label, "판단 유보");
+  assert.ok(report.sentences.length < 5);
+  assert.doesNotMatch(prose(report), /평균 0|접전 예상|확인된 개별 결과/);
+  assert.match(report.sampleLabel, /홈 0경기 · 원정 0경기/);
 });
 
-test("empty early-season samples stay short and do not invent strengths or a model", () => {
-  const fixture = context.matches[0];
-  Date.now = fixedNow;
-  let a;
-  try { a = A.analyze(context, fixture); } finally { Date.now = originalNow; }
-  const article = E.build(a), text = prose(article);
-  assert.equal(a.home.records.length, 0);
-  assert.equal(a.away.records.length, 0);
-  assert.ok(text.length < 1000);
-  assert.match(text, /홈팀 0경기, 원정팀 0경기/);
-  assert.equal(article.sections.some(section => section.id === "reference-story" || section.id === "scenario-story"), false);
-  assert.doesNotMatch(text, /평균 0득점|평균 0실점|홈 0%/);
-});
-
-test("UEFA mixed records retain source-date labels and correct team-perspective scores", () => {
+test("a short report retains same-competition context and prior evidence for mixed UEFA histories", () => {
   const fixture = context.matches.find(row => row.league === "ucl" && row.home === "Club Brugge" && row.date > "2026-11-23");
-  assert.ok(fixture);
-  Date.now = fixedNow;
-  let a;
-  try { a = A.analyze(context, fixture, { scope: "all", limit: 5 }); } finally { Date.now = originalNow; }
-  const article = E.build(a), items = article.sections.flatMap(section => section.evidence);
-  assert.ok(items.some(item => item.label.includes("원문 날짜")));
-  const prior = a.home.allRecords.concat(a.away.allRecords, a.h2h);
-  for (const item of items) {
-    if (!item.url || !item.url.startsWith("match.html?")) continue;
-    const row = prior.find(row => row.url === item.url);
-    assert.ok(row, item.url);
-    assert.ok(item.detail.includes(row.goalsFor + "–" + row.goalsAgainst));
-    assert.notEqual(row.id, a.id);
-  }
-  assert.doesNotMatch(prose(article), /(?:undefined|NaN|Infinity)/);
+  const a = analyze(fixture.home, fixture.date), before = JSON.stringify(a), report = E.build(a, { profiles: context.profiles });
+  assert.ok(report.sentences.length <= 10);
+  assert.match(prose(report), /챔피언스리그 최근 성적/);
+  const prior = a.home.allRecords.concat(a.away.allRecords);
+  assert.ok(report.evidence.every(item => prior.some(row => row.id === item.id && row.upperBoundMs < a.cutoffMs)));
+  assert.equal(JSON.stringify(a), before);
+});
+
+function synthetic(homeScores, awayScores) {
+  const make = (scores, home) => scores.map((score, i) => ({ id: (home ? "h" : "a") + i, goalsFor: score[0], goalsAgainst: score[1], result: score[0] > score[1] ? "W" : score[0] === score[1] ? "D" : "L", isHome: home, competition: "epl", competitionLabel: "프리미어리그", opponent: "Opponent", date: "2026-11-01" }));
+  const hr = make(homeScores, true), ar = make(awayScores, false);
+  return { fixture: { league: "epl", status: "scheduled" }, limit: 5, scope: "all", home: { name: "Home", records: hr, allRecords: hr, venue: { records: hr } }, away: { name: "Away", records: ar, allRecords: ar, venue: { records: ar } }, model: { available: false }, coverage: { scopeLabel: "프리미어리그" } };
+}
+
+test("forecast direction requires supporting records and can distinguish home, away, draw and conflict", () => {
+  const wins = [[2, 0], [3, 1], [2, 0], [1, 0], [2, 1]], losses = [[0, 2], [1, 3], [0, 1], [1, 2], [0, 2]], draws = [[0, 0], [1, 1], [1, 1], [0, 0], [1, 1]];
+  assert.equal(E.build(synthetic(wins, losses)).forecast.direction, "home");
+  assert.equal(E.build(synthetic(losses, wins)).forecast.direction, "away");
+  assert.equal(E.build(synthetic(draws, draws)).forecast.direction, "draw");
+  const conflicting = synthetic(wins, losses);
+  conflicting.model = { available: true, homeLambda: 0.5, awayLambda: 2.5 };
+  assert.equal(E.build(conflicting).forecast.direction, "close");
+});
+
+test("the match page exposes one compact report and no methodology or duplicate long report", () => {
+  const html = fs.readFileSync(path.join(__dirname, "../match.html"), "utf8");
+  const js = fs.readFileSync(path.join(__dirname, "../assets/match-page.js"), "utf8");
+  assert.equal((html.match(/id="reportBody"/g) || []).length, 1);
+  assert.doesNotMatch(html, /DATA &amp; METHODOLOGY|분석 기준과 출처|id="sources"|href="#sources"|reportOutline|reportCoverage|modelPanel|id="report"/);
+  assert.doesNotMatch(js, /renderSources|renderModel|reportOutline|modelMethod|\$\("menuToggle"\)\.addEventListener/);
+  for (const section of ["comparison", "recent", "headtohead", "standings"]) assert.ok(html.includes('id="' + section + '"'));
 });

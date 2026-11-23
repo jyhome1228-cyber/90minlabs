@@ -70,16 +70,36 @@ section.block{padding:89px 0}
 .league-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .league-tile{min-height:112px;justify-content:center}
 @media(max-width:900px){.league-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Small entry points to personal weekly predictions. */
+.weekly-picks-link{display:inline-block;margin-left:14px;color:#242424;font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.weekly-picks-link:hover{color:#666}
+@media(max-width:650px){.weekly-picks-link{display:block;width:fit-content;margin:9px 0 0;font-size:12px}}
 </style>
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-analysis">
+<link rel="stylesheet" href="assets/site-shell.css?v=20261123-mypage">
+<script src="assets/site-shell.js?v=20261123-mypage" defer></script>
 </head><body>
-<header><div class="wrap head"><a href="#matches" class="logo">90MIN LABS.</a><button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
-<nav class="nav" id="nav" aria-label="사이트 메뉴"><a href="#predictions" data-page="predictions">PREDICTIONS</a><a href="#matches" data-page="matches">MATCHES</a><a href="leagues.html">LEAGUES</a><a href="#columns" data-page="columns">COLUMNS</a><a class="write" href="#write" data-page="write">칼럼 작성</a></nav></div></header>
+<header class="site-header" data-site-header data-active="auto" data-menu-open="false">
+  <div class="shell-inner">
+    <a class="shell-brand" href="index.html#matches">90MIN LABS.</a>
+    <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
+    <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
+      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
+      <a class="shell-nav-link is-active" data-nav-key="matches" href="index.html#matches" aria-current="page">MATCHES</a>
+      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">LEAGUES</a>
+      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">COLUMNS</a>
+      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">MY PAGE</a>
+      <a class="shell-nav-link shell-nav-write" data-nav-key="write" href="index.html#write">칼럼 작성</a>
+    </nav>
+  </div>
+</header>
+<noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
 <main class="wrap">
 <div id="predictions" class="view hidden page">
   <div class="eyebrow">MATCH PREVIEW</div>
   <h1>경기 전망</h1>
-  <p class="sub">앞으로 14일의 경기를 살펴보세요. 각 경기의 팀별 흐름, 홈·원정 차이와 경기 시나리오를 심층 해설과 기록으로 함께 확인할 수 있습니다.</p>
+  <p class="sub">앞으로 14일의 경기를 살펴보세요. 각 경기의 팀별 흐름, 홈·원정 차이와 예상 경기 흐름을 짧은 리포트와 기록으로 확인할 수 있습니다. <a class="weekly-picks-link" href="mypage.html">주간 예측 만들기</a></p>
   <div class="filters" id="predictionFilters" role="group" aria-label="경기 전망 대회 선택">
     <button class="filter active" type="button" data-comp="all" aria-pressed="true">전체</button>
     <button class="filter" type="button" data-comp="epl" aria-pressed="false">프리미어리그</button>
@@ -99,7 +119,7 @@ section.block{padding:89px 0}
 <div id="matches" class="view page matches-page">
   <div class="eyebrow">MATCH CENTRE</div>
   <h1 class="match-page-title">경기 일정과 분석</h1>
-  <p class="match-intro">9개 대회의 일정과 결과, 경기별 심층 해설과 전력 비교를 한곳에서 확인하세요. 모든 경기 시간은 한국시간 기준입니다.</p>
+  <p class="match-intro">9개 대회의 일정과 결과, 경기별 전망 리포트와 전력 비교를 한곳에서 확인하세요. 모든 경기 시간은 한국시간 기준입니다. <a class="weekly-picks-link" href="mypage.html">주간 예측 만들기</a></p>
   <div class="match-today-bar" aria-label="오늘 날짜">
     <div class="match-today-text">
       <span>오늘</span>
@@ -145,12 +165,10 @@ function route(){
  const id=location.hash.slice(1),page=pages.includes(id)?id:"matches";
  if(id==="home")history.replaceState(null,"",location.pathname+location.search+"#matches");
  document.querySelectorAll(".view").forEach(el=>el.classList.toggle("hidden",el.id!==page));
- document.querySelectorAll("[data-page]").forEach(el=>{const current=el.dataset.page===page;el.classList.toggle("active",current);if(current)el.setAttribute("aria-current","page");else el.removeAttribute("aria-current")});
- document.querySelector("#nav").classList.remove("open");document.querySelector("#menuBtn").setAttribute("aria-expanded","false");
+ if(window.SiteShell)window.SiteShell.refresh();
  window.scrollTo(0,0);document.title=({predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
 }
 window.addEventListener("hashchange",route);route();
-document.querySelector("#menuBtn").addEventListener("click",()=>{const n=document.querySelector("#nav");n.classList.toggle("open");document.querySelector("#menuBtn").setAttribute("aria-expanded",String(n.classList.contains("open")))});
 const fields=["category","author","draftTitle","draftBody"];function formText(){return "90MIN LABS 칼럼 초안\n카테고리: "+document.querySelector("#category").value+"\n필명: "+document.querySelector("#author").value+"\n제목: "+document.querySelector("#draftTitle").value+"\n\n"+document.querySelector("#draftBody").value}
 document.querySelector("#previewBtn").addEventListener("click",()=>{const t=document.querySelector("#draftPreview");t.classList.remove("hidden");t.textContent=formText();t.scrollIntoView({behavior:"smooth",block:"nearest"})});
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
