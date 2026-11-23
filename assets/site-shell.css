@@ -1,11 +1,12 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 /* Shared header for every 90MIN LABS page. Load after page-specific styles. */
 :root{--site-header-height:80px;--header-height:var(--site-header-height)}
 .site-header[data-site-header]{position:sticky;top:0;z-index:80;width:100%;height:var(--site-header-height);margin:0;padding:0;background:#ffffffed;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:0;border-bottom:1px solid #e6e6e6;color:#191919;font-family:"DM Sans","Noto Sans KR",sans-serif;line-height:1.5}
 .site-header[data-site-header] *{box-sizing:border-box}
 .site-header[data-site-header] .shell-inner{width:min(100% - 88px,1440px);height:100%;margin:0 auto;padding:0;display:flex;align-items:center;justify-content:space-between;gap:32px}
-.site-header[data-site-header] .shell-brand{display:inline-flex;align-items:center;flex-shrink:0;margin:0;padding:0;color:#191919;text-decoration:none;font-size:23px;line-height:1;font-weight:800;letter-spacing:-1.1px;white-space:nowrap}
+.site-header[data-site-header] .shell-brand{display:inline-flex;align-items:center;flex-shrink:0;margin:0;padding:0;color:#191919;text-decoration:none;font-size:24.333px;line-height:1;font-weight:800;letter-spacing:-1.1px;white-space:nowrap}
 .site-header[data-site-header] .shell-navigation{position:static;display:flex;align-items:center;justify-content:flex-end;gap:27px;width:auto;height:100%;margin:0 0 0 auto;padding:0;background:transparent;border:0;overflow:visible}
-.site-header[data-site-header] .shell-nav-link{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin:0;padding:10px 0;border:0;border-radius:0;background:transparent;color:#707070;text-decoration:none;font-size:12px;line-height:1.5;font-weight:700;letter-spacing:.01em;white-space:nowrap}
+.site-header[data-site-header] .shell-nav-link{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin:0;padding:10px 0;border:0;border-radius:0;background:transparent;color:#707070;text-decoration:none;font-size:13.333px;line-height:1.5;font-weight:700;letter-spacing:.01em;white-space:nowrap}
 .site-header[data-site-header] .shell-nav-link::after{content:"";position:absolute;right:0;bottom:4px;left:0;height:2px;background:transparent}
 .site-header[data-site-header] .shell-nav-link:hover,.site-header[data-site-header] .shell-nav-link.is-active{color:#191919}
 .site-header[data-site-header] .shell-nav-link.is-active::after{background:#191919}
@@ -21,21 +22,21 @@
 @media(max-width:900px){
  :root{--site-header-height:68px;--header-height:var(--site-header-height)}
  .site-header[data-site-header] .shell-inner{width:calc(100% - 44px);gap:20px}
- .site-header[data-site-header] .shell-brand{font-size:21px}
+ .site-header[data-site-header] .shell-brand{font-size:22.333px}
  .site-header[data-site-header] .shell-menu-button{display:inline-flex;margin-left:auto}
  .site-header[data-site-header] .shell-navigation{position:absolute;top:100%;right:0;left:0;display:none;align-items:stretch;justify-content:flex-start;flex-direction:column;gap:0;width:100%;height:auto;max-height:calc(100dvh - var(--site-header-height));margin:0;padding:12px 22px 20px;border-bottom:1px solid #e6e6e6;background:#fff;overflow-y:auto;overscroll-behavior:contain}
  .site-header[data-site-header][data-menu-open="true"] .shell-navigation{display:flex}
- .site-header[data-site-header] .shell-nav-link{justify-content:flex-start;min-height:46px;padding:12px 0;font-size:12px}
+ .site-header[data-site-header] .shell-nav-link{justify-content:flex-start;min-height:46px;padding:12px 0;font-size:13.333px}
  .site-header[data-site-header] .shell-nav-link::after{bottom:8px;right:auto;width:24px;height:1px}
  .site-header[data-site-header] .shell-nav-write{align-self:flex-start;min-height:40px;margin-top:10px;padding:9px 16px}
 }
-@media(max-width:650px){.site-header[data-site-header] .shell-inner{width:calc(100% - 36px)}.site-header[data-site-header] .shell-brand{font-size:20px}.site-header[data-site-header] .shell-navigation{padding-right:18px;padding-left:18px}}
+@media(max-width:650px){.site-header[data-site-header] .shell-inner{width:calc(100% - 36px)}.site-header[data-site-header] .shell-brand{font-size:21.333px}.site-header[data-site-header] .shell-navigation{padding-right:18px;padding-left:18px}}
 @media(prefers-reduced-motion:reduce){.site-header[data-site-header] .shell-menu-button span{transition:none}}
 
 
 /* Language controls share the same placement on every page. */
 .site-header[data-site-header] .shell-language{display:inline-flex;align-items:center;flex-shrink:0;margin-left:3px;padding:3px;border:1px solid #dedede;border-radius:5px;background:#fff;gap:2px}
-.site-header[data-site-header] .shell-language button{font:600 10px/1.4 "DM Sans",sans-serif;color:#777;min-width:33px;padding:6px 7px;border:0;border-radius:3px;background:transparent;cursor:pointer}
+.site-header[data-site-header] .shell-language button{font:600 11.333px/1.4 "DM Sans",sans-serif;color:#777;min-width:33px;padding:6px 7px;border:0;border-radius:3px;background:transparent;cursor:pointer}
 .site-header[data-site-header] .shell-language button.is-selected{background:#242424;color:white}
 .site-header[data-site-header] .shell-language button:focus-visible{outline:2px solid #222;outline-offset:2px}
 @media(max-width:1100px){.site-header[data-site-header] .shell-navigation{gap:15px}.site-header[data-site-header] .shell-inner{gap:14px}}
@@ -43,3 +44,16 @@
 
 /* Avoid repeating an English club subtitle below the localized club name. */
 html[lang="ko"] .subname,html[lang="en"] .subname{display:none}
+
+/* Pretendard throughout the site with compact 2% tracking. */
+html,body,body *,button,input,select,textarea{font-family:"Pretendard",sans-serif!important;letter-spacing:-0.02em}
+/* Saved prediction and editing slip team crests */
+.saved-pick-clubs{display:flex;align-items:center;gap:7px;min-width:0}
+.saved-pick-clubs .saved-pick-name{min-width:0;overflow-wrap:anywhere}
+.saved-pick-clubs .pick-badge{width:22px;height:22px;min-width:22px;flex-shrink:0}
+.saved-pick-clubs .pick-badge img{width:20px;height:20px;max-width:100%;max-height:100%;object-fit:contain}
+.selected-pick-clubs{display:flex;align-items:center;gap:8px;min-width:0;flex-wrap:wrap;margin:8px 0 12px;font-weight:600}
+.selected-pick-clubs .pick-badge{width:28px;height:28px;min-width:28px;flex-shrink:0}
+.selected-pick-clubs .pick-badge img{max-width:100%;max-height:100%;object-fit:contain}
+.selected-pick-clubs .pick-versus{font-size:11.333px;color:#888;font-weight:400}
+@media(max-width:650px){.saved-pick-clubs{gap:4px}.saved-pick-clubs .pick-badge{width:19px;height:19px;min-width:19px}.saved-pick-clubs .pick-badge img{width:18px;height:18px}}
