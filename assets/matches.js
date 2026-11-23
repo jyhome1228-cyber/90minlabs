@@ -21,6 +21,15 @@ function kstNowClock(){
  const parts=new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Seoul",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
  return parts.find(p=>p.type==="hour")?.value+":"+parts.find(p=>p.type==="minute")?.value;
 }
+let lastClockDay=null;
+function updateCurrentTime(){
+ const today=kstToday();
+ const dateNode=$("matchTodayDate"),clockNode=$("matchLiveClock");
+ if(dateNode)dateNode.textContent=new Intl.DateTimeFormat("ko-KR",{timeZone:"UTC",year:"numeric",month:"long",day:"numeric",weekday:"long"}).format(dateObj(today));
+ if(clockNode)clockNode.textContent="현재 "+kstNowClock()+" · 한국시간";
+ if(lastClockDay&&lastClockDay!==today&&state.selectedDate===lastClockDay){state.selectedDate=today;renderList()}
+ lastClockDay=today;
+}
 function dateLabel(iso){return new Intl.DateTimeFormat("ko-KR",{timeZone:"UTC",month:"long",day:"numeric",weekday:"long"}).format(dateObj(iso));}
 function shortDate(iso){const arr=iso.split("-");return Number(arr[1])+"."+Number(arr[2]);}
 function routeFor(team,lg){return "team.html?league="+encodeURIComponent(lg)+"&team="+encodeURIComponent(team);}
@@ -139,7 +148,9 @@ function renderList(){
 async function init(){
  const today=kstToday();
  state.selectedDate=today;
- $("matchTodayDate").textContent=new Intl.DateTimeFormat("ko-KR",{timeZone:"UTC",year:"numeric",month:"long",day:"numeric",weekday:"long"}).format(dateObj(today));
+ updateCurrentTime();
+ setInterval(updateCurrentTime,30000);
+ document.addEventListener("visibilitychange",()=>{if(!document.hidden)updateCurrentTime()});
  $("matchPrevWeek").addEventListener("click",()=>{state.selectedDate=shift(state.selectedDate,state.viewMode==="week"?-7:-1);renderList()});
  $("matchNextWeek").addEventListener("click",()=>{state.selectedDate=shift(state.selectedDate,state.viewMode==="week"?7:1);renderList()});
  $("matchGoToday").addEventListener("click",()=>{state.selectedDate=kstToday();state.viewMode="day";renderList()});
