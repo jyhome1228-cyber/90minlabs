@@ -54,7 +54,7 @@
 
   function refresh() {
     let active = header.dataset.active;
-    if (isIndex) active = hashPages.includes(location.hash.slice(1)) ? location.hash.slice(1) : "";
+    if (isIndex) { const page = location.hash.slice(1); active = page === "write" ? "columns" : (hashPages.includes(page) ? page : ""); }
     links.forEach(link => {
       const current = link.dataset.navKey === active;
       link.classList.toggle("is-active", current);
