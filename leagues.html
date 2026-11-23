@@ -207,7 +207,7 @@ const crestIds={"Arsenal":57,"Manchester City":65,"Manchester United":66,"Liverp
 function crest(name) {
  const slug=clubSlugs[name];
  const id=crestIds[name]||state.registry?.clubs?.[state.league+":"+name]?.crestId;
- const fallback='<span class="teamcode">'+esc(name.slice(0,3).toUpperCase())+'</span>';
+ const fallback='<span class="teamcode" data-crest-team="'+esc(name)+'">'+esc(name.slice(0,3).toUpperCase())+'</span>';
  if(!slug && !id)return fallback;
  const urls=[];
  if(id)urls.push('https://crests.football-data.org/'+id+'.png');
@@ -357,6 +357,11 @@ function render(){
  '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+scorerCell(r)+'</td><td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
  ).join("");
  area.innerHTML='<div class="tablebox"><table><thead><tr>'+head.map(h=>'<th scope="col">'+h+'</th>').join("")+'</tr></thead><tbody>'+body+'</tbody></table></div>';
+  area.querySelectorAll("[data-crest-team]").forEach(holder=>{
+    const name=holder.dataset.crestTeam;
+    const profile=state.registry?.clubs?.[state.league+":"+name]||null;
+    if(window.ClubLogos)ClubLogos.badge(holder,{name,searchName:profile?.searchName||name,wikiTitle:profile?.wikiEn||null,badgeUrl:profile?.badgeUrl||null,crestId:profile?.crestId||null});
+  });
 }
 document.querySelectorAll("[data-league]").forEach(b=>b.addEventListener("click",()=>{state.league=b.dataset.league;render()}));
 document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render()}));
