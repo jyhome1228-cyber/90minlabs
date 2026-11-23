@@ -121,3 +121,56 @@
  .outcome-prob-labels small{font-size:10px}
  .outcome-prob-note{font-size:11px}
 }
+
+
+/* 2026-11-24 — Make the full match report follow the same wide grid as comparisons.
+   Previous 1120px report, 1050px copy, and 910px probability cap caused a blank right side. */
+.overview-section .compact-report{
+  display:block;
+  width:100%;
+  max-width:none;
+  min-width:0;
+}
+.overview-section .outcome-probabilities{
+  width:100%;
+  max-width:none;
+  box-sizing:border-box;
+}
+.overview-section .outcome-prob-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(18px,3vw,48px);
+}
+.overview-section .report-forecast,
+.overview-section .report-conclusion-reason{
+  width:100%;
+  max-width:none;
+}
+.overview-section .compact-report-copy{
+  display:grid;
+  width:100%;
+  max-width:none;
+  min-width:0;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:clamp(26px,3.6vw,68px);
+  row-gap:14px;
+  align-items:start;
+}
+.overview-section .compact-report-copy p{
+  min-width:0;
+  margin:0;
+  overflow-wrap:break-word;
+  word-break:keep-all;
+}
+.overview-section .compact-report-copy p:only-child{
+  grid-column:1/-1;
+  max-width:100ch;
+}
+@media(max-width:1050px){
+  .overview-section .compact-report-copy{
+    grid-template-columns:minmax(0,1fr);
+  }
+}
+@media(max-width:650px){
+  .overview-section .outcome-prob-grid{gap:12px}
+  .overview-section .compact-report-copy{row-gap:12px}
+}
