@@ -12786,10 +12786,21 @@
       "team": "Celje",
       "league": "uel",
       "matchName": "Celje",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
         {
+          "date": "2026-11-08",
+          "home": "Radomlje",
+          "away": "Celje",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "15",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "competition": "UEL",
           "date": "2026-11-05",
           "home": "Sturm Graz",
           "away": "Celje",
@@ -12799,6 +12810,27 @@
           "provider": "fixturedl"
         },
         {
+          "date": "2026-11-01",
+          "home": "Celje",
+          "away": "Nafta",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "14",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-28",
+          "home": "O. Ljubljana",
+          "away": "Celje",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "competition": "UEL",
           "date": "2026-10-22",
           "home": "Celje",
           "away": "Salzburg",
@@ -12808,6 +12840,17 @@
           "provider": "fixturedl"
         },
         {
+          "date": "2026-10-18",
+          "home": "Maribor",
+          "away": "Celje",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "competition": "UEL",
           "date": "2026-10-15",
           "home": "Celje",
           "away": "Omonia",
@@ -12817,6 +12860,27 @@
           "provider": "fixturedl"
         },
         {
+          "date": "2026-10-10",
+          "home": "Celje",
+          "away": "Aluminij",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Mura",
+          "away": "Celje",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "competition": "UEL",
           "date": "2026-09-16",
           "home": "Leverkusen",
           "away": "Celje",
@@ -12824,6 +12888,16 @@
           "awayScore": 0,
           "round": "1",
           "provider": "fixturedl"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/SVN_1_prva-liga/results_2627.csv"
         }
       ]
     },
@@ -15839,9 +15913,10 @@
       "league": "uecl",
       "matchName": "Kairat Almaty",
       "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
         {
+          "competition": "UECL",
           "date": "2026-11-05",
           "home": "Atalanta",
           "away": "Kairat Almaty",
@@ -15851,6 +15926,27 @@
           "provider": "fixturedl"
         },
         {
+          "date": "2026-10-31",
+          "home": "Kairat Almaty",
+          "away": "Altai",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "30",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Aktobe",
+          "away": "Kairat Almaty",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "29",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "competition": "UECL",
           "date": "2026-10-22",
           "home": "Kairat Almaty",
           "away": "Panathinaikos",
@@ -15860,6 +15956,17 @@
           "provider": "fixturedl"
         },
         {
+          "date": "2026-10-18",
+          "home": "Kairat Almaty",
+          "away": "Ertis Pavlodar",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "23",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "competition": "UECL",
           "date": "2026-10-15",
           "home": "Riga",
           "away": "Kairat Almaty",
@@ -15867,6 +15974,56 @@
           "awayScore": 1,
           "round": "1",
           "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Kairat Almaty",
+          "away": "Zhetysu Taldykorgan",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "28",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "FC Astana",
+          "away": "Kairat Almaty",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "27",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Kairat Almaty",
+          "away": "Tobol",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "26",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-09",
+          "home": "Kairat Almaty",
+          "away": "Zhenis",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "21",
+          "provider": "soccerway",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/KAZ_1_premier-league/results_2627.csv"
         }
       ]
     },
