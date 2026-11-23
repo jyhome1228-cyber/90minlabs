@@ -78,23 +78,12 @@
     return request;
   }
   function crest(team) {
-    const holder = el("span", "club-badge");
-    const fallback = el("span", "badge-fallback", initials(team.name));
-    fallback.setAttribute("aria-hidden", "true");
-    holder.append(fallback);
-    const image = el("img"); image.alt = ""; image.width = 64; image.height = 64;
-    let attemptedFallback = false;
-    function setImage(url) {
-      if (!url) return;
-      image.onload = () => { if (holder.isConnected) holder.replaceChildren(image); };
-      image.onerror = async () => {
-        holder.replaceChildren(fallback);
-        if (!attemptedFallback) { attemptedFallback = true; setImage(await alternativeCrest(team)); }
-      };
-      image.src = url;
-    }
-    if (team.crestId) setImage("https://crests.football-data.org/" + encodeURIComponent(team.crestId) + ".png");
-    else { attemptedFallback = true; alternativeCrest(team).then(setImage); }
+    const holder=el("span","club-badge",initials(team.name));
+    holder.setAttribute("aria-hidden","true");
+    const profile=team.profile||{};
+    if(window.ClubLogos)ClubLogos.badge(holder,{name:team.name,
+      searchName:profile.searchName||team.name,wikiTitle:profile.wikiEn||null,
+      badgeUrl:profile.badgeUrl||team.badgeUrl,crestId:team.crestId||profile.crestId});
     return holder;
   }
 
