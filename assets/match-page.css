@@ -55,3 +55,32 @@
 .loading-state .loading-line{display:none}
 @keyframes matchSpin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.loading-spinner{animation:none;border-color:#777}}
+
+
+/* W/D/L semantic colours: wins green, draws neutral grey, losses blue. */
+:root{--result-win:#16784f;--result-win-tint:#eff8f2;--result-draw:#65717d;--result-draw-tint:#eef0f2;--result-loss:#2f66ab;--result-loss-tint:#eff5fc}
+.form-chip{font-weight:700;border-radius:2px;transition:background-color .15s}
+.form-chip.W{background:var(--result-win);border-color:var(--result-win);color:#fff}
+.form-chip.D{background:var(--result-draw-tint);border-color:#cbd0d5;color:#424b55}
+.form-chip.L{background:var(--result-loss);border-color:var(--result-loss);color:#fff}
+.form-chip.W,.form-chip.L{box-shadow:0 0 0 1px transparent}
+.venue-form-breakdown{display:flex;align-items:center;gap:7px;flex-wrap:wrap;line-height:1.5}
+.venue-form-breakdown > span{display:inline-block;font-size:15px;font-weight:700;white-space:nowrap}
+.venue-form-win{color:var(--result-win)}
+.venue-form-draw{color:var(--result-draw)}
+.venue-form-loss{color:var(--result-loss)}
+.venue-metrics dd.small-stat{padding-top:5px}
+.comparison-table .compare-bar-track{background:#e9edf1;height:5px;border-radius:0}
+.comparison-table .compare-bar{height:5px;background:#949ca6;transition:width .2s}
+.comparison-table td.is-stronger .compare-number{color:var(--result-win);font-weight:700}
+.comparison-table td.is-stronger .compare-bar{background:var(--result-win)}
+.comparison-table td.is-weaker .compare-number{color:var(--result-loss);font-weight:550}
+.comparison-table td.is-weaker .compare-bar{background:#91aacf}
+.comparison-table td:not(.is-stronger):not(.is-weaker) .compare-bar{background:#9da5b0}
+.comparison-table td.is-stronger,.comparison-table td.is-weaker{font-variant-numeric:tabular-nums}
+@media(max-width:650px){
+ .venue-form-breakdown{gap:6px}
+ .venue-form-breakdown > span{font-size:14px}
+ .comparison-table td.is-stronger .compare-number,
+ .comparison-table td.is-weaker .compare-number{font-size:inherit}
+}
