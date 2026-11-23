@@ -77,14 +77,14 @@ section.block{padding:89px 0}
 <link rel="stylesheet" href="./assets/home.css?v=20261123-today1">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-type1pt">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
-<script src="assets/site-shell.js?v=20261123-mypage" defer></script>
+<script src="assets/site-shell.js?v=20261123-today" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
 <script src="assets/site-language.js?v=20261123-i18n-final" defer></script>
 </head><body>
 <header class="site-header" data-site-header data-active="auto" data-menu-open="false">
   <div class="shell-inner">
-    <a class="shell-brand" href="index.html#matches">90MIN LABS.</a>
+    <a class="shell-brand" href="index.html">90MIN LABS.</a>
     <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
     <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
       <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
@@ -204,6 +204,6 @@ document.querySelector("#previewBtn").addEventListener("click",()=>{const t=docu
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
 <script src="./assets/match-analysis.js?v=20261123-analysis" defer></script>
-<script src="./assets/home.js?v=20261123-today1" defer></script>
+<script src="./assets/home.js?v=20261123-today2" defer></script>
 <script src="./assets/matches.js?v=20261123-fast1" defer></script>
 </body></html>
