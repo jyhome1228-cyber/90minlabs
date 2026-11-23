@@ -1734,9 +1734,9 @@
       "league": "ucl",
       "wikiKo": "FC 샤흐타르 도네츠크",
       "cityKo": "도네츠크",
-      "stadium": null,
+      "stadium": "Stamford Bridge (2026/27 챔피언스리그 홈경기)",
       "searchName": "Shakhtar Donetsk",
-      "historyKo": "Shakhtar은(는) 우크라이나 도네츠크을 연고로 하는 1936년에 출범한 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
+      "historyKo": "1936년 우크라이나 도네츠크에서 출범한 축구 구단이다. 2014년 이후 도네츠크에서 홈경기를 치르지 못하는 상황이 이어지고 있다. 2026/27 UEFA 챔피언스리그 리그 페이즈 홈경기는 첼시의 스탬퍼드 브리지에서 개최한다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
@@ -1747,7 +1747,11 @@
       "wikiEn": "FC Shakhtar Donetsk",
       "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Shakhtar%20Donetsk",
       "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Shakhtar%20Donetsk",
-      "profileCheckedAt": "2026-11-23"
+      "profileCheckedAt": "2026-11-23",
+      "stadiumSourceUrl": "https://shakhtar.com/en/news/2026/august/21_news/21_shakhtar_stamford_bridge/",
+      "manager": "Arda Turan",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.aa.com.tr/en/sports/ukrainian-champions-shakhtar-to-play-champions-league-home-games-at-stamford-bridge/4034346"
     },
     "ucl:Slavia Praha": {
       "name": "Slavia Praha",
@@ -2284,9 +2288,9 @@
       "league": "uel",
       "wikiKo": "Ararat-Armenia",
       "cityKo": "예레반",
-      "stadium": null,
+      "stadium": "Vazgen Sargsyan Republican Stadium (유로파리그 홈경기)",
       "searchName": "FC Ararat-Armenia",
-      "historyKo": "Ararat-Armenia은(는) 아르메니아 예레반을 연고로 하는 2017년에 출범한 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
+      "historyKo": "2017년 예레반에서 창단된 아르메니아의 축구 구단이다. 평소에는 Yerevan Football Academy Stadium을 이용하지만, 2026/27 UEFA 유로파리그 홈경기는 규정에 맞춰 Vazgen Sargsyan Republican Stadium에서 진행한다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
@@ -2297,7 +2301,8 @@
       "wikiEn": "FC Ararat-Armenia",
       "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Ararat-Armenia",
       "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Ararat-Armenia",
-      "profileCheckedAt": "2026-11-23"
+      "profileCheckedAt": "2026-11-23",
+      "stadiumSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FC_Ararat-Armenia_season"
     },
     "uecl:Lugano": {
       "name": "Lugano",
@@ -2770,9 +2775,9 @@
       "league": "uecl",
       "wikiKo": "CSKA Sofia",
       "cityKo": "소피아",
-      "stadium": null,
+      "stadium": "Bulgarian Army Stadium",
       "searchName": "CSKA Sofia",
-      "historyKo": "CSKA Sofia은(는) 불가리아 소피아을 연고로 하는 1948년에 출범한 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
+      "historyKo": "1948년 소피아를 기반으로 출발한 불가리아의 축구 구단이다. 국내 리그와 유럽 무대에서 오랜 우승 역사를 갖고 있다. 2026년 재개장한 Bulgarian Army Stadium이 홈구장이다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
@@ -2783,7 +2788,8 @@
       "wikiEn": "PFC CSKA Sofia",
       "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=PFC%20CSKA%20Sofia",
       "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=PFC%20CSKA%20Sofia",
-      "profileCheckedAt": "2026-11-23"
+      "profileCheckedAt": "2026-11-23",
+      "stadiumSourceUrl": "https://fakti.bg/en/sport/1094432-official-bfu-granted-cska-a-license-for-bulgarian-army"
     },
     "uecl:Iberia Tbilisi": {
       "name": "Iberia Tbilisi",
@@ -2890,9 +2896,9 @@
       "league": "uecl",
       "wikiKo": "Inter Escaldes",
       "cityKo": "에스칼데스엥고르다니",
-      "stadium": null,
+      "stadium": "Estadi Comunal d’Andorra la Vella (유럽대항전)",
       "searchName": "Inter Club d'Escaldes",
-      "historyKo": "Inter Escaldes은(는) 안도라 에스칼데스엥고르다니을 연고로 하는 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
+      "historyKo": "안도라 에스칼데스엥고르다니를 연고로 하는 구단이다. 안도라 국내대회와 유럽대항전에 참가하며, 2026/27 UEFA 컨퍼런스리그 홈경기는 안도라라베야의 Estadi Comunal 경기장에서 치른다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
@@ -2902,7 +2908,11 @@
       "wikiEn": "Inter Club d'Escaldes",
       "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Inter%20Club%20d'Escaldes",
       "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Inter%20Club%20d'Escaldes",
-      "profileCheckedAt": "2026-11-23"
+      "profileCheckedAt": "2026-11-23",
+      "stadiumSourceUrl": "https://interescaldes.com/entrades/",
+      "manager": "Felip Ortiz Martínez",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://streamradar.soccer/en/team/andorra/inter-club-descaldes/"
     },
     "uecl:Kauno Žalgiris": {
       "name": "Kauno Žalgiris",
