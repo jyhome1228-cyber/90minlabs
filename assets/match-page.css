@@ -20,3 +20,38 @@
 @media(max-width:850px){.overview-heading{align-items:flex-start;flex-direction:column;gap:18px}.report-sample{margin-top:-9px}.compact-report-copy p{font-size:14.333px;line-height:1.95}}
 @media(max-width:650px){.overview-section .overview-heading{display:flex;gap:17px}.overview-heading h2{font-size:20.333px}.report-sample{font-size:11.333px;margin:-9px 0 18px}.report-forecast{gap:13px;margin-bottom:14px}.report-forecast>span{font-size:11.333px}.report-forecast strong{font-size:16.333px}.compact-report-copy p{font-size:14.333px;line-height:1.95;letter-spacing:-.1px}.compact-report-copy p+p{margin-top:11px}}
 .match-pick-link{font-size:13.333px;font-weight:600;padding:8px 13px;border:1px solid #cfcfcf;margin-left:auto;white-space:nowrap}.match-pick-link:not([hidden])+.copy-link{margin-left:0}.match-pick-link:hover{border-color:#555}@media(max-width:650px){.page-tools:has(.match-pick-link:not([hidden])) .page-kicker{display:none}.match-pick-link{font-size:11.333px;padding:7px 9px}.page-tools{gap:13px}}
+
+
+/* Match hero: fixed crest slot prevents overlap and keeps labels in their own rows. */
+.scoreboard{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,200px) minmax(0,1fr);align-items:center;gap:32px;min-height:260px}
+.club-header{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;min-height:235px;gap:0;text-align:center}
+.club-header .club-link{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;width:100%;max-width:100%;gap:0;min-width:0;text-align:center}
+.club-header .club-badge{display:flex;align-items:center;justify-content:center;width:76px;height:76px;min-height:76px;flex:0 0 76px;overflow:hidden;position:relative;margin:0 0 18px}
+.club-header .club-badge img{display:block!important;position:static!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+.club-header .club-name{display:block;width:100%;max-width:300px;font-size:21px;line-height:1.48;letter-spacing:-.025em;font-weight:650;overflow-wrap:break-word;word-break:keep-all}
+.club-header .club-ko{display:none!important}
+.club-header .club-role{font-size:12px;line-height:1.45;font-weight:500;letter-spacing:0;color:#858585;margin-top:12px}
+.score-header{min-width:0;align-self:center}
+.score-value.kickoff{font-size:clamp(26px,3.2vw,43px);white-space:nowrap;letter-spacing:-.03em}
+.score-subtitle{font-size:12px;line-height:1.5;white-space:nowrap}
+@media(max-width:850px){
+ .scoreboard{grid-template-columns:minmax(0,1fr) minmax(100px,150px) minmax(0,1fr);gap:17px}
+ .club-header .club-badge{width:60px;height:60px;min-height:60px;flex-basis:60px;margin-bottom:14px}
+ .club-header .club-name{font-size:17px}
+}
+@media(max-width:650px){
+ .scoreboard{grid-template-columns:minmax(0,1fr) minmax(72px,94px) minmax(0,1fr);gap:8px;min-height:182px}
+ .club-header{min-height:180px}
+ .club-header .club-badge{width:48px;height:48px;min-height:48px;flex-basis:48px;margin-bottom:12px}
+ .club-header .club-name{font-size:clamp(12px,3.5vw,15px);line-height:1.45}
+ .club-header .club-role{font-size:10px;margin-top:8px}
+ .score-header .score-value.kickoff{font-size:clamp(21px,5.4vw,27px)}
+ .score-subtitle{font-size:10px;white-space:normal}
+}
+/* Visible loading state while the static data files are fetched. */
+.loading-state{min-height:380px;display:flex;flex-direction:column;gap:18px;align-items:center;justify-content:center}
+.loading-spinner{display:block;width:28px;height:28px;border:2px solid #e7e7e7;border-top-color:#252525;border-radius:50%;animation:matchSpin .8s linear infinite}
+.loading-state p{font-size:13px;line-height:1.65;color:#666;text-align:center}
+.loading-state .loading-line{display:none}
+@keyframes matchSpin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.loading-spinner{animation:none;border-color:#777}}
