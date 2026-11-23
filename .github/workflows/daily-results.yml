@@ -1,0 +1,49 @@
+name: Daily football results (09:00 KST)
+
+on:
+  schedule:
+    # Asia/Seoul is UTC+09:00 year-round. 00:00 UTC = 09:00 KST.
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-football-results
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Verify results and update site data
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check sync implementation
+        run: |
+          node --check scripts/daily-results.cjs
+          node --test tests/daily-results.test.cjs
+      - name: Fetch verified 2026/27 results and rebuild snapshots
+        run: node scripts/daily-results.cjs
+      - name: Commit only changed data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "90MIN LABS Results Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/match-calendar.json data/team-results.json data/league-data.json data/auto-sync-status.json
+          if git diff --cached --quiet; then
+            echo "No new verified results or status updates."
+            exit 0
+          fi
+          git commit -m "data: daily verified football scores [09:00 KST]"
+          git push origin HEAD:main
