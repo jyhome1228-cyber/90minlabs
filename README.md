@@ -110,3 +110,15 @@ MATCHES는 방문 시 한국시간(Asia/Seoul)의 **오늘 날짜**를 기본 �
 2026년 11월 23일에 [UEFA UCL](https://www.uefa.com/uefachampionsleague/standings/), [UEFA UEL](https://www.uefa.com/uefaeuropaleague/standings/), [UEFA UECL](https://www.uefa.com/uefaconferenceleague/standings/)의 108개 참가팀 기록을 각 대회 공개 경기 결과에 대조했고, 승무패·득실점·승점에 불일치를 발견하지 못했습니다. 순위는 공식 순서에 따르며 동률일 때 일반적인 골득실차만으로 정렬하지 않습니다.
 
 사이트는 독립적인 비상업적 정보 서비스입니다. 공식 인증이나 리그·구단의 후원을 뜻하지 않습니다. 로고의 권리는 원권리자에게 있으며, 외부 제공처에서 이미지를 찾지 못하면 약칭으로 대체합니다. 데이터는 자동 갱신되지 않고 마지막 저장본을 사용합니다.
+
+## 2026-11-23 UEFA 신규 70개 구단 상세정보 보완
+
+기존 국내 리그 소속 구단과 중복되지 않는 유럽대항전 전용 구단 70개(UCL 15, UEL 24, UECL 31)의 상세페이지 데이터를 추가/보완했습니다.
+
+- 구단 소재 국가와 연고 도시 70/70, 경기장 70/70, 창단 연도 70/70, 한국어 기본 역사 소개 70/70. 단, 해외 구단의 경기장 사용과 연혁의 세부 내용은 공식 구단 자료로 최종 검수해야 하며 임시 경기장 또는 유럽대항전 전용 경기장을 명확히 표시합니다.
+- 최근 10경기 기록 55/70: 공개 국내리그 결과와 유럽대항전 결과를 날짜순으로 통합했으며, 원천 파일 링크는 `data/team-results.json`의 `sources`에 명시합니다. 나머지 15개 구단은 무료 제공 출처에서 확인 가능한 유럽대항전 최종 결과 3~4경기만 표시합니다. 임의 경기는 생성하지 않습니다.
+- 2026/27 감독 정보는 검증된 UEFA 전용 구단 8개만 기록했습니다. 나머지 감독은 공식 발표 등 근거가 확보될 때까지 미확인으로 처리합니다.
+- UEFA 선수단은 70개 신규 구단에 [UCL](https://www.uefa.com/uefachampionsleague/news/02a9-2181560eb976-bb235eef5ca5-1000--champions-league-squads-league-phase-selections-confirmed/), [UEL](https://www.uefa.com/uefaeuropaleague/news/02a9-21815eb7babc-62eab180d6e2-1000--europa-league-squads-league-phase-selections-confirmed/), [UECL](https://www.uefa.com/uefaconferenceleague/news/02a9-21815fa81b16-bce58e0f71c8-1000--conference-league-squads-league-phase-selections-confirmed/) 공식 명단 링크를 연결했습니다. 직접 확인한 선수 명단 발췌는 벤피카, 페렌츠바로시, 위니옹 SG 3개 구단에 적용했습니다.
+- 구단 엠블럼은 프로필의 `badgeUrl`/ `crestId` 우선, TheSportsDB 검색 및 위키백과 로고 이미지 파일 후순위. 무료 API에서는 구단 검색이 제한되므로 모든 팀의 배지 이미지 표시를 보장하지 않으며 로고의 저작권/상표권은 구단에 있습니다. 벤피카의 특정 SVG는 출처 링크와 함께 등록했습니다.
+- 구단 페이지는 로컬 데이터를 우선 표시하므로 외부 API가 응답하지 않아도 구단 설명·역사·연고지·경기장·확인된 감독·최근 경기·UEFA 순위를 확인할 수 있습니다. 구단 공식 페이지가 등록되지 않은 경우 UEFA 구단 소개 및 위키백과 링크를 표시합니다.
+- 갱신 정책: 2026-11-23 수집 기준 스냅샷입니다. 팀 감독과 선수단은 이적/부임에 따라 수시 변경될 수 있어, 날짜가 지난 항목을 최신으로 단정하지 않습니다. 이용약관을 확인한 출처를 이용해야 하며 비상업적 사용 자체가 상표 사용 승인을 뜻하지 않습니다.
