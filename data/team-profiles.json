@@ -15,7 +15,8 @@
       "manager": "Mikel Arteta",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true
     },
     "epl:Brighton": {
       "name": "Brighton",
@@ -44,7 +45,8 @@
       "manager": "Enzo Maresca",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true
     },
     "epl:Liverpool": {
       "name": "Liverpool",
@@ -59,7 +61,8 @@
       "manager": "Andoni Iraola",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true
     },
     "epl:Bournemouth": {
       "name": "Bournemouth",
@@ -175,7 +178,8 @@
       "manager": "Unai Emery",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true
     },
     "epl:Newcastle": {
       "name": "Newcastle",
@@ -274,7 +278,8 @@
       "manager": "Michael Carrick",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true
     },
     "epl:Crystal Palace": {
       "name": "Crystal Palace",
@@ -317,7 +322,8 @@
       "manager": "Gian Piero Gasperini",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "seriea:Inter": {
       "name": "Inter",
@@ -332,7 +338,8 @@
       "manager": "Cristian Chivu",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "seriea:Milan": {
       "name": "Milan",
@@ -361,7 +368,8 @@
       "manager": "Cesc Fàbregas",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "seriea:Juventus": {
       "name": "Juventus",
@@ -404,7 +412,8 @@
       "manager": "Massimiliano Allegri",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "seriea:Bologna": {
       "name": "Bologna",
@@ -586,7 +595,8 @@
       "manager": "Niko Kovač",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "bundesliga:Bayern München": {
       "name": "Bayern München",
@@ -601,7 +611,8 @@
       "manager": "Vincent Kompany",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "bundesliga:Freiburg": {
       "name": "Freiburg",
@@ -630,7 +641,8 @@
       "manager": "Martín Demichelis",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "bundesliga:Bayer Leverkusen": {
       "name": "Bayer Leverkusen",
@@ -686,7 +698,8 @@
       "manager": "Sebastian Hoeneß",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "bundesliga:Elversberg": {
       "name": "Elversberg",
@@ -839,7 +852,8 @@
       "manager": "Luis Enrique",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "ligue1:Paris FC": {
       "name": "Paris FC",
@@ -867,7 +881,8 @@
       "manager": "Davide Ancelotti",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "ligue1:Lyon": {
       "name": "Lyon",
@@ -982,7 +997,8 @@
       "manager": "Didier Digard",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
     },
     "ligue1:Toulouse": {
       "name": "Toulouse",
@@ -1075,6 +1091,752 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
       "managerSourceType": "season-summary"
+    },
+    "laliga:Athletic Club": {
+      "name": "Athletic Club",
+      "league": "laliga",
+      "wikiKo": "아틀레틱 클루브",
+      "cityKo": "빌바오",
+      "stadium": "San Mamés",
+      "crestId": 77,
+      "searchName": "Athletic Club",
+      "historyKo": null,
+      "manager": "Edin Terzić",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Atlético de Madrid": {
+      "name": "Atlético de Madrid",
+      "league": "laliga",
+      "wikiKo": "아틀레티코 마드리드",
+      "cityKo": "마드리드",
+      "stadium": "Estadio Metropolitano",
+      "crestId": 78,
+      "searchName": "Atlético Madrid",
+      "historyKo": null,
+      "manager": "Diego Simeone",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
+    },
+    "laliga:CA Osasuna": {
+      "name": "CA Osasuna",
+      "league": "laliga",
+      "wikiKo": "CA 오사수나",
+      "cityKo": "팜플로나",
+      "stadium": "Estadio El Sadar",
+      "crestId": 79,
+      "searchName": "Osasuna",
+      "historyKo": null,
+      "manager": "Jagoba Arrasate",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Celta": {
+      "name": "Celta",
+      "league": "laliga",
+      "wikiKo": "셀타 비고",
+      "cityKo": "비고",
+      "stadium": "Estadio de Balaídos",
+      "crestId": 558,
+      "searchName": "Celta Vigo",
+      "historyKo": null,
+      "manager": "Claudio Giráldez",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Deportivo Alavés": {
+      "name": "Deportivo Alavés",
+      "league": "laliga",
+      "wikiKo": "데포르티보 알라베스",
+      "cityKo": "비토리아가스테이스",
+      "stadium": "Estadio Mendizorrotza",
+      "crestId": 263,
+      "searchName": "Deportivo Alavés",
+      "historyKo": null,
+      "manager": "Quique Sánchez Flores",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Elche CF": {
+      "name": "Elche CF",
+      "league": "laliga",
+      "wikiKo": "엘체 CF",
+      "cityKo": "엘체",
+      "stadium": "Estadio Martínez Valero",
+      "crestId": 285,
+      "searchName": "Elche",
+      "historyKo": null,
+      "manager": "Martín Anselmi",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:FC Barcelona": {
+      "name": "FC Barcelona",
+      "league": "laliga",
+      "wikiKo": "FC 바르셀로나",
+      "cityKo": "바르셀로나",
+      "stadium": "Camp Nou",
+      "crestId": 81,
+      "searchName": "Barcelona",
+      "historyKo": null,
+      "manager": "Hansi Flick",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
+    },
+    "laliga:Getafe CF": {
+      "name": "Getafe CF",
+      "league": "laliga",
+      "wikiKo": "헤타페 CF",
+      "cityKo": "헤타페",
+      "stadium": "Coliseum",
+      "crestId": 82,
+      "searchName": "Getafe",
+      "historyKo": null,
+      "manager": "José Bordalás",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Levante UD": {
+      "name": "Levante UD",
+      "league": "laliga",
+      "wikiKo": "레반테 UD",
+      "cityKo": "발렌시아",
+      "stadium": "Estadi Ciutat de València",
+      "crestId": 88,
+      "searchName": "Levante",
+      "historyKo": null,
+      "manager": "Luís Castro",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Málaga CF": {
+      "name": "Málaga CF",
+      "league": "laliga",
+      "wikiKo": "말라가 CF",
+      "cityKo": "말라가",
+      "stadium": "Estadio La Rosaleda",
+      "crestId": null,
+      "searchName": "Málaga",
+      "historyKo": null,
+      "manager": "Juan Francisco Funes",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:R. Racing Club": {
+      "name": "R. Racing Club",
+      "league": "laliga",
+      "wikiKo": "라싱 산탄데르",
+      "cityKo": "산탄데르",
+      "stadium": "El Sardinero",
+      "crestId": null,
+      "searchName": "Racing Santander",
+      "historyKo": null,
+      "manager": "José Alberto López",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:RC Deportivo": {
+      "name": "RC Deportivo",
+      "league": "laliga",
+      "wikiKo": "데포르티보 라코루냐",
+      "cityKo": "라코루냐",
+      "stadium": "Estadio de Riazor",
+      "crestId": null,
+      "searchName": "Deportivo La Coruña",
+      "historyKo": null,
+      "manager": "Antonio Hidalgo",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:RCD Espanyol de Barcelona": {
+      "name": "RCD Espanyol de Barcelona",
+      "league": "laliga",
+      "wikiKo": "RCD 에스파뇰",
+      "cityKo": "바르셀로나",
+      "stadium": "RCDE Stadium",
+      "crestId": 80,
+      "searchName": "Espanyol",
+      "historyKo": null,
+      "manager": "Eder Sarabia",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Rayo Vallecano": {
+      "name": "Rayo Vallecano",
+      "league": "laliga",
+      "wikiKo": "라요 바예카노",
+      "cityKo": "마드리드",
+      "stadium": "Campo de Fútbol de Vallecas",
+      "crestId": 87,
+      "searchName": "Rayo Vallecano",
+      "historyKo": null,
+      "manager": "Beñat San José",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Real Betis": {
+      "name": "Real Betis",
+      "league": "laliga",
+      "wikiKo": "레알 베티스",
+      "cityKo": "세비야",
+      "stadium": "Estadio Benito Villamarín",
+      "crestId": 90,
+      "searchName": "Real Betis",
+      "historyKo": null,
+      "manager": "Manuel Pellegrini",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
+    },
+    "laliga:Real Madrid": {
+      "name": "Real Madrid",
+      "league": "laliga",
+      "wikiKo": "레알 마드리드",
+      "cityKo": "마드리드",
+      "stadium": "Estadio Santiago Bernabéu",
+      "crestId": 86,
+      "searchName": "Real Madrid",
+      "historyKo": null,
+      "manager": "José Mourinho",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
+    },
+    "laliga:Real Sociedad": {
+      "name": "Real Sociedad",
+      "league": "laliga",
+      "wikiKo": "레알 소시에다드",
+      "cityKo": "산세바스티안",
+      "stadium": "Anoeta",
+      "crestId": 92,
+      "searchName": "Real Sociedad",
+      "historyKo": null,
+      "manager": "Pellegrino Matarazzo",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Sevilla FC": {
+      "name": "Sevilla FC",
+      "league": "laliga",
+      "wikiKo": "세비야 FC",
+      "cityKo": "세비야",
+      "stadium": "Estadio Ramón Sánchez-Pizjuán",
+      "crestId": 559,
+      "searchName": "Sevilla",
+      "historyKo": null,
+      "manager": "Luis García Plaza",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Valencia CF": {
+      "name": "Valencia CF",
+      "league": "laliga",
+      "wikiKo": "발렌시아 CF",
+      "cityKo": "발렌시아",
+      "stadium": "Estadio de Mestalla",
+      "crestId": 95,
+      "searchName": "Valencia",
+      "historyKo": null,
+      "manager": "Javier Aguirre",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary"
+    },
+    "laliga:Villarreal CF": {
+      "name": "Villarreal CF",
+      "league": "laliga",
+      "wikiKo": "비야레알 CF",
+      "cityKo": "비야레알",
+      "stadium": "Estadio de la Cerámica",
+      "crestId": 94,
+      "searchName": "Villarreal",
+      "historyKo": null,
+      "manager": "Iñigo Pérez",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true
+    },
+    "ucl:AEK Athens": {
+      "name": "AEK Athens",
+      "league": "ucl",
+      "wikiKo": "AEK 아테네 FC",
+      "cityKo": "아테네",
+      "stadium": "Agia Sophia Stadium",
+      "searchName": "AEK Athens",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Bodø/Glimt": {
+      "name": "Bodø/Glimt",
+      "league": "ucl",
+      "wikiKo": "FK 보되/글림트",
+      "cityKo": "보되",
+      "stadium": "Aspmyra Stadion",
+      "searchName": "Bodo Glimt",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Club Brugge": {
+      "name": "Club Brugge",
+      "league": "ucl",
+      "wikiKo": "클뤼프 브뤼허 KV",
+      "cityKo": "브뤼허",
+      "stadium": "Jan Breydel Stadium",
+      "searchName": "Club Brugge",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Fenerbahçe": {
+      "name": "Fenerbahçe",
+      "league": "ucl",
+      "wikiKo": "페네르바흐체 SK",
+      "cityKo": "이스탄불",
+      "stadium": "Şükrü Saracoğlu Stadium",
+      "searchName": "Fenerbahce",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Feyenoord": {
+      "name": "Feyenoord",
+      "league": "ucl",
+      "wikiKo": "페예노르트 로테르담",
+      "cityKo": "로테르담",
+      "stadium": "De Kuip",
+      "searchName": "Feyenoord",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Galatasaray": {
+      "name": "Galatasaray",
+      "league": "ucl",
+      "wikiKo": "갈라타사라이 SK",
+      "cityKo": "이스탄불",
+      "stadium": "RAMS Park",
+      "searchName": "Galatasaray",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:LASK": {
+      "name": "LASK",
+      "league": "ucl",
+      "wikiKo": "LASK 린츠",
+      "cityKo": "린츠",
+      "stadium": "Raiffeisen Arena",
+      "searchName": "LASK Linz",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:PSV": {
+      "name": "PSV",
+      "league": "ucl",
+      "wikiKo": "PSV 에인트호번",
+      "cityKo": "에인트호번",
+      "stadium": "Philips Stadion",
+      "searchName": "PSV Eindhoven",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Porto": {
+      "name": "Porto",
+      "league": "ucl",
+      "wikiKo": "FC 포르투",
+      "cityKo": "포르투",
+      "stadium": "Estádio do Dragão",
+      "searchName": "FC Porto",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:S. Bratislava": {
+      "name": "S. Bratislava",
+      "league": "ucl",
+      "wikiKo": "ŠK 슬로반 브라티슬라바",
+      "cityKo": "브라티슬라바",
+      "stadium": "Tehelné pole",
+      "searchName": "Slovan Bratislava",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Sabah": {
+      "name": "Sabah",
+      "league": "ucl",
+      "wikiKo": "사바흐 FC",
+      "cityKo": "바쿠",
+      "stadium": null,
+      "searchName": "Sabah FC",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Shakhtar": {
+      "name": "Shakhtar",
+      "league": "ucl",
+      "wikiKo": "FC 샤흐타르 도네츠크",
+      "cityKo": "도네츠크",
+      "stadium": null,
+      "searchName": "Shakhtar Donetsk",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Slavia Praha": {
+      "name": "Slavia Praha",
+      "league": "ucl",
+      "wikiKo": "SK 슬라비아 프라하",
+      "cityKo": "프라하",
+      "stadium": "Fortuna Arena",
+      "searchName": "Slavia Prague",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Sporting CP": {
+      "name": "Sporting CP",
+      "league": "ucl",
+      "wikiKo": "스포르팅 CP",
+      "cityKo": "리스본",
+      "stadium": "Estádio José Alvalade",
+      "searchName": "Sporting CP",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+    },
+    "ucl:Viking": {
+      "name": "Viking",
+      "league": "ucl",
+      "wikiKo": "비킹 FK",
+      "cityKo": "스타방에르",
+      "stadium": "Viking Stadion",
+      "searchName": "Viking FK",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
     }
+  },
+  "uclParticipants": {
+    "season": "2026/27",
+    "phase": "league",
+    "sourceUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+    "capturedAtKst": "2026-11-23",
+    "teams": [
+      {
+        "name": "AEK Athens",
+        "displayName": "AEK 아테네 FC",
+        "team": "AEK Athens",
+        "league": "ucl",
+        "cityKo": "아테네",
+        "crestId": null
+      },
+      {
+        "name": "Arsenal",
+        "displayName": "아스널 FC",
+        "team": "Arsenal",
+        "league": "epl",
+        "cityKo": "런던",
+        "crestId": 57
+      },
+      {
+        "name": "Aston Villa",
+        "displayName": "애스턴 빌라 FC",
+        "team": "Aston Villa",
+        "league": "epl",
+        "cityKo": "버밍엄",
+        "crestId": 58
+      },
+      {
+        "name": "Atleti",
+        "displayName": "아틀레티코 마드리드",
+        "team": "Atlético de Madrid",
+        "league": "laliga",
+        "cityKo": "마드리드",
+        "crestId": 78
+      },
+      {
+        "name": "Barcelona",
+        "displayName": "FC 바르셀로나",
+        "team": "FC Barcelona",
+        "league": "laliga",
+        "cityKo": "바르셀로나",
+        "crestId": 81
+      },
+      {
+        "name": "Bayern München",
+        "displayName": "FC 바이에른 뮌헨",
+        "team": "Bayern München",
+        "league": "bundesliga",
+        "cityKo": "뮌헨",
+        "crestId": 5
+      },
+      {
+        "name": "B. Dortmund",
+        "displayName": "보루시아 도르트문트",
+        "team": "Borussia Dortmund",
+        "league": "bundesliga",
+        "cityKo": "도르트문트",
+        "crestId": 4
+      },
+      {
+        "name": "Bodø/Glimt",
+        "displayName": "FK 보되/글림트",
+        "team": "Bodø/Glimt",
+        "league": "ucl",
+        "cityKo": "보되",
+        "crestId": null
+      },
+      {
+        "name": "Club Brugge",
+        "displayName": "클뤼프 브뤼허 KV",
+        "team": "Club Brugge",
+        "league": "ucl",
+        "cityKo": "브뤼허",
+        "crestId": null
+      },
+      {
+        "name": "Como",
+        "displayName": "코모 1907",
+        "team": "Como",
+        "league": "seriea",
+        "cityKo": "코모",
+        "crestId": 7397
+      },
+      {
+        "name": "Fenerbahçe",
+        "displayName": "페네르바흐체 SK",
+        "team": "Fenerbahçe",
+        "league": "ucl",
+        "cityKo": "이스탄불",
+        "crestId": null
+      },
+      {
+        "name": "Feyenoord",
+        "displayName": "페예노르트 로테르담",
+        "team": "Feyenoord",
+        "league": "ucl",
+        "cityKo": "로테르담",
+        "crestId": null
+      },
+      {
+        "name": "Galatasaray",
+        "displayName": "갈라타사라이 SK",
+        "team": "Galatasaray",
+        "league": "ucl",
+        "cityKo": "이스탄불",
+        "crestId": null
+      },
+      {
+        "name": "Inter",
+        "displayName": "FC 인테르나치오날레 밀라노",
+        "team": "Inter",
+        "league": "seriea",
+        "cityKo": "밀라노",
+        "crestId": 108
+      },
+      {
+        "name": "LASK",
+        "displayName": "LASK 린츠",
+        "team": "LASK",
+        "league": "ucl",
+        "cityKo": "린츠",
+        "crestId": null
+      },
+      {
+        "name": "Leipzig",
+        "displayName": "RB 라이프치히",
+        "team": "RB Leipzig",
+        "league": "bundesliga",
+        "cityKo": "라이프치히",
+        "crestId": 721
+      },
+      {
+        "name": "Lens",
+        "displayName": "RC 랑스",
+        "team": "Lens",
+        "league": "ligue1",
+        "cityKo": "랑스",
+        "crestId": 546
+      },
+      {
+        "name": "Lille",
+        "displayName": "릴 OSC",
+        "team": "Lille",
+        "league": "ligue1",
+        "cityKo": "릴",
+        "crestId": 521
+      },
+      {
+        "name": "Liverpool",
+        "displayName": "리버풀 FC",
+        "team": "Liverpool",
+        "league": "epl",
+        "cityKo": "리버풀",
+        "crestId": 64
+      },
+      {
+        "name": "Man City",
+        "displayName": "맨체스터 시티 FC",
+        "team": "Manchester City",
+        "league": "epl",
+        "cityKo": "맨체스터",
+        "crestId": 65
+      },
+      {
+        "name": "Man Utd",
+        "displayName": "맨체스터 유나이티드 FC",
+        "team": "Manchester United",
+        "league": "epl",
+        "cityKo": "맨체스터",
+        "crestId": 66
+      },
+      {
+        "name": "Napoli",
+        "displayName": "SSC 나폴리",
+        "team": "Napoli",
+        "league": "seriea",
+        "cityKo": "나폴리",
+        "crestId": 113
+      },
+      {
+        "name": "Paris",
+        "displayName": "파리 생제르맹 FC",
+        "team": "Paris Saint-Germain",
+        "league": "ligue1",
+        "cityKo": "파리",
+        "crestId": 524
+      },
+      {
+        "name": "Porto",
+        "displayName": "FC 포르투",
+        "team": "Porto",
+        "league": "ucl",
+        "cityKo": "포르투",
+        "crestId": null
+      },
+      {
+        "name": "PSV",
+        "displayName": "PSV 에인트호번",
+        "team": "PSV",
+        "league": "ucl",
+        "cityKo": "에인트호번",
+        "crestId": null
+      },
+      {
+        "name": "Real Betis",
+        "displayName": "레알 베티스",
+        "team": "Real Betis",
+        "league": "laliga",
+        "cityKo": "세비야",
+        "crestId": 90
+      },
+      {
+        "name": "Real Madrid",
+        "displayName": "레알 마드리드",
+        "team": "Real Madrid",
+        "league": "laliga",
+        "cityKo": "마드리드",
+        "crestId": 86
+      },
+      {
+        "name": "Roma",
+        "displayName": "AS 로마",
+        "team": "Roma",
+        "league": "seriea",
+        "cityKo": "로마",
+        "crestId": 100
+      },
+      {
+        "name": "S. Bratislava",
+        "displayName": "ŠK 슬로반 브라티슬라바",
+        "team": "S. Bratislava",
+        "league": "ucl",
+        "cityKo": "브라티슬라바",
+        "crestId": null
+      },
+      {
+        "name": "Sabah",
+        "displayName": "사바흐 FC",
+        "team": "Sabah",
+        "league": "ucl",
+        "cityKo": "바쿠",
+        "crestId": null
+      },
+      {
+        "name": "Shakhtar",
+        "displayName": "FC 샤흐타르 도네츠크",
+        "team": "Shakhtar",
+        "league": "ucl",
+        "cityKo": "도네츠크",
+        "crestId": null
+      },
+      {
+        "name": "Slavia Praha",
+        "displayName": "SK 슬라비아 프라하",
+        "team": "Slavia Praha",
+        "league": "ucl",
+        "cityKo": "프라하",
+        "crestId": null
+      },
+      {
+        "name": "Sporting CP",
+        "displayName": "스포르팅 CP",
+        "team": "Sporting CP",
+        "league": "ucl",
+        "cityKo": "리스본",
+        "crestId": null
+      },
+      {
+        "name": "Stuttgart",
+        "displayName": "VfB 슈투트가르트",
+        "team": "Stuttgart",
+        "league": "bundesliga",
+        "cityKo": "슈투트가르트",
+        "crestId": 10
+      },
+      {
+        "name": "Viking",
+        "displayName": "비킹 FK",
+        "team": "Viking",
+        "league": "ucl",
+        "cityKo": "스타방에르",
+        "crestId": null
+      },
+      {
+        "name": "Villarreal",
+        "displayName": "비야레알 CF",
+        "team": "Villarreal CF",
+        "league": "laliga",
+        "cityKo": "비야레알",
+        "crestId": 94
+      }
+    ]
   }
 }
