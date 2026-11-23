@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="90MIN LABS 경기 리포트. 최근 흐름과 홈·원정 기록을 연결해 경기 전망을 간결하게 읽습니다.">
   <title>경기 분석 | 90MIN LABS</title>
-  <link rel="stylesheet" href="assets/match-page.css?v=20261123-type1pt">
+  <link rel="stylesheet" href="assets/match-page.css?v=20261123-layoutfix">
   <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
   <script src="assets/site-shell.js?v=20261123-today" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
@@ -42,7 +42,7 @@
       <button class="copy-link" id="copyLink" type="button" disabled>링크 복사</button>
     </div>
     <p class="copy-status" id="copyStatus" role="status"></p>
-    <div id="loadingState" class="loading-state" role="status"><span class="loading-line"></span><p>경기 기록을 연결하고 있습니다.</p></div>
+    <div id="loadingState" class="loading-state" role="status" aria-live="polite"><span class="loading-spinner" aria-hidden="true"></span><p>경기 정보를 불러오는 중입니다.</p></div>
     <section id="errorState" class="error-state" hidden aria-labelledby="errorTitle">
       <p class="eyebrow">MATCH ANALYSIS</p>
       <h1 id="errorTitle">경기 정보를 불러오지 못했습니다.</h1>
