@@ -130,6 +130,7 @@
     $("recordPrediction").hidden = status !== "scheduled" || match.status !== "scheduled";
     $("recordPrediction").href = "mypage.html?match=" + encodeURIComponent(a.id);
     $("copyLink").disabled = false;
+    window.NinetyMinSavedMatches?.bindFixture(match);
   }
 
   function recordSummary(stats) { return stats.played ? stats.w + "승 " + stats.d + "무 " + stats.l + "패" : "기록 없음"; }
@@ -369,30 +370,59 @@
     $("loadingState").hidden = true; $("matchContent").hidden = true; $("errorState").hidden = false;
     $("errorTitle").textContent = title; $("errorMessage").textContent = message; $("retryButton").hidden = !retry; $("copyLink").disabled = true;
   }
+  // The fixture itself is trustworthy once the calendar arrives; show it while
+  // historical form, standings and club profiles continue loading in parallel.
+  function renderFixturePreview(fixture,calendar,id){
+    const team=side=>({
+      name:String(fixture[side+"Team"]||fixture[side]||""),
+      profile:null,
+      crestId:fixture[side+"Crest"]||null,
+      url:null
+    });
+    const summary={
+      id,fixture,home:team("home"),away:team("away"),
+      coverage:{season:calendar.season||"2026/27"},standings:null
+    };
+    state.match=fixture;
+    renderHeader(summary);
+    $("matchContent").dataset.detailsPending="true";
+    $("matchContent").hidden=false;
+    $("loadingState").hidden=true;
+    $("detailDataLoading").hidden=false;
+  }
   async function load() {
     if (state.loading) return;
     const id = params.get("id");
     if (!id) { error("분석할 경기를 선택해 주세요.", "경기 목록에서 ‘경기 분석’을 누르면 해당 경기의 기록과 비교 화면으로 이동합니다.", false); return; }
     if (!window.MatchAnalysis) { error("분석 화면을 불러오지 못했습니다.", "화면 파일을 가져오지 못했습니다. 새로고침 후 다시 확인해 주세요.", false); return; }
-    state.loading = true; $("errorState").hidden = true; $("matchContent").hidden = true; $("loadingState").hidden = false; $("retryButton").disabled = true; document.body.classList.add("is-match-loading");
+    state.loading = true; $("errorState").hidden = true; $("matchContent").hidden = true; $("matchContent").dataset.detailsPending="false"; $("detailDataLoading").hidden = true; $("loadingState").hidden = false; $("retryButton").disabled = true; document.body.classList.add("is-match-loading");
     try {
       const paths = ["data/match-calendar.json", "data/team-results.json", "data/team-profiles.json", "data/league-data.json", "data/uefa-standings.json"];
-      const fetched = await Promise.allSettled(paths.map(json));
-      if (fetched[0].status !== "fulfilled" || !Array.isArray(fetched[0].value.matches)) throw new Error("Calendar unavailable");
+      // Start all downloads together but do not hold the fixture header hostage
+      // to a slow results, profile or standings endpoint.
+      const supporting = Promise.allSettled(paths.slice(1).map(json));
+      const calendar = await json(paths[0]);
+      if (!Array.isArray(calendar.matches)) throw new Error("Calendar unavailable");
+      const fixture = calendar.matches.find(item=>MatchAnalysis.fixtureId(item)===id);
+      if (!fixture) { error("해당 경기를 찾지 못했습니다.", "일정이 변경되었거나 경기 주소가 올바르지 않을 수 있습니다. 경기 목록에서 다시 선택해 주세요.", false); return; }
+      renderFixturePreview(fixture,calendar,id);
+      const fetched = await supporting;
       const values = fetched.map(item => item.status === "fulfilled" ? item.value : {});
-      state.partial = fetched.flatMap((item, index) => item.status === "rejected" ? [paths[index]] : []);
-      state.context = MatchAnalysis.createContext({ calendar: values[0], results: values[1], profiles: values[2], standings: values[3], uefa: values[4] });
+      state.partial = fetched.flatMap((item, index) => item.status === "rejected" ? [paths[index+1]] : []);
+      state.context = MatchAnalysis.createContext({ calendar, results: values[0], profiles: values[1], standings: values[2], uefa: values[3] });
       state.match = state.context.findMatch(id);
-      if (!state.match) { error("해당 경기를 찾지 못했습니다.", "일정이 변경되었거나 경기 주소가 올바르지 않을 수 있습니다. 경기 목록에서 다시 선택해 주세요.", false); return; }
+      if (!state.match) throw new Error("Match disappeared after context build");
       render(true);
-      $("loadingState").hidden = true; $("matchContent").hidden = false;
+      $("detailDataLoading").hidden=true;
+      $("matchContent").dataset.detailsPending="false";
+      $("loadingState").hidden=true; $("matchContent").hidden=false;
       const requestedHash = location.hash.slice(1);
       const hash = /^report/.test(requestedHash) ? "overview" : requestedHash;
       if (["overview", "comparison", "recent", "headtohead", "standings"].includes(hash)) {
         const target = $(hash);
         if (target) requestAnimationFrame(() => target.scrollIntoView());
       }
-    } catch (failure) { error("경기 기록을 연결하지 못했습니다.", "일정 자료를 불러오는 중 문제가 생겼습니다. 잠시 후 다시 불러오거나 경기 목록에서 확인해 주세요.", true); }
+    } catch (failure) { $("detailDataLoading").hidden=true; $("matchContent").dataset.detailsPending="false"; error("경기 기록을 연결하지 못했습니다.", "일정 자료를 불러오는 중 문제가 생겼습니다. 잠시 후 다시 불러오거나 경기 목록에서 확인해 주세요.", true); }
     finally { state.loading = false; $("retryButton").disabled = false; document.body.classList.remove("is-match-loading"); }
   }
 
