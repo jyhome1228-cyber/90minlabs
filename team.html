@@ -400,7 +400,7 @@ async function refreshResults(recent){
  const today=new Date().toISOString().slice(0,10);
  const fixtures=rows.filter(x=>(x.home===recent.matchName||x.away===recent.matchName)&&x.date<=today&&/^\d+$/.test(x.ft_home)&&/^\d+$/.test(x.ft_away))
  .sort((a,b)=>(b.date+" "+b.time).localeCompare(a.date+" "+a.time)).slice(0,10);
- if(!fixtures.length||fixtures[0].date<(recent.lastMatchDate||""))return;
+ if(!fixtures.length||fixtures[0].date<=(recent.lastMatchDate||""))return; // 같은 날짜의 검증된 로컬 스냅샷을 이전 CSV가 덮어쓰지 않도록 방지
  const matches=fixtures.map(x=>({date:x.date,home:x.home,away:x.away,homeScore:Number(x.ft_home),awayScore:Number(x.ft_away)}));
  showMatches(toEvents(matches),null);
  show("matchNotice",(["ucl","uel","uecl"].includes(league)?names[league]:"국내 리그")+" 최근 "+matches.length+"경기 · 마지막 확인 "+fixtures[0].date+" · 공개 자료 기준.");
@@ -480,7 +480,7 @@ async function loadTeam(){
   const fixtures=recent.matches.map((m,i)=>({idEvent:m.date+"-"+i,dateEvent:m.date,strHomeTeam:m.home,strAwayTeam:m.away,intHomeScore:m.homeScore,intAwayScore:m.awayScore,strLeague:names[league]}));
   showMatches(fixtures,null);
   show("matchNotice",(recent.sources?.length>1?"국내 리그와 유럽대항전 합산 ":"")+"최근 "+recent.matches.length+"경기 · 마지막 결과 "+(recent.lastMatchDate||"날짜 미확인")+" · 공개 자료 기준.");
-  const src=select("resultsSource");src.href=recent.sourceUrl||"https://github.com/oladeeayo/open-matchday";src.textContent="경기 기록: open-matchday";
+  const src=select("resultsSource");src.href=recent.verifiedSourceUrl||recent.sourceUrl||"https://github.com/oladeeayo/open-matchday";src.textContent=recent.verifiedSourceUrl?"최근 경기: LiveScore 추가 검증":"경기 기록: open-matchday";
   hasLocalResults=true;
   if(!recent.sources?.length||recent.sources.length<2)refreshResults(recent);
  }
