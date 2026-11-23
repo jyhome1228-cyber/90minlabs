@@ -263,7 +263,7 @@
   }
   async function json(path) {
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 12000);
-    try { const response = await fetch(path, { cache: "no-store", signal: controller.signal }); if (!response.ok) throw new Error("일정을 불러오지 못했습니다."); return await response.json(); }
+    try { const response = await fetch(path, { cache:"no-cache", signal: controller.signal }); if (!response.ok) throw new Error("일정을 불러오지 못했습니다."); return await response.json(); }
     finally { clearTimeout(timer); }
   }
   async function loadFixtures() {
