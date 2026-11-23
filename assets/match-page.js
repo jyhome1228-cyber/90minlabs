@@ -158,13 +158,65 @@
       paragraphs:[sentences.slice(0,4).join(" "),sentences.slice(4).join(" ")]
     };
   }
+  function modelPercentages(model) {
+    const values=[model.homeWin,model.draw,model.awayWin];
+    if(values.some(value=>!Number.isFinite(value)||value<0||value>1))return null;
+    const total=values.reduce((sum,value)=>sum+value,0);
+    if(Math.abs(total-1)>.01)return null;
+    const raw=values.map(value=>value/total*100);
+    const output=raw.map(value=>Math.floor(value));
+    let remaining=100-output.reduce((sum,value)=>sum+value,0);
+    const order=[0,1,2].sort((a,b)=>(raw[b]-output[b])-(raw[a]-output[a])||a-b);
+    for(let i=0;i<remaining;i++)output[order[i%3]]++;
+    return output;
+  }
+  function renderOutcome(a) {
+    const english=window.NinetyMinI18n?.language==="en";
+    const model=a.model||{},finished=isFinished(a.fixture);
+    const title=$("outcomeProbTitle"),body=$("outcomeBars"),note=$("probabilityNote");
+    title.textContent=finished?(english?"Pre-match record distribution":"경기 전 기록 기준 참고 비율"):(english?"Win / Draw / Loss estimates":"승·무·패 예상 비율");
+    body.replaceChildren();
+    const percentages=model.available?modelPercentages(model):null;
+    if(!percentages){
+      body.append(el("p","outcome-unavailable",english?"Not enough same-competition home and away records to calculate these figures.":"같은 대회의 홈·원정 기록이 부족해 예상 비율을 계산하지 않았습니다."));
+      note.textContent=english?"No scores or win rates are generated without a sufficient record sample.":"홈·원정 각각 3경기 이상과 양 팀 동일 대회 5경기 이상의 기록이 필요합니다.";
+      return;
+    }
+    const name=team=>english?team.name:(window.NinetyMinI18n?.team?.(team.name)||team.name);
+    const outcomes=[
+      {name:english?"Home win":"홈 승",team:name(a.home),value:percentages[0],kind:"home"},
+      {name:english?"Draw":"무승부",team:"",value:percentages[1],kind:"draw"},
+      {name:english?"Away win":"원정 승",team:name(a.away),value:percentages[2],kind:"away"}
+    ];
+    for(const item of outcomes){
+      const column=el("div","outcome-prob-item outcome-"+item.kind);
+      const top=el("div","outcome-prob-top");
+      const labels=el("div","outcome-prob-labels");
+      labels.append(el("span","",item.name));
+      if(item.team)labels.append(el("small","",item.team));
+      top.append(labels,el("strong","",item.value+"%"));
+      const track=el("div","outcome-prob-track"),fill=el("div","outcome-prob-fill");
+      track.setAttribute("aria-label",item.name+" "+item.value+"%");
+      fill.style.width=item.value+"%";
+      track.append(fill);column.append(top,track);body.append(column);
+    }
+    note.textContent=finished
+      ?(english?"Computed retrospectively from records before kickoff, excluding this result. Not a prediction issued before the game.":"해당 경기 결과를 제외한 이전 기록으로 사후 계산한 참고 분포입니다. 당시 발표된 예측은 아닙니다.")
+      :(english?"Reference distribution from recorded goals, not a calibrated prediction or verified accuracy rate.":"기록된 득실점으로 계산한 참고 분포입니다. 검증된 예측 정확도나 실제 승리 확률은 아닙니다.");
+  }
   function renderReport(a) {
     const report = window.NinetyMinI18n?.language==="en"?englishReport(a,state.editorial):state.editorial, body = $("reportBody");
     body.replaceChildren();
     $("reportTitle").textContent = report ? report.title : "경기 리포트";
     $("overviewContext").textContent = report ? report.sampleLabel : a.coverage.scopeLabel + " · 홈 " + a.home.stats.played + "경기 · 원정 " + a.away.stats.played + "경기";
-    $("forecastLabel").textContent = isFinished(a.fixture) ? "기록상 구도" : "예상 방향";
+    const finished=isFinished(a.fixture),english=window.NinetyMinI18n?.language==="en";
+    $("forecastLabel").textContent = finished?(english?"Review conclusion":"경기 전 기록으로 본 의견"):(english?"Final assessment":"최종 의견");
     $("reportForecast").textContent = report ? report.forecast.label : "판단 유보";
+    const reason=state.editorial?.forecast?.reason;
+    $("forecastReason").textContent = english
+      ?(state.editorial?.forecast?.direction==="home"?"Available past records lean toward the home side.":state.editorial?.forecast?.direction==="away"?"Available past records lean toward the away side.":state.editorial?.forecast?.direction==="draw"?"Prior records suggest a draw deserves consideration.":"The prior record does not support a confident favorite.")
+      :(reason||"현재 확인된 기록만으로 한쪽의 우세를 단정하기 어렵습니다.");
+    renderOutcome(a);
     if (report) report.paragraphs.forEach(paragraph => body.append(el("p", "", paragraph)));
     else body.append(el("p", "", "경기 리포트를 불러오지 못했습니다. 아래에서 최근 경기와 양 팀의 성적을 확인할 수 있습니다."));
   }
