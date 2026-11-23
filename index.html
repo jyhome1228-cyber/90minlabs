@@ -77,6 +77,7 @@ section.block{padding:89px 0}
 <link rel="stylesheet" href="./assets/home.css?v=20261123-dual-copy">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-loadingfix">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-countdown1">
+<link rel="stylesheet" href="assets/columns.css?v=20261124-editorial1">
 <script src="assets/site-shell.js?v=20261123-konav" defer></script>
 <script src="assets/kickoff-countdown.js?v=20261123-countdown2" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
@@ -203,8 +204,58 @@ section.block{padding:89px 0}
     기본 일정·결과는 <a href="https://github.com/oladeeayo/open-matchday" rel="noopener noreferrer" target="_blank">open-matchday</a>를 기준으로 하며, 최근 종료 결과 일부는 <a href="https://www.livescores.com/football/2026-11-22/" rel="noopener noreferrer" target="_blank">LiveScore</a> 등으로 추가 검증했습니다. 실시간 중계 데이터가 아니므로 갱신이 늦을 수 있으며, 확인되지 않은 스코어는 표시하지 않습니다.
   </div>
 </div>
-<div id="columns" class="view hidden page"><div class="eyebrow">FOOTBALL JOURNAL</div><h1>칼럼</h1><p class="sub">축구에 관한 깊이 있는 시선. 경기 전망, 전술, 선수, 구단 그리고 축구 문화.</p><div class="actions" style="margin-bottom:35px"><a href="#write" class="btn primary">칼럼 초안 작성하기</a></div><div class="empty"><strong>아직 발행된 칼럼이 없습니다.</strong><p>회원 및 에디터 발행 시스템을 준비 중입니다. 현재는 브라우저에서 칼럼 초안을 작성하고 내보내는 기능을 이용할 수 있습니다.</p></div></div>
-<div id="write" class="view hidden page"><div class="eyebrow">CONTRIBUTOR DESK</div><h1>칼럼 작성</h1><p class="sub">축구에 관한 글을 준비해보세요. 현재는 초안 작성·미리보기·텍스트 파일 저장 기능만 제공하며, 공개 발행 기능은 아직 연결되지 않았습니다.</p><div class="info">현재 작성한 글은 서버로 전송되거나 공개되지 않습니다. 브라우저를 닫기 전에 텍스트 파일로 저장하세요. 회원가입 및 운영자 검수 시스템은 후속 개발 항목입니다.</div><form class="form" id="draftForm" style="margin-top:32px"><div class="field"><label for="category">카테고리</label><select id="category"><option>경기 전망</option><option>경기 리뷰</option><option>전술 분석</option><option>선수와 구단</option><option>축구 문화</option></select></div><div class="field"><label for="author">필명</label><input id="author" maxlength="40" placeholder="칼럼에 사용할 필명을 입력하세요"></div><div class="field"><label for="draftTitle">제목</label><input id="draftTitle" required maxlength="120" placeholder="칼럼 제목을 입력하세요"></div><div class="field"><label for="draftBody">본문</label><textarea id="draftBody" required placeholder="직접 작성한 축구 칼럼을 입력하세요"></textarea></div><div class="actions" style="margin-top:0"><button type="button" class="btn" id="previewBtn">미리보기</button><button type="button" class="btn primary" id="downloadBtn">텍스트로 저장</button></div></form><div class="preview hidden" id="draftPreview"></div></div>
+
+<div id="columns" class="view hidden page column-page">
+  <div class="column-heading">
+    <div><p class="col-kicker">90MIN LABS EDITORIAL</p><h1>칼럼</h1><p>경기를 보는 시선을 넓히는 축구 이야기.</p></div>
+    <a class="col-plain-link" href="index.html#write">칼럼 작성</a>
+  </div>
+  <p class="col-note">현재 등록된 글은 편집 구성 예시이며 정식 발행 기사가 아닙니다.</p>
+  <div class="col-toolbar">
+    <div id="colFilters" class="col-categories" role="group" aria-label="칼럼 카테고리 선택"></div>
+    <input id="colSearch" class="col-search" type="search" aria-label="칼럼 검색" placeholder="제목 또는 주제 검색" autocomplete="off">
+  </div>
+  <p id="colCount" class="col-count" aria-live="polite">칼럼 불러오는 중</p>
+  <div id="colList" aria-live="polite"><div class="col-loading">칼럼을 불러오는 중입니다.</div></div>
+</div>
+<div id="write" class="view hidden page column-editor-page">
+  <div class="column-heading">
+    <div><p class="col-kicker">90MIN LABS / EDITORIAL DESK</p><h1>칼럼 에디터</h1><p>글을 작성하고 미리 확인한 뒤, 원고 파일로 정리할 수 있습니다.</p></div>
+    <a class="col-plain-link" href="index.html#columns">칼럼 목록</a>
+  </div>
+  <p class="col-editor-note">초안은 현재 브라우저에만 저장됩니다. 로그인·서버 저장·공개 발행은 연결되지 않았습니다. 중요한 원고는 JSON이나 Markdown 파일로도 보관하세요.</p>
+  <div class="col-editor-layout">
+    <form id="draftForm" class="col-editor-form">
+      <div class="col-editor-pair">
+        <div class="col-field"><label for="category">카테고리</label><select id="category"><option>경기 전망</option><option>경기 리뷰</option><option>전술 분석</option><option>선수와 구단</option><option>축구 문화</option></select></div>
+        <div class="col-field"><label for="author">필명</label><input id="author" type="text" maxlength="40" value="90MIN LABS 편집부" autocomplete="off"></div>
+      </div>
+      <div class="col-field"><label for="draftTitle">제목</label><input id="draftTitle" type="text" maxlength="120" placeholder="칼럼 제목을 입력하세요" autocomplete="off"></div>
+      <div class="col-field"><label for="draftSummary">요약</label><input id="draftSummary" type="text" maxlength="240" placeholder="칼럼을 소개하는 한두 문장" autocomplete="off"></div>
+      <div class="col-field"><label for="draftBody">본문</label><textarea id="draftBody" rows="15" maxlength="40000" placeholder="본문을 작성하세요. 소제목은 ## 으로 구분할 수 있습니다."></textarea><p class="col-help">소제목은 <code>## 소제목</code> 형식으로 입력합니다. <span id="draftWordCount">0자</span></p></div>
+      <div class="col-editor-actions">
+        <button id="saveDraft" class="col-button col-button-dark" type="button">임시 저장</button>
+        <button id="newDraft" class="col-button" type="button">새 글</button>
+        <button id="downloadJson" class="col-button" type="button">JSON 내보내기</button>
+        <button id="downloadText" class="col-button" type="button">Markdown 저장</button>
+      </div>
+      <p id="editorSaveStatus" class="col-editor-status" role="status" aria-live="polite"></p>
+      <div class="col-field">
+        <label for="editorSample">작성 예시 불러오기</label>
+        <div class="col-editor-pair"><select id="editorSample" aria-label="작성 예시 선택"><option value="">예시 불러오는 중</option></select><button id="useSample" type="button" class="col-button">선택한 예시 복사</button></div>
+        <p class="col-help">예시를 가져와도 공개 게시되지는 않습니다. 내용을 편집해 새 초안으로 저장할 수 있습니다.</p>
+      </div>
+    </form>
+    <aside class="col-preview-panel" aria-label="칼럼 미리보기">
+      <div class="col-preview-toolbar"><strong>미리보기</strong><span>작성 중인 내용</span></div>
+      <div id="draftPreview"></div>
+    </aside>
+  </div>
+  <section class="col-drafts" aria-label="저장된 칼럼 초안">
+    <div class="col-drafts-head"><h2>저장된 초안</h2><p id="draftCount">0개 초안</p></div>
+    <div id="editorDraftList"><p class="col-draft-empty">저장된 초안이 없습니다.</p></div>
+  </section>
+</div>
 </main>
 <footer class="global-footer">
   <div class="global-footer-inner">
@@ -244,11 +295,10 @@ function route(){
  if(id==="today"&&page==="home"){requestAnimationFrame(()=>document.getElementById("today")?.scrollIntoView({behavior:"smooth",block:"start"}));}else window.scrollTo(0,0);document.title=({home:"오늘의 경기",predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
 }
 window.addEventListener("hashchange",route);route();
-const fields=["category","author","draftTitle","draftBody"];function formText(){return "90MIN LABS 칼럼 초안\n카테고리: "+document.querySelector("#category").value+"\n필명: "+document.querySelector("#author").value+"\n제목: "+document.querySelector("#draftTitle").value+"\n\n"+document.querySelector("#draftBody").value}
-document.querySelector("#previewBtn").addEventListener("click",()=>{const t=document.querySelector("#draftPreview");t.classList.remove("hidden");t.textContent=formText();t.scrollIntoView({behavior:"smooth",block:"nearest"})});
-document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
 <script src="./assets/match-analysis.js?v=20261123-analysis" defer></script>
 <script src="./assets/home.js?v=20261123-countdown2" defer></script>
 <script src="./assets/matches.js?v=20261123-countdown2" defer></script>
+<script src="./assets/columns.js?v=20261124-editorial1" defer></script>
+<script src="./assets/column-editor.js?v=20261124-editorial1" defer></script>
 </body></html>
