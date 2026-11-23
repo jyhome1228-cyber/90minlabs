@@ -119,3 +119,36 @@
  .home-feature-content h2{font-size:27px}
 }
 @media(prefers-reduced-motion:reduce){.home-hero-photo,.home-scroll-cue span:last-child{animation:none}}
+
+
+/* The user's second supplied image is the actual full-bleed hero, not an inset card. */
+.home-hero{background:#f7f7f7;color:#1a1c20}
+.home-hero-photo{object-fit:cover;object-position:center center;filter:none}
+.home-hero-shade{background:linear-gradient(90deg,rgba(246,246,246,.98) 0%,rgba(246,246,246,.94) 26%,rgba(247,247,247,.47) 46%,rgba(247,247,247,0) 68%)}
+.home-hero-topline,.home-hero-bottom{color:#5b6065}
+.home-brandline{color:#1d1f23}
+.home-lead{color:#565c62}
+.home-hero .home-overline{color:#555d66}
+.home-action{background:#242424;border-color:#242424;color:#fff}
+.home-action:hover{background:#444}
+.home-action.secondary{background:transparent;border-color:#71777d;color:#242424}
+.home-action.secondary:hover{background:rgba(0,0,0,.06)}
+.home-scroll-cue{color:#555}
+.home-feature{background:#192632}
+.home-feature-content{color:#fff;background:#192632}
+.home-feature-content .home-overline{color:#b5c4d0}
+.home-feature-content p{color:#d5dce3}
+.home-feature-content a{color:#fff;border-color:#fff}
+.home-feature-photo{background:#17222b}
+.home-feature-photo img{object-position:center 60%}
+@media(max-width:950px){
+ .home-hero-shade{background:linear-gradient(90deg,rgba(248,248,248,.96),rgba(248,248,248,.72) 53%,rgba(248,248,248,.15))}
+ .home-hero-photo{object-position:65% center}
+}
+@media(max-width:650px){
+ .home-hero{min-height:570px;height:min(83svh,760px)}
+ .home-hero-photo{object-position:60% 50%}
+ .home-hero-shade{background:linear-gradient(180deg,rgba(248,248,248,.95) 0%,rgba(248,248,248,.9) 36%,rgba(248,248,248,.27) 76%,rgba(248,248,248,.12) 100%)}
+ .home-copy-main{align-self:stretch}
+ .home-feature-content{background:#192632}
+}
