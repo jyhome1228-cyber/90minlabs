@@ -210,10 +210,11 @@ async function loadCalendar(){
  state.loading=true;state.error=false;renderList();renderPredictions();
  try{
   const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
-  let response;
-  try{response=await fetch("./data/match-calendar.json",{cache:"no-cache",signal:controller.signal})}finally{clearTimeout(timeout)}
-  if(!response.ok)throw new Error("calendar HTTP "+response.status);
-  const data=await response.json();
+  let data;
+  try{
+   if(window.NinetyMinData)data=await window.NinetyMinData.get("data/match-calendar.json",{timeoutMs:15000});
+   else{const response=await fetch("./data/match-calendar.json",{cache:"no-cache",signal:controller.signal});if(!response.ok)throw new Error("calendar HTTP "+response.status);data=await response.json();}
+  }finally{clearTimeout(timeout)}
   if(!Array.isArray(data.matches))throw new Error("no fixtures");
   state.matches=data.matches;state.source=data;state.loading=false;
   const verifiedAt=data.verifiedAtKst?new Date(data.verifiedAtKst):null;
