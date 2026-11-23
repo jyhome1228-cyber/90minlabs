@@ -14,7 +14,7 @@
 a{color:inherit;text-decoration:none}.container{max-width:1440px;margin:auto;padding:0 44px}
 header{height:82px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{font-size:23px;letter-spacing:-1.1px;font-weight:800;color:#101d30;white-space:nowrap}.links{display:flex;align-items:center;gap:30px}.links a{font-size:12px;font-weight:700;letter-spacing:.03em;color:#536174}.links a.active{color:#101d30}.nav-right{font-size:12px;color:var(--muted)}
-main{padding-top:70px;padding-bottom:110px}.eyebrow{color:#526a86;font-size:12px;font-weight:700;letter-spacing:.07em}.heading{margin-top:12px;font-size:clamp(28px,3.2vw,45px);font-weight:700;letter-spacing:-1.9px;line-height:1.28}p.intro{font-size:15px;color:var(--muted);margin:16px 0 38px;max-width:720px}
+main{padding-top:52px;padding-bottom:90px}.eyebrow{color:#526a86;font-size:12px;font-weight:700;letter-spacing:.07em}.heading{margin-top:12px;font-size:clamp(26px,2.7vw,37px);font-weight:700;letter-spacing:-1.9px;line-height:1.28}p.intro{font-size:15px;color:var(--muted);margin:12px 0 28px;max-width:720px}
 .tabs{display:flex;border-bottom:1px solid var(--line);overflow:auto;gap:38px;scrollbar-width:none}.tab{padding:16px 0 17px;border:none;border-bottom:2px solid transparent;color:#8691a0;white-space:nowrap;background:transparent;font-size:14px;font-weight:700}.tab[aria-selected=true]{border-bottom-color:var(--navy);color:var(--ink)}
 .toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:32px 0 17px}.section-name{font-size:21px;font-weight:700;letter-spacing:-.7px}.switch{display:flex;gap:3px;padding:3px;background:#f2f5f8;border-radius:8px}.switch button{border:0;border-radius:6px;background:transparent;color:#6e7c8d;font-weight:600;font-size:12px;padding:9px 17px}.switch button[aria-selected=true]{background:white;color:var(--ink);box-shadow:0 1px 4px #13243c16}
 .meta{display:flex;justify-content:space-between;gap:15px;color:#7b8998;font-size:12px;margin:0 0 18px;flex-wrap:wrap}.meta a{text-decoration:underline;text-underline-offset:3px}
@@ -29,12 +29,12 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:#7d8a98;font-size:1
 <header><div class="container nav">
 <a class="brand" href="index.html#home">90MIN LABS.</a>
 <nav class="links" aria-label="주요 메뉴"><a href="index.html#home">HOME</a><a href="index.html#predictions">PREDICTIONS</a><a href="index.html#matches">MATCHES</a><a href="#leagues" class="active">LEAGUES</a><a href="index.html#columns">COLUMNS</a></nav>
-<span class="nav-right">FOOTBALL RESEARCH LAB</span>
+<span class="nav-right">축구 경기 사전 분석</span>
 </div></header>
 <main class="container" id="leagues">
-<div class="eyebrow">FOOTBALL RESEARCH / LEAGUE DATA</div>
-<h1 class="heading">리그를 숫자로 읽다.</h1>
-<p class="intro">유럽 4대 리그의 순위와 득점 기록을 한곳에서 비교합니다. 확인된 자료만 게시하며, 모든 데이터는 기준 시점과 출처를 함께 표시합니다.</p>
+<div class="eyebrow">2026-2027 시즌</div>
+<h1 class="heading">4대 리그 순위 및 득점 기록</h1>
+<p class="intro">프리미어리그, 세리에A, 분데스리가, 리그앙의 구단 순위와 선수 득점 기록을 확인할 수 있습니다.</p>
 <div role="tablist" aria-label="리그 선택" class="tabs" id="leagueTabs">
 <button class="tab" role="tab" aria-selected="true" data-league="epl">PREMIER LEAGUE</button>
 <button class="tab" role="tab" aria-selected="false" data-league="seriea">SERIE A</button>
@@ -50,7 +50,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:#7d8a98;font-size:1
 <div class="meta"><span id="updated">데이터 확인 대기</span><span id="source"></span></div>
 <div id="dataArea"></div>
 </section>
-<div class="note"><span aria-hidden="true">◈</span><div><b>RESEARCH NOTE</b><div>이 페이지는 공식 기록을 검증한 뒤 게시합니다. 순위와 개인 득점 기록은 서로 다른 시점에 갱신될 수 있으며, 실제 데이터가 없는 경우 임의의 결과를 표시하지 않습니다.</div></div></div>
+<div class="note"><span aria-hidden="true">◈</span><div><b>데이터 안내</b><div>리그마다 업데이트 시점이 다를 수 있습니다. 순위표와 득점 기록에 각각 출처를 표시하며 일부 리그는 확인된 구단까지만 표시합니다.</div></div></div>
 </main>
 <footer><div class="container foot"><span>90MIN LABS. © 2026</span><span>Independent Football Prediction & Research</span></div></footer>
 <script>
@@ -58,7 +58,7 @@ const labels={epl:"프리미어리그",seriea:"세리에 A",bundesliga:"분데�
 const state={league:"epl",view:"standings",data:null};
 const area=document.querySelector("#dataArea");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const number=x=>Number.isFinite(Number(x))?Number(x):"-";
+const number=x=>x===null||x===undefined||x===''?'-':Number.isFinite(Number(x))?Number(x):'-';
 function render(){
  document.querySelector("#leagueName").textContent=labels[state.league];
  document.querySelectorAll("[data-league]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.league===state.league)));
@@ -66,7 +66,7 @@ function render(){
  const item=state.data?.leagues?.[state.league]||{};
  const block=item[state.view]||{};
  const rows=Array.isArray(block.rows)?block.rows:[];
- document.querySelector("#updated").textContent=block.updatedAt?"최종 확인: "+block.updatedAt+" (KST)":"최종 확인: 미등록";
+ document.querySelector("#updated").textContent=block.updatedAt?"자료 확인 시각: "+block.updatedAt+" (한국시간)":"최종 확인: 미등록";
  const source=document.querySelector("#source");source.replaceChildren();
  if(block.sourceUrl&&/^https:\/\//.test(block.sourceUrl)){const a=document.createElement("a");a.href=block.sourceUrl;a.target="_blank";a.rel="noopener noreferrer";a.textContent="데이터 출처 보기";source.append(a);}
  if(!rows.length){area.innerHTML='<div class="empty"><div class="mark">◈</div><strong>검증된 '+(state.view==="standings"?"순위":"득점")+" 데이터가 아직 없습니다.</strong><span>운영자가 공식 기록을 확인하고 데이터를 업데이트하면 이곳에 자동 표시됩니다.</span></div>";return;}
@@ -74,7 +74,7 @@ function render(){
  const head=isStandings?["순위","구단","경기","승","무","패","득실차","승점"]:["순위","선수 / 소속 구단","경기","득점","도움"];
  let body=rows.map((r,i)=>isStandings?
  '<tr><td>'+number(r.rank??i+1)+'</td><td class="team"><span class="teamcode">'+esc((r.shortName||r.team||"").slice(0,3).toUpperCase())+'</span>'+esc(r.team)+'</td><td>'+number(r.played)+'</td><td>'+number(r.won)+'</td><td>'+number(r.drawn)+'</td><td>'+number(r.lost)+'</td><td>'+number(r.goalDifference)+'</td><td class="points">'+number(r.points)+'</td></tr>':
- '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+esc(r.player)+' <span style="color:#8793a3;font-weight:400">· '+esc(r.team)+'</span></td><td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
+ '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+esc(r.player)+(r.team?' <span style="color:#8793a3;font-weight:400">· '+esc(r.team)+'</span>':'')+'</td><td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
  ).join("");
  area.innerHTML='<div class="tablebox"><table><thead><tr>'+head.map(h=>'<th scope="col">'+h+'</th>').join("")+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
