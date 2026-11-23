@@ -64,9 +64,7 @@ async function load(force=false){
  if(loading||(!force&&calendar))return;
  loading=true;if(!calendar)render();
  try{
-  const response=await fetch("data/match-calendar.json",{cache:"no-cache"});
-  if(!response.ok)throw new Error("HTTP "+response.status);
-  const data=await response.json();if(!Array.isArray(data.matches))throw new Error("Invalid match calendar");
+  const data=window.NinetyMinData?await window.NinetyMinData.get("data/match-calendar.json",{force}):await (async()=>{const r=await fetch("data/match-calendar.json",{cache:"no-cache"});if(!r.ok)throw Error("HTTP "+r.status);return r.json()})();if(!Array.isArray(data.matches))throw new Error("Invalid match calendar");
   calendar=data.matches;error=null;lastFetchAt=Date.now();
  }catch(e){if(!calendar)error=e;}
  finally{loading=false;render();}
