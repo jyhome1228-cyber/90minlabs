@@ -7527,6 +7527,2662 @@
           "provider": "fixturedl"
         }
       ]
+    },
+    "laliga:Athletic Club": {
+      "team": "Athletic Club",
+      "league": "laliga",
+      "matchName": "Athletic Club",
+      "lastMatchDate": "2026-11-20",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-20",
+          "home": "Athletic Club",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "CA Osasuna",
+          "away": "Athletic Club",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Athletic Club",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Athletic Club",
+          "away": "Getafe CF",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Levante UD",
+          "away": "Athletic Club",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Valencia CF",
+          "away": "Athletic Club",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Athletic Club",
+          "away": "Deportivo Alavés",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Athletic Club",
+          "away": "Elche CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-05",
+          "home": "Athletic Club",
+          "away": "Atlético de Madrid",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-30",
+          "home": "Celta",
+          "away": "Athletic Club",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Atlético de Madrid": {
+      "team": "Atlético de Madrid",
+      "league": "laliga",
+      "matchName": "Atlético de Madrid",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Atlético de Madrid",
+          "away": "FC Barcelona",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Levante UD",
+          "away": "Atlético de Madrid",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Atlético de Madrid",
+          "away": "RC Deportivo",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "Atlético de Madrid",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Deportivo Alavés",
+          "away": "Atlético de Madrid",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Atlético de Madrid",
+          "away": "Real Madrid",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Atlético de Madrid",
+          "away": "CA Osasuna",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Real Sociedad",
+          "away": "Atlético de Madrid",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-05",
+          "home": "Athletic Club",
+          "away": "Atlético de Madrid",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-29",
+          "home": "Sevilla FC",
+          "away": "Atlético de Madrid",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:CA Osasuna": {
+      "team": "CA Osasuna",
+      "league": "laliga",
+      "matchName": "CA Osasuna",
+      "lastMatchDate": "2026-11-07",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-07",
+          "home": "CA Osasuna",
+          "away": "Athletic Club",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-02",
+          "home": "RC Deportivo",
+          "away": "CA Osasuna",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Sevilla FC",
+          "away": "CA Osasuna",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "CA Osasuna",
+          "away": "R. Racing Club",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Real Betis",
+          "away": "CA Osasuna",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "CA Osasuna",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Atlético de Madrid",
+          "away": "CA Osasuna",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "CA Osasuna",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "Deportivo Alavés",
+          "away": "CA Osasuna",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-31",
+          "home": "CA Osasuna",
+          "away": "Getafe CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Celta": {
+      "team": "Celta",
+      "league": "laliga",
+      "matchName": "Celta",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Real Madrid",
+          "away": "Celta",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Celta",
+          "away": "Levante UD",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Rayo Vallecano",
+          "away": "Celta",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Celta",
+          "away": "Real Betis",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Celta",
+          "away": "Deportivo Alavés",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Elche CF",
+          "away": "Celta",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Celta",
+          "away": "R. Racing Club",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Celta",
+          "away": "Málaga CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-07",
+          "home": "Getafe CF",
+          "away": "Celta",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-03",
+          "home": "Real Sociedad",
+          "away": "Celta",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Deportivo Alavés": {
+      "team": "Deportivo Alavés",
+      "league": "laliga",
+      "matchName": "Deportivo Alavés",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Deportivo Alavés",
+          "away": "RC Deportivo",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-06",
+          "home": "Sevilla FC",
+          "away": "Deportivo Alavés",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "FC Barcelona",
+          "away": "Deportivo Alavés",
+          "homeScore": 6,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-23",
+          "home": "Deportivo Alavés",
+          "away": "Málaga CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Celta",
+          "away": "Deportivo Alavés",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Deportivo Alavés",
+          "away": "Atlético de Madrid",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Athletic Club",
+          "away": "Deportivo Alavés",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-15",
+          "home": "Deportivo Alavés",
+          "away": "Valencia CF",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "R. Racing Club",
+          "away": "Deportivo Alavés",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "Deportivo Alavés",
+          "away": "CA Osasuna",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Elche CF": {
+      "team": "Elche CF",
+      "league": "laliga",
+      "matchName": "Elche CF",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Elche CF",
+          "away": "Real Betis",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Elche CF",
+          "away": "Valencia CF",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Rayo Vallecano",
+          "away": "Elche CF",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Villarreal CF",
+          "away": "Elche CF",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Elche CF",
+          "away": "Celta",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-18",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "Elche CF",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-15",
+          "home": "Elche CF",
+          "away": "Real Madrid",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Athletic Club",
+          "away": "Elche CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-07",
+          "home": "Elche CF",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-28",
+          "home": "R. Racing Club",
+          "away": "Elche CF",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:FC Barcelona": {
+      "team": "FC Barcelona",
+      "league": "laliga",
+      "matchName": "FC Barcelona",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "FC Barcelona",
+          "away": "Villarreal CF",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Atlético de Madrid",
+          "away": "FC Barcelona",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "FC Barcelona",
+          "away": "Deportivo Alavés",
+          "homeScore": 6,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "FC Barcelona",
+          "away": "Real Madrid",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Real Betis",
+          "away": "FC Barcelona",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "FC Barcelona",
+          "away": "Getafe CF",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Sevilla FC",
+          "away": "FC Barcelona",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "FC Barcelona",
+          "away": "R. Racing Club",
+          "homeScore": 7,
+          "awayScore": 2,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Levante UD",
+          "away": "FC Barcelona",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "Valencia CF",
+          "away": "FC Barcelona",
+          "homeScore": 0,
+          "awayScore": 5,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Getafe CF": {
+      "team": "Getafe CF",
+      "league": "laliga",
+      "matchName": "Getafe CF",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Villarreal CF",
+          "away": "Getafe CF",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Getafe CF",
+          "away": "Sevilla FC",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Athletic Club",
+          "away": "Getafe CF",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-19",
+          "home": "Getafe CF",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "FC Barcelona",
+          "away": "Getafe CF",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Getafe CF",
+          "away": "Málaga CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Real Betis",
+          "away": "Getafe CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Getafe CF",
+          "away": "RC Deportivo",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-07",
+          "home": "Getafe CF",
+          "away": "Celta",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-31",
+          "home": "CA Osasuna",
+          "away": "Getafe CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Levante UD": {
+      "team": "Levante UD",
+      "league": "laliga",
+      "matchName": "Levante UD",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Celta",
+          "away": "Levante UD",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Levante UD",
+          "away": "Atlético de Madrid",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Real Sociedad",
+          "away": "Levante UD",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Levante UD",
+          "away": "Athletic Club",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-16",
+          "home": "RC Deportivo",
+          "away": "Levante UD",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-12",
+          "home": "Levante UD",
+          "away": "Sevilla FC",
+          "homeScore": 3,
+          "awayScore": 3,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Villarreal CF",
+          "away": "Levante UD",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Levante UD",
+          "away": "FC Barcelona",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "Málaga CF",
+          "away": "Levante UD",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-29",
+          "home": "Levante UD",
+          "away": "Real Betis",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Málaga CF": {
+      "team": "Málaga CF",
+      "league": "laliga",
+      "matchName": "Málaga CF",
+      "lastMatchDate": "2026-11-07",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-07",
+          "home": "Málaga CF",
+          "away": "R. Racing Club",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Real Betis",
+          "away": "Málaga CF",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-23",
+          "home": "Deportivo Alavés",
+          "away": "Málaga CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Málaga CF",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-09",
+          "home": "Málaga CF",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Getafe CF",
+          "away": "Málaga CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Málaga CF",
+          "away": "Villarreal CF",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Celta",
+          "away": "Málaga CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "Málaga CF",
+          "away": "Levante UD",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-30",
+          "home": "Real Madrid",
+          "away": "Málaga CF",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:R. Racing Club": {
+      "team": "R. Racing Club",
+      "league": "laliga",
+      "matchName": "R. Racing Club",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "R. Racing Club",
+          "away": "Real Sociedad",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "Málaga CF",
+          "away": "R. Racing Club",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "R. Racing Club",
+          "away": "Real Madrid",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "R. Racing Club",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "CA Osasuna",
+          "away": "R. Racing Club",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "R. Racing Club",
+          "away": "Valencia CF",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Celta",
+          "away": "R. Racing Club",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "FC Barcelona",
+          "away": "R. Racing Club",
+          "homeScore": 7,
+          "awayScore": 2,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "R. Racing Club",
+          "away": "Deportivo Alavés",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-05",
+          "home": "Rayo Vallecano",
+          "away": "R. Racing Club",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:RC Deportivo": {
+      "team": "RC Deportivo",
+      "league": "laliga",
+      "matchName": "RC Deportivo",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Deportivo Alavés",
+          "away": "RC Deportivo",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "RC Deportivo",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-02",
+          "home": "RC Deportivo",
+          "away": "CA Osasuna",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Atlético de Madrid",
+          "away": "RC Deportivo",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-16",
+          "home": "RC Deportivo",
+          "away": "Levante UD",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Real Sociedad",
+          "away": "RC Deportivo",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "RC Deportivo",
+          "away": "Real Betis",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "RC Deportivo",
+          "away": "Sevilla FC",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Getafe CF",
+          "away": "RC Deportivo",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-05",
+          "home": "Villarreal CF",
+          "away": "RC Deportivo",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:RCD Espanyol de Barcelona": {
+      "team": "RCD Espanyol de Barcelona",
+      "league": "laliga",
+      "matchName": "RCD Espanyol de Barcelona",
+      "lastMatchDate": "2026-11-20",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-20",
+          "home": "Athletic Club",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "RC Deportivo",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-30",
+          "home": "Villarreal CF",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "R. Racing Club",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "Atlético de Madrid",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-09",
+          "home": "Málaga CF",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-18",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "Elche CF",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-15",
+          "home": "Rayo Vallecano",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "CA Osasuna",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "Sevilla FC",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Rayo Vallecano": {
+      "team": "Rayo Vallecano",
+      "league": "laliga",
+      "matchName": "Rayo Vallecano",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Rayo Vallecano",
+          "away": "Valencia CF",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Real Sociedad",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Rayo Vallecano",
+          "away": "Celta",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Rayo Vallecano",
+          "away": "Elche CF",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-19",
+          "home": "Getafe CF",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "CA Osasuna",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-15",
+          "home": "Rayo Vallecano",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Real Madrid",
+          "away": "Rayo Vallecano",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-05",
+          "home": "Rayo Vallecano",
+          "away": "R. Racing Club",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-08-31",
+          "home": "FC Barcelona",
+          "away": "Rayo Vallecano",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Real Betis": {
+      "team": "Real Betis",
+      "league": "laliga",
+      "matchName": "Real Betis",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Sevilla FC",
+          "away": "Real Betis",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Elche CF",
+          "away": "Real Betis",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Real Betis",
+          "away": "Málaga CF",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Celta",
+          "away": "Real Betis",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Real Betis",
+          "away": "FC Barcelona",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Real Betis",
+          "away": "CA Osasuna",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "RC Deportivo",
+          "away": "Real Betis",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Real Betis",
+          "away": "Getafe CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-14",
+          "home": "Villarreal CF",
+          "away": "Real Betis",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-04",
+          "home": "Real Betis",
+          "away": "Real Madrid",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Real Madrid": {
+      "team": "Real Madrid",
+      "league": "laliga",
+      "matchName": "Real Madrid",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Real Madrid",
+          "away": "Celta",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "Valencia CF",
+          "away": "Real Madrid",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "R. Racing Club",
+          "away": "Real Madrid",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "FC Barcelona",
+          "away": "Real Madrid",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Real Madrid",
+          "away": "Sevilla FC",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Real Madrid",
+          "away": "Villarreal CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Atlético de Madrid",
+          "away": "Real Madrid",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-15",
+          "home": "Elche CF",
+          "away": "Real Madrid",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Real Madrid",
+          "away": "Rayo Vallecano",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-04",
+          "home": "Real Betis",
+          "away": "Real Madrid",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Real Sociedad": {
+      "team": "Real Sociedad",
+      "league": "laliga",
+      "matchName": "Real Sociedad",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "R. Racing Club",
+          "away": "Real Sociedad",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Real Sociedad",
+          "away": "Rayo Vallecano",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Athletic Club",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Real Sociedad",
+          "away": "Levante UD",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Málaga CF",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Real Sociedad",
+          "away": "RC Deportivo",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Valencia CF",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Real Sociedad",
+          "away": "Atlético de Madrid",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-07",
+          "home": "Elche CF",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-03",
+          "home": "Real Sociedad",
+          "away": "Celta",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Sevilla FC": {
+      "team": "Sevilla FC",
+      "league": "laliga",
+      "matchName": "Sevilla FC",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Sevilla FC",
+          "away": "Real Betis",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-06",
+          "home": "Sevilla FC",
+          "away": "Deportivo Alavés",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Getafe CF",
+          "away": "Sevilla FC",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Sevilla FC",
+          "away": "CA Osasuna",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Real Madrid",
+          "away": "Sevilla FC",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-12",
+          "home": "Levante UD",
+          "away": "Sevilla FC",
+          "homeScore": 3,
+          "awayScore": 3,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Sevilla FC",
+          "away": "FC Barcelona",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "RC Deportivo",
+          "away": "Sevilla FC",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-11",
+          "home": "Sevilla FC",
+          "away": "Valencia CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "RCD Espanyol de Barcelona",
+          "away": "Sevilla FC",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Valencia CF": {
+      "team": "Valencia CF",
+      "league": "laliga",
+      "matchName": "Valencia CF",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Rayo Vallecano",
+          "away": "Valencia CF",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "Valencia CF",
+          "away": "Real Madrid",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Elche CF",
+          "away": "Valencia CF",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Valencia CF",
+          "away": "Villarreal CF",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Valencia CF",
+          "away": "Athletic Club",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "R. Racing Club",
+          "away": "Valencia CF",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Valencia CF",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-15",
+          "home": "Deportivo Alavés",
+          "away": "Valencia CF",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-11",
+          "home": "Sevilla FC",
+          "away": "Valencia CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-06",
+          "home": "Valencia CF",
+          "away": "FC Barcelona",
+          "homeScore": 0,
+          "awayScore": 5,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "laliga:Villarreal CF": {
+      "team": "Villarreal CF",
+      "league": "laliga",
+      "matchName": "Villarreal CF",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "FC Barcelona",
+          "away": "Villarreal CF",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "13",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Villarreal CF",
+          "away": "Getafe CF",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-30",
+          "home": "Villarreal CF",
+          "away": "RCD Espanyol de Barcelona",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Valencia CF",
+          "away": "Villarreal CF",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Villarreal CF",
+          "away": "Elche CF",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Real Madrid",
+          "away": "Villarreal CF",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Villarreal CF",
+          "away": "Levante UD",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Málaga CF",
+          "away": "Villarreal CF",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "6",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-14",
+          "home": "Villarreal CF",
+          "away": "Real Betis",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-05",
+          "home": "Villarreal CF",
+          "away": "RC Deportivo",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:AEK Athens": {
+      "team": "AEK Athens",
+      "league": "ucl",
+      "matchName": "AEK Athens",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "AEK Athens",
+          "away": "Real Madrid",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Man City",
+          "away": "AEK Athens",
+          "homeScore": 5,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "Shakhtar",
+          "away": "AEK Athens",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-08",
+          "home": "AEK Athens",
+          "away": "LASK",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Bodø/Glimt": {
+      "team": "Bodø/Glimt",
+      "league": "ucl",
+      "matchName": "Bodø/Glimt",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "Bodø/Glimt",
+          "away": "Lille",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Napoli",
+          "away": "Bodø/Glimt",
+          "homeScore": 4,
+          "awayScore": 3,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "Bodø/Glimt",
+          "away": "B. Dortmund",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-10",
+          "home": "Bayern München",
+          "away": "Bodø/Glimt",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Club Brugge": {
+      "team": "Club Brugge",
+      "league": "ucl",
+      "matchName": "Club Brugge",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "PSV",
+          "away": "Club Brugge",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Club Brugge",
+          "away": "Lens",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Inter",
+          "away": "Club Brugge",
+          "homeScore": 3,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-08",
+          "home": "Club Brugge",
+          "away": "Aston Villa",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Fenerbahçe": {
+      "team": "Fenerbahçe",
+      "league": "ucl",
+      "matchName": "Fenerbahçe",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "Fenerbahçe",
+          "away": "Liverpool",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Fenerbahçe",
+          "away": "Slavia Praha",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "Aston Villa",
+          "away": "Fenerbahçe",
+          "homeScore": 6,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-10",
+          "home": "Fenerbahçe",
+          "away": "Roma",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Feyenoord": {
+      "team": "Feyenoord",
+      "league": "ucl",
+      "matchName": "Feyenoord",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "Feyenoord",
+          "away": "Inter",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Real Betis",
+          "away": "Feyenoord",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "Feyenoord",
+          "away": "Como",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-09",
+          "home": "Barcelona",
+          "away": "Feyenoord",
+          "homeScore": 5,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Galatasaray": {
+      "team": "Galatasaray",
+      "league": "ucl",
+      "matchName": "Galatasaray",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "Galatasaray",
+          "away": "Stuttgart",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Lille",
+          "away": "Galatasaray",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Galatasaray",
+          "away": "Barcelona",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-09",
+          "home": "Sporting CP",
+          "away": "Galatasaray",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:LASK": {
+      "team": "LASK",
+      "league": "ucl",
+      "matchName": "LASK",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "LASK",
+          "away": "S. Bratislava",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Sporting CP",
+          "away": "LASK",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "LASK",
+          "away": "Liverpool",
+          "homeScore": 3,
+          "awayScore": 6,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-08",
+          "home": "AEK Athens",
+          "away": "LASK",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:PSV": {
+      "team": "PSV",
+      "league": "ucl",
+      "matchName": "PSV",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "PSV",
+          "away": "Club Brugge",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Porto",
+          "away": "PSV",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Leipzig",
+          "away": "PSV",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-10",
+          "home": "PSV",
+          "away": "Shakhtar",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Porto": {
+      "team": "Porto",
+      "league": "ucl",
+      "matchName": "Porto",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "Porto",
+          "away": "Napoli",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Porto",
+          "away": "PSV",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "Real Betis",
+          "away": "Porto",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-08",
+          "home": "Porto",
+          "away": "Man City",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:S. Bratislava": {
+      "team": "S. Bratislava",
+      "league": "ucl",
+      "matchName": "S. Bratislava",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "LASK",
+          "away": "S. Bratislava",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Roma",
+          "away": "S. Bratislava",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "S. Bratislava",
+          "away": "Stuttgart",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-09",
+          "home": "Paris",
+          "away": "S. Bratislava",
+          "homeScore": 6,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Sabah": {
+      "team": "Sabah",
+      "league": "ucl",
+      "matchName": "Sabah",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "Viking",
+          "away": "Sabah",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Sabah",
+          "away": "B. Dortmund",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Sabah",
+          "away": "Slavia Praha",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-10",
+          "home": "Man Utd",
+          "away": "Sabah",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Shakhtar": {
+      "team": "Shakhtar",
+      "league": "ucl",
+      "matchName": "Shakhtar",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "Shakhtar",
+          "away": "Sporting CP",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Inter",
+          "away": "Shakhtar",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-14",
+          "home": "Shakhtar",
+          "away": "AEK Athens",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-10",
+          "home": "PSV",
+          "away": "Shakhtar",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Slavia Praha": {
+      "team": "Slavia Praha",
+      "league": "ucl",
+      "matchName": "Slavia Praha",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "Slavia Praha",
+          "away": "Arsenal",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-20",
+          "home": "Fenerbahçe",
+          "away": "Slavia Praha",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Sabah",
+          "away": "Slavia Praha",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-10",
+          "home": "Slavia Praha",
+          "away": "Lens",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Sporting CP": {
+      "team": "Sporting CP",
+      "league": "ucl",
+      "matchName": "Sporting CP",
+      "lastMatchDate": "2026-11-03",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-03",
+          "home": "Shakhtar",
+          "away": "Sporting CP",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Sporting CP",
+          "away": "LASK",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Lens",
+          "away": "Sporting CP",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-09",
+          "home": "Sporting CP",
+          "away": "Galatasaray",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "ucl:Viking": {
+      "team": "Viking",
+      "league": "ucl",
+      "matchName": "Viking",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "Viking",
+          "away": "Sabah",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-21",
+          "home": "Aston Villa",
+          "away": "Viking",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-13",
+          "home": "Viking",
+          "away": "Bayern München",
+          "homeScore": 3,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-09",
+          "home": "Stuttgart",
+          "away": "Viking",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
     }
-  }
+  },
+  "notes": "UCL-only profiles have Champions League results, which may total fewer than ten matches; domestic teams use last ten domestic league matches."
 }
