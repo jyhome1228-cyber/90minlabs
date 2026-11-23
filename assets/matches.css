@@ -111,3 +111,13 @@
  #matches .match-date-field input[type="date"]{width:168px}
  #matches .match-control-right select{flex:1;min-width:126px}
 }
+
+/* Current KST clock, no accent colors */
+#matches .match-live-clock{
+ display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:550;
+ color:#626262;letter-spacing:0;font-variant-numeric:tabular-nums;
+ white-space:nowrap
+}
+@media(max-width:650px){
+ #matches .match-live-clock{font-size:12px;margin-top:0}
+}
