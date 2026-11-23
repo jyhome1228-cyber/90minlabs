@@ -74,14 +74,30 @@ section.block{padding:89px 0}
 .weekly-picks-link:hover{color:#666}
 @media(max-width:650px){.weekly-picks-link{display:block;width:fit-content;margin:9px 0 0;font-size:13.333px}}
 </style>
-<link rel="stylesheet" href="./assets/home.css?v=20261123-today1">
+<link rel="stylesheet" href="./assets/home.css?v=20261123-fullbleed1">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-type1pt">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
 <script src="assets/site-shell.js?v=20261123-today" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
 <script src="assets/site-language.js?v=20261123-i18n-final" defer></script>
+<script>
+(function(){
+ if(location.hash && location.hash!=="#home")return;
+ if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+ try{if(sessionStorage.getItem("90minlabs.intro.played.v1"))return;}catch(e){}
+ document.documentElement.classList.add("intro-pending");
+})();
+</script>
+<link rel="stylesheet" href="assets/intro.css?v=20261123-kickoff1">
+<script src="assets/intro.js?v=20261123-kickoff1" defer></script>
 </head><body>
+<div class="kickoff-intro" id="kickoffIntro" aria-label="90MIN LABS 시작 애니메이션" aria-hidden="true">
+  <div class="kickoff-top"><span>90MIN LABS.</span><button class="kickoff-skip" type="button" id="kickoffSkip">SKIP INTRO <span aria-hidden="true">↗</span></button></div>
+  <div class="kickoff-content"><div class="kickoff-caption">EVERY MATCH HAS A STORY.</div><div class="kickoff-counter" id="kickoffCounter" aria-live="off">00:00</div><div class="kickoff-progress" aria-hidden="true"><span id="kickoffBar"></span></div><div class="kickoff-subtitle" id="kickoffStatus">THE GAME IS ABOUT TO BEGIN</div></div>
+  <div class="kickoff-footer"><span>FOOTBALL RESEARCH</span><span>EST. 2026</span></div>
+</div>
+
 <header class="site-header" data-site-header data-active="auto" data-menu-open="false">
   <div class="shell-inner">
     <a class="shell-brand" href="index.html">90MIN LABS.</a>
@@ -99,20 +115,21 @@ section.block{padding:89px 0}
 <noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
 <main class="wrap">
 <section id="home" class="view home-view" aria-label="90MIN LABS 메인">
-  <div class="home-hero">
+  <section class="home-hero" aria-label="90MIN LABS 축구 메인 비주얼">
+    <img class="home-hero-photo" src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084547-image-334-9f0ce814.webp" alt="어두운 경기장에서 조명을 바라보는 축구 선수" fetchpriority="high" decoding="async">
+    <div class="home-hero-shade" aria-hidden="true"></div>
     <div class="home-copy">
-      <div>
-        <span class="home-overline">FOOTBALL. EVERY DAY.</span>
-        <h1 class="home-brandline">오늘의 경기,<br><span>한눈에 확인하세요.</span></h1>
-        <p class="home-lead">매일 달라지는 경기 일정과 최종 결과를 확인하고, 원하는 경기의 분석과 나만의 승무패 예측을 이어가세요.</p>
+      <div class="home-hero-topline"><span>90MIN LABS</span><span>FOOTBALL / DAILY</span></div>
+      <div class="home-copy-main">
+        <span class="home-overline">THE GAME IS NEVER JUST A SCORE</span>
+        <h1 class="home-brandline">축구의 모든 순간을,<br>더 깊이 읽다.</h1>
+        <p class="home-lead">오늘의 경기부터 다음 경기의 흐름까지.<br>기록을 읽고, 분석하고, 나만의 예측을 남기세요.</p>
+        <div class="home-actions"><a class="home-action" id="homeFixtureLink" href="index.html#matches">오늘의 경기 확인</a><a class="home-action secondary" href="mypage.html">주간 예측 만들기</a></div>
       </div>
-      <div class="home-actions"><a class="home-action" id="homeFixtureLink" href="index.html#matches">오늘 경기 일정</a><a class="home-action secondary" href="mypage.html">주간 예측 만들기</a></div>
+      <div class="home-hero-bottom"><span>INDEPENDENT FOOTBALL RESEARCH</span><span>90' / FULL TIME</span></div>
     </div>
-    <div class="home-visual">
-      <img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084548-image-336-e1d96f23.webp" alt="축구 유니폼, 하늘색과 흰색 스트라이프 상의 및 반바지" decoding="async" fetchpriority="high">
-      <small>90MIN LABS / FOOTBALL STUDIES</small>
-    </div>
-  </div>
+    <a class="home-scroll-cue" href="#today" aria-label="오늘의 경기 섹션으로 이동"><span>SCROLL TO MATCHES</span><span aria-hidden="true">↓</span></a>
+  </section>
   <section class="home-daily" id="today" aria-labelledby="homeFixturesTitle">
     <div class="home-daily-top">
       <div><span class="home-overline">MATCH CENTRE · KST</span><h2 class="home-daily-title" id="homeFixturesTitle">오늘의 경기</h2><p class="home-daily-date"><span id="homeTodayDate">오늘 날짜 확인 중</span> <span class="home-daily-sub" id="homeCurrentTime"></span></p></div>
@@ -121,9 +138,14 @@ section.block{padding:89px 0}
     <div class="home-daily-head"><span id="homeFixturesNote">모든 경기 시간은 한국시간 기준입니다.</span><span id="homeFixturesLabel"></span></div>
     <div id="homeFixtures" aria-live="polite"><div class="daily-empty">경기 일정 불러오는 중…</div></div>
   </section>
-  <section class="home-feature" aria-label="경기 전망 소개">
-    <div class="home-feature-photo"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084547-image-334-9f0ce814.webp" alt="조명이 비치는 경기장에서 서 있는 줄무늬 유니폼의 축구 선수" loading="lazy" decoding="async"></div>
-    <div class="home-feature-content"><span class="home-overline">BEYOND THE SCORE</span><h2>경기 결과를 넘어,<br>흐름까지 읽습니다.</h2><p>최근 경기력과 홈·원정 기록을 바탕으로 다음 경기를 살펴보세요. 분석 리포트를 확인하고 주간 예측 폴더에 관심 경기를 저장할 수 있습니다.</p><a href="index.html#predictions">경기 전망 살펴보기</a></div>
+  <section class="home-feature" aria-label="경기 전망과 예측 소개">
+    <div class="home-feature-content">
+      <span class="home-overline">THE NEXT 90 MINUTES</span>
+      <h2>예상하고, 기록하고,<br>다시 분석하다.</h2>
+      <p>경기마다 이어지는 분석을 확인하고 주간 예측 폴더에 나만의 승·무·패를 남겨보세요.</p>
+      <a href="index.html#predictions">경기 전망 살펴보기</a>
+    </div>
+    <div class="home-feature-photo"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084548-image-336-e1d96f23.webp" alt="하늘색과 흰색 스트라이프 축구 유니폼 전체 구성" loading="lazy" decoding="async"></div>
   </section>
 </section>
 <div id="predictions" class="view hidden page">
