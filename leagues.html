@@ -110,6 +110,42 @@ main#leagues{scroll-margin-top:82px}
  .uefa-table td{height:62px}
 }
 
+
+/* UEFA table: club crest dimensions aligned with domestic standings */
+.uefa-table{table-layout:fixed}
+.uefa-table th:nth-child(1),.uefa-table td:nth-child(1){width:74px}
+.uefa-table th:nth-child(2),.uefa-table td:nth-child(2){width:auto;min-width:225px}
+.uefa-table th:nth-child(n+3),.uefa-table td:nth-child(n+3){width:7%}
+.uefa-table tbody .uefa-standing-row{height:68px}
+.uefa-table tbody .uefa-standing-row td{height:68px;max-height:68px;padding:13px 14px;vertical-align:middle}
+.uefa-table tbody .uefa-standing-row td:nth-child(2){text-align:left}
+.uefa-table tbody .uefa-standing-row .teamlink{display:inline-flex;align-items:center;gap:12px;min-height:30px;max-width:100%;vertical-align:middle}
+.uefa-table .teamlink > img.teamlogo,
+.uefa-table .teamlink > img,
+.uefa-table .teamlink > .club-initial{
+ box-sizing:border-box;
+ display:inline-block;
+ width:28px !important;
+ height:28px !important;
+ min-width:28px !important;
+ min-height:28px !important;
+ max-width:28px !important;
+ max-height:28px !important;
+ flex:0 0 28px;
+ object-fit:contain;
+ margin:0 !important;
+ vertical-align:middle;
+}
+.uefa-table .teamlink > .club-initial{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#EFEFEF;font-size:10px}
+.uefa-table .uefa-team-name{font-size:13px;line-height:1.5;font-weight:650;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.uefa-table tbody .uefa-group td{height:43px;max-height:43px;padding:10px 15px}
+@media(max-width:950px){
+ .uefa-table{table-layout:auto;min-width:800px}
+ .uefa-table th:nth-child(1),.uefa-table td:nth-child(1){width:60px}
+ .uefa-table th:nth-child(2),.uefa-table td:nth-child(2){min-width:190px}
+ .uefa-table th:nth-child(n+3),.uefa-table td:nth-child(n+3){width:auto}
+}
+
 </style>
 </head>
 <body>
@@ -197,7 +233,7 @@ function clubLogo(container,club,label){
  const fallback=document.createElement("span");
  fallback.className="club-initial";fallback.textContent=(label||"FC").slice(0,2).toUpperCase();
  if(club?.crestId){
-   const img=document.createElement("img");img.alt="";img.loading="lazy";
+   const img=document.createElement("img");img.className="teamlogo";img.alt="";img.loading="lazy";
    img.src="https://crests.football-data.org/"+club.crestId+".png";img.onerror=()=>img.replaceWith(fallback);
    container.append(img);return;
  }
@@ -206,7 +242,7 @@ function clubLogo(container,club,label){
  if(lookup&&uefaCodes.has(state.league)){
   retrieveBadge(lookup).then(url=>{
     if(!url||!fallback.isConnected)return;
-    const img=document.createElement("img");img.alt="";img.loading="lazy";img.src=url;
+    const img=document.createElement("img");img.className="teamlogo";img.alt="";img.loading="lazy";img.src=url;
     img.onerror=()=>img.replaceWith(fallback);fallback.replaceWith(img);
   });
  }
