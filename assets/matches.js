@@ -2,10 +2,10 @@
 "use strict";
 const root=document.getElementById("matches");
 if(!root)return;
-const leagueNames={epl:"프리미어리그",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그"};
-const leagueShort={epl:"EPL",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL"};
-const leagueTabs=[["all","전체"],["epl","프리미어리그"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"]];
-const state={league:"all",status:"all",weekStart:null,matches:[],source:null,forms:null};
+const leagueNames={epl:"프리미어리그",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",championship:"잉글랜드 챔피언십"};
+const leagueShort={epl:"EPL",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",championship:"CHAMPIONSHIP"};
+const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"]];
+const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,forms:null};
 const $=id=>document.getElementById(id);
 function element(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined&&value!==null)el.textContent=String(value);return el;}
 function dateObj(iso){return new Date(iso+"T12:00:00Z");}
@@ -112,9 +112,15 @@ function renderTabs(){
  }
 }
 function renderList(){
- const end=shift(state.weekStart,6);
- $("matchWeekLabel").textContent=shortDate(state.weekStart)+" ~ "+shortDate(end);
- const filtered=state.matches.filter(m=>m.date>=state.weekStart&&m.date<=end&&(state.league==="all"||m.league===state.league)&&(state.status==="all"||eventStatus(m)===state.status));
+ if(!state.selectedDate)state.selectedDate=kstToday();
+ const start=state.viewMode==="week"?weekStart(state.selectedDate):state.selectedDate;
+ const end=state.viewMode==="week"?shift(start,6):start;
+ $("matchWeekLabel").textContent=state.viewMode==="week"?shortDate(start)+" ~ "+shortDate(end):dateLabel(start);
+ $("matchDateInput").value=state.selectedDate;
+ $("matchViewMode").value=state.viewMode;
+ $("matchPrevWeek").textContent=state.viewMode==="week"?"이전 주":"이전 날";
+ $("matchNextWeek").textContent=state.viewMode==="week"?"다음 주":"다음 날";
+ const filtered=state.matches.filter(m=>m.date>=start&&m.date<=end&&(state.league==="all"||m.league===state.league)&&(state.status==="all"||eventStatus(m)===state.status));
  $("matchCounter").textContent=filtered.length+"경기";
  const list=$("matchList");list.replaceChildren();
  if(!filtered.length){
@@ -131,10 +137,17 @@ function renderList(){
  }
 }
 async function init(){
- state.weekStart=weekStart(kstToday());
- $("matchPrevWeek").addEventListener("click",()=>{state.weekStart=shift(state.weekStart,-7);renderList()});
- $("matchNextWeek").addEventListener("click",()=>{state.weekStart=shift(state.weekStart,7);renderList()});
- $("matchGoToday").addEventListener("click",()=>{state.weekStart=weekStart(kstToday());renderList()});
+ const today=kstToday();
+ state.selectedDate=today;
+ $("matchTodayDate").textContent=new Intl.DateTimeFormat("ko-KR",{timeZone:"UTC",year:"numeric",month:"long",day:"numeric",weekday:"long"}).format(dateObj(today));
+ $("matchPrevWeek").addEventListener("click",()=>{state.selectedDate=shift(state.selectedDate,state.viewMode==="week"?-7:-1);renderList()});
+ $("matchNextWeek").addEventListener("click",()=>{state.selectedDate=shift(state.selectedDate,state.viewMode==="week"?7:1);renderList()});
+ $("matchGoToday").addEventListener("click",()=>{state.selectedDate=kstToday();state.viewMode="day";renderList()});
+ $("matchDateInput").addEventListener("change",e=>{
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(e.target.value))return;
+  state.selectedDate=e.target.value;renderList();
+ });
+ $("matchViewMode").addEventListener("change",e=>{state.viewMode=e.target.value==="week"?"week":"day";renderList()});
  $("matchStatusFilter").addEventListener("change",e=>{state.status=e.target.value;renderList()});
  renderTabs();
  const el=$("matchList");el.replaceChildren(element("div","match-empty","경기 일정을 불러오는 중입니다."));
