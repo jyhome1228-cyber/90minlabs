@@ -8,7 +8,7 @@
   const gradeNames = { correct: "적중", incorrect: "미적중", pending: "결과 대기", void: "집계 제외" };
   const searchKey = value => String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").normalize("NFC").replace(/[^a-z0-9가-힣]/g, "");
   const params = new URLSearchParams(location.search);
-  const state = { context: null, store: null, sets: [], storageReady: false, loading: false, week: "", league: "all", query: "", filter: "available", historyWeek: "all", picks: new Map(), editingId: null, editingUpdatedAt: null, baseline: "", highlighted: null, currentDay: "" };
+  const state = { accountMode: false, context: null, store: null, sets: [], storageReady: false, loading: false, week: "", league: "all", query: "", filter: "available", historyWeek: "all", picks: new Map(), editingId: null, editingUpdatedAt: null, baseline: "", highlighted: null, currentDay: "" };
   const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = String(text); return node; };
   const shiftDate = (iso, days) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10); };
   const dateLabel = (iso, long) => new Intl.DateTimeFormat("ko-KR", { timeZone: "UTC", ...(long ? { year: "numeric" } : {}), month: "long", day: "numeric", weekday: long ? undefined : "short" }).format(new Date(iso + "T12:00:00Z"));
@@ -218,6 +218,7 @@
       if (!loadSaved()) return; commitBaseline(); render();
       $("saveStatus").textContent = "예측 묶음이 저장되었습니다.";
       notice(saved.title + " · " + saved.picks.length + "경기의 예측을 저장했습니다.");
+       if (state.accountMode) window.dispatchEvent(new CustomEvent("ninetymin:local-change"));
     } catch (error) { $("saveStatus").textContent = error.message || "저장하지 못했습니다. 다시 시도해 주세요."; if (/CORRUPT|UNSUPPORTED|STORAGE_(?:UNAVAILABLE|READ_FAILED|WRITE_FAILED|FULL)/.test(error.code || "")) storageFailure(error); if (error.code === "STORAGE_CONFLICT") { loadSaved(); renderSaved(); } }
     finally { $("saveSet").disabled = !state.storageReady || !state.picks.size; }
   }
@@ -232,7 +233,7 @@
   async function deleteSet(id) {
     const set = state.sets.find(item => item.id === id); if (!set) return;
     if (!await confirmAction("예측 기록을 삭제할까요?", "‘" + set.title + "’ 묶음과 저장된 선택이 삭제됩니다. 삭제한 기록은 되돌릴 수 없습니다.", "삭제하기")) return;
-    try { state.store.deleteSet(id, state.context); if (!loadSaved()) return; if (state.editingId === id) draftReset(state.week); render(); notice("예측 묶음을 삭제했습니다."); }
+    try { state.store.deleteSet(id, state.context); if (!loadSaved()) return; if (state.editingId === id) draftReset(state.week); render(); notice("예측 묶음을 삭제했습니다."); if (state.accountMode) window.dispatchEvent(new CustomEvent("ninetymin:local-change")); }
     catch (error) { notice(error.message || "기록을 삭제하지 못했습니다."); }
   }
   function exportRecords() {
@@ -303,5 +304,6 @@
   draftReset(state.week); renderWeek();
   leagueKeys.forEach(key => $("leagueFilter").append(new Option(MatchAnalysis.leagueLabel(key), key)));
   try { state.store = PredictionStore.createStore(window.localStorage); loadSaved(); } catch (error) { storageFailure(error); }
+  window.NinetyMinPage = { setAccountMode(enabled) { state.accountMode = Boolean(enabled); }, reloadRecords() { if (loadSaved()) { renderSaved(); renderFixtures(); renderSlip(); } }, isDirty };
   renderSaved(); bind(); loadFixtures();
 })();
