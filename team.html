@@ -158,6 +158,38 @@ function renderSquad(list){
  for(const [label,roster] of Object.entries(groups)){if(!roster.length)continue;const sec=document.createElement("div");sec.className="group";const h=document.createElement("h3");h.textContent=label;sec.append(h);const grid=document.createElement("div");grid.className="squad";for(const p of roster){const item=document.createElement("div");item.className="player";const name=document.createElement("strong");name.textContent=p.strPlayer;const other=document.createElement("span");other.textContent=(p.strNumber?"#"+p.strNumber+" · ":"")+(p.strPosition||"");item.append(name,other);grid.append(item);}sec.append(grid);box.append(sec);}
  select("squadSource").textContent="선수단은 TheSportsDB에서 제공한 일부 명단이야. 현재 시즌의 전체 등록 선수나 공식 감독 명단을 뜻하지 않아.";
 }
+const liveDirs={epl:"ENG_1_premier-league",seriea:"ITA_1_serie-a",bundesliga:"GER_1_bundesliga",ligue1:"FRA_1_ligue-1"};
+function parseCSV(text){
+ const grid=[];let row=[],v="",quoted=false;
+ for(let i=0;i<text.length;i++){const c=text[i];
+  if(c==='"'){if(quoted&&text[i+1]==='"'){v+='"';i++}else quoted=!quoted;}
+  else if(c===','&&!quoted){row.push(v);v="";}
+  else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(v);if(row.some(Boolean))grid.push(row);row=[];v="";}
+  else v+=c;
+ }
+ if(v||row.length){row.push(v);grid.push(row)}
+ const [heads,...rows]=grid;
+ return heads?rows.map(x=>Object.fromEntries(heads.map((key,j)=>[key,x[j]||""]))):[];
+}
+function toEvents(records){return records.map((m,i)=>({idEvent:m.date+"-"+i,dateEvent:m.date,strHomeTeam:m.home,strAwayTeam:m.away,intHomeScore:m.homeScore,intAwayScore:m.awayScore,strLeague:names[league]}));}
+async function refreshResults(recent){
+ if(!recent||!liveDirs[league])return;
+ const url="https://cdn.jsdelivr.net/gh/oladeeayo/open-matchday@master/data/"+liveDirs[league]+"/results_2627.csv";
+ const ctrl=new AbortController();const timer=setTimeout(()=>ctrl.abort(),8000);
+ try{
+ const res=await fetch(url,{signal:ctrl.signal});if(!res.ok)return;
+ const rows=parseCSV(await res.text());
+ const today=new Date().toISOString().slice(0,10);
+ const fixtures=rows.filter(x=>(x.home===recent.matchName||x.away===recent.matchName)&&x.date<=today&&/^\d+$/.test(x.ft_home)&&/^\d+$/.test(x.ft_away))
+ .sort((a,b)=>(b.date+" "+b.time).localeCompare(a.date+" "+a.time)).slice(0,10);
+ if(!fixtures.length||fixtures[0].date<(recent.lastMatchDate||""))return;
+ const matches=fixtures.map(x=>({date:x.date,home:x.home,away:x.away,homeScore:Number(x.ft_home),awayScore:Number(x.ft_away)}));
+ showMatches(toEvents(matches),null);
+ show("matchNotice","최근 리그 "+matches.length+"경기 · 마지막 결과 "+fixtures[0].date+". 컵대회와 유럽대항전 결과는 포함하지 않았어.");
+ select("resultsSource").href="https://github.com/oladeeayo/open-matchday";
+ select("resultsSource").textContent="경기 기록: open-matchday";
+ }catch(e){}finally{clearTimeout(timer)}
+}
 function parseMatch(item){
  if(!item||!item.dateEvent||item.intHomeScore===null||item.intAwayScore===null||item.intHomeScore===undefined||item.intAwayScore===undefined)return null;
  const home=Number(item.intHomeScore),away=Number(item.intAwayScore);
@@ -204,6 +236,7 @@ async function loadTeam(){
   show("matchNotice","최근 리그 10경기 · "+(recent.lastMatchDate||"날짜 미확인")+"까지의 제공처 기록입니다. 컵대회 및 유럽대항전은 제외됩니다.");
   const src=select("resultsSource");src.href=recent.sourceUrl||"https://github.com/oladeeayo/open-matchday";src.textContent="경기 기록: open-matchday";
   hasLocalResults=true;
+  refreshResults(recent);
  }
  const query=local.searchName||teamName;
  select("newsSearch").href="https://news.google.com/search?q="+encodeURIComponent(query+" football")+"&hl=ko&gl=KR&ceid=KR:ko";
