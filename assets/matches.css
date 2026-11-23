@@ -145,3 +145,9 @@
  :is(#matches,#predictions) .match-score-area span{font-size:12.333px}
  #matches .match-today-bar{background:transparent;padding:19px 0;border-right:0;border-left:0;margin-top:28px}
 }
+
+/* Unified loading feedback for match listings. */
+.match-loading{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:18px;min-height:230px}
+.match-loading-spinner{display:block;width:27px;height:27px;border-radius:50%;border:2px solid #e7e7e7;border-top-color:#252525;animation:match-loading-spin .8s linear infinite}
+@keyframes match-loading-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.match-loading-spinner{animation:none;border-color:#666}}
