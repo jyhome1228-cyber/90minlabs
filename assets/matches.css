@@ -188,3 +188,20 @@
   border:1px solid #dedede;margin:0;padding:7px 8px
  }
 }
+
+/* Scheduled score verification time: concise and visible without a promotional callout. */
+:is(#matches,#predictions) .match-source-note .match-update-time{
+ display:block;
+ margin:0 0 9px;
+ color:#262626;
+ font-size:14px;
+ font-weight:650;
+ line-height:1.65;
+ letter-spacing:-.02em;
+}
+@media(max-width:650px){
+ :is(#matches,#predictions) .match-source-note .match-update-time{
+  font-size:13px;
+  line-height:1.7;
+ }
+}
