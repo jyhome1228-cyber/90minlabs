@@ -8,7 +8,7 @@ const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.cla
 const norm=value=>String(value||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 const language=()=>root.NinetyMinI18n?.language==="en"?"en":"ko";
 const words=(ko,en)=>language()==="en"?en:ko;
-const kstMs=m=>{const value=Date.parse(String(m.date||"")+"T"+String(m.time||"00:00")+":00+09:00");return Number.isFinite(value)?value:NaN;};
+const kstMs=m=>{if(!/^([01]\\d|2[0-3]):[0-5]\\d$/.test(String(m.time||"")))return NaN;const value=Date.parse(String(m.date||"")+"T"+m.time+":00+09:00");return Number.isFinite(value)?value:NaN;};
 let clubs=[],calendar=[],selected=[],dirty=false,fetching=true,notifyEnabled=false,notice="",reminderTimer=0;
 const lookup=new Map();
 function keyFor(match,side){
@@ -61,7 +61,7 @@ function teamMatches(){
  const now=Date.now(),cutoff=now+45*86400000;
  return calendar.filter(m=>{
   const ms=kstMs(m);
-  if(!Number.isFinite(ms)||ms<=now||ms>cutoff||["finished","postponed","cancelled","canceled"].includes(m.status))return false;
+  if(!Number.isFinite(ms)||ms<=now||ms>cutoff||m.status!=="scheduled")return false;
   // Exact league + canonical name first, with an exact-name cross-competition fallback.
   return ["home","away"].some(side=>keys.has(keyFor(m,side))||names.has(norm(m[side+"Team"]||m[side])));
  }).sort((a,b)=>kstMs(a)-kstMs(b)||a.league.localeCompare(b.league));
@@ -161,7 +161,7 @@ async function toggleNotify(){
  const granted=Notification.permission==="granted"?"granted":await Notification.requestPermission();
  if(granted!=="granted"){updateNotice(words("알림 권한이 허용되지 않았습니다.","Notification permission was not granted."));return;}
  notifyEnabled=true;try{localStorage.setItem(NOTIFY_KEY,"enabled");}catch(e){}
- notifyButton();updateNotice(words("이 페이지가 열려 있을 때 경기 시작 30분 전 알림을 표시합니다.","Alerts show 30 minutes before kickoff while this page remains open."));
+ notifyButton();updateNotice(words("이 페이지가 열려 있을 때 경기 시작 30분 전 알림을 표시합니다.","Alerts are attempted 30 minutes before kickoff while this page remains open. Browser background limits may delay them."));
  checkReminders();
 }
 function checkReminders(){
