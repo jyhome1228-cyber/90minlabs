@@ -60,13 +60,25 @@ const area=document.querySelector("#dataArea");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const number=x=>x===null||x===undefined||x===''?'-':Number.isFinite(Number(x))?Number(x):'-';
 const clubSlugs={"Arsenal":"arsenal","Brighton":"brighton","Manchester City":"man-city","Liverpool":"liverpool","Bournemouth":"bournemouth","Leeds United":"leeds-united","Everton":"everton","Chelsea":"chelsea","Tottenham":"tottenham","Brentford":"brentford","Hull City":"hull-city","Aston Villa":"aston-villa","Newcastle":"newcastle","Fulham":"fulham","Ipswich Town":"ipswich-town","Nottingham Forest":"nottingham-forest","Sunderland":"sunderland","Manchester United":"man-united","Crystal Palace":"crystal-palace","Lazio":"lazio","Roma":"roma","Inter":"inter-milan","Milan":"ac-milan","Como":"como","Juventus":"juventus","Frosinone":"frosinone","Napoli":"napoli","Bologna":"bologna","Genoa":"genoa","Cagliari":"cagliari","Atalanta":"atalanta","Torino":"torino","Lecce":"lecce","Fiorentina":"fiorentina","Parma":"parma","Sassuolo":"sassuolo","Monza":"monza","Udinese":"udinese","Venezia":"venezia","Borussia Dortmund":"borussia-dortmund","Bayern München":"bayern-munich","Freiburg":"freiburg","RB Leipzig":"rb-leipzig","Bayer Leverkusen":"bayer-leverkusen","Werder Bremen":"werder-bremen","Eintracht Frankfurt":"eintracht-frankfurt","Stuttgart":"stuttgart","Augsburg":"augsburg","Hoffenheim":"hoffenheim","Hamburg":"hamburg","Mainz":"mainz","Köln":"cologne","Schalke":"schalke","Union Berlin":"union-berlin","Mönchengladbach":"borussia-monchengladbach","Paris Saint-Germain":"psg","Paris FC":"paris-fc","Lille":"lille","Lyon":"lyon","Marseille":"marseille","Brest":"brest","Nice":"nice","Monaco":"monaco","Rennes":"rennes","Lorient":"lorient","Lens":"lens","Toulouse":"toulouse"};
-function crest(name){
+const crestIds={"Arsenal":57,"Manchester City":65,"Manchester United":66,"Liverpool":64,"Chelsea":61,"Tottenham":73,"Everton":62,"Brighton":397,"Aston Villa":58,"Newcastle":67,"Bournemouth":1044,"Brentford":402,"Fulham":63,"Nottingham Forest":351,"Crystal Palace":354,"Leeds United":341,"Sunderland":71,"Ipswich Town":349,"Juventus":109,"Inter":108,"Milan":98,"Roma":100,"Lazio":110,"Napoli":113,"Atalanta":102,"Bologna":103,"Fiorentina":99,"Torino":586,"Genoa":107,"Udinese":115,"Parma":112,"Sassuolo":471,"Cagliari":104,"Lecce":5890,"Como":7397,"Bayern München":5,"Borussia Dortmund":4,"Bayer Leverkusen":3,"RB Leipzig":721,"Stuttgart":10,"Freiburg":17,"Werder Bremen":12,"Eintracht Frankfurt":19,"Augsburg":16,"Hoffenheim":2,"Hamburg":7,"Mainz":15,"Köln":1,"Schalke":6,"Union Berlin":28,"Mönchengladbach":18,"Paris Saint-Germain":524,"Marseille":516,"Lille":521,"Lyon":523,"Monaco":548,"Nice":522,"Rennes":529,"Lens":546,"Brest":512,"Lorient":525,"Toulouse":511};
+function crest(name) {
  const slug=clubSlugs[name];
- const initial='<span class="teamcode">'+esc(name.slice(0,3).toUpperCase())+'</span>';
- if(!slug)return initial;
- const url='https://sachawd.github.io/wc26-assets/club-logos/clubs_'+slug+'.png';
- return '<img class="teamlogo" loading="lazy" alt="" src="'+esc(url)+'" data-abbr="'+esc(name.slice(0,3).toUpperCase())+'" onerror="this.outerHTML=\'<span class=&quot;teamcode&quot;>\'+this.dataset.abbr+\'</span>\'">';
+ const id=crestIds[name];
+ const fallback='<span class="teamcode">'+esc(name.slice(0,3).toUpperCase())+'</span>';
+ if(!slug && !id)return fallback;
+ const urls=[];
+ if(id)urls.push('https://crests.football-data.org/'+id+'.png');
+ if(slug)urls.push('https://sachawd.github.io/wc26-assets/club-logos/clubs_'+slug+'.png');
+ return '<img class="teamlogo" loading="lazy" alt="'+esc(name)+' 엠블럼" data-sources="'+encodeURIComponent(JSON.stringify(urls))+'" data-step="0" src="'+esc(urls[0])+'">';
 }
+document.addEventListener('error',event=>{
+ const img=event.target;
+ if(!img.classList || !img.classList.contains('teamlogo'))return;
+ const urls=JSON.parse(decodeURIComponent(img.dataset.sources || '%5B%5D'));
+ const next=Number(img.dataset.step||0)+1;
+ if(next<urls.length){img.dataset.step=String(next);img.src=urls[next];}
+ else{const abbr=(img.alt||'').slice(0,3).toUpperCase();const span=document.createElement('span');span.className='teamcode';span.textContent=abbr;img.replaceWith(span);}
+},true);
 function render(){
  document.querySelector("#leagueName").textContent=labels[state.league];
  document.querySelectorAll("[data-league]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.league===state.league)));
