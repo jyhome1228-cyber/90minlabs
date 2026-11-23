@@ -112,7 +112,7 @@ function row(m,fromPreview){
  center.setAttribute("aria-label",(m.homeTeam||m.home)+" 대 "+(m.awayTeam||m.away)+" 경기 분석");
  center.append(element("strong","",status==="finished"?m.score.join(" : "):(m.time||"시간 미정")));
  const countdown=element("span","match-countdown",status==="finished"?"종료":status==="unverified"?"결과 확인 필요":"예정");
- if(window.NinetyMinCountdown)window.NinetyMinCountdown.set(countdown,m,status);
+ if(window.NinetyMinCountdown)window.NinetyMinCountdown.set(countdown,m,status,{compact:true});
  center.append(countdown);
  const more=element("a","match-more","경기 분석");more.href=href;
  more.setAttribute("aria-label",(m.homeTeam||m.home)+" 대 "+(m.awayTeam||m.away)+" 경기 분석 보기");
