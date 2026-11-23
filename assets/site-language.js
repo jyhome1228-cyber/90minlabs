@@ -10,6 +10,25 @@ const koToEn=new Map();
 for(const [en,ko] of enToKo){if(!koToEn.has(ko)||en.length<koToEn.get(ko).length)koToEn.set(ko,en);}
 const koPairs=[...koToEn.entries()].sort((a,b)=>b[0].length-a[0].length);
 const labels={
+"마이팀 픽":"My Team Pick",
+"관심 구단을 등록하고 다음 경기 일정을 모아보세요.":"Follow clubs and see their upcoming fixtures.",
+"구단 검색":"Search clubs",
+"다가오는 경기":"Upcoming matches",
+"달력 알림 저장":"Export calendar reminders",
+"브라우저 알림 켜기":"Enable browser alerts",
+"브라우저 알림 끄기":"Disable browser alerts",
+"브라우저 알림은 이 페이지가 열려 있을 때만 작동합니다. 닫아도 알림을 받으려면 달력 파일을 가져와 캘린더 앱의 알림을 이용하세요.":"Browser reminders work only while this page is open. Import the calendar file for alerts when it is closed.",
+"관심 구단은 이 브라우저에만 저장됩니다.":"Teams are stored only in this browser.",
+"최종 의견":"Final assessment",
+"경기 전 기록으로 본 의견":"Pre-match record assessment",
+"승·무·패 예상 비율":"Win / Draw / Loss reference shares",
+"경기 전 기록 기준 참고 비율":"Pre-match record distribution",
+"홈팀 기준":"From the home team's perspective",
+"홈 승":"Home win",
+"원정 승":"Away win",
+"무승부":"Draw",
+"전체 6편":"Total 6 articles",
+
 "경기 일정":"Matches","리그":"Leagues","마이페이지":"My page","사이트 메뉴":"Navigation","이용 안내":"Information","주간 예측 기록":"Weekly prediction records","축구의 기록을 읽고,":"Reading the game,","다음 경기를 예측합니다.":"predicting what comes next.","경기 일정과 기록은 제공처의 갱신 시점에 따라 반영이 지연될 수 있습니다.":"Fixtures and results may be delayed depending on the data provider.","독립 축구 데이터 사이트 · 분석과 예측은 참고용이며 결과를 보장하지 않습니다.":"Independent football data site. Analyses and predictions are for reference only.","칼럼 작성":"Write column","언어 선택":"Language","프리미어리그":"Premier League","라리가":"La Liga","세리에A":"Serie A","분데스리가":"Bundesliga","리그앙":"Ligue 1","챔피언스리그":"Champions League","유로파리그":"Europa League","컨퍼런스리그":"Conference League","경기 일정과 분석":"Matches & analysis","경기 일정과 결과":"Fixtures & results","경기 전망":"Predictions","마이페이지":"My page","주간 예측 만들기":"Weekly predictions","저장한 예측":"Saved predictions","분석 요약":"Match overview","전력 비교":"Team comparison","최근 경기":"Recent matches","맞대결":"Head to head","시즌 순위":"Standings","경기 분석":"Match analysis","경기 목록":"Match list","나의 예측":"My picks","전체 경기":"All matches","예정 경기":"Upcoming","종료 경기":"Finished","선택한 경기":"Selected","팀 이름 검색":"Search team","이번 주":"This week","이전 주":"Previous week","다음 주":"Next week","전체 대회":"All competitions","해당 대회":"This competition","최근 5경기":"Last 5 matches","최근 10경기":"Last 10 matches","경기 예정":"Scheduled","경기 종료":"Full time","예정":"Scheduled","종료":"Finished","결과 확인 중":"Awaiting result","승":"Home win","무":"Draw","패":"Away win","홈 승리":"Home win","원정 승리":"Away win","무승부":"Draw","나의 기록":"My records","로그인":"Log in","회원가입":"Sign up","로그아웃":"Log out","내 계정":"Account","비밀번호 재설정":"Reset password","이메일":"Email","비밀번호":"Password","닉네임":"Nickname","선택 마감":"Locked","적중":"Correct","미적중":"Incorrect","결과 대기":"Pending","집계 제외":"Void","다시 불러오기":"Reload","자료 확인 중":"Checking data","리그 순위":"League standings","순위":"Rank","구단":"Club","경기":"Played","득점":"Goals","실점":"Conceded","득실차":"Goal diff.","승점":"Points","칼럼":"Columns","경기 분석 보기":"View analysis","경기 분석으로 이동":"Go to analysis","승무패 기록하기":"Record prediction","예측 묶음 저장":"Save picks","변경 내용 저장":"Save changes","새 묶음":"New group","저장한 기록 보기":"View saved picks","기록 내보내기":"Export records","오늘 경기 보기":"Today's matches","오늘":"Today","이전 날":"Previous day","다음 날":"Next day","날짜 선택":"Choose date","한국시간":"KST","선수 / 소속 구단":"Player / club","경기당 승점":"Points per game","평균 득점":"Avg. scored","평균 실점":"Avg. conceded","승리 비율":"Win rate","무실점 비율":"Clean sheet rate","양 팀 득점":"Both teams scored","합산 3골 이상":"Over 2.5 goals"};
 const reverse=new Map(Object.entries(labels).map(([k,v])=>[v,k]));
 const tracked=new WeakMap();
