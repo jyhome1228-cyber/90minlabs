@@ -488,3 +488,13 @@
     object-position:69% center;
   }
 }
+
+/* Remove dead white strips around the homepage's final full-width banner. */
+.home-view{padding-bottom:0}
+.home-view .home-daily{padding-bottom:34px}
+.home-view .home-feature.signup-feature{margin-top:18px}
+@media(max-width:650px){
+ .home-view{padding-bottom:0}
+ .home-view .home-daily{padding-bottom:28px}
+ .home-view .home-feature.signup-feature{margin-top:16px}
+}
