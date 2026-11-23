@@ -2,9 +2,9 @@
 "use strict";
 const root=document.getElementById("matches");
 if(!root)return;
-const leagueNames={epl:"프리미어리그",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",championship:"잉글랜드 챔피언십"};
-const leagueShort={epl:"EPL",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",championship:"CHAMPIONSHIP"};
-const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"]];
+const leagueNames={epl:"프리미어리그",laliga:"라리가",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",championship:"잉글랜드 챔피언십"};
+const leagueShort={epl:"EPL",laliga:"LA LIGA",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",championship:"CHAMPIONSHIP"};
+const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["laliga","라리가"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"]];
 const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,forms:null};
 const $=id=>document.getElementById(id);
 function element(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined&&value!==null)el.textContent=String(value);return el;}
@@ -41,12 +41,36 @@ function eventStatus(m){
  if(m.date===now&&m.time&&m.time<=kstNowClock())return "unverified";
  return "scheduled";
 }
-function elementLogo(crestId,name){
+const badgeCache=new Map();
+const uclQueries={"AEK Athens":"AEK Athens","Bodø/Glimt":"Bodo Glimt","Club Brugge":"Club Brugge","Fenerbahçe":"Fenerbahce","Feyenoord":"Feyenoord","Galatasaray":"Galatasaray","LASK":"LASK Linz","PSV":"PSV Eindhoven","Porto":"FC Porto","S. Bratislava":"Slovan Bratislava","Sabah":"Sabah FC","Shakhtar":"Shakhtar Donetsk","Slavia Praha":"Slavia Prague","Sporting CP":"Sporting CP","Viking":"Viking FK"};
+function getBadge(name){
+ if(!badgeCache.has(name)){
+  const query=uclQueries[name]||name;
+  const url="https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t="+encodeURIComponent(query);
+  badgeCache.set(name,fetch(url).then(r=>r.ok?r.json():null).then(d=>{
+   const names=(d?.teams||[]).filter(t=>t.strSport==="Soccer"&&t.strBadge?.startsWith("https://"));
+   const normalize=t=>String(t||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]/g,"");
+   const matched=names.find(x=>normalize(x.strTeam)===normalize(query)||normalize(x.strTeamAlternate)===normalize(query))||names[0];
+   return matched?.strBadge||null;
+  }).catch(()=>null));
+ }
+ return badgeCache.get(name);
+}
+function elementLogo(crestId,name,lg){
  const wrap=element("span","initial",(name||"FC").slice(0,2).toUpperCase());
- if(!crestId)return wrap;
  const img=document.createElement("img");img.alt="";img.loading="lazy";
- img.src="https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png";
- img.addEventListener("error",()=>{img.replaceWith(wrap);},{once:true});return img;
+ const source=crestId?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null;
+ if(!source&&lg!=="ucl")return wrap;
+ if(!source){
+  getBadge(name).then(url=>{if(url&&wrap.isConnected){img.src=url;wrap.replaceWith(img);img.addEventListener("error",()=>{img.replaceWith(wrap)},{once:true})}});
+  return wrap;
+ }
+ img.src=source;
+ img.addEventListener("error",()=>{
+  if(lg==="ucl")getBadge(name).then(url=>{if(url&&img.isConnected){img.src=url}else img.replaceWith(wrap)});
+  else img.replaceWith(wrap);
+ },{once:true});
+ return img;
 }
 function teamElement(m,isHome){
  const key=isHome?"home":"away";
@@ -59,7 +83,7 @@ function teamElement(m,isHome){
  if(team&&lg)el.href=routeFor(team,lg);
  el.setAttribute("title",name);
  const title=element("span","name",team||name);
- const image=elementLogo(crest,name);
+ const image=elementLogo(crest,name,m.league);
  el.append(title,image);
  if(!isHome){el.replaceChildren(image,title);}
  holder.append(el);
