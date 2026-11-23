@@ -76,13 +76,13 @@ section.block{padding:89px 0}
 </style>
 <link rel="stylesheet" href="./assets/home.css?v=20261123-dual-copy">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-loadingfix">
-<link rel="stylesheet" href="assets/site-shell.css?v=20261123-countdown1">
+<link rel="stylesheet" href="assets/site-shell.css?v=20261124-layout1">
 <link rel="stylesheet" href="assets/columns.css?v=20261124-editorial1">
-<script src="assets/site-shell.js?v=20261123-konav" defer></script>
+<script src="assets/site-shell.js?v=20261124-layout1" defer></script>
 <script src="assets/kickoff-countdown.js?v=20261123-countdown2" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
-<script src="assets/site-language.js?v=20261123-konav" defer></script>
+<script src="assets/site-language.js?v=20261124-layout1" defer></script>
 <script>
 (function(){
  if(location.hash && location.hash!=="#home")return;
@@ -109,9 +109,15 @@ section.block{padding:89px 0}
       <a class="shell-nav-link" data-nav-key="matches" href="index.html#matches">경기 일정</a>
       <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">리그</a>
       <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">칼럼</a>
-      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">마이페이지</a>
-      <div class="shell-language" role="group" aria-label="언어 선택"><button type="button" data-lang-button="ko" aria-pressed="true">국문</button><button type="button" data-lang-button="en" aria-pressed="false">영문</button></div>
+      <div class="shell-mobile-utility" aria-label="계정 메뉴">
+        <a class="shell-mobile-utility-link" data-utility-key="login" href="mypage.html?login=1#accountPanel">로그인</a>
+        <a class="shell-mobile-utility-link" data-utility-key="mypage" href="mypage.html">마이페이지</a>
+      </div>
     </nav>
+    <div class="shell-utility" aria-label="계정 메뉴">
+      <a class="shell-utility-link" data-utility-key="login" href="mypage.html?login=1#accountPanel">로그인</a>
+      <a class="shell-utility-link" data-utility-key="mypage" href="mypage.html">마이페이지</a>
+    </div>
   </div>
 </header>
 <noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
@@ -277,6 +283,13 @@ section.block{padding:89px 0}
         <a href="mypage.html">주간 예측 기록</a>
         <a href="index.html#write">칼럼 작성</a>
         <p>경기 일정과 기록은 제공처의 갱신 시점에 따라 반영이 지연될 수 있습니다.</p>
+      </div>
+      <div class="global-footer-group">
+        <h2>언어 선택</h2>
+        <div class="global-footer-language" data-footer-language role="group" aria-label="언어 선택">
+          <button type="button" data-lang-button="ko" aria-pressed="true">국문</button>
+          <button type="button" data-lang-button="en" aria-pressed="false">영문</button>
+        </div>
       </div>
     </div>
     <div class="global-footer-bottom">
