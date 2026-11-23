@@ -92,7 +92,17 @@ async function execute(action){
   await signInWithEmailAndPassword(auth,email,password);
  }catch(e){fail(e);}
 }
-function disabled(message){$("accountPanel").hidden=true;status(message);scope("계정 서비스 설정 전에는 기존 브라우저 저장 기능을 사용할 수 있습니다.");$("accountAuth").hidden=true;$("accountConnected").hidden=true;$("accountSignout").hidden=true;}
+function disabled(message){
+  const loginRequested=new URLSearchParams(location.search).get("login")==="1";
+  const panel=$("accountPanel");
+  panel.hidden=!loginRequested;
+  status(loginRequested?"로그인 서비스 준비 중입니다. 현재는 브라우저에 저장한 예측 기록을 이용할 수 있습니다.":message);
+  scope("계정 서비스 설정 전에는 기존 브라우저 저장 기능을 사용할 수 있습니다.");
+  $("accountAuth").hidden=true;$("accountConnected").hidden=true;$("accountSignout").hidden=true;
+  if(loginRequested&&location.hash==="#accountPanel"){
+    requestAnimationFrame(()=>panel.scrollIntoView({block:"start"}));
+  }
+}
 async function start(){
  let config;
  try{const module=await import("./firebase-config.js");config=module.firebaseConfig;}catch(e){disabled("계정 연결 준비 중 · Firebase 설정이 필요합니다.");return;}
