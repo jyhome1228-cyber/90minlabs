@@ -82,3 +82,47 @@ html,body,body *,button,input,select,textarea{font-family:"Pretendard",sans-seri
 .pick-badge img,.initial img,.club-badge img{
  display:block;max-width:100%;max-height:100%;object-fit:contain;background:transparent!important;
 }
+
+/* Restore badges in responsive weekly picks; never allow the fallback initials to stack vertically. */
+.mypage-wrap .pick-row .pick-badge,
+.mypage-wrap .pick-team .pick-badge,
+.mypage-wrap .selected-pick-clubs .pick-badge,
+.mypage-wrap .saved-pick-clubs .pick-badge{
+ display:inline-flex!important;
+ flex:0 0 27px!important;
+ width:27px!important;
+ min-width:27px!important;
+ height:27px!important;
+ min-height:27px!important;
+ align-items:center!important;
+ justify-content:center!important;
+ white-space:nowrap!important;
+ word-break:normal!important;
+ overflow-wrap:normal!important;
+ line-height:1!important;
+ font-size:10px!important;
+ padding:0!important;
+ border-radius:3px;
+}
+.mypage-wrap .pick-badge img{
+ width:100%!important;
+ height:100%!important;
+ max-width:100%!important;
+ max-height:100%!important;
+ object-fit:contain!important;
+}
+.mypage-wrap .pick-team{display:flex;align-items:center;min-width:0;gap:8px}
+.mypage-wrap .pick-team-name{min-width:0;overflow-wrap:break-word;word-break:keep-all}
+.mypage-wrap .pick-teams{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr);column-gap:10px}
+@media(max-width:1100px){
+ .mypage-wrap .pick-row .pick-badge{display:inline-flex!important}
+ .mypage-wrap .pick-team{gap:5px}
+ .mypage-wrap .pick-teams{column-gap:5px}
+}
+@media(max-width:650px){
+ .mypage-wrap .pick-row{grid-template-columns:58px minmax(0,1fr);gap:8px}
+ .mypage-wrap .pick-row .choice-group{grid-column:2}
+ .mypage-wrap .pick-row .pick-analysis{grid-column:2}
+ .mypage-wrap .pick-team .pick-badge{flex-basis:24px!important;width:24px!important;min-width:24px!important;height:24px!important;min-height:24px!important}
+ .mypage-wrap .pick-team-name{font-size:12px;line-height:1.45}
+}
