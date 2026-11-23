@@ -122,14 +122,11 @@ function summaryOf(name,catalog){const other=catalog.filter(c=>c.name!==name).sl
 function setHistory(local){
  const text=local.historyKo;
  if(text){show("history",text);select("historySource").textContent="90MIN LABS 편집 소개. 역사적 주요 사실 중심으로 정리했으며 최신 소식은 별도로 확인해 줘.";}
- else{show("history","한국어 구단 소개를 확인하고 있어. 자료를 불러오지 못하면 출처 링크에서 확인해 줘.");}
+ else{show("history",local.name+"은(는) "+(local.cityKo||"해당 지역")+"을 연고로 하는 축구 구단입니다. 창단 배경과 주요 우승 기록은 아래 역사 자료에서 확인할 수 있습니다.");}
  if(!local.wikiKo)return;
- getWikiIntro(local.wikiKo).then(w=>{
-  if(!w)return;
-  if(!text)show("history",w.text);
-  const a=document.createElement("a");a.href=w.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="한국어 위키백과 구단 역사";
-  select("historySource").append(" · ",a);
- }).catch(()=>{});
+ const wikiUrl="https://ko.wikipedia.org/wiki/"+encodeURIComponent(local.wikiKo.replace(/ /g,"_"));
+ const a=document.createElement("a");a.href=wikiUrl;a.target="_blank";a.rel="noopener noreferrer";a.textContent="한국어 위키백과 구단 역사";select("historySource").append(" ",a);
+ getWikiIntro(local.wikiKo).then(w=>{if(w&&!text)show("history",w.text);}).catch(()=>{});
 }
 function renderCompetitions(team){
  const list=[names[league]];for(let i=1;i<=7;i++){const x=team["strLeague"+(i===1?"":i)];if(x&&x!=="Unknown"&&!list.some(y=>y.toLowerCase()===x.toLowerCase()))list.push(x);}
@@ -140,7 +137,7 @@ function renderTeamDetails(team){
  if(team.strBadge&&/^https:\/\//.test(team.strBadge))setCrest(team.strBadge,teamName);
  if(team.strLocation)show("location",team.strLocation);
  if(team.strStadium)show("stadium",team.strStadium);
- if(team.intFormedYear)show("founded",String(team.intFormedYear)+"년 (제공처 기록)");
+ if(team.intFormedYear&&select("founded").textContent==="자료 대기")show("founded",String(team.intFormedYear)+"년 (제공처 기록)");
  if(team.strKeywords)addPill(team.strKeywords.split(",")[0].trim());
  renderCompetitions(team);
  const loc=[team.strStadium,team.strLocation].filter(Boolean).join(", ");
@@ -195,7 +192,9 @@ async function loadTeam(){
  show("crumbTeam",teamName);show("heroLeague",names[league]);show("detailLeague",names[league]);addPill("2026–27 시즌");
  select("crumbLeague").href="leagues.html?league="+encodeURIComponent(league);
  summaryOf(teamName,(leagueData.standings?.rows||[]).map(x=>({name:x.team})));
- setCrest("",teamName);
+ setCrest(local.crestId?"https://crests.football-data.org/"+local.crestId+".png":"",teamName);
+ if(local.cityKo)show("location",local.cityKo);
+ if(local.foundedYear)show("founded",local.foundedYear+"년 (구단 역사)");
  setHistory(local);
  const query=local.searchName||teamName;
  select("newsSearch").href="https://news.google.com/search?q="+encodeURIComponent(query+" football")+"&hl=ko&gl=KR&ceid=KR:ko";
