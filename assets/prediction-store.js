@@ -105,7 +105,7 @@
   }
 
   function validateState(value) {
-    function corrupt() { fail("CORRUPT_DATA", "저장된 경기 묶음의 형식을 읽을 수 없습니다. 기존 기록을 덮어쓰지 않았습니다."); }
+    function corrupt() { fail("CORRUPT_DATA", "저장된 경기 폴더의 형식을 읽을 수 없습니다. 기존 기록을 덮어쓰지 않았습니다."); }
     if (!value || typeof value !== "object" || Array.isArray(value)) corrupt();
     if (value.version !== VERSION) fail("UNSUPPORTED_VERSION", "이 버전에서 읽을 수 없는 저장 기록입니다. 기존 기록을 덮어쓰지 않았습니다.");
     if (!Array.isArray(value.sets) || !Number.isSafeInteger(value.revision) || value.revision < 0) corrupt();
@@ -145,7 +145,7 @@
       if (typeof raw !== "string") fail("STORAGE_READ_FAILED", "브라우저의 저장 기록을 읽지 못했습니다. 기존 기록을 덮어쓰지 않았습니다.");
       let parsed;
       try { parsed = JSON.parse(raw); }
-      catch (error) { fail("CORRUPT_DATA", "저장된 경기 묶음을 읽을 수 없습니다. 기존 기록을 덮어쓰지 않았습니다."); }
+      catch (error) { fail("CORRUPT_DATA", "저장된 경기 폴더을 읽을 수 없습니다. 기존 기록을 덮어쓰지 않았습니다."); }
       return { raw, data: validateState(parsed) };
     }
     function write(before, next) {
@@ -154,8 +154,8 @@
       const encoded = JSON.stringify(validateState(next));
       try { storage.setItem(key, encoded); }
       catch (error) {
-        if (error && (error.name === "QuotaExceededError" || error.code === 22 || error.code === 1014)) fail("STORAGE_FULL", "브라우저 저장 공간이 부족합니다. 기존 기록은 유지됩니다. 필요 없는 묶음을 정리한 뒤 다시 저장해 주세요.");
-        fail("STORAGE_WRITE_FAILED", "경기 묶음을 저장하지 못했습니다. 기존 기록은 유지됩니다.");
+        if (error && (error.name === "QuotaExceededError" || error.code === 22 || error.code === 1014)) fail("STORAGE_FULL", "브라우저 저장 공간이 부족합니다. 기존 기록은 유지됩니다. 필요 없는 폴더을 정리한 뒤 다시 저장해 주세요.");
+        fail("STORAGE_WRITE_FAILED", "경기 폴더을 저장하지 못했습니다. 기존 기록은 유지됩니다.");
       }
     }
     function makeId(existing, now) {
@@ -166,28 +166,28 @@
         else id = "set_" + now.toString(36) + "_" + Math.random().toString(36).slice(2, 11) + attempt;
         if (id && id.length <= 180 && !existing.some(set => set.id === id)) return id;
       }
-      fail("ID_CONFLICT", "묶음 번호를 만들지 못했습니다. 다시 저장해 주세요.");
+      fail("ID_CONFLICT", "폴더 번호를 만들지 못했습니다. 다시 저장해 주세요.");
     }
     function load() { return clone(read().data); }
     function saveSet(input, context) {
       const before = read(), now = nowValue(clock()), savedAt = new Date(now).toISOString();
-      if (!input || typeof input !== "object") fail("INVALID_SET", "저장할 경기 묶음이 없습니다.");
+      if (!input || typeof input !== "object") fail("INVALID_SET", "저장할 경기 폴더이 없습니다.");
       if (!context || typeof context.findMatch !== "function") fail("CONTEXT_UNAVAILABLE", "경기 일정을 다시 불러온 뒤 저장해 주세요.");
       if (!validDate(input.weekStart) || weekStart(input.weekStart) !== input.weekStart) fail("INVALID_WEEK", "월요일부터 시작하는 주간 범위를 선택해 주세요.");
       if (!Array.isArray(input.picks) || !input.picks.length) fail("EMPTY_SET", "경기를 한 개 이상 선택하고 승무패를 지정해 주세요.");
-      if (input.title !== undefined && typeof input.title !== "string") fail("INVALID_TITLE", "묶음 이름을 확인해 주세요.");
+      if (input.title !== undefined && typeof input.title !== "string") fail("INVALID_TITLE", "폴더 이름을 확인해 주세요.");
       const title = (input.title || "").trim() || input.weekStart.replace(/-/g, ".") + " 주간 예측";
-      if (title.length > 80) fail("INVALID_TITLE", "묶음 이름은 80자 이내로 입력해 주세요.");
+      if (title.length > 80) fail("INVALID_TITLE", "폴더 이름은 80자 이내로 입력해 주세요.");
       const existing = input.id ? before.data.sets.find(set => set.id === input.id) : null;
-      if (input.id && !existing) fail("SET_NOT_FOUND", "수정할 묶음이 없습니다. 최신 목록을 다시 확인해 주세요.");
-      if (existing && existing.weekStart !== input.weekStart) fail("WEEK_CHANGED", "저장한 묶음의 주간 범위는 바꿀 수 없습니다. 다른 주의 경기는 새 묶음으로 저장해 주세요.");
+      if (input.id && !existing) fail("SET_NOT_FOUND", "수정할 폴더이 없습니다. 최신 목록을 다시 확인해 주세요.");
+      if (existing && existing.weekStart !== input.weekStart) fail("WEEK_CHANGED", "저장한 폴더의 주간 범위는 바꿀 수 없습니다. 다른 주의 경기는 새 폴더으로 저장해 주세요.");
       if (existing && now < timestamp(existing.updatedAt)) fail("CLOCK_MOVED_BACKWARDS", "기기 시간이 마지막 저장 시각보다 이전입니다. 날짜와 시간을 확인해 주세요.");
       const expected = input.expectedUpdatedAt === undefined ? input.updatedAt : input.expectedUpdatedAt;
-      if (existing && expected !== undefined && expected !== existing.updatedAt) fail("STORAGE_CONFLICT", "이 묶음이 다른 화면에서 수정됐습니다. 최신 기록을 불러온 뒤 다시 저장해 주세요.");
+      if (existing && expected !== undefined && expected !== existing.updatedAt) fail("STORAGE_CONFLICT", "이 폴더이 다른 화면에서 수정됐습니다. 최신 기록을 불러온 뒤 다시 저장해 주세요.");
       const incoming = new Map();
       input.picks.forEach(pick => {
         if (!pick || typeof pick.fixtureId !== "string" || !pick.fixtureId || !CHOICES.has(pick.selection)) fail("INVALID_PICK", "선택한 모든 경기에 승·무·패를 지정해 주세요.");
-        if (incoming.has(pick.fixtureId)) fail("DUPLICATE_PICK", "한 묶음에 같은 경기를 두 번 담을 수 없습니다.");
+        if (incoming.has(pick.fixtureId)) fail("DUPLICATE_PICK", "한 폴더에 같은 경기를 두 번 담을 수 없습니다.");
         incoming.set(pick.fixtureId, pick);
       });
       const previous = new Map(existing ? existing.picks.map(pick => [pick.fixtureId, pick]) : []);
@@ -214,7 +214,7 @@
     }
     function deleteSet(id) {
       const before = read();
-      if (!before.data.sets.some(set => set.id === id)) fail("SET_NOT_FOUND", "삭제할 묶음이 없습니다. 최신 목록을 확인해 주세요.");
+      if (!before.data.sets.some(set => set.id === id)) fail("SET_NOT_FOUND", "삭제할 폴더이 없습니다. 최신 목록을 확인해 주세요.");
       write(before, { version: VERSION, revision: before.data.revision + 1, sets: before.data.sets.filter(set => set.id !== id) });
       return true;
     }
