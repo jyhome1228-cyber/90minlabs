@@ -71,16 +71,43 @@
     if (!PredictionStore.kickoffMs(fixture)) return "시간 미정";
     return PredictionStore.canPick(fixture, Date.now()) ? "" : "선택 마감";
   }
+  const crestLookups = new Map();
+  function validImageUrl(value) { return typeof value === "string" && /^https:\/\//i.test(value) ? value : null; }
   function badge(fixture, side) {
-    const team = descriptor(fixture, side), holder = el("span", "pick-badge", (team.name || "FC").replace(/[^\p{L}\p{N}]/gu, "").slice(0, 2).toUpperCase());
-    const id = fixture[side + "Crest"] || team.crestId;
-    holder.setAttribute("aria-hidden", "true");
-    if (id && /^\d+$/.test(String(id))) {
-      const img = el("img"); img.alt = ""; img.loading = "lazy"; img.width = 24; img.height = 24;
-      img.addEventListener("error", () => img.remove(), { once: true });
-      img.addEventListener("load", () => { holder.textContent = ""; holder.append(img); }, { once: true });
-      img.src = "https://crests.football-data.org/" + encodeURIComponent(id) + ".png";
+    const team=descriptor(fixture, side), profile=team.profile||{};
+    const label=team.name||fixture&&fixture[side]||"FC";
+    const holder=el("span","pick-badge",(label.replace(/[^\\p{L}\\p{N}]/gu,"").slice(0,2)||"FC").toUpperCase());
+    holder.setAttribute("aria-hidden","true");
+    holder.title=label;
+    const crestId=fixture&&fixture[side+"Crest"]||team.crestId||profile.crestId;
+    const direct=validImageUrl(profile.badgeUrl)||validImageUrl(team.badgeUrl);
+    const known=direct||(crestId&&/^\\d+$/.test(String(crestId))?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null);
+    const query=profile.searchName||fixture&&(fixture[side+"Team"]||fixture[side])||label;
+    let fallbackAttempted=false;
+    function requestFallback(){
+      if(fallbackAttempted||!query)return;
+      fallbackAttempted=true;
+      if(!crestLookups.has(query)){
+        const promise=fetch("https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t="+encodeURIComponent(query))
+          .then(resp=>resp.ok?resp.json():null)
+          .then(data=>{
+            const candidates=(data?.teams||[]).filter(x=>x.strSport==="Soccer"&&validImageUrl(x.strBadge));
+            const norm=x=>String(x||"").normalize("NFKD").toLowerCase().replace(/[^a-z0-9]/g,"");
+            const searched=norm(query);
+            const matched=candidates.find(x=>norm(x.strTeam)===searched||String(x.strTeamAlternate||"").split(";").some(a=>norm(a)===searched));
+            return validImageUrl(matched?.strBadge)||null;
+          }).catch(()=>null);
+        crestLookups.set(query,promise);
+      }
+      crestLookups.get(query).then(url=>{if(url&&holder.isConnected)showImage(url,false);});
     }
+    function showImage(url,allowFallback){
+      const img=el("img");img.alt="";img.loading="lazy";img.decoding="async";img.width=28;img.height=28;
+      img.onload=()=>{if(holder.isConnected)holder.replaceChildren(img);};
+      img.onerror=()=>{img.remove();if(allowFallback)requestFallback();};
+      img.src=url;
+    }
+    if(known)showImage(known,true);else requestFallback();
     return holder;
   }
   function choiceGroup(fixture, id, selected, disabled, area) {
@@ -147,7 +174,10 @@
       top.append(el("span", "selected-pick-time", fixture ? shortDate(fixture.date) + " · " + (fixture.time || "시간 미정") + " · " + (shortLeagues[fixture.league] || fixture.league) : "경기 정보 확인 중"));
       if (!locked) { const remove = el("button", "remove-pick", "제외"); remove.type = "button"; remove.dataset.remove = pick.fixtureId; remove.setAttribute("aria-label", (fixture ? teamName(fixture, "home") + " 대 " + teamName(fixture, "away") : "선택한 경기") + " 제외"); top.append(remove); }
       else top.append(el("span", "locked-label", "선택 마감"));
-      card.append(top, el("h4", "", fixture ? teamName(fixture, "home") + " vs " + teamName(fixture, "away") : "일정 확인이 필요한 경기"));
+      const pickClubs=el("div","selected-pick-clubs");
+      if(fixture){pickClubs.append(badge(fixture,"home"),el("span","",teamName(fixture,"home")),el("span","pick-versus","vs"),badge(fixture,"away"),el("span","",teamName(fixture,"away")));}
+      else pickClubs.append(el("span","","일정 확인이 필요한 경기"));
+      card.append(top,pickClubs);
       const bottom = el("div", "selected-pick-bottom"); bottom.append(choiceGroup(fixture, pick.fixtureId, pick.selection, locked || !available, "slip"));
       if (locked) { const grade = PredictionStore.gradePick(pick, state.context, Date.now()); bottom.append(el("span", "selected-pick-status", gradeNames[grade.status])); }
       else if (!available) bottom.append(el("span", "selected-pick-status", "마감된 경기 · 제외 필요"));
@@ -171,7 +201,10 @@
     row.append(el("span", "saved-pick-date", fixture ? shortDate(fixture.date) + " " + (fixture.time || "미정") : "일정 확인 중"));
     const name = el(fixture && state.context && state.context.findMatch(pick.fixtureId) ? "a" : "span", "saved-pick-name", fixture ? teamName(fixture, "home") + " vs " + teamName(fixture, "away") : "경기 정보 확인 중");
     if (name.tagName === "A") name.href = MatchAnalysis.matchUrl(fixture);
-    row.append(name, el("span", "saved-pick-choice", "선택 " + choices[pick.selection]), el("span", "saved-pick-score", pick.score ? pick.score.join(" : ") : "—"));
+    const named=el("span","saved-pick-clubs");
+    if(fixture){named.append(badge(fixture,"home"),badge(fixture,"away"));}
+    named.append(name);
+    row.append(named,el("span","saved-pick-choice","선택 "+choices[pick.selection]),el("span","saved-pick-score",pick.score?pick.score.join(" : "):"—"));
     const grade = el("span", "grade-label " + pick.status, gradeNames[pick.status]);
     if (pick.reason) grade.title = pick.reason;
     row.append(grade); return row;
