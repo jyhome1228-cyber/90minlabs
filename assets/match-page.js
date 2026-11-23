@@ -106,7 +106,7 @@
       if (team.url) { club.href = team.url; club.title = team.name + " 구단 정보"; }
       const badge = crest(team);
       badge.setAttribute("aria-hidden", "true");
-      club.append(badge, el("span", "club-name", team.profile?.wikiKo || team.name));
+      club.append(badge, el("span", "club-name", window.NinetyMinI18n?.language === "en" ? team.name : (team.profile?.wikiKo || team.name)));
       node.append(club);
       node.append(el("span", "club-role", side === "home" ? "홈" : "원정"));
     });
