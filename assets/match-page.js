@@ -401,11 +401,23 @@
       // Start all downloads together but do not hold the fixture header hostage
       // to a slow results, profile or standings endpoint.
       const supporting = Promise.allSettled(paths.slice(1).map(json));
+      let previewShown=false;
+      // When navigated from the homepage, this lightweight snapshot is already
+      // cached and can show future fixtures before the complete season downloads.
+      json("data/nearby-fixtures.json").then(nearby=>{
+        if(previewShown||!Array.isArray(nearby.matches))return;
+        const fixture=nearby.matches.find(item=>MatchAnalysis.fixtureId(item)===id);
+        const kickoff=fixture&&Date.parse(fixture.date+"T"+(fixture.time||"00:00")+":00+09:00");
+        if(fixture&&fixture.status==="scheduled"&&Number.isFinite(kickoff)&&kickoff>Date.now()){
+          previewShown=true;
+          renderFixturePreview(fixture,nearby,id);
+        }
+      }).catch(()=>{});
       const calendar = await json(paths[0]);
       if (!Array.isArray(calendar.matches)) throw new Error("Calendar unavailable");
       const fixture = calendar.matches.find(item=>MatchAnalysis.fixtureId(item)===id);
-      if (!fixture) { error("해당 경기를 찾지 못했습니다.", "일정이 변경되었거나 경기 주소가 올바르지 않을 수 있습니다. 경기 목록에서 다시 선택해 주세요.", false); return; }
-      renderFixturePreview(fixture,calendar,id);
+      if (!fixture) { error("해당 경기를 찾을 수 없습니다.", "일정이 변경되었거나 경기 주소가 올바르지 않을 수 있습니다. 경기 목록에서 다시 선택해 주세요.", false); return; }
+      if(!previewShown){previewShown=true;renderFixturePreview(fixture,calendar,id);}
       const fetched = await supporting;
       const values = fetched.map(item => item.status === "fulfilled" ? item.value : {});
       state.partial = fetched.flatMap((item, index) => item.status === "rejected" ? [paths[index+1]] : []);
