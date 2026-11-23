@@ -64,7 +64,16 @@ async function load(force=false){
  if(loading||(!force&&calendar))return;
  loading=true;if(!calendar)render();
  try{
-  const data=window.NinetyMinData?await window.NinetyMinData.get("data/match-calendar.json",{force}):await (async()=>{const r=await fetch("data/match-calendar.json",{cache:"no-cache"});if(!r.ok)throw Error("HTTP "+r.status);return r.json()})();if(!Array.isArray(data.matches))throw new Error("Invalid match calendar");
+  const get=async name=>window.NinetyMinData
+   ?window.NinetyMinData.get(name,{force})
+   :(async()=>{const r=await fetch(name,{cache:"no-cache"});if(!r.ok)throw Error("HTTP "+r.status);return r.json()})();
+  let data;
+  try {
+   data=await get("data/nearby-fixtures.json");
+   // A missed scheduled workflow must not make the homepage silently go empty.
+   if(!Array.isArray(data.matches)||data.windowStart>today()||data.windowEnd<today())throw Error("Nearby snapshot expired");
+  }catch(e){data=await get("data/match-calendar.json");}
+  if(!Array.isArray(data.matches))throw new Error("Invalid match calendar");
   calendar=data.matches;error=null;lastFetchAt=Date.now();
  }catch(e){if(!calendar)error=e;}
  finally{loading=false;render();}
