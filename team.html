@@ -159,7 +159,6 @@ function renderSquad(list){
  for(const p of active){const pos=(p.strPosition||"").toLowerCase();let k=/goalkeeper/.test(pos)?"골키퍼":/defend|back/.test(pos)?"수비수":/midfield/.test(pos)?"미드필더":/forward|striker|winger|attack/.test(pos)?"공격수":"기타";groups[k].push(p);}
  const box=select("squadGroups");box.replaceChildren();
  for(const [label,roster] of Object.entries(groups)){if(!roster.length)continue;const sec=document.createElement("div");sec.className="group";const h=document.createElement("h3");h.textContent=label;sec.append(h);const grid=document.createElement("div");grid.className="squad";for(const p of roster){const item=document.createElement("div");item.className="player";const name=document.createElement("strong");name.textContent=p.strPlayer;const other=document.createElement("span");other.textContent=(p.strNumber?"#"+p.strNumber+" · ":"")+(p.strPosition||"");item.append(name,other);grid.append(item);}sec.append(grid);box.append(sec);}
- }
  select("squadSource").textContent="선수단은 TheSportsDB에서 제공한 일부 명단이야. 현재 시즌의 전체 등록 선수나 공식 감독 명단을 뜻하지 않아.";
 }
 function parseMatch(item){
@@ -171,7 +170,7 @@ function parseMatch(item){
 }
 function showMatches(events,tid){
  const unique=new Map();
- for(const event of events){const p=parseMatch(event);if(p&&p.date<="2026-11-23"&&!unique.has(p.key))unique.set(p.key,p);}
+ for(const event of events){const p=parseMatch(event);if(p&&p.date<=new Date().toISOString().slice(0,10)&&!unique.has(p.key))unique.set(p.key,p);}
  const sorted=[...unique.values()].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10);
  const box=select("matches");box.replaceChildren();
  if(!sorted.length){const e=document.createElement("div");e.className="error";e.textContent="확인 가능한 최종 경기 기록이 없습니다.";box.append(e);}
@@ -183,7 +182,7 @@ function showMatches(events,tid){
  const score=document.createElement("span");score.className="score";score.textContent=item.homeScore+" : "+item.awayScore;
  row.append(date,desc,score);box.append(row);
  }
- show("matchNotice",sorted.length===10?"최근 10개의 최종 경기 기록을 표시합니다.":"무료 데이터 제공 범위에서 확인된 "+sorted.length+"경기만 표시했어. 전체 10경기 기록은 추가 데이터 연동이 필요해.");
+ show("matchNotice",sorted.length===10?"확인된 최근 10개 경기의 최종 결과를 표시합니다.":"무료 데이터 제공 범위에서 확인된 "+sorted.length+"경기만 표시했어. 전체 10경기 기록은 추가 데이터 연동이 필요해.");
 }
 async function loadTeam(){
  const [reg,standings]=await Promise.all([getJSON("data/team-profiles.json"),getJSON("data/league-data.json")]);
