@@ -93,10 +93,16 @@ async function execute(action){
  }catch(e){fail(e);}
 }
 function disabled(message){
-  const loginRequested=new URLSearchParams(location.search).get("login")==="1";
+  const params=new URLSearchParams(location.search);
+  const signupRequested=params.get("register")==="1";
+  const loginRequested=signupRequested||params.get("login")==="1";
   const panel=$("accountPanel");
   panel.hidden=!loginRequested;
-  status(loginRequested?"로그인 서비스 준비 중입니다. 현재는 브라우저에 저장한 예측 기록을 이용할 수 있습니다.":message);
+  status(signupRequested
+    ?"회원가입 서비스를 준비 중입니다. 지금은 주간 예측과 마이팀 픽을 이 브라우저에 저장해 이용할 수 있습니다."
+    :loginRequested
+      ?"로그인 서비스 준비 중입니다. 현재는 브라우저에 저장한 예측 기록을 이용할 수 있습니다."
+      :message);
   scope("계정 서비스 설정 전에는 기존 브라우저 저장 기능을 사용할 수 있습니다.");
   $("accountAuth").hidden=true;$("accountConnected").hidden=true;$("accountSignout").hidden=true;
   if(loginRequested&&location.hash==="#accountPanel"){
