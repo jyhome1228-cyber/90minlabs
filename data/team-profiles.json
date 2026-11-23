@@ -7,490 +7,622 @@
       "league": "epl",
       "wikiKo": "아스널 FC",
       "searchName": "Arsenal",
-      "historyKo": "1886년 런던의 군수공장 노동자들이 창단한 구단으로, 북런던에 기반을 두고 있다. 하이버리를 거쳐 에미레이츠 스타디움으로 홈구장을 이전했으며, 2003–04시즌에는 잉글랜드 최상위 리그를 무패로 마쳤다."
+      "historyKo": "1886년 런던의 군수공장 노동자들이 창단한 구단으로, 북런던에 기반을 두고 있다. 하이버리를 거쳐 에미레이츠 스타디움으로 홈구장을 이전했으며, 2003–04시즌에는 잉글랜드 최상위 리그를 무패로 마쳤다.",
+      "crestId": 57,
+      "cityKo": "런던"
     },
     "epl:Brighton": {
       "name": "Brighton",
       "league": "epl",
       "wikiKo": "브라이턴 & 호브 앨비언 FC",
       "searchName": "Brighton and Hove Albion",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 397,
+      "cityKo": "브라이턴 앤드 호브"
     },
     "epl:Manchester City": {
       "name": "Manchester City",
       "league": "epl",
       "wikiKo": "맨체스터 시티 FC",
       "searchName": "Manchester City",
-      "historyKo": "맨체스터 시티는 1894년 현재의 이름을 갖게 된 맨체스터의 축구 구단이다. 에티하드 스타디움을 홈으로 사용하며 2010년대 이후 잉글랜드와 유럽 대회에서 두각을 나타냈다."
+      "historyKo": "맨체스터 시티는 1894년 현재의 이름을 갖게 된 맨체스터의 축구 구단이다. 에티하드 스타디움을 홈으로 사용하며 2010년대 이후 잉글랜드와 유럽 대회에서 두각을 나타냈다.",
+      "crestId": 65,
+      "cityKo": "맨체스터"
     },
     "epl:Liverpool": {
       "name": "Liverpool",
       "league": "epl",
       "wikiKo": "리버풀 FC",
       "searchName": "Liverpool",
-      "historyKo": "1892년 창단된 리버풀은 잉글랜드 머지사이드 지역을 대표하는 구단이다. 안필드를 홈구장으로 사용하며, 잉글랜드 리그와 유럽 무대에서 여러 차례 정상에 올랐다."
+      "historyKo": "1892년 창단된 리버풀은 잉글랜드 머지사이드 지역을 대표하는 구단이다. 안필드를 홈구장으로 사용하며, 잉글랜드 리그와 유럽 무대에서 여러 차례 정상에 올랐다.",
+      "crestId": 64,
+      "cityKo": "리버풀"
     },
     "epl:Bournemouth": {
       "name": "Bournemouth",
       "league": "epl",
       "wikiKo": "AFC 본머스",
       "searchName": "Bournemouth",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 1044,
+      "cityKo": "본머스"
     },
     "epl:Leeds United": {
       "name": "Leeds United",
       "league": "epl",
       "wikiKo": "리즈 유나이티드 FC",
       "searchName": "Leeds United",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 341,
+      "cityKo": "리즈"
     },
     "epl:Everton": {
       "name": "Everton",
       "league": "epl",
       "wikiKo": "에버턴 FC",
       "searchName": "Everton",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 62,
+      "cityKo": "리버풀"
     },
     "epl:Chelsea": {
       "name": "Chelsea",
       "league": "epl",
       "wikiKo": "첼시 FC",
       "searchName": "Chelsea",
-      "historyKo": "첼시는 1905년 창단된 서런던의 구단이다. 스탬퍼드 브리지를 홈구장으로 사용하며 프리미어리그와 유럽 챔피언스리그 우승 경력을 보유하고 있다."
+      "historyKo": "첼시는 1905년 창단된 서런던의 구단이다. 스탬퍼드 브리지를 홈구장으로 사용하며 프리미어리그와 유럽 챔피언스리그 우승 경력을 보유하고 있다.",
+      "crestId": 61,
+      "cityKo": "런던"
     },
     "epl:Tottenham": {
       "name": "Tottenham",
       "league": "epl",
       "wikiKo": "토트넘 홋스퍼 FC",
       "searchName": "Tottenham Hotspur",
-      "historyKo": "토트넘 홋스퍼는 1882년 창단된 북런던의 구단이다. 아스널과의 북런던 더비로 잘 알려져 있으며, 토트넘 홋스퍼 스타디움에서 홈경기를 치른다."
+      "historyKo": "토트넘 홋스퍼는 1882년 창단된 북런던의 구단이다. 아스널과의 북런던 더비로 잘 알려져 있으며, 토트넘 홋스퍼 스타디움에서 홈경기를 치른다.",
+      "crestId": 73,
+      "cityKo": "런던"
     },
     "epl:Brentford": {
       "name": "Brentford",
       "league": "epl",
       "wikiKo": "브렌트퍼드 FC",
       "searchName": "Brentford",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 402,
+      "cityKo": "런던"
     },
     "epl:Hull City": {
       "name": "Hull City",
       "league": "epl",
       "wikiKo": "헐 시티 AFC",
       "searchName": "Hull City",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "킹스턴어폰헐"
     },
     "epl:Aston Villa": {
       "name": "Aston Villa",
       "league": "epl",
       "wikiKo": "애스턴 빌라 FC",
       "searchName": "Aston Villa",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 58,
+      "cityKo": "버밍엄"
     },
     "epl:Newcastle": {
       "name": "Newcastle",
       "league": "epl",
       "wikiKo": "뉴캐슬 유나이티드 FC",
       "searchName": "Newcastle United",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 67,
+      "cityKo": "뉴캐슬어폰타인"
     },
     "epl:Coventry City": {
       "name": "Coventry City",
       "league": "epl",
       "wikiKo": "코번트리 시티 FC",
       "searchName": "Coventry City",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "코번트리"
     },
     "epl:Fulham": {
       "name": "Fulham",
       "league": "epl",
       "wikiKo": "풀럼 FC",
       "searchName": "Fulham",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 63,
+      "cityKo": "런던"
     },
     "epl:Ipswich Town": {
       "name": "Ipswich Town",
       "league": "epl",
       "wikiKo": "입스위치 타운 FC",
       "searchName": "Ipswich Town",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 349,
+      "cityKo": "입스위치"
     },
     "epl:Nottingham Forest": {
       "name": "Nottingham Forest",
       "league": "epl",
       "wikiKo": "노팅엄 포리스트 FC",
       "searchName": "Nottingham Forest",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 351,
+      "cityKo": "노팅엄"
     },
     "epl:Sunderland": {
       "name": "Sunderland",
       "league": "epl",
       "wikiKo": "선덜랜드 AFC",
       "searchName": "Sunderland",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 71,
+      "cityKo": "선덜랜드"
     },
     "epl:Manchester United": {
       "name": "Manchester United",
       "league": "epl",
       "wikiKo": "맨체스터 유나이티드 FC",
       "searchName": "Manchester United",
-      "historyKo": "맨체스터 유나이티드는 맨체스터를 연고로 하는 축구 구단으로 1878년 뉴턴 히스라는 이름으로 출발했다. 올드 트래퍼드를 홈구장으로 사용하며, 맷 버즈비와 알렉스 퍼거슨 시기에 중요한 성과를 거뒀다."
+      "historyKo": "맨체스터 유나이티드는 맨체스터를 연고로 하는 축구 구단으로 1878년 뉴턴 히스라는 이름으로 출발했다. 올드 트래퍼드를 홈구장으로 사용하며, 맷 버즈비와 알렉스 퍼거슨 시기에 중요한 성과를 거뒀다.",
+      "crestId": 66,
+      "cityKo": "맨체스터"
     },
     "epl:Crystal Palace": {
       "name": "Crystal Palace",
       "league": "epl",
       "wikiKo": "크리스털 팰리스 FC",
       "searchName": "Crystal Palace",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 354,
+      "cityKo": "런던"
     },
     "seriea:Lazio": {
       "name": "Lazio",
       "league": "seriea",
       "wikiKo": "SS 라치오",
       "searchName": "Lazio",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 110,
+      "cityKo": "로마"
     },
     "seriea:Roma": {
       "name": "Roma",
       "league": "seriea",
       "wikiKo": "AS 로마",
       "searchName": "AS Roma",
-      "historyKo": "AS로마는 1927년 로마에서 창단됐다. 도시의 이름과 상징을 계승하는 구단이며, 라치오와 로마 더비를 치른다."
+      "historyKo": "AS로마는 1927년 로마에서 창단됐다. 도시의 이름과 상징을 계승하는 구단이며, 라치오와 로마 더비를 치른다.",
+      "crestId": 100,
+      "cityKo": "로마"
     },
     "seriea:Inter": {
       "name": "Inter",
       "league": "seriea",
       "wikiKo": "FC 인테르나치오날레 밀라노",
       "searchName": "Inter Milan",
-      "historyKo": "인터 밀란은 1908년 밀라노에서 창단됐다. 전통적으로 검정과 파란색 줄무늬 유니폼을 착용하며, AC밀란과 밀라노 더비를 치른다."
+      "historyKo": "인터 밀란은 1908년 밀라노에서 창단됐다. 전통적으로 검정과 파란색 줄무늬 유니폼을 착용하며, AC밀란과 밀라노 더비를 치른다.",
+      "crestId": 108,
+      "cityKo": "밀라노"
     },
     "seriea:Milan": {
       "name": "Milan",
       "league": "seriea",
       "wikiKo": "AC 밀란",
       "searchName": "AC Milan",
-      "historyKo": "AC밀란은 1899년 창단된 밀라노의 축구 구단이다. 세리에A와 UEFA 챔피언스리그에서 오랜 우승 역사를 갖고 있으며, 인터 밀란과 같은 경기장을 사용해 왔다."
+      "historyKo": "AC밀란은 1899년 창단된 밀라노의 축구 구단이다. 세리에A와 UEFA 챔피언스리그에서 오랜 우승 역사를 갖고 있으며, 인터 밀란과 같은 경기장을 사용해 왔다.",
+      "crestId": 98,
+      "cityKo": "밀라노"
     },
     "seriea:Como": {
       "name": "Como",
       "league": "seriea",
       "wikiKo": "코모 1907",
       "searchName": "Como",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 7397,
+      "cityKo": "코모"
     },
     "seriea:Juventus": {
       "name": "Juventus",
       "league": "seriea",
       "wikiKo": "유벤투스 FC",
       "searchName": "Juventus",
-      "historyKo": "유벤투스는 1897년 토리노에서 창단된 이탈리아 축구 구단이다. 검정과 흰색 줄무늬 유니폼으로 유명하며, 세리에A 역사에서 오랜 우승 전통을 쌓았다."
+      "historyKo": "유벤투스는 1897년 토리노에서 창단된 이탈리아 축구 구단이다. 검정과 흰색 줄무늬 유니폼으로 유명하며, 세리에A 역사에서 오랜 우승 전통을 쌓았다.",
+      "crestId": 109,
+      "cityKo": "토리노"
     },
     "seriea:Frosinone": {
       "name": "Frosinone",
       "league": "seriea",
       "wikiKo": "프로시노네 칼초",
       "searchName": "Frosinone",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "프로시노네"
     },
     "seriea:Napoli": {
       "name": "Napoli",
       "league": "seriea",
       "wikiKo": "SSC 나폴리",
       "searchName": "Napoli",
-      "historyKo": "나폴리는 이탈리아 남부 나폴리를 연고로 한다. 디에고 마라도나가 활약했던 1980년대의 리그 우승이 구단 역사에서 중요한 시기로 꼽힌다."
+      "historyKo": "나폴리는 이탈리아 남부 나폴리를 연고로 한다. 디에고 마라도나가 활약했던 1980년대의 리그 우승이 구단 역사에서 중요한 시기로 꼽힌다.",
+      "crestId": 113,
+      "cityKo": "나폴리"
     },
     "seriea:Bologna": {
       "name": "Bologna",
       "league": "seriea",
       "wikiKo": "볼로냐 FC 1909",
       "searchName": "Bologna",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 103,
+      "cityKo": "볼로냐"
     },
     "seriea:Genoa": {
       "name": "Genoa",
       "league": "seriea",
       "wikiKo": "제노아 CFC",
       "searchName": "Genoa",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 107,
+      "cityKo": "제노바"
     },
     "seriea:Cagliari": {
       "name": "Cagliari",
       "league": "seriea",
       "wikiKo": "칼리아리 칼초",
       "searchName": "Cagliari",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 104,
+      "cityKo": "칼리아리"
     },
     "seriea:Atalanta": {
       "name": "Atalanta",
       "league": "seriea",
       "wikiKo": "아탈란타 BC",
       "searchName": "Atalanta",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 102,
+      "cityKo": "베르가모"
     },
     "seriea:Torino": {
       "name": "Torino",
       "league": "seriea",
       "wikiKo": "토리노 FC",
       "searchName": "Torino",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 586,
+      "cityKo": "토리노"
     },
     "seriea:Lecce": {
       "name": "Lecce",
       "league": "seriea",
       "wikiKo": "US 레체",
       "searchName": "Lecce",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 5890,
+      "cityKo": "레체"
     },
     "seriea:Fiorentina": {
       "name": "Fiorentina",
       "league": "seriea",
       "wikiKo": "ACF 피오렌티나",
       "searchName": "Fiorentina",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 99,
+      "cityKo": "피렌체"
     },
     "seriea:Parma": {
       "name": "Parma",
       "league": "seriea",
       "wikiKo": "파르마 칼초 1913",
       "searchName": "Parma",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 112,
+      "cityKo": "파르마"
     },
     "seriea:Sassuolo": {
       "name": "Sassuolo",
       "league": "seriea",
       "wikiKo": "US 사수올로 칼초",
       "searchName": "Sassuolo",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 471,
+      "cityKo": "사수올로"
     },
     "seriea:Monza": {
       "name": "Monza",
       "league": "seriea",
       "wikiKo": "AC 몬차",
       "searchName": "Monza",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "몬차"
     },
     "seriea:Udinese": {
       "name": "Udinese",
       "league": "seriea",
       "wikiKo": "우디네세 칼초",
       "searchName": "Udinese",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 115,
+      "cityKo": "우디네"
     },
     "seriea:Venezia": {
       "name": "Venezia",
       "league": "seriea",
       "wikiKo": "베네치아 FC",
       "searchName": "Venezia",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "베네치아"
     },
     "bundesliga:Borussia Dortmund": {
       "name": "Borussia Dortmund",
       "league": "bundesliga",
       "wikiKo": "보루시아 도르트문트",
       "searchName": "Borussia Dortmund",
-      "historyKo": "보루시아 도르트문트는 1909년 창단된 루르 지역의 구단이다. 지그날 이두나 파르크의 열정적인 응원 문화와 노란색·검정색 팀 컬러로 널리 알려져 있다."
+      "historyKo": "보루시아 도르트문트는 1909년 창단된 루르 지역의 구단이다. 지그날 이두나 파르크의 열정적인 응원 문화와 노란색·검정색 팀 컬러로 널리 알려져 있다.",
+      "crestId": 4,
+      "cityKo": "도르트문트"
     },
     "bundesliga:Bayern München": {
       "name": "Bayern München",
       "league": "bundesliga",
       "wikiKo": "FC 바이에른 뮌헨",
       "searchName": "Bayern Munich",
-      "historyKo": "바이에른 뮌헨은 1900년 창단된 뮌헨의 구단이다. 독일 최상위 리그와 유럽 대회에서 여러 차례 우승했으며, 알리안츠 아레나를 홈으로 사용한다."
+      "historyKo": "바이에른 뮌헨은 1900년 창단된 뮌헨의 구단이다. 독일 최상위 리그와 유럽 대회에서 여러 차례 우승했으며, 알리안츠 아레나를 홈으로 사용한다.",
+      "crestId": 5,
+      "cityKo": "뮌헨"
     },
     "bundesliga:Freiburg": {
       "name": "Freiburg",
       "league": "bundesliga",
       "wikiKo": "SC 프라이부르크",
       "searchName": "Freiburg",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 17,
+      "cityKo": "프라이부르크"
     },
     "bundesliga:RB Leipzig": {
       "name": "RB Leipzig",
       "league": "bundesliga",
       "wikiKo": "RB 라이프치히",
       "searchName": "RB Leipzig",
-      "historyKo": "RB 라이프치히는 2009년 창단된 비교적 역사가 짧은 독일 구단이다. 라이프치히를 연고로 하며 독일 상위권과 유럽 대회에 진출해 왔다."
+      "historyKo": "RB 라이프치히는 2009년 창단된 비교적 역사가 짧은 독일 구단이다. 라이프치히를 연고로 하며 독일 상위권과 유럽 대회에 진출해 왔다.",
+      "crestId": 721,
+      "cityKo": "라이프치히"
     },
     "bundesliga:Bayer Leverkusen": {
       "name": "Bayer Leverkusen",
       "league": "bundesliga",
       "wikiKo": "바이어 04 레버쿠젠",
       "searchName": "Bayer Leverkusen",
-      "historyKo": "바이어 레버쿠젠은 독일 레버쿠젠을 연고로 하는 구단이다. 바이아레나를 홈구장으로 사용하며, 2023–24시즌 분데스리가 무패 우승을 달성했다."
+      "historyKo": "바이어 레버쿠젠은 독일 레버쿠젠을 연고로 하는 구단이다. 바이아레나를 홈구장으로 사용하며, 2023–24시즌 분데스리가 무패 우승을 달성했다.",
+      "crestId": 3,
+      "cityKo": "레버쿠젠"
     },
     "bundesliga:Werder Bremen": {
       "name": "Werder Bremen",
       "league": "bundesliga",
       "wikiKo": "SV 베르더 브레멘",
       "searchName": "Werder Bremen",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 12,
+      "cityKo": "브레멘"
     },
     "bundesliga:Eintracht Frankfurt": {
       "name": "Eintracht Frankfurt",
       "league": "bundesliga",
       "wikiKo": "아인트라흐트 프랑크푸르트",
       "searchName": "Eintracht Frankfurt",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 19,
+      "cityKo": "프랑크푸르트"
     },
     "bundesliga:Stuttgart": {
       "name": "Stuttgart",
       "league": "bundesliga",
       "wikiKo": "VfB 슈투트가르트",
       "searchName": "Stuttgart",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 10,
+      "cityKo": "슈투트가르트"
     },
     "bundesliga:Elversberg": {
       "name": "Elversberg",
       "league": "bundesliga",
       "wikiKo": "SV 엘버스베르크",
       "searchName": "Elversberg",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "슈피젠엘버스베르크"
     },
     "bundesliga:Augsburg": {
       "name": "Augsburg",
       "league": "bundesliga",
       "wikiKo": "FC 아우크스부르크",
       "searchName": "Augsburg",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 16,
+      "cityKo": "아우크스부르크"
     },
     "bundesliga:Hoffenheim": {
       "name": "Hoffenheim",
       "league": "bundesliga",
       "wikiKo": "TSG 1899 호펜하임",
       "searchName": "Hoffenheim",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 2,
+      "cityKo": "진스하임"
     },
     "bundesliga:Hamburg": {
       "name": "Hamburg",
       "league": "bundesliga",
       "wikiKo": "함부르크 SV",
       "searchName": "Hamburg",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 7,
+      "cityKo": "함부르크"
     },
     "bundesliga:Mainz": {
       "name": "Mainz",
       "league": "bundesliga",
       "wikiKo": "1. FSV 마인츠 05",
       "searchName": "Mainz 05",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 15,
+      "cityKo": "마인츠"
     },
     "bundesliga:Köln": {
       "name": "Köln",
       "league": "bundesliga",
       "wikiKo": "1. FC 쾰른",
       "searchName": "FC Koln",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 1,
+      "cityKo": "쾰른"
     },
     "bundesliga:Paderborn": {
       "name": "Paderborn",
       "league": "bundesliga",
       "wikiKo": "SC 파더보른 07",
       "searchName": "Paderborn",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "파더보른"
     },
     "bundesliga:Schalke": {
       "name": "Schalke",
       "league": "bundesliga",
       "wikiKo": "FC 샬케 04",
       "searchName": "Schalke",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 6,
+      "cityKo": "겔젠키르헨"
     },
     "bundesliga:Union Berlin": {
       "name": "Union Berlin",
       "league": "bundesliga",
       "wikiKo": "1. FC 우니온 베를린",
       "searchName": "Union Berlin",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 28,
+      "cityKo": "베를린"
     },
     "bundesliga:Mönchengladbach": {
       "name": "Mönchengladbach",
       "league": "bundesliga",
       "wikiKo": "보루시아 묀헨글라트바흐",
       "searchName": "Borussia Monchengladbach",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 18,
+      "cityKo": "묀헨글라트바흐"
     },
     "ligue1:Paris Saint-Germain": {
       "name": "Paris Saint-Germain",
       "league": "ligue1",
       "wikiKo": "파리 생제르맹 FC",
       "searchName": "Paris Saint Germain",
-      "historyKo": "파리 생제르맹은 1970년 창단된 파리의 축구 구단이다. 파르크 데 프랭스를 홈구장으로 사용하며 프랑스 리그앙의 대표적인 강팀 중 하나다."
+      "historyKo": "파리 생제르맹은 1970년 창단된 파리의 축구 구단이다. 파르크 데 프랭스를 홈구장으로 사용하며 프랑스 리그앙의 대표적인 강팀 중 하나다.",
+      "crestId": 524,
+      "cityKo": "파리"
     },
     "ligue1:Paris FC": {
       "name": "Paris FC",
       "league": "ligue1",
       "wikiKo": "파리 FC",
       "searchName": "Paris FC",
-      "historyKo": null
+      "historyKo": null,
+      "cityKo": "파리"
     },
     "ligue1:Lille": {
       "name": "Lille",
       "league": "ligue1",
       "wikiKo": "릴 OSC",
       "searchName": "Lille",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 521,
+      "cityKo": "릴"
     },
     "ligue1:Lyon": {
       "name": "Lyon",
       "league": "ligue1",
       "wikiKo": "올랭피크 리옹",
       "searchName": "Lyon",
-      "historyKo": "올랭피크 리옹은 프랑스 리옹을 연고로 하는 구단이다. 2000년대 리그앙 7연패를 기록하며 프랑스 축구에서 중요한 전성기를 구축했다."
+      "historyKo": "올랭피크 리옹은 프랑스 리옹을 연고로 하는 구단이다. 2000년대 리그앙 7연패를 기록하며 프랑스 축구에서 중요한 전성기를 구축했다.",
+      "crestId": 523,
+      "cityKo": "리옹"
     },
     "ligue1:Marseille": {
       "name": "Marseille",
       "league": "ligue1",
       "wikiKo": "올랭피크 드 마르세유",
       "searchName": "Marseille",
-      "historyKo": "올랭피크 드 마르세유는 프랑스 남부 마르세유를 대표하는 구단이다. 스타드 벨로드롬을 홈구장으로 사용하며, 1993년 UEFA 챔피언스리그 우승 경력이 있다."
+      "historyKo": "올랭피크 드 마르세유는 프랑스 남부 마르세유를 대표하는 구단이다. 스타드 벨로드롬을 홈구장으로 사용하며, 1993년 UEFA 챔피언스리그 우승 경력이 있다.",
+      "crestId": 516,
+      "cityKo": "마르세유"
     },
     "ligue1:Brest": {
       "name": "Brest",
       "league": "ligue1",
       "wikiKo": "스타드 브레스투아 29",
       "searchName": "Brest",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 512,
+      "cityKo": "브레스트"
     },
     "ligue1:Nice": {
       "name": "Nice",
       "league": "ligue1",
       "wikiKo": "OGC 니스",
       "searchName": "Nice",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 522,
+      "cityKo": "니스"
     },
     "ligue1:Monaco": {
       "name": "Monaco",
       "league": "ligue1",
       "wikiKo": "AS 모나코 FC",
       "searchName": "Monaco",
-      "historyKo": "AS모나코는 모나코 공국을 연고로 하는 축구 구단으로 프랑스 리그 시스템에 참가한다. 스타드 루이 2세를 홈구장으로 사용한다."
+      "historyKo": "AS모나코는 모나코 공국을 연고로 하는 축구 구단으로 프랑스 리그 시스템에 참가한다. 스타드 루이 2세를 홈구장으로 사용한다.",
+      "crestId": 548,
+      "cityKo": "모나코"
     },
     "ligue1:Rennes": {
       "name": "Rennes",
       "league": "ligue1",
       "wikiKo": "스타드 렌 FC",
       "searchName": "Rennes",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 529,
+      "cityKo": "렌"
     },
     "ligue1:Lorient": {
       "name": "Lorient",
       "league": "ligue1",
       "wikiKo": "FC 로리앙",
       "searchName": "Lorient",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 525,
+      "cityKo": "로리앙"
     },
     "ligue1:Lens": {
       "name": "Lens",
       "league": "ligue1",
       "wikiKo": "RC 랑스",
       "searchName": "Lens",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 546,
+      "cityKo": "랑스"
     },
     "ligue1:Toulouse": {
       "name": "Toulouse",
       "league": "ligue1",
       "wikiKo": "툴루즈 FC",
       "searchName": "Toulouse",
-      "historyKo": null
+      "historyKo": null,
+      "crestId": 511,
+      "cityKo": "툴루즈"
     }
   }
 }
