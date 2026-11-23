@@ -5,8 +5,7 @@
     { key: "predictions", label: "경기 전망", href: "index.html#predictions" },
     { key: "matches", label: "경기 일정", href: "index.html#matches" },
     { key: "leagues", label: "리그", href: "leagues.html" },
-    { key: "columns", label: "칼럼", href: "index.html#columns" },
-    { key: "mypage", label: "마이페이지", href: "mypage.html" }
+    { key: "columns", label: "칼럼", href: "index.html#columns" }
   ]);
   const header = document.querySelector("[data-site-header]");
   if (!header) return;
@@ -28,6 +27,29 @@
       navigation.append(link);
     });
   }
+  // Utility actions are separate from the four editorial navigation sections.
+  const loginTarget = "mypage.html?login=1#accountPanel";
+  const ensureUtility = (parent, className) => {
+    let wrapper = parent.querySelector("." + className);
+    if (!wrapper) {
+      wrapper = document.createElement("div");
+      wrapper.className = className;
+      if (className === "shell-utility") navigation.after(wrapper);
+      else navigation.append(wrapper);
+    }
+    wrapper.replaceChildren();
+    for (const item of [{ label: "로그인", href: loginTarget, key: "login" }, { label: "마이페이지", href: "mypage.html", key: "mypage" }]) {
+      const anchor = document.createElement("a");
+      anchor.href = item.href;
+      anchor.textContent = item.label;
+      anchor.dataset.utilityKey = item.key;
+      anchor.className = className === "shell-utility" ? "shell-utility-link" : "shell-mobile-utility-link";
+      wrapper.append(anchor);
+    }
+    return wrapper;
+  };
+  const utility = ensureUtility(header.querySelector(".shell-inner"), "shell-utility");
+  const mobileUtility = ensureUtility(navigation, "shell-mobile-utility");
   const links = Array.from(navigation.querySelectorAll("a[data-nav-key]"));
   items.forEach((item, index) => {
     const link = links[index];
@@ -61,6 +83,14 @@
       if (current) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
     });
+    const onAccountPage = location.pathname.endsWith("/mypage.html");
+    const loginRequested = onAccountPage && new URLSearchParams(location.search).get("login") === "1";
+    for (const a of [...utility.querySelectorAll("a"), ...mobileUtility.querySelectorAll("a")]) {
+      const current = onAccountPage && a.dataset.utilityKey === (loginRequested ? "login" : "mypage");
+      a.classList.toggle("is-active", current);
+      if (current) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    }
     closeMenu(false);
   }
 
