@@ -57,3 +57,7 @@ html,body,body *,button,input,select,textarea{font-family:"Pretendard",sans-seri
 .selected-pick-clubs .pick-badge img{max-width:100%;max-height:100%;object-fit:contain}
 .selected-pick-clubs .pick-versus{font-size:11.333px;color:#888;font-weight:400}
 @media(max-width:650px){.saved-pick-clubs{gap:4px}.saved-pick-clubs .pick-badge{width:19px;height:19px;min-width:19px}.saved-pick-clubs .pick-badge img{width:18px;height:18px}}
+
+/* Keep club crests visible in narrow saved-history and slip layouts. */
+.saved-pick-clubs .pick-badge,.selected-pick-clubs .pick-badge{display:inline-flex!important;align-items:center;justify-content:center;overflow:hidden;background:transparent;border:0;border-radius:0}
+.saved-pick-clubs .pick-badge img,.selected-pick-clubs .pick-badge img{display:block;max-width:100%;max-height:100%;object-fit:contain}
