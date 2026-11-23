@@ -50,7 +50,7 @@ function render(){
   clubs.append(club(m,"home"),club(m,"away"));
   const bottom=el("div","daily-card-bottom"),result=el("div","daily-card-result");
   const subtitle=el("span","daily-countdown",strings[state]);
-  if(window.NinetyMinCountdown)window.NinetyMinCountdown.set(subtitle,m,state);
+  if(window.NinetyMinCountdown)window.NinetyMinCountdown.set(subtitle,m,state,{compact:true});
   result.append(el("strong","",state==="finished"?m.score.join(" : "):m.time||"—"),subtitle);
   bottom.append(result,el("span","daily-card-action",locale()==="en"?"Analysis":"경기 분석"));
   row.append(meta,clubs,bottom);list.append(row);
