@@ -16341,9 +16341,18 @@
       "team": "KuPS Kuopio",
       "league": "uecl",
       "matchName": "KuPS Kuopio",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "KuPS Kuopio",
+          "away": "Inter Turku",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "32",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "KuPS Kuopio",
@@ -16351,7 +16360,35 @@
           "homeScore": 0,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "AC Oulu",
+          "away": "KuPS Kuopio",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "31",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-29",
+          "home": "KuPS Kuopio",
+          "away": "Gnistan",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "30",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "HJK",
+          "away": "KuPS Kuopio",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "29",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -16360,7 +16397,17 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "KuPS Kuopio",
+          "away": "VPS",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "28",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -16369,7 +16416,36 @@
           "homeScore": 2,
           "awayScore": 4,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Inter Turku",
+          "away": "KuPS Kuopio",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "27",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-08",
+          "home": "KuPS Kuopio",
+          "away": "AC Oulu",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "26",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "UECL",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/FIN_1_veikkausliiga/results_2627.csv"
         }
       ]
     },
