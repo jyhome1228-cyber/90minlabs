@@ -49,3 +49,6 @@
  .myteam-fixtures{grid-template-columns:1fr}
  .myteam-fixture{padding:12px 0 15px}
 }
+
+/* Keep the section title visible below the sticky header when opening #myTeams. */
+.myteam-section{scroll-margin-top:112px}
