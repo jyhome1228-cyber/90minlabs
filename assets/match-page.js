@@ -169,10 +169,15 @@
     else body.append(el("p", "", "경기 리포트를 불러오지 못했습니다. 아래에서 최근 경기와 양 팀의 성적을 확인할 수 있습니다."));
   }
 
-  function comparisonCell(value, maximum, text, away) {
+  function comparisonCell(value, maximum, text, comparison) {
     const cell = el("td"), line = el("div", "compare-value-line"), number = el("span", "compare-number", text);
     const track = el("span", "compare-bar-track"), bar = el("span", "compare-bar");
-    track.setAttribute("aria-hidden", "true"); bar.style.width = Number.isFinite(value) && maximum > 0 ? Math.max(0, Math.min(100, value / maximum * 100)) + "%" : "0%";
+    track.setAttribute("aria-hidden", "true");
+    bar.style.width = Number.isFinite(value) && maximum > 0 ? Math.max(0, Math.min(100, value / maximum * 100)) + "%" : "0%";
+    if (comparison === "stronger" || comparison === "weaker") {
+      cell.classList.add("is-" + comparison);
+      if (comparison === "stronger") cell.append(el("span", "sr-only", "상대보다 우세"));
+    }
     track.append(bar); line.append(number, track); cell.append(line); return cell;
   }
   function renderComparison(a) {
@@ -181,14 +186,28 @@
       node.replaceChildren(el("span", "compare-team-name", team.name), el("span", "compare-team-count", "확인된 " + team.stats.played + "경기"), formStrip(team.records));
     });
     const rows = $("comparisonRows"); rows.replaceChildren();
+    // Colour only comparative performance. BTTS/over-2.5 are descriptive statistics.
     const metrics = [
-      ["ppg", "경기당 승점", 3, decimal], ["gfAvg", "평균 득점", null, decimal], ["gaAvg", "평균 실점", null, decimal],
-      ["winRate", "승리 비율", 1, percent], ["cleanSheetRate", "무실점 비율", 1, percent], ["bttsRate", "양 팀 득점", 1, percent], ["over25Rate", "합산 3골 이상", 1, percent]
+      ["ppg", "경기당 승점", 3, decimal, "higher"],
+      ["gfAvg", "평균 득점", null, decimal, "higher"],
+      ["gaAvg", "평균 실점", null, decimal, "lower"],
+      ["winRate", "승리 비율", 1, percent, "higher"],
+      ["cleanSheetRate", "무실점 비율", 1, percent, "higher"],
+      ["bttsRate", "양 팀 득점", 1, percent, null],
+      ["over25Rate", "합산 3골 이상", 1, percent, null]
     ];
-    metrics.forEach(([key, title, max, formatter]) => {
-      const hv = a.home.stats[key], av = a.away.stats[key], maximum = max || Math.max(hv || 0, av || 0, 1);
+    metrics.forEach(([key, title, max, formatter, direction]) => {
+      const hv = a.home.stats[key], av = a.away.stats[key];
+      const maximum = max || Math.max(hv || 0, av || 0, 1);
+      const comparable = a.home.stats.played > 0 && a.away.stats.played > 0 &&
+        Number.isFinite(hv) && Number.isFinite(av) && Math.abs(hv - av) > .005 && Boolean(direction);
+      const homeBetter = direction === "higher" ? hv > av : hv < av;
+      const homeStyle = comparable ? (homeBetter ? "stronger" : "weaker") : "neutral";
+      const awayStyle = comparable ? (homeBetter ? "weaker" : "stronger") : "neutral";
       const row = el("tr"), metric = el("td", "metric-name", title);
-      row.append(comparisonCell(hv, maximum, formatter(hv)), metric, comparisonCell(av, maximum, formatter(av), true)); rows.append(row);
+      row.append(comparisonCell(hv, maximum, formatter(hv), homeStyle), metric,
+        comparisonCell(av, maximum, formatter(av), awayStyle));
+      rows.append(row);
     });
     $("sampleNote").textContent = a.coverage.scopeLabel + " · 홈 " + a.home.stats.played + "경기 · 원정 " + a.away.stats.played + "경기";
     const venues = $("venueComparison"); venues.replaceChildren();
@@ -196,7 +215,17 @@
       const team = a[side], stats = team.venue.stats, panel = el("article", "venue-panel"), title = el("h4", "venue-title", team.name);
       title.append(el("span", "", (side === "home" ? "최근 홈 " : "최근 원정 ") + stats.played + "경기")); panel.append(title);
       const metrics = el("dl", "venue-metrics");
-      [["승·무·패", stats.played ? stats.w + "·" + stats.d + "·" + stats.l : "—"], ["평균 득점", decimal(stats.gfAvg)], ["평균 실점", decimal(stats.gaAvg)], ["무실점", stats.played ? stats.cleanSheetCount + "/" + stats.played : "—"]].forEach(([label, value], index) => { const box = el("div"); box.append(el("dt", "", label), el("dd", index === 0 ? "small-stat" : "", value)); metrics.append(box); });
+      [["승·무·패", null], ["평균 득점", decimal(stats.gfAvg)], ["평균 실점", decimal(stats.gaAvg)], ["무실점", stats.played ? stats.cleanSheetCount + "/" + stats.played : "—"]].forEach(([label, value], index) => {
+        const box = el("div"), definition = el("dd", index === 0 ? "small-stat" : "");
+        if (index === 0 && stats.played) {
+          const breakdown = el("span", "venue-form-breakdown");
+          [["승", stats.w, "win"], ["무", stats.d, "draw"], ["패", stats.l, "loss"]].forEach(([caption, count, mood]) => {
+            breakdown.append(el("span", "venue-form-" + mood, count + caption));
+          });
+          definition.append(breakdown);
+        } else definition.textContent = value === null ? "—" : value;
+        box.append(el("dt", "", label), definition); metrics.append(box);
+      });
       panel.append(metrics, formStrip(team.venue.records)); venues.append(panel);
     });
   }
