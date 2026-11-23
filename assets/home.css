@@ -221,3 +221,33 @@
 .home-daily-top{padding-bottom:23px;margin-bottom:0}
 .home-daily .daily-grid{margin-top:0}
 @media(max-width:650px){.home-daily-top{padding-bottom:18px}}
+
+
+/* Final minimal hero: copy on the left and right, jersey in the center. */
+.home-hero-dual{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(330px,1fr);
+  align-items:center;
+  gap:15%;
+  width:min(100% - 88px,1440px);
+  padding:40px 0;
+  min-height:100%;
+}
+.home-hero-dual .home-copy-main{padding:0;min-width:0}
+.home-hero-dual .home-copy-left{max-width:460px;justify-self:start}
+.home-hero-dual .home-copy-right{max-width:280px;justify-self:end;align-self:center}
+.home-hero-dual .home-brandline{font-size:clamp(28px,3vw,42px);line-height:1.55;font-weight:400;letter-spacing:-.045em;margin:0}
+.home-hero-dual .home-lead{font-size:clamp(14px,1.25vw,17px);line-height:1.9;color:#444b52;text-align:left;margin:0}
+.home-hero-dual .home-actions{display:none!important}
+@media(max-width:950px){
+ .home-hero-dual{width:calc(100% - 64px);grid-template-columns:minmax(0,1fr) minmax(200px,.75fr);gap:12%}
+ .home-hero-dual .home-brandline{font-size:clamp(25px,3.4vw,34px)}
+ .home-hero-dual .home-copy-right{max-width:210px}
+}
+@media(max-width:650px){
+ .home-hero-dual{width:calc(100% - 40px);grid-template-columns:1fr;align-content:space-between;gap:20px;padding:64px 0 40px}
+ .home-hero-dual .home-copy-left{max-width:290px;align-self:start}
+ .home-hero-dual .home-copy-right{justify-self:start;align-self:end;max-width:250px}
+ .home-hero-dual .home-brandline{font-size:clamp(26px,7vw,34px)}
+ .home-hero-dual .home-lead{font-size:13px}
+}
