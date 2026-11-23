@@ -29,7 +29,7 @@ test('tall banner links to functional saved-matches library with honest signup n
   assert.match(css,/@media\(max-width:650px\)\{[\s\S]*?\.home-view \.home-feature\.signup-feature/);
   assert.match(page,/마이페이지에서 시작하기/);
   assert.match(css,/height:clamp\(480px,33vw,600px\)/);
-  assert.match(page,/assets\/home\.css\?v=20261124-heroaction2/);
+  assert.match(page,/assets\/home\.css\?v=20261124-heroaction3/);
   const ids=[...page.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size,ids.length);
 });
