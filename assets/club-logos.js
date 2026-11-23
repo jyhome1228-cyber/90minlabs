@@ -63,7 +63,9 @@ function badge(container,opts){
  const query=opts.searchName||opts.name||"",key=norm(query)||query;
  let started=false,step=0;
  function insert(url){
-   const img=new Image();img.alt="";img.decoding="async";img.loading="eager";img.fetchPriority="high";
+   const img=new Image();img.alt="";img.decoding="async";img.loading="eager";
+   const rect=container.getBoundingClientRect();
+   img.fetchPriority=(rect.bottom>=-80&&rect.top<window.innerHeight+120)?"high":"low";
    img.onload=()=>{if(container.isConnected){container.replaceChildren(img);}else{container.replaceChildren(img);}};
    img.onerror=()=>{img.remove();next()};
    img.src=url;
