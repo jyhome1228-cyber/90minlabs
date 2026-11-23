@@ -96,7 +96,7 @@ function render(){
  const head=isStandings?["순위","구단","경기","승","무","패","득실차","승점"]:["순위","선수 / 소속 구단","경기","득점","도움"];
  let body=rows.map((r,i)=>isStandings?
  '<tr><td>'+number(r.rank??i+1)+'</td><td class="team"><a class="teamlink" href="'+esc(clubLink(r.team))+'">'+crest(r.team)+esc(r.team)+'</a></td><td>'+number(r.played)+'</td><td>'+number(r.won)+'</td><td>'+number(r.drawn)+'</td><td>'+number(r.lost)+'</td><td>'+number(r.goalDifference)+'</td><td class="points">'+number(r.points)+'</td></tr>':
- '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+scorerCell(r)+<td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
+ '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+scorerCell(r)+'</td><td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
  ).join("");
  area.innerHTML='<div class="tablebox"><table><thead><tr>'+head.map(h=>'<th scope="col">'+h+'</th>').join("")+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
