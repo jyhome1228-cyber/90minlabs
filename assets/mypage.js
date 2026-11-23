@@ -71,43 +71,16 @@
     if (!PredictionStore.kickoffMs(fixture)) return "시간 미정";
     return PredictionStore.canPick(fixture, Date.now()) ? "" : "선택 마감";
   }
-  const crestLookups = new Map();
-  function validImageUrl(value) { return typeof value === "string" && /^https:\/\//i.test(value) ? value : null; }
   function badge(fixture, side) {
-    const team=descriptor(fixture, side), profile=team.profile||{};
-    const label=team.name||fixture&&fixture[side]||"FC";
-    const holder=el("span","pick-badge",(label.replace(/[^\p{L}\p{N}]/gu,"").slice(0,2)||"FC").toUpperCase());
-    holder.setAttribute("aria-hidden","true");
-    holder.title=label;
-    const crestId=fixture&&fixture[side+"Crest"]||team.crestId||profile.crestId;
-    const direct=validImageUrl(profile.badgeUrl)||validImageUrl(team.badgeUrl);
-    const known=direct||(crestId&&/^\d+$/.test(String(crestId))?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null);
-    const query=profile.searchName||fixture&&(fixture[side+"Team"]||fixture[side])||label;
-    let fallbackAttempted=false;
-    function requestFallback(){
-      if(fallbackAttempted||!query)return;
-      fallbackAttempted=true;
-      if(!crestLookups.has(query)){
-        const promise=fetch("https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t="+encodeURIComponent(query))
-          .then(resp=>resp.ok?resp.json():null)
-          .then(data=>{
-            const candidates=(data?.teams||[]).filter(x=>x.strSport==="Soccer"&&validImageUrl(x.strBadge));
-            const norm=x=>String(x||"").normalize("NFKD").toLowerCase().replace(/[^a-z0-9]/g,"");
-            const searched=norm(query);
-            const matched=candidates.find(x=>norm(x.strTeam)===searched||String(x.strTeamAlternate||"").split(";").some(a=>norm(a)===searched));
-            return validImageUrl(matched?.strBadge)||null;
-          }).catch(()=>null);
-        crestLookups.set(query,promise);
-      }
-      crestLookups.get(query).then(url=>{if(url&&holder.isConnected)showImage(url,false);});
-    }
-    function showImage(url,allowFallback){
-      const img=el("img");img.alt="";img.loading="lazy";img.decoding="async";img.width=28;img.height=28;
-      img.onload=()=>{if(holder.isConnected)holder.replaceChildren(img);};
-      img.onerror=()=>{img.remove();if(allowFallback)requestFallback();};
-      img.src=url;
-    }
-    if(known)showImage(known,true);else requestFallback();
+    const team=descriptor(fixture,side),profile=team.profile||{};
+    const original=team.name||fixture&&fixture[side]||"FC";
+    const holder=el("span","pick-badge",(original.replace(/[^\p{L}\p{N}]/gu,"").slice(0,2)||"FC").toUpperCase());
+    holder.setAttribute("aria-hidden","true");holder.title=original;
+    if(window.ClubLogos)ClubLogos.badge(holder,{
+      name:original,searchName:profile.searchName||fixture&&fixture[side+"Team"]||original,
+      wikiTitle:profile.wikiEn||null,badgeUrl:profile.badgeUrl||team.badgeUrl,
+      crestId:fixture&&fixture[side+"Crest"]||profile.crestId||team.crestId
+    });
     return holder;
   }
   function choiceGroup(fixture, id, selected, disabled, area) {
