@@ -110,3 +110,91 @@
   #predictionBuilder .selected-pick-bottom{justify-content:flex-start}
   #predictionBuilder .selected-pick .choice-group{max-width:230px}
 }
+
+
+/* MY PAGE | compact hierarchy, one primary task per region */
+.mypage-wrap .mypage-heading{
+  padding:45px 0 25px;
+  align-items:center;
+  border-bottom:1px solid #dedede;
+  gap:24px;
+}
+.mypage-heading h1{font-size:24px;line-height:1.3;font-weight:650;letter-spacing:-.04em;margin:0}
+.mypage-heading .text-link{font-size:12px;color:#525252;font-weight:500;white-space:nowrap}
+#accountPanel[hidden]{display:none!important}
+.mypage-wrap .account-panel:not([hidden]){margin:15px 0;border-top:0;padding:20px 0}
+.mypage-wrap .record-stats{display:none!important}
+.mypage-wrap .storage-note{display:none!important}
+.mypage-wrap .prediction-builder{padding:36px 0 64px}
+#predictionBuilder>.section-heading{margin:0 0 19px;gap:10px}
+#predictionBuilder>.section-heading h2{font-size:18px;font-weight:650;letter-spacing:-.035em}
+#predictionBuilder .week-toolbar{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-bottom:30px}
+#predictionBuilder .week-navigation{gap:14px}
+#predictionBuilder .week-navigation h3{font-size:16px;min-width:180px;font-weight:600;letter-spacing:-.02em}
+#predictionBuilder .week-navigation .outline-button{padding:8px 12px;font-weight:500;border-color:#ddd;font-size:12px}
+#predictionBuilder .week-tools{gap:20px;align-items:center}
+#predictionBuilder .week-tools .text-button{font-size:12px;margin:0}
+#predictionBuilder .week-tools label.sr-only{position:absolute}
+#predictionBuilder .week-tools input{min-height:37px;padding:7px 10px;font-size:12px}
+#predictionBuilder .builder-grid{grid-template-columns:minmax(0,1fr) minmax(400px,440px);gap:42px}
+#predictionBuilder .picker-filters{grid-template-columns:145px minmax(0,1fr) 155px;gap:8px}
+#predictionBuilder .picker-filters select,#predictionBuilder .picker-filters input{min-height:42px;border:1px solid #e0e0e0;font-size:12px;background:white;padding:8px 11px}
+#predictionBuilder .picker-caption{margin:15px 0 22px;color:#777;font-size:12px}
+#predictionBuilder .fixture-day{margin-bottom:27px}
+#predictionBuilder .fixture-day>h4{padding:0 0 10px;border-bottom:1px solid #222;font-size:13px}
+#predictionBuilder .pick-row{padding:17px 0;gap:12px;border-color:#efefef}
+#predictionBuilder .pick-team{font-size:13px}
+#predictionBuilder .pick-analysis{font-size:12px}
+#predictionBuilder .prediction-slip{padding:25px 26px 26px;border:1px solid #e2e2e2;border-radius:0}
+#predictionBuilder .slip-heading{margin:0 0 18px}
+#predictionBuilder .slip-heading h3{font-size:17px;font-weight:650}
+#predictionBuilder .slip-heading .text-button{font-size:12px;color:#555}
+#predictionBuilder .set-title-label{font-size:12px;font-weight:600;margin-bottom:7px}
+#predictionBuilder .prediction-slip input{min-height:43px;border-color:#dedede;padding:9px 12px;font-size:13px}
+#predictionBuilder .slip-meta{font-size:12px;padding:13px 0 12px}
+#predictionBuilder .selected-pick{padding:17px 0 18px;gap:10px 12px;grid-template-columns:minmax(0,1fr) 124px}
+#predictionBuilder .selected-pick-time{font-size:11px}
+#predictionBuilder .selected-pick-clubs{gap:7px!important}
+#predictionBuilder .selected-team-row{gap:8px}
+#predictionBuilder .selected-team-name{font-size:13px;font-weight:600;line-height:1.45}
+#predictionBuilder .selected-pick-clubs .pick-badge{flex-basis:23px!important;width:23px!important;min-width:23px!important;height:23px!important;min-height:23px!important}
+#predictionBuilder .selected-pick .choice-button{min-height:38px;font-size:12px;padding:7px 1px}
+#predictionBuilder .save-button{min-height:44px;font-size:13px}
+#predictionBuilder .slip-empty{padding:28px 0;font-size:13px}
+#predictionBuilder .slip-note.sr-only{display:none}
+.mypage-wrap .saved-section{padding:37px 0 75px;border-top:1px solid #dedede}
+.mypage-wrap .saved-section .section-heading{margin:0 0 20px;align-items:center}
+.mypage-wrap .saved-section h2{font-size:18px;font-weight:650;letter-spacing:-.035em}
+.mypage-wrap .saved-toolbar{display:flex;align-items:center;gap:20px}
+.mypage-wrap .saved-toolbar .text-button{font-size:12px}
+.mypage-wrap .saved-toolbar select{min-height:36px;font-size:12px}
+.mypage-wrap .saved-set{border-color:#e3e3e3;border-radius:0;padding:22px}
+@media(max-width:1250px){
+ #predictionBuilder .builder-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+ #predictionBuilder .prediction-slip{order:-1;max-width:none}
+ #predictionBuilder .prediction-slip form{display:block}
+ #predictionBuilder .selected-pick{grid-template-columns:minmax(0,1fr) 160px}
+ #predictionBuilder .picker-filters{grid-template-columns:145px minmax(0,1fr) 155px}
+ #predictionBuilder .picker-filters input{grid-column:auto;grid-row:auto}
+}
+@media(max-width:700px){
+ .mypage-wrap .mypage-heading{padding:29px 0 19px}
+ .mypage-heading h1{font-size:22px}
+ .mypage-wrap .prediction-builder{padding:28px 0 42px}
+ #predictionBuilder .week-toolbar{flex-direction:column;align-items:stretch;gap:14px;margin-bottom:24px}
+ #predictionBuilder .week-navigation{justify-content:space-between;gap:5px}
+ #predictionBuilder .week-navigation h3{font-size:14px;min-width:0}
+ #predictionBuilder .week-navigation .outline-button{padding:7px 9px}
+ #predictionBuilder .week-tools{justify-content:space-between}
+ #predictionBuilder .picker-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ #predictionBuilder .picker-filters input{grid-column:1/-1;grid-row:2}
+ #predictionBuilder .prediction-slip{padding:19px 18px}
+ #predictionBuilder .selected-pick{grid-template-columns:minmax(0,1fr) 112px}
+ #predictionBuilder .selected-team-name{font-size:12px}
+ .mypage-wrap .saved-toolbar{gap:12px}
+ .mypage-wrap .saved-toolbar .text-button{white-space:nowrap}
+}
+@media(max-width:380px){
+ #predictionBuilder .selected-pick{grid-template-columns:1fr;grid-template-areas:"meta" "clubs" "choices"}
+ #predictionBuilder .selected-pick .choice-group{max-width:230px}
+}
