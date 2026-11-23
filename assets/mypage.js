@@ -8,6 +8,7 @@
   const gradeNames = { correct: "적중", incorrect: "미적중", pending: "결과 대기", void: "집계 제외" };
   const searchKey = value => String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").normalize("NFC").replace(/[^a-z0-9가-힣]/g, "");
   const params = new URLSearchParams(location.search);
+  let leavingAfterConfirm = false;
   const state = { accountMode: false, context: null, store: null, sets: [], storageReady: false, loading: false, week: "", league: "all", query: "", filter: "available", historyWeek: "all", picks: new Map(), editingId: null, editingUpdatedAt: null, baseline: "", highlighted: null, currentDay: "", visibleCount: 30 };
   const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = String(text); return node; };
   const shiftDate = (iso, days) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10); };
@@ -141,10 +142,10 @@
   function renderSlip() {
     $("slipTitle").textContent = state.editingId ? "저장한 예측 수정" : "나의 예측";
     $("selectionCount").textContent = state.picks.size + "경기 선택";
-    $("saveSet").textContent = state.editingId ? "변경 내용 저장" : "예측 묶음 저장";
+    $("saveSet").textContent = state.editingId ? "변경 내용 저장" : "예측 폴더 저장";
     $("saveSet").disabled = !state.storageReady || !state.context || !state.picks.size;
     const target = $("selectedPicks"); target.replaceChildren();
-    if (!state.picks.size) { target.append(el("p", "slip-empty", "관심 있는 경기의 승·무·패를 선택하세요. 여러 경기를 하나의 묶음으로 기록할 수 있습니다.")); return; }
+    if (!state.picks.size) { target.append(el("p", "slip-empty", "관심 있는 경기의 승·무·패를 선택하세요. 여러 경기를 하나의 폴더으로 기록할 수 있습니다.")); return; }
     const sorted = Array.from(state.picks.values()).sort((a, b) => { const af = fixtureFor(a) || {}, bf = fixtureFor(b) || {}; return String(af.date + af.time).localeCompare(String(bf.date + bf.time)); });
     sorted.forEach(pick => {
       const fixture = fixtureFor(pick), locked = lockedPick(pick), available = fixture && PredictionStore.canPick(fixture, Date.now());
@@ -165,7 +166,7 @@
   function updateChoice(id, choice, area) {
     const fixture = state.context && state.context.findMatch(id), pick = state.picks.get(id);
     if (!fixture || !PredictionStore.canPick(fixture, Date.now()) || pick && lockedPick(pick)) { $("saveStatus").textContent = "경기가 시작되어 선택을 변경할 수 없습니다."; renderFixtures(); renderSlip(); return; }
-    if (!pick && state.picks.size >= 100) { $("saveStatus").textContent = "한 묶음에는 100경기까지 담을 수 있습니다."; return; }
+    if (!pick && state.picks.size >= 100) { $("saveStatus").textContent = "한 폴더에는 100경기까지 담을 수 있습니다."; return; }
     state.picks.set(id, Object.assign({}, pick || {}, { fixtureId: id, selection: choice }));
     $("saveStatus").textContent = ""; renderFixtures(); renderSlip();
     const buttons = document.querySelectorAll("button[data-fixture-id]");
@@ -227,7 +228,7 @@
       const saved = state.store.saveSet({ id: state.editingId || undefined, expectedUpdatedAt: state.editingUpdatedAt || undefined, weekStart: state.week, title: $("setTitle").value.trim() || defaultTitle(), picks: Array.from(state.picks.values(), p => ({ fixtureId: p.fixtureId, selection: p.selection })) }, state.context);
       state.editingId = saved.id; state.editingUpdatedAt = saved.updatedAt; state.picks = new Map(saved.picks.map(pick => [pick.fixtureId, pick])); $("setTitle").value = saved.title;
       if (!loadSaved()) return; commitBaseline(); render();
-      $("saveStatus").textContent = "예측 묶음이 저장되었습니다.";
+      $("saveStatus").textContent = "예측 폴더이 저장되었습니다.";
       notice(saved.title + " · " + saved.picks.length + "경기의 예측을 저장했습니다.");
        if (state.accountMode) window.dispatchEvent(new CustomEvent("ninetymin:local-change"));
     } catch (error) { $("saveStatus").textContent = error.message || "저장하지 못했습니다. 다시 시도해 주세요."; if (/CORRUPT|UNSUPPORTED|STORAGE_(?:UNAVAILABLE|READ_FAILED|WRITE_FAILED|FULL)/.test(error.code || "")) storageFailure(error); if (error.code === "STORAGE_CONFLICT") { loadSaved(); renderSaved(); } }
@@ -243,13 +244,13 @@
   }
   async function deleteSet(id) {
     const set = state.sets.find(item => item.id === id); if (!set) return;
-    if (!await confirmAction("예측 기록을 삭제할까요?", "‘" + set.title + "’ 묶음과 저장된 선택이 삭제됩니다. 삭제한 기록은 되돌릴 수 없습니다.", "삭제하기")) return;
-    try { state.store.deleteSet(id, state.context); if (!loadSaved()) return; if (state.editingId === id) draftReset(state.week); render(); notice("예측 묶음을 삭제했습니다."); if (state.accountMode) window.dispatchEvent(new CustomEvent("ninetymin:local-change")); }
+    if (!await confirmAction("예측 기록을 삭제할까요?", "‘" + set.title + "’ 폴더과 저장된 선택이 삭제됩니다. 삭제한 기록은 되돌릴 수 없습니다.", "삭제하기")) return;
+    try { state.store.deleteSet(id, state.context); if (!loadSaved()) return; if (state.editingId === id) draftReset(state.week); render(); notice("예측 폴더을 삭제했습니다."); if (state.accountMode) window.dispatchEvent(new CustomEvent("ninetymin:local-change")); }
     catch (error) { notice(error.message || "기록을 삭제하지 못했습니다."); }
   }
   function exportRecords() {
     if (!loadSaved() || !state.sets.length) return;
-    const headers = ["주간 시작", "주간 종료", "묶음 이름", "경기 날짜", "한국시간", "대회", "홈팀", "원정팀", "내 예측", "경기 결과", "확인 상태", "예측 저장 시각 (한국시간)"];
+    const headers = ["주간 시작", "주간 종료", "폴더 이름", "경기 날짜", "한국시간", "대회", "홈팀", "원정팀", "내 예측", "경기 결과", "확인 상태", "예측 저장 시각 (한국시간)"];
     const rows = [headers];
     state.sets.forEach(set => gradeSummary(set).picks.forEach(pick => {
       const fixture = pick.fixture || fixtureFor(pick) || {};
@@ -305,7 +306,18 @@
       else if (button.dataset.action === "reset-filters") { state.league = "all"; state.query = ""; state.filter = "all"; $("leagueFilter").value = "all"; $("fixtureSearch").value = ""; $("fixtureFilter").value = "all"; renderFixtures(); }
     });
     $("savedSets").addEventListener("click", event => { const button = event.target.closest("button[data-set-action]"); if (!button) return; if (button.dataset.setAction === "edit") editSet(button.dataset.setId); else if (button.dataset.setAction === "delete") deleteSet(button.dataset.setId); });
-    window.addEventListener("beforeunload", event => { if (isDirty()) { event.preventDefault(); event.returnValue = ""; } });
+    // Show the site's own dialog for link navigation; browsers own the UI for tab close / reload.
+    document.addEventListener("click", async event => {
+      const anchor=event.target.closest("a[href]");
+      if(!anchor||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||anchor.hasAttribute("download")||anchor.target==="_blank"||!isDirty())return;
+      const href=new URL(anchor.href,location.href);
+      if(!["http:","https:"].includes(href.protocol))return;
+      if(href.origin===location.origin&&href.pathname===location.pathname&&href.search===location.search&&href.hash)return;
+      event.preventDefault();event.stopImmediatePropagation();
+      const ok=await confirmAction("저장하지 않은 예측이 있습니다","선택한 승·무·패가 아직 폴더에 저장되지 않았습니다. 이 페이지를 나가시겠습니까?","저장하지 않고 나가기");
+      if(ok){leavingAfterConfirm=true;location.assign(href.href);}
+    },true);
+    window.addEventListener("beforeunload", event => { if (!leavingAfterConfirm&&isDirty()) { event.preventDefault(); event.returnValue = ""; } });
     window.addEventListener("storage", event => { if (event.key && event.key !== PredictionStore.STORAGE_KEY) return; if (loadSaved()) { renderSaved(); renderFixtures(); renderSlip(); notice("다른 창에서 저장한 기록이 반영되었습니다."); } });
     document.addEventListener("visibilitychange", () => { if (!document.hidden && state.context) { renderFixtures(); renderSlip(); renderSaved(); } });
     setInterval(() => { if (!document.hidden && state.context) { renderFixtures(); renderSlip(); } }, 60000);
