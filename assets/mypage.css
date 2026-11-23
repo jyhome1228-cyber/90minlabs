@@ -10,3 +10,42 @@
 
 /* Account panel */
 .account-panel{border-top:1px solid #222;border-bottom:1px solid #e5e5e5;padding:25px 0;margin:15px 0 25px}.account-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.account-heading h2{font-size:17.333px;letter-spacing:-.3px}.account-heading p,.account-panel p{font-size:13.333px;color:#666;margin:6px 0 0}.account-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}.account-fields label{font-size:12.333px;font-weight:600;display:grid;gap:7px}.account-fields input{border:1px solid #ddd;border-radius:3px;padding:11px 12px;width:100%;font:inherit;font-size:14.333px}.account-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.account-message{min-height:18px}.account-panel [hidden]{display:none!important}#accountDisplay{font-size:16.333px}#accountSyncStatus{font-size:13.333px}@media(max-width:700px){.account-fields{grid-template-columns:1fr}.account-panel{padding:22px 0}.account-heading{align-items:flex-start}}
+
+
+/* Wider spacing between match details and prediction choices. */
+@media(min-width:1101px){
+ .builder-grid{grid-template-columns:minmax(0,1fr) 350px;column-gap:48px}
+ .pick-row{grid-template-columns:80px minmax(0,1fr) 142px 48px;column-gap:22px;padding:21px 0}
+ .pick-teams{grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr);column-gap:18px}
+ .pick-team{gap:11px}
+ .pick-team.away{padding-left:4px}
+ .choice-button{min-height:41px}
+}
+@media(min-width:851px) and (max-width:1100px){
+ .pick-row{grid-template-columns:64px minmax(0,1fr) 116px;column-gap:14px;padding:20px 0}
+ .pick-teams{column-gap:12px;grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr)}
+}
+.selected-pick{padding:23px 0 25px}
+.selected-pick-clubs{display:grid!important;grid-template-columns:30px minmax(0,1fr) auto 30px minmax(0,1fr);gap:11px!important;align-items:center;justify-content:start;margin:16px 0 18px!important}
+.selected-pick-clubs>span:not(.pick-badge):not(.pick-versus){min-width:0;overflow-wrap:break-word;line-height:1.55}
+.selected-pick-clubs .pick-versus{padding:0 4px;white-space:nowrap}
+.selected-pick-bottom{padding-top:2px}
+.selected-pick .choice-group{max-width:210px;min-width:170px}
+.selected-pick .choice-button{min-height:44px;padding:9px 12px}
+.saved-set{border-radius:5px}
+.saved-set-header h4:before{content:"";display:inline-block;width:16px;height:12px;margin-right:9px;vertical-align:-1px;border:1.5px solid currentColor;border-radius:2px 2px 3px 3px;clip-path:polygon(0 0,42% 0,53% 23%,100% 23%,100% 100%,0 100%);opacity:.7}
+.confirm-dialog{border:1px solid #e1e1e1;border-radius:12px;width:min(calc(100% - 40px),460px);padding:32px 34px;box-shadow:0 24px 80px rgba(0,0,0,.14);max-height:calc(100vh - 40px)}
+.confirm-dialog::backdrop{background:rgba(15,15,15,.45);backdrop-filter:blur(3px)}
+.confirm-dialog .dialog-eyebrow{display:block;font-size:11px;letter-spacing:.03em;color:#777;margin-bottom:24px;font-weight:500}
+.confirm-dialog h2{font-size:20px;letter-spacing:-.02em;margin:0 0 12px}
+.confirm-dialog p{font-size:14px;color:#6a6a6a;line-height:1.8;margin:0 0 30px}
+.confirm-dialog .dialog-actions{gap:10px}
+.confirm-dialog .dialog-actions button{border-radius:5px;padding:11px 17px;min-height:43px}
+.confirm-dialog .dialog-actions button:focus-visible{outline:2px solid #202020;outline-offset:3px}
+@media(max-width:650px){
+ .selected-pick-clubs{grid-template-columns:25px minmax(0,1fr) auto 25px minmax(0,1fr);gap:6px!important}
+ .selected-pick .choice-group{min-width:155px}
+ .confirm-dialog{padding:25px 22px}
+ .confirm-dialog .dialog-actions{flex-wrap:wrap}
+ .confirm-dialog .dialog-actions button{flex:1}
+}
