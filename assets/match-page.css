@@ -174,3 +174,53 @@
   .overview-section .outcome-prob-grid{gap:12px}
   .overview-section .compact-report-copy{row-gap:12px}
 }
+
+
+/* Shared content rhythm and progressive fixture loading. */
+.page-wrap .fixture-hero{padding-top:14px}
+.page-wrap .scoreboard{
+  width:100%;
+  max-width:1280px;
+  grid-template-columns:minmax(0,1fr) minmax(150px,210px) minmax(0,1fr);
+  align-items:center;
+  margin:27px auto 28px;
+  gap:clamp(18px,3vw,48px);
+}
+.page-wrap .club-header .club-name{font-size:20px;line-height:1.5}
+.page-wrap .fixture-bottomline{padding:13px 0}
+.page-wrap .analysis-section{padding:43px 0}
+.page-wrap .analysis-section .section-heading{margin-bottom:22px}
+.page-wrap .overview-section .compact-report{width:100%;max-width:none}
+.page-wrap .overview-section .report-conclusion-reason{font-size:13px;line-height:1.7}
+.page-wrap .overview-section .outcome-probabilities{padding:18px 0 17px;margin-bottom:23px}
+.page-wrap .overview-section .compact-report-copy{column-gap:clamp(24px,3vw,56px)}
+.page-wrap .overview-section .compact-report-copy p{font-size:14px;line-height:1.88}
+#matchContent[data-details-pending="true"] .analysis-nav,
+#matchContent[data-details-pending="true"] .analysis-section,
+#matchContent[data-details-pending="true"] .related-section{display:none!important}
+.detail-loading{
+  display:flex;align-items:center;gap:12px;
+  min-height:94px;
+  padding:25px 0;
+  color:#737373;font-size:13px;line-height:1.7;
+  border-top:1px solid #e8e8e8
+}
+.detail-loading[hidden]{display:none!important}
+.detail-loading-indicator{
+  display:block;flex:0 0 17px;width:17px;height:17px;
+  border:2px solid #e0e0e0;border-top-color:#343434;
+  border-radius:50%;animation:matchSpin .8s linear infinite
+}
+@media(max-width:900px){
+ .page-wrap .scoreboard{grid-template-columns:minmax(0,1fr) 145px minmax(0,1fr);gap:19px;margin:27px auto}
+ .page-wrap .analysis-section{padding:37px 0}
+}
+@media(max-width:650px){
+ .page-wrap .scoreboard{grid-template-columns:minmax(0,1fr) minmax(86px,112px) minmax(0,1fr);gap:8px;margin:24px auto 23px}
+ .page-wrap .club-header .club-name{font-size:14px}
+ .page-wrap .analysis-section{padding:30px 0}
+ .page-wrap .overview-section .compact-report-copy{grid-template-columns:minmax(0,1fr)}
+ .page-wrap .overview-section .compact-report-copy p{font-size:13px;line-height:1.85}
+ .detail-loading{font-size:12px;min-height:70px}
+}
+@media(prefers-reduced-motion:reduce){.detail-loading-indicator{animation:none}}
