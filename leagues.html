@@ -145,11 +145,11 @@ main#leagues{scroll-margin-top:82px}
 
 @media(max-width:650px){header{height:82px}.nav{flex-wrap:wrap;justify-content:center;gap:3px;align-content:center}.brand{font-size:21.333px}.links{width:100%;justify-content:center;gap:18px;overflow:visible}.links a{font-size:11.333px}.nav-right{display:none}}
 </style>
-<link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
-<script src="assets/site-shell.js?v=20261123-today" defer></script>
+<link rel="stylesheet" href="assets/site-shell.css?v=20261123-konav">
+<script src="assets/site-shell.js?v=20261123-konav" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
-<script src="assets/site-language.js?v=20261123-korean-clean" defer></script>
+<script src="assets/site-language.js?v=20261123-konav" defer></script>
 </head>
 <body>
 <header class="site-header" data-site-header data-active="leagues" data-menu-open="false">
@@ -157,12 +157,12 @@ main#leagues{scroll-margin-top:82px}
     <a class="shell-brand" href="index.html">90MIN LABS.</a>
     <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
     <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
-      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
-      <a class="shell-nav-link" data-nav-key="matches" href="index.html#matches">MATCHES</a>
-      <a class="shell-nav-link is-active" data-nav-key="leagues" href="leagues.html" aria-current="page">LEAGUES</a>
-      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">COLUMNS</a>
-      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">MY PAGE</a>
-      <a class="shell-nav-link shell-nav-write" data-nav-key="write" href="index.html#write">칼럼 작성</a>
+      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">경기 전망</a>
+      <a class="shell-nav-link" data-nav-key="matches" href="index.html#matches">경기 일정</a>
+      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">리그</a>
+      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">칼럼</a>
+      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">마이페이지</a>
+      <div class="shell-language" role="group" aria-label="언어 선택"><button type="button" data-lang-button="ko" aria-pressed="true">국문</button><button type="button" data-lang-button="en" aria-pressed="false">영문</button></div>
     </nav>
   </div>
 </header>
@@ -192,7 +192,34 @@ main#leagues{scroll-margin-top:82px}
 </section>
 <div class="note"><span aria-hidden="true">◈</span><div><b>데이터 안내</b><div>구단명을 선택하면 구단별 소개, 홈구장, 선수단, 최근 경기 페이지로 이동합니다. 리그마다 업데이트 시점이 다를 수 있습니다. 순위표와 득점 기록에 각각 출처를 표시하며 일부 리그는 확인된 구단까지만 표시합니다.</div></div></div>
 </main>
-<footer><div class="container foot"><span>90MIN LABS. © 2026</span><span>비상업적 축구 데이터 연구 사이트</span></div></footer>
+<footer class="global-footer">
+  <div class="global-footer-inner">
+    <div class="global-footer-main">
+      <div class="global-footer-about">
+        <a class="global-footer-logo" href="index.html">90MIN LABS.</a>
+        <p>축구의 기록을 읽고,<br>다음 경기를 예측합니다.</p>
+      </div>
+      <div class="global-footer-group">
+        <h2>사이트 메뉴</h2>
+        <a href="index.html#matches">경기 일정</a>
+        <a href="index.html#predictions">경기 전망</a>
+        <a href="leagues.html">리그</a>
+        <a href="index.html#columns">칼럼</a>
+        <a href="mypage.html">마이페이지</a>
+      </div>
+      <div class="global-footer-group">
+        <h2>이용 안내</h2>
+        <a href="mypage.html">주간 예측 기록</a>
+        <a href="index.html#write">칼럼 작성</a>
+        <p>경기 일정과 기록은 제공처의 갱신 시점에 따라 반영이 지연될 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="global-footer-bottom">
+      <span>© 2026 90MIN LABS.</span>
+      <span>독립 축구 데이터 사이트 · 분석과 예측은 참고용이며 결과를 보장하지 않습니다.</span>
+    </div>
+  </div>
+</footer>
 <script>
 const labels={epl:"프리미어리그",laliga:"라리가",seriea:"세리에 A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그"};
 const state={league:"epl",view:"standings",data:null,registry:null,uefaData:null,uefaLoadFailed:false};
