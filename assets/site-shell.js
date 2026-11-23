@@ -2,12 +2,11 @@
 (function () {
   "use strict";
   const items = Object.freeze([
-    { key: "predictions", label: "PREDICTIONS", href: "index.html#predictions" },
-    { key: "matches", label: "MATCHES", href: "index.html#matches" },
-    { key: "leagues", label: "LEAGUES", href: "leagues.html" },
-    { key: "columns", label: "COLUMNS", href: "index.html#columns" },
-    { key: "mypage", label: "MY PAGE", href: "mypage.html" },
-    { key: "write", label: "칼럼 작성", href: "index.html#write" }
+    { key: "predictions", label: "경기 전망", href: "index.html#predictions" },
+    { key: "matches", label: "경기 일정", href: "index.html#matches" },
+    { key: "leagues", label: "리그", href: "leagues.html" },
+    { key: "columns", label: "칼럼", href: "index.html#columns" },
+    { key: "mypage", label: "마이페이지", href: "mypage.html" }
   ]);
   const header = document.querySelector("[data-site-header]");
   if (!header) return;
@@ -34,7 +33,7 @@
     const link = links[index];
     link.href = item.href;
     link.textContent = item.label;
-    link.className = "shell-nav-link" + (item.key === "write" ? " shell-nav-write" : "");
+    link.className = "shell-nav-link";
   });
   if (brand) brand.href = "index.html";
 
