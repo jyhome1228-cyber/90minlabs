@@ -478,7 +478,7 @@ function renderFormStats(games){
  const t={win:0,draw:0,loss:0,scored:0,conceded:0};
  for(const g of mine){const own=g.home===lastResultsAlias?g.homeScore:g.awayScore,opp=g.home===lastResultsAlias?g.awayScore:g.homeScore;t.scored+=own;t.conceded+=opp;if(own>opp)t.win++;else if(own===opp)t.draw++;else t.loss++;}
  const stat=[["승",t.win],["무",t.draw],["패",t.loss],["득점",t.scored],["실점",t.conceded]];
- for(const [label,value] of stat){const node=document.createElement("div");node.className="form-stat";const n=document.createElement("strong");n.textContent=value;const l=document.createElement("span");l.textContent=label;node.append(n,l);wrap.append(node)}wrap.hidden=false;
+ for(const [label,value] of stat){const node=document.createElement("div");node.className="form-stat"+(label==="승"?" is-win":label==="무"?" is-draw":label==="패"?" is-loss":"");const n=document.createElement("strong");n.textContent=value;const l=document.createElement("span");l.textContent=label;node.append(n,l);wrap.append(node)}wrap.hidden=false;
 }
 function showMatches(events,tid){
  const unique=new Map();
@@ -493,6 +493,12 @@ function showMatches(events,tid){
  const desc=document.createElement("div");desc.className="teams";desc.textContent=item.home+" – "+item.away;
  const league=document.createElement("span");league.className="competition";league.textContent=item.comp;desc.append(league);
  const score=document.createElement("span");score.className="score";score.textContent=item.homeScore+" : "+item.awayScore;
+ const own=item.home===lastResultsAlias?item.homeScore:item.awayScore;
+ const conceded=item.home===lastResultsAlias?item.awayScore:item.homeScore;
+ const resultText=own>conceded?"승":own<conceded?"패":"무";
+ const resultClass=resultText==="승"?"is-win":resultText==="패"?"is-loss":"is-draw";
+ const outcome=document.createElement("small");outcome.className="result-outcome "+resultClass;outcome.textContent=resultText;
+ score.append(outcome);
  row.append(date,desc,score);box.append(row);
  }
  show("matchNotice",["ucl","uel","uecl"].includes(league)?"2026/27 "+names[league]+" 리그 페이즈의 확인된 최근 "+sorted.length+"경기를 표시합니다.":sorted.length===10?"최근 국내 리그 10개 경기의 최종 결과를 표시합니다.":"확인된 최근 국내 리그 "+sorted.length+"경기를 표시합니다. 다른 대회 결과는 포함되지 않습니다.");
