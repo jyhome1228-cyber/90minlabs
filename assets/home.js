@@ -30,7 +30,7 @@ function render(){
  $("homeFixturesTitle").textContent=strings.today;
  $("homeAllMatches").textContent=strings.more;
  $("homeAllMatches").href="index.html?date="+date+"&view=day&league=all&status=all#matches";
- $("homeFixtureLink").href=$("homeAllMatches").href;
+
  if(error){list.replaceChildren(el("div","daily-empty",locale()==="en"?"Match data could not be loaded. Open fixtures to retry.":"경기 목록을 불러오지 못했습니다. 전체 일정에서 다시 확인하세요."));return;}
  if(!calendar){list.replaceChildren(el("div","daily-empty",locale()==="en"?"Loading fixtures...":"경기 일정 불러오는 중…"));return;}
  const games=calendar.filter(m=>m.date===date).slice().sort((a,b)=>(a.time||"99:99").localeCompare(b.time||"99:99")||a.league.localeCompare(b.league));
