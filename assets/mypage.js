@@ -145,7 +145,7 @@
     $("saveSet").textContent = state.editingId ? "변경 내용 저장" : "예측 폴더 저장";
     $("saveSet").disabled = !state.storageReady || !state.context || !state.picks.size;
     const target = $("selectedPicks"); target.replaceChildren();
-    if (!state.picks.size) { target.append(el("p", "slip-empty", "관심 있는 경기의 승·무·패를 선택하세요. 여러 경기를 하나의 폴더으로 기록할 수 있습니다.")); return; }
+    if (!state.picks.size) { target.append(el("p", "slip-empty", "관심 있는 경기의 승·무·패를 선택하세요. 여러 경기를 하나의 폴더에 기록할 수 있습니다.")); return; }
     const sorted = Array.from(state.picks.values()).sort((a, b) => { const af = fixtureFor(a) || {}, bf = fixtureFor(b) || {}; return String(af.date + af.time).localeCompare(String(bf.date + bf.time)); });
     sorted.forEach(pick => {
       const fixture = fixtureFor(pick), locked = lockedPick(pick), available = fixture && PredictionStore.canPick(fixture, Date.now());
@@ -154,8 +154,13 @@
       if (!locked) { const remove = el("button", "remove-pick", "제외"); remove.type = "button"; remove.dataset.remove = pick.fixtureId; remove.setAttribute("aria-label", (fixture ? teamName(fixture, "home") + " 대 " + teamName(fixture, "away") : "선택한 경기") + " 제외"); top.append(remove); }
       else top.append(el("span", "locked-label", "선택 마감"));
       const pickClubs=el("div","selected-pick-clubs");
-      if(fixture){pickClubs.append(badge(fixture,"home"),el("span","",teamName(fixture,"home")),el("span","pick-versus","vs"),badge(fixture,"away"),el("span","",teamName(fixture,"away")));}
-      else pickClubs.append(el("span","","일정 확인이 필요한 경기"));
+      if(fixture){
+        for(const side of ["home","away"]){
+          const teamRow=el("div","selected-team-row");
+          teamRow.append(badge(fixture,side),el("span","selected-team-name",teamName(fixture,side)));
+          pickClubs.append(teamRow);
+        }
+      } else pickClubs.append(el("span","selected-team-missing","일정 확인이 필요한 경기"));
       card.append(top,pickClubs);
       const bottom = el("div", "selected-pick-bottom"); bottom.append(choiceGroup(fixture, pick.fixtureId, pick.selection, locked || !available, "slip"));
       if (locked) { const grade = PredictionStore.gradePick(pick, state.context, Date.now()); bottom.append(el("span", "selected-pick-status", gradeNames[grade.status])); }
