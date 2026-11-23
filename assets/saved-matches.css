@@ -60,3 +60,78 @@
  .mypage-heading .mypage-quick-links a{font-size:11px}
  .saved-matches-heading-actions{gap:10px;flex-wrap:wrap;justify-content:flex-end}
 }
+
+
+/* Top-right match actions; avoids two independent auto margins centering Save. */
+#matchMain .page-tools .match-header-actions{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:8px 15px;
+  margin-left:auto;
+  min-width:0;
+}
+#matchMain .page-tools .match-header-actions .match-pick-link,
+#matchMain .page-tools .match-header-actions .copy-link{
+  margin-left:0;
+  flex:0 0 auto;
+  order:initial;
+}
+#matchMain .page-tools .match-header-actions #saveFixture{
+  min-width:88px;
+  min-height:37px;
+  padding:8px 13px;
+  font-size:12px;
+  font-weight:650;
+}
+#matchMain .page-tools .match-header-actions #recordPrediction{
+  min-height:37px;
+  padding:8px 11px;
+  font-size:12px;
+}
+#matchMain .page-tools .match-header-actions #viewSavedFixtures{
+  min-height:37px;
+  font-size:12px;
+}
+#matchMain .page-tools .match-header-actions #copyLink{
+  min-height:37px;
+  padding:8px 0;
+  font-size:12px;
+}
+@media(max-width:650px){
+  #matchMain .page-tools{
+    flex-wrap:wrap;
+    align-items:center;
+    column-gap:13px;
+    row-gap:8px;
+  }
+  #matchMain .page-tools .match-header-actions{
+    width:100%;
+    margin:0;
+    justify-content:flex-end;
+    gap:7px 12px;
+  }
+  #matchMain .page-tools .match-header-actions #saveFixture,
+  #matchMain .page-tools .match-header-actions #recordPrediction,
+  #matchMain .page-tools .match-header-actions #viewSavedFixtures,
+  #matchMain .page-tools .match-header-actions #copyLink{
+    order:initial;
+    flex:0 0 auto;
+    min-width:0;
+    margin:0;
+    font-size:11px;
+  }
+  #matchMain .page-tools .match-header-actions #saveFixture{
+    padding:7px 11px;
+    min-height:34px;
+  }
+  #matchMain .page-tools .match-header-actions #recordPrediction{
+    min-height:34px;
+    padding:7px 9px;
+  }
+  #matchMain .page-tools .match-header-actions #viewSavedFixtures,
+  #matchMain .page-tools .match-header-actions #copyLink{
+    min-height:34px;
+  }
+}
