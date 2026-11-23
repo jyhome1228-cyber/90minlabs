@@ -203,8 +203,22 @@ async function init(){
   renderPredictions();
  }));
  window.addEventListener("popstate",()=>{readFilters();renderTabs();renderList()});
- window.addEventListener("hashchange",()=>{if(location.hash==="#matches")syncFilters();if(location.hash==="#predictions")renderPredictions()});
- renderTabs();await loadCalendar();
+ window.addEventListener("hashchange",()=>{
+  if(location.hash==="#matches")syncFilters();
+  if(location.hash==="#matches"||location.hash==="#predictions"){
+   if(!state.matches.length)ensureCalendar();
+   else if(location.hash==="#predictions")renderPredictions();
+  }
+ });
+ renderTabs();
+ // Defer the 2700-match calendar until visitors enter Matches or Predictions.
+ if(location.hash==="#matches"||location.hash==="#predictions")await ensureCalendar();
+}
+let pendingCalendar=null;
+function ensureCalendar(){
+ if(state.matches.length)return Promise.resolve();
+ if(!pendingCalendar)pendingCalendar=loadCalendar().finally(()=>{pendingCalendar=null});
+ return pendingCalendar;
 }
 async function loadCalendar(){
  state.loading=true;state.error=false;renderList();renderPredictions();
