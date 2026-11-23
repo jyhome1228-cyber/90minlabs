@@ -143,8 +143,33 @@
   }
 
   function recordSummary(stats) { return stats.played ? stats.w + "승 " + stats.d + "무 " + stats.l + "패" : "기록 없음"; }
+  function englishReport(a,report){
+    const h=a.home,w=a.away,hs=h.stats,ws=w.stats,hv=h.venue.stats,av=w.venue.stats;
+    const line=(s)=>Number.isFinite(s)?s.toFixed(2):"—";
+    const n=(team)=>team.name;
+    const summaries=team=>team.stats.played?team.stats.w+" wins, "+team.stats.d+" draws and "+team.stats.l+" losses":"no confirmed earlier results";
+    const sentences=[
+      "Looking at the last "+a.limit+" matches in the selected scope, "+n(h)+" recorded "+summaries(h)+", while "+n(w)+" recorded "+summaries(w)+".",
+      "Their points per match were "+line(hs.ppg)+" and "+line(ws.ppg)+" respectively, a comparison of results rather than a guarantee of the next outcome.",
+      n(h)+" averaged "+line(hs.gfAvg)+" goals scored and "+line(hs.gaAvg)+" conceded; "+n(w)+" averaged "+line(ws.gfAvg)+" scored and "+line(ws.gaAvg)+" conceded.",
+      "The home team's most recent home sample contains "+hv.played+" matches ("+hv.w+"W "+hv.d+"D "+hv.l+"L), compared with "+av.played+" away matches ("+av.w+"W "+av.d+"D "+av.l+"L) for the visitors.",
+      "Clean sheets occurred in "+hs.cleanSheetCount+" of "+hs.played+" matches for the hosts and "+ws.cleanSheetCount+" of "+ws.played+" for the visitors.",
+      "If their recent scoring and conceding patterns continue, chances for both teams to score need to be considered alongside the possibility of a close, low-margin result."
+    ];
+    if(!hs.played||!ws.played)sentences.splice(1,5,"Some of the recent-match data is unavailable; the comparison does not treat missing results as zero goals or zero points.");
+    const labels={home:"Slight home advantage",away:"Slight away advantage",draw:"Draw leaning",even:"Closely matched",unknown:"Insufficient evidence"};
+    const direction=report?.forecast?.direction;
+    sentences.push(direction==="home"?"Based on the available record, the home team has a modest edge, but this remains a conditional assessment.":direction==="away"?"Based on the available record, the away team has a modest edge, but this remains a conditional assessment.":direction==="draw"?"A draw deserves consideration given the similar recorded patterns.":"Taken together, the available statistics suggest a competitive matchup rather than a decisive favorite.");
+    if(isFinished(a.fixture))sentences.push("This is a retrospective review using records from before kickoff; the final score was excluded from the comparison.");
+    return {
+      title:isFinished(a.fixture)?"Pre-match form review":"Match prediction report",
+      forecast:{label:labels[direction]||"Balanced matchup"},
+      sampleLabel:"Last "+a.limit+" matches · "+(a.scope==="competition"?"Competition only":"All competitions")+" · Home "+hs.played+" / Away "+ws.played,
+      paragraphs:[sentences.slice(0,4).join(" "),sentences.slice(4).join(" ")]
+    };
+  }
   function renderReport(a) {
-    const report = state.editorial, body = $("reportBody");
+    const report = window.NinetyMinI18n?.language==="en"?englishReport(a,state.editorial):state.editorial, body = $("reportBody");
     body.replaceChildren();
     $("reportTitle").textContent = report ? report.title : "경기 리포트";
     $("overviewContext").textContent = report ? report.sampleLabel : a.coverage.scopeLabel + " · 홈 " + a.home.stats.played + "경기 · 원정 " + a.away.stats.played + "경기";
@@ -302,6 +327,7 @@
   document.querySelectorAll("[data-limit]").forEach(button => button.addEventListener("click", () => { state.limit = Number(button.dataset.limit); if (state.match) render(false); }));
   $("analysisScope").addEventListener("change", event => { state.scope = event.target.value === "competition" ? "competition" : "all"; if (state.match) render(false); });
   $("retryButton").addEventListener("click", load);
+  window.addEventListener("ninetymin:languagechange",()=>{if(state.match)render(false);});
   document.querySelectorAll(".analysis-nav a").forEach(anchor => anchor.addEventListener("click", () => { document.querySelectorAll(".analysis-nav a").forEach(item => item.classList.toggle("active", item === anchor)); }));
   $("copyLink").addEventListener("click", async () => {
     const url = new URL(location.href); ["backDate", "backLeague", "backView", "backStatus"].forEach(key => url.searchParams.delete(key));
