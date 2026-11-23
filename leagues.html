@@ -232,6 +232,12 @@ function uefaClub(name){
 function clubLogo(container,club,label){
  const fallback=document.createElement("span");
  fallback.className="club-initial";fallback.textContent=(label||"FC").slice(0,2).toUpperCase();
+ const detail=state.registry?.clubs?.[(club?.league||"")+":"+(club?.team||club?.name||"")];
+ const badgeUrl=club?.badgeUrl||detail?.badgeUrl;
+ if(badgeUrl&&/^https:\/\//.test(badgeUrl)){
+  const img=document.createElement("img");img.className="teamlogo";img.alt="";img.loading="lazy";img.src=badgeUrl;
+  img.onerror=()=>img.replaceWith(fallback);container.append(img);return;
+ }
  if(club?.crestId){
    const img=document.createElement("img");img.className="teamlogo";img.alt="";img.loading="lazy";
    img.src="https://crests.football-data.org/"+club.crestId+".png";img.onerror=()=>img.replaceWith(fallback);
