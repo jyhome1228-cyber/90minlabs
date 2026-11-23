@@ -5,7 +5,7 @@ if(!root)return;
 const leagueNames={epl:"프리미어리그",laliga:"라리가",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그",championship:"잉글랜드 챔피언십"};
 const leagueShort={epl:"EPL",laliga:"LA LIGA",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",uel:"UEL",uecl:"UECL",championship:"CHAMPIONSHIP"};
 const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["laliga","라리가"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"],["uel","유로파리그"],["uecl","컨퍼런스리그"]];
-const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,forms:null};
+const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,loading:true,error:false,predictionLeague:"all"};
 const $=id=>document.getElementById(id);
 function element(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined&&value!==null)el.textContent=String(value);return el;}
 function dateObj(iso){return new Date(iso+"T12:00:00Z");}
@@ -27,7 +27,7 @@ function updateCurrentTime(){
  const dateNode=$("matchTodayDate"),clockNode=$("matchLiveClock");
  if(dateNode)dateNode.textContent=new Intl.DateTimeFormat("ko-KR",{timeZone:"UTC",year:"numeric",month:"long",day:"numeric",weekday:"long"}).format(dateObj(today));
  if(clockNode)clockNode.textContent="현재 "+kstNowClock()+" · 한국시간";
- if(lastClockDay&&lastClockDay!==today&&state.selectedDate===lastClockDay){state.selectedDate=today;renderList()}
+ if(lastClockDay&&lastClockDay!==today){if(state.selectedDate===lastClockDay){state.selectedDate=today;renderList()}renderPredictions()}
  lastClockDay=today;
 }
 function dateLabel(iso){return new Intl.DateTimeFormat("ko-KR",{timeZone:"UTC",month:"long",day:"numeric",weekday:"long"}).format(dateObj(iso));}
@@ -91,51 +91,76 @@ function teamElement(m,isHome){
  holder.append(el);
  return holder;
 }
-function getForm(team,league,date,fixture){
- if(!team||!league)return null;
- const data=state.forms?.teams?.[league+":"+team];
- if(!data?.matches)return null;
- const recent=data.matches.filter(g=>g.date<date&&!(fixture&&g.home===fixture.home&&g.away===fixture.away)).slice(0,5);
- if(!recent.length)return null;
- return recent.map(g=>{
-  const h=g.home===data.matchName;
-  const f=h?g.homeScore:g.awayScore,o=h?g.awayScore:g.homeScore;
-  return f>o?"승":f===o?"무":"패";
- });
+function readFilters(){
+ const query=new URLSearchParams(location.search),date=query.get("date");
+ const validDate=/^\d{4}-\d{2}-\d{2}$/.test(date||"")&&!Number.isNaN(dateObj(date).getTime())&&dateISO(dateObj(date))===date;
+ state.selectedDate=validDate?date:kstToday();
+ state.league=leagueTabs.some(([key])=>key===query.get("league"))?query.get("league"):"all";
+ state.status=["all","scheduled","finished","unverified"].includes(query.get("status"))?query.get("status"):"all";
+ state.viewMode=query.get("view")==="week"?"week":"day";
 }
-function detailBox(m,side){
- const box=element("div","match-detail-box");
- const team=m[side+"Team"],league=m[side+"TeamLeague"],name=team||m[side];
- box.append(element("h4","",name));
- const form=getForm(team,league,m.date,m);
- if(form){
-  box.append(element("p","","경기 시작 전 기준 최근 리그 "+form.length+"경기"));
-  const wrap=element("div","match-form");for(const f of form)wrap.append(element("span","",f));box.append(wrap);
- } else box.append(element("p","","이 구단의 최근 경기 기록은 확인되지 않았습니다."));
- const links=element("div","match-detail-links");
- if(team&&league){const a=element("a","","구단 정보 보기");a.href=routeFor(team,league);links.append(a);}
- if(m.scoreSourceUrl){const a=element("a","","최종 스코어 검증");a.href=m.scoreSourceUrl;a.target="_blank";a.rel="noopener noreferrer";links.append(a);}
- const src=state.source?.sourceByLeague?.[m.league];
- if(src){const a=element("a","","일정 및 결과 출처");a.href=src+(m.status==="finished"?"results_2627.csv":"fixtures_2627.csv");a.target="_blank";a.rel="noopener noreferrer";links.append(a);}
- box.append(links);return box;
+function syncFilters(){
+ if(location.hash&&!["#matches","#home"].includes(location.hash))return;
+ const url=new URL(location.href);
+ url.searchParams.set("date",state.selectedDate);url.searchParams.set("league",state.league);
+ url.searchParams.set("view",state.viewMode);url.searchParams.set("status",state.status);
+ history.replaceState(null,"",url.pathname+url.search+url.hash);
 }
-function row(m){
+function analysisHref(m,fromPreview){
+ const query=new URLSearchParams(window.MatchAnalysis.matchUrl(m).split("?")[1]);
+ query.set("backDate",fromPreview?m.date:state.selectedDate);
+ query.set("backLeague",fromPreview?state.predictionLeague:state.league);
+ query.set("backView",fromPreview?"day":state.viewMode);
+ query.set("backStatus",fromPreview?"all":state.status);
+ return "match.html?"+query.toString();
+}
+function row(m,fromPreview){
  const article=element("article","match-item"),line=element("div","match-line");
  const league=element("span","match-league",badgeName(m.league));
- const center=element("div","match-score-area");
+ const center=element("a","match-score-area"),href=analysisHref(m,fromPreview);
  const status=eventStatus(m);
+ center.href=href;
+ center.setAttribute("aria-label",(m.homeTeam||m.home)+" 대 "+(m.awayTeam||m.away)+" 경기 분석");
  center.append(element("strong","",status==="finished"?m.score.join(" : "):(m.time||"시간 미정")));
  center.append(element("span","",status==="finished"?"종료":status==="unverified"?"결과 확인 필요":"예정"));
- const more=element("button","match-more","상세 보기");more.type="button";more.setAttribute("aria-expanded","false");
- const details=element("div","match-details");details.hidden=true;
- more.addEventListener("click",()=>{
-  const open=more.getAttribute("aria-expanded")!=="true";
-  more.setAttribute("aria-expanded",String(open));more.textContent=open?"접기":"상세 보기";
-  details.hidden=!open;
-  if(open&&!details.hasChildNodes())details.append(detailBox(m,"home"),detailBox(m,"away"));
- });
+ const more=element("a","match-more","경기 분석");more.href=href;
+ more.setAttribute("aria-label",(m.homeTeam||m.home)+" 대 "+(m.awayTeam||m.away)+" 경기 분석 보기");
  line.append(league,teamElement(m,true),center,teamElement(m,false),more);
- article.append(line,details);return article;
+ article.append(line);return article;
+}
+function renderGames(list,games,fromPreview){
+ const groups=new Map();
+ for(const match of games){const group=groups.get(match.date)||[];group.push(match);groups.set(match.date,group)}
+ for(const [date,dayGames] of [...groups].sort(([a],[b])=>a.localeCompare(b))){
+  const day=element("section","match-day"),head=element("div","match-date-heading");
+  head.append(element("h3","",dateLabel(date)),element("span","",dayGames.length+"경기"));day.append(head);
+  dayGames.sort((a,b)=>(a.time||"99:99").localeCompare(b.time||"99:99")||a.league.localeCompare(b.league));
+  for(const match of dayGames)day.append(row(match,fromPreview));
+  list.append(day);
+ }
+}
+function renderLoadState(list){
+ if(state.loading){list.replaceChildren(element("div","match-empty","경기 일정을 불러오는 중입니다."));return true}
+ if(state.error){
+  const error=element("div","match-empty");
+  error.append(element("strong","","경기 자료를 불러오지 못했습니다."),element("p","","네트워크 연결을 확인한 후 다시 불러와 주세요."));
+  const retry=element("button","match-nav-btn","다시 불러오기");retry.type="button";retry.addEventListener("click",loadCalendar);error.append(retry);
+  list.replaceChildren(error);return true;
+ }
+ return false;
+}
+function renderPredictions(){
+ const list=$("predictionList");if(!list||location.hash!=="#predictions")return;
+ if(renderLoadState(list))return;
+ const today=kstToday(),end=shift(today,13);
+ const games=state.matches.filter(m=>m.date>=today&&m.date<=end&&eventStatus(m)==="scheduled"&&(state.predictionLeague==="all"||m.league===state.predictionLeague));
+ $("predictionCounter").textContent=shortDate(today)+"–"+shortDate(end)+" · "+games.length+"경기";
+ list.replaceChildren();
+ if(!games.length){
+  const empty=element("div","match-empty");empty.append(element("strong","","이 기간에 등록된 예정 경기가 없습니다."),element("p","","다른 대회를 선택하거나 경기 일정에서 날짜를 변경해 보세요."));
+  const link=element("a","match-more","경기 일정 보기");link.href="#matches";empty.append(link);list.append(empty);return;
+ }
+ renderGames(list,games,true);
 }
 function renderTabs(){
  const el=$("matchLeagueFilter");el.replaceChildren();
@@ -154,27 +179,21 @@ function renderList(){
  $("matchWeekLabel").textContent=state.viewMode==="week"?shortDate(start)+" ~ "+shortDate(end):dateLabel(start);
  $("matchDateInput").value=state.selectedDate;
  $("matchViewMode").value=state.viewMode;
+ $("matchStatusFilter").value=state.status;
+ syncFilters();
  $("matchPrevWeek").textContent=state.viewMode==="week"?"이전 주":"이전 날";
  $("matchNextWeek").textContent=state.viewMode==="week"?"다음 주":"다음 날";
+ const list=$("matchList");if(renderLoadState(list))return;
  const filtered=state.matches.filter(m=>m.date>=start&&m.date<=end&&(state.league==="all"||m.league===state.league)&&(state.status==="all"||eventStatus(m)===state.status));
  $("matchCounter").textContent=filtered.length+"경기";
- const list=$("matchList");list.replaceChildren();
+ list.replaceChildren();
  if(!filtered.length){
   const empty=element("div","match-empty");empty.append(element("strong","","해당 기간에 등록된 경기가 없습니다."),element("p","","다른 리그를 선택하거나 이전 주와 다음 주를 확인하세요."));list.append(empty);return;
  }
- const groups=new Map();
- for(const m of filtered){const g=groups.get(m.date)||[];g.push(m);groups.set(m.date,g);}
- for(const [date,games] of groups){
-  const day=element("section","match-day");
-  const head=element("div","match-date-heading");head.append(element("h3","",dateLabel(date)),element("span","",games.length+"경기"));day.append(head);
-  games.sort((a,b)=>(a.time||"99:99").localeCompare(b.time||"99:99")||a.league.localeCompare(b.league));
-  for(const item of games)day.append(row(item));
-  list.append(day);
- }
+ renderGames(list,filtered,false);
 }
 async function init(){
- const today=kstToday();
- state.selectedDate=today;
+ readFilters();
  updateCurrentTime();
  setInterval(updateCurrentTime,30000);
  document.addEventListener("visibilitychange",()=>{if(!document.hidden)updateCurrentTime()});
@@ -187,25 +206,36 @@ async function init(){
  });
  $("matchViewMode").addEventListener("change",e=>{state.viewMode=e.target.value==="week"?"week":"day";renderList()});
  $("matchStatusFilter").addEventListener("change",e=>{state.status=e.target.value;renderList()});
- renderTabs();
- const el=$("matchList");el.replaceChildren(element("div","match-empty","경기 일정을 불러오는 중입니다."));
+ document.querySelectorAll("#predictionFilters button").forEach(button=>button.addEventListener("click",()=>{
+  state.predictionLeague=button.dataset.comp;
+  document.querySelectorAll("#predictionFilters button").forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active))});
+  renderPredictions();
+ }));
+ window.addEventListener("popstate",()=>{readFilters();renderTabs();renderList()});
+ window.addEventListener("hashchange",()=>{if(location.hash==="#matches")syncFilters();if(location.hash==="#predictions")renderPredictions()});
+ renderTabs();await loadCalendar();
+}
+async function loadCalendar(){
+ state.loading=true;state.error=false;renderList();renderPredictions();
  try{
-  const response=await fetch("./data/match-calendar.json",{cache:"no-store"});
+  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
+  let response;
+  try{response=await fetch("./data/match-calendar.json",{cache:"no-store",signal:controller.signal})}finally{clearTimeout(timeout)}
   if(!response.ok)throw new Error("calendar HTTP "+response.status);
   const data=await response.json();
   if(!Array.isArray(data.matches))throw new Error("no fixtures");
-  state.matches=data.matches;state.source=data;
+  state.matches=data.matches;state.source=data;state.loading=false;
   const verifiedAt=data.verifiedAtKst?new Date(data.verifiedAtKst):null;
   const checkedLabel=verifiedAt&&!Number.isNaN(verifiedAt.getTime())
    ?new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(verifiedAt)
    :data.capturedAtKst;
   $("matchUpdated").textContent="경기 자료 확인: "+checkedLabel+" (한국시간)";
-  renderList();
-  fetch("./data/team-results.json",{cache:"force-cache"}).then(r=>r.ok?r.json():null).then(d=>{state.forms=d}).catch(()=>{});
+  renderList();renderPredictions();
  }catch(e){
-  el.replaceChildren();
-  const err=element("div","match-empty");err.append(element("strong","","경기 자료를 불러오지 못했습니다."),element("p","","잠시 후 새로고침해 주세요. 확인되지 않은 일정을 임의로 표시하지 않습니다."));el.append(err);
-  $("matchCounter").textContent="조회 실패";
+  state.loading=false;state.error=true;
+  $("matchCounter").textContent="조회 실패";$("predictionCounter").textContent="조회 실패";
+  $("matchUpdated").textContent="자료를 다시 불러와 주세요.";
+  renderList();renderPredictions();
  }
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});

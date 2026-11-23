@@ -3,7 +3,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
 <meta name="description" content="90MIN LABS — 축구 경기 전망과 데이터 연구, 누구나 참여할 수 있는 축구 칼럼.">
-<title>90MIN LABS | Football Prediction Research</title>
+<title>경기 일정과 분석 | 90MIN LABS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -73,34 +73,33 @@ section.block{padding:89px 0}
 </style>
 <link rel="stylesheet" href="./assets/matches.css">
 </head><body>
-<header><div class="wrap head"><a href="#home" class="logo">90MIN LABS.</a><button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
-<nav class="nav" id="nav" aria-label="사이트 메뉴"><a href="#home" data-page="home">HOME</a><a href="#predictions" data-page="predictions">PREDICTIONS</a><a href="#matches" data-page="matches">MATCHES</a><a href="leagues.html">LEAGUES</a><a href="#columns" data-page="columns">COLUMNS</a><a class="write" href="#write" data-page="write">칼럼 작성</a></nav></div></header>
+<header><div class="wrap head"><a href="#matches" class="logo">90MIN LABS.</a><button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+<nav class="nav" id="nav" aria-label="사이트 메뉴"><a href="#predictions" data-page="predictions">PREDICTIONS</a><a href="#matches" data-page="matches">MATCHES</a><a href="leagues.html">LEAGUES</a><a href="#columns" data-page="columns">COLUMNS</a><a class="write" href="#write" data-page="write">칼럼 작성</a></nav></div></header>
 <main class="wrap">
-<div id="home" class="view">
-<div class="intro"><div><div class="eyebrow">축구 경기 사전 분석</div><h1>이번 주 축구 경기 전망</h1><p>경기 시작 전 최근 성적과 홈 원정 기록을 비교하고 예상 승무패 확률과 분석 내용을 제공합니다.</p><div class="actions"><a class="btn primary" href="#predictions">경기 전망 보기</a><a class="btn" href="leagues.html">리그 데이터 보기</a></div></div>
-<div class="lab-visual" aria-label="연구소 콘셉트 데이터 그래픽"><div class="top">경기 전력 분석</div><div class="bars" aria-hidden="true"><span style="height:34%"></span><span style="height:62%"></span><span style="height:48%"></span><span style="height:86%"></span><span style="height:57%"></span><span style="height:73%"></span><span style="height:40%"></span><span style="height:92%"></span></div><div class="bottom"><span>경기력 비교 그래픽</span><span>90MIN LABS</span></div></div></div>
-<section class="block"><div class="section-head"><div><div class="eyebrow">경기 전망</div><h2>경기 전망</h2><div class="sub">다가오는 경기의 예상 결과와 분석 근거를 확인하세요.</div></div><a class="more" href="#predictions">전체 경기 전망 보기 →</a></div><div class="cards">
-<a class="card" href="#predictions"><div class="kicker">승무패 전망</div><h3>승 · 무 · 패 확률</h3><p>실제 확보한 기록으로 승무패 확률을 계산하고 분석 시각을 함께 보존합니다.</p><div class="bottom"><span>예측 데이터 준비 중</span><span>↗</span></div></a>
-<a class="card" href="#predictions"><div class="kicker">경기 분석</div><h3>예상 경기 시나리오</h3><p>최근 경기력과 일정 부담, 결장 변수를 함께 살펴 예상 전개를 설명합니다.</p><div class="bottom"><span>분석 모듈 준비 중</span><span>↗</span></div></a>
-<a class="card" href="#matches"><div class="kicker">예측 결과</div><h3>예측 결과 검증</h3><p>경기 전망과 최종 결과를 비교하고 적중과 확률 정확도를 기록합니다.</p><div class="bottom"><span>아카이브 준비 중</span><span>↗</span></div></a>
-</div></section>
-<section class="block"><div class="section-head"><div><h2>리그 순위 및 구단 정보</h2><div class="sub">5개 국내 리그의 순위와 유럽대항전 3개 대회의 리그 페이즈 순위를 확인하세요.</div></div><a class="more" href="leagues.html">리그별 데이터 보기</a></div><div class="league-grid">
-<a class="league-tile" href="leagues.html?league=epl"><strong>프리미어리그</strong></a>
-<a class="league-tile" href="leagues.html?league=laliga"><strong>라리가</strong></a>
-<a class="league-tile" href="leagues.html?league=seriea"><strong>세리에A</strong></a>
-<a class="league-tile" href="leagues.html?league=bundesliga"><strong>분데스리가</strong></a>
-<a class="league-tile" href="leagues.html?league=ligue1"><strong>리그앙</strong></a>
-<a class="league-tile" href="leagues.html?league=ucl"><strong>챔피언스리그</strong></a>
-<a class="league-tile" href="leagues.html?league=uel"><strong>유로파리그</strong></a>
-<a class="league-tile" href="leagues.html?league=uecl"><strong>컨퍼런스리그</strong></a>
-</div></section>
-<section class="block"><div class="section-head"><div><div class="eyebrow">축구 칼럼</div><h2>최신 축구 칼럼</h2><div class="sub">전술, 경기, 선수, 구단에 대한 다양한 관점을 담는 칼럼.</div></div><a href="#columns" class="more">칼럼 보기 →</a></div><div class="grid2"><div class="stat"><div class="eyebrow">칼럼 작성</div><h3>누구나 축구 칼럼을 작성할 수 있습니다.</h3><p>일반 회원의 칼럼 작성 및 운영자 검수 기반 발행 기능을 단계적으로 준비합니다.</p></div><div class="stat"><div class="eyebrow">칼럼 운영</div><h3>축구 경기와 전술을 다루는 글</h3><p>사실과 의견을 구분하고 저작권과 커뮤니티 운영 원칙을 지키는 축구 미디어를 지향합니다.</p></div></div></section></div>
-<div id="predictions" class="view hidden page"><div class="eyebrow">승무패 전망</div><h1>경기 전망</h1><p class="sub">프리미어리그, 잉글랜드 챔피언십, 라리가, 세리에A, 분데스리가, 리그앙, 챔피언스리그, 유로파리그, 컨퍼런스리그의 사전 전망을 게시합니다.</p><div class="filters" id="predictionFilters"><button class="filter active" data-comp="all">전체</button><button class="filter" data-comp="EPL">EPL</button><button class="filter" data-comp="Championship">챔피언십</button><button class="filter" data-comp="La Liga">라리가</button><button class="filter" data-comp="Serie A">SERIE A</button><button class="filter" data-comp="Bundesliga">BUNDESLIGA</button><button class="filter" data-comp="Ligue 1">LIGUE 1</button><button class="filter" data-comp="UCL">UCL</button><button class="filter" data-comp="UEL">UEL</button><button class="filter" data-comp="UECL">UECL</button></div><div class="empty"><strong>경기 전망 발행 준비 중</strong><p>신뢰할 수 있는 일정과 팀 통계를 연결한 뒤, 경기 전 분석을 이곳에 게시합니다. 근거 없는 승률이나 임의의 스코어는 표시하지 않습니다.</p><a class="btn" href="leagues.html">현재 리그 데이터 화면 보기</a></div></div>
+<div id="predictions" class="view hidden page">
+  <div class="eyebrow">MATCH PREVIEW</div>
+  <h1>경기 전망</h1>
+  <p class="sub">앞으로 14일의 경기를 살펴보세요. 경기별 분석 페이지에서 최근 흐름과 홈·원정 기록, 득실점 패턴을 비교할 수 있습니다.</p>
+  <div class="filters" id="predictionFilters" role="group" aria-label="경기 전망 대회 선택">
+    <button class="filter active" type="button" data-comp="all" aria-pressed="true">전체</button>
+    <button class="filter" type="button" data-comp="epl" aria-pressed="false">프리미어리그</button>
+    <button class="filter" type="button" data-comp="championship" aria-pressed="false">챔피언십</button>
+    <button class="filter" type="button" data-comp="laliga" aria-pressed="false">라리가</button>
+    <button class="filter" type="button" data-comp="seriea" aria-pressed="false">세리에A</button>
+    <button class="filter" type="button" data-comp="bundesliga" aria-pressed="false">분데스리가</button>
+    <button class="filter" type="button" data-comp="ligue1" aria-pressed="false">리그앙</button>
+    <button class="filter" type="button" data-comp="ucl" aria-pressed="false">챔피언스리그</button>
+    <button class="filter" type="button" data-comp="uel" aria-pressed="false">유로파리그</button>
+    <button class="filter" type="button" data-comp="uecl" aria-pressed="false">컨퍼런스리그</button>
+  </div>
+  <div class="match-meta"><span id="predictionCounter">예정 경기 불러오는 중</span><span>모든 경기 시간은 한국시간 기준</span></div>
+  <div id="predictionList" class="prediction-fixtures" aria-live="polite"></div>
+</div>
 
-
-<div id="matches" class="view hidden page matches-page">
-  <h1 class="match-page-title">경기 일정 및 결과</h1>
-  <p class="match-intro">프리미어리그, 잉글랜드 챔피언십, 라리가, 세리에A, 분데스리가, 리그앙, 챔피언스리그, 유로파리그, 컨퍼런스리그의 일정과 결과를 확인할 수 있습니다. 모든 시간은 한국시간 기준입니다.</p>
+<div id="matches" class="view page matches-page">
+  <div class="eyebrow">MATCH CENTRE</div>
+  <h1 class="match-page-title">경기 일정과 분석</h1>
+  <p class="match-intro">9개 대회의 일정과 결과, 각 경기의 데이터 분석을 한곳에서 확인하세요. 모든 경기 시간은 한국시간 기준입니다.</p>
   <div class="match-today-bar" aria-label="오늘 날짜">
     <div class="match-today-text">
       <span>오늘</span>
@@ -141,13 +140,21 @@ section.block{padding:89px 0}
 </main>
 <footer><div class="wrap foot"><span><strong>90MIN LABS.</strong> © 2026 · Independent Football Research</span><span>경기 전망은 확률적 분석이며 결과를 보장하지 않습니다. 베팅 기능 및 도박 사이트 연결은 제공하지 않습니다.</span></div></footer>
 <script>
-const pages=["home","predictions","matches","columns","write"];function route(){const id=location.hash.slice(1);const page=pages.includes(id)?id:"home";document.querySelectorAll(".view").forEach(el=>el.classList.toggle("hidden",el.id!==page));document.querySelectorAll("[data-page]").forEach(el=>el.classList.toggle("active",el.dataset.page===page));document.querySelector("#nav").classList.remove("open");document.querySelector("#menuBtn").setAttribute("aria-expanded","false");window.scrollTo(0,0);document.title=(page==="home"?"90MIN LABS":({predictions:"경기 전망",matches:"경기 일정",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS");}
+const pages=["predictions","matches","columns","write"];
+function route(){
+ const id=location.hash.slice(1),page=pages.includes(id)?id:"matches";
+ if(id==="home")history.replaceState(null,"",location.pathname+location.search+"#matches");
+ document.querySelectorAll(".view").forEach(el=>el.classList.toggle("hidden",el.id!==page));
+ document.querySelectorAll("[data-page]").forEach(el=>{const current=el.dataset.page===page;el.classList.toggle("active",current);if(current)el.setAttribute("aria-current","page");else el.removeAttribute("aria-current")});
+ document.querySelector("#nav").classList.remove("open");document.querySelector("#menuBtn").setAttribute("aria-expanded","false");
+ window.scrollTo(0,0);document.title=({predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
+}
 window.addEventListener("hashchange",route);route();
 document.querySelector("#menuBtn").addEventListener("click",()=>{const n=document.querySelector("#nav");n.classList.toggle("open");document.querySelector("#menuBtn").setAttribute("aria-expanded",String(n.classList.contains("open")))});
-document.querySelectorAll("#predictionFilters button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("#predictionFilters button").forEach(x=>x.classList.toggle("active",x===b));const empty=document.querySelector("#predictions .empty p");empty.textContent=(b.dataset.comp==="all"?"전체 대회의":b.dataset.comp+" 대회의")+" 데이터 연동을 준비 중입니다. 검증된 근거 없는 경기 예측은 게시하지 않습니다."}));
 const fields=["category","author","draftTitle","draftBody"];function formText(){return "90MIN LABS 칼럼 초안\n카테고리: "+document.querySelector("#category").value+"\n필명: "+document.querySelector("#author").value+"\n제목: "+document.querySelector("#draftTitle").value+"\n\n"+document.querySelector("#draftBody").value}
 document.querySelector("#previewBtn").addEventListener("click",()=>{const t=document.querySelector("#draftPreview");t.classList.remove("hidden");t.textContent=formText();t.scrollIntoView({behavior:"smooth",block:"nearest"})});
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
+<script src="./assets/match-analysis.js" defer></script>
 <script src="./assets/matches.js" defer></script>
 </body></html>
