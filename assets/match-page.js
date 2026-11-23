@@ -277,7 +277,7 @@
   async function json(path) {
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 12000);
     try {
-      const response = await fetch(path, { cache: "no-store", signal: controller.signal });
+      const response = await fetch(path, { cache:"no-cache", signal: controller.signal });
       if (!response.ok) throw new Error(path + " HTTP " + response.status);
       return await response.json();
     } finally { clearTimeout(timer); }
