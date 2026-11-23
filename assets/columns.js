@@ -11,18 +11,20 @@ const labels={"전체":"All","경기 전망":"Predictions","경기 리뷰":"Matc
 const safeId=id=>/^[a-z0-9-]{3,90}$/.test(id||"")?id:null;
 const articleLink=a=>"column.html?id="+encodeURIComponent(a.id);
 let archive=null,active="전체",term="";
-function meta(a){
+function meta(a,compact=false){
  const line=create("div","col-meta");
  line.append(create("span","col-tag",en()?(labels[a.category]||a.category):a.category));
- if(a.status!=="published")line.append(create("span","col-sample",t("편집 샘플","Editorial sample")));
- line.append(create("span","",a.author||"90MIN LABS"));
+ if(!compact){
+  if(a.status!=="published")line.append(create("span","col-sample",t("편집 샘플","Editorial sample")));
+  line.append(create("span","",a.author||"90MIN LABS"));
+ }
  return line;
 }
 function tile(a){
  const link=create("a","col-tile");link.href=articleLink(a);
- link.append(meta(a),create("h2","",a.title),create("p","",a.subtitle||""));
+ link.append(meta(a,true),create("h2","",a.title),create("p","",a.subtitle||""));
  const bottom=create("div","col-tile-bottom");
- bottom.append(create("span","",t("칼럼 읽기","Read article")),create("span","",String(a.sections?.length||0)+" "+t("개 소주제","sections")));
+ bottom.append(create("span","",t("칼럼 읽기","Read article")));
  link.append(bottom);return link;
 }
 function feature(a){
@@ -57,7 +59,7 @@ function render(){
  filters();
  list.replaceChildren();
  const rows=filtered();
- byId("colCount").textContent=t("전체 ","Showing ")+rows.length+t("편 · 편집 예시"," articles · editorial previews");
+ byId("colCount").textContent=t("전체 ","Total ")+rows.length+t("편"," articles");
  if(!rows.length){
   const empty=create("div","col-empty");
   empty.append(create("strong","",t("조건에 맞는 칼럼이 없습니다.","No matching columns.")),create("p","",t("다른 카테고리나 검색어를 선택하세요.","Try another category or keyword.")));
