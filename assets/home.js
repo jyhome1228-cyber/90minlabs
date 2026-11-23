@@ -28,23 +28,12 @@ function render(){
  $("homeTodayDate").textContent=fullDate(date);
  $("homeCurrentTime").textContent=clock+" KST";
  $("homeFixturesTitle").textContent=strings.today;
- $("homeFixturesNote").textContent=strings.caption;
  $("homeAllMatches").textContent=strings.more;
  $("homeAllMatches").href="index.html?date="+date+"&view=day&league=all&status=all#matches";
  $("homeFixtureLink").href=$("homeAllMatches").href;
- $("homeFixturesLabel").textContent=date.replace(/-/g,".");
  if(error){list.replaceChildren(el("div","daily-empty",locale()==="en"?"Match data could not be loaded. Open fixtures to retry.":"경기 목록을 불러오지 못했습니다. 전체 일정에서 다시 확인하세요."));return;}
  if(!calendar){list.replaceChildren(el("div","daily-empty",locale()==="en"?"Loading fixtures...":"경기 일정 불러오는 중…"));return;}
  const games=calendar.filter(m=>m.date===date).slice().sort((a,b)=>(a.time||"99:99").localeCompare(b.time||"99:99")||a.league.localeCompare(b.league));
- const total=games.length,finished=games.filter(m=>status(m)==="finished").length,upcoming=games.filter(m=>status(m)==="scheduled").length;
- $("homeMatchCount").textContent=total+" "+strings.count;
- const summary=$("homeTodayStats");
- if(summary){
-   summary.replaceChildren();
-   for(const [value,label] of [[total,locale()==="en"?"All matches":"전체 경기"],[finished,locale()==="en"?"Finished":"종료"],[upcoming,locale()==="en"?"Upcoming":"예정"]]){
-      const item=el("div","home-stat");item.append(el("strong","",value),el("span","",label));summary.append(item);
-   }
- }
  window.ClubLogos?.release(list);list.replaceChildren();
  if(!games.length){
   const empty=el("div","daily-empty");empty.append(el("strong","",strings.none),el("p","",locale()==="en"?"Check tomorrow or browse all fixtures.":"다음 날 일정을 확인하거나 전체 경기를 살펴보세요."));
