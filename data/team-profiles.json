@@ -11,7 +11,11 @@
       "crestId": 57,
       "cityKo": "런던",
       "foundedYear": 1886,
-      "stadium": "Emirates Stadium"
+      "stadium": "Emirates Stadium",
+      "manager": "Mikel Arteta",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Brighton": {
       "name": "Brighton",
@@ -21,7 +25,11 @@
       "historyKo": null,
       "crestId": 397,
       "cityKo": "브라이턴 앤드 호브",
-      "stadium": "Amex Stadium"
+      "stadium": "Amex Stadium",
+      "manager": "Fabian Hürzeler",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Manchester City": {
       "name": "Manchester City",
@@ -32,7 +40,11 @@
       "crestId": 65,
       "cityKo": "맨체스터",
       "foundedYear": 1894,
-      "stadium": "Etihad Stadium"
+      "stadium": "Etihad Stadium",
+      "manager": "Enzo Maresca",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Liverpool": {
       "name": "Liverpool",
@@ -43,7 +55,11 @@
       "crestId": 64,
       "cityKo": "리버풀",
       "foundedYear": 1892,
-      "stadium": "Anfield"
+      "stadium": "Anfield",
+      "manager": "Andoni Iraola",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Bournemouth": {
       "name": "Bournemouth",
@@ -53,7 +69,11 @@
       "historyKo": null,
       "crestId": 1044,
       "cityKo": "본머스",
-      "stadium": "Dean Court"
+      "stadium": "Dean Court",
+      "manager": "Marco Rose",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Leeds United": {
       "name": "Leeds United",
@@ -63,7 +83,11 @@
       "historyKo": null,
       "crestId": 341,
       "cityKo": "리즈",
-      "stadium": "Elland Road"
+      "stadium": "Elland Road",
+      "manager": "Daniel Farke",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Everton": {
       "name": "Everton",
@@ -75,7 +99,11 @@
       "cityKo": "리버풀",
       "foundedYear": 1878,
       "stadium": "Hill Dickinson Stadium",
-      "stadiumSourceUrl": "https://www.evertonfc.com/stadium-information/"
+      "stadiumSourceUrl": "https://www.evertonfc.com/stadium-information/",
+      "manager": "David Moyes",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Chelsea": {
       "name": "Chelsea",
@@ -86,7 +114,11 @@
       "crestId": 61,
       "cityKo": "런던",
       "foundedYear": 1905,
-      "stadium": "Stamford Bridge"
+      "stadium": "Stamford Bridge",
+      "manager": "Xabi Alonso",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Tottenham": {
       "name": "Tottenham",
@@ -97,7 +129,11 @@
       "crestId": 73,
       "cityKo": "런던",
       "foundedYear": 1882,
-      "stadium": "Tottenham Hotspur Stadium"
+      "stadium": "Tottenham Hotspur Stadium",
+      "manager": "Roberto De Zerbi",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Brentford": {
       "name": "Brentford",
@@ -107,7 +143,11 @@
       "historyKo": null,
       "crestId": 402,
       "cityKo": "런던",
-      "stadium": "Brentford Community Stadium"
+      "stadium": "Brentford Community Stadium",
+      "manager": "Keith Andrews",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Hull City": {
       "name": "Hull City",
@@ -116,7 +156,11 @@
       "searchName": "Hull City",
       "historyKo": null,
       "cityKo": "킹스턴어폰헐",
-      "stadium": "MKM Stadium"
+      "stadium": "MKM Stadium",
+      "manager": "Sergej Jakirović",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Aston Villa": {
       "name": "Aston Villa",
@@ -127,7 +171,11 @@
       "crestId": 58,
       "cityKo": "버밍엄",
       "foundedYear": 1874,
-      "stadium": "Villa Park"
+      "stadium": "Villa Park",
+      "manager": "Unai Emery",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Newcastle": {
       "name": "Newcastle",
@@ -138,7 +186,11 @@
       "crestId": 67,
       "cityKo": "뉴캐슬어폰타인",
       "foundedYear": 1892,
-      "stadium": "St James’ Park"
+      "stadium": "St James’ Park",
+      "manager": "Matthias Jaissle",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Coventry City": {
       "name": "Coventry City",
@@ -147,7 +199,11 @@
       "searchName": "Coventry City",
       "historyKo": null,
       "cityKo": "코번트리",
-      "stadium": "Coventry Building Society Arena"
+      "stadium": "Coventry Building Society Arena",
+      "manager": "Frank Lampard",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Fulham": {
       "name": "Fulham",
@@ -157,7 +213,11 @@
       "historyKo": null,
       "crestId": 63,
       "cityKo": "런던",
-      "stadium": "Craven Cottage"
+      "stadium": "Craven Cottage",
+      "manager": "Álvaro Arbeloa",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Ipswich Town": {
       "name": "Ipswich Town",
@@ -167,7 +227,11 @@
       "historyKo": null,
       "crestId": 349,
       "cityKo": "입스위치",
-      "stadium": "Portman Road"
+      "stadium": "Portman Road",
+      "manager": "Gary O’Neil",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Nottingham Forest": {
       "name": "Nottingham Forest",
@@ -177,7 +241,11 @@
       "historyKo": null,
       "crestId": 351,
       "cityKo": "노팅엄",
-      "stadium": "City Ground"
+      "stadium": "City Ground",
+      "manager": "Oliver Glasner",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Sunderland": {
       "name": "Sunderland",
@@ -187,7 +255,11 @@
       "historyKo": null,
       "crestId": 71,
       "cityKo": "선덜랜드",
-      "stadium": "Stadium of Light"
+      "stadium": "Stadium of Light",
+      "manager": "Régis Le Bris",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Manchester United": {
       "name": "Manchester United",
@@ -198,7 +270,11 @@
       "crestId": 66,
       "cityKo": "맨체스터",
       "foundedYear": 1878,
-      "stadium": "Old Trafford"
+      "stadium": "Old Trafford",
+      "manager": "Michael Carrick",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "epl:Crystal Palace": {
       "name": "Crystal Palace",
@@ -208,7 +284,11 @@
       "historyKo": null,
       "crestId": 354,
       "cityKo": "런던",
-      "stadium": "Selhurst Park"
+      "stadium": "Selhurst Park",
+      "manager": "Pierre Sage",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
+      "managerSourceType": "official"
     },
     "seriea:Lazio": {
       "name": "Lazio",
@@ -218,7 +298,11 @@
       "historyKo": null,
       "crestId": 110,
       "cityKo": "로마",
-      "stadium": "Stadio Olimpico"
+      "stadium": "Stadio Olimpico",
+      "manager": "Gennaro Gattuso",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Roma": {
       "name": "Roma",
@@ -229,7 +313,11 @@
       "crestId": 100,
       "cityKo": "로마",
       "foundedYear": 1927,
-      "stadium": "Stadio Olimpico"
+      "stadium": "Stadio Olimpico",
+      "manager": "Gian Piero Gasperini",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Inter": {
       "name": "Inter",
@@ -240,7 +328,11 @@
       "crestId": 108,
       "cityKo": "밀라노",
       "foundedYear": 1908,
-      "stadium": "Stadio Giuseppe Meazza"
+      "stadium": "Stadio Giuseppe Meazza",
+      "manager": "Cristian Chivu",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Milan": {
       "name": "Milan",
@@ -251,7 +343,11 @@
       "crestId": 98,
       "cityKo": "밀라노",
       "foundedYear": 1899,
-      "stadium": "Stadio Giuseppe Meazza"
+      "stadium": "Stadio Giuseppe Meazza",
+      "manager": "Rúben Amorim",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Como": {
       "name": "Como",
@@ -261,7 +357,11 @@
       "historyKo": null,
       "crestId": 7397,
       "cityKo": "코모",
-      "stadium": "Stadio Giuseppe Sinigaglia"
+      "stadium": "Stadio Giuseppe Sinigaglia",
+      "manager": "Cesc Fàbregas",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Juventus": {
       "name": "Juventus",
@@ -272,7 +372,11 @@
       "crestId": 109,
       "cityKo": "토리노",
       "foundedYear": 1897,
-      "stadium": "Allianz Stadium"
+      "stadium": "Allianz Stadium",
+      "manager": "Luciano Spalletti",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Frosinone": {
       "name": "Frosinone",
@@ -281,7 +385,11 @@
       "searchName": "Frosinone",
       "historyKo": null,
       "cityKo": "프로시노네",
-      "stadium": "Stadio Benito Stirpe"
+      "stadium": "Stadio Benito Stirpe",
+      "manager": "Massimiliano Alvini",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Napoli": {
       "name": "Napoli",
@@ -292,7 +400,11 @@
       "crestId": 113,
       "cityKo": "나폴리",
       "foundedYear": 1926,
-      "stadium": "Stadio Diego Armando Maradona"
+      "stadium": "Stadio Diego Armando Maradona",
+      "manager": "Massimiliano Allegri",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Bologna": {
       "name": "Bologna",
@@ -302,7 +414,11 @@
       "historyKo": null,
       "crestId": 103,
       "cityKo": "볼로냐",
-      "stadium": "Stadio Renato Dall’Ara"
+      "stadium": "Stadio Renato Dall’Ara",
+      "manager": "Raffaele Palladino",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Genoa": {
       "name": "Genoa",
@@ -312,7 +428,11 @@
       "historyKo": null,
       "crestId": 107,
       "cityKo": "제노바",
-      "stadium": "Stadio Luigi Ferraris"
+      "stadium": "Stadio Luigi Ferraris",
+      "manager": "Daniele De Rossi",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Cagliari": {
       "name": "Cagliari",
@@ -322,7 +442,11 @@
       "historyKo": null,
       "crestId": 104,
       "cityKo": "칼리아리",
-      "stadium": "Unipol Domus"
+      "stadium": "Unipol Domus",
+      "manager": "Fabio Pisacane",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Atalanta": {
       "name": "Atalanta",
@@ -333,7 +457,11 @@
       "crestId": 102,
       "cityKo": "베르가모",
       "stadium": "New Balance Arena",
-      "stadiumSourceUrl": "https://en.legaseriea.it/team/atalanta/stadium"
+      "stadiumSourceUrl": "https://en.legaseriea.it/team/atalanta/stadium",
+      "manager": "Maurizio Sarri",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Torino": {
       "name": "Torino",
@@ -343,7 +471,11 @@
       "historyKo": null,
       "crestId": 586,
       "cityKo": "토리노",
-      "stadium": "Stadio Olimpico Grande Torino"
+      "stadium": "Stadio Olimpico Grande Torino",
+      "manager": "Ignazio Abate",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Lecce": {
       "name": "Lecce",
@@ -353,7 +485,11 @@
       "historyKo": null,
       "crestId": 5890,
       "cityKo": "레체",
-      "stadium": "Stadio Via del Mare"
+      "stadium": "Stadio Via del Mare",
+      "manager": "Eusebio Di Francesco",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Fiorentina": {
       "name": "Fiorentina",
@@ -363,7 +499,11 @@
       "historyKo": null,
       "crestId": 99,
       "cityKo": "피렌체",
-      "stadium": "Stadio Artemio Franchi"
+      "stadium": "Stadio Artemio Franchi",
+      "manager": "Paolo Vanoli",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Parma": {
       "name": "Parma",
@@ -373,7 +513,11 @@
       "historyKo": null,
       "crestId": 112,
       "cityKo": "파르마",
-      "stadium": "Stadio Ennio Tardini"
+      "stadium": "Stadio Ennio Tardini",
+      "manager": "Alberto Gilardino",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Sassuolo": {
       "name": "Sassuolo",
@@ -383,7 +527,11 @@
       "historyKo": null,
       "crestId": 471,
       "cityKo": "사수올로",
-      "stadium": "Mapei Stadium"
+      "stadium": "Mapei Stadium",
+      "manager": "Alberto Aquilani",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Monza": {
       "name": "Monza",
@@ -392,7 +540,11 @@
       "searchName": "Monza",
       "historyKo": null,
       "cityKo": "몬차",
-      "stadium": "Stadio Brianteo"
+      "stadium": "Stadio Brianteo",
+      "manager": "Ivan Jurić",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Udinese": {
       "name": "Udinese",
@@ -402,7 +554,11 @@
       "historyKo": null,
       "crestId": 115,
       "cityKo": "우디네",
-      "stadium": "Stadio Friuli"
+      "stadium": "Stadio Friuli",
+      "manager": "Paolo Zanetti",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "seriea:Venezia": {
       "name": "Venezia",
@@ -411,7 +567,11 @@
       "searchName": "Venezia",
       "historyKo": null,
       "cityKo": "베네치아",
-      "stadium": "Stadio Pier Luigi Penzo"
+      "stadium": "Stadio Pier Luigi Penzo",
+      "manager": "Davide Nicola",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Borussia Dortmund": {
       "name": "Borussia Dortmund",
@@ -422,7 +582,11 @@
       "crestId": 4,
       "cityKo": "도르트문트",
       "foundedYear": 1909,
-      "stadium": "Signal Iduna Park"
+      "stadium": "Signal Iduna Park",
+      "manager": "Niko Kovač",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Bayern München": {
       "name": "Bayern München",
@@ -433,7 +597,11 @@
       "crestId": 5,
       "cityKo": "뮌헨",
       "foundedYear": 1900,
-      "stadium": "Allianz Arena"
+      "stadium": "Allianz Arena",
+      "manager": "Vincent Kompany",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Freiburg": {
       "name": "Freiburg",
@@ -443,7 +611,11 @@
       "historyKo": null,
       "crestId": 17,
       "cityKo": "프라이부르크",
-      "stadium": "Europa-Park Stadion"
+      "stadium": "Europa-Park Stadion",
+      "manager": "Julian Schuster",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:RB Leipzig": {
       "name": "RB Leipzig",
@@ -454,7 +626,11 @@
       "crestId": 721,
       "cityKo": "라이프치히",
       "foundedYear": 2009,
-      "stadium": "Red Bull Arena"
+      "stadium": "Red Bull Arena",
+      "manager": "Martín Demichelis",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Bayer Leverkusen": {
       "name": "Bayer Leverkusen",
@@ -464,7 +640,11 @@
       "historyKo": "바이어 레버쿠젠은 독일 레버쿠젠을 연고로 하는 구단이다. 바이아레나를 홈구장으로 사용하며, 2023–24시즌 분데스리가 무패 우승을 달성했다.",
       "crestId": 3,
       "cityKo": "레버쿠젠",
-      "stadium": "BayArena"
+      "stadium": "BayArena",
+      "manager": "Carles Martínez Novell",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Werder Bremen": {
       "name": "Werder Bremen",
@@ -474,7 +654,11 @@
       "historyKo": null,
       "crestId": 12,
       "cityKo": "브레멘",
-      "stadium": "Weserstadion"
+      "stadium": "Weserstadion",
+      "manager": "Daniel Thioune",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Eintracht Frankfurt": {
       "name": "Eintracht Frankfurt",
@@ -484,7 +668,11 @@
       "historyKo": null,
       "crestId": 19,
       "cityKo": "프랑크푸르트",
-      "stadium": "Waldstadion"
+      "stadium": "Waldstadion",
+      "manager": "Adi Hütter",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Stuttgart": {
       "name": "Stuttgart",
@@ -494,7 +682,11 @@
       "historyKo": null,
       "crestId": 10,
       "cityKo": "슈투트가르트",
-      "stadium": "Stuttgart Arena"
+      "stadium": "Stuttgart Arena",
+      "manager": "Sebastian Hoeneß",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Elversberg": {
       "name": "Elversberg",
@@ -503,7 +695,11 @@
       "searchName": "Elversberg",
       "historyKo": null,
       "cityKo": "슈피젠엘버스베르크",
-      "stadium": "Waldstadion an der Kaiserlinde"
+      "stadium": "Waldstadion an der Kaiserlinde",
+      "manager": "Vincent Wagner",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Augsburg": {
       "name": "Augsburg",
@@ -513,7 +709,11 @@
       "historyKo": null,
       "crestId": 16,
       "cityKo": "아우크스부르크",
-      "stadium": "Augsburg Arena"
+      "stadium": "Augsburg Arena",
+      "manager": "Manuel Baum",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Hoffenheim": {
       "name": "Hoffenheim",
@@ -523,7 +723,11 @@
       "historyKo": null,
       "crestId": 2,
       "cityKo": "진스하임",
-      "stadium": "Rhein-Neckar-Arena"
+      "stadium": "Rhein-Neckar-Arena",
+      "manager": "Christian Ilzer",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Hamburg": {
       "name": "Hamburg",
@@ -533,7 +737,11 @@
       "historyKo": null,
       "crestId": 7,
       "cityKo": "함부르크",
-      "stadium": "Volksparkstadion"
+      "stadium": "Volksparkstadion",
+      "manager": "Merlin Polzin",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Mainz": {
       "name": "Mainz",
@@ -543,7 +751,11 @@
       "historyKo": null,
       "crestId": 15,
       "cityKo": "마인츠",
-      "stadium": "Stadion am Europakreisel"
+      "stadium": "Stadion am Europakreisel",
+      "manager": "Urs Fischer",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Köln": {
       "name": "Köln",
@@ -553,7 +765,11 @@
       "historyKo": null,
       "crestId": 1,
       "cityKo": "쾰른",
-      "stadium": "Müngersdorfer Stadion"
+      "stadium": "Müngersdorfer Stadion",
+      "manager": "René Wagner",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Paderborn": {
       "name": "Paderborn",
@@ -562,7 +778,11 @@
       "searchName": "Paderborn",
       "historyKo": null,
       "cityKo": "파더보른",
-      "stadium": "Home Deluxe Arena"
+      "stadium": "Home Deluxe Arena",
+      "manager": "Ralf Kettemann",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Schalke": {
       "name": "Schalke",
@@ -572,7 +792,11 @@
       "historyKo": null,
       "crestId": 6,
       "cityKo": "겔젠키르헨",
-      "stadium": "Arena AufSchalke"
+      "stadium": "Arena AufSchalke",
+      "manager": "Miron Muslić",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Union Berlin": {
       "name": "Union Berlin",
@@ -582,7 +806,11 @@
       "historyKo": null,
       "crestId": 28,
       "cityKo": "베를린",
-      "stadium": "Stadion An der Alten Försterei"
+      "stadium": "Stadion An der Alten Försterei",
+      "manager": "Mauro Lustrinelli",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "bundesliga:Mönchengladbach": {
       "name": "Mönchengladbach",
@@ -592,7 +820,11 @@
       "historyKo": null,
       "crestId": 18,
       "cityKo": "묀헨글라트바흐",
-      "stadium": "Borussia-Park"
+      "stadium": "Borussia-Park",
+      "manager": "Alexander Blessin",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Paris Saint-Germain": {
       "name": "Paris Saint-Germain",
@@ -603,7 +835,11 @@
       "crestId": 524,
       "cityKo": "파리",
       "foundedYear": 1970,
-      "stadium": "Parc des Princes"
+      "stadium": "Parc des Princes",
+      "manager": "Luis Enrique",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Paris FC": {
       "name": "Paris FC",
@@ -613,7 +849,11 @@
       "historyKo": null,
       "cityKo": "파리",
       "stadium": "Stade Jean-Bouin",
-      "stadiumSourceUrl": "https://parisfc.fr/en/stadium-access/"
+      "stadiumSourceUrl": "https://parisfc.fr/en/stadium-access/",
+      "manager": "Liam Rosenior",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Lille": {
       "name": "Lille",
@@ -623,7 +863,11 @@
       "historyKo": null,
       "crestId": 521,
       "cityKo": "릴",
-      "stadium": "Stade Pierre-Mauroy"
+      "stadium": "Stade Pierre-Mauroy",
+      "manager": "Davide Ancelotti",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Lyon": {
       "name": "Lyon",
@@ -634,7 +878,11 @@
       "crestId": 523,
       "cityKo": "리옹",
       "foundedYear": 1950,
-      "stadium": "Parc Olympique Lyonnais"
+      "stadium": "Parc Olympique Lyonnais",
+      "manager": "Carlos Vicens",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Marseille": {
       "name": "Marseille",
@@ -645,7 +893,11 @@
       "crestId": 516,
       "cityKo": "마르세유",
       "foundedYear": 1899,
-      "stadium": "Stade Vélodrome"
+      "stadium": "Stade Vélodrome",
+      "manager": "Bruno Génésio",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Brest": {
       "name": "Brest",
@@ -655,7 +907,11 @@
       "historyKo": null,
       "crestId": 512,
       "cityKo": "브레스트",
-      "stadium": "Stade Francis-Le Blé"
+      "stadium": "Stade Francis-Le Blé",
+      "manager": "Julien Lachuer",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Nice": {
       "name": "Nice",
@@ -665,7 +921,11 @@
       "historyKo": null,
       "crestId": 522,
       "cityKo": "니스",
-      "stadium": "Stade de Nice"
+      "stadium": "Stade de Nice",
+      "manager": "Olivier Pantaloni",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Monaco": {
       "name": "Monaco",
@@ -676,7 +936,11 @@
       "crestId": 548,
       "cityKo": "모나코",
       "foundedYear": 1924,
-      "stadium": "Stade Louis-II"
+      "stadium": "Stade Louis-II",
+      "manager": "Filipe Luís",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Rennes": {
       "name": "Rennes",
@@ -686,7 +950,11 @@
       "historyKo": null,
       "crestId": 529,
       "cityKo": "렌",
-      "stadium": "Roazhon Park"
+      "stadium": "Roazhon Park",
+      "manager": "Franck Haise",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Lorient": {
       "name": "Lorient",
@@ -696,7 +964,11 @@
       "historyKo": null,
       "crestId": 525,
       "cityKo": "로리앙",
-      "stadium": "Stade du Moustoir"
+      "stadium": "Stade du Moustoir",
+      "manager": "Alexandre Dujeux",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Lens": {
       "name": "Lens",
@@ -706,7 +978,11 @@
       "historyKo": null,
       "crestId": 546,
       "cityKo": "랑스",
-      "stadium": "Stade Bollaert-Delelis"
+      "stadium": "Stade Bollaert-Delelis",
+      "manager": "Didier Digard",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Toulouse": {
       "name": "Toulouse",
@@ -716,7 +992,11 @@
       "historyKo": null,
       "crestId": 511,
       "cityKo": "툴루즈",
-      "stadium": "Stadium de Toulouse"
+      "stadium": "Stadium de Toulouse",
+      "manager": "Jens Berthel Askou",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Auxerre": {
       "name": "Auxerre",
@@ -725,7 +1005,11 @@
       "searchName": "Auxerre",
       "historyKo": null,
       "cityKo": "오세르",
-      "stadium": "Stade de l’Abbé-Deschamps"
+      "stadium": "Stade de l’Abbé-Deschamps",
+      "manager": "Will Still",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Angers": {
       "name": "Angers",
@@ -734,7 +1018,11 @@
       "searchName": "Angers",
       "historyKo": null,
       "cityKo": "앙제",
-      "stadium": "Stade Raymond Kopa"
+      "stadium": "Stade Raymond Kopa",
+      "manager": "Stéphane Gilli",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Troyes": {
       "name": "Troyes",
@@ -743,7 +1031,11 @@
       "searchName": "Troyes",
       "historyKo": null,
       "cityKo": "트루아",
-      "stadium": "Stade de l’Aube"
+      "stadium": "Stade de l’Aube",
+      "manager": "Stéphane Dumont",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Le Havre": {
       "name": "Le Havre",
@@ -752,7 +1044,11 @@
       "searchName": "Le Havre",
       "historyKo": null,
       "cityKo": "르아브르",
-      "stadium": "Stade Océane"
+      "stadium": "Stade Océane",
+      "manager": "Valérien Ismaël",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Le Mans": {
       "name": "Le Mans",
@@ -761,7 +1057,11 @@
       "searchName": "Le Mans",
       "historyKo": null,
       "cityKo": "르망",
-      "stadium": "Stade Marie-Marvingt"
+      "stadium": "Stade Marie-Marvingt",
+      "manager": "Patrick Videira",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     },
     "ligue1:Strasbourg": {
       "name": "Strasbourg",
@@ -770,7 +1070,11 @@
       "searchName": "Strasbourg",
       "historyKo": null,
       "cityKo": "스트라스부르",
-      "stadium": "Stade de la Meinau"
+      "stadium": "Stade de la Meinau",
+      "manager": "Vítor Matos",
+      "managerVerifiedAt": "2026-11-23",
+      "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
+      "managerSourceType": "season-summary"
     }
   }
 }
