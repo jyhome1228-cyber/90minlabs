@@ -91,11 +91,11 @@ function teamElement(m,isHome){
  holder.append(el);
  return holder;
 }
-function getForm(team,league,date){
+function getForm(team,league,date,fixture){
  if(!team||!league)return null;
  const data=state.forms?.teams?.[league+":"+team];
  if(!data?.matches)return null;
- const recent=data.matches.filter(g=>g.date<date).slice(0,5);
+ const recent=data.matches.filter(g=>g.date<date&&!(fixture&&g.home===fixture.home&&g.away===fixture.away)).slice(0,5);
  if(!recent.length)return null;
  return recent.map(g=>{
   const h=g.home===data.matchName;
@@ -107,13 +107,14 @@ function detailBox(m,side){
  const box=element("div","match-detail-box");
  const team=m[side+"Team"],league=m[side+"TeamLeague"],name=team||m[side];
  box.append(element("h4","",name));
- const form=getForm(team,league,m.date);
+ const form=getForm(team,league,m.date,m);
  if(form){
   box.append(element("p","","경기 시작 전 기준 최근 리그 "+form.length+"경기"));
   const wrap=element("div","match-form");for(const f of form)wrap.append(element("span","",f));box.append(wrap);
  } else box.append(element("p","","이 구단의 최근 경기 기록은 확인되지 않았습니다."));
  const links=element("div","match-detail-links");
  if(team&&league){const a=element("a","","구단 정보 보기");a.href=routeFor(team,league);links.append(a);}
+ if(m.scoreSourceUrl){const a=element("a","","최종 스코어 검증");a.href=m.scoreSourceUrl;a.target="_blank";a.rel="noopener noreferrer";links.append(a);}
  const src=state.source?.sourceByLeague?.[m.league];
  if(src){const a=element("a","","일정 및 결과 출처");a.href=src+(m.status==="finished"?"results_2627.csv":"fixtures_2627.csv");a.target="_blank";a.rel="noopener noreferrer";links.append(a);}
  box.append(links);return box;
