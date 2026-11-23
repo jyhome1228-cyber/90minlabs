@@ -16,9 +16,11 @@ function badge(container,opts){
  let index=0;let external=false;
  const insert=url=>{
    const img=document.createElement("img");
-   img.alt="";img.loading="lazy";img.decoding="async";
-   img.onload=()=>{container.replaceChildren(img)};
-   img.onerror=()=>{if(img.parentNode)img.remove();next()};
+   img.alt="";img.loading="eager";img.decoding="async";
+   img.style.visibility="hidden";
+   img.onload=()=>{container.replaceChildren(img);img.style.visibility="visible"};
+   img.onerror=()=>{img.remove();next()};
+   container.append(img);
    img.src=url;
  };
  async function wiki(){
@@ -56,10 +58,24 @@ function badge(container,opts){
    })().catch(()=>null));
    return cache.get(key);
  }
+ async function sports(){
+   const query=opts.searchName||opts.name;
+   if(!query)return null;
+   const key="sports:"+query;
+   if(!cache.has(key))cache.set(key,(async()=>{
+     const response=await fetch("https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t="+encodeURIComponent(query));
+     if(!response.ok)return null;
+     const data=await response.json(),wanted=norm(query);
+     const options=(data.teams||[]).filter(x=>x.strSport==="Soccer"&&safe(x.strBadge));
+     const matched=options.find(x=>norm(x.strTeam)===wanted||String(x.strTeamAlternate||"").split(";").some(a=>norm(a)===wanted));
+     return matched?safe(matched.strBadge):null;
+   })().catch(()=>null));
+   return cache.get(key);
+ }
  function next(){
    if(index<urls.length){insert(urls[index++]);return}
    if(external)return;external=true;
-   wiki().then(url=>{if(url&&container.isConnected)insert(url)});
+   sports().then(url=>url||wiki()).then(url=>{if(url)insert(url)}).catch(()=>{});
  }
  next();
 }
