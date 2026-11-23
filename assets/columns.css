@@ -110,3 +110,14 @@ body.column-detail-body{margin:0;background:#fff;color:#222;font-family:Pretenda
  .col-detail-article h2{font-size:18px}
  .col-detail-article p{font-size:14px}
 }
+
+
+/* Editorial index: every column shares the same three-column hierarchy. */
+.column-page .column-heading h1{font-size:clamp(25px,2.5vw,33px);font-weight:650}
+.column-page .col-note{margin:17px 0 18px}
+.column-page .col-toolbar{margin:20px 0 17px}
+.column-page .col-tile{padding:23px 0 26px}
+.column-page .col-tile h2{min-height:0;font-size:18px;line-height:1.55;margin:12px 0 8px;font-weight:650}
+.column-page .col-tile p{font-size:13px;line-height:1.7}
+.column-page .col-tile-bottom{margin-top:17px}
+@media(max-width:650px){.column-page .col-tile h2{font-size:18px}.column-page .col-tile{padding:20px 0 24px}}
