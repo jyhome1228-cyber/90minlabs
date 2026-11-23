@@ -2,9 +2,9 @@
 "use strict";
 const root=document.getElementById("matches");
 if(!root)return;
-const leagueNames={epl:"프리미어리그",laliga:"라리가",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",championship:"잉글랜드 챔피언십"};
-const leagueShort={epl:"EPL",laliga:"LA LIGA",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",championship:"CHAMPIONSHIP"};
-const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["laliga","라리가"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"]];
+const leagueNames={epl:"프리미어리그",laliga:"라리가",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그",championship:"잉글랜드 챔피언십"};
+const leagueShort={epl:"EPL",laliga:"LA LIGA",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",uel:"UEL",uecl:"UECL",championship:"CHAMPIONSHIP"};
+const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["laliga","라리가"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"],["uel","유로파리그"],["uecl","컨퍼런스리그"]];
 const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,forms:null};
 const $=id=>document.getElementById(id);
 function element(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined&&value!==null)el.textContent=String(value);return el;}
@@ -43,6 +43,8 @@ function eventStatus(m){
 }
 const badgeCache=new Map();
 const uclQueries={"AEK Athens":"AEK Athens","Bodø/Glimt":"Bodo Glimt","Club Brugge":"Club Brugge","Fenerbahçe":"Fenerbahce","Feyenoord":"Feyenoord","Galatasaray":"Galatasaray","LASK":"LASK Linz","PSV":"PSV Eindhoven","Porto":"FC Porto","S. Bratislava":"Slovan Bratislava","Sabah":"Sabah FC","Shakhtar":"Shakhtar Donetsk","Slavia Praha":"Slavia Prague","Sporting CP":"Sporting CP","Viking":"Viking FK"};
+
+Object.assign(uclQueries,{"Besiktas":"Besiktas","Ferencváros":"Ferencvaros","Union SG":"Union Saint Gilloise","Levski Sofia":"Levski Sofia","N.E.C.":"NEC Nijmegen","OFI Crete":"OFI","Lech Poznan":"Lech Poznan","GNK Dinamo":"Dinamo Zagreb","H. Beer-Sheva":"Hapoel Beer Sheva","Viktoria Plzen":"Viktoria Plzen","Olympiacos":"Olympiacos","Lillestrøm":"Lillestrom SK","Ararat-Armenia":"Ararat Armenia","U. Craiova":"Universitatea Craiova","L. Red Imps":"Lincoln Red Imps","Kauno Žalgiris":"FK Kauno Zalgiris","Nordsjælland":"Nordsjaelland","Mjällby":"Mjallby","Sint-Truidense":"Sint Truiden","Inter Escaldes":"Inter Club d'Escaldes","Borac":"Borac Banja Luka","Kairat Almaty":"Kairat","Copenhagen":"FC Copenhagen","Crvena Zvezda":"Red Star Belgrade","Twente":"FC Twente","Panathinaikos":"Panathinaikos","KuPS Kuopio":"KuPS","Hajduk Split":"Hajduk Split","Lugano":"FC Lugano","Brann":"SK Brann","Riga":"Riga FC","Aarhus":"AGF Aarhus"});
 function getBadge(name){
  if(!badgeCache.has(name)){
   const query=uclQueries[name]||name;
@@ -50,7 +52,7 @@ function getBadge(name){
   badgeCache.set(name,fetch(url).then(r=>r.ok?r.json():null).then(d=>{
    const names=(d?.teams||[]).filter(t=>t.strSport==="Soccer"&&t.strBadge?.startsWith("https://"));
    const normalize=t=>String(t||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]/g,"");
-   const matched=names.find(x=>normalize(x.strTeam)===normalize(query)||normalize(x.strTeamAlternate)===normalize(query))||names[0];
+   const matched=names.find(x=>normalize(x.strTeam)===normalize(query)||normalize(x.strTeamAlternate)===normalize(query));
    return matched?.strBadge||null;
   }).catch(()=>null));
  }
@@ -60,14 +62,14 @@ function elementLogo(crestId,name,lg){
  const wrap=element("span","initial",(name||"FC").slice(0,2).toUpperCase());
  const img=document.createElement("img");img.alt="";img.loading="lazy";
  const source=crestId?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null;
- if(!source&&lg!=="ucl")return wrap;
+ if(!source&&!["ucl","uel","uecl"].includes(lg))return wrap;
  if(!source){
   getBadge(name).then(url=>{if(url&&wrap.isConnected){img.src=url;wrap.replaceWith(img);img.addEventListener("error",()=>{img.replaceWith(wrap)},{once:true})}});
   return wrap;
  }
  img.src=source;
  img.addEventListener("error",()=>{
-  if(lg==="ucl")getBadge(name).then(url=>{if(url&&img.isConnected){img.src=url}else img.replaceWith(wrap)});
+  if(["ucl","uel","uecl"].includes(lg))getBadge(name).then(url=>{if(url&&img.isConnected){img.src=url}else img.replaceWith(wrap)});
   else img.replaceWith(wrap);
  },{once:true});
  return img;
