@@ -36,7 +36,7 @@
     link.textContent = item.label;
     link.className = "shell-nav-link" + (item.key === "write" ? " shell-nav-write" : "");
   });
-  if (brand) brand.href = "index.html#matches";
+  if (brand) brand.href = "index.html";
 
   function closeMenu(restoreFocus) {
     const wasOpen = header.dataset.menuOpen === "true";
@@ -55,7 +55,7 @@
 
   function refresh() {
     let active = header.dataset.active;
-    if (isIndex) active = hashPages.includes(location.hash.slice(1)) ? location.hash.slice(1) : "matches";
+    if (isIndex) active = hashPages.includes(location.hash.slice(1)) ? location.hash.slice(1) : "";
     links.forEach(link => {
       const current = link.dataset.navKey === active;
       link.classList.toggle("is-active", current);
