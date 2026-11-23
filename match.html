@@ -7,11 +7,11 @@
   <meta name="description" content="90MIN LABS 경기 리포트. 최근 흐름과 홈·원정 기록을 연결해 경기 전망을 간결하게 읽습니다.">
   <title>경기 분석 | 90MIN LABS</title>
   <link rel="stylesheet" href="assets/match-page.css?v=20261123-layoutfix">
-  <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
-  <script src="assets/site-shell.js?v=20261123-today" defer></script>
+  <link rel="stylesheet" href="assets/site-shell.css?v=20261123-konav">
+  <script src="assets/site-shell.js?v=20261123-konav" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
-<script src="assets/site-language.js?v=20261123-korean-clean" defer></script>
+<script src="assets/site-language.js?v=20261123-konav" defer></script>
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
   <script src="assets/match-editorial.js?v=20261123-compact" defer></script>
   <script src="assets/match-page.js?v=20261123-layoutfix2" defer></script>
@@ -23,12 +23,12 @@
     <a class="shell-brand" href="index.html">90MIN LABS.</a>
     <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
     <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
-      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
-      <a class="shell-nav-link is-active" data-nav-key="matches" href="index.html#matches" aria-current="page">MATCHES</a>
-      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">LEAGUES</a>
-      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">COLUMNS</a>
-      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">MY PAGE</a>
-      <a class="shell-nav-link shell-nav-write" data-nav-key="write" href="index.html#write">칼럼 작성</a>
+      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">경기 전망</a>
+      <a class="shell-nav-link" data-nav-key="matches" href="index.html#matches">경기 일정</a>
+      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">리그</a>
+      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">칼럼</a>
+      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">마이페이지</a>
+      <div class="shell-language" role="group" aria-label="언어 선택"><button type="button" data-lang-button="ko" aria-pressed="true">국문</button><button type="button" data-lang-button="en" aria-pressed="false">영문</button></div>
     </nav>
   </div>
 </header>
@@ -106,6 +106,33 @@
     </div>
     <noscript><p class="error-state">경기 분석을 보려면 브라우저에서 JavaScript를 허용해 주세요. <a href="index.html#matches">경기 목록으로 이동</a></p></noscript>
   </main>
-  <footer class="site-footer"><div class="page-wrap footer-inner"><span><strong>90MIN LABS.</strong> © 2026</span><span>Independent Football Research</span><a href="index.html#matches">경기 일정 및 결과</a></div></footer>
+  <footer class="global-footer">
+  <div class="global-footer-inner">
+    <div class="global-footer-main">
+      <div class="global-footer-about">
+        <a class="global-footer-logo" href="index.html">90MIN LABS.</a>
+        <p>축구의 기록을 읽고,<br>다음 경기를 예측합니다.</p>
+      </div>
+      <div class="global-footer-group">
+        <h2>사이트 메뉴</h2>
+        <a href="index.html#matches">경기 일정</a>
+        <a href="index.html#predictions">경기 전망</a>
+        <a href="leagues.html">리그</a>
+        <a href="index.html#columns">칼럼</a>
+        <a href="mypage.html">마이페이지</a>
+      </div>
+      <div class="global-footer-group">
+        <h2>이용 안내</h2>
+        <a href="mypage.html">주간 예측 기록</a>
+        <a href="index.html#write">칼럼 작성</a>
+        <p>경기 일정과 기록은 제공처의 갱신 시점에 따라 반영이 지연될 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="global-footer-bottom">
+      <span>© 2026 90MIN LABS.</span>
+      <span>독립 축구 데이터 사이트 · 분석과 예측은 참고용이며 결과를 보장하지 않습니다.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
