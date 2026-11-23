@@ -18,7 +18,7 @@ main{padding-top:52px;padding-bottom:90px}.eyebrow{color:#526a86;font-size:12px;
 .tabs{display:flex;border-bottom:1px solid var(--line);overflow:auto;gap:38px;scrollbar-width:none}.tab{padding:16px 0 17px;border:none;border-bottom:2px solid transparent;color:#8691a0;white-space:nowrap;background:transparent;font-size:14px;font-weight:700}.tab[aria-selected=true]{border-bottom-color:var(--navy);color:var(--ink)}
 .toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:32px 0 17px}.section-name{font-size:21px;font-weight:700;letter-spacing:-.7px}.switch{display:flex;gap:3px;padding:3px;background:#f2f5f8;border-radius:8px}.switch button{border:0;border-radius:6px;background:transparent;color:#6e7c8d;font-weight:600;font-size:12px;padding:9px 17px}.switch button[aria-selected=true]{background:white;color:var(--ink);box-shadow:0 1px 4px #13243c16}
 .meta{display:flex;justify-content:space-between;gap:15px;color:#7b8998;font-size:12px;margin:0 0 18px;flex-wrap:wrap}.meta a{text-decoration:underline;text-underline-offset:3px}
-.tablebox{border-top:2px solid #1c3048;overflow-x:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;text-align:right;font-size:13px}th{color:#788698;font-weight:600;background:#fafbfd;font-size:12px}th,td{padding:15px 14px;border-bottom:1px solid #edf0f3}th:nth-child(2),td:nth-child(2){text-align:left}th:first-child,td:first-child{text-align:center;width:75px}tr:last-child td{border-bottom:1px solid var(--line)}.team{font-weight:650}.teamcode{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#edf2f7;border-radius:6px;margin-right:12px;font-size:10px;font-weight:800;color:#45617c}.points{font-weight:800;color:#172d48}
+.tablebox{border-top:2px solid #1c3048;overflow-x:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;text-align:right;font-size:13px}th{color:#788698;font-weight:600;background:#fafbfd;font-size:12px}th,td{padding:15px 14px;border-bottom:1px solid #edf0f3}th:nth-child(2),td:nth-child(2){text-align:left}th:first-child,td:first-child{text-align:center;width:75px}tr:last-child td{border-bottom:1px solid var(--line)}.team{font-weight:650}.teamlogo{width:28px;height:28px;object-fit:contain;vertical-align:middle;margin-right:12px}.league-logo{width:23px;height:23px;object-fit:contain;vertical-align:middle;margin-right:9px}.teamcode{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#edf2f7;border-radius:6px;margin-right:12px;font-size:10px;font-weight:800;color:#45617c}.points{font-weight:800;color:#172d48}
 .empty{border:1px solid var(--line);background:#fcfdfe;min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;gap:9px}.empty .mark{font-size:24px;color:#7c8da1}.empty strong{font-size:15px}.empty span{color:#7c8999;max-width:450px;font-size:12px}
 .note{padding:24px 28px;background:#f6f8fa;margin-top:40px;color:#657589;font-size:13px;display:flex;align-items:flex-start;gap:18px}.note b{color:#1d324c}
 footer{border-top:1px solid var(--line);padding:36px 0;color:#7d8a98;font-size:12px}.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -36,10 +36,10 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:#7d8a98;font-size:1
 <h1 class="heading">4대 리그 순위 및 득점 기록</h1>
 <p class="intro">프리미어리그, 세리에A, 분데스리가, 리그앙의 구단 순위와 선수 득점 기록을 확인할 수 있습니다.</p>
 <div role="tablist" aria-label="리그 선택" class="tabs" id="leagueTabs">
-<button class="tab" role="tab" aria-selected="true" data-league="epl">PREMIER LEAGUE</button>
-<button class="tab" role="tab" aria-selected="false" data-league="seriea">SERIE A</button>
-<button class="tab" role="tab" aria-selected="false" data-league="bundesliga">BUNDESLIGA</button>
-<button class="tab" role="tab" aria-selected="false" data-league="ligue1">LIGUE 1</button>
+<button class="tab" role="tab" aria-selected="true" data-league="epl"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_premier-league.png" onerror="this.style.display='none'">PREMIER LEAGUE</button>
+<button class="tab" role="tab" aria-selected="false" data-league="seriea"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_serie-a.png" onerror="this.style.display='none'">SERIE A</button>
+<button class="tab" role="tab" aria-selected="false" data-league="bundesliga"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_bundesliga.png" onerror="this.style.display='none'">BUNDESLIGA</button>
+<button class="tab" role="tab" aria-selected="false" data-league="ligue1"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_ligue-1.png" onerror="this.style.display='none'">LIGUE 1</button>
 </div>
 <section aria-live="polite">
 <div class="toolbar"><h2 class="section-name" id="leagueName">프리미어리그</h2>
@@ -52,13 +52,21 @@ footer{border-top:1px solid var(--line);padding:36px 0;color:#7d8a98;font-size:1
 </section>
 <div class="note"><span aria-hidden="true">◈</span><div><b>데이터 안내</b><div>리그마다 업데이트 시점이 다를 수 있습니다. 순위표와 득점 기록에 각각 출처를 표시하며 일부 리그는 확인된 구단까지만 표시합니다.</div></div></div>
 </main>
-<footer><div class="container foot"><span>90MIN LABS. © 2026</span><span>Independent Football Prediction & Research</span></div></footer>
+<footer><div class="container foot"><span>90MIN LABS. © 2026</span><span>비상업적 축구 데이터 연구 사이트</span></div></footer>
 <script>
 const labels={epl:"프리미어리그",seriea:"세리에 A",bundesliga:"분데스리가",ligue1:"리그앙"};
 const state={league:"epl",view:"standings",data:null};
 const area=document.querySelector("#dataArea");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const number=x=>x===null||x===undefined||x===''?'-':Number.isFinite(Number(x))?Number(x):'-';
+const clubSlugs={"Arsenal":"arsenal","Brighton":"brighton","Manchester City":"man-city","Liverpool":"liverpool","Bournemouth":"bournemouth","Leeds United":"leeds-united","Everton":"everton","Chelsea":"chelsea","Tottenham":"tottenham","Brentford":"brentford","Hull City":"hull-city","Aston Villa":"aston-villa","Newcastle":"newcastle","Fulham":"fulham","Ipswich Town":"ipswich-town","Nottingham Forest":"nottingham-forest","Sunderland":"sunderland","Manchester United":"man-united","Crystal Palace":"crystal-palace","Lazio":"lazio","Roma":"roma","Inter":"inter-milan","Milan":"ac-milan","Como":"como","Juventus":"juventus","Frosinone":"frosinone","Napoli":"napoli","Bologna":"bologna","Genoa":"genoa","Cagliari":"cagliari","Atalanta":"atalanta","Torino":"torino","Lecce":"lecce","Fiorentina":"fiorentina","Parma":"parma","Sassuolo":"sassuolo","Monza":"monza","Udinese":"udinese","Venezia":"venezia","Borussia Dortmund":"borussia-dortmund","Bayern München":"bayern-munich","Freiburg":"freiburg","RB Leipzig":"rb-leipzig","Bayer Leverkusen":"bayer-leverkusen","Werder Bremen":"werder-bremen","Eintracht Frankfurt":"eintracht-frankfurt","Stuttgart":"stuttgart","Augsburg":"augsburg","Hoffenheim":"hoffenheim","Hamburg":"hamburg","Mainz":"mainz","Köln":"cologne","Schalke":"schalke","Union Berlin":"union-berlin","Mönchengladbach":"borussia-monchengladbach","Paris Saint-Germain":"psg","Paris FC":"paris-fc","Lille":"lille","Lyon":"lyon","Marseille":"marseille","Brest":"brest","Nice":"nice","Monaco":"monaco","Rennes":"rennes","Lorient":"lorient","Lens":"lens","Toulouse":"toulouse"};
+function crest(name){
+ const slug=clubSlugs[name];
+ const initial='<span class="teamcode">'+esc(name.slice(0,3).toUpperCase())+'</span>';
+ if(!slug)return initial;
+ const url='https://sachawd.github.io/wc26-assets/club-logos/clubs_'+slug+'.png';
+ return '<img class="teamlogo" loading="lazy" alt="" src="'+esc(url)+'" data-abbr="'+esc(name.slice(0,3).toUpperCase())+'" onerror="this.outerHTML=\'<span class=&quot;teamcode&quot;>\'+this.dataset.abbr+\'</span>\'">';
+}
 function render(){
  document.querySelector("#leagueName").textContent=labels[state.league];
  document.querySelectorAll("[data-league]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.league===state.league)));
@@ -73,7 +81,7 @@ function render(){
  const isStandings=state.view==="standings";
  const head=isStandings?["순위","구단","경기","승","무","패","득실차","승점"]:["순위","선수 / 소속 구단","경기","득점","도움"];
  let body=rows.map((r,i)=>isStandings?
- '<tr><td>'+number(r.rank??i+1)+'</td><td class="team"><span class="teamcode">'+esc((r.shortName||r.team||"").slice(0,3).toUpperCase())+'</span>'+esc(r.team)+'</td><td>'+number(r.played)+'</td><td>'+number(r.won)+'</td><td>'+number(r.drawn)+'</td><td>'+number(r.lost)+'</td><td>'+number(r.goalDifference)+'</td><td class="points">'+number(r.points)+'</td></tr>':
+ '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+crest(r.team)+''+esc(r.team)+'</td><td>'+number(r.played)+'</td><td>'+number(r.won)+'</td><td>'+number(r.drawn)+'</td><td>'+number(r.lost)+'</td><td>'+number(r.goalDifference)+'</td><td class="points">'+number(r.points)+'</td></tr>':
  '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+esc(r.player)+(r.team?' <span style="color:#8793a3;font-weight:400">· '+esc(r.team)+'</span>':'')+'</td><td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
  ).join("");
  area.innerHTML='<div class="tablebox"><table><thead><tr>'+head.map(h=>'<th scope="col">'+h+'</th>').join("")+'</tr></thead><tbody>'+body+'</tbody></table></div>';
