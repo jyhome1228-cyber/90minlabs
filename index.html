@@ -86,32 +86,44 @@ section.block{padding:89px 0}
 <a class="league-tile" href="leagues.html"><span>FRANCE</span><strong>Ligue 1</strong></a>
 </div></section>
 <section class="block"><div class="section-head"><div><div class="eyebrow">축구 칼럼</div><h2>최신 축구 칼럼</h2><div class="sub">전술, 경기, 선수, 구단에 대한 다양한 관점을 담는 칼럼.</div></div><a href="#columns" class="more">칼럼 보기 →</a></div><div class="grid2"><div class="stat"><div class="eyebrow">칼럼 작성</div><h3>누구나 축구 칼럼을 작성할 수 있습니다.</h3><p>일반 회원의 칼럼 작성 및 운영자 검수 기반 발행 기능을 단계적으로 준비합니다.</p></div><div class="stat"><div class="eyebrow">칼럼 운영</div><h3>축구 경기와 전술을 다루는 글</h3><p>사실과 의견을 구분하고 저작권과 커뮤니티 운영 원칙을 지키는 축구 미디어를 지향합니다.</p></div></div></section></div>
-<div id="predictions" class="view hidden page"><div class="eyebrow">승무패 전망</div><h1>경기 전망</h1><p class="sub">프리미어리그, 세리에A, 분데스리가, 리그앙, 챔피언스리그의 사전 전망을 게시합니다.</p><div class="filters" id="predictionFilters"><button class="filter active" data-comp="all">전체</button><button class="filter" data-comp="EPL">EPL</button><button class="filter" data-comp="Serie A">SERIE A</button><button class="filter" data-comp="Bundesliga">BUNDESLIGA</button><button class="filter" data-comp="Ligue 1">LIGUE 1</button><button class="filter" data-comp="UCL">UCL</button></div><div class="empty"><strong>경기 전망 발행 준비 중</strong><p>신뢰할 수 있는 일정과 팀 통계를 연결한 뒤, 경기 전 분석을 이곳에 게시합니다. 근거 없는 승률이나 임의의 스코어는 표시하지 않습니다.</p><a class="btn" href="leagues.html">현재 리그 데이터 화면 보기</a></div></div>
+<div id="predictions" class="view hidden page"><div class="eyebrow">승무패 전망</div><h1>경기 전망</h1><p class="sub">프리미어리그, 세리에A, 분데스리가, 리그앙, 챔피언스리그의 사전 전망을 게시합니다.</p><div class="filters" id="predictionFilters"><button class="filter active" data-comp="all">전체</button><button class="filter" data-comp="EPL">EPL</button><button class="filter" data-comp="Championship">챔피언십</button><button class="filter" data-comp="Serie A">SERIE A</button><button class="filter" data-comp="Bundesliga">BUNDESLIGA</button><button class="filter" data-comp="Ligue 1">LIGUE 1</button><button class="filter" data-comp="UCL">UCL</button></div><div class="empty"><strong>경기 전망 발행 준비 중</strong><p>신뢰할 수 있는 일정과 팀 통계를 연결한 뒤, 경기 전 분석을 이곳에 게시합니다. 근거 없는 승률이나 임의의 스코어는 표시하지 않습니다.</p><a class="btn" href="leagues.html">현재 리그 데이터 화면 보기</a></div></div>
+
 
 <div id="matches" class="view hidden page matches-page">
   <h1 class="match-page-title">경기 일정 및 결과</h1>
-  <p class="match-intro">프리미어리그, 세리에A, 분데스리가, 리그앙, 챔피언스리그의 경기 일정과 최종 결과를 확인할 수 있습니다. 모든 시간은 한국시간 기준입니다.</p>
+  <p class="match-intro">프리미어리그, 잉글랜드 챔피언십, 세리에A, 분데스리가, 리그앙, 챔피언스리그의 경기 일정과 최종 결과를 확인할 수 있습니다. 모든 시간은 한국시간 기준입니다.</p>
+  <div class="match-today-bar" aria-label="오늘 날짜">
+    <div class="match-today-text">
+      <span>오늘</span>
+      <strong id="matchTodayDate">한국시간 기준 날짜 확인 중</strong>
+    </div>
+    <button class="match-nav-btn match-today-btn" id="matchGoToday" type="button">오늘 경기 보기</button>
+  </div>
   <div class="match-tabs" id="matchLeagueFilter" role="group" aria-label="대회 선택"></div>
   <div class="match-controls">
     <div class="match-week-nav">
-      <button class="match-nav-btn" type="button" id="matchPrevWeek">이전 주</button>
+      <button class="match-nav-btn" type="button" id="matchPrevWeek">이전 날</button>
       <strong id="matchWeekLabel" aria-live="polite">날짜 확인 중</strong>
-      <button class="match-nav-btn" type="button" id="matchNextWeek">다음 주</button>
+      <button class="match-nav-btn" type="button" id="matchNextWeek">다음 날</button>
     </div>
     <div class="match-control-right">
+      <label class="match-date-field" for="matchDateInput">날짜 선택 <input id="matchDateInput" type="date" aria-label="경기 날짜 직접 선택"></label>
+      <select id="matchViewMode" aria-label="날짜 표시 방식">
+        <option value="day">하루씩 보기</option>
+        <option value="week">주간 보기</option>
+      </select>
       <select id="matchStatusFilter" aria-label="경기 상태 선택">
         <option value="all">전체 경기</option>
         <option value="scheduled">예정 경기</option>
         <option value="finished">종료 경기</option>
         <option value="unverified">결과 미확인</option>
       </select>
-      <button class="match-nav-btn" type="button" id="matchGoToday">이번 주로 이동</button>
     </div>
   </div>
   <div class="match-meta"><span id="matchCounter">경기 목록</span><span id="matchUpdated">자료 확인 중</span></div>
   <div id="matchList" aria-live="polite"></div>
   <div class="match-source-note">
-    경기 일정과 종료 결과는 <a href="https://github.com/oladeeayo/open-matchday" rel="noopener noreferrer" target="_blank">open-matchday</a>의 비상업적 공개 자료를 기준으로 합니다. 공식 생중계 데이터가 아니므로 경기 일정과 점수가 늦게 반영될 수 있습니다. 종료가 확인되지 않은 경기는 최종 스코어를 표시하지 않습니다.
+    경기 일정과 종료 결과는 <a href="https://github.com/oladeeayo/open-matchday" rel="noopener noreferrer" target="_blank">open-matchday</a>의 비상업적 공개 자료를 기준으로 합니다. 경기 중계 데이터가 아니므로 일정과 점수 반영이 늦을 수 있습니다. 최종 결과가 확인되지 않은 경기는 스코어를 표시하지 않습니다.
   </div>
 </div>
 <div id="columns" class="view hidden page"><div class="eyebrow">FOOTBALL JOURNAL</div><h1>칼럼</h1><p class="sub">축구에 관한 깊이 있는 시선. 경기 전망, 전술, 선수, 구단 그리고 축구 문화.</p><div class="actions" style="margin-bottom:35px"><a href="#write" class="btn primary">칼럼 초안 작성하기</a></div><div class="empty"><strong>아직 발행된 칼럼이 없습니다.</strong><p>회원 및 에디터 발행 시스템을 준비 중입니다. 현재는 브라우저에서 칼럼 초안을 작성하고 내보내는 기능을 이용할 수 있습니다.</p></div></div>
