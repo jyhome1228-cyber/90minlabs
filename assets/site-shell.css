@@ -211,3 +211,39 @@ footer.global-footer{
  .global-footer-group p{font-size:11px}
  .global-footer-bottom{flex-direction:column;align-items:flex-start;gap:6px;padding:17px 0 23px;font-size:11px}
 }
+
+
+/* Compact language switcher: two equal taps, no tall vertical dividers. */
+.site-header[data-site-header] .shell-navigation .shell-language{
+ display:inline-flex!important;
+ align-items:center!important;justify-content:center!important;
+ flex-direction:row!important;
+ align-self:center!important;flex:0 0 auto!important;
+ width:auto!important;height:36px!important;min-height:36px!important;max-height:36px!important;
+ margin:0 0 0 8px!important;padding:3px!important;
+ border:1px solid #dedede!important;border-radius:5px!important;
+ background:#fff!important;gap:2px!important;
+ line-height:1!important;
+}
+.site-header[data-site-header] .shell-navigation .shell-language button{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ width:44px!important;min-width:44px!important;height:28px!important;min-height:28px!important;
+ flex:0 0 44px!important;
+ margin:0!important;padding:0 5px!important;
+ border:0!important;border-radius:3px!important;
+ background:transparent!important;color:#777!important;
+ font-size:12px!important;font-weight:500!important;line-height:1!important;
+ white-space:nowrap!important;
+}
+.site-header[data-site-header] .shell-navigation .shell-language button + button{border-left:0!important}
+.site-header[data-site-header] .shell-navigation .shell-language button[aria-pressed="true"],
+.site-header[data-site-header] .shell-navigation .shell-language button.is-selected{
+ background:#252525!important;color:#fff!important;font-weight:600!important;
+}
+@media(max-width:900px){
+ .site-header[data-site-header] .shell-navigation .shell-language{
+  order:10!important;align-self:flex-start!important;margin:13px 0 0!important;
+  width:auto!important;border:1px solid #dedede!important;
+  padding:3px!important;height:36px!important;
+ }
+}
