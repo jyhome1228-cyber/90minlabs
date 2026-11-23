@@ -59,20 +59,9 @@ function getBadge(name){
  return badgeCache.get(name);
 }
 function elementLogo(crestId,name,lg){
- const wrap=element("span","initial",(name||"FC").slice(0,2).toUpperCase());
- const img=document.createElement("img");img.alt="";img.loading="lazy";
- const source=crestId?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null;
- if(!source&&!["ucl","uel","uecl"].includes(lg))return wrap;
- if(!source){
-  getBadge(name).then(url=>{if(url&&wrap.isConnected){img.src=url;wrap.replaceWith(img);img.addEventListener("error",()=>{img.replaceWith(wrap)},{once:true})}});
-  return wrap;
- }
- img.src=source;
- img.addEventListener("error",()=>{
-  if(["ucl","uel","uecl"].includes(lg))getBadge(name).then(url=>{if(url&&img.isConnected){img.src=url}else img.replaceWith(wrap)});
-  else img.replaceWith(wrap);
- },{once:true});
- return img;
+ const wrap=element("span","initial",(name||"FC").replace(/[^\p{L}\p{N}]/gu,"").slice(0,2).toUpperCase()||"FC");
+ if(window.ClubLogos)ClubLogos.badge(wrap,{name:name,searchName:uclQueries[name]||name,crestId:crestId});
+ return wrap;
 }
 function teamElement(m,isHome){
  const key=isHome?"home":"away";
