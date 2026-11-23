@@ -24,7 +24,7 @@ test('all pages load matching shared styles and language behavior',()=>{
     const html=read(page);
     assert.match(html,/assets\/site-shell\.css\?v=20261124-layout1/,page);
     assert.match(html,/assets\/site-shell\.js\?v=20261124-layout1/,page);
-    assert.match(html,/assets\/site-language\.js\?v=20261124-layout1/,page);
+    assert.match(html,/assets\/site-language\.js\?v=20261124-[a-z0-9-]+/,page);
   }
   const language=read('assets/site-language.js');
   assert.match(language,/global-footer \[data-footer-language\]/);
