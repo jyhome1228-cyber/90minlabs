@@ -993,9 +993,9 @@
     },
     "laliga": {
       "standings": {
-        "updatedAt": "2026-11-23 12:00",
-        "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
-        "note": "경기 최종 결과로 계산한 순위. 승점 동률인 경우 공식 상대전적 우선 규칙과 순서가 다를 수 있음.",
+        "updatedAt": "2026-11-23 · 라리가 공식 확인",
+        "sourceUrl": "https://www.laliga.com/en-GB/laliga-easports/standing",
+        "note": "라리가 공식 순위표의 순위와 승점을 사용합니다. 경기 결과 수집 파일과 갱신 시점이 다를 수 있습니다.",
         "rows": [
           {
             "rank": 1,
@@ -1020,12 +1020,12 @@
           {
             "rank": 3,
             "team": "Atlético de Madrid",
-            "played": 12,
-            "won": 9,
+            "played": 13,
+            "won": 10,
             "drawn": 1,
             "lost": 2,
-            "goalDifference": 13,
-            "points": 28
+            "goalDifference": 16,
+            "points": 31
           },
           {
             "rank": 4,
@@ -1119,6 +1119,16 @@
           },
           {
             "rank": 13,
+            "team": "CA Osasuna",
+            "played": 13,
+            "won": 4,
+            "drawn": 3,
+            "lost": 6,
+            "goalDifference": -10,
+            "points": 15
+          },
+          {
+            "rank": 14,
             "team": "Celta",
             "played": 13,
             "won": 2,
@@ -1128,7 +1138,7 @@
             "points": 13
           },
           {
-            "rank": 14,
+            "rank": 15,
             "team": "Rayo Vallecano",
             "played": 12,
             "won": 3,
@@ -1138,33 +1148,23 @@
             "points": 12
           },
           {
-            "rank": 15,
-            "team": "Getafe CF",
-            "played": 12,
-            "won": 3,
-            "drawn": 3,
-            "lost": 6,
-            "goalDifference": -10,
-            "points": 12
-          },
-          {
             "rank": 16,
-            "team": "CA Osasuna",
-            "played": 12,
-            "won": 3,
-            "drawn": 3,
-            "lost": 6,
-            "goalDifference": -11,
-            "points": 12
-          },
-          {
-            "rank": 17,
             "team": "Valencia CF",
             "played": 13,
             "won": 3,
             "drawn": 3,
             "lost": 7,
             "goalDifference": -11,
+            "points": 12
+          },
+          {
+            "rank": 17,
+            "team": "Getafe CF",
+            "played": 13,
+            "won": 3,
+            "drawn": 3,
+            "lost": 7,
+            "goalDifference": -13,
             "points": 12
           },
           {
@@ -1190,11 +1190,11 @@
           {
             "rank": 20,
             "team": "Málaga CF",
-            "played": 12,
+            "played": 13,
             "won": 0,
             "drawn": 5,
-            "lost": 7,
-            "goalDifference": -14,
+            "lost": 8,
+            "goalDifference": -15,
             "points": 5
           }
         ]
