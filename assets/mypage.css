@@ -7,3 +7,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(min-width:851px){.prediction-slip{max-height:calc(100dvh - 126px);overflow-y:auto}.prediction-slip #selectedPicks{max-height:min(420px,max(110px,calc(100dvh - 510px)));overflow-y:auto;overscroll-behavior:contain;padding-right:5px}}
 .error-notice p{margin:0 0 8px}
+
+/* Account panel */
+.account-panel{border-top:1px solid #222;border-bottom:1px solid #e5e5e5;padding:25px 0;margin:15px 0 25px}.account-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.account-heading h2{font-size:16px;letter-spacing:-.3px}.account-heading p,.account-panel p{font-size:12px;color:#666;margin:6px 0 0}.account-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}.account-fields label{font-size:11px;font-weight:600;display:grid;gap:7px}.account-fields input{border:1px solid #ddd;border-radius:3px;padding:11px 12px;width:100%;font:inherit;font-size:13px}.account-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.account-message{min-height:18px}.account-panel [hidden]{display:none!important}#accountDisplay{font-size:15px}#accountSyncStatus{font-size:12px}@media(max-width:700px){.account-fields{grid-template-columns:1fr}.account-panel{padding:22px 0}.account-heading{align-items:flex-start}}
