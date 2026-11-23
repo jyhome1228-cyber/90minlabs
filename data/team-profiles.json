@@ -1943,7 +1943,9 @@
           "position": "Forward"
         }
       ],
-      "squadCheckedAt": "2026-11-23"
+      "squadCheckedAt": "2026-11-23",
+      "badgeUrl": "https://assets.footylogos.com/logos/sl-benfica/sl-benfica-logo-footylogos.svg",
+      "badgeSourceUrl": "https://www.footylogos.com/logos/sl-benfica"
     },
     "uel:Ferencváros": {
       "name": "Ferencváros",
