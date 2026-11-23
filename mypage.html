@@ -8,7 +8,7 @@
   <title>마이페이지 | 90MIN LABS</title>
   <link rel="stylesheet" href="assets/mypage.css?v=20261123-loadingfix">
   <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
-  <link rel="stylesheet" href="assets/mypage-layout.css?v=20261123-wide-folder">
+  <link rel="stylesheet" href="assets/mypage-layout.css?v=20261123-minimal2">
   <script src="assets/site-shell.js?v=20261123-today" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
@@ -16,7 +16,7 @@
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
   <script src="assets/prediction-store.js?v=20261123-folder" defer></script>
   <script src="assets/mypage.js?v=20261123-wide-folder" defer></script>
-  <script type="module" src="assets/account.js?v=20261123-folder"></script>
+  <script type="module" src="assets/account.js?v=20261123-minimal2"></script>
 </head>
 <body>
   <a class="skip-link" href="#myPageMain">내 예측으로 이동</a>
@@ -37,11 +37,11 @@
 <noscript><style>@media(max-width:900px){.site-header[data-site-header]{height:auto;position:relative}.site-header[data-site-header] .shell-inner{flex-wrap:wrap;padding-top:22px}.site-header[data-site-header] .shell-menu-button{display:none}.site-header[data-site-header] .shell-navigation{position:static;display:flex;width:100%;max-height:none;padding:10px 0 20px}}</style></noscript>
   <main class="mypage-wrap" id="myPageMain">
     <section class="mypage-heading" aria-labelledby="pageTitle">
-      <div><h1 id="pageTitle">마이페이지</h1><p>한 주의 경기를 고르고, 나의 예측을 기록하세요.</p></div>
-      <a class="text-link" href="#savedPredictions">저장한 기록 보기 <span id="savedCount">0</span></a>
+      <div><h1 id="pageTitle">마이페이지</h1></div>
+      <a class="text-link" href="#savedPredictions">저장한 폴더 <span id="savedCount">0</span></a>
     </section>
-    <section class="account-panel" aria-labelledby="accountTitle"><div class="account-heading"><div><h2 id="accountTitle">내 계정</h2><p id="accountStatus" role="status">계정 연결 상태를 확인하고 있습니다.</p></div><button id="accountSignout" type="button" class="outline-button" hidden>로그아웃</button></div><div id="accountAuth" hidden><div class="account-fields"><label>이메일<input id="accountEmail" type="email" autocomplete="email" maxlength="254" placeholder="email@example.com"></label><label>비밀번호<input id="accountPassword" type="password" autocomplete="current-password" minlength="8" maxlength="128" placeholder="8자 이상"></label><label id="accountNicknameWrap" hidden>닉네임<input id="accountNickname" type="text" maxlength="24" autocomplete="nickname" placeholder="사용할 닉네임"></label></div><div class="account-actions"><button id="accountLogin" class="solid-button" type="button">로그인</button><button id="accountRegister" class="outline-button" type="button">회원가입</button><button id="accountReset" class="text-button" type="button">비밀번호 재설정</button></div></div><div id="accountConnected" hidden><strong id="accountDisplay"></strong><p id="accountSyncStatus">계정별 예측 기록을 확인하고 있습니다.</p><div class="account-actions"><button id="accountImport" type="button" class="outline-button">이 브라우저의 기록 가져오기</button><button id="accountSync" type="button" class="outline-button">계정 기록 새로고침</button></div></div><p id="accountMessage" class="account-message" role="alert"></p></section>
-    <div class="storage-note"><span id="storageScope">로그인 전에는 이 브라우저에만 기록됩니다. 계정 동기화는 로그인 후 이용할 수 있습니다.</span><button class="text-button" id="exportRecords" type="button" disabled>기록 내보내기</button></div>
+    <section id="accountPanel" class="account-panel" aria-labelledby="accountTitle" hidden><div class="account-heading"><div><h2 id="accountTitle">내 계정</h2><p id="accountStatus" role="status">계정 연결 상태를 확인하고 있습니다.</p></div><button id="accountSignout" type="button" class="outline-button" hidden>로그아웃</button></div><div id="accountAuth" hidden><div class="account-fields"><label>이메일<input id="accountEmail" type="email" autocomplete="email" maxlength="254" placeholder="email@example.com"></label><label>비밀번호<input id="accountPassword" type="password" autocomplete="current-password" minlength="8" maxlength="128" placeholder="8자 이상"></label><label id="accountNicknameWrap" hidden>닉네임<input id="accountNickname" type="text" maxlength="24" autocomplete="nickname" placeholder="사용할 닉네임"></label></div><div class="account-actions"><button id="accountLogin" class="solid-button" type="button">로그인</button><button id="accountRegister" class="outline-button" type="button">회원가입</button><button id="accountReset" class="text-button" type="button">비밀번호 재설정</button></div></div><div id="accountConnected" hidden><strong id="accountDisplay"></strong><p id="accountSyncStatus">계정별 예측 기록을 확인하고 있습니다.</p><div class="account-actions"><button id="accountImport" type="button" class="outline-button">이 브라우저의 기록 가져오기</button><button id="accountSync" type="button" class="outline-button">계정 기록 새로고침</button></div></div><p id="accountMessage" class="account-message" role="alert"></p></section>
+    <div class="storage-note"><span id="storageScope" class="sr-only">브라우저에 저장된 기록입니다.</span><button class="text-button" id="exportRecords" type="button" disabled>기록 내보내기</button></div>
     <div id="pageNotice" class="page-notice" role="status" aria-live="polite" hidden></div>
     <div id="storageError" class="error-notice" role="alert" hidden><p id="storageErrorMessage"></p><button class="text-button" id="retryStorage" type="button">저장 공간 다시 확인</button></div>
     <section class="record-stats" aria-label="나의 예측 기록 요약">
@@ -51,10 +51,10 @@
       <div><span>적중률</span><strong id="statAccuracy">—</strong><small id="statSettled">결과 확인 전</small></div>
     </section>
     <section id="predictionBuilder" class="prediction-builder" aria-labelledby="builderTitle">
-      <div class="section-heading"><h2 id="builderTitle">주간 예측 만들기</h2><span>월요일–일요일 · 한국시간</span></div>
+      <div class="section-heading"><h2 id="builderTitle">주간 예측</h2></div>
       <div class="week-toolbar">
         <div class="week-navigation"><button class="outline-button" id="prevWeek" type="button">이전 주</button><h3 id="weekLabel"></h3><button class="outline-button" id="nextWeek" type="button">다음 주</button></div>
-        <div class="week-tools"><button class="text-button" id="currentWeek" type="button">이번 주</button><label for="weekDate">주간 이동</label><input id="weekDate" type="date" aria-label="보고 싶은 주의 날짜"></div>
+        <div class="week-tools"><button class="text-button" id="currentWeek" type="button">이번 주</button><label class="sr-only" for="weekDate">주간 이동</label><input id="weekDate" type="date" aria-label="보고 싶은 주의 날짜"></div>
       </div>
       <div id="fixturesLoading" class="loading-state" role="status">이번 주 경기를 불러오고 있습니다.</div>
       <div id="fixturesError" class="load-error" hidden><p>경기 일정을 불러오지 못했습니다.</p><button id="retryFixtures" class="outline-button" type="button">다시 불러오기</button></div>
@@ -65,7 +65,7 @@
             <label class="sr-only" for="fixtureSearch">팀 이름 검색</label><input id="fixtureSearch" type="search" placeholder="팀 이름 검색" autocomplete="off">
             <label class="sr-only" for="fixtureFilter">경기 표시</label><select id="fixtureFilter"><option value="available">선택 가능한 경기</option><option value="all">전체 경기</option><option value="selected">선택한 경기</option></select>
           </div>
-          <div class="picker-caption"><span id="fixtureCount"></span><span>승·무·패는 홈팀 기준</span></div>
+          <div class="picker-caption"><span id="fixtureCount"></span><span class="sr-only">승·무·패는 홈팀 기준</span></div>
           <div id="fixtureList"></div>
         </div>
         <aside class="prediction-slip" aria-labelledby="slipTitle">
@@ -74,7 +74,7 @@
             <label class="set-title-label" for="setTitle">폴더 이름</label><input id="setTitle" type="text" maxlength="80" placeholder="예: 이번 주 관심 경기" autocomplete="off">
             <div class="slip-meta"><span id="slipWeek"></span><strong id="selectionCount">0경기 선택</strong></div>
             <div id="selectedPicks"></div>
-            <p class="slip-note">경기 시작 전까지 선택을 변경할 수 있습니다.</p>
+            <p class="slip-note sr-only">경기 시작 전까지 선택을 변경할 수 있습니다.</p>
             <button id="saveSet" class="solid-button save-button" type="submit" disabled>예측 폴더 저장</button>
             <p id="saveStatus" class="save-status" role="status" aria-live="polite"></p>
           </form>
@@ -82,7 +82,7 @@
       </div>
     </section>
     <section id="savedPredictions" class="saved-section" aria-labelledby="savedTitle">
-      <div class="section-heading"><div><h2 id="savedTitle">저장한 예측</h2><p>주간별 선택과 경기 결과를 함께 확인하세요.</p></div><label><span class="sr-only">기록 주간 선택</span><select id="historyWeek"><option value="all">모든 주간</option></select></label></div>
+      <div class="section-heading"><div><h2 id="savedTitle">저장한 폴더</h2></div><label><span class="sr-only">기록 주간 선택</span><select id="historyWeek"><option value="all">모든 주간</option></select></label></div>
       <div id="savedSets"></div>
     </section>
   </main>
