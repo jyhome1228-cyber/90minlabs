@@ -216,3 +216,8 @@
  .daily-card-clubs{gap:10px;padding:16px 0 12px}
  .daily-card .daily-team{font-size:13px}
 }
+
+/* Directly connect the title to the fixture cards, without summary bars. */
+.home-daily-top{padding-bottom:23px;margin-bottom:0}
+.home-daily .daily-grid{margin-top:0}
+@media(max-width:650px){.home-daily-top{padding-bottom:18px}}
