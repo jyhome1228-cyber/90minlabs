@@ -218,7 +218,7 @@ function route(){
  
  document.querySelectorAll(".view").forEach(el=>el.classList.toggle("hidden",el.id!==page));
  if(window.SiteShell)window.SiteShell.refresh();
- window.scrollTo(0,0);document.title=({home:"오늘의 경기",predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
+ if(id==="today"&&page==="home"){requestAnimationFrame(()=>document.getElementById("today")?.scrollIntoView({behavior:"smooth",block:"start"}));}else window.scrollTo(0,0);document.title=({home:"오늘의 경기",predictions:"경기 전망",matches:"경기 일정과 분석",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS";
 }
 window.addEventListener("hashchange",route);route();
 const fields=["category","author","draftTitle","draftBody"];function formText(){return "90MIN LABS 칼럼 초안\n카테고리: "+document.querySelector("#category").value+"\n필명: "+document.querySelector("#author").value+"\n제목: "+document.querySelector("#draftTitle").value+"\n\n"+document.querySelector("#draftBody").value}
