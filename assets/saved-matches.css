@@ -1,0 +1,53 @@
+/* Saved fixtures — shared My Page archive and match detail action. */
+.match-pick-link.save-fixture-action{
+ background:#202326;border-color:#202326;color:#fff;
+ font-size:13px;line-height:1.45;min-height:39px;
+ display:inline-flex;align-items:center;justify-content:center;
+ padding:9px 15px;margin-left:auto;text-decoration:none;
+}
+.match-pick-link.save-fixture-action[aria-pressed="true"]{background:#eaf3ee;border-color:#bdd8c8;color:#16784f}
+.match-pick-link.save-fixture-action:hover:not(:disabled){opacity:.86}
+.match-pick-link.save-fixture-action:disabled{background:#f4f4f4;border-color:#ddd;color:#888}
+.match-pick-link.secondary-pick-action{margin-left:0;color:#454545;border-color:#dedede;background:#fff;min-height:39px}
+.match-pick-link.saved-fixtures-link{display:inline-flex;margin-left:0;padding:7px 0;border:0;min-height:39px;font-size:12px;color:#555;text-decoration:underline;text-underline-offset:4px}
+.match-pick-link.saved-fixtures-link[hidden]{display:none!important}
+.saved-match-action-status{min-height:19px;font-size:12px;line-height:1.6;color:#58635e;text-align:right;margin:4px 0 0}
+.saved-matches-section{padding:26px 0 38px;border-top:1px solid #252525;border-bottom:1px solid #e5e5e5;margin:14px 0 38px;scroll-margin-top:110px}
+.saved-matches-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:18px}
+.saved-matches-heading h2{font-size:21px;line-height:1.5;font-weight:650;letter-spacing:-.025em;margin:0 0 5px}
+.saved-matches-heading p{font-size:13px;line-height:1.7;color:#707070;margin:0}
+.saved-matches-heading small{font-size:13px;color:#7d7d7d;white-space:nowrap}
+.saved-matches-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 22px}
+.saved-match-card{display:flex;flex-direction:column;min-width:0;min-height:155px;padding:16px 0 18px;border-top:1px solid #e6e6e6}
+.saved-match-top{display:flex;justify-content:space-between;gap:10px;font-size:11px;line-height:1.5;color:#858585}
+.saved-match-league{white-space:nowrap}
+.saved-match-title{font-size:15px;line-height:1.5;font-weight:650;letter-spacing:-.018em;overflow-wrap:anywhere;text-decoration:none;color:#252525;margin:12px 0 4px}
+.saved-match-title:hover{text-decoration:underline;text-underline-offset:4px}
+.saved-match-state{font-size:12px;color:#777;line-height:1.7;margin:0}
+.saved-match-actions{display:flex;gap:17px;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:12px}
+.saved-match-actions a,.saved-match-actions button{font:600 12px/1.6 Pretendard,sans-serif;color:#515151;border:0;background:none;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.saved-match-actions button{color:#919191}
+.saved-match-actions a:hover,.saved-match-actions button:hover{color:#161616}
+.saved-match-empty,.saved-match-error{grid-column:1/-1;font-size:13px;color:#747474;line-height:1.75;padding:15px 0 18px;margin:0}
+.saved-match-error{color:#8e4848}
+.saved-match-more{border:1px solid #ddd;background:white;color:#333;font-size:12px;min-height:37px;padding:7px 16px;margin-top:20px;cursor:pointer}
+.saved-match-more:hover{border-color:#777}
+.saved-match-more[hidden]{display:none!important}
+.saved-match-page-status{font-size:12px;color:#777;min-height:15px;margin:12px 0 0}
+@media(max-width:1050px){.saved-matches-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){
+ .match-pick-link.save-fixture-action{margin-left:auto;font-size:12px}
+}
+@media(max-width:650px){
+ .saved-matches-section{padding:24px 0 30px;margin:0 0 32px}
+ .saved-matches-heading h2{font-size:19px}
+ .saved-matches-heading p{font-size:12px}
+ .saved-matches-list{grid-template-columns:minmax(0,1fr)}
+ .saved-match-card{min-height:145px}
+ .saved-match-action-status{text-align:left}
+ .page-tools:has(#saveFixture){flex-wrap:wrap;gap:7px 14px}
+ .page-tools #saveFixture{order:5;margin-left:0;flex:1 1 auto;min-width:150px}
+ .page-tools #recordPrediction{order:6;margin-left:0;flex:1 1 auto;min-width:120px}
+ .page-tools #viewSavedFixtures{order:7;margin-left:0}
+ .page-tools #copyLink{order:4;margin-left:auto}
+}
