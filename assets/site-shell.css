@@ -351,3 +351,16 @@ body .home-hero-dual{width:min(calc(100% - 80px),var(--site-content-max))}
  .global-footer-about{grid-column:1/-1}
  .global-footer-bottom{gap:7px}
 }
+
+
+/* Club-result colouring shares the match-report W/D/L semantics. */
+#formStats .form-stat.is-win strong{color:#16784f}
+#formStats .form-stat.is-draw strong{color:#616b77}
+#formStats .form-stat.is-loss strong{color:#2f66ab}
+.match .score .result-outcome{
+ display:block;margin-top:2px;font-size:11px;line-height:1.45;
+ font-weight:700;text-align:right;white-space:nowrap
+}
+.match .score .result-outcome.is-win{color:#16784f}
+.match .score .result-outcome.is-draw{color:#616b77}
+.match .score .result-outcome.is-loss{color:#2f66ab}
