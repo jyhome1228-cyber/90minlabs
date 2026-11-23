@@ -16,7 +16,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
       "managerSourceType": "official",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "epl:Brighton": {
       "name": "Brighton",
@@ -30,7 +33,11 @@
       "manager": "Fabian Hürzeler",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ]
     },
     "epl:Manchester City": {
       "name": "Manchester City",
@@ -46,7 +53,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
       "managerSourceType": "official",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "epl:Liverpool": {
       "name": "Liverpool",
@@ -62,7 +72,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
       "managerSourceType": "official",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "epl:Bournemouth": {
       "name": "Bournemouth",
@@ -76,7 +89,11 @@
       "manager": "Marco Rose",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "epl:Leeds United": {
       "name": "Leeds United",
@@ -179,7 +196,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
       "managerSourceType": "official",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "epl:Newcastle": {
       "name": "Newcastle",
@@ -263,7 +283,11 @@
       "manager": "Régis Le Bris",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "epl:Manchester United": {
       "name": "Manchester United",
@@ -279,7 +303,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
       "managerSourceType": "official",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "epl:Crystal Palace": {
       "name": "Crystal Palace",
@@ -293,7 +320,11 @@
       "manager": "Pierre Sage",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers",
-      "managerSourceType": "official"
+      "managerSourceType": "official",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "seriea:Lazio": {
       "name": "Lazio",
@@ -323,7 +354,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "seriea:Inter": {
       "name": "Inter",
@@ -339,7 +373,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "seriea:Milan": {
       "name": "Milan",
@@ -354,7 +391,11 @@
       "manager": "Rúben Amorim",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "seriea:Como": {
       "name": "Como",
@@ -369,7 +410,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "seriea:Juventus": {
       "name": "Juventus",
@@ -384,7 +428,11 @@
       "manager": "Luciano Spalletti",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "seriea:Frosinone": {
       "name": "Frosinone",
@@ -413,7 +461,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "seriea:Bologna": {
       "name": "Bologna",
@@ -470,7 +521,11 @@
       "manager": "Maurizio Sarri",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ]
     },
     "seriea:Torino": {
       "name": "Torino",
@@ -596,7 +651,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "bundesliga:Bayern München": {
       "name": "Bayern München",
@@ -612,7 +670,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "bundesliga:Freiburg": {
       "name": "Freiburg",
@@ -626,7 +687,11 @@
       "manager": "Julian Schuster",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ]
     },
     "bundesliga:RB Leipzig": {
       "name": "RB Leipzig",
@@ -642,7 +707,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "bundesliga:Bayer Leverkusen": {
       "name": "Bayer Leverkusen",
@@ -656,7 +724,11 @@
       "manager": "Carles Martínez Novell",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "bundesliga:Werder Bremen": {
       "name": "Werder Bremen",
@@ -699,7 +771,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "bundesliga:Elversberg": {
       "name": "Elversberg",
@@ -740,7 +815,11 @@
       "manager": "Christian Ilzer",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "bundesliga:Hamburg": {
       "name": "Hamburg",
@@ -853,7 +932,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ligue1:Paris FC": {
       "name": "Paris FC",
@@ -882,7 +964,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ligue1:Lyon": {
       "name": "Lyon",
@@ -897,7 +982,11 @@
       "manager": "Carlos Vicens",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "ligue1:Marseille": {
       "name": "Marseille",
@@ -912,7 +1001,11 @@
       "manager": "Bruno Génésio",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "ligue1:Brest": {
       "name": "Brest",
@@ -955,7 +1048,11 @@
       "manager": "Filipe Luís",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ]
     },
     "ligue1:Rennes": {
       "name": "Rennes",
@@ -969,7 +1066,11 @@
       "manager": "Franck Haise",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "ligue1:Lorient": {
       "name": "Lorient",
@@ -998,7 +1099,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ligue1:Toulouse": {
       "name": "Toulouse",
@@ -1119,7 +1223,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "laliga:CA Osasuna": {
       "name": "CA Osasuna",
@@ -1147,7 +1254,11 @@
       "manager": "Claudio Giráldez",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "laliga:Deportivo Alavés": {
       "name": "Deportivo Alavés",
@@ -1190,7 +1301,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "laliga:Getafe CF": {
       "name": "Getafe CF",
@@ -1204,7 +1318,11 @@
       "manager": "José Bordalás",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ]
     },
     "laliga:Levante UD": {
       "name": "Levante UD",
@@ -1303,7 +1421,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "laliga:Real Madrid": {
       "name": "Real Madrid",
@@ -1318,7 +1439,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "laliga:Real Sociedad": {
       "name": "Real Sociedad",
@@ -1332,7 +1456,11 @@
       "manager": "Pellegrino Matarazzo",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ]
     },
     "laliga:Sevilla FC": {
       "name": "Sevilla FC",
@@ -1375,7 +1503,10 @@
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
       "managerSourceType": "season-summary",
-      "uefaLeaguePhase": true
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:AEK Athens": {
       "name": "AEK Athens",
@@ -1386,7 +1517,10 @@
       "searchName": "AEK Athens",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Bodø/Glimt": {
       "name": "Bodø/Glimt",
@@ -1397,7 +1531,10 @@
       "searchName": "Bodo Glimt",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Club Brugge": {
       "name": "Club Brugge",
@@ -1408,7 +1545,10 @@
       "searchName": "Club Brugge",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Fenerbahçe": {
       "name": "Fenerbahçe",
@@ -1419,7 +1559,10 @@
       "searchName": "Fenerbahce",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Feyenoord": {
       "name": "Feyenoord",
@@ -1430,7 +1573,10 @@
       "searchName": "Feyenoord",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Galatasaray": {
       "name": "Galatasaray",
@@ -1441,7 +1587,10 @@
       "searchName": "Galatasaray",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:LASK": {
       "name": "LASK",
@@ -1452,7 +1601,10 @@
       "searchName": "LASK Linz",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:PSV": {
       "name": "PSV",
@@ -1463,7 +1615,10 @@
       "searchName": "PSV Eindhoven",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Porto": {
       "name": "Porto",
@@ -1474,7 +1629,10 @@
       "searchName": "FC Porto",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:S. Bratislava": {
       "name": "S. Bratislava",
@@ -1485,7 +1643,10 @@
       "searchName": "Slovan Bratislava",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Sabah": {
       "name": "Sabah",
@@ -1496,7 +1657,10 @@
       "searchName": "Sabah FC",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Shakhtar": {
       "name": "Shakhtar",
@@ -1507,7 +1671,10 @@
       "searchName": "Shakhtar Donetsk",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Slavia Praha": {
       "name": "Slavia Praha",
@@ -1518,7 +1685,10 @@
       "searchName": "Slavia Prague",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Sporting CP": {
       "name": "Sporting CP",
@@ -1529,7 +1699,10 @@
       "searchName": "Sporting CP",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
     },
     "ucl:Viking": {
       "name": "Viking",
@@ -1540,7 +1713,780 @@
       "searchName": "Viking FK",
       "historyKo": null,
       "uefaLeaguePhase": true,
-      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/"
+      "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "uefaCompetitions": [
+        "ucl"
+      ]
+    },
+    "uel:Benfica": {
+      "name": "Benfica",
+      "league": "uel",
+      "wikiKo": "Benfica",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Benfica",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Ferencváros": {
+      "name": "Ferencváros",
+      "league": "uel",
+      "wikiKo": "Ferencváros",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Ferencvaros",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Union SG": {
+      "name": "Union SG",
+      "league": "uel",
+      "wikiKo": "Union SG",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Union Saint-Gilloise",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Olympiacos": {
+      "name": "Olympiacos",
+      "league": "uel",
+      "wikiKo": "Olympiacos",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Olympiacos",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Beşiktaş": {
+      "name": "Beşiktaş",
+      "league": "uel",
+      "wikiKo": "Beşiktaş",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Besiktas",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:GNK Dinamo": {
+      "name": "GNK Dinamo",
+      "league": "uel",
+      "wikiKo": "GNK Dinamo",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Dinamo Zagreb",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Levski Sofia": {
+      "name": "Levski Sofia",
+      "league": "uel",
+      "wikiKo": "Levski Sofia",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Levski Sofia",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:N.E.C.": {
+      "name": "N.E.C.",
+      "league": "uel",
+      "wikiKo": "N.E.C.",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "NEC Nijmegen",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:AZ Alkmaar": {
+      "name": "AZ Alkmaar",
+      "league": "uel",
+      "wikiKo": "AZ Alkmaar",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "AZ Alkmaar",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Anderlecht": {
+      "name": "Anderlecht",
+      "league": "uel",
+      "wikiKo": "Anderlecht",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Anderlecht",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:OFI Crete": {
+      "name": "OFI Crete",
+      "league": "uel",
+      "wikiKo": "OFI Crete",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "OFI",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Omonia": {
+      "name": "Omonia",
+      "league": "uel",
+      "wikiKo": "Omonia",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Omonia",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Torreense": {
+      "name": "Torreense",
+      "league": "uel",
+      "wikiKo": "Torreense",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Torreense",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Sparta Praha": {
+      "name": "Sparta Praha",
+      "league": "uel",
+      "wikiKo": "Sparta Praha",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Sparta Praha",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Sturm Graz": {
+      "name": "Sturm Graz",
+      "league": "uel",
+      "wikiKo": "Sturm Graz",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Sturm Graz",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Celje": {
+      "name": "Celje",
+      "league": "uel",
+      "wikiKo": "Celje",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Celje",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Salzburg": {
+      "name": "Salzburg",
+      "league": "uel",
+      "wikiKo": "Salzburg",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Salzburg",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Jagiellonia": {
+      "name": "Jagiellonia",
+      "league": "uel",
+      "wikiKo": "Jagiellonia",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Jagiellonia",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Viktoria Plzeň": {
+      "name": "Viktoria Plzeň",
+      "league": "uel",
+      "wikiKo": "Viktoria Plzeň",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Viktoria Plzen",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Celtic": {
+      "name": "Celtic",
+      "league": "uel",
+      "wikiKo": "Celtic",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Celtic",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:H. Beer-Sheva": {
+      "name": "H. Beer-Sheva",
+      "league": "uel",
+      "wikiKo": "H. Beer-Sheva",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Hapoel Beer Sheva",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Lillestrøm": {
+      "name": "Lillestrøm",
+      "league": "uel",
+      "wikiKo": "Lillestrøm",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Lillestrøm",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Lech Poznań": {
+      "name": "Lech Poznań",
+      "league": "uel",
+      "wikiKo": "Lech Poznań",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Lech Poznan",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uel:Ararat-Armenia": {
+      "name": "Ararat-Armenia",
+      "league": "uel",
+      "wikiKo": "Ararat-Armenia",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Ararat-Armenia",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uel"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+    },
+    "uecl:Lugano": {
+      "name": "Lugano",
+      "league": "uecl",
+      "wikiKo": "Lugano",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Lugano",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Panathinaikos": {
+      "name": "Panathinaikos",
+      "league": "uecl",
+      "wikiKo": "Panathinaikos",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Panathinaikos FC",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Twente": {
+      "name": "Twente",
+      "league": "uecl",
+      "wikiKo": "Twente",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Twente",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Brann": {
+      "name": "Brann",
+      "league": "uecl",
+      "wikiKo": "Brann",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "SK Brann",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Copenhagen": {
+      "name": "Copenhagen",
+      "league": "uecl",
+      "wikiKo": "Copenhagen",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Copenhagen",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Univ. Craiova": {
+      "name": "Univ. Craiova",
+      "league": "uecl",
+      "wikiKo": "Univ. Craiova",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Universitatea Craiova",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Mjällby": {
+      "name": "Mjällby",
+      "league": "uecl",
+      "wikiKo": "Mjällby",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Mjallby",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Sint-Truidense": {
+      "name": "Sint-Truidense",
+      "league": "uecl",
+      "wikiKo": "Sint-Truidense",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Sint Truiden",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Ajax": {
+      "name": "Ajax",
+      "league": "uecl",
+      "wikiKo": "Ajax",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Ajax",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Trabzonspor": {
+      "name": "Trabzonspor",
+      "league": "uecl",
+      "wikiKo": "Trabzonspor",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Trabzonspor",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Hajduk Split": {
+      "name": "Hajduk Split",
+      "league": "uecl",
+      "wikiKo": "Hajduk Split",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Hajduk Split",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Crvena Zvezda": {
+      "name": "Crvena Zvezda",
+      "league": "uecl",
+      "wikiKo": "Crvena Zvezda",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Red Star Belgrade",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Braga": {
+      "name": "Braga",
+      "league": "uecl",
+      "wikiKo": "Braga",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Braga",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Gent": {
+      "name": "Gent",
+      "league": "uecl",
+      "wikiKo": "Gent",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Gent",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Riga": {
+      "name": "Riga",
+      "league": "uecl",
+      "wikiKo": "Riga",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Riga FC",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Thun": {
+      "name": "Thun",
+      "league": "uecl",
+      "wikiKo": "Thun",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Thun",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Borac": {
+      "name": "Borac",
+      "league": "uecl",
+      "wikiKo": "Borac",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Borac Banja Luka",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:L. Red Imps": {
+      "name": "L. Red Imps",
+      "league": "uecl",
+      "wikiKo": "L. Red Imps",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Lincoln Red Imps",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Jablonec": {
+      "name": "Jablonec",
+      "league": "uecl",
+      "wikiKo": "Jablonec",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Jablonec",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Aarhus": {
+      "name": "Aarhus",
+      "league": "uecl",
+      "wikiKo": "Aarhus",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "AGF Aarhus",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Nordsjælland": {
+      "name": "Nordsjælland",
+      "league": "uecl",
+      "wikiKo": "Nordsjælland",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Nordsjaelland",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Egnatia": {
+      "name": "Egnatia",
+      "league": "uecl",
+      "wikiKo": "Egnatia",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Egnatia",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Kairat Almaty": {
+      "name": "Kairat Almaty",
+      "league": "uecl",
+      "wikiKo": "Kairat Almaty",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Kairat",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:CSKA Sofia": {
+      "name": "CSKA Sofia",
+      "league": "uecl",
+      "wikiKo": "CSKA Sofia",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "CSKA Sofia",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Iberia Tbilisi": {
+      "name": "Iberia Tbilisi",
+      "league": "uecl",
+      "wikiKo": "Iberia Tbilisi",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FC Iberia 1999",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Pafos": {
+      "name": "Pafos",
+      "league": "uecl",
+      "wikiKo": "Pafos",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Pafos",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Hearts": {
+      "name": "Hearts",
+      "league": "uecl",
+      "wikiKo": "Hearts",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Hearts",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:KuPS Kuopio": {
+      "name": "KuPS Kuopio",
+      "league": "uecl",
+      "wikiKo": "KuPS Kuopio",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "KuPS",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Midtjylland": {
+      "name": "Midtjylland",
+      "league": "uecl",
+      "wikiKo": "Midtjylland",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Midtjylland",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Inter Escaldes": {
+      "name": "Inter Escaldes",
+      "league": "uecl",
+      "wikiKo": "Inter Escaldes",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "Inter Club d'Escaldes",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+    },
+    "uecl:Kauno Žalgiris": {
+      "name": "Kauno Žalgiris",
+      "league": "uecl",
+      "wikiKo": "Kauno Žalgiris",
+      "cityKo": null,
+      "stadium": null,
+      "searchName": "FK Kauno Zalgiris",
+      "historyKo": null,
+      "uefaLeaguePhase": true,
+      "uefaCompetitions": [
+        "uecl"
+      ],
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
     }
   },
   "uclParticipants": {
@@ -1838,5 +2784,889 @@
         "crestId": 94
       }
     ]
+  },
+  "uefaCompetitions": {
+    "ucl": {
+      "season": "2026/27",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
+      "teams": [
+        {
+          "name": "AEK Athens",
+          "displayName": "AEK 아테네 FC",
+          "team": "AEK Athens",
+          "league": "ucl",
+          "cityKo": "아테네",
+          "crestId": null
+        },
+        {
+          "name": "Arsenal",
+          "displayName": "아스널 FC",
+          "team": "Arsenal",
+          "league": "epl",
+          "cityKo": "런던",
+          "crestId": 57
+        },
+        {
+          "name": "Aston Villa",
+          "displayName": "애스턴 빌라 FC",
+          "team": "Aston Villa",
+          "league": "epl",
+          "cityKo": "버밍엄",
+          "crestId": 58
+        },
+        {
+          "name": "Atleti",
+          "displayName": "아틀레티코 마드리드",
+          "team": "Atlético de Madrid",
+          "league": "laliga",
+          "cityKo": "마드리드",
+          "crestId": 78
+        },
+        {
+          "name": "Barcelona",
+          "displayName": "FC 바르셀로나",
+          "team": "FC Barcelona",
+          "league": "laliga",
+          "cityKo": "바르셀로나",
+          "crestId": 81
+        },
+        {
+          "name": "Bayern München",
+          "displayName": "FC 바이에른 뮌헨",
+          "team": "Bayern München",
+          "league": "bundesliga",
+          "cityKo": "뮌헨",
+          "crestId": 5
+        },
+        {
+          "name": "B. Dortmund",
+          "displayName": "보루시아 도르트문트",
+          "team": "Borussia Dortmund",
+          "league": "bundesliga",
+          "cityKo": "도르트문트",
+          "crestId": 4
+        },
+        {
+          "name": "Bodø/Glimt",
+          "displayName": "FK 보되/글림트",
+          "team": "Bodø/Glimt",
+          "league": "ucl",
+          "cityKo": "보되",
+          "crestId": null
+        },
+        {
+          "name": "Club Brugge",
+          "displayName": "클뤼프 브뤼허 KV",
+          "team": "Club Brugge",
+          "league": "ucl",
+          "cityKo": "브뤼허",
+          "crestId": null
+        },
+        {
+          "name": "Como",
+          "displayName": "코모 1907",
+          "team": "Como",
+          "league": "seriea",
+          "cityKo": "코모",
+          "crestId": 7397
+        },
+        {
+          "name": "Fenerbahçe",
+          "displayName": "페네르바흐체 SK",
+          "team": "Fenerbahçe",
+          "league": "ucl",
+          "cityKo": "이스탄불",
+          "crestId": null
+        },
+        {
+          "name": "Feyenoord",
+          "displayName": "페예노르트 로테르담",
+          "team": "Feyenoord",
+          "league": "ucl",
+          "cityKo": "로테르담",
+          "crestId": null
+        },
+        {
+          "name": "Galatasaray",
+          "displayName": "갈라타사라이 SK",
+          "team": "Galatasaray",
+          "league": "ucl",
+          "cityKo": "이스탄불",
+          "crestId": null
+        },
+        {
+          "name": "Inter",
+          "displayName": "FC 인테르나치오날레 밀라노",
+          "team": "Inter",
+          "league": "seriea",
+          "cityKo": "밀라노",
+          "crestId": 108
+        },
+        {
+          "name": "LASK",
+          "displayName": "LASK 린츠",
+          "team": "LASK",
+          "league": "ucl",
+          "cityKo": "린츠",
+          "crestId": null
+        },
+        {
+          "name": "Leipzig",
+          "displayName": "RB 라이프치히",
+          "team": "RB Leipzig",
+          "league": "bundesliga",
+          "cityKo": "라이프치히",
+          "crestId": 721
+        },
+        {
+          "name": "Lens",
+          "displayName": "RC 랑스",
+          "team": "Lens",
+          "league": "ligue1",
+          "cityKo": "랑스",
+          "crestId": 546
+        },
+        {
+          "name": "Lille",
+          "displayName": "릴 OSC",
+          "team": "Lille",
+          "league": "ligue1",
+          "cityKo": "릴",
+          "crestId": 521
+        },
+        {
+          "name": "Liverpool",
+          "displayName": "리버풀 FC",
+          "team": "Liverpool",
+          "league": "epl",
+          "cityKo": "리버풀",
+          "crestId": 64
+        },
+        {
+          "name": "Man City",
+          "displayName": "맨체스터 시티 FC",
+          "team": "Manchester City",
+          "league": "epl",
+          "cityKo": "맨체스터",
+          "crestId": 65
+        },
+        {
+          "name": "Man Utd",
+          "displayName": "맨체스터 유나이티드 FC",
+          "team": "Manchester United",
+          "league": "epl",
+          "cityKo": "맨체스터",
+          "crestId": 66
+        },
+        {
+          "name": "Napoli",
+          "displayName": "SSC 나폴리",
+          "team": "Napoli",
+          "league": "seriea",
+          "cityKo": "나폴리",
+          "crestId": 113
+        },
+        {
+          "name": "Paris",
+          "displayName": "파리 생제르맹 FC",
+          "team": "Paris Saint-Germain",
+          "league": "ligue1",
+          "cityKo": "파리",
+          "crestId": 524
+        },
+        {
+          "name": "Porto",
+          "displayName": "FC 포르투",
+          "team": "Porto",
+          "league": "ucl",
+          "cityKo": "포르투",
+          "crestId": null
+        },
+        {
+          "name": "PSV",
+          "displayName": "PSV 에인트호번",
+          "team": "PSV",
+          "league": "ucl",
+          "cityKo": "에인트호번",
+          "crestId": null
+        },
+        {
+          "name": "Real Betis",
+          "displayName": "레알 베티스",
+          "team": "Real Betis",
+          "league": "laliga",
+          "cityKo": "세비야",
+          "crestId": 90
+        },
+        {
+          "name": "Real Madrid",
+          "displayName": "레알 마드리드",
+          "team": "Real Madrid",
+          "league": "laliga",
+          "cityKo": "마드리드",
+          "crestId": 86
+        },
+        {
+          "name": "Roma",
+          "displayName": "AS 로마",
+          "team": "Roma",
+          "league": "seriea",
+          "cityKo": "로마",
+          "crestId": 100
+        },
+        {
+          "name": "S. Bratislava",
+          "displayName": "ŠK 슬로반 브라티슬라바",
+          "team": "S. Bratislava",
+          "league": "ucl",
+          "cityKo": "브라티슬라바",
+          "crestId": null
+        },
+        {
+          "name": "Sabah",
+          "displayName": "사바흐 FC",
+          "team": "Sabah",
+          "league": "ucl",
+          "cityKo": "바쿠",
+          "crestId": null
+        },
+        {
+          "name": "Shakhtar",
+          "displayName": "FC 샤흐타르 도네츠크",
+          "team": "Shakhtar",
+          "league": "ucl",
+          "cityKo": "도네츠크",
+          "crestId": null
+        },
+        {
+          "name": "Slavia Praha",
+          "displayName": "SK 슬라비아 프라하",
+          "team": "Slavia Praha",
+          "league": "ucl",
+          "cityKo": "프라하",
+          "crestId": null
+        },
+        {
+          "name": "Sporting CP",
+          "displayName": "스포르팅 CP",
+          "team": "Sporting CP",
+          "league": "ucl",
+          "cityKo": "리스본",
+          "crestId": null
+        },
+        {
+          "name": "Stuttgart",
+          "displayName": "VfB 슈투트가르트",
+          "team": "Stuttgart",
+          "league": "bundesliga",
+          "cityKo": "슈투트가르트",
+          "crestId": 10
+        },
+        {
+          "name": "Viking",
+          "displayName": "비킹 FK",
+          "team": "Viking",
+          "league": "ucl",
+          "cityKo": "스타방에르",
+          "crestId": null
+        },
+        {
+          "name": "Villarreal",
+          "displayName": "비야레알 CF",
+          "team": "Villarreal CF",
+          "league": "laliga",
+          "cityKo": "비야레알",
+          "crestId": 94
+        }
+      ]
+    },
+    "uel": {
+      "season": "2026/27",
+      "sourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "teams": [
+        {
+          "name": "Benfica",
+          "team": "Benfica",
+          "league": "uel",
+          "displayName": "Benfica",
+          "searchName": "Benfica",
+          "crestId": null
+        },
+        {
+          "name": "Bournemouth",
+          "team": "Bournemouth",
+          "league": "epl",
+          "displayName": "AFC 본머스",
+          "searchName": "Bournemouth",
+          "crestId": 1044
+        },
+        {
+          "name": "Ferencváros",
+          "team": "Ferencváros",
+          "league": "uel",
+          "displayName": "Ferencváros",
+          "searchName": "Ferencvaros",
+          "crestId": null
+        },
+        {
+          "name": "Union SG",
+          "team": "Union SG",
+          "league": "uel",
+          "displayName": "Union SG",
+          "searchName": "Union Saint-Gilloise",
+          "crestId": null
+        },
+        {
+          "name": "Juventus",
+          "team": "Juventus",
+          "league": "seriea",
+          "displayName": "유벤투스 FC",
+          "searchName": "Juventus",
+          "crestId": 109
+        },
+        {
+          "name": "Olympiacos",
+          "team": "Olympiacos",
+          "league": "uel",
+          "displayName": "Olympiacos",
+          "searchName": "Olympiacos",
+          "crestId": null
+        },
+        {
+          "name": "Leverkusen",
+          "team": "Bayer Leverkusen",
+          "league": "bundesliga",
+          "displayName": "바이어 04 레버쿠젠",
+          "searchName": "Bayer Leverkusen",
+          "crestId": 3
+        },
+        {
+          "name": "Beşiktaş",
+          "team": "Beşiktaş",
+          "league": "uel",
+          "displayName": "Beşiktaş",
+          "searchName": "Besiktas",
+          "crestId": null
+        },
+        {
+          "name": "GNK Dinamo",
+          "team": "GNK Dinamo",
+          "league": "uel",
+          "displayName": "GNK Dinamo",
+          "searchName": "Dinamo Zagreb",
+          "crestId": null
+        },
+        {
+          "name": "Levski Sofia",
+          "team": "Levski Sofia",
+          "league": "uel",
+          "displayName": "Levski Sofia",
+          "searchName": "Levski Sofia",
+          "crestId": null
+        },
+        {
+          "name": "Sunderland",
+          "team": "Sunderland",
+          "league": "epl",
+          "displayName": "선덜랜드 AFC",
+          "searchName": "Sunderland",
+          "crestId": 71
+        },
+        {
+          "name": "N.E.C.",
+          "team": "N.E.C.",
+          "league": "uel",
+          "displayName": "N.E.C.",
+          "searchName": "NEC Nijmegen",
+          "crestId": null
+        },
+        {
+          "name": "Lyon",
+          "team": "Lyon",
+          "league": "ligue1",
+          "displayName": "올랭피크 리옹",
+          "searchName": "Lyon",
+          "crestId": 523
+        },
+        {
+          "name": "AZ Alkmaar",
+          "team": "AZ Alkmaar",
+          "league": "uel",
+          "displayName": "AZ Alkmaar",
+          "searchName": "AZ Alkmaar",
+          "crestId": null
+        },
+        {
+          "name": "Anderlecht",
+          "team": "Anderlecht",
+          "league": "uel",
+          "displayName": "Anderlecht",
+          "searchName": "Anderlecht",
+          "crestId": null
+        },
+        {
+          "name": "OFI Crete",
+          "team": "OFI Crete",
+          "league": "uel",
+          "displayName": "OFI Crete",
+          "searchName": "OFI",
+          "crestId": null
+        },
+        {
+          "name": "Rennes",
+          "team": "Rennes",
+          "league": "ligue1",
+          "displayName": "스타드 렌 FC",
+          "searchName": "Rennes",
+          "crestId": 529
+        },
+        {
+          "name": "Omonia",
+          "team": "Omonia",
+          "league": "uel",
+          "displayName": "Omonia",
+          "searchName": "Omonia",
+          "crestId": null
+        },
+        {
+          "name": "Torreense",
+          "team": "Torreense",
+          "league": "uel",
+          "displayName": "Torreense",
+          "searchName": "Torreense",
+          "crestId": null
+        },
+        {
+          "name": "Real Sociedad",
+          "team": "Real Sociedad",
+          "league": "laliga",
+          "displayName": "레알 소시에다드",
+          "searchName": "Real Sociedad",
+          "crestId": 92
+        },
+        {
+          "name": "Crystal Palace",
+          "team": "Crystal Palace",
+          "league": "epl",
+          "displayName": "크리스털 팰리스 FC",
+          "searchName": "Crystal Palace",
+          "crestId": 354
+        },
+        {
+          "name": "Sparta Praha",
+          "team": "Sparta Praha",
+          "league": "uel",
+          "displayName": "Sparta Praha",
+          "searchName": "Sparta Praha",
+          "crestId": null
+        },
+        {
+          "name": "Hoffenheim",
+          "team": "Hoffenheim",
+          "league": "bundesliga",
+          "displayName": "TSG 1899 호펜하임",
+          "searchName": "Hoffenheim",
+          "crestId": 2
+        },
+        {
+          "name": "Sturm Graz",
+          "team": "Sturm Graz",
+          "league": "uel",
+          "displayName": "Sturm Graz",
+          "searchName": "Sturm Graz",
+          "crestId": null
+        },
+        {
+          "name": "Celje",
+          "team": "Celje",
+          "league": "uel",
+          "displayName": "Celje",
+          "searchName": "Celje",
+          "crestId": null
+        },
+        {
+          "name": "Salzburg",
+          "team": "Salzburg",
+          "league": "uel",
+          "displayName": "Salzburg",
+          "searchName": "Salzburg",
+          "crestId": null
+        },
+        {
+          "name": "Celta",
+          "team": "Celta",
+          "league": "laliga",
+          "displayName": "셀타 비고",
+          "searchName": "Celta Vigo",
+          "crestId": 558
+        },
+        {
+          "name": "Milan",
+          "team": "Milan",
+          "league": "seriea",
+          "displayName": "AC 밀란",
+          "searchName": "AC Milan",
+          "crestId": 98
+        },
+        {
+          "name": "Jagiellonia",
+          "team": "Jagiellonia",
+          "league": "uel",
+          "displayName": "Jagiellonia",
+          "searchName": "Jagiellonia",
+          "crestId": null
+        },
+        {
+          "name": "Viktoria Plzeň",
+          "team": "Viktoria Plzeň",
+          "league": "uel",
+          "displayName": "Viktoria Plzeň",
+          "searchName": "Viktoria Plzen",
+          "crestId": null
+        },
+        {
+          "name": "Marseille",
+          "team": "Marseille",
+          "league": "ligue1",
+          "displayName": "올랭피크 드 마르세유",
+          "searchName": "Marseille",
+          "crestId": 516
+        },
+        {
+          "name": "Celtic",
+          "team": "Celtic",
+          "league": "uel",
+          "displayName": "Celtic",
+          "searchName": "Celtic",
+          "crestId": null
+        },
+        {
+          "name": "H. Beer-Sheva",
+          "team": "H. Beer-Sheva",
+          "league": "uel",
+          "displayName": "H. Beer-Sheva",
+          "searchName": "Hapoel Beer Sheva",
+          "crestId": null
+        },
+        {
+          "name": "Lillestrøm",
+          "team": "Lillestrøm",
+          "league": "uel",
+          "displayName": "Lillestrøm",
+          "searchName": "Lillestrøm",
+          "crestId": null
+        },
+        {
+          "name": "Lech Poznań",
+          "team": "Lech Poznań",
+          "league": "uel",
+          "displayName": "Lech Poznań",
+          "searchName": "Lech Poznan",
+          "crestId": null
+        },
+        {
+          "name": "Ararat-Armenia",
+          "team": "Ararat-Armenia",
+          "league": "uel",
+          "displayName": "Ararat-Armenia",
+          "searchName": "FC Ararat-Armenia",
+          "crestId": null
+        }
+      ]
+    },
+    "uecl": {
+      "season": "2026/27",
+      "sourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "teams": [
+        {
+          "name": "Lugano",
+          "team": "Lugano",
+          "league": "uecl",
+          "displayName": "Lugano",
+          "searchName": "FC Lugano",
+          "crestId": null
+        },
+        {
+          "name": "Panathinaikos",
+          "team": "Panathinaikos",
+          "league": "uecl",
+          "displayName": "Panathinaikos",
+          "searchName": "Panathinaikos FC",
+          "crestId": null
+        },
+        {
+          "name": "Twente",
+          "team": "Twente",
+          "league": "uecl",
+          "displayName": "Twente",
+          "searchName": "FC Twente",
+          "crestId": null
+        },
+        {
+          "name": "Monaco",
+          "team": "Monaco",
+          "league": "ligue1",
+          "displayName": "AS 모나코 FC",
+          "searchName": "Monaco",
+          "crestId": 548
+        },
+        {
+          "name": "Brighton",
+          "team": "Brighton",
+          "league": "epl",
+          "displayName": "브라이턴 & 호브 앨비언 FC",
+          "searchName": "Brighton and Hove Albion",
+          "crestId": 397
+        },
+        {
+          "name": "Brann",
+          "team": "Brann",
+          "league": "uecl",
+          "displayName": "Brann",
+          "searchName": "SK Brann",
+          "crestId": null
+        },
+        {
+          "name": "Copenhagen",
+          "team": "Copenhagen",
+          "league": "uecl",
+          "displayName": "Copenhagen",
+          "searchName": "FC Copenhagen",
+          "crestId": null
+        },
+        {
+          "name": "Univ. Craiova",
+          "team": "Univ. Craiova",
+          "league": "uecl",
+          "displayName": "Univ. Craiova",
+          "searchName": "Universitatea Craiova",
+          "crestId": null
+        },
+        {
+          "name": "Mjällby",
+          "team": "Mjällby",
+          "league": "uecl",
+          "displayName": "Mjällby",
+          "searchName": "Mjallby",
+          "crestId": null
+        },
+        {
+          "name": "Sint-Truidense",
+          "team": "Sint-Truidense",
+          "league": "uecl",
+          "displayName": "Sint-Truidense",
+          "searchName": "Sint Truiden",
+          "crestId": null
+        },
+        {
+          "name": "Ajax",
+          "team": "Ajax",
+          "league": "uecl",
+          "displayName": "Ajax",
+          "searchName": "Ajax",
+          "crestId": null
+        },
+        {
+          "name": "Trabzonspor",
+          "team": "Trabzonspor",
+          "league": "uecl",
+          "displayName": "Trabzonspor",
+          "searchName": "Trabzonspor",
+          "crestId": null
+        },
+        {
+          "name": "Hajduk Split",
+          "team": "Hajduk Split",
+          "league": "uecl",
+          "displayName": "Hajduk Split",
+          "searchName": "Hajduk Split",
+          "crestId": null
+        },
+        {
+          "name": "Freiburg",
+          "team": "Freiburg",
+          "league": "bundesliga",
+          "displayName": "SC 프라이부르크",
+          "searchName": "Freiburg",
+          "crestId": 17
+        },
+        {
+          "name": "Crvena Zvezda",
+          "team": "Crvena Zvezda",
+          "league": "uecl",
+          "displayName": "Crvena Zvezda",
+          "searchName": "Red Star Belgrade",
+          "crestId": null
+        },
+        {
+          "name": "Atalanta",
+          "team": "Atalanta",
+          "league": "seriea",
+          "displayName": "아탈란타 BC",
+          "searchName": "Atalanta",
+          "crestId": 102
+        },
+        {
+          "name": "Braga",
+          "team": "Braga",
+          "league": "uecl",
+          "displayName": "Braga",
+          "searchName": "Braga",
+          "crestId": null
+        },
+        {
+          "name": "Gent",
+          "team": "Gent",
+          "league": "uecl",
+          "displayName": "Gent",
+          "searchName": "Gent",
+          "crestId": null
+        },
+        {
+          "name": "Riga",
+          "team": "Riga",
+          "league": "uecl",
+          "displayName": "Riga",
+          "searchName": "Riga FC",
+          "crestId": null
+        },
+        {
+          "name": "Thun",
+          "team": "Thun",
+          "league": "uecl",
+          "displayName": "Thun",
+          "searchName": "Thun",
+          "crestId": null
+        },
+        {
+          "name": "Borac",
+          "team": "Borac",
+          "league": "uecl",
+          "displayName": "Borac",
+          "searchName": "Borac Banja Luka",
+          "crestId": null
+        },
+        {
+          "name": "L. Red Imps",
+          "team": "L. Red Imps",
+          "league": "uecl",
+          "displayName": "L. Red Imps",
+          "searchName": "Lincoln Red Imps",
+          "crestId": null
+        },
+        {
+          "name": "Jablonec",
+          "team": "Jablonec",
+          "league": "uecl",
+          "displayName": "Jablonec",
+          "searchName": "Jablonec",
+          "crestId": null
+        },
+        {
+          "name": "Aarhus",
+          "team": "Aarhus",
+          "league": "uecl",
+          "displayName": "Aarhus",
+          "searchName": "AGF Aarhus",
+          "crestId": null
+        },
+        {
+          "name": "Nordsjælland",
+          "team": "Nordsjælland",
+          "league": "uecl",
+          "displayName": "Nordsjælland",
+          "searchName": "FC Nordsjaelland",
+          "crestId": null
+        },
+        {
+          "name": "Egnatia",
+          "team": "Egnatia",
+          "league": "uecl",
+          "displayName": "Egnatia",
+          "searchName": "Egnatia",
+          "crestId": null
+        },
+        {
+          "name": "Kairat Almaty",
+          "team": "Kairat Almaty",
+          "league": "uecl",
+          "displayName": "Kairat Almaty",
+          "searchName": "FC Kairat",
+          "crestId": null
+        },
+        {
+          "name": "CSKA Sofia",
+          "team": "CSKA Sofia",
+          "league": "uecl",
+          "displayName": "CSKA Sofia",
+          "searchName": "CSKA Sofia",
+          "crestId": null
+        },
+        {
+          "name": "Iberia Tbilisi",
+          "team": "Iberia Tbilisi",
+          "league": "uecl",
+          "displayName": "Iberia Tbilisi",
+          "searchName": "FC Iberia 1999",
+          "crestId": null
+        },
+        {
+          "name": "Pafos",
+          "team": "Pafos",
+          "league": "uecl",
+          "displayName": "Pafos",
+          "searchName": "Pafos",
+          "crestId": null
+        },
+        {
+          "name": "Getafe",
+          "team": "Getafe CF",
+          "league": "laliga",
+          "displayName": "헤타페 CF",
+          "searchName": "Getafe",
+          "crestId": 82
+        },
+        {
+          "name": "Hearts",
+          "team": "Hearts",
+          "league": "uecl",
+          "displayName": "Hearts",
+          "searchName": "Hearts",
+          "crestId": null
+        },
+        {
+          "name": "KuPS Kuopio",
+          "team": "KuPS Kuopio",
+          "league": "uecl",
+          "displayName": "KuPS Kuopio",
+          "searchName": "KuPS",
+          "crestId": null
+        },
+        {
+          "name": "Midtjylland",
+          "team": "Midtjylland",
+          "league": "uecl",
+          "displayName": "Midtjylland",
+          "searchName": "Midtjylland",
+          "crestId": null
+        },
+        {
+          "name": "Inter Escaldes",
+          "team": "Inter Escaldes",
+          "league": "uecl",
+          "displayName": "Inter Escaldes",
+          "searchName": "Inter Club d'Escaldes",
+          "crestId": null
+        },
+        {
+          "name": "Kauno Žalgiris",
+          "team": "Kauno Žalgiris",
+          "league": "uecl",
+          "displayName": "Kauno Žalgiris",
+          "searchName": "FK Kauno Zalgiris",
+          "crestId": null
+        }
+      ]
+    }
   }
 }
