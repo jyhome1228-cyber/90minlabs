@@ -76,11 +76,11 @@ section.block{padding:89px 0}
 </style>
 <link rel="stylesheet" href="./assets/home.css?v=20261123-dual-copy">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-loadingfix">
-<link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
-<script src="assets/site-shell.js?v=20261123-today" defer></script>
+<link rel="stylesheet" href="assets/site-shell.css?v=20261123-konav">
+<script src="assets/site-shell.js?v=20261123-konav" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
-<script src="assets/site-language.js?v=20261123-korean-clean" defer></script>
+<script src="assets/site-language.js?v=20261123-konav" defer></script>
 <script>
 (function(){
  if(location.hash && location.hash!=="#home")return;
@@ -102,12 +102,12 @@ section.block{padding:89px 0}
     <a class="shell-brand" href="index.html">90MIN LABS.</a>
     <button class="shell-menu-button" id="siteMenuButton" type="button" aria-controls="siteNavigation" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
     <nav class="shell-navigation" id="siteNavigation" aria-label="사이트 메뉴">
-      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">PREDICTIONS</a>
-      <a class="shell-nav-link is-active" data-nav-key="matches" href="index.html#matches" aria-current="page">MATCHES</a>
-      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">LEAGUES</a>
-      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">COLUMNS</a>
-      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">MY PAGE</a>
-      <a class="shell-nav-link shell-nav-write" data-nav-key="write" href="index.html#write">칼럼 작성</a>
+      <a class="shell-nav-link" data-nav-key="predictions" href="index.html#predictions">경기 전망</a>
+      <a class="shell-nav-link" data-nav-key="matches" href="index.html#matches">경기 일정</a>
+      <a class="shell-nav-link" data-nav-key="leagues" href="leagues.html">리그</a>
+      <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">칼럼</a>
+      <a class="shell-nav-link" data-nav-key="mypage" href="mypage.html">마이페이지</a>
+      <div class="shell-language" role="group" aria-label="언어 선택"><button type="button" data-lang-button="ko" aria-pressed="true">국문</button><button type="button" data-lang-button="en" aria-pressed="false">영문</button></div>
     </nav>
   </div>
 </header>
@@ -204,7 +204,34 @@ section.block{padding:89px 0}
 <div id="columns" class="view hidden page"><div class="eyebrow">FOOTBALL JOURNAL</div><h1>칼럼</h1><p class="sub">축구에 관한 깊이 있는 시선. 경기 전망, 전술, 선수, 구단 그리고 축구 문화.</p><div class="actions" style="margin-bottom:35px"><a href="#write" class="btn primary">칼럼 초안 작성하기</a></div><div class="empty"><strong>아직 발행된 칼럼이 없습니다.</strong><p>회원 및 에디터 발행 시스템을 준비 중입니다. 현재는 브라우저에서 칼럼 초안을 작성하고 내보내는 기능을 이용할 수 있습니다.</p></div></div>
 <div id="write" class="view hidden page"><div class="eyebrow">CONTRIBUTOR DESK</div><h1>칼럼 작성</h1><p class="sub">축구에 관한 글을 준비해보세요. 현재는 초안 작성·미리보기·텍스트 파일 저장 기능만 제공하며, 공개 발행 기능은 아직 연결되지 않았습니다.</p><div class="info">현재 작성한 글은 서버로 전송되거나 공개되지 않습니다. 브라우저를 닫기 전에 텍스트 파일로 저장하세요. 회원가입 및 운영자 검수 시스템은 후속 개발 항목입니다.</div><form class="form" id="draftForm" style="margin-top:32px"><div class="field"><label for="category">카테고리</label><select id="category"><option>경기 전망</option><option>경기 리뷰</option><option>전술 분석</option><option>선수와 구단</option><option>축구 문화</option></select></div><div class="field"><label for="author">필명</label><input id="author" maxlength="40" placeholder="칼럼에 사용할 필명을 입력하세요"></div><div class="field"><label for="draftTitle">제목</label><input id="draftTitle" required maxlength="120" placeholder="칼럼 제목을 입력하세요"></div><div class="field"><label for="draftBody">본문</label><textarea id="draftBody" required placeholder="직접 작성한 축구 칼럼을 입력하세요"></textarea></div><div class="actions" style="margin-top:0"><button type="button" class="btn" id="previewBtn">미리보기</button><button type="button" class="btn primary" id="downloadBtn">텍스트로 저장</button></div></form><div class="preview hidden" id="draftPreview"></div></div>
 </main>
-<footer><div class="wrap foot"><span><strong>90MIN LABS.</strong> © 2026 · Independent Football Research</span><span>경기 전망은 확률적 분석이며 결과를 보장하지 않습니다. 베팅 기능 및 도박 사이트 연결은 제공하지 않습니다.</span></div></footer>
+<footer class="global-footer">
+  <div class="global-footer-inner">
+    <div class="global-footer-main">
+      <div class="global-footer-about">
+        <a class="global-footer-logo" href="index.html">90MIN LABS.</a>
+        <p>축구의 기록을 읽고,<br>다음 경기를 예측합니다.</p>
+      </div>
+      <div class="global-footer-group">
+        <h2>사이트 메뉴</h2>
+        <a href="index.html#matches">경기 일정</a>
+        <a href="index.html#predictions">경기 전망</a>
+        <a href="leagues.html">리그</a>
+        <a href="index.html#columns">칼럼</a>
+        <a href="mypage.html">마이페이지</a>
+      </div>
+      <div class="global-footer-group">
+        <h2>이용 안내</h2>
+        <a href="mypage.html">주간 예측 기록</a>
+        <a href="index.html#write">칼럼 작성</a>
+        <p>경기 일정과 기록은 제공처의 갱신 시점에 따라 반영이 지연될 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="global-footer-bottom">
+      <span>© 2026 90MIN LABS.</span>
+      <span>독립 축구 데이터 사이트 · 분석과 예측은 참고용이며 결과를 보장하지 않습니다.</span>
+    </div>
+  </div>
+</footer>
 <script>
 const pages=["home","predictions","matches","columns","write"];
 function route(){
