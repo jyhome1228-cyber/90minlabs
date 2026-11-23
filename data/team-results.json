@@ -10182,6 +10182,2202 @@
           "provider": "fixturedl"
         }
       ]
+    },
+    "uel:Benfica": {
+      "team": "Benfica",
+      "league": "uel",
+      "matchName": "Benfica",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Benfica",
+          "away": "Lech Poznan",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Omonia",
+          "away": "Benfica",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Benfica",
+          "away": "Celtic",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Milan",
+          "away": "Benfica",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Ferencváros": {
+      "team": "Ferencváros",
+      "league": "uel",
+      "matchName": "Ferencváros",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Milan",
+          "away": "Ferencváros",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Ferencváros",
+          "away": "Torreense",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Ferencváros",
+          "away": "Viktoria Plzen",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Celtic",
+          "away": "Ferencváros",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Union SG": {
+      "team": "Union SG",
+      "league": "uel",
+      "matchName": "Union SG",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Celta",
+          "away": "Union SG",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Union SG",
+          "away": "H. Beer-Sheva",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Union SG",
+          "away": "Real Sociedad",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Viktoria Plzen",
+          "away": "Union SG",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Olympiacos": {
+      "team": "Olympiacos",
+      "league": "uel",
+      "matchName": "Olympiacos",
+      "lastMatchDate": "2026-11-04",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-04",
+          "home": "Rennes",
+          "away": "Olympiacos",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Olympiacos",
+          "away": "Sparta Praha",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Marseille",
+          "away": "Olympiacos",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Olympiacos",
+          "away": "Jagiellonia",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Beşiktaş": {
+      "team": "Beşiktaş",
+      "league": "uel",
+      "matchName": "Besiktas",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Celtic",
+          "away": "Besiktas",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Besiktas",
+          "away": "Crystal Palace",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Hoffenheim",
+          "away": "Besiktas",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Besiktas",
+          "away": "Marseille",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:GNK Dinamo": {
+      "team": "GNK Dinamo",
+      "league": "uel",
+      "matchName": "GNK Dinamo",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Sunderland",
+          "away": "GNK Dinamo",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "GNK Dinamo",
+          "away": "N.E.C.",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "GNK Dinamo",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "H. Beer-Sheva",
+          "away": "GNK Dinamo",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Levski Sofia": {
+      "team": "Levski Sofia",
+      "league": "uel",
+      "matchName": "Levski Sofia",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Levski Sofia",
+          "away": "Jagiellonia",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Viktoria Plzen",
+          "away": "Levski Sofia",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "N.E.C.",
+          "away": "Levski Sofia",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Levski Sofia",
+          "away": "Salzburg",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:N.E.C.": {
+      "team": "N.E.C.",
+      "league": "uel",
+      "matchName": "N.E.C.",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "N.E.C.",
+          "away": "Omonia",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "GNK Dinamo",
+          "away": "N.E.C.",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "N.E.C.",
+          "away": "Levski Sofia",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Juventus",
+          "away": "N.E.C.",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:AZ Alkmaar": {
+      "team": "AZ Alkmaar",
+      "league": "uel",
+      "matchName": "AZ Alkmaar",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "AZ Alkmaar",
+          "away": "Juventus",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Ararat-Armenia",
+          "away": "AZ Alkmaar",
+          "homeScore": 0,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "AZ Alkmaar",
+          "away": "H. Beer-Sheva",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Sunderland",
+          "away": "AZ Alkmaar",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Anderlecht": {
+      "team": "Anderlecht",
+      "league": "uel",
+      "matchName": "Anderlecht",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Anderlecht",
+          "away": "Salzburg",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Jagiellonia",
+          "away": "Anderlecht",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "GNK Dinamo",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Anderlecht",
+          "away": "Lyon",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:OFI Crete": {
+      "team": "OFI Crete",
+      "league": "uel",
+      "matchName": "OFI Crete",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "H. Beer-Sheva",
+          "away": "OFI Crete",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "OFI Crete",
+          "away": "Leverkusen",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Rennes",
+          "away": "OFI Crete",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "OFI Crete",
+          "away": "Hoffenheim",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Omonia": {
+      "team": "Omonia",
+      "league": "uel",
+      "matchName": "Omonia",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "N.E.C.",
+          "away": "Omonia",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Omonia",
+          "away": "Benfica",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Celje",
+          "away": "Omonia",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Omonia",
+          "away": "Celta",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Torreense": {
+      "team": "Torreense",
+      "league": "uel",
+      "matchName": "Torreense",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Torreense",
+          "away": "Ararat-Armenia",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Ferencváros",
+          "away": "Torreense",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Torreense",
+          "away": "Sunderland",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Lillestrøm",
+          "away": "Torreense",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Sparta Praha": {
+      "team": "Sparta Praha",
+      "league": "uel",
+      "matchName": "Sparta Praha",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Sparta Praha",
+          "away": "Bournemouth",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Olympiacos",
+          "away": "Sparta Praha",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Sparta Praha",
+          "away": "Lillestrøm",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Ararat-Armenia",
+          "away": "Sparta Praha",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Sturm Graz": {
+      "team": "Sturm Graz",
+      "league": "uel",
+      "matchName": "Sturm Graz",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Sturm Graz",
+          "away": "Celje",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Sturm Graz",
+          "away": "Marseille",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Bournemouth",
+          "away": "Sturm Graz",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Sturm Graz",
+          "away": "Rennes",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Celje": {
+      "team": "Celje",
+      "league": "uel",
+      "matchName": "Celje",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Sturm Graz",
+          "away": "Celje",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Celje",
+          "away": "Salzburg",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Celje",
+          "away": "Omonia",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Leverkusen",
+          "away": "Celje",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Salzburg": {
+      "team": "Salzburg",
+      "league": "uel",
+      "matchName": "Salzburg",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Anderlecht",
+          "away": "Salzburg",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Celje",
+          "away": "Salzburg",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Salzburg",
+          "away": "Milan",
+          "homeScore": 0,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Levski Sofia",
+          "away": "Salzburg",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Jagiellonia": {
+      "team": "Jagiellonia",
+      "league": "uel",
+      "matchName": "Jagiellonia",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Levski Sofia",
+          "away": "Jagiellonia",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Jagiellonia",
+          "away": "Anderlecht",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Jagiellonia",
+          "away": "Ararat-Armenia",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Olympiacos",
+          "away": "Jagiellonia",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Viktoria Plzeň": {
+      "team": "Viktoria Plzeň",
+      "league": "uel",
+      "matchName": "Viktoria Plzen",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Lillestrøm",
+          "away": "Viktoria Plzen",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Viktoria Plzen",
+          "away": "Levski Sofia",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Ferencváros",
+          "away": "Viktoria Plzen",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Viktoria Plzen",
+          "away": "Union SG",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Celtic": {
+      "team": "Celtic",
+      "league": "uel",
+      "matchName": "Celtic",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Celtic",
+          "away": "Besiktas",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Celtic",
+          "away": "Celta",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Benfica",
+          "away": "Celtic",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Celtic",
+          "away": "Ferencváros",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:H. Beer-Sheva": {
+      "team": "H. Beer-Sheva",
+      "league": "uel",
+      "matchName": "H. Beer-Sheva",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "H. Beer-Sheva",
+          "away": "OFI Crete",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Union SG",
+          "away": "H. Beer-Sheva",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "AZ Alkmaar",
+          "away": "H. Beer-Sheva",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "H. Beer-Sheva",
+          "away": "GNK Dinamo",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Lillestrøm": {
+      "team": "Lillestrøm",
+      "league": "uel",
+      "matchName": "Lillestrøm",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Lillestrøm",
+          "away": "Viktoria Plzen",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Lillestrøm",
+          "away": "Real Sociedad",
+          "homeScore": 0,
+          "awayScore": 6,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Sparta Praha",
+          "away": "Lillestrøm",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Lillestrøm",
+          "away": "Torreense",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Lech Poznań": {
+      "team": "Lech Poznań",
+      "league": "uel",
+      "matchName": "Lech Poznan",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Benfica",
+          "away": "Lech Poznan",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Lech Poznan",
+          "away": "Sunderland",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Lech Poznan",
+          "away": "Leverkusen",
+          "homeScore": 0,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-17",
+          "home": "Crystal Palace",
+          "away": "Lech Poznan",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uel:Ararat-Armenia": {
+      "team": "Ararat-Armenia",
+      "league": "uel",
+      "matchName": "Ararat-Armenia",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Torreense",
+          "away": "Ararat-Armenia",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Ararat-Armenia",
+          "away": "AZ Alkmaar",
+          "homeScore": 0,
+          "awayScore": 4,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Jagiellonia",
+          "away": "Ararat-Armenia",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-09-16",
+          "home": "Ararat-Armenia",
+          "away": "Sparta Praha",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Lugano": {
+      "team": "Lugano",
+      "league": "uecl",
+      "matchName": "Lugano",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Lugano",
+          "away": "Kauno Žalgiris",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Getafe",
+          "away": "Lugano",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Lugano",
+          "away": "Crvena Zvezda",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Panathinaikos": {
+      "team": "Panathinaikos",
+      "league": "uecl",
+      "matchName": "Panathinaikos",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Panathinaikos",
+          "away": "CSKA Sofia",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Kairat Almaty",
+          "away": "Panathinaikos",
+          "homeScore": 1,
+          "awayScore": 5,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Panathinaikos",
+          "away": "Borac",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Twente": {
+      "team": "Twente",
+      "league": "uecl",
+      "matchName": "Twente",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Twente",
+          "away": "Pafos",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "L. Red Imps",
+          "away": "Twente",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Twente",
+          "away": "Thun",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Brann": {
+      "team": "Brann",
+      "league": "uecl",
+      "matchName": "Brann",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Sint-Truidense",
+          "away": "Brann",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Kauno Žalgiris",
+          "away": "Brann",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Brann",
+          "away": "L. Red Imps",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Copenhagen": {
+      "team": "Copenhagen",
+      "league": "uecl",
+      "matchName": "Copenhagen",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Copenhagen",
+          "away": "Iberia Tbilisi",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Crvena Zvezda",
+          "away": "Copenhagen",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Copenhagen",
+          "away": "Braga",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Univ. Craiova": {
+      "team": "Univ. Craiova",
+      "league": "uecl",
+      "matchName": "U. Craiova",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "U. Craiova",
+          "away": "Egnatia",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Inter Escaldes",
+          "away": "U. Craiova",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "U. Craiova",
+          "away": "Getafe",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Mjällby": {
+      "team": "Mjällby",
+      "league": "uecl",
+      "matchName": "Mjällby",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Mjällby",
+          "away": "Borac",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Iberia Tbilisi",
+          "away": "Mjällby",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Mjällby",
+          "away": "Inter Escaldes",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Sint-Truidense": {
+      "team": "Sint-Truidense",
+      "league": "uecl",
+      "matchName": "Sint-Truidense",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Sint-Truidense",
+          "away": "Brann",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Midtjylland",
+          "away": "Sint-Truidense",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Sint-Truidense",
+          "away": "Iberia Tbilisi",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Ajax": {
+      "team": "Ajax",
+      "league": "uecl",
+      "matchName": "Ajax",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Midtjylland",
+          "away": "Ajax",
+          "homeScore": 1,
+          "awayScore": 6,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Ajax",
+          "away": "Atalanta",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Hajduk Split",
+          "away": "Ajax",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Trabzonspor": {
+      "team": "Trabzonspor",
+      "league": "uecl",
+      "matchName": "Trabzonspor",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Trabzonspor",
+          "away": "Freiburg",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Trabzonspor",
+          "away": "Hearts",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "KuPS Kuopio",
+          "away": "Trabzonspor",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Hajduk Split": {
+      "team": "Hajduk Split",
+      "league": "uecl",
+      "matchName": "Hajduk Split",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "L. Red Imps",
+          "away": "Hajduk Split",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Thun",
+          "away": "Hajduk Split",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Hajduk Split",
+          "away": "Ajax",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Crvena Zvezda": {
+      "team": "Crvena Zvezda",
+      "league": "uecl",
+      "matchName": "Crvena Zvezda",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Crvena Zvezda",
+          "away": "Inter Escaldes",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Crvena Zvezda",
+          "away": "Copenhagen",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Lugano",
+          "away": "Crvena Zvezda",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Braga": {
+      "team": "Braga",
+      "league": "uecl",
+      "matchName": "Braga",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Aarhus",
+          "away": "Braga",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Braga",
+          "away": "Gent",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Copenhagen",
+          "away": "Braga",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Gent": {
+      "team": "Gent",
+      "league": "uecl",
+      "matchName": "Gent",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "KuPS Kuopio",
+          "away": "Gent",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Braga",
+          "away": "Gent",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Gent",
+          "away": "Aarhus",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Riga": {
+      "team": "Riga",
+      "league": "uecl",
+      "matchName": "Riga",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Riga",
+          "away": "Jablonec",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Pafos",
+          "away": "Riga",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Riga",
+          "away": "Kairat Almaty",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Thun": {
+      "team": "Thun",
+      "league": "uecl",
+      "matchName": "Thun",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Thun",
+          "away": "Hearts",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Thun",
+          "away": "Hajduk Split",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Twente",
+          "away": "Thun",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Borac": {
+      "team": "Borac",
+      "league": "uecl",
+      "matchName": "Borac",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Mjällby",
+          "away": "Borac",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Borac",
+          "away": "KuPS Kuopio",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Panathinaikos",
+          "away": "Borac",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:L. Red Imps": {
+      "team": "L. Red Imps",
+      "league": "uecl",
+      "matchName": "L. Red Imps",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "L. Red Imps",
+          "away": "Hajduk Split",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "L. Red Imps",
+          "away": "Twente",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Brann",
+          "away": "L. Red Imps",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Jablonec": {
+      "team": "Jablonec",
+      "league": "uecl",
+      "matchName": "Jablonec",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Riga",
+          "away": "Jablonec",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Jablonec",
+          "away": "Brighton",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Freiburg",
+          "away": "Jablonec",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Aarhus": {
+      "team": "Aarhus",
+      "league": "uecl",
+      "matchName": "Aarhus",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Aarhus",
+          "away": "Braga",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Aarhus",
+          "away": "Egnatia",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Gent",
+          "away": "Aarhus",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Nordsjælland": {
+      "team": "Nordsjælland",
+      "league": "uecl",
+      "matchName": "Nordsjælland",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Monaco",
+          "away": "Nordsjælland",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Nordsjælland",
+          "away": "CSKA Sofia",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Hearts",
+          "away": "Nordsjælland",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Egnatia": {
+      "team": "Egnatia",
+      "league": "uecl",
+      "matchName": "Egnatia",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "U. Craiova",
+          "away": "Egnatia",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Aarhus",
+          "away": "Egnatia",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Egnatia",
+          "away": "Midtjylland",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Kairat Almaty": {
+      "team": "Kairat Almaty",
+      "league": "uecl",
+      "matchName": "Kairat Almaty",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Atalanta",
+          "away": "Kairat Almaty",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Kairat Almaty",
+          "away": "Panathinaikos",
+          "homeScore": 1,
+          "awayScore": 5,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Riga",
+          "away": "Kairat Almaty",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:CSKA Sofia": {
+      "team": "CSKA Sofia",
+      "league": "uecl",
+      "matchName": "CSKA Sofia",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Panathinaikos",
+          "away": "CSKA Sofia",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Nordsjælland",
+          "away": "CSKA Sofia",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "CSKA Sofia",
+          "away": "Monaco",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Iberia Tbilisi": {
+      "team": "Iberia Tbilisi",
+      "league": "uecl",
+      "matchName": "Iberia Tbilisi",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Copenhagen",
+          "away": "Iberia Tbilisi",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Iberia Tbilisi",
+          "away": "Mjällby",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Sint-Truidense",
+          "away": "Iberia Tbilisi",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Pafos": {
+      "team": "Pafos",
+      "league": "uecl",
+      "matchName": "Pafos",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Twente",
+          "away": "Pafos",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Pafos",
+          "away": "Riga",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Atalanta",
+          "away": "Pafos",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Hearts": {
+      "team": "Hearts",
+      "league": "uecl",
+      "matchName": "Hearts",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Thun",
+          "away": "Hearts",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Trabzonspor",
+          "away": "Hearts",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Hearts",
+          "away": "Nordsjælland",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:KuPS Kuopio": {
+      "team": "KuPS Kuopio",
+      "league": "uecl",
+      "matchName": "KuPS Kuopio",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "KuPS Kuopio",
+          "away": "Gent",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Borac",
+          "away": "KuPS Kuopio",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "KuPS Kuopio",
+          "away": "Trabzonspor",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Midtjylland": {
+      "team": "Midtjylland",
+      "league": "uecl",
+      "matchName": "Midtjylland",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Midtjylland",
+          "away": "Ajax",
+          "homeScore": 1,
+          "awayScore": 6,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Midtjylland",
+          "away": "Sint-Truidense",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Egnatia",
+          "away": "Midtjylland",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Inter Escaldes": {
+      "team": "Inter Escaldes",
+      "league": "uecl",
+      "matchName": "Inter Escaldes",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Crvena Zvezda",
+          "away": "Inter Escaldes",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Inter Escaldes",
+          "away": "U. Craiova",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Mjällby",
+          "away": "Inter Escaldes",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
+    },
+    "uecl:Kauno Žalgiris": {
+      "team": "Kauno Žalgiris",
+      "league": "uecl",
+      "matchName": "Kauno Žalgiris",
+      "lastMatchDate": "2026-11-05",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "matches": [
+        {
+          "date": "2026-11-05",
+          "home": "Lugano",
+          "away": "Kauno Žalgiris",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "3",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-22",
+          "home": "Kauno Žalgiris",
+          "away": "Brann",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "2",
+          "provider": "fixturedl"
+        },
+        {
+          "date": "2026-10-15",
+          "home": "Brighton",
+          "away": "Kauno Žalgiris",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "1",
+          "provider": "fixturedl"
+        }
+      ]
     }
   },
   "notes": "UCL-only profiles have Champions League results, which may total fewer than ten matches; domestic teams use last ten domestic league matches."
