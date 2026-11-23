@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   const $ = id => document.getElementById(id);
-  const state = { context: null, match: null, analysis: null, limit: 5, scope: "all", partial: [], loading: false };
+  const state = { context: null, match: null, analysis: null, editorial: null, limit: 5, scope: "all", partial: [], loading: false };
   const params = new URLSearchParams(location.search);
   const resultLabels = { W: "승", D: "무", L: "패" };
   const leagueShort = { epl: "EPL", championship: "CHAMPIONSHIP", laliga: "LA LIGA", seriea: "SERIE A", bundesliga: "BUNDESLIGA", ligue1: "LIGUE 1", ucl: "UCL", uel: "UEL", uecl: "UECL" };
@@ -154,11 +154,19 @@
   function renderInsights(a) {
     const home = a.home, away = a.away, h = home.stats, w = away.stats;
     const node = $("insightSummary"); node.replaceChildren();
+    if (state.editorial) {
+      node.append(el("p", "insight-lead", state.editorial.headline));
+      const deck = el("div", "insight-deck");
+      state.editorial.deck.forEach(paragraph => deck.append(el("p", "", paragraph)));
+      node.append(deck, link("팀별 흐름과 경기 시나리오 읽기", "#report", "report-read-link"));
+      $("overviewContext").textContent = a.coverage.scopeLabel + " · 최근 " + a.limit + "경기 기준 · 홈팀 " + h.played + "경기 · 원정팀 " + w.played + "경기 · 선택한 범위에 맞춰 해설과 지표가 함께 바뀝니다.";
+      return;
+    }
     let lead, intro;
     if (h.played >= 3 && w.played >= 3) {
       const gap = h.ppg - w.ppg;
       lead = Math.abs(gap) < .35 ? "최근 승점 흐름은 비슷합니다." : (gap > 0 ? home.name : away.name) + "의 최근 흐름이 앞섭니다.";
-      intro = home.name + "은 최근 " + h.played + "경기 " + recordSummary(h) + ", " + away.name + "은 " + w.played + "경기 " + recordSummary(w) + "를 기록했습니다. 경기당 승점은 각각 " + decimal(h.ppg) + "점과 " + decimal(w.ppg) + "점입니다.";
+      intro = home.name + "의 최근 " + h.played + "경기 성적은 " + recordSummary(h) + ", " + away.name + "의 최근 " + w.played + "경기 성적은 " + recordSummary(w) + "입니다. 경기당 승점은 각각 " + decimal(h.ppg) + "점과 " + decimal(w.ppg) + "점입니다.";
     } else {
       lead = "쌓여가는 기록에서 경기의 단서를 찾습니다.";
       intro = "경기 시작 전 확인된 기록은 " + home.name + " " + h.played + "경기, " + away.name + " " + w.played + "경기입니다. 시즌 초반이나 자료가 적은 경기에서는 표본 수와 함께 지표를 살펴보세요.";
@@ -170,6 +178,46 @@
     list.append(insight("골이 나온 경기", h.played && w.played ? "양 팀 모두 득점한 경기는 홈팀 표본에서 " + h.bttsCount + "/" + h.played + "경기, 원정팀 표본에서 " + w.bttsCount + "/" + w.played + "경기였습니다. 합산 3골 이상인 경기는 각각 " + h.over25Count + "/" + h.played + "경기와 " + w.over25Count + "/" + w.played + "경기입니다." : "양 팀 득점과 합산 3골 이상 빈도는 과거 경기의 득점 양상을 보여줍니다. 현재 확보된 표본이 늘면 함께 표시됩니다."));
     node.append(list);
     $("overviewContext").textContent = a.coverage.scopeLabel + " · 홈 " + h.played + "경기 · 원정 " + w.played + "경기";
+  }
+  function reportTarget(id, index) {
+    return "report-" + String(id || "section-" + index).replace(/[^a-z0-9_-]/gi, "-");
+  }
+  function renderReport(a) {
+    const report = state.editorial, body = $("reportBody"), outline = $("reportOutline"), verdict = $("reportVerdict");
+    body.replaceChildren(); outline.replaceChildren(); verdict.replaceChildren();
+    $("reportReading").textContent = report ? "기록 기반 해설 · 약 " + report.readingMinutes + "분" : "";
+    $("reportCoverage").textContent = report ? report.coverageNote : "심층 해설을 불러오지 못했습니다. 현재 연결된 경기 기록과 비교 지표는 아래에서 확인할 수 있습니다.";
+    $("reportContext").replaceChildren(el("p", "", a.coverage.scopeLabel + " · 최근 " + a.limit + "경기"), el("p", "", "홈팀 " + a.home.stats.played + "경기 · 원정팀 " + a.away.stats.played + "경기"), el("p", "", isFinished(a.fixture) ? "경기 시작 이전의 기록을 재구성한 분석입니다." : "현재 확인된 경기 시작 이전의 기록을 사용합니다."));
+    verdict.hidden = !report;
+    if (!report) {
+      body.append(el("p", "inline-empty", "최근 성적과 홈·원정 비교는 계속 볼 수 있습니다."), link("경기 기록 비교", "#comparison", "text-link"));
+      return;
+    }
+    report.sections.forEach((section, index) => {
+      const id = reportTarget(section.id, index), article = el("section", "report-block");
+      article.id = id; article.setAttribute("aria-labelledby", id + "-title");
+      const title = el("h3", "report-block-title", section.title); title.id = id + "-title"; article.append(title);
+      const copy = el("div", "report-copy");
+      section.paragraphs.forEach(paragraph => copy.append(el("p", "", paragraph)));
+      article.append(copy);
+      if (section.evidence && section.evidence.length) {
+        const evidence = el("div", "report-evidence"); evidence.append(el("p", "report-evidence-label", "분석에 사용한 경기 기록"));
+        const list = el("ul");
+        section.evidence.forEach(item => {
+          const row = el("li"), href = safeUrl(item.url) || (/^match\.html\?id=/.test(item.url || "") ? item.url : null);
+          const reference = href ? link("", href, "report-evidence-link", Boolean(safeUrl(href))) : el("span", "report-evidence-link");
+          reference.append(el("span", "report-evidence-name", item.label));
+          if (item.detail) reference.append(el("span", "report-evidence-detail", item.detail));
+          row.append(reference); list.append(row);
+        });
+        evidence.append(list); article.append(evidence);
+      }
+      body.append(article); outline.append(link(section.title, "#" + id));
+    });
+    const conclusion = el("h3", "report-block-title", report.verdict.title); conclusion.id = "reportVerdictTitle";
+    verdict.append(el("p", "report-verdict-label", "종합 판단"), conclusion);
+    const paragraphs = el("div", "report-copy"); report.verdict.paragraphs.forEach(paragraph => paragraphs.append(el("p", "", paragraph))); verdict.append(paragraphs);
+    outline.append(link("종합 판단", "#reportVerdict"));
   }
   function distributionPercentages(model) {
     const raw = [model.homeWin, model.draw, model.awayWin].map(n => n * 100), values = raw.map(Math.floor);
@@ -200,7 +248,7 @@
       model.scorelines.slice(0, 3).forEach(row => { const item = el("div", "scoreline-item"); item.append(el("strong", "", row.home + " : " + row.away), el("span", "", (row.probability * 100).toFixed(1) + "%")); list.append(item); }); scores.append(list); panel.append(scores);
       panel.append(el("p", "model-footnote", "홈 " + model.homeVenueSample + "경기 · 원정 " + model.awayVenueSample + "경기의 득실점으로 계산한 포아송 참고 분포입니다." + (model.retrospective ? " 경기 종료 후 과거 기록으로 재계산한 값이며, 당시 발행한 예측이 아닙니다." : " 선수 구성과 결장은 반영하지 않으며 검증된 예측 확률이 아닙니다.")));
     }
-    $("modelMethod").textContent = model.method + " 해당 대회에서 양 팀의 기록이 각 5경기 이상이고 홈·원정 표본이 각각 3경기 이상일 때만 제공합니다. 현재 선택한 최근 " + a.limit + "경기 범위에서 장소별 표본을 별도로 추립니다.";
+    $("modelMethod").textContent = model.method + " 해당 대회에서 양 팀의 기록이 각 5경기 이상이고 홈·원정 표본이 각각 3경기 이상일 때만 제공합니다. 동일 대회의 최근 홈 " + a.limit + "경기와 최근 원정 " + a.limit + "경기를 각각 별도로 선택합니다. 전체 최근 " + a.limit + "경기보다 더 이전의 경기까지 포함될 수 있습니다.";
   }
 
   function comparisonCell(value, maximum, text, away) {
@@ -310,8 +358,12 @@
   function render(full) {
     const a = MatchAnalysis.analyze(state.context, state.match, { limit: state.limit, scope: state.scope });
     state.analysis = a;
+    state.editorial = null;
+    if (window.MatchEditorial) {
+      try { state.editorial = window.MatchEditorial.build(a, { profiles: state.context.profiles }); } catch (failure) { state.editorial = null; }
+    }
     if (full) { renderHeader(a); renderRelated(a); }
-    renderInsights(a); renderModel(a); renderComparison(a); renderRecent(a); renderHeadToHead(a); renderStandings(a); renderSources(a);
+    renderInsights(a); renderReport(a); renderModel(a); renderComparison(a); renderRecent(a); renderHeadToHead(a); renderStandings(a); renderSources(a);
     document.querySelectorAll("[data-limit]").forEach(button => button.setAttribute("aria-pressed", String(Number(button.dataset.limit) === state.limit)));
     $("analysisScope").value = state.scope;
   }
@@ -346,7 +398,10 @@
       render(true);
       $("loadingState").hidden = true; $("matchContent").hidden = false;
       const hash = location.hash.slice(1);
-      if (["overview", "comparison", "recent", "headtohead", "standings", "sources"].includes(hash)) requestAnimationFrame(() => $(hash).scrollIntoView());
+      if (["overview", "report", "reportVerdict", "comparison", "recent", "headtohead", "standings", "sources"].includes(hash) || /^report-[a-z0-9_-]+$/i.test(hash)) {
+        const target = $(hash);
+        if (target) requestAnimationFrame(() => target.scrollIntoView());
+      }
     } catch (failure) { error("경기 기록을 연결하지 못했습니다.", "일정 자료를 불러오는 중 문제가 생겼습니다. 잠시 후 다시 불러오거나 경기 목록에서 확인해 주세요.", true); }
     finally { state.loading = false; $("retryButton").disabled = false; }
   }
@@ -357,6 +412,7 @@
   $("menuToggle").addEventListener("click", () => { const open = $("siteNav").classList.toggle("open"); $("menuToggle").setAttribute("aria-expanded", String(open)); $("menuToggle").setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기"); });
   document.addEventListener("keydown", event => { if (event.key === "Escape") { $("siteNav").classList.remove("open"); $("menuToggle").setAttribute("aria-expanded", "false"); $("menuToggle").setAttribute("aria-label", "메뉴 열기"); } });
   document.querySelectorAll(".analysis-nav a").forEach(anchor => anchor.addEventListener("click", () => { document.querySelectorAll(".analysis-nav a").forEach(item => item.classList.toggle("active", item === anchor)); }));
+  $("reportOutline").addEventListener("click", event => { if (event.target.closest("a")) document.querySelectorAll(".analysis-nav a").forEach(item => item.classList.toggle("active", item.getAttribute("href") === "#report")); });
   $("copyLink").addEventListener("click", async () => {
     const url = new URL(location.href); ["backDate", "backLeague", "backView", "backStatus"].forEach(key => url.searchParams.delete(key));
     try { await navigator.clipboard.writeText(url.href); $("copyStatus").textContent = "경기 분석 링크를 복사했습니다."; $("copyLink").textContent = "복사 완료"; }

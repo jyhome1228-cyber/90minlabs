@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="90MIN LABS 경기 분석. 최근 성적, 홈·원정 기록, 득실점 흐름과 맞대결을 한눈에 비교합니다.">
+  <meta name="description" content="90MIN LABS 경기 심층 분석. 팀별 최근 흐름, 공격과 수비, 홈·원정 차이와 경기 시나리오를 기록과 함께 읽습니다.">
   <title>경기 분석 | 90MIN LABS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/match-page.css?v=20261123-analysis">
+  <link rel="stylesheet" href="assets/match-page.css?v=20261123-editorial">
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
-  <script src="assets/match-page.js?v=20261123-analysis" defer></script>
+  <script src="assets/match-editorial.js?v=20261123-editorial" defer></script>
+  <script src="assets/match-page.js?v=20261123-editorial" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#matchMain">경기 분석으로 이동</a>
@@ -58,17 +59,31 @@
       </section>
 
       <nav class="analysis-nav" aria-label="경기 분석 목차">
-        <a href="#overview" class="active">분석 요약</a><a href="#comparison">전력 비교</a><a href="#recent">최근 경기</a><a href="#headtohead">맞대결</a><a href="#standings">시즌 순위</a><a href="#sources">분석 기준</a>
+        <a href="#overview" class="active">분석 요약</a><a href="#report">심층 분석</a><a href="#comparison">전력 비교</a><a href="#recent">최근 경기</a><a href="#headtohead">맞대결</a><a href="#standings">시즌 순위</a><a href="#sources">분석 기준</a>
       </nav>
 
       <section class="analysis-section overview-section" id="overview" aria-labelledby="overviewTitle">
-        <div class="section-heading"><div><p class="eyebrow">MATCH INSIGHTS</p><h2 id="overviewTitle">이 경기를 읽는 세 가지 포인트</h2></div><span class="section-context" id="overviewContext"></span></div>
+        <div class="section-heading overview-heading"><div><p class="eyebrow">MATCH INSIGHTS</p><h2 id="overviewTitle">이번 경기를 어떻게 읽을 것인가</h2></div>
+          <div class="analysis-controls"><div class="segmented-control" role="group" aria-label="최근 경기 표본"><button type="button" data-limit="5" aria-pressed="true">최근 5경기</button><button type="button" data-limit="10" aria-pressed="false">최근 10경기</button></div><label class="scope-label"><span class="sr-only">분석 대회 범위</span><select id="analysisScope" aria-label="분석 대회 범위"><option value="all">전체 대회</option><option value="competition">해당 대회</option></select></label></div>
+        </div>
+        <p class="overview-sample" id="overviewContext"></p>
         <div class="overview-grid"><div id="insightSummary" class="insight-summary"></div><aside id="modelPanel" class="model-panel" aria-label="득점 기록 기반 참고 분포"></aside></div>
+      </section>
+
+      <section class="analysis-section report-section" id="report" aria-labelledby="reportTitle">
+        <div class="section-heading"><div><p class="eyebrow">MATCH REPORT</p><h2 id="reportTitle">경기를 깊이 읽는 분석</h2></div><span class="report-reading" id="reportReading"></span></div>
+        <p class="report-coverage" id="reportCoverage"></p>
+        <div class="report-layout">
+          <aside class="report-sidebar" aria-label="심층 분석 안내">
+            <div class="report-sidebar-inner"><p class="report-sidebar-title">이 경기의 분석 흐름</p><nav id="reportOutline" class="report-outline" aria-label="심층 분석 목차"></nav><div class="report-sidebar-context" id="reportContext"></div></div>
+          </aside>
+          <div class="report-main"><div id="reportBody" class="report-body"></div><section id="reportVerdict" class="report-verdict" aria-labelledby="reportVerdictTitle"></section></div>
+        </div>
       </section>
 
       <section class="analysis-section" id="comparison" aria-labelledby="comparisonTitle">
         <div class="section-heading comparison-heading"><div><p class="eyebrow">TEAM COMPARISON</p><h2 id="comparisonTitle">기록으로 비교하는 두 팀</h2></div>
-          <div class="analysis-controls"><div class="segmented-control" role="group" aria-label="최근 경기 표본"><button type="button" data-limit="5" aria-pressed="true">최근 5경기</button><button type="button" data-limit="10" aria-pressed="false">최근 10경기</button></div><label class="scope-label"><span class="sr-only">분석 대회 범위</span><select id="analysisScope"><option value="all">전체 대회</option><option value="competition">해당 대회</option></select></label></div>
+          <a href="#overview" class="text-link">분석 범위 변경</a>
         </div>
         <p class="section-note" id="sampleNote"></p>
         <div class="comparison-table-wrap"><table class="comparison-table"><caption class="sr-only">선택한 표본의 양 팀 경기 기록 비교</caption><thead><tr><th id="compareHome" scope="col"></th><th scope="col" class="metric-heading">비교 지표</th><th id="compareAway" scope="col"></th></tr></thead><tbody id="comparisonRows"></tbody></table></div>
