@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="한 주의 축구 경기를 골라 승·무·패를 예측하고 나의 기록을 모아보세요.">
   <title>마이페이지 | 90MIN LABS</title>
-  <link rel="stylesheet" href="assets/mypage.css?v=20261123-type1pt">
+  <link rel="stylesheet" href="assets/mypage.css?v=20261123-folder1">
   <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
   <script src="assets/site-shell.js?v=20261123-mypage" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
@@ -14,7 +14,7 @@
 <script src="assets/site-language.js?v=20261123-i18n-final" defer></script>
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
   <script src="assets/prediction-store.js?v=20261123-weekly" defer></script>
-  <script src="assets/mypage.js?v=20261123-fast1" defer></script>
+  <script src="assets/mypage.js?v=20261123-folder1" defer></script>
   <script type="module" src="assets/account.js?v=20261123-fast1"></script>
 </head>
 <body>
@@ -44,7 +44,7 @@
     <div id="pageNotice" class="page-notice" role="status" aria-live="polite" hidden></div>
     <div id="storageError" class="error-notice" role="alert" hidden><p id="storageErrorMessage"></p><button class="text-button" id="retryStorage" type="button">저장 공간 다시 확인</button></div>
     <section class="record-stats" aria-label="나의 예측 기록 요약">
-      <div><span>예측 묶음</span><strong id="statSets">0</strong></div>
+      <div><span>예측 폴더</span><strong id="statSets">0</strong></div>
       <div><span>기록한 경기</span><strong id="statPicks">0</strong></div>
       <div><span>맞힌 경기</span><strong id="statCorrect">—</strong></div>
       <div><span>적중률</span><strong id="statAccuracy">—</strong><small id="statSettled">결과 확인 전</small></div>
@@ -69,12 +69,12 @@
         </div>
         <aside class="prediction-slip" aria-labelledby="slipTitle">
           <form id="predictionForm">
-            <div class="slip-heading"><h3 id="slipTitle">나의 예측</h3><button class="text-button" id="newSet" type="button">새 묶음</button></div>
-            <label class="set-title-label" for="setTitle">묶음 이름</label><input id="setTitle" type="text" maxlength="80" placeholder="예: 이번 주 관심 경기" autocomplete="off">
+            <div class="slip-heading"><h3 id="slipTitle">나의 예측</h3><button class="text-button" id="newSet" type="button">새 폴더</button></div>
+            <label class="set-title-label" for="setTitle">폴더 이름</label><input id="setTitle" type="text" maxlength="80" placeholder="예: 이번 주 관심 경기" autocomplete="off">
             <div class="slip-meta"><span id="slipWeek"></span><strong id="selectionCount">0경기 선택</strong></div>
             <div id="selectedPicks"></div>
             <p class="slip-note">경기 시작 전까지 선택을 변경할 수 있습니다.</p>
-            <button id="saveSet" class="solid-button save-button" type="submit" disabled>예측 묶음 저장</button>
+            <button id="saveSet" class="solid-button save-button" type="submit" disabled>예측 폴더 저장</button>
             <p id="saveStatus" class="save-status" role="status" aria-live="polite"></p>
           </form>
         </aside>
@@ -87,7 +87,7 @@
   </main>
   <footer class="mypage-footer"><div class="mypage-wrap"><span>90MIN LABS. © 2026 Independent Football Research</span><a href="index.html#matches">경기 일정 및 결과</a></div></footer>
   <dialog id="confirmDialog" class="confirm-dialog" aria-labelledby="confirmTitle" aria-describedby="confirmMessage">
-    <form method="dialog"><h2 id="confirmTitle">확인해 주세요</h2><p id="confirmMessage"></p><div class="dialog-actions"><button class="outline-button" value="cancel" autofocus>취소</button><button class="solid-button" id="confirmAction" value="confirm">확인</button></div></form>
+    <form method="dialog"><span class="dialog-eyebrow">90MIN LABS</span><h2 id="confirmTitle">확인해 주세요</h2><p id="confirmMessage"></p><div class="dialog-actions"><button class="outline-button" value="cancel" autofocus>취소</button><button class="solid-button" id="confirmAction" value="confirm">확인</button></div></form>
   </dialog>
 </body>
 </html>
