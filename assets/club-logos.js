@@ -15,10 +15,9 @@ function badge(container,opts){
  if(opts.crestId&&/^\d+$/.test(String(opts.crestId)))urls.push("https://crests.football-data.org/"+encodeURIComponent(String(opts.crestId))+".png");
  let index=0;let external=false;
  const insert=url=>{
-   if(!container.isConnected)return;
    const img=document.createElement("img");
    img.alt="";img.loading="lazy";img.decoding="async";
-   img.onload=()=>{if(container.isConnected)container.replaceChildren(img)};
+   img.onload=()=>{container.replaceChildren(img)};
    img.onerror=()=>{if(img.parentNode)img.remove();next()};
    img.src=url;
  };
