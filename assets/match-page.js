@@ -116,7 +116,7 @@
       value.append(el("span", "", match.score[0]), el("span", "score-separator", ":"), el("span", "", match.score[1]));
       value.setAttribute("aria-label", a.home.name + " " + match.score[0] + " 대 " + match.score[1] + " " + a.away.name);
       score.append(value, el("p", "score-subtitle", "FULL TIME"));
-    } else score.append(el("div", "score-value kickoff", status === "postponed" || status === "cancelled" ? "—" : match.time || "미정"), el("p", "score-subtitle", status === "scheduled" ? "KICK OFF · KST" : statusText));
+    } else { const countdown=el("p","score-subtitle",statusText); if(window.NinetyMinCountdown)window.NinetyMinCountdown.set(countdown,match,status); score.append(el("div","score-value kickoff",status==="postponed"||status==="cancelled"?"—":match.time||"미정"),countdown); }
     if (safeUrl(match.scoreSourceUrl)) score.append(link("스코어 출처", match.scoreSourceUrl, "score-link", true));
     const homeProfile = a.home.profile;
     $("fixtureVenue").textContent = homeProfile && homeProfile.stadium ? "홈 구단 경기장 · " + homeProfile.stadium + (homeProfile.cityKo ? " · " + homeProfile.cityKo : "") : "모든 일정은 한국시간 기준";
