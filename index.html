@@ -74,7 +74,7 @@ section.block{padding:89px 0}
 .weekly-picks-link:hover{color:#666}
 @media(max-width:650px){.weekly-picks-link{display:block;width:fit-content;margin:9px 0 0;font-size:13.333px}}
 </style>
-<link rel="stylesheet" href="./assets/home.css?v=20261123-fullbleed3">
+<link rel="stylesheet" href="./assets/home.css?v=20261123-clean">
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-type1pt">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-logo-audit2">
 <script src="assets/site-shell.js?v=20261123-today" defer></script>
@@ -89,13 +89,12 @@ section.block{padding:89px 0}
  document.documentElement.classList.add("intro-pending");
 })();
 </script>
-<link rel="stylesheet" href="assets/intro.css?v=20261123-kickoff2">
-<script src="assets/intro.js?v=20261123-kickoff1" defer></script>
+<link rel="stylesheet" href="assets/intro.css?v=20261123-minimal">
+<script src="assets/intro.js?v=20261123-minimal" defer></script>
 </head><body>
-<div class="kickoff-intro" id="kickoffIntro" aria-label="90MIN LABS 시작 애니메이션" aria-hidden="true">
-  <div class="kickoff-top"><span>90MIN LABS.</span><button class="kickoff-skip" type="button" id="kickoffSkip">SKIP INTRO <span aria-hidden="true">↗</span></button></div>
-  <div class="kickoff-content"><div class="kickoff-caption">EVERY MATCH HAS A STORY.</div><div class="kickoff-counter" id="kickoffCounter" aria-live="off">00:00</div><div class="kickoff-progress" aria-hidden="true"><span id="kickoffBar"></span></div><div class="kickoff-subtitle" id="kickoffStatus">THE GAME IS ABOUT TO BEGIN</div></div>
-  <div class="kickoff-footer"><span>FOOTBALL RESEARCH</span><span>EST. 2026</span></div>
+<div class="kickoff-intro" id="kickoffIntro" aria-label="경기 시작 카운트" aria-hidden="true">
+  <button class="kickoff-skip" type="button" id="kickoffSkip" aria-label="인트로 건너뛰기">건너뛰기</button>
+  <div class="kickoff-counter" id="kickoffCounter" aria-live="off">00:00</div>
 </div>
 
 <header class="site-header" data-site-header data-active="auto" data-menu-open="false">
@@ -119,20 +118,16 @@ section.block{padding:89px 0}
     <img class="home-hero-photo" src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084548-image-336-e1d96f23.webp" alt="하늘색과 흰색 스트라이프 축구 유니폼 전신 이미지" fetchpriority="high" decoding="async">
     <div class="home-hero-shade" aria-hidden="true"></div>
     <div class="home-copy">
-      <div class="home-hero-topline"><span>90MIN LABS</span><span>FOOTBALL / DAILY</span></div>
       <div class="home-copy-main">
-        <span class="home-overline">THE GAME IS NEVER JUST A SCORE</span>
         <h1 class="home-brandline">축구의 모든 순간을,<br>더 깊이 읽다.</h1>
         <p class="home-lead">오늘의 경기부터 다음 경기의 흐름까지.<br>기록을 읽고, 분석하고, 나만의 예측을 남기세요.</p>
         <div class="home-actions"><a class="home-action" id="homeFixtureLink" href="index.html#matches">오늘의 경기 확인</a><a class="home-action secondary" href="mypage.html">주간 예측 만들기</a></div>
       </div>
-      <div class="home-hero-bottom"><span>INDEPENDENT FOOTBALL RESEARCH</span><span>90' / FULL TIME</span></div>
     </div>
-    <a class="home-scroll-cue" href="#today" aria-label="오늘의 경기 섹션으로 이동"><span>SCROLL TO MATCHES</span><span aria-hidden="true">↓</span></a>
   </section>
   <section class="home-daily" id="today" aria-labelledby="homeFixturesTitle">
     <div class="home-daily-top">
-      <div><span class="home-overline">MATCH CENTRE · KST</span><h2 class="home-daily-title" id="homeFixturesTitle">오늘의 경기</h2><p class="home-daily-date"><span id="homeTodayDate">오늘 날짜 확인 중</span> <span class="home-daily-sub" id="homeCurrentTime"></span></p></div>
+      <div><h2 class="home-daily-title" id="homeFixturesTitle">오늘의 경기</h2><p class="home-daily-date"><span id="homeTodayDate">오늘 날짜 확인 중</span> <span class="home-daily-sub" id="homeCurrentTime"></span></p></div>
       <div class="home-daily-meta"><span class="home-daily-sub" id="homeMatchCount">경기 확인 중</span><a id="homeAllMatches" href="index.html#matches">전체 일정 보기</a></div>
     </div>
     <div class="home-daily-head"><span id="homeFixturesNote">모든 경기 시간은 한국시간 기준입니다.</span><span id="homeFixturesLabel"></span></div>
@@ -140,9 +135,8 @@ section.block{padding:89px 0}
   </section>
   <section class="home-feature" aria-label="경기 전망과 예측 소개">
     <div class="home-feature-content">
-      <span class="home-overline">THE NEXT 90 MINUTES</span>
-      <h2>예상하고, 기록하고,<br>다시 분석하다.</h2>
-      <p>경기마다 이어지는 분석을 확인하고 주간 예측 폴더에 나만의 승·무·패를 남겨보세요.</p>
+      <h2>기록하고, 예측하다.</h2>
+      <p>경기 분석을 확인하고 주간 예측을 저장하세요.</p>
       <a href="index.html#predictions">경기 전망 살펴보기</a>
     </div>
     <div class="home-feature-photo"><img src="https://nineworksdatabase.planus253.workers.dev/cdn/uncategorized/20261123-084547-image-334-9f0ce814.webp" alt="어두운 경기장에서 조명을 바라보는 축구 선수" loading="lazy" decoding="async"></div>
