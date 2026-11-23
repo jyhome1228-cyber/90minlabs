@@ -1,5 +1,17 @@
 # 90MIN LABS
 
+## 칼럼 아카이브와 에디터 — 2026-11-24
+
+- **칼럼 목록:** `index.html#columns`에서 카테고리 필터, 제목·주제 검색, 대표 칼럼, 카드형 목록을 제공합니다.
+- **상세 보기:** `column.html?id=preview-reading-checklist` 형식으로 글을 읽습니다. 사용자 제공 데이터는 `textContent`로 렌더링하여 HTML 삽입을 피합니다.
+- **초기 데이터:** `data/columns.json`에 경기 전망, 경기 리뷰, 전술 분석, 선수·구단, 축구 문화 카테고리별 **편집 예시 원고 6편**을 준비했습니다. 모든 원고는 `status: "sample"`이며, 화면에도 샘플로 표시됩니다. 검수된 기사나 실제 경기 취재 기록으로 소개하지 않습니다.
+- **칼럼 에디터:** `index.html#write`에서 필명·분류·제목·요약·본문 작성, 실시간 미리보기, 예시 원고 복사, 새 글 만들기, 최근 30개까지 브라우저 자동 저장·불러오기·삭제, Markdown 및 JSON 내보내기를 지원합니다.
+- **저장 범위:** 초안은 `localStorage["90minlabs.columnDrafts.v1"]`에만 저장되고 현재 브라우저 외의 사용자와 공유되지 않습니다. 브라우저 데이터 삭제 시 복원할 수 없으므로 별도 파일 보관이 필요합니다. 다른 탭에서 수정되면 저장을 중단해 덮어쓰기를 방지합니다. 공개 게시·로그인·서버 동기화 기능은 없습니다.
+- **운영 발행:** 에디터에서 JSON을 내보내면 `status: "draft"`로 기록됩니다. 콘텐츠를 검수한 다음 운영자가 직접 `data/columns.json`의 `articles` 배열에 추가하고 `status: "published"`로 수정하여 커밋해야 방문자에게 정식 발행으로 표시됩니다. 고유한 `id`, 승인된 필명과 원고, 분류, 본문 섹션을 확인해야 합니다. 관리자 로그인이나 원클릭 게시 기능을 제공하지 않습니다.
+- **언어:** 공통 국문·영문 UI 선택기는 유지되지만 현재 준비한 기사 본문은 국문 원문입니다. 별도의 검수된 영문 원고는 아직 없습니다.
+- **검색엔진:** 샘플 상세페이지는 `noindex` 처리했습니다. 정식 발행용으로 전환할 경우 해당 정책 및 메타데이터를 함께 검토해야 합니다.
+- **검증:** `node --test tests/columns.test.cjs`, `node --check assets/columns.js`, `node --check assets/column-editor.js`.
+
 ## 경기 결과 자동 업데이트 — 매일 09:00 (한국시간)
 
 - GitHub Actions: [`.github/workflows/daily-results.yml`](.github/workflows/daily-results.yml)
