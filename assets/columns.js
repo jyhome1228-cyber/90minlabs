@@ -63,10 +63,8 @@ function render(){
   empty.append(create("strong","",t("조건에 맞는 칼럼이 없습니다.","No matching columns.")),create("p","",t("다른 카테고리나 검색어를 선택하세요.","Try another category or keyword.")));
   list.append(empty);return;
  }
- const leading=active==="전체"&&!term.trim()?rows.find(a=>a.featured):null;
- if(leading)list.append(feature(leading));
  const grid=create("div","col-grid");
- for(const article of rows){if(leading&&article.id===leading.id)continue;grid.append(tile(article));}
+ for(const article of rows)grid.append(tile(article));
  list.append(grid);
 }
 async function load(){
