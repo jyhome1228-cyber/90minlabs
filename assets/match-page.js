@@ -305,6 +305,7 @@
   }
 
   async function json(path) {
+    if(window.NinetyMinData)return window.NinetyMinData.get(path,{timeoutMs:12000});
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 12000);
     try {
       const response = await fetch(path, { cache:"no-cache", signal: controller.signal });
