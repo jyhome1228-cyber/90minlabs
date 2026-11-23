@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/site-shell.css?v=20261124-layout1">
   <link rel="stylesheet" href="assets/mypage-layout.css?v=20261123-minimal2">
   <link rel="stylesheet" href="assets/my-teams.css?v=20261124-team2">
+  <link rel="stylesheet" href="assets/saved-matches.css?v=20261124-save1">
   <script src="assets/site-shell.js?v=20261124-layout1" defer></script>
 <script src="assets/kickoff-countdown.js?v=20261123-countdown2" defer></script>
 <script src="assets/club-logos.js?v=20261124-crestfast2" defer></script>
@@ -19,6 +20,7 @@
   <script src="assets/prediction-store.js?v=20261123-folder" defer></script>
   <script src="assets/mypage.js?v=20261124-cache1" defer></script>
   <script src="assets/my-teams.js?v=20261124-team2" defer></script>
+  <script src="assets/saved-matches.js?v=20261124-save1" defer></script>
   <script type="module" src="assets/account.js?v=20261124-signupready1"></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=90">
 <link rel="preconnect" href="https://crests.football-data.org" crossorigin>
@@ -52,9 +54,20 @@
   <main class="mypage-wrap" id="myPageMain">
     <section class="mypage-heading" aria-labelledby="pageTitle">
       <div><h1 id="pageTitle">마이페이지</h1></div>
-      <a class="text-link" href="#savedPredictions">저장한 폴더 <span id="savedCount">0</span></a>
+      <div class="mypage-quick-links"><a class="text-link" href="#savedMatches">담은 경기</a><a class="text-link" href="#savedPredictions">예측 폴더 <span id="savedCount">0</span></a></div>
     </section>
     <section id="accountPanel" class="account-panel" aria-labelledby="accountTitle" hidden><div class="account-heading"><div><h2 id="accountTitle">내 계정</h2><p id="accountStatus" role="status">계정 연결 상태를 확인하고 있습니다.</p></div><button id="accountSignout" type="button" class="outline-button" hidden>로그아웃</button></div><div id="accountAuth" hidden><div class="account-fields"><label>이메일<input id="accountEmail" type="email" autocomplete="email" maxlength="254" placeholder="email@example.com"></label><label>비밀번호<input id="accountPassword" type="password" autocomplete="current-password" minlength="8" maxlength="128" placeholder="8자 이상"></label><label id="accountNicknameWrap" hidden>닉네임<input id="accountNickname" type="text" maxlength="24" autocomplete="nickname" placeholder="사용할 닉네임"></label></div><div class="account-actions"><button id="accountLogin" class="solid-button" type="button">로그인</button><button id="accountRegister" class="outline-button" type="button">회원가입</button><button id="accountReset" class="text-button" type="button">비밀번호 재설정</button></div></div><div id="accountConnected" hidden><strong id="accountDisplay"></strong><p id="accountSyncStatus">계정별 예측 기록을 확인하고 있습니다.</p><div class="account-actions"><button id="accountImport" type="button" class="outline-button">이 브라우저의 기록 가져오기</button><button id="accountSync" type="button" class="outline-button">계정 기록 새로고침</button></div></div><p id="accountMessage" class="account-message" role="alert"></p></section>
+    <section class="saved-matches-section" id="savedMatches" aria-labelledby="savedMatchesTitle">
+      <div class="saved-matches-heading">
+        <div><h2 id="savedMatchesTitle">담은 경기</h2><p>관심 경기를 모아두고 분석하거나 승·무·패를 선택하세요.</p></div>
+        <small id="savedMatchesCount">0경기</small>
+      </div>
+      <div id="savedMatchesList" class="saved-matches-list" aria-live="polite">
+        <p class="saved-match-empty">담은 경기를 확인하고 있습니다.</p>
+      </div>
+      <button id="savedMatchesMore" type="button" class="saved-match-more" hidden>더 보기</button>
+      <p id="savedMatchesStatus" class="saved-match-page-status" role="status" aria-live="polite"></p>
+    </section>
     <section class="myteam-section" id="myTeams" aria-labelledby="myTeamTitle">
       <div class="myteam-head">
         <div><p class="myteam-eyebrow">MY TEAM PICK</p><h2 id="myTeamTitle">마이팀 픽</h2><p>관심 구단을 등록하고 다음 경기 일정을 모아보세요.</p></div>
