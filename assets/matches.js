@@ -5,7 +5,7 @@ if(!root)return;
 const leagueNames={epl:"프리미어리그",laliga:"라리가",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그",championship:"잉글랜드 챔피언십"};
 const leagueShort={epl:"EPL",laliga:"LA LIGA",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",uel:"UEL",uecl:"UECL",championship:"CHAMPIONSHIP"};
 const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["laliga","라리가"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"],["uel","유로파리그"],["uecl","컨퍼런스리그"]];
-const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,loading:true,error:false,predictionLeague:"all"};
+const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,loading:true,error:false,predictionLeague:"all",predictionVisible:40};
 const $=id=>document.getElementById(id);
 function element(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined&&value!==null)el.textContent=String(value);return el;}
 function dateObj(iso){return new Date(iso+"T12:00:00Z");}
@@ -175,7 +175,7 @@ function renderList(){
  const list=$("matchList");if(renderLoadState(list))return;
  const filtered=state.matches.filter(m=>m.date>=start&&m.date<=end&&(state.league==="all"||m.league===state.league)&&(state.status==="all"||eventStatus(m)===state.status));
  $("matchCounter").textContent=filtered.length+"경기";
- list.replaceChildren();
+ window.ClubLogos?.release(list);list.replaceChildren();
  if(!filtered.length){
   const empty=element("div","match-empty");empty.append(element("strong","","해당 기간에 등록된 경기가 없습니다."),element("p","","다른 리그를 선택하거나 이전 주와 다음 주를 확인하세요."));list.append(empty);return;
  }
