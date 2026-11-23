@@ -289,7 +289,7 @@ async function refreshResults(recent){
  if(!fixtures.length||fixtures[0].date<(recent.lastMatchDate||""))return;
  const matches=fixtures.map(x=>({date:x.date,home:x.home,away:x.away,homeScore:Number(x.ft_home),awayScore:Number(x.ft_away)}));
  showMatches(toEvents(matches),null);
- show("matchNotice","최근 리그 "+matches.length+"경기 · 마지막 결과 "+fixtures[0].date+". 컵대회와 유럽대항전 결과는 포함하지 않았어.");
+ show("matchNotice",(league==="ucl"?"챔피언스리그":"국내 리그")+" 최근 "+matches.length+"경기 · 마지막 확인 "+fixtures[0].date+" · 공개 자료 기준.");
  select("resultsSource").href="https://github.com/oladeeayo/open-matchday";
  select("resultsSource").textContent="경기 기록: open-matchday";
  }catch(e){}finally{clearTimeout(timer)}
@@ -325,7 +325,7 @@ function showMatches(events,tid){
  const score=document.createElement("span");score.className="score";score.textContent=item.homeScore+" : "+item.awayScore;
  row.append(date,desc,score);box.append(row);
  }
- show("matchNotice",sorted.length===10?"확인된 최근 10개 경기의 최종 결과를 표시합니다.":"무료 데이터 제공 범위에서 확인된 "+sorted.length+"경기만 표시했어. 전체 10경기 기록은 추가 데이터 연동이 필요해.");
+ show("matchNotice",league==="ucl"?"2026/27 챔피언스리그 리그 페이즈의 확인된 최근 "+sorted.length+"경기를 표시합니다.":sorted.length===10?"최근 국내 리그 10개 경기의 최종 결과를 표시합니다.":"확인된 최근 국내 리그 "+sorted.length+"경기를 표시합니다. 다른 대회 결과는 포함되지 않습니다.");
 }
 async function loadTeam(){
  const [reg,standings,matchHistory]=await Promise.all([getJSON("data/team-profiles.json"),getJSON("data/league-data.json"),getJSON("data/team-results.json").catch(()=>null)]);
@@ -345,6 +345,7 @@ async function loadTeam(){
  if(local.stadiumSourceUrl){select("stadiumSource").href=local.stadiumSourceUrl;select("stadiumSource").hidden=false;}
  if(local.foundedYear)show("founded",local.foundedYear+"년 (구단 역사)");
  setHistory(local);
+ renderCompetitions({});
  if(local.manager){staticManagerVerified=true;show("manager",local.manager+" (2026/27 시즌)");const link=select("managerLink");link.hidden=false;link.href=local.managerSourceUrl;link.textContent="감독 명단 출처 · 2026년 11월 23일 확인";}
  const recent=matchHistory?.teams?.[pageKey];
  let hasLocalResults=false;
