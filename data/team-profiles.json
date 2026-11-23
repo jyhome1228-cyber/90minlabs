@@ -1515,12 +1515,18 @@
       "cityKo": "아테네",
       "stadium": "Agia Sophia Stadium",
       "searchName": "AEK Athens",
-      "historyKo": null,
+      "historyKo": "AEK Athens은(는) 그리스 아테네을 연고로 하는 1924년에 출범한 축구 구단이다. 홈구장은 Agia Sophia Stadium이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "그리스",
+      "foundedYear": 1924,
+      "wikiEn": "AEK Athens F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=AEK%20Athens%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=AEK%20Athens%20F.C.",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Bodø/Glimt": {
       "name": "Bodø/Glimt",
@@ -1529,12 +1535,18 @@
       "cityKo": "보되",
       "stadium": "Aspmyra Stadion",
       "searchName": "Bodo Glimt",
-      "historyKo": null,
+      "historyKo": "Bodø/Glimt은(는) 노르웨이 보되을 연고로 하는 1916년에 출범한 축구 구단이다. 홈구장은 Aspmyra Stadion이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "노르웨이",
+      "foundedYear": 1916,
+      "wikiEn": "FK Bodø/Glimt",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Bod%C3%B8%2FGlimt",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Bod%C3%B8%2FGlimt",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Club Brugge": {
       "name": "Club Brugge",
@@ -1543,12 +1555,18 @@
       "cityKo": "브뤼허",
       "stadium": "Jan Breydel Stadium",
       "searchName": "Club Brugge",
-      "historyKo": null,
+      "historyKo": "Club Brugge은(는) 벨기에 브뤼허을 연고로 하는 1891년에 출범한 축구 구단이다. 홈구장은 Jan Breydel Stadium이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "벨기에",
+      "foundedYear": 1891,
+      "wikiEn": "Club Brugge KV",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Club%20Brugge%20KV",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Club%20Brugge%20KV",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Fenerbahçe": {
       "name": "Fenerbahçe",
@@ -1557,12 +1575,18 @@
       "cityKo": "이스탄불",
       "stadium": "Şükrü Saracoğlu Stadium",
       "searchName": "Fenerbahce",
-      "historyKo": null,
+      "historyKo": "Fenerbahçe은(는) 튀르키예 이스탄불을 연고로 하는 1907년에 출범한 축구 구단이다. 홈구장은 Şükrü Saracoğlu Stadium이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "튀르키예",
+      "foundedYear": 1907,
+      "wikiEn": "Fenerbahçe S.K. (football)",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Fenerbah%C3%A7e%20S.K.%20(football)",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Fenerbah%C3%A7e%20S.K.%20(football)",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Feyenoord": {
       "name": "Feyenoord",
@@ -1571,12 +1595,18 @@
       "cityKo": "로테르담",
       "stadium": "De Kuip",
       "searchName": "Feyenoord",
-      "historyKo": null,
+      "historyKo": "Feyenoord은(는) 네덜란드 로테르담을 연고로 하는 1908년에 출범한 축구 구단이다. 홈구장은 De Kuip이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "네덜란드",
+      "foundedYear": 1908,
+      "wikiEn": "Feyenoord",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Feyenoord",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Feyenoord",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Galatasaray": {
       "name": "Galatasaray",
@@ -1585,12 +1615,18 @@
       "cityKo": "이스탄불",
       "stadium": "RAMS Park",
       "searchName": "Galatasaray",
-      "historyKo": null,
+      "historyKo": "Galatasaray은(는) 튀르키예 이스탄불을 연고로 하는 1905년에 출범한 축구 구단이다. 홈구장은 RAMS Park이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "튀르키예",
+      "foundedYear": 1905,
+      "wikiEn": "Galatasaray S.K. (football)",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Galatasaray%20S.K.%20(football)",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Galatasaray%20S.K.%20(football)",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:LASK": {
       "name": "LASK",
@@ -1599,12 +1635,18 @@
       "cityKo": "린츠",
       "stadium": "Raiffeisen Arena",
       "searchName": "LASK Linz",
-      "historyKo": null,
+      "historyKo": "LASK은(는) 오스트리아 린츠을 연고로 하는 1908년에 출범한 축구 구단이다. 홈구장은 Raiffeisen Arena이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "오스트리아",
+      "foundedYear": 1908,
+      "wikiEn": "LASK",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=LASK",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=LASK",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:PSV": {
       "name": "PSV",
@@ -1613,12 +1655,18 @@
       "cityKo": "에인트호번",
       "stadium": "Philips Stadion",
       "searchName": "PSV Eindhoven",
-      "historyKo": null,
+      "historyKo": "PSV은(는) 네덜란드 에인트호번을 연고로 하는 1913년에 출범한 축구 구단이다. 홈구장은 Philips Stadion이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "네덜란드",
+      "foundedYear": 1913,
+      "wikiEn": "PSV Eindhoven",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=PSV%20Eindhoven",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=PSV%20Eindhoven",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Porto": {
       "name": "Porto",
@@ -1627,12 +1675,18 @@
       "cityKo": "포르투",
       "stadium": "Estádio do Dragão",
       "searchName": "FC Porto",
-      "historyKo": null,
+      "historyKo": "Porto은(는) 포르투갈 포르투을 연고로 하는 1893년에 출범한 축구 구단이다. 홈구장은 Estádio do Dragão이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "포르투갈",
+      "foundedYear": 1893,
+      "wikiEn": "FC Porto",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Porto",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Porto",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:S. Bratislava": {
       "name": "S. Bratislava",
@@ -1641,26 +1695,39 @@
       "cityKo": "브라티슬라바",
       "stadium": "Tehelné pole",
       "searchName": "Slovan Bratislava",
-      "historyKo": null,
+      "historyKo": "S. Bratislava은(는) 슬로바키아 브라티슬라바을 연고로 하는 1919년에 출범한 축구 구단이다. 홈구장은 Tehelné pole이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "슬로바키아",
+      "foundedYear": 1919,
+      "wikiEn": "ŠK Slovan Bratislava",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=%C5%A0K%20Slovan%20Bratislava",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=%C5%A0K%20Slovan%20Bratislava",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Sabah": {
       "name": "Sabah",
       "league": "ucl",
       "wikiKo": "사바흐 FC",
       "cityKo": "바쿠",
-      "stadium": null,
+      "stadium": "Bank Respublika Arena",
       "searchName": "Sabah FC",
-      "historyKo": null,
+      "historyKo": "Sabah은(는) 아제르바이잔 바쿠을 연고로 하는 2017년에 출범한 축구 구단이다. 홈구장은 Bank Respublika Arena이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "아제르바이잔",
+      "foundedYear": 2017,
+      "wikiEn": "Sabah FC (Azerbaijan)",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Sabah%20FC%20(Azerbaijan)",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Sabah%20FC%20(Azerbaijan)",
+      "profileCheckedAt": "2026-11-23",
+      "stadiumSourceUrl": "https://sabahfc.az/club/stadium"
     },
     "ucl:Shakhtar": {
       "name": "Shakhtar",
@@ -1669,12 +1736,18 @@
       "cityKo": "도네츠크",
       "stadium": null,
       "searchName": "Shakhtar Donetsk",
-      "historyKo": null,
+      "historyKo": "Shakhtar은(는) 우크라이나 도네츠크을 연고로 하는 1936년에 출범한 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "우크라이나",
+      "foundedYear": 1936,
+      "wikiEn": "FC Shakhtar Donetsk",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Shakhtar%20Donetsk",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Shakhtar%20Donetsk",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Slavia Praha": {
       "name": "Slavia Praha",
@@ -1683,12 +1756,18 @@
       "cityKo": "프라하",
       "stadium": "Fortuna Arena",
       "searchName": "Slavia Prague",
-      "historyKo": null,
+      "historyKo": "Slavia Praha은(는) 체코 프라하을 연고로 하는 1892년에 출범한 축구 구단이다. 홈구장은 Fortuna Arena이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "체코",
+      "foundedYear": 1892,
+      "wikiEn": "SK Slavia Prague",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=SK%20Slavia%20Prague",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=SK%20Slavia%20Prague",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Sporting CP": {
       "name": "Sporting CP",
@@ -1697,12 +1776,18 @@
       "cityKo": "리스본",
       "stadium": "Estádio José Alvalade",
       "searchName": "Sporting CP",
-      "historyKo": null,
+      "historyKo": "Sporting CP은(는) 포르투갈 리스본을 연고로 하는 1906년에 출범한 축구 구단이다. 홈구장은 Estádio José Alvalade이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "포르투갈",
+      "foundedYear": 1906,
+      "wikiEn": "Sporting CP",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Sporting%20CP",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Sporting%20CP",
+      "profileCheckedAt": "2026-11-23"
     },
     "ucl:Viking": {
       "name": "Viking",
@@ -1711,782 +1796,1133 @@
       "cityKo": "스타방에르",
       "stadium": "Viking Stadion",
       "searchName": "Viking FK",
-      "historyKo": null,
+      "historyKo": "Viking은(는) 노르웨이 스타방에르을 연고로 하는 1899년에 출범한 축구 구단이다. 홈구장은 Viking Stadion이다. 현재 2026/27 시즌 챔피언스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "officialUefaUrl": "https://www.uefa.com/uefachampionsleague/clubs/",
       "uefaCompetitions": [
         "ucl"
-      ]
+      ],
+      "countryKo": "노르웨이",
+      "foundedYear": 1899,
+      "wikiEn": "Viking FK",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Viking%20FK",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Viking%20FK",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Benfica": {
       "name": "Benfica",
       "league": "uel",
       "wikiKo": "Benfica",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "리스본",
+      "stadium": "Estádio da Luz",
       "searchName": "Benfica",
-      "historyKo": null,
+      "historyKo": "1904년 리스본에서 창단된 포르투갈의 대표 축구 구단이다. 리그와 유럽 대회에서 오랜 경쟁력을 쌓았으며 홈구장은 Estádio da Luz다. 1960년대에 유러피언컵 정상에 올랐고 포르투, 스포르팅과 함께 포르투갈의 전통적인 강호로 꼽힌다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "포르투갈",
+      "foundedYear": 1904,
+      "wikiEn": "S.L. Benfica",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=S.L.%20Benfica",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=S.L.%20Benfica",
+      "profileCheckedAt": "2026-11-23",
+      "manager": "Marco Silva",
+      "managerSourceUrl": "https://www.slbenfica.pt/en-us/agora/noticias/2026/06/19/futebol-benfica-equipa-tecnica-marco-silva-para-a-epoca-2026-27",
+      "officialWebsite": "https://www.slbenfica.pt/en-us",
+      "managerVerifiedAt": "2026-11-23"
     },
     "uel:Ferencváros": {
       "name": "Ferencváros",
       "league": "uel",
       "wikiKo": "Ferencváros",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "부다페스트",
+      "stadium": "Groupama Aréna",
       "searchName": "Ferencvaros",
-      "historyKo": null,
+      "historyKo": "Ferencváros은(는) 헝가리 부다페스트을 연고로 하는 1899년에 출범한 축구 구단이다. 홈구장은 Groupama Aréna이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "헝가리",
+      "foundedYear": 1899,
+      "wikiEn": "Ferencvárosi TC",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Ferencv%C3%A1rosi%20TC",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Ferencv%C3%A1rosi%20TC",
+      "profileCheckedAt": "2026-11-23",
+      "manager": "Balázs Borbély",
+      "managerSourceUrl": "https://statz.ai/team/ferencvarosi",
+      "managerVerifiedAt": "2026-11-23"
     },
     "uel:Union SG": {
       "name": "Union SG",
       "league": "uel",
       "wikiKo": "Union SG",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "브뤼셀",
+      "stadium": "Stade Joseph Marien",
       "searchName": "Union Saint-Gilloise",
-      "historyKo": null,
+      "historyKo": "Union SG은(는) 벨기에 브뤼셀을 연고로 하는 1897년에 출범한 축구 구단이다. 홈구장은 Stade Joseph Marien이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "벨기에",
+      "foundedYear": 1897,
+      "wikiEn": "Royale Union Saint-Gilloise",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Royale%20Union%20Saint-Gilloise",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Royale%20Union%20Saint-Gilloise",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Olympiacos": {
       "name": "Olympiacos",
       "league": "uel",
       "wikiKo": "Olympiacos",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "피레아스",
+      "stadium": "Karaiskakis Stadium",
       "searchName": "Olympiacos",
-      "historyKo": null,
+      "historyKo": "Olympiacos은(는) 그리스 피레아스을 연고로 하는 1925년에 출범한 축구 구단이다. 홈구장은 Karaiskakis Stadium이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "그리스",
+      "foundedYear": 1925,
+      "wikiEn": "Olympiacos F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Olympiacos%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Olympiacos%20F.C.",
+      "profileCheckedAt": "2026-11-23",
+      "manager": "Imanol Alguacil",
+      "managerSourceUrl": "https://www.uefa.com/newsfiles/uefacup/2027/2050118_FR.pdf",
+      "managerVerifiedAt": "2026-11-23"
     },
     "uel:Beşiktaş": {
       "name": "Beşiktaş",
       "league": "uel",
       "wikiKo": "Beşiktaş",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "이스탄불",
+      "stadium": "Tüpraş Stadium",
       "searchName": "Besiktas",
-      "historyKo": null,
+      "historyKo": "Beşiktaş은(는) 튀르키예 이스탄불을 연고로 하는 1903년에 출범한 축구 구단이다. 홈구장은 Tüpraş Stadium이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "튀르키예",
+      "foundedYear": 1903,
+      "wikiEn": "Beşiktaş J.K.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Be%C5%9Fikta%C5%9F%20J.K.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Be%C5%9Fikta%C5%9F%20J.K.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:GNK Dinamo": {
       "name": "GNK Dinamo",
       "league": "uel",
       "wikiKo": "GNK Dinamo",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "자그레브",
+      "stadium": "Stadion Maksimir",
       "searchName": "Dinamo Zagreb",
-      "historyKo": null,
+      "historyKo": "GNK Dinamo은(는) 크로아티아 자그레브을 연고로 하는 1945년에 출범한 축구 구단이다. 홈구장은 Stadion Maksimir이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "크로아티아",
+      "foundedYear": 1945,
+      "wikiEn": "GNK Dinamo Zagreb",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=GNK%20Dinamo%20Zagreb",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=GNK%20Dinamo%20Zagreb",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Levski Sofia": {
       "name": "Levski Sofia",
       "league": "uel",
       "wikiKo": "Levski Sofia",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "소피아",
+      "stadium": "Georgi Asparuhov Stadium",
       "searchName": "Levski Sofia",
-      "historyKo": null,
+      "historyKo": "Levski Sofia은(는) 불가리아 소피아을 연고로 하는 1914년에 출범한 축구 구단이다. 홈구장은 Georgi Asparuhov Stadium이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "불가리아",
+      "foundedYear": 1914,
+      "wikiEn": "PFC Levski Sofia",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=PFC%20Levski%20Sofia",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=PFC%20Levski%20Sofia",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:N.E.C.": {
       "name": "N.E.C.",
       "league": "uel",
       "wikiKo": "N.E.C.",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "네이메헌",
+      "stadium": "Goffertstadion",
       "searchName": "NEC Nijmegen",
-      "historyKo": null,
+      "historyKo": "N.E.C.은(는) 네덜란드 네이메헌을 연고로 하는 1900년에 출범한 축구 구단이다. 홈구장은 Goffertstadion이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "네덜란드",
+      "foundedYear": 1900,
+      "wikiEn": "NEC Nijmegen",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=NEC%20Nijmegen",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=NEC%20Nijmegen",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:AZ Alkmaar": {
       "name": "AZ Alkmaar",
       "league": "uel",
       "wikiKo": "AZ Alkmaar",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "알크마르",
+      "stadium": "AFAS Stadion",
       "searchName": "AZ Alkmaar",
-      "historyKo": null,
+      "historyKo": "AZ Alkmaar은(는) 네덜란드 알크마르을 연고로 하는 1967년에 출범한 축구 구단이다. 홈구장은 AFAS Stadion이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "네덜란드",
+      "foundedYear": 1967,
+      "wikiEn": "AZ Alkmaar",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=AZ%20Alkmaar",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=AZ%20Alkmaar",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Anderlecht": {
       "name": "Anderlecht",
       "league": "uel",
       "wikiKo": "Anderlecht",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "브뤼셀",
+      "stadium": "Lotto Park",
       "searchName": "Anderlecht",
-      "historyKo": null,
+      "historyKo": "Anderlecht은(는) 벨기에 브뤼셀을 연고로 하는 1908년에 출범한 축구 구단이다. 홈구장은 Lotto Park이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "벨기에",
+      "foundedYear": 1908,
+      "wikiEn": "R.S.C. Anderlecht",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=R.S.C.%20Anderlecht",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=R.S.C.%20Anderlecht",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:OFI Crete": {
       "name": "OFI Crete",
       "league": "uel",
       "wikiKo": "OFI Crete",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "이라클리오",
+      "stadium": "Theodoros Vardinogiannis Stadium",
       "searchName": "OFI",
-      "historyKo": null,
+      "historyKo": "OFI Crete은(는) 그리스 이라클리오을 연고로 하는 1925년에 출범한 축구 구단이다. 홈구장은 Theodoros Vardinogiannis Stadium이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "그리스",
+      "foundedYear": 1925,
+      "wikiEn": "OFI Crete F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=OFI%20Crete%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=OFI%20Crete%20F.C.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Omonia": {
       "name": "Omonia",
       "league": "uel",
       "wikiKo": "Omonia",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "니코시아",
+      "stadium": "GSP Stadium",
       "searchName": "Omonia",
-      "historyKo": null,
+      "historyKo": "Omonia은(는) 키프로스 니코시아을 연고로 하는 1948년에 출범한 축구 구단이다. 홈구장은 GSP Stadium이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "키프로스",
+      "foundedYear": 1948,
+      "wikiEn": "AC Omonia",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=AC%20Omonia",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=AC%20Omonia",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Torreense": {
       "name": "Torreense",
       "league": "uel",
       "wikiKo": "Torreense",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "토레스베드라스",
+      "stadium": "Estádio Manuel Marques",
       "searchName": "Torreense",
-      "historyKo": null,
+      "historyKo": "Torreense은(는) 포르투갈 토레스베드라스을 연고로 하는 1917년에 출범한 축구 구단이다. 홈구장은 Estádio Manuel Marques이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "포르투갈",
+      "foundedYear": 1917,
+      "wikiEn": "S.C.U. Torreense",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=S.C.U.%20Torreense",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=S.C.U.%20Torreense",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Sparta Praha": {
       "name": "Sparta Praha",
       "league": "uel",
       "wikiKo": "Sparta Praha",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "프라하",
+      "stadium": "epet ARENA",
       "searchName": "Sparta Praha",
-      "historyKo": null,
+      "historyKo": "Sparta Praha은(는) 체코 프라하을 연고로 하는 1893년에 출범한 축구 구단이다. 홈구장은 epet ARENA이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "체코",
+      "foundedYear": 1893,
+      "wikiEn": "AC Sparta Prague",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=AC%20Sparta%20Prague",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=AC%20Sparta%20Prague",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Sturm Graz": {
       "name": "Sturm Graz",
       "league": "uel",
       "wikiKo": "Sturm Graz",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "그라츠",
+      "stadium": "Merkur Arena",
       "searchName": "Sturm Graz",
-      "historyKo": null,
+      "historyKo": "Sturm Graz은(는) 오스트리아 그라츠을 연고로 하는 1909년에 출범한 축구 구단이다. 홈구장은 Merkur Arena이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "오스트리아",
+      "foundedYear": 1909,
+      "wikiEn": "SK Sturm Graz",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=SK%20Sturm%20Graz",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=SK%20Sturm%20Graz",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Celje": {
       "name": "Celje",
       "league": "uel",
       "wikiKo": "Celje",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "첼레",
+      "stadium": "Stadion Z'dežele",
       "searchName": "Celje",
-      "historyKo": null,
+      "historyKo": "Celje은(는) 슬로베니아 첼레을 연고로 하는 1919년에 출범한 축구 구단이다. 홈구장은 Stadion Z'dežele이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "슬로베니아",
+      "foundedYear": 1919,
+      "wikiEn": "NK Celje",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=NK%20Celje",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=NK%20Celje",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Salzburg": {
       "name": "Salzburg",
       "league": "uel",
       "wikiKo": "Salzburg",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "잘츠부르크",
+      "stadium": "Red Bull Arena",
       "searchName": "Salzburg",
-      "historyKo": null,
+      "historyKo": "Salzburg은(는) 오스트리아 잘츠부르크을 연고로 하는 1933년에 출범한 축구 구단이다. 홈구장은 Red Bull Arena이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "오스트리아",
+      "foundedYear": 1933,
+      "wikiEn": "FC Red Bull Salzburg",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Red%20Bull%20Salzburg",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Red%20Bull%20Salzburg",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Jagiellonia": {
       "name": "Jagiellonia",
       "league": "uel",
       "wikiKo": "Jagiellonia",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "비아위스토크",
+      "stadium": "Stadion Miejski w Białymstoku",
       "searchName": "Jagiellonia",
-      "historyKo": null,
+      "historyKo": "Jagiellonia은(는) 폴란드 비아위스토크을 연고로 하는 1920년에 출범한 축구 구단이다. 홈구장은 Stadion Miejski w Białymstoku이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "폴란드",
+      "foundedYear": 1920,
+      "wikiEn": "Jagiellonia Białystok",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Jagiellonia%20Bia%C5%82ystok",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Jagiellonia%20Bia%C5%82ystok",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Viktoria Plzeň": {
       "name": "Viktoria Plzeň",
       "league": "uel",
       "wikiKo": "Viktoria Plzeň",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "플젠",
+      "stadium": "Doosan Arena",
       "searchName": "Viktoria Plzen",
-      "historyKo": null,
+      "historyKo": "Viktoria Plzeň은(는) 체코 플젠을 연고로 하는 1911년에 출범한 축구 구단이다. 홈구장은 Doosan Arena이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "체코",
+      "foundedYear": 1911,
+      "wikiEn": "FC Viktoria Plzeň",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Viktoria%20Plze%C5%88",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Viktoria%20Plze%C5%88",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Celtic": {
       "name": "Celtic",
       "league": "uel",
       "wikiKo": "Celtic",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "글래스고",
+      "stadium": "Celtic Park",
       "searchName": "Celtic",
-      "historyKo": null,
+      "historyKo": "Celtic은(는) 스코틀랜드 글래스고을 연고로 하는 1887년에 출범한 축구 구단이다. 홈구장은 Celtic Park이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "스코틀랜드",
+      "foundedYear": 1887,
+      "wikiEn": "Celtic F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Celtic%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Celtic%20F.C.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:H. Beer-Sheva": {
       "name": "H. Beer-Sheva",
       "league": "uel",
       "wikiKo": "H. Beer-Sheva",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "베에르셰바",
+      "stadium": "Turner Stadium",
       "searchName": "Hapoel Beer Sheva",
-      "historyKo": null,
+      "historyKo": "H. Beer-Sheva은(는) 이스라엘 베에르셰바을 연고로 하는 1949년에 출범한 축구 구단이다. 홈구장은 Turner Stadium이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "이스라엘",
+      "foundedYear": 1949,
+      "wikiEn": "Hapoel Be'er Sheva F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Hapoel%20Be'er%20Sheva%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Hapoel%20Be'er%20Sheva%20F.C.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Lillestrøm": {
       "name": "Lillestrøm",
       "league": "uel",
       "wikiKo": "Lillestrøm",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "릴레스트룀",
+      "stadium": "Åråsen Stadion",
       "searchName": "Lillestrøm",
-      "historyKo": null,
+      "historyKo": "Lillestrøm은(는) 노르웨이 릴레스트룀을 연고로 하는 1917년에 출범한 축구 구단이다. 홈구장은 Åråsen Stadion이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "노르웨이",
+      "foundedYear": 1917,
+      "wikiEn": "Lillestrøm SK",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Lillestr%C3%B8m%20SK",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Lillestr%C3%B8m%20SK",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Lech Poznań": {
       "name": "Lech Poznań",
       "league": "uel",
       "wikiKo": "Lech Poznań",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "포즈난",
+      "stadium": "Stadion Miejski w Poznaniu",
       "searchName": "Lech Poznan",
-      "historyKo": null,
+      "historyKo": "Lech Poznań은(는) 폴란드 포즈난을 연고로 하는 1922년에 출범한 축구 구단이다. 홈구장은 Stadion Miejski w Poznaniu이다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "폴란드",
+      "foundedYear": 1922,
+      "wikiEn": "Lech Poznań",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Lech%20Pozna%C5%84",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Lech%20Pozna%C5%84",
+      "profileCheckedAt": "2026-11-23"
     },
     "uel:Ararat-Armenia": {
       "name": "Ararat-Armenia",
       "league": "uel",
       "wikiKo": "Ararat-Armenia",
-      "cityKo": null,
+      "cityKo": "예레반",
       "stadium": null,
       "searchName": "FC Ararat-Armenia",
-      "historyKo": null,
+      "historyKo": "Ararat-Armenia은(는) 아르메니아 예레반을 연고로 하는 2017년에 출범한 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 유로파리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uel"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaeuropaleague/standings/",
+      "countryKo": "아르메니아",
+      "foundedYear": 2017,
+      "wikiEn": "FC Ararat-Armenia",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Ararat-Armenia",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Ararat-Armenia",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Lugano": {
       "name": "Lugano",
       "league": "uecl",
       "wikiKo": "Lugano",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "루가노",
+      "stadium": "AIL Arena",
       "searchName": "FC Lugano",
-      "historyKo": null,
+      "historyKo": "Lugano은(는) 스위스 루가노을 연고로 하는 1908년에 출범한 축구 구단이다. 홈구장은 AIL Arena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "스위스",
+      "foundedYear": 1908,
+      "wikiEn": "FC Lugano",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Lugano",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Lugano",
+      "profileCheckedAt": "2026-11-23",
+      "manager": "Mattia Croci-Torti",
+      "managerSourceUrl": "https://fclugano.com/en/news/l-attesa-e-finita-il-lugano-debutta-alla-ail-arena",
+      "stadiumSourceUrl": "https://fclugano.com/en/faq-ail-arena",
+      "managerVerifiedAt": "2026-11-23"
     },
     "uecl:Panathinaikos": {
       "name": "Panathinaikos",
       "league": "uecl",
       "wikiKo": "Panathinaikos",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "아테네",
+      "stadium": "Olympic Stadium (Athens)",
       "searchName": "Panathinaikos FC",
-      "historyKo": null,
+      "historyKo": "Panathinaikos은(는) 그리스 아테네을 연고로 하는 1908년에 출범한 축구 구단이다. 홈구장은 Olympic Stadium (Athens)이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "그리스",
+      "foundedYear": 1908,
+      "wikiEn": "Panathinaikos F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Panathinaikos%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Panathinaikos%20F.C.",
+      "profileCheckedAt": "2026-11-23",
+      "manager": "Jacob Neestrup",
+      "managerSourceUrl": "https://www.pao.gr/en/team/head-coach/",
+      "managerVerifiedAt": "2026-11-23"
     },
     "uecl:Twente": {
       "name": "Twente",
       "league": "uecl",
       "wikiKo": "Twente",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "엔스헤더",
+      "stadium": "De Grolsch Veste",
       "searchName": "FC Twente",
-      "historyKo": null,
+      "historyKo": "Twente은(는) 네덜란드 엔스헤더을 연고로 하는 1965년에 출범한 축구 구단이다. 홈구장은 De Grolsch Veste이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "네덜란드",
+      "foundedYear": 1965,
+      "wikiEn": "FC Twente",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Twente",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Twente",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Brann": {
       "name": "Brann",
       "league": "uecl",
       "wikiKo": "Brann",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "베르겐",
+      "stadium": "Brann Stadion",
       "searchName": "SK Brann",
-      "historyKo": null,
+      "historyKo": "Brann은(는) 노르웨이 베르겐을 연고로 하는 1908년에 출범한 축구 구단이다. 홈구장은 Brann Stadion이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "노르웨이",
+      "foundedYear": 1908,
+      "wikiEn": "SK Brann",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=SK%20Brann",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=SK%20Brann",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Copenhagen": {
       "name": "Copenhagen",
       "league": "uecl",
       "wikiKo": "Copenhagen",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "코펜하겐",
+      "stadium": "Parken Stadium",
       "searchName": "FC Copenhagen",
-      "historyKo": null,
+      "historyKo": "Copenhagen은(는) 덴마크 코펜하겐을 연고로 하는 1992년에 출범한 축구 구단이다. 홈구장은 Parken Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "덴마크",
+      "foundedYear": 1992,
+      "wikiEn": "F.C. Copenhagen",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=F.C.%20Copenhagen",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=F.C.%20Copenhagen",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Univ. Craiova": {
       "name": "Univ. Craiova",
       "league": "uecl",
       "wikiKo": "Univ. Craiova",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "크라이오바",
+      "stadium": "Ion Oblemenco Stadium",
       "searchName": "Universitatea Craiova",
-      "historyKo": null,
+      "historyKo": "Univ. Craiova은(는) 루마니아 크라이오바을 연고로 하는 축구 구단이다. 홈구장은 Ion Oblemenco Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "루마니아",
+      "wikiEn": "CS Universitatea Craiova",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=CS%20Universitatea%20Craiova",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=CS%20Universitatea%20Craiova",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Mjällby": {
       "name": "Mjällby",
       "league": "uecl",
       "wikiKo": "Mjällby",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "헬레비크",
+      "stadium": "Strandvallen",
       "searchName": "Mjallby",
-      "historyKo": null,
+      "historyKo": "Mjällby은(는) 스웨덴 헬레비크을 연고로 하는 1939년에 출범한 축구 구단이다. 홈구장은 Strandvallen이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "스웨덴",
+      "foundedYear": 1939,
+      "wikiEn": "Mjällby AIF",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Mj%C3%A4llby%20AIF",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Mj%C3%A4llby%20AIF",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Sint-Truidense": {
       "name": "Sint-Truidense",
       "league": "uecl",
       "wikiKo": "Sint-Truidense",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "신트트라위던",
+      "stadium": "Stayen",
       "searchName": "Sint Truiden",
-      "historyKo": null,
+      "historyKo": "Sint-Truidense은(는) 벨기에 신트트라위던을 연고로 하는 1924년에 출범한 축구 구단이다. 홈구장은 Stayen이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "벨기에",
+      "foundedYear": 1924,
+      "wikiEn": "Sint-Truidense V.V.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Sint-Truidense%20V.V.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Sint-Truidense%20V.V.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Ajax": {
       "name": "Ajax",
       "league": "uecl",
       "wikiKo": "Ajax",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "암스테르담",
+      "stadium": "Johan Cruyff Arena",
       "searchName": "Ajax",
-      "historyKo": null,
+      "historyKo": "Ajax은(는) 네덜란드 암스테르담을 연고로 하는 1900년에 출범한 축구 구단이다. 홈구장은 Johan Cruyff Arena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "네덜란드",
+      "foundedYear": 1900,
+      "wikiEn": "AFC Ajax",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=AFC%20Ajax",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=AFC%20Ajax",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Trabzonspor": {
       "name": "Trabzonspor",
       "league": "uecl",
       "wikiKo": "Trabzonspor",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "트라브존",
+      "stadium": "Papara Park",
       "searchName": "Trabzonspor",
-      "historyKo": null,
+      "historyKo": "Trabzonspor은(는) 튀르키예 트라브존을 연고로 하는 1967년에 출범한 축구 구단이다. 홈구장은 Papara Park이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "튀르키예",
+      "foundedYear": 1967,
+      "wikiEn": "Trabzonspor",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Trabzonspor",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Trabzonspor",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Hajduk Split": {
       "name": "Hajduk Split",
       "league": "uecl",
       "wikiKo": "Hajduk Split",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "스플리트",
+      "stadium": "Stadion Poljud",
       "searchName": "Hajduk Split",
-      "historyKo": null,
+      "historyKo": "Hajduk Split은(는) 크로아티아 스플리트을 연고로 하는 1911년에 출범한 축구 구단이다. 홈구장은 Stadion Poljud이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "크로아티아",
+      "foundedYear": 1911,
+      "wikiEn": "HNK Hajduk Split",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=HNK%20Hajduk%20Split",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=HNK%20Hajduk%20Split",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Crvena Zvezda": {
       "name": "Crvena Zvezda",
       "league": "uecl",
       "wikiKo": "Crvena Zvezda",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "베오그라드",
+      "stadium": "Rajko Mitić Stadium",
       "searchName": "Red Star Belgrade",
-      "historyKo": null,
+      "historyKo": "Crvena Zvezda은(는) 세르비아 베오그라드을 연고로 하는 1945년에 출범한 축구 구단이다. 홈구장은 Rajko Mitić Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "세르비아",
+      "foundedYear": 1945,
+      "wikiEn": "Red Star Belgrade",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Red%20Star%20Belgrade",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Red%20Star%20Belgrade",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Braga": {
       "name": "Braga",
       "league": "uecl",
       "wikiKo": "Braga",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "브라가",
+      "stadium": "Estádio Municipal de Braga",
       "searchName": "Braga",
-      "historyKo": null,
+      "historyKo": "Braga은(는) 포르투갈 브라가을 연고로 하는 1921년에 출범한 축구 구단이다. 홈구장은 Estádio Municipal de Braga이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "포르투갈",
+      "foundedYear": 1921,
+      "wikiEn": "S.C. Braga",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=S.C.%20Braga",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=S.C.%20Braga",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Gent": {
       "name": "Gent",
       "league": "uecl",
       "wikiKo": "Gent",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "헨트",
+      "stadium": "Planet Group Arena",
       "searchName": "Gent",
-      "historyKo": null,
+      "historyKo": "Gent은(는) 벨기에 헨트을 연고로 하는 1900년에 출범한 축구 구단이다. 홈구장은 Planet Group Arena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "벨기에",
+      "foundedYear": 1900,
+      "wikiEn": "K.A.A. Gent",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=K.A.A.%20Gent",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=K.A.A.%20Gent",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Riga": {
       "name": "Riga",
       "league": "uecl",
       "wikiKo": "Riga",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "리가",
+      "stadium": "Skonto Stadium",
       "searchName": "Riga FC",
-      "historyKo": null,
+      "historyKo": "Riga은(는) 라트비아 리가을 연고로 하는 2014년에 출범한 축구 구단이다. 홈구장은 Skonto Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "라트비아",
+      "foundedYear": 2014,
+      "wikiEn": "Riga FC",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Riga%20FC",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Riga%20FC",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Thun": {
       "name": "Thun",
       "league": "uecl",
       "wikiKo": "Thun",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "툰",
+      "stadium": "Stockhorn Arena",
       "searchName": "Thun",
-      "historyKo": null,
+      "historyKo": "Thun은(는) 스위스 툰을 연고로 하는 1898년에 출범한 축구 구단이다. 홈구장은 Stockhorn Arena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "스위스",
+      "foundedYear": 1898,
+      "wikiEn": "FC Thun",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Thun",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Thun",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Borac": {
       "name": "Borac",
       "league": "uecl",
       "wikiKo": "Borac",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "바냐루카",
+      "stadium": "Banja Luka City Stadium",
       "searchName": "Borac Banja Luka",
-      "historyKo": null,
+      "historyKo": "Borac은(는) 보스니아 헤르체고비나 바냐루카을 연고로 하는 1926년에 출범한 축구 구단이다. 홈구장은 Banja Luka City Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "보스니아 헤르체고비나",
+      "foundedYear": 1926,
+      "wikiEn": "FK Borac Banja Luka",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Borac%20Banja%20Luka",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Borac%20Banja%20Luka",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:L. Red Imps": {
       "name": "L. Red Imps",
       "league": "uecl",
       "wikiKo": "L. Red Imps",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "지브롤터",
+      "stadium": "Victoria Stadium",
       "searchName": "Lincoln Red Imps",
-      "historyKo": null,
+      "historyKo": "L. Red Imps은(는) 지브롤터 지브롤터을 연고로 하는 1976년에 출범한 축구 구단이다. 홈구장은 Victoria Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "지브롤터",
+      "foundedYear": 1976,
+      "wikiEn": "Lincoln Red Imps F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Lincoln%20Red%20Imps%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Lincoln%20Red%20Imps%20F.C.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Jablonec": {
       "name": "Jablonec",
       "league": "uecl",
       "wikiKo": "Jablonec",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "야블로네츠나트니소우",
+      "stadium": "Stadion Střelnice",
       "searchName": "Jablonec",
-      "historyKo": null,
+      "historyKo": "Jablonec은(는) 체코 야블로네츠나트니소우을 연고로 하는 1945년에 출범한 축구 구단이다. 홈구장은 Stadion Střelnice이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "체코",
+      "foundedYear": 1945,
+      "wikiEn": "FK Jablonec",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Jablonec",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Jablonec",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Aarhus": {
       "name": "Aarhus",
       "league": "uecl",
       "wikiKo": "Aarhus",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "오르후스",
+      "stadium": "Ceres Park Vejlby",
       "searchName": "AGF Aarhus",
-      "historyKo": null,
+      "historyKo": "Aarhus은(는) 덴마크 오르후스을 연고로 하는 1880년에 출범한 축구 구단이다. 홈구장은 Ceres Park Vejlby이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "덴마크",
+      "foundedYear": 1880,
+      "wikiEn": "Aarhus Gymnastikforening",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Aarhus%20Gymnastikforening",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Aarhus%20Gymnastikforening",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Nordsjælland": {
       "name": "Nordsjælland",
       "league": "uecl",
       "wikiKo": "Nordsjælland",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "파룸",
+      "stadium": "Right to Dream Park",
       "searchName": "FC Nordsjaelland",
-      "historyKo": null,
+      "historyKo": "Nordsjælland은(는) 덴마크 파룸을 연고로 하는 1991년에 출범한 축구 구단이다. 홈구장은 Right to Dream Park이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "덴마크",
+      "foundedYear": 1991,
+      "wikiEn": "FC Nordsjælland",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Nordsj%C3%A6lland",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Nordsj%C3%A6lland",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Egnatia": {
       "name": "Egnatia",
       "league": "uecl",
       "wikiKo": "Egnatia",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "로고지너",
+      "stadium": "Egnatia Arena",
       "searchName": "Egnatia",
-      "historyKo": null,
+      "historyKo": "Egnatia은(는) 알바니아 로고지너을 연고로 하는 1964년에 출범한 축구 구단이다. 홈구장은 Egnatia Arena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "알바니아",
+      "foundedYear": 1964,
+      "wikiEn": "KF Egnatia",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=KF%20Egnatia",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=KF%20Egnatia",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Kairat Almaty": {
       "name": "Kairat Almaty",
       "league": "uecl",
       "wikiKo": "Kairat Almaty",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "알마티",
+      "stadium": "Central Stadium",
       "searchName": "FC Kairat",
-      "historyKo": null,
+      "historyKo": "Kairat Almaty은(는) 카자흐스탄 알마티을 연고로 하는 1954년에 출범한 축구 구단이다. 홈구장은 Central Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "카자흐스탄",
+      "foundedYear": 1954,
+      "wikiEn": "FC Kairat",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Kairat",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Kairat",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:CSKA Sofia": {
       "name": "CSKA Sofia",
       "league": "uecl",
       "wikiKo": "CSKA Sofia",
-      "cityKo": null,
+      "cityKo": "소피아",
       "stadium": null,
       "searchName": "CSKA Sofia",
-      "historyKo": null,
+      "historyKo": "CSKA Sofia은(는) 불가리아 소피아을 연고로 하는 1948년에 출범한 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "불가리아",
+      "foundedYear": 1948,
+      "wikiEn": "PFC CSKA Sofia",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=PFC%20CSKA%20Sofia",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=PFC%20CSKA%20Sofia",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Iberia Tbilisi": {
       "name": "Iberia Tbilisi",
       "league": "uecl",
       "wikiKo": "Iberia Tbilisi",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "트빌리시",
+      "stadium": "Mikheil Meskhi Stadium",
       "searchName": "FC Iberia 1999",
-      "historyKo": null,
+      "historyKo": "Iberia Tbilisi은(는) 조지아 트빌리시을 연고로 하는 1999년에 출범한 축구 구단이다. 홈구장은 Mikheil Meskhi Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "조지아",
+      "foundedYear": 1999,
+      "wikiEn": "FC Iberia 1999",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Iberia%201999",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Iberia%201999",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Pafos": {
       "name": "Pafos",
       "league": "uecl",
       "wikiKo": "Pafos",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "파포스",
+      "stadium": "Stelios Kyriakides Stadium",
       "searchName": "Pafos",
-      "historyKo": null,
+      "historyKo": "Pafos은(는) 키프로스 파포스을 연고로 하는 2014년에 출범한 축구 구단이다. 홈구장은 Stelios Kyriakides Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "키프로스",
+      "foundedYear": 2014,
+      "wikiEn": "Pafos FC",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Pafos%20FC",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Pafos%20FC",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Hearts": {
       "name": "Hearts",
       "league": "uecl",
       "wikiKo": "Hearts",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "에든버러",
+      "stadium": "Tynecastle Park",
       "searchName": "Hearts",
-      "historyKo": null,
+      "historyKo": "Hearts은(는) 스코틀랜드 에든버러을 연고로 하는 1874년에 출범한 축구 구단이다. 홈구장은 Tynecastle Park이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "스코틀랜드",
+      "foundedYear": 1874,
+      "wikiEn": "Heart of Midlothian F.C.",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Heart%20of%20Midlothian%20F.C.",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Heart%20of%20Midlothian%20F.C.",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:KuPS Kuopio": {
       "name": "KuPS Kuopio",
       "league": "uecl",
       "wikiKo": "KuPS Kuopio",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "쿠오피오",
+      "stadium": "Väre Areena",
       "searchName": "KuPS",
-      "historyKo": null,
+      "historyKo": "KuPS Kuopio은(는) 핀란드 쿠오피오을 연고로 하는 1923년에 출범한 축구 구단이다. 홈구장은 Väre Areena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "핀란드",
+      "foundedYear": 1923,
+      "wikiEn": "Kuopion Palloseura",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Kuopion%20Palloseura",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Kuopion%20Palloseura",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Midtjylland": {
       "name": "Midtjylland",
       "league": "uecl",
       "wikiKo": "Midtjylland",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "헤르닝",
+      "stadium": "MCH Arena",
       "searchName": "Midtjylland",
-      "historyKo": null,
+      "historyKo": "Midtjylland은(는) 덴마크 헤르닝을 연고로 하는 1999년에 출범한 축구 구단이다. 홈구장은 MCH Arena이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "덴마크",
+      "foundedYear": 1999,
+      "wikiEn": "FC Midtjylland",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Midtjylland",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FC%20Midtjylland",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Inter Escaldes": {
       "name": "Inter Escaldes",
       "league": "uecl",
       "wikiKo": "Inter Escaldes",
-      "cityKo": null,
+      "cityKo": "에스칼데스엥고르다니",
       "stadium": null,
       "searchName": "Inter Club d'Escaldes",
-      "historyKo": null,
+      "historyKo": "Inter Escaldes은(는) 안도라 에스칼데스엥고르다니을 연고로 하는 축구 구단이다. 홈 경기장은 대회와 시즌에 따라 다를 수 있다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "안도라",
+      "wikiEn": "Inter Club d'Escaldes",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=Inter%20Club%20d'Escaldes",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=Inter%20Club%20d'Escaldes",
+      "profileCheckedAt": "2026-11-23"
     },
     "uecl:Kauno Žalgiris": {
       "name": "Kauno Žalgiris",
       "league": "uecl",
       "wikiKo": "Kauno Žalgiris",
-      "cityKo": null,
-      "stadium": null,
+      "cityKo": "카우나스",
+      "stadium": "Darius and Girėnas Stadium",
       "searchName": "FK Kauno Zalgiris",
-      "historyKo": null,
+      "historyKo": "Kauno Žalgiris은(는) 리투아니아 카우나스을 연고로 하는 2004년에 출범한 축구 구단이다. 홈구장은 Darius and Girėnas Stadium이다. 현재 2026/27 시즌 컨퍼런스리그 리그 페이즈에 참가하고 있다.",
       "uefaLeaguePhase": true,
       "uefaCompetitions": [
         "uecl"
       ],
-      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/"
+      "introSourceUrl": "https://www.uefa.com/uefaconferenceleague/standings/",
+      "countryKo": "리투아니아",
+      "foundedYear": 2004,
+      "wikiEn": "FK Kauno Žalgiris",
+      "wikiSearchUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Kauno%20%C5%BDalgiris",
+      "basicInfoSourceUrl": "https://en.wikipedia.org/w/index.php?search=FK%20Kauno%20%C5%BDalgiris",
+      "profileCheckedAt": "2026-11-23"
     }
   },
   "uclParticipants": {
