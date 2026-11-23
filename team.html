@@ -342,7 +342,7 @@ function renderTeamDetails(team){
  if(loc){select("maplink").hidden=false;select("maplink").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(loc);}
  const official=validUrl(team.strWebsite||"");
  if(official)select("officialNews").href=official;
- else if(!currentLocalProfile?.officialWebsite)select("officialNews").removeAttribute("href");
+ else if(!select("officialNews").hasAttribute("href"))select("officialNews").removeAttribute("href");
 }
 function renderStaticSquad(profile){
  const players=profile.squadPreview||[];
@@ -456,7 +456,7 @@ async function loadTeam(){
  summaryOf(teamName,compTeams?compTeams.map(c=>({name:c.team,league:c.league})):Object.values(reg.clubs||{}).filter(c=>c.league===league).map(c=>({name:c.name,league:c.league})));
  setCrest(local.crestId?"https://crests.football-data.org/"+local.crestId+".png":"",teamName);
  fallbackBadge(local);
- if(local.cityKo)show("location",local.cityKo);
+ if(local.cityKo)show("location",[local.countryKo,local.cityKo].filter(Boolean).join(" · "));
  if(local.stadium){show("stadium",local.stadium);const loc=[local.stadium,local.cityKo].filter(Boolean).join(", ");select("maplink").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(loc);select("maplink").hidden=false;}
  if(local.stadiumSourceUrl){select("stadiumSource").href=local.stadiumSourceUrl;select("stadiumSource").hidden=false;}
  if(local.foundedYear)show("founded",local.foundedYear+"년 (구단 역사)");
@@ -486,7 +486,13 @@ async function loadTeam(){
  if(["ucl","uel","uecl"].includes(league))select("recentMatches").querySelector("h2").textContent="최근 경기 결과";
  const query=local.searchName||teamName;
  select("newsSearch").href="https://news.google.com/search?q="+encodeURIComponent(query+" football")+"&hl=ko&gl=KR&ceid=KR:ko";
- select("officialNews").removeAttribute("href");select("officialNews").style.opacity=".6";
+ const officialCard=select("officialNews");
+ const officialHeader=officialCard.querySelector("h3"),officialText=officialCard.querySelector("p");
+ if(local.officialWebsite){officialCard.href=local.officialWebsite;officialHeader.textContent="구단 공식 홈페이지";officialText.textContent="구단 공식 공지와 최근 소식";}
+ else if(local.uefaClubHistorySourceUrl){officialCard.href=local.uefaClubHistorySourceUrl;officialHeader.textContent="UEFA 참가 구단 소개";officialText.textContent="UEFA가 제공하는 팀 기본 정보 확인";}
+ else if(local.wikiSearchUrl){officialCard.href=local.wikiSearchUrl;officialHeader.textContent="구단 기본 정보";officialText.textContent="위키백과 구단 역사와 현황 확인";}
+ else{officialCard.removeAttribute("href");officialCard.style.opacity=".6";}
+
  try{
   const result=await getJSON(api+"searchteams.php?t="+encodeURIComponent(query));
   const list=(result.teams||[]).filter(x=>x.strSport==="Soccer");
