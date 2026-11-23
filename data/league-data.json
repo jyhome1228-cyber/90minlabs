@@ -1,0 +1,53 @@
+{
+  "season": "2026/27",
+  "leagues": {
+    "epl": {
+      "standings": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      },
+      "scorers": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      }
+    },
+    "seriea": {
+      "standings": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      },
+      "scorers": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      }
+    },
+    "bundesliga": {
+      "standings": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      },
+      "scorers": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      }
+    },
+    "ligue1": {
+      "standings": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      },
+      "scorers": {
+        "updatedAt": null,
+        "sourceUrl": null,
+        "rows": []
+      }
+    }
+  }
+}
