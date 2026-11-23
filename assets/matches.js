@@ -209,7 +209,7 @@ async function loadCalendar(){
  try{
   const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
   let response;
-  try{response=await fetch("./data/match-calendar.json",{cache:"no-store",signal:controller.signal})}finally{clearTimeout(timeout)}
+  try{response=await fetch("./data/match-calendar.json",{cache:"no-cache",signal:controller.signal})}finally{clearTimeout(timeout)}
   if(!response.ok)throw new Error("calendar HTTP "+response.status);
   const data=await response.json();
   if(!Array.isArray(data.matches))throw new Error("no fixtures");
