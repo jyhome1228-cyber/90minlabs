@@ -94,7 +94,7 @@ function buttons(){
  const menu=header.querySelector(".shell-menu-button");header.insertBefore(group,menu||null);
 }
 window.NinetyMinI18n={get language(){return lang;},team,setLanguage,translate:schedule};
+const observer=new MutationObserver(schedule);
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>{buttons();translate();observer.observe(document.body,{childList:true,subtree:true,characterData:true});});
 else{buttons();translate();observer.observe(document.body,{childList:true,subtree:true,characterData:true});}
-const observer=new MutationObserver(schedule);
 })();
