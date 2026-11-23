@@ -82,3 +82,32 @@
  #matches .match-meta{gap:8px}
  #matches .match-source-note{padding:19px}
 }
+
+/* Today-first date controls */
+#matches .match-today-bar{
+ display:flex;align-items:center;justify-content:space-between;gap:20px;
+ padding:24px 28px;margin:0 0 34px;border:1px solid #E8E8E8;background:#F8F8F8;
+}
+#matches .match-today-text{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+#matches .match-today-text span{font-size:13px;font-weight:700;color:#606060}
+#matches .match-today-text strong{font-size:20px;font-weight:700;line-height:1.5;color:#191919}
+#matches .match-today-btn{background:#242424;border-color:#242424;color:#FFFFFF;font-weight:700;padding:10px 19px}
+#matches .match-today-btn:hover{background:#444444;color:#FFFFFF}
+#matches .match-date-field{display:flex;align-items:center;gap:10px;font-size:12px;color:#5D5D5D;font-weight:700;white-space:nowrap}
+#matches .match-date-field input[type="date"]{min-height:41px;width:154px;background:#FFF;color:#222;border:1px solid #DCDCDC;border-radius:5px;padding:8px 11px;font-size:12px;color-scheme:light}
+#matches .match-week-nav strong{font-size:16px;min-width:160px;text-align:center}
+@media(max-width:1100px){
+ #matches .match-controls{align-items:flex-start}
+ #matches .match-control-right{justify-content:flex-end}
+}
+@media(max-width:650px){
+ #matches .match-today-bar{padding:20px 18px;margin-bottom:26px;flex-direction:column;align-items:stretch;gap:14px}
+ #matches .match-today-text{gap:8px;flex-direction:column;align-items:flex-start}
+ #matches .match-today-text strong{font-size:17px}
+ #matches .match-today-btn{width:100%;min-height:43px}
+ #matches .match-week-nav strong{font-size:13px;min-width:0}
+ #matches .match-control-right{justify-content:flex-start;gap:10px}
+ #matches .match-date-field{width:100%;justify-content:space-between}
+ #matches .match-date-field input[type="date"]{width:168px}
+ #matches .match-control-right select{flex:1;min-width:126px}
+}
