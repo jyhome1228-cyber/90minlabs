@@ -10,6 +10,12 @@ const koToEn=new Map();
 for(const [en,ko] of enToKo){if(!koToEn.has(ko)||en.length<koToEn.get(ko).length)koToEn.set(ko,en);}
 const koPairs=[...koToEn.entries()].sort((a,b)=>b[0].length-a[0].length);
 const labels={
+"경기만 보고 끝내지 마세요.":"Don't just watch the match.",
+"나만의 기록을 남겨보세요.":"Keep a record of your game.",
+"회원가입 후에는 승·무·패 예측과 관심 구단을 한곳에 모으고, 매주 경기의 흐름을 나만의 기록으로 이어갈 수 있습니다.":"With membership, bring your predictions and favorite clubs together and build your personal match record.",
+"회원가입 안내":"Membership information",
+"회원가입 기능은 준비 중입니다. 주간 예측과 마이팀 픽은 지금도 브라우저에서 이용할 수 있습니다.":"Membership is in development. Weekly predictions and My Team Pick work in this browser today.",
+
 "마이팀 픽":"My Team Pick",
 "관심 구단을 등록하고 다음 경기 일정을 모아보세요.":"Follow clubs and see their upcoming fixtures.",
 "구단 검색":"Search clubs",
