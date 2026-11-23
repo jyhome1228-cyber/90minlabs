@@ -13,7 +13,7 @@ html.intro-pending .kickoff-intro{display:flex;flex-direction:column}
 .kickoff-progress span{display:block;width:0;height:100%;background:#fff;transform-origin:left}
 .kickoff-subtitle{font-size:11px;color:#a4a7ac;letter-spacing:.1em;margin-top:20px}
 .kickoff-footer{color:#8f969e;align-items:flex-end}
-.kickoff-intro.is-exiting{opacity:0;transform:translateY(-1%);transition:opacity .38s ease,transform .38s ease}
+.kickoff-intro.is-exiting{display:flex;opacity:0;transform:translateY(-1%);transition:opacity .38s ease,transform .38s ease}
 html.intro-pending body{overflow:hidden}
 @media(max-width:650px){.kickoff-top,.kickoff-footer{padding:23px 20px}.kickoff-top>span{font-size:16px}.kickoff-counter{font-size:clamp(80px,21vw,150px)}.kickoff-caption{font-size:10px}.kickoff-subtitle{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.kickoff-intro{display:none!important}.kickoff-intro.is-exiting{transition:none}}
