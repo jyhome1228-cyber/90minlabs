@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - 'scripts/daily-results.cjs'
+      - 'scripts/build-nearby-fixtures.cjs'
       - 'tests/daily-results.test.cjs'
       - '.github/workflows/daily-results.yml'
 
@@ -36,16 +37,19 @@ jobs:
       - name: Check sync implementation
         run: |
           node --check scripts/daily-results.cjs
+          node --check scripts/build-nearby-fixtures.cjs
           node --test tests/daily-results.test.cjs
       - name: Fetch verified 2026/27 results and rebuild snapshots
         run: node scripts/daily-results.cjs
+      - name: Prepare lightweight rolling fixtures for homepage
+        run: node scripts/build-nearby-fixtures.cjs
       - name: Commit only changed data
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "90MIN LABS Results Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/match-calendar.json data/team-results.json data/league-data.json data/auto-sync-status.json
+          git add data/match-calendar.json data/team-results.json data/league-data.json data/auto-sync-status.json data/nearby-fixtures.json
           if git diff --cached --quiet; then
             echo "No new verified results or status updates."
             exit 0
