@@ -1,85 +1,57 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<title>리그 데이터 | 90MIN LABS</title>
-<meta name="description" content="90MIN LABS의 프리미어리그, 세리에A, 분데스리가, 리그앙 순위 및 득점왕 데이터.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="90MIN LABS — 축구 경기 전 예측과 데이터 연구, 누구나 참여할 수 있는 축구 칼럼.">
+<title>90MIN LABS | Football Prediction Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#152238;--muted:#677487;--line:#e5e9ee;--navy:#193b61;--sub:#f6f8fa}
-*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:"DM Sans","Noto Sans KR",sans-serif;font-size:14px;line-height:1.65}button{font:inherit;cursor:pointer}
-a{color:inherit;text-decoration:none}.container{max-width:1440px;margin:auto;padding:0 44px}
-header{height:82px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-size:23px;letter-spacing:-1.1px;font-weight:800;color:#101d30;white-space:nowrap}.links{display:flex;align-items:center;gap:30px}.links a{font-size:12px;font-weight:700;letter-spacing:.03em;color:#536174}.links a.active{color:#101d30}.nav-right{font-size:12px;color:var(--muted)}
-main{padding-top:70px;padding-bottom:110px}.eyebrow{color:#526a86;font-size:12px;font-weight:700;letter-spacing:.07em}.heading{margin-top:12px;font-size:clamp(28px,3.2vw,45px);font-weight:700;letter-spacing:-1.9px;line-height:1.28}p.intro{font-size:15px;color:var(--muted);margin:16px 0 38px;max-width:720px}
-.tabs{display:flex;border-bottom:1px solid var(--line);overflow:auto;gap:38px;scrollbar-width:none}.tab{padding:16px 0 17px;border:none;border-bottom:2px solid transparent;color:#8691a0;white-space:nowrap;background:transparent;font-size:14px;font-weight:700}.tab[aria-selected=true]{border-bottom-color:var(--navy);color:var(--ink)}
-.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:32px 0 17px}.section-name{font-size:21px;font-weight:700;letter-spacing:-.7px}.switch{display:flex;gap:3px;padding:3px;background:#f2f5f8;border-radius:8px}.switch button{border:0;border-radius:6px;background:transparent;color:#6e7c8d;font-weight:600;font-size:12px;padding:9px 17px}.switch button[aria-selected=true]{background:white;color:var(--ink);box-shadow:0 1px 4px #13243c16}
-.meta{display:flex;justify-content:space-between;gap:15px;color:#7b8998;font-size:12px;margin:0 0 18px;flex-wrap:wrap}.meta a{text-decoration:underline;text-underline-offset:3px}
-.tablebox{border-top:2px solid #1c3048;overflow-x:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;text-align:right;font-size:13px}th{color:#788698;font-weight:600;background:#fafbfd;font-size:12px}th,td{padding:15px 14px;border-bottom:1px solid #edf0f3}th:nth-child(2),td:nth-child(2){text-align:left}th:first-child,td:first-child{text-align:center;width:75px}tr:last-child td{border-bottom:1px solid var(--line)}.team{font-weight:650}.teamcode{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#edf2f7;border-radius:6px;margin-right:12px;font-size:10px;font-weight:800;color:#45617c}.points{font-weight:800;color:#172d48}
-.empty{border:1px solid var(--line);background:#fcfdfe;min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;gap:9px}.empty .mark{font-size:24px;color:#7c8da1}.empty strong{font-size:15px}.empty span{color:#7c8999;max-width:450px;font-size:12px}
-.note{padding:24px 28px;background:#f6f8fa;margin-top:40px;color:#657589;font-size:13px;display:flex;align-items:flex-start;gap:18px}.note b{color:#1d324c}
-footer{border-top:1px solid var(--line);padding:36px 0;color:#7d8a98;font-size:12px}.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-@media(max-width:820px){.container{padding:0 20px}.links{gap:14px;overflow:auto}.links a{font-size:10px}.nav-right{display:none}header{height:68px}.brand{font-size:18px}.nav{gap:18px}.tabs{gap:25px}.toolbar{align-items:flex-start;flex-direction:column}.heading{letter-spacing:-1px}main{padding-top:42px;padding-bottom:70px}th,td{padding:13px 11px}.note{padding:20px}}
+:root{--ink:#172538;--muted:#728093;--navy:#193b61;--line:#e6eaef;--soft:#f7f9fb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font:14px/1.7 "DM Sans","Noto Sans KR",sans-serif;word-break:keep-all}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(100% - 64px,1360px);margin:auto}
+header{position:sticky;top:0;z-index:30;background:#ffffffed;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.head{height:78px;display:flex;align-items:center;gap:36px}.logo{font-size:23px;font-weight:800;letter-spacing:-1.1px;white-space:nowrap}.nav{display:flex;gap:27px;align-items:center;margin-left:auto}.nav a{font-size:12px;font-weight:700;letter-spacing:.01em;color:#667387}.nav a:hover,.nav a.active{color:var(--navy)}.nav .write{padding:10px 17px;border:1px solid #d4dce5;border-radius:6px;color:var(--navy)}.menu{display:none;border:0;background:transparent;font-size:21px}
+main{min-height:75vh}.intro{padding:110px 0 90px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:end}.eyebrow{font-size:12px;color:#547092;font-weight:700;letter-spacing:.1em}.intro h1{font-weight:700;font-size:clamp(32px,4.2vw,64px);line-height:1.34;letter-spacing:-2.7px;margin:18px 0 24px}.intro p{max-width:650px;margin:0;color:#637286;font-size:15px}.actions{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d5dde7;padding:12px 21px;border-radius:6px;background:#fff;color:var(--ink);font-weight:700;font-size:13px}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.btn:hover{opacity:.84}
+.lab-visual{background:#f8fafc;min-height:270px;padding:25px;border:1px solid #edf0f4;display:flex;flex-direction:column;justify-content:space-between}.lab-visual .top{font-size:11px;font-weight:700;color:#78879a;letter-spacing:.1em}.bars{display:flex;gap:9px;height:150px;align-items:end;border-bottom:1px solid #cbd5e1;padding:0 8px 0}.bars span{flex:1;background:#254666;min-height:24px}.bars span:nth-child(2n){background:#9baec2}.lab-visual .bottom{display:flex;justify-content:space-between;color:#7d8b9c;font-size:11px}
+section.block{padding:75px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:26px}.section-head h2{font-size:26px;letter-spacing:-.8px;margin:7px 0 0}.sub{font-size:13px;color:var(--muted)}.more{font-weight:700;font-size:12px;color:var(--navy)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:26px;border:1px solid #e2e7ed;min-height:220px;display:flex;flex-direction:column;gap:14px;background:#fff}.card h3{margin:0;font-size:19px;letter-spacing:-.5px}.card .kicker{font-size:11px;color:#6f7f93;font-weight:700;letter-spacing:.07em}.card p{margin:0;color:#728093;font-size:13px;flex:1}.card .bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;color:var(--navy)}.card:hover{border-color:#a5b4c7}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.stat{background:#f7f9fb;border:1px solid #edf1f5;padding:32px;min-height:210px}.stat h3{font-size:22px;letter-spacing:-.6px;margin:10px 0}.stat p{font-size:13px;color:#718197;margin:0}.league-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.league-tile{padding:28px 23px;border:1px solid var(--line);min-height:135px;display:flex;flex-direction:column;justify-content:space-between;font-weight:700}.league-tile span{font-size:11px;color:#8794a5}.league-tile strong{font-size:16px}.league-tile:hover{background:var(--soft);border-color:#bbcad8}
+.page{padding:72px 0 110px}.page h1{font-size:40px;letter-spacing:-1.3px;line-height:1.3;margin:13px 0 18px}.page>.sub{max-width:720px;margin-bottom:35px}.empty{background:#fafcfd;border:1px solid #e5eaf0;min-height:245px;padding:38px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px}.empty strong{font-size:18px}.empty p{font-size:13px;color:#758599;margin:0;max-width:500px}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:28px 0}.filter{border:1px solid #dee5ec;background:white;border-radius:5px;padding:9px 14px;color:#738195}.filter.active{background:#1c3e63;color:white;border-color:#1c3e63}
+.form{max-width:800px;display:grid;gap:19px}.field{display:grid;gap:7px}.field label{font-weight:700;font-size:12px}.field input,.field textarea,.field select{border:1px solid #d9e1eb;background:white;border-radius:6px;padding:13px;color:#1b2c41;width:100%}.field textarea{min-height:220px;resize:vertical}.info{background:#f5f8fa;padding:20px;color:#647587;font-size:13px;border-left:3px solid #274666}.preview{border:1px solid var(--line);padding:25px;margin-top:26px;white-space:pre-wrap}.preview h2{white-space:normal}.hidden{display:none!important}
+footer{padding:37px 0;border-top:1px solid var(--line);color:#758598;font-size:12px}.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+@media(max-width:900px){.intro{grid-template-columns:1fr;gap:40px;padding:65px 0}.lab-visual{min-height:220px}.cards{grid-template-columns:1fr 1fr}.league-grid{grid-template-columns:1fr 1fr}.nav{gap:14px}.nav a{font-size:11px}}
+@media(max-width:650px){.wrap{width:min(100% - 36px,1360px)}.head{height:66px}.logo{font-size:19px}.menu{display:block;margin-left:auto}.nav{display:none;position:absolute;left:0;right:0;top:66px;background:white;padding:20px 18px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.nav.open{display:flex}.intro h1{letter-spacing:-1.4px}.cards,.grid2{grid-template-columns:1fr}.section-head{align-items:start}.league-grid{grid-template-columns:1fr 1fr}.league-tile{padding:20px;min-height:110px}.page{padding:45px 0 75px}.page h1{font-size:30px}section.block{padding:55px 0}}
 </style>
-</head>
-<body>
-<header><div class="container nav">
-<a class="brand" href="./">90MIN LABS.</a>
-<nav class="links" aria-label="주요 메뉴"><a href="./">HOME</a><a href="#predictions">PREDICTIONS</a><a href="#matches">MATCHES</a><a href="#leagues" class="active">LEAGUES</a><a href="#columns">COLUMNS</a></nav>
-<span class="nav-right">FOOTBALL RESEARCH LAB</span>
-</div></header>
-<main class="container" id="leagues">
-<div class="eyebrow">FOOTBALL RESEARCH / LEAGUE DATA</div>
-<h1 class="heading">리그를 숫자로 읽다.</h1>
-<p class="intro">유럽 4대 리그의 순위와 득점 기록을 한곳에서 비교합니다. 확인된 자료만 게시하며, 모든 데이터는 기준 시점과 출처를 함께 표시합니다.</p>
-<div role="tablist" aria-label="리그 선택" class="tabs" id="leagueTabs">
-<button class="tab" role="tab" aria-selected="true" data-league="epl">PREMIER LEAGUE</button>
-<button class="tab" role="tab" aria-selected="false" data-league="seriea">SERIE A</button>
-<button class="tab" role="tab" aria-selected="false" data-league="bundesliga">BUNDESLIGA</button>
-<button class="tab" role="tab" aria-selected="false" data-league="ligue1">LIGUE 1</button>
-</div>
-<section aria-live="polite">
-<div class="toolbar"><h2 class="section-name" id="leagueName">프리미어리그</h2>
-<div class="switch" role="tablist" aria-label="기록 종류">
-<button role="tab" aria-selected="true" data-view="standings">리그 순위</button>
-<button role="tab" aria-selected="false" data-view="scorers">득점왕</button>
-</div></div>
-<div class="meta"><span id="updated">데이터 확인 대기</span><span id="source"></span></div>
-<div id="dataArea"></div>
-</section>
-<div class="note"><span aria-hidden="true">◈</span><div><b>RESEARCH NOTE</b><div>이 페이지는 공식 기록을 검증한 뒤 게시합니다. 순위와 개인 득점 기록은 서로 다른 시점에 갱신될 수 있으며, 실제 데이터가 없는 경우 임의의 결과를 표시하지 않습니다.</div></div></div>
+</head><body>
+<header><div class="wrap head"><a href="#home" class="logo">90MIN LABS.</a><button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+<nav class="nav" id="nav" aria-label="사이트 메뉴"><a href="#home" data-page="home">HOME</a><a href="#predictions" data-page="predictions">PREDICTIONS</a><a href="#matches" data-page="matches">MATCHES</a><a href="leagues.html">LEAGUES</a><a href="#columns" data-page="columns">COLUMNS</a><a class="write" href="#write" data-page="write">칼럼 작성</a></nav></div></header>
+<main class="wrap">
+<div id="home" class="view">
+<div class="intro"><div><div class="eyebrow">INDEPENDENT FOOTBALL PREDICTION LAB</div><h1>경기가 시작되기 전,<br>가능성을 연구합니다.</h1><p>90MIN LABS는 경기력, 기록과 변수를 분석해 축구의 다음 90분을 전망하는 독립적인 축구 연구소입니다. 검증할 수 있는 근거와 불확실성을 함께 기록합니다.</p><div class="actions"><a class="btn primary" href="#predictions">경기 전망 보기</a><a class="btn" href="leagues.html">리그 데이터 보기</a></div></div>
+<div class="lab-visual" aria-label="연구소 콘셉트 데이터 그래픽"><div class="top">MATCH RESEARCH / DATA STUDY</div><div class="bars" aria-hidden="true"><span style="height:34%"></span><span style="height:62%"></span><span style="height:48%"></span><span style="height:86%"></span><span style="height:57%"></span><span style="height:73%"></span><span style="height:40%"></span><span style="height:92%"></span></div><div class="bottom"><span>RESEARCH VISUAL / 장식용 그래픽</span><span>90MIN LABS</span></div></div></div>
+<section class="block"><div class="section-head"><div><div class="eyebrow">01 / PRE-MATCH</div><h2>경기 전 예측</h2><div class="sub">결과가 나오기 전에 근거를 기록합니다.</div></div><a class="more" href="#predictions">전체 경기 전망 보기 →</a></div><div class="cards">
+<a class="card" href="#predictions"><div class="kicker">MATCH PREDICTION</div><h3>승 · 무 · 패 확률</h3><p>실제 확보한 기록으로 승무패 확률을 계산하고 분석 시각을 함께 보존합니다.</p><div class="bottom"><span>예측 데이터 준비 중</span><span>↗</span></div></a>
+<a class="card" href="#predictions"><div class="kicker">SCENARIO ANALYSIS</div><h3>예상 경기 시나리오</h3><p>최근 경기력과 일정 부담, 결장 변수를 함께 살펴 예상 전개를 설명합니다.</p><div class="bottom"><span>분석 모듈 준비 중</span><span>↗</span></div></a>
+<a class="card" href="#matches"><div class="kicker">RESULT VERIFICATION</div><h3>예측 결과 검증</h3><p>경기 전 예측과 최종 결과를 비교하고 적중과 확률 정확도를 기록합니다.</p><div class="bottom"><span>아카이브 준비 중</span><span>↗</span></div></a>
+</div></section>
+<section class="block"><div class="section-head"><div><div class="eyebrow">02 / COMPETITION DATA</div><h2>4대 리그 연구</h2><div class="sub">순위와 득점 기록은 출처를 검증한 뒤 게시합니다.</div></div><a class="more" href="leagues.html">리그 순위 확인 →</a></div><div class="league-grid">
+<a class="league-tile" href="leagues.html"><span>ENGLAND</span><strong>Premier League</strong></a>
+<a class="league-tile" href="leagues.html"><span>ITALY</span><strong>Serie A</strong></a>
+<a class="league-tile" href="leagues.html"><span>GERMANY</span><strong>Bundesliga</strong></a>
+<a class="league-tile" href="leagues.html"><span>FRANCE</span><strong>Ligue 1</strong></a>
+</div></section>
+<section class="block"><div class="section-head"><div><div class="eyebrow">03 / FOOTBALL JOURNAL</div><h2>축구를 기록하는 사람들</h2><div class="sub">전술, 경기, 선수, 구단에 대한 다양한 관점을 담는 칼럼.</div></div><a href="#columns" class="more">칼럼 보기 →</a></div><div class="grid2"><div class="stat"><div class="eyebrow">OPEN CONTRIBUTION</div><h3>누구나 연구의 관점을 나눌 수 있습니다.</h3><p>일반 회원의 칼럼 작성 및 운영자 검수 기반 발행 기능을 단계적으로 준비합니다.</p></div><div class="stat"><div class="eyebrow">EDITORIAL STANDARD</div><h3>근거 있는 이야기, 다양한 시선.</h3><p>사실과 의견을 구분하고 저작권과 커뮤니티 운영 원칙을 지키는 축구 미디어를 지향합니다.</p></div></div></section></div>
+<div id="predictions" class="view hidden page"><div class="eyebrow">MATCH PREDICTION</div><h1>경기 전 예측</h1><p class="sub">프리미어리그, 세리에A, 분데스리가, 리그앙, 챔피언스리그의 사전 전망을 게시합니다.</p><div class="filters" id="predictionFilters"><button class="filter active" data-comp="all">전체</button><button class="filter" data-comp="EPL">EPL</button><button class="filter" data-comp="Serie A">SERIE A</button><button class="filter" data-comp="Bundesliga">BUNDESLIGA</button><button class="filter" data-comp="Ligue 1">LIGUE 1</button><button class="filter" data-comp="UCL">UCL</button></div><div class="empty"><strong>경기 전망 발행 준비 중</strong><p>신뢰할 수 있는 일정과 팀 통계를 연결한 뒤, 경기 전 분석을 이곳에 게시합니다. 근거 없는 승률이나 임의의 스코어는 표시하지 않습니다.</p><a class="btn" href="leagues.html">현재 리그 데이터 화면 보기</a></div></div>
+<div id="matches" class="view hidden page"><div class="eyebrow">MATCH CENTER</div><h1>경기 일정과 결과</h1><p class="sub">경기 일정과 종료 결과를 분석 자료와 연결하는 영역입니다.</p><div class="empty"><strong>검증된 경기 일정 연동 대기</strong><p>공식 일정 또는 이용 허가된 데이터 소스가 연결되면 대회별 일정, 최종 점수, 분석 보고서를 확인할 수 있습니다.</p></div></div>
+<div id="columns" class="view hidden page"><div class="eyebrow">FOOTBALL JOURNAL</div><h1>칼럼</h1><p class="sub">축구에 관한 깊이 있는 시선. 경기 전망, 전술, 선수, 구단 그리고 축구 문화.</p><div class="actions" style="margin-bottom:35px"><a href="#write" class="btn primary">칼럼 초안 작성하기</a></div><div class="empty"><strong>아직 발행된 칼럼이 없습니다.</strong><p>회원 및 에디터 발행 시스템을 준비 중입니다. 현재는 브라우저에서 칼럼 초안을 작성하고 내보내는 기능을 이용할 수 있습니다.</p></div></div>
+<div id="write" class="view hidden page"><div class="eyebrow">CONTRIBUTOR DESK</div><h1>칼럼 작성</h1><p class="sub">축구에 관한 글을 준비해보세요. 현재는 초안 작성·미리보기·텍스트 파일 저장 기능만 제공하며, 공개 발행 기능은 아직 연결되지 않았습니다.</p><div class="info">현재 작성한 글은 서버로 전송되거나 공개되지 않습니다. 브라우저를 닫기 전에 텍스트 파일로 저장하세요. 회원가입 및 운영자 검수 시스템은 후속 개발 항목입니다.</div><form class="form" id="draftForm" style="margin-top:32px"><div class="field"><label for="category">카테고리</label><select id="category"><option>경기 전망</option><option>경기 리뷰</option><option>전술 분석</option><option>선수와 구단</option><option>축구 문화</option></select></div><div class="field"><label for="author">필명</label><input id="author" maxlength="40" placeholder="칼럼에 사용할 필명을 입력하세요"></div><div class="field"><label for="draftTitle">제목</label><input id="draftTitle" required maxlength="120" placeholder="칼럼 제목을 입력하세요"></div><div class="field"><label for="draftBody">본문</label><textarea id="draftBody" required placeholder="직접 작성한 축구 칼럼을 입력하세요"></textarea></div><div class="actions" style="margin-top:0"><button type="button" class="btn" id="previewBtn">미리보기</button><button type="button" class="btn primary" id="downloadBtn">텍스트로 저장</button></div></form><div class="preview hidden" id="draftPreview"></div></div>
 </main>
-<footer><div class="container foot"><span>90MIN LABS. © 2026</span><span>Independent Football Prediction & Research</span></div></footer>
+<footer><div class="wrap foot"><span><strong>90MIN LABS.</strong> © 2026 · Independent Football Research</span><span>경기 전망은 확률적 분석이며 결과를 보장하지 않습니다. 베팅 기능 및 도박 사이트 연결은 제공하지 않습니다.</span></div></footer>
 <script>
-const labels={epl:"프리미어리그",seriea:"세리에 A",bundesliga:"분데스리가",ligue1:"리그앙"};
-const state={league:"epl",view:"standings",data:null};
-const area=document.querySelector("#dataArea");
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const number=x=>Number.isFinite(Number(x))?Number(x):"-";
-function render(){
- document.querySelector("#leagueName").textContent=labels[state.league];
- document.querySelectorAll("[data-league]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.league===state.league)));
- document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.view===state.view)));
- const item=state.data?.leagues?.[state.league]||{};
- const block=item[state.view]||{};
- const rows=Array.isArray(block.rows)?block.rows:[];
- document.querySelector("#updated").textContent=block.updatedAt?"최종 확인: "+block.updatedAt+" (KST)":"최종 확인: 미등록";
- const source=document.querySelector("#source");source.replaceChildren();
- if(block.sourceUrl&&/^https:\/\//.test(block.sourceUrl)){const a=document.createElement("a");a.href=block.sourceUrl;a.target="_blank";a.rel="noopener noreferrer";a.textContent="데이터 출처 보기";source.append(a);}
- if(!rows.length){area.innerHTML='<div class="empty"><div class="mark">◈</div><strong>검증된 '+(state.view==="standings"?"순위":"득점")+" 데이터가 아직 없습니다.</strong><span>운영자가 공식 기록을 확인하고 데이터를 업데이트하면 이곳에 자동 표시됩니다.</span></div>";return;}
- const isStandings=state.view==="standings";
- const head=isStandings?["순위","구단","경기","승","무","패","득실차","승점"]:["순위","선수 / 소속 구단","경기","득점","도움"];
- let body=rows.map((r,i)=>isStandings?
- '<tr><td>'+number(r.rank??i+1)+'</td><td class="team"><span class="teamcode">'+esc((r.shortName||r.team||"").slice(0,3).toUpperCase())+'</span>'+esc(r.team)+'</td><td>'+number(r.played)+'</td><td>'+number(r.won)+'</td><td>'+number(r.drawn)+'</td><td>'+number(r.lost)+'</td><td>'+number(r.goalDifference)+'</td><td class="points">'+number(r.points)+'</td></tr>':
- '<tr><td>'+number(r.rank??i+1)+'</td><td class="team">'+esc(r.player)+' <span style="color:#8793a3;font-weight:400">· '+esc(r.team)+'</span></td><td>'+number(r.played)+'</td><td class="points">'+number(r.goals)+'</td><td>'+number(r.assists)+'</td></tr>'
- ).join("");
- area.innerHTML='<div class="tablebox"><table><thead><tr>'+head.map(h=>'<th scope="col">'+h+'</th>').join("")+'</tr></thead><tbody>'+body+'</tbody></table></div>';
-}
-document.querySelectorAll("[data-league]").forEach(b=>b.addEventListener("click",()=>{state.league=b.dataset.league;render()}));
-document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render()}));
-fetch("./data/league-data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No data");return r.json()}).then(data=>{state.data=data;render()}).catch(()=>render());
-render();
-</script></body></html>
+const pages=["home","predictions","matches","columns","write"];function route(){const id=location.hash.slice(1);const page=pages.includes(id)?id:"home";document.querySelectorAll(".view").forEach(el=>el.classList.toggle("hidden",el.id!==page));document.querySelectorAll("[data-page]").forEach(el=>el.classList.toggle("active",el.dataset.page===page));document.querySelector("#nav").classList.remove("open");document.querySelector("#menuBtn").setAttribute("aria-expanded","false");window.scrollTo(0,0);document.title=(page==="home"?"90MIN LABS":({predictions:"경기 전망",matches:"경기 일정",columns:"칼럼",write:"칼럼 작성"})[page]+" | 90MIN LABS");}
+window.addEventListener("hashchange",route);route();
+document.querySelector("#menuBtn").addEventListener("click",()=>{const n=document.querySelector("#nav");n.classList.toggle("open");document.querySelector("#menuBtn").setAttribute("aria-expanded",String(n.classList.contains("open")))});
+document.querySelectorAll("#predictionFilters button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("#predictionFilters button").forEach(x=>x.classList.toggle("active",x===b));const empty=document.querySelector("#predictions .empty p");empty.textContent=(b.dataset.comp==="all"?"전체 대회의":b.dataset.comp+" 대회의")+" 데이터 연동을 준비 중입니다. 검증된 근거 없는 경기 예측은 게시하지 않습니다."}));
+const fields=["category","author","draftTitle","draftBody"];function formText(){return "90MIN LABS 칼럼 초안\n카테고리: "+document.querySelector("#category").value+"\n필명: "+document.querySelector("#author").value+"\n제목: "+document.querySelector("#draftTitle").value+"\n\n"+document.querySelector("#draftBody").value}
+document.querySelector("#previewBtn").addEventListener("click",()=>{const t=document.querySelector("#draftPreview");t.classList.remove("hidden");t.textContent=formText();t.scrollIntoView({behavior:"smooth",block:"nearest"})});
+document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
+</script>
+</body></html>
