@@ -8,7 +8,7 @@
   const gradeNames = { correct: "적중", incorrect: "미적중", pending: "결과 대기", void: "집계 제외" };
   const searchKey = value => String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").normalize("NFC").replace(/[^a-z0-9가-힣]/g, "");
   const params = new URLSearchParams(location.search);
-  const state = { accountMode: false, context: null, store: null, sets: [], storageReady: false, loading: false, week: "", league: "all", query: "", filter: "available", historyWeek: "all", picks: new Map(), editingId: null, editingUpdatedAt: null, baseline: "", highlighted: null, currentDay: "" };
+  const state = { accountMode: false, context: null, store: null, sets: [], storageReady: false, loading: false, week: "", league: "all", query: "", filter: "available", historyWeek: "all", picks: new Map(), editingId: null, editingUpdatedAt: null, baseline: "", highlighted: null, currentDay: "", visibleCount: 30 };
   const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = String(text); return node; };
   const shiftDate = (iso, days) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10); };
   const dateLabel = (iso, long) => new Intl.DateTimeFormat("ko-KR", { timeZone: "UTC", ...(long ? { year: "numeric" } : {}), month: "long", day: "numeric", weekday: long ? undefined : "short" }).format(new Date(iso + "T12:00:00Z"));
@@ -119,7 +119,7 @@
     const filtered = weekMatches.filter(m => (state.league === "all" || m.league === state.league) && queryMatches(m) && (state.filter === "all" || (state.filter === "selected" ? state.picks.has(MatchAnalysis.fixtureId(m)) : PredictionStore.canPick(m, now))));
     filtered.sort((a, b) => (a.date + (a.time || "99:99")).localeCompare(b.date + (b.time || "99:99")) || a.league.localeCompare(b.league));
     $("fixtureCount").textContent = filtered.length + "경기" + (state.picks.size ? " · " + state.picks.size + "경기 선택" : "");
-    const list = $("fixtureList"); list.replaceChildren();
+    const list = $("fixtureList"); window.ClubLogos?.release(list); list.replaceChildren();
     if (!filtered.length) {
       const empty = el("div", "empty-state");
       empty.append(el("strong", "", state.filter === "selected" ? "아직 선택한 경기가 없습니다." : "조건에 맞는 경기가 없습니다."));
@@ -128,10 +128,15 @@
       list.append(empty); return;
     }
     let lastDate = "", group;
-    filtered.forEach(fixture => {
+    filtered.slice(0,state.visibleCount).forEach(fixture => {
       if (fixture.date !== lastDate) { lastDate = fixture.date; group = el("section", "fixture-day"); const title = el("h4", "", dateLabel(fixture.date)); group.append(title); list.append(group); }
       group.append(rowFor(fixture));
     });
+    if(filtered.length>state.visibleCount){
+      const more=el("button","outline-button","다음 30경기 보기 · "+(filtered.length-state.visibleCount)+"경기 남음");
+      more.type="button";more.dataset.action="show-more";more.style.margin="24px 0";
+      list.append(more);
+    }
   }
   function renderSlip() {
     $("slipTitle").textContent = state.editingId ? "저장한 예측 수정" : "나의 예측";
@@ -213,7 +218,7 @@
   async function changeWeek(week) {
     if (!week || week === state.week) { renderWeek(); return; }
     if (!await allowDiscard()) { renderWeek(); return; }
-    draftReset(week); state.query = ""; $("fixtureSearch").value = ""; updateLocation(); render(); notice("");
+    draftReset(week); state.visibleCount=30; state.query = ""; $("fixtureSearch").value = ""; updateLocation(); render(); notice("");
   }
   async function save(event) {
     event.preventDefault(); if (!state.store || !state.context || !state.storageReady) return;
@@ -233,7 +238,7 @@
     if (!loadSaved()) return; const set = state.sets.find(item => item.id === id); if (!set) { renderSaved(); return; }
     state.week = set.weekStart; state.editingId = id; state.editingUpdatedAt = set.updatedAt; state.picks = new Map(set.picks.map(pick => [pick.fixtureId, pick])); state.highlighted = null;
     $("setTitle").value = set.title; $("saveStatus").textContent = "저장한 예측을 불러왔습니다.";
-    state.league = "all"; state.query = ""; state.filter = "all"; $("leagueFilter").value = "all"; $("fixtureSearch").value = ""; $("fixtureFilter").value = "all";
+    state.league = "all"; state.query = ""; state.filter = "all"; state.visibleCount=30; $("leagueFilter").value = "all"; $("fixtureSearch").value = ""; $("fixtureFilter").value = "all";
     commitBaseline(); updateLocation(); render(); $("predictionBuilder").scrollIntoView({ behavior: "smooth", block: "start" });
   }
   async function deleteSet(id) {
@@ -268,7 +273,7 @@
       if (results[0].status !== "fulfilled" || !Array.isArray(results[0].value.matches)) throw new Error("Calendar unavailable");
       state.context = MatchAnalysis.createContext({ calendar: results[0].value, profiles: results[1].status === "fulfilled" ? results[1].value : {} });
       const requestedId = params.get("match"), requested = requestedId && state.context.findMatch(requestedId);
-      if (requested) { draftReset(PredictionStore.weekStart(requested.date)); state.highlighted = requestedId; state.filter = PredictionStore.canPick(requested, Date.now()) ? "available" : "all"; $("fixtureFilter").value = state.filter; notice(PredictionStore.canPick(requested, Date.now()) ? teamName(requested, "home") + " 대 " + teamName(requested, "away") + " 경기를 찾았습니다. 승·무·패를 선택해 주세요." : "이 경기는 선택이 마감되었습니다. 다른 예정 경기를 골라보세요."); }
+      if (requested) { draftReset(PredictionStore.weekStart(requested.date)); state.highlighted = requestedId; state.visibleCount=30; state.filter = PredictionStore.canPick(requested, Date.now()) ? "available" : "all"; $("fixtureFilter").value = state.filter; notice(PredictionStore.canPick(requested, Date.now()) ? teamName(requested, "home") + " 대 " + teamName(requested, "away") + " 경기를 찾았습니다. 승·무·패를 선택해 주세요." : "이 경기는 선택이 마감되었습니다. 다른 예정 경기를 골라보세요."); }
       else if (requestedId) notice("연결된 경기를 찾지 못했습니다. 주간 목록에서 경기를 선택해 주세요.");
       $("fixturesLoading").hidden = true; $("builderContent").hidden = false; render();
       if (state.highlighted) { const node = Array.from(document.querySelectorAll(".pick-row")).find(row => row.dataset.matchId === state.highlighted); if (node) requestAnimationFrame(() => node.scrollIntoView({ block: "center" })); }
@@ -280,9 +285,9 @@
     $("nextWeek").addEventListener("click", () => changeWeek(shiftDate(state.week, 7)));
     $("currentWeek").addEventListener("click", () => changeWeek(PredictionStore.weekStart(PredictionStore.kstDate(Date.now()))));
     $("weekDate").addEventListener("change", event => { try { const week = PredictionStore.weekStart(event.target.value); changeWeek(week); } catch (error) { renderWeek(); } });
-    $("leagueFilter").addEventListener("change", event => { state.league = event.target.value; renderFixtures(); });
-    $("fixtureSearch").addEventListener("input", event => { state.query = event.target.value.trim(); renderFixtures(); });
-    $("fixtureFilter").addEventListener("change", event => { state.filter = event.target.value; renderFixtures(); });
+    $("leagueFilter").addEventListener("change", event => { state.league = event.target.value; state.visibleCount=30; renderFixtures(); });
+    $("fixtureSearch").addEventListener("input", event => { state.query = event.target.value.trim(); state.visibleCount=30; renderFixtures(); });
+    $("fixtureFilter").addEventListener("change", event => { state.filter = event.target.value; state.visibleCount=30; renderFixtures(); });
     $("historyWeek").addEventListener("change", event => { state.historyWeek = event.target.value; renderSaved(); });
     $("predictionForm").addEventListener("submit", save);
     $("setTitle").addEventListener("input", () => { $("saveStatus").textContent = ""; });
@@ -294,6 +299,7 @@
     });
     $("builderContent").addEventListener("click", event => {
       const button = event.target.closest("button"); if (!button || button.disabled) return;
+      if(button.dataset.action==="show-more"){state.visibleCount+=30;renderFixtures();return;}
       if (button.dataset.choice) updateChoice(button.dataset.fixtureId, button.dataset.choice, button.dataset.area);
       else if (button.dataset.remove) { const pick = state.picks.get(button.dataset.remove); if (pick && !lockedPick(pick)) { state.picks.delete(button.dataset.remove); renderFixtures(); renderSlip(); $("saveStatus").textContent = ""; } }
       else if (button.dataset.action === "reset-filters") { state.league = "all"; state.query = ""; state.filter = "all"; $("leagueFilter").value = "all"; $("fixtureSearch").value = ""; $("fixtureFilter").value = "all"; renderFixtures(); }
