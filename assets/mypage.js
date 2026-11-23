@@ -271,6 +271,7 @@
     notice("예측 기록을 CSV 파일로 내보냈습니다.");
   }
   async function json(path) {
+    if(window.NinetyMinData)return window.NinetyMinData.get(path,{timeoutMs:12000});
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 12000);
     try { const response = await fetch(path, { cache:"no-cache", signal: controller.signal }); if (!response.ok) throw new Error("일정을 불러오지 못했습니다."); return await response.json(); }
     finally { clearTimeout(timer); }
