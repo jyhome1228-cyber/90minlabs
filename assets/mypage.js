@@ -76,12 +76,12 @@
   function badge(fixture, side) {
     const team=descriptor(fixture, side), profile=team.profile||{};
     const label=team.name||fixture&&fixture[side]||"FC";
-    const holder=el("span","pick-badge",(label.replace(/[^\\p{L}\\p{N}]/gu,"").slice(0,2)||"FC").toUpperCase());
+    const holder=el("span","pick-badge",(label.replace(/[^\p{L}\p{N}]/gu,"").slice(0,2)||"FC").toUpperCase());
     holder.setAttribute("aria-hidden","true");
     holder.title=label;
     const crestId=fixture&&fixture[side+"Crest"]||team.crestId||profile.crestId;
     const direct=validImageUrl(profile.badgeUrl)||validImageUrl(team.badgeUrl);
-    const known=direct||(crestId&&/^\\d+$/.test(String(crestId))?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null);
+    const known=direct||(crestId&&/^\d+$/.test(String(crestId))?"https://crests.football-data.org/"+encodeURIComponent(String(crestId))+".png":null);
     const query=profile.searchName||fixture&&(fixture[side+"Team"]||fixture[side])||label;
     let fallbackAttempted=false;
     function requestFallback(){
