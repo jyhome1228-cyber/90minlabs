@@ -2,6 +2,18 @@
  * No name-only guessed image URLs; failures keep a readable text fallback. */
 (function(root){
 "use strict";
+const verifiedCrests=Object.freeze({
+ "R. Racing Club":"https://assets.footylogos.com/logos/racing-santander/racing-santander-logo-footylogos.svg",
+ "Racing Santander":"https://assets.footylogos.com/logos/racing-santander/racing-santander-logo-footylogos.svg",
+ "Real Racing Club":"https://assets.footylogos.com/logos/racing-santander/racing-santander-logo-footylogos.svg",
+ "Le Mans FC":"https://assets.footylogos.com/logos/le-mans-fc/le-mans-fc-logo-footylogos.svg",
+ "Le Mans":"https://assets.footylogos.com/logos/le-mans-fc/le-mans-fc-logo-footylogos.svg",
+ "Málaga CF":"https://assets.footylogos.com/logos/malaga-cf/malaga-cf-logo-footylogos.svg",
+ "Málaga":"https://assets.footylogos.com/logos/malaga-cf/malaga-cf-logo-footylogos.svg",
+ "Monza":"https://assets.footylogos.com/logos/ac-monza/ac-monza-logo-footylogos.svg",
+ "AC Monza":"https://assets.footylogos.com/logos/ac-monza/ac-monza-logo-footylogos.svg",
+ "Paris FC":"https://assets.footylogos.com/logos/paris-fc/paris-fc-logo-footylogos.svg"
+});
 const cache=new Map();
 function norm(s){return String(s||"").normalize("NFKD").toLowerCase().replace(/[^a-z0-9]/g,"");}
 function safe(url){return typeof url==="string"&&/^https:\/\//i.test(url)?url:null;}
@@ -11,7 +23,9 @@ function badge(container,opts){
  const title=opts.searchName||opts.wikiTitle||opts.name||"";
  const fallback=container.textContent;
  const urls=[];
- if(safe(opts.badgeUrl))urls.push(opts.badgeUrl);
+ const verified=verifiedCrests[opts.name]||verifiedCrests[opts.searchName];
+ if(safe(verified))urls.push(verified);
+ if(safe(opts.badgeUrl)&&opts.badgeUrl!==verified)urls.push(opts.badgeUrl);
  if(opts.crestId&&/^\d+$/.test(String(opts.crestId)))urls.push("https://crests.football-data.org/"+encodeURIComponent(String(opts.crestId))+".png");
  let index=0;let external=false;
  const insert=url=>{
