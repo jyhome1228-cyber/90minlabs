@@ -116,7 +116,26 @@ function row(m,fromPreview){
  center.append(countdown);
  const more=element("a","match-more","경기 분석");more.href=href;
  more.setAttribute("aria-label",(m.homeTeam||m.home)+" 대 "+(m.awayTeam||m.away)+" 경기 분석 보기");
- line.append(league,teamElement(m,true),center,teamElement(m,false),more);
+ const actions=element("div","match-item-actions");actions.append(more);
+ if(window.NinetyMinSavedMatches&&window.MatchAnalysis){
+  const save=element("button","match-save");
+  save.type="button";save.dataset.saveMatchId=MatchAnalysis.fixtureId(m);
+  const refresh=()=>{
+   try{
+    const saved=window.NinetyMinSavedMatches.has(save.dataset.saveMatchId);
+    save.textContent=saved?"담음":"경기 담기";
+    save.setAttribute("aria-pressed",String(saved));save.disabled=false;
+   }catch(error){save.textContent="저장 불가";save.title=error.message;save.disabled=true;}
+  };
+  save.addEventListener("click",()=>{
+   try{
+    if(window.NinetyMinSavedMatches.has(save.dataset.saveMatchId))window.NinetyMinSavedMatches.remove(save.dataset.saveMatchId);
+    else window.NinetyMinSavedMatches.add(m);
+   }catch(error){save.title=error.message;save.textContent="저장 오류";}
+  });
+  refresh();actions.append(save);
+ }
+ line.append(league,teamElement(m,true),center,teamElement(m,false),actions);
  article.append(line);return article;
 }
 function renderGames(list,games,fromPreview){
@@ -183,6 +202,16 @@ function renderList(){
  }
  renderGames(list,filtered,false);
 }
+function refreshSaveControls(){
+ if(!window.NinetyMinSavedMatches)return;
+ document.querySelectorAll("button[data-save-match-id]").forEach(button=>{
+  try{
+   const saved=window.NinetyMinSavedMatches.has(button.dataset.saveMatchId);
+   button.textContent=saved?"담음":"경기 담기";
+   button.setAttribute("aria-pressed",String(saved));button.disabled=false;
+  }catch(error){button.textContent="저장 불가";button.title=error.message;button.disabled=true;}
+ });
+}
 async function init(){
  readFilters();
  updateCurrentTime();
@@ -210,6 +239,8 @@ async function init(){
    else if(location.hash==="#predictions")renderPredictions();
   }
  });
+ window.addEventListener("ninetymin:savedmatcheschange",refreshSaveControls);
+ window.addEventListener("storage",event=>{if(event.key==="90minlabs.savedMatches.v1")refreshSaveControls();});
  renderTabs();
  // Defer the 2700-match calendar until visitors enter Matches or Predictions.
  if(location.hash==="#matches"||location.hash==="#predictions")await ensureCalendar();
