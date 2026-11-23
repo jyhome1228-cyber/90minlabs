@@ -166,6 +166,16 @@ main .breadcrumb{margin-bottom:52px;line-height:1.9}
  main.container{padding-top:64px}
  main .breadcrumb{margin-bottom:36px;line-height:1.9}
 }
+
+.squad-links{display:flex;gap:12px;flex-wrap:wrap;margin:19px 0 0}
+.squad-links a{display:inline-flex;align-items:center;padding:10px 16px;border:1px solid #DEDEDE;font-size:12px;font-weight:650;color:#333;line-height:1.5;background:#FAFAFA}
+.squad-links a:hover{background:#F0F0F0}
+.season-profile{padding:22px 25px;margin-top:26px;border:1px solid #E5E5E5;background:#FAFAFA}
+.season-row{display:flex;flex-direction:column;gap:8px;border-bottom:1px solid #E8E8E8;padding-bottom:14px;margin-bottom:14px}
+.season-row:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.season-row strong{font-size:13px;font-weight:700}
+.season-row span{font-size:12px;color:#575757;line-height:1.8}
+
 </style></head>
 <body>
 <header><div class="container nav"><a class="brand" href="index.html#home">90MIN LABS.</a>
@@ -181,7 +191,7 @@ main .breadcrumb{margin-bottom:52px;line-height:1.9}
 <div class="layout">
 <div>
 <section class="section" id="clubHistory"><h2>구단 소개와 역사</h2><p class="description" id="history">구단 소개를 불러오는 중이야.</p><div class="source" id="historySource"></div></section>
-<section class="section" id="teamStructure"><h2>감독과 선수단</h2><div class="two-col"><div class="box"><h3>감독</h3><p id="manager">최신 명단 확인 중</p><a class="external" id="managerLink" hidden target="_blank" rel="noopener noreferrer">감독 정보 출처</a></div><div class="box"><h3>선수단 구성</h3><p id="squadSummary">선수 정보 확인 중</p></div></div><div id="squadGroups"></div><div class="source" id="squadSource">데이터 출처를 확인 중이야.</div></section>
+<section class="section" id="teamStructure"><h2>감독과 선수단</h2><div class="two-col"><div class="box"><h3>감독</h3><p id="manager">최신 명단 확인 중</p><a class="external" id="managerLink" hidden target="_blank" rel="noopener noreferrer">감독 정보 출처</a></div><div class="box"><h3>선수단 구성</h3><p id="squadSummary">선수 정보 확인 중</p></div></div><div id="squadGroups"></div><div class="source" id="squadSource">선수단 자료 확인 중</div><div class="squad-links" id="squadLinks"></div><div class="season-profile" id="uefaRecord" hidden></div></section>
 <section class="section" id="recentMatches"><h2>최근 리그 10경기</h2><div class="form-stats" id="formStats" hidden></div><div class="b-note" id="matchNotice">공식적으로 확인할 수 있는 경기 기록을 조회하고 있어.</div><div id="matches"></div><div class="source"><a id="resultsSource" href="https://www.thesportsdb.com" target="_blank" rel="noopener noreferrer">경기 기록 제공처</a></div></section>
 <section class="section" id="clubNow"><h2>최근 팀 소식</h2><p class="description" id="recentDesc">팀 소식은 해당 구단의 공식 채널과 최신 기사에서 확인할 수 있어. 확인되지 않은 기사 제목이나 이적 소식은 임의로 게시하지 않아.</p><div class="two-col" style="margin-top:20px"><a class="box" id="officialNews" target="_blank" rel="noopener noreferrer"><h3>구단 공식 홈페이지</h3><p>구단이 발표한 최근 뉴스와 공지 확인</p></a><a class="box" id="newsSearch" target="_blank" rel="noopener noreferrer"><h3>관련 뉴스 검색</h3><p>구단별 최신 축구 기사 검색</p></a></div></section>
 </div>
@@ -206,6 +216,7 @@ const league=params.get("league")||"";
 const pageKey=league+":"+teamName;
 let staticManagerVerified=false;
 let currentLocalProfile=null;
+let currentRegistry=null;
 let lastResultsAlias="";
 const show=(id,s)=>{document.getElementById(id).textContent=s||"자료 확인 중";};
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -214,7 +225,59 @@ const api="https://www.thesportsdb.com/api/v1/json/123/";
 const validUrl=u=>{try{const url=new URL(u.startsWith("http")?u:"https://"+u);return url.protocol==="https:"?url.href:""}catch{return ""}};
 const teamLink=(name,lg)=>"team.html?team="+encodeURIComponent(name)+"&league="+encodeURIComponent(lg);
 function addPill(text){const node=document.createElement("span");node.className="pill";node.textContent=text;select("pills").append(node);}
-function setCrest(url,name){const target=select("crest");target.replaceChildren();if(!url){const x=document.createElement("span");x.className="crest-fallback";x.textContent=name.slice(0,3).toUpperCase();target.append(x);return;}const img=document.createElement("img");img.src=url;img.alt=name+" 구단 엠블럼";img.addEventListener("error",()=>setCrest("",name),{once:true});target.append(img);}
+let crestTicket=0;
+function setCrest(url,name){
+ const target=select("crest");target.replaceChildren();
+ if(!url){const x=document.createElement("span");x.className="crest-fallback";x.textContent=name.slice(0,3).toUpperCase();target.append(x);return;}
+ const img=document.createElement("img");img.src=url;img.alt=name+" 구단 엠블럼";
+ img.addEventListener("error",()=>setCrest("",name),{once:true});target.append(img);
+}
+async function fallbackBadge(profile){
+ if(profile?.crestId)return;
+ const ticket=++crestTicket, query=profile?.searchName||profile?.name;
+ if(!query)return;
+ const normalize=x=>String(x||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]/g,"");
+ try{
+  const url=api+"searchteams.php?t="+encodeURIComponent(query);
+  const data=await getJSON(url);
+  const list=(data.teams||[]).filter(x=>x.strSport==="Soccer"&&/^https:\/\//.test(x.strBadge||""));
+  const found=list.find(x=>normalize(x.strTeam)===normalize(query)||normalize(x.strTeamAlternate)===normalize(query));
+  if(found&&ticket===crestTicket){setCrest(found.strBadge,profile.name);return}
+ }catch(e){}
+ // English Wikipedia's page image is used only when the file name indicates a team emblem.
+ try{
+  const title=profile.wikiEn||profile.wikiKo;
+  if(!title)return;
+  const url="https://en.wikipedia.org/w/api.php?"+new URLSearchParams({action:"query",prop:"pageimages",pithumbsize:"320",format:"json",origin:"*",titles:title,redirects:"1"});
+  const data=await getJSON(url);
+  const pages=Object.values(data.query?.pages||{});
+  const page=pages.find(p=>p.thumbnail?.source&&/logo|crest|badge|emblem|escudo|symbol/i.test(p.pageimage||""));
+  if(page&&ticket===crestTicket)setCrest(page.thumbnail.source,profile.name);
+ }catch(e){}
+}
+function appendLink(container,label,url){
+ if(!url)return;
+ const a=document.createElement("a");a.textContent=label;a.href=url;a.target="_blank";a.rel="noopener noreferrer";
+ container.append(a);
+}
+function renderUEFAOverview(profile,table){
+ const container=select("uefaRecord");container.replaceChildren();
+ const tournaments=profile.uefaCompetitions||[];
+ const labels={ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그"};
+ let shown=0;
+ for(const comp of tournaments){
+  const entry=table?.competitions?.[comp];if(!entry)continue;
+  const participants=currentRegistry?.uefaCompetitions?.[comp]?.teams||[];
+  const ref=participants.find(x=>x.team===profile.name&&x.league===profile.league);
+  const row=entry.rows.find(x=>x.team===ref?.name);
+  if(!row)continue;
+  const block=document.createElement("div");block.className="season-row";
+  const title=document.createElement("strong");title.textContent=labels[comp]+" · 리그 페이즈";
+  const desc=document.createElement("span");desc.textContent="현재 "+row.rank+"위 · "+row.points+"점 · "+row.played+"경기 "+row.won+"승 "+row.drawn+"무 "+row.lost+"패 · 득점 "+row.goalsFor+" / 실점 "+row.goalsAgainst;
+  block.append(title,desc);container.append(block);shown++;
+ }
+ container.hidden=!shown;
+}
 async function getJSON(url){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8500);try{const resp=await fetch(url,{signal:controller.signal,cache:"no-store"});if(!resp.ok)throw Error("HTTP "+resp.status);return await resp.json();}finally{clearTimeout(timeout)}}
 async function getWikiIntro(title){
  if(!title)return null;
@@ -332,6 +395,7 @@ function showMatches(events,tid){
 }
 async function loadTeam(){
  const [reg,standings,matchHistory]=await Promise.all([getJSON("data/team-profiles.json"),getJSON("data/league-data.json"),getJSON("data/team-results.json").catch(()=>null)]);
+ currentRegistry=reg;
  const local=reg.clubs?.[pageKey];
  const leagueData=standings.leagues?.[league];
  if(!local||(!leagueData&&!["ucl","uel","uecl"].includes(league))){select("invalid").hidden=false;return}
@@ -344,12 +408,22 @@ async function loadTeam(){
  const compTeams=reg.uefaCompetitions?.[league]?.teams;
  summaryOf(teamName,compTeams?compTeams.map(c=>({name:c.team,league:c.league})):Object.values(reg.clubs||{}).filter(c=>c.league===league).map(c=>({name:c.name,league:c.league})));
  setCrest(local.crestId?"https://crests.football-data.org/"+local.crestId+".png":"",teamName);
+ fallbackBadge(local);
  if(local.cityKo)show("location",local.cityKo);
  if(local.stadium){show("stadium",local.stadium);const loc=[local.stadium,local.cityKo].filter(Boolean).join(", ");select("maplink").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(loc);select("maplink").hidden=false;}
  if(local.stadiumSourceUrl){select("stadiumSource").href=local.stadiumSourceUrl;select("stadiumSource").hidden=false;}
  if(local.foundedYear)show("founded",local.foundedYear+"년 (구단 역사)");
  setHistory(local);
  renderCompetitions({});
+ select("squadSummary").textContent="공식 선수단 등록 정보 확인";
+ const squadLinks=select("squadLinks");
+ if(["ucl","uel","uecl"].includes(league)){
+  const officialDirectory={ucl:"https://www.uefa.com/uefachampionsleague/clubs/",uel:"https://www.uefa.com/uefaeuropaleague/clubs/",uecl:"https://www.uefa.com/uefaconferenceleague/clubs/"};
+  appendLink(squadLinks,"UEFA 공식 구단 및 선수단",officialDirectory[league]);
+ }
+ if(local.wikiSearchUrl)appendLink(squadLinks,"구단 역사와 선수단 정보",local.wikiSearchUrl);
+ const tableData=await getJSON("data/uefa-standings.json").catch(()=>null);
+ renderUEFAOverview(local,tableData);
  if(local.manager){staticManagerVerified=true;show("manager",local.manager+" (2026/27 시즌)");const link=select("managerLink");link.hidden=false;link.href=local.managerSourceUrl;link.textContent="감독 명단 출처 · 2026년 11월 23일 확인";}
  const recent=matchHistory?.teams?.[pageKey];
  let hasLocalResults=false;
@@ -376,7 +450,7 @@ async function loadTeam(){
     const country=(x.strCountry||"").toLowerCase();
     return ((given&&wanted&&(wanted===given||wanted.includes(given)||given.includes(wanted)))||alias.includes(wanted))&&(!country||!expectedCountry[league]||expectedCountry[league].some(c=>country===c.toLowerCase()));
   });
-  if(!match){if(!staticManagerVerified)show("manager","최신 감독 데이터 연결 대기");show("squadSummary","선수단 데이터 연결 대기");if(!hasLocalResults)show("matchNotice","이 팀의 경기 기록 제공처 연결 대기");return;}
+  if(!match){if(!staticManagerVerified)show("manager","현재 감독 정보는 공식 구단 자료 확인 필요");select("squadSummary").textContent="UEFA 또는 구단 공식 등록 선수단 확인";select("squadSource").textContent="TheSportsDB 무료 검색은 구단별 제공 범위가 제한적입니다. 선수 이름은 임의로 생성하지 않고 공식 자료로 연결합니다.";if(!hasLocalResults)show("matchNotice","이 팀의 경기 기록 제공처 연결 대기");return;}
   renderTeamDetails(match);
   select("officialNews").style.opacity=select("officialNews").hasAttribute("href")?"1":".6";
   const tid=match.idTeam,leagueId=match.idLeague;
@@ -392,7 +466,7 @@ async function loadTeam(){
     })()
   ];
   await Promise.allSettled(jobs);
- }catch(err){if(!staticManagerVerified)show("manager","감독 정보 확인 필요");show("squadSummary","선수단 API 연결 대기");if(!hasLocalResults)show("matchNotice","경기 기록 API 연결을 확인할 수 없어. 확인되지 않은 점수는 표시하지 않아.");}
+ }catch(err){if(!staticManagerVerified)show("manager","감독 정보 확인 필요");show("squadSummary","공식 구단 및 UEFA 선수단 확인");if(!hasLocalResults)show("matchNotice","경기 기록 API 연결을 확인할 수 없어. 확인되지 않은 점수는 표시하지 않아.");}
 }
 loadTeam().catch(()=>{select("invalid").hidden=false;select("invalid").textContent="구단 정보를 불러오지 못했어. 잠시 후 다시 시도하거나 리그 순위에서 선택해 줘."});
 </script></body></html>
