@@ -9,7 +9,8 @@
       "searchName": "Arsenal",
       "historyKo": "1886년 런던의 군수공장 노동자들이 창단한 구단으로, 북런던에 기반을 두고 있다. 하이버리를 거쳐 에미레이츠 스타디움으로 홈구장을 이전했으며, 2003–04시즌에는 잉글랜드 최상위 리그를 무패로 마쳤다.",
       "crestId": 57,
-      "cityKo": "런던"
+      "cityKo": "런던",
+      "foundedYear": 1886
     },
     "epl:Brighton": {
       "name": "Brighton",
@@ -27,7 +28,8 @@
       "searchName": "Manchester City",
       "historyKo": "맨체스터 시티는 1894년 현재의 이름을 갖게 된 맨체스터의 축구 구단이다. 에티하드 스타디움을 홈으로 사용하며 2010년대 이후 잉글랜드와 유럽 대회에서 두각을 나타냈다.",
       "crestId": 65,
-      "cityKo": "맨체스터"
+      "cityKo": "맨체스터",
+      "foundedYear": 1894
     },
     "epl:Liverpool": {
       "name": "Liverpool",
@@ -36,7 +38,8 @@
       "searchName": "Liverpool",
       "historyKo": "1892년 창단된 리버풀은 잉글랜드 머지사이드 지역을 대표하는 구단이다. 안필드를 홈구장으로 사용하며, 잉글랜드 리그와 유럽 무대에서 여러 차례 정상에 올랐다.",
       "crestId": 64,
-      "cityKo": "리버풀"
+      "cityKo": "리버풀",
+      "foundedYear": 1892
     },
     "epl:Bournemouth": {
       "name": "Bournemouth",
@@ -63,7 +66,8 @@
       "searchName": "Everton",
       "historyKo": null,
       "crestId": 62,
-      "cityKo": "리버풀"
+      "cityKo": "리버풀",
+      "foundedYear": 1878
     },
     "epl:Chelsea": {
       "name": "Chelsea",
@@ -72,7 +76,8 @@
       "searchName": "Chelsea",
       "historyKo": "첼시는 1905년 창단된 서런던의 구단이다. 스탬퍼드 브리지를 홈구장으로 사용하며 프리미어리그와 유럽 챔피언스리그 우승 경력을 보유하고 있다.",
       "crestId": 61,
-      "cityKo": "런던"
+      "cityKo": "런던",
+      "foundedYear": 1905
     },
     "epl:Tottenham": {
       "name": "Tottenham",
@@ -81,7 +86,8 @@
       "searchName": "Tottenham Hotspur",
       "historyKo": "토트넘 홋스퍼는 1882년 창단된 북런던의 구단이다. 아스널과의 북런던 더비로 잘 알려져 있으며, 토트넘 홋스퍼 스타디움에서 홈경기를 치른다.",
       "crestId": 73,
-      "cityKo": "런던"
+      "cityKo": "런던",
+      "foundedYear": 1882
     },
     "epl:Brentford": {
       "name": "Brentford",
@@ -107,7 +113,8 @@
       "searchName": "Aston Villa",
       "historyKo": null,
       "crestId": 58,
-      "cityKo": "버밍엄"
+      "cityKo": "버밍엄",
+      "foundedYear": 1874
     },
     "epl:Newcastle": {
       "name": "Newcastle",
@@ -116,7 +123,8 @@
       "searchName": "Newcastle United",
       "historyKo": null,
       "crestId": 67,
-      "cityKo": "뉴캐슬어폰타인"
+      "cityKo": "뉴캐슬어폰타인",
+      "foundedYear": 1892
     },
     "epl:Coventry City": {
       "name": "Coventry City",
@@ -169,7 +177,8 @@
       "searchName": "Manchester United",
       "historyKo": "맨체스터 유나이티드는 맨체스터를 연고로 하는 축구 구단으로 1878년 뉴턴 히스라는 이름으로 출발했다. 올드 트래퍼드를 홈구장으로 사용하며, 맷 버즈비와 알렉스 퍼거슨 시기에 중요한 성과를 거뒀다.",
       "crestId": 66,
-      "cityKo": "맨체스터"
+      "cityKo": "맨체스터",
+      "foundedYear": 1878
     },
     "epl:Crystal Palace": {
       "name": "Crystal Palace",
@@ -196,7 +205,8 @@
       "searchName": "AS Roma",
       "historyKo": "AS로마는 1927년 로마에서 창단됐다. 도시의 이름과 상징을 계승하는 구단이며, 라치오와 로마 더비를 치른다.",
       "crestId": 100,
-      "cityKo": "로마"
+      "cityKo": "로마",
+      "foundedYear": 1927
     },
     "seriea:Inter": {
       "name": "Inter",
@@ -205,7 +215,8 @@
       "searchName": "Inter Milan",
       "historyKo": "인터 밀란은 1908년 밀라노에서 창단됐다. 전통적으로 검정과 파란색 줄무늬 유니폼을 착용하며, AC밀란과 밀라노 더비를 치른다.",
       "crestId": 108,
-      "cityKo": "밀라노"
+      "cityKo": "밀라노",
+      "foundedYear": 1908
     },
     "seriea:Milan": {
       "name": "Milan",
@@ -214,7 +225,8 @@
       "searchName": "AC Milan",
       "historyKo": "AC밀란은 1899년 창단된 밀라노의 축구 구단이다. 세리에A와 UEFA 챔피언스리그에서 오랜 우승 역사를 갖고 있으며, 인터 밀란과 같은 경기장을 사용해 왔다.",
       "crestId": 98,
-      "cityKo": "밀라노"
+      "cityKo": "밀라노",
+      "foundedYear": 1899
     },
     "seriea:Como": {
       "name": "Como",
@@ -232,7 +244,8 @@
       "searchName": "Juventus",
       "historyKo": "유벤투스는 1897년 토리노에서 창단된 이탈리아 축구 구단이다. 검정과 흰색 줄무늬 유니폼으로 유명하며, 세리에A 역사에서 오랜 우승 전통을 쌓았다.",
       "crestId": 109,
-      "cityKo": "토리노"
+      "cityKo": "토리노",
+      "foundedYear": 1897
     },
     "seriea:Frosinone": {
       "name": "Frosinone",
@@ -249,7 +262,8 @@
       "searchName": "Napoli",
       "historyKo": "나폴리는 이탈리아 남부 나폴리를 연고로 한다. 디에고 마라도나가 활약했던 1980년대의 리그 우승이 구단 역사에서 중요한 시기로 꼽힌다.",
       "crestId": 113,
-      "cityKo": "나폴리"
+      "cityKo": "나폴리",
+      "foundedYear": 1926
     },
     "seriea:Bologna": {
       "name": "Bologna",
@@ -364,7 +378,8 @@
       "searchName": "Borussia Dortmund",
       "historyKo": "보루시아 도르트문트는 1909년 창단된 루르 지역의 구단이다. 지그날 이두나 파르크의 열정적인 응원 문화와 노란색·검정색 팀 컬러로 널리 알려져 있다.",
       "crestId": 4,
-      "cityKo": "도르트문트"
+      "cityKo": "도르트문트",
+      "foundedYear": 1909
     },
     "bundesliga:Bayern München": {
       "name": "Bayern München",
@@ -373,7 +388,8 @@
       "searchName": "Bayern Munich",
       "historyKo": "바이에른 뮌헨은 1900년 창단된 뮌헨의 구단이다. 독일 최상위 리그와 유럽 대회에서 여러 차례 우승했으며, 알리안츠 아레나를 홈으로 사용한다.",
       "crestId": 5,
-      "cityKo": "뮌헨"
+      "cityKo": "뮌헨",
+      "foundedYear": 1900
     },
     "bundesliga:Freiburg": {
       "name": "Freiburg",
@@ -391,7 +407,8 @@
       "searchName": "RB Leipzig",
       "historyKo": "RB 라이프치히는 2009년 창단된 비교적 역사가 짧은 독일 구단이다. 라이프치히를 연고로 하며 독일 상위권과 유럽 대회에 진출해 왔다.",
       "crestId": 721,
-      "cityKo": "라이프치히"
+      "cityKo": "라이프치히",
+      "foundedYear": 2009
     },
     "bundesliga:Bayer Leverkusen": {
       "name": "Bayer Leverkusen",
@@ -524,7 +541,8 @@
       "searchName": "Paris Saint Germain",
       "historyKo": "파리 생제르맹은 1970년 창단된 파리의 축구 구단이다. 파르크 데 프랭스를 홈구장으로 사용하며 프랑스 리그앙의 대표적인 강팀 중 하나다.",
       "crestId": 524,
-      "cityKo": "파리"
+      "cityKo": "파리",
+      "foundedYear": 1970
     },
     "ligue1:Paris FC": {
       "name": "Paris FC",
@@ -550,7 +568,8 @@
       "searchName": "Lyon",
       "historyKo": "올랭피크 리옹은 프랑스 리옹을 연고로 하는 구단이다. 2000년대 리그앙 7연패를 기록하며 프랑스 축구에서 중요한 전성기를 구축했다.",
       "crestId": 523,
-      "cityKo": "리옹"
+      "cityKo": "리옹",
+      "foundedYear": 1950
     },
     "ligue1:Marseille": {
       "name": "Marseille",
@@ -559,7 +578,8 @@
       "searchName": "Marseille",
       "historyKo": "올랭피크 드 마르세유는 프랑스 남부 마르세유를 대표하는 구단이다. 스타드 벨로드롬을 홈구장으로 사용하며, 1993년 UEFA 챔피언스리그 우승 경력이 있다.",
       "crestId": 516,
-      "cityKo": "마르세유"
+      "cityKo": "마르세유",
+      "foundedYear": 1899
     },
     "ligue1:Brest": {
       "name": "Brest",
@@ -586,7 +606,8 @@
       "searchName": "Monaco",
       "historyKo": "AS모나코는 모나코 공국을 연고로 하는 축구 구단으로 프랑스 리그 시스템에 참가한다. 스타드 루이 2세를 홈구장으로 사용한다.",
       "crestId": 548,
-      "cityKo": "모나코"
+      "cityKo": "모나코",
+      "foundedYear": 1924
     },
     "ligue1:Rennes": {
       "name": "Rennes",
