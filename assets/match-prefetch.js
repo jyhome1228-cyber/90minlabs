@@ -21,7 +21,9 @@ document.addEventListener("pointerover",event=>{
  hovered=a;clearTimeout(job);job=setTimeout(()=>{if(hovered===a)prefetch();},180);
 });
 document.addEventListener("pointerout",event=>{
- if(hovered&&hovered.contains(event.target)){hovered=null;clearTimeout(job);}
+ if(!hovered||!hovered.contains(event.target))return;
+ if(event.relatedTarget&&hovered.contains(event.relatedTarget))return;
+ hovered=null;clearTimeout(job);
 });
 document.addEventListener("focusin",event=>{if(isMatchLink(event.target))prefetch();});
 })(window);
