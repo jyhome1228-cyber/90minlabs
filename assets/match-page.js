@@ -104,10 +104,11 @@
       node.replaceChildren();
       const club = el(team.url ? "a" : "div", "club-link");
       if (team.url) { club.href = team.url; club.title = team.name + " 구단 정보"; }
-      club.append(crest(team), el("span", "club-name", team.name));
+      const badge = crest(team);
+      badge.setAttribute("aria-hidden", "true");
+      club.append(badge, el("span", "club-name", team.profile?.wikiKo || team.name));
       node.append(club);
-      if (team.profile && team.profile.wikiKo && team.profile.wikiKo !== team.name) node.append(el("span", "club-ko", team.profile.wikiKo));
-      node.append(el("span", "club-role", side === "home" ? "HOME" : "AWAY"));
+      node.append(el("span", "club-role", side === "home" ? "홈" : "원정"));
     });
     const score = $("scoreHeader"); score.replaceChildren();
     if (status === "finished") {
@@ -291,7 +292,7 @@
     const id = params.get("id");
     if (!id) { error("분석할 경기를 선택해 주세요.", "경기 목록에서 ‘경기 분석’을 누르면 해당 경기의 기록과 비교 화면으로 이동합니다.", false); return; }
     if (!window.MatchAnalysis) { error("분석 화면을 불러오지 못했습니다.", "화면 파일을 가져오지 못했습니다. 새로고침 후 다시 확인해 주세요.", false); return; }
-    state.loading = true; $("errorState").hidden = true; $("matchContent").hidden = true; $("loadingState").hidden = false; $("retryButton").disabled = true;
+    state.loading = true; $("errorState").hidden = true; $("matchContent").hidden = true; $("loadingState").hidden = false; $("retryButton").disabled = true; document.body.classList.add("is-match-loading");
     try {
       const paths = ["data/match-calendar.json", "data/team-results.json", "data/team-profiles.json", "data/league-data.json", "data/uefa-standings.json"];
       const fetched = await Promise.allSettled(paths.map(json));
@@ -310,7 +311,7 @@
         if (target) requestAnimationFrame(() => target.scrollIntoView());
       }
     } catch (failure) { error("경기 기록을 연결하지 못했습니다.", "일정 자료를 불러오는 중 문제가 생겼습니다. 잠시 후 다시 불러오거나 경기 목록에서 확인해 주세요.", true); }
-    finally { state.loading = false; $("retryButton").disabled = false; }
+    finally { state.loading = false; $("retryButton").disabled = false; document.body.classList.remove("is-match-loading"); }
   }
 
   document.querySelectorAll("[data-limit]").forEach(button => button.addEventListener("click", () => { state.limit = Number(button.dataset.limit); if (state.match) render(false); }));
