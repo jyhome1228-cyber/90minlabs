@@ -56,17 +56,24 @@ function render(){
  }
  if(games.length>10){const more=el("a","daily-bottom-link",locale()==="en"?"See all "+games.length+" fixtures":"오늘 "+games.length+"경기 전체 보기");more.href=$("homeAllMatches").href;list.append(more);}
 }
-async function load(){
- if(loading||calendar)return;loading=true;render();
+async function load(force=false){
+ if(loading||(!force&&calendar))return;
+ loading=true;if(!calendar)render();
  try{
   const response=await fetch("data/match-calendar.json",{cache:"no-cache"});
   if(!response.ok)throw new Error("HTTP "+response.status);
   const data=await response.json();if(!Array.isArray(data.matches))throw new Error("Invalid match calendar");
-  calendar=data.matches;error=null;
- }catch(e){error=e;}
+  calendar=data.matches;error=null;lastFetchAt=Date.now();
+ }catch(e){if(!calendar)error=e;}
  finally{loading=false;render();}
 }
-function tick(){if(!root.classList.contains("hidden")){const next=today();if(currentDay!==next){currentDay=next;render();}else render();}}
+function tick(){
+ if(root.classList.contains("hidden"))return;
+ const next=today();
+ if(currentDay!==next){currentDay=next;render();}
+ else $("homeCurrentTime").textContent=new Intl.DateTimeFormat(locale()==="en"?"en-US":"ko-KR",{timeZone:"Asia/Seoul",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(new Date())+" KST";
+ if(Date.now()-lastFetchAt>15*60*1000&&!loading)load(true);
+}
 window.addEventListener("hashchange",()=>{if(location.hash===""||location.hash==="#home"||location.hash==="#today"){render();load();}});
 window.addEventListener("ninetymin:languagechange",render);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)tick();});
