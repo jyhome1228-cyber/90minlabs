@@ -1,5 +1,21 @@
 # 90MIN LABS
 
+## 경기 결과 자동 업데이트 — 매일 09:00 (한국시간)
+
+- GitHub Actions: [`.github/workflows/daily-results.yml`](.github/workflows/daily-results.yml)
+- 일정: 매일 **09:00 Asia/Seoul** (`cron: 0 0 * * *`, UTC)
+- 첫 실제 검증 실행: 2026-11-23 23:56 KST, **성공**. 9개 대회와 기존 종료 경기 935건 대조, 새 결과 0건, 불일치 0건
+- 데이터 소스: [open-matchday](https://github.com/oladeeayo/open-matchday), 2026/27 시즌 CSV 9개 대회. 이 제공처도 매일 갱신하지만 데이터 공개 시각·일정에 따라 일부 경기 반영은 다음 실행까지 늦어질 수 있습니다
+- 실행 파일: [`scripts/daily-results.cjs`](scripts/daily-results.cjs) (Node.js 22, 외부 npm 패키지 없음)
+- 결과 확인: [`data/auto-sync-status.json`](data/auto-sync-status.json) 및 GitHub Actions 실행 로그
+- 수동 실행: 저장소 Actions → **Daily football results (09:00 KST)** → Run workflow
+- 안전장치: 동명이인/팀명 매칭 및 날짜·킥오프 시각을 확인하고 확정 결과만 입력하며, 기존 종료 결과와 점수가 다르면 자동 덮어쓰지 않습니다. 경기 취소·연기·출처가 늦는 경기는 유지합니다
+- 반영 범위: 경기 일정/결과(`match-calendar.json`), 해당 팀의 최근 10경기(`team-results.json`), 5대 리그 참고 순위(`league-data.json`). 마이페이지의 적중 판정은 갱신된 경기 결과를 읽어 자동 재계산합니다. 별도 관리되는 **UEFA 리그페이즈 순위 파일**과 득점왕 기록은 이 자동화에서 갱신하지 않습니다
+- GitHub Pages는 파일이 변경되어 `main` 브랜치에 새 커밋이 생성되면 기존 설정에 따라 다시 배포됩니다. Actions 작업 시간이 지연되거나 저장소 권한/워크플로가 차단되면 실행되지 않을 수 있습니다
+- 검증: `node --test tests/daily-results.test.cjs`, 수동 데이터 대조용 `node scripts/daily-results.cjs --dry-run`
+- 자료 이용 조건: 출처를 명시하고 제공처의 비상업적·정보 제공 목적 이용 조건을 지켜야 합니다
+
+
 ## 공통 메뉴 · 주간 예측 기록 · 간결한 경기 리포트
 
 2026-11-23 업데이트. 모든 페이지의 메뉴를 `assets/site-shell.js`와 `assets/site-shell.css`로 통일했습니다. 메뉴는 PREDICTIONS, MATCHES, LEAGUES, COLUMNS, MY PAGE, 칼럼 작성이며, HOME은 사용하지 않습니다. HTML에도 동일한 메뉴를 두어 첫 화면과 JavaScript 실행 후의 배치가 일치합니다.
