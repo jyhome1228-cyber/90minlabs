@@ -265,7 +265,7 @@
     },
     "seriea": {
       "standings": {
-        "updatedAt": "2026-11-23 10:23",
+        "updatedAt": "2026. 11. 23. 13:18 (KST)",
         "sourceUrl": "https://www.legaseriea.it/serie-a/classifica?lang=en",
         "rows": [
           {
@@ -291,12 +291,12 @@
           {
             "rank": 3,
             "team": "Inter",
-            "played": 11,
+            "played": 12,
             "won": 9,
-            "drawn": 1,
+            "drawn": 2,
             "lost": 1,
             "goalDifference": 15,
-            "points": 28
+            "points": 29
           },
           {
             "rank": 4,
@@ -381,12 +381,12 @@
           {
             "rank": 12,
             "team": "Atalanta",
-            "played": 11,
+            "played": 12,
             "won": 4,
-            "drawn": 2,
+            "drawn": 3,
             "lost": 5,
             "goalDifference": -3,
-            "points": 14
+            "points": 15
           },
           {
             "rank": 13,
@@ -468,7 +468,9 @@
             "goalDifference": -17,
             "points": 6
           }
-        ]
+        ],
+        "supplementalSourceUrl": "https://www.reuters.com/sports/soccer/esposito-hat-trick-not-enough-atalanta-hold-inter-eight-goal-thriller-2026-11-22/",
+        "note": "한국시간 2026-11-23 새벽 종료 경기 반영; 과거 경기 자료는 기존 출처 유지."
       },
       "scorers": {
         "updatedAt": "2026-11-23 10:23",
@@ -757,8 +759,8 @@
     },
     "ligue1": {
       "standings": {
-        "updatedAt": "2026-11-23 10:23",
-        "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
+        "updatedAt": "2026. 11. 23. 13:18 (KST)",
+        "sourceUrl": "https://www.ninetyminutesplus.com/league/ligue-1/standings",
         "rows": [
           {
             "rank": 1,
@@ -803,11 +805,11 @@
           {
             "rank": 5,
             "team": "Marseille",
-            "played": 10,
+            "played": 11,
             "won": 6,
             "drawn": 0,
-            "lost": 4,
-            "goalDifference": 8,
+            "lost": 5,
+            "goalDifference": 7,
             "points": 18
           },
           {
@@ -843,22 +845,22 @@
           {
             "rank": 9,
             "team": "Rennes",
-            "played": 10,
+            "played": 11,
             "won": 5,
-            "drawn": 1,
+            "drawn": 2,
             "lost": 4,
             "goalDifference": 0,
-            "points": 16
+            "points": 17
           },
           {
             "rank": 10,
             "team": "Lorient",
-            "played": 10,
+            "played": 11,
             "won": 4,
-            "drawn": 3,
+            "drawn": 4,
             "lost": 3,
             "goalDifference": 1,
-            "points": 15
+            "points": 16
           },
           {
             "rank": 11,
@@ -882,6 +884,16 @@
           },
           {
             "rank": 13,
+            "team": "Le Mans",
+            "played": 11,
+            "won": 2,
+            "drawn": 5,
+            "lost": 4,
+            "goalDifference": -6,
+            "points": 11
+          },
+          {
+            "rank": 14,
             "team": "Troyes",
             "played": 11,
             "won": 3,
@@ -891,7 +903,7 @@
             "points": 11
           },
           {
-            "rank": 14,
+            "rank": 15,
             "team": "Auxerre",
             "played": 11,
             "won": 3,
@@ -901,7 +913,7 @@
             "points": 11
           },
           {
-            "rank": 15,
+            "rank": 16,
             "team": "Strasbourg",
             "played": 11,
             "won": 3,
@@ -909,16 +921,6 @@
             "lost": 7,
             "goalDifference": -5,
             "points": 10
-          },
-          {
-            "rank": 16,
-            "team": "Le Mans",
-            "played": 10,
-            "won": 1,
-            "drawn": 5,
-            "lost": 4,
-            "goalDifference": -7,
-            "points": 8
           },
           {
             "rank": 17,
@@ -940,7 +942,8 @@
             "goalDifference": -15,
             "points": 2
           }
-        ]
+        ],
+        "note": "한국시간 2026-11-23 새벽 종료 경기 반영; 과거 경기 자료는 기존 출처 유지."
       },
       "scorers": {
         "updatedAt": "2026-11-23 10:23",
