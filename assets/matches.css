@@ -151,3 +151,40 @@
 .match-loading-spinner{display:block;width:27px;height:27px;border-radius:50%;border:2px solid #e7e7e7;border-top-color:#252525;animation:match-loading-spin .8s linear infinite}
 @keyframes match-loading-spin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.match-loading-spinner{animation:none;border-color:#666}}
+
+
+/* A compact match action pair: analysis plus save-to-My-Page. */
+:is(#matches,#predictions) .match-item-actions{
+ display:flex;flex-direction:column;align-items:stretch;justify-content:center;
+ gap:5px;min-width:0
+}
+:is(#matches,#predictions) .match-item-actions .match-more{
+ display:flex;align-items:center;justify-content:center;
+ width:100%;min-height:32px;
+ padding:6px 7px;text-align:center;font-size:11px;line-height:1.5;
+ border-radius:2px;margin:0
+}
+:is(#matches,#predictions) .match-item-actions .match-save{
+ display:inline-flex;align-items:center;justify-content:center;
+ width:100%;min-height:28px;padding:4px 7px;
+ border:1px solid #dedede;border-radius:2px;
+ background:#fff;color:#555;white-space:nowrap;
+ font-size:11px;font-weight:600;line-height:1.4;cursor:pointer
+}
+:is(#matches,#predictions) .match-item-actions .match-save:hover{border-color:#888;color:#222}
+:is(#matches,#predictions) .match-item-actions .match-save[aria-pressed="true"]{
+ background:#eaf4ee;color:#16784f;border-color:#c7ddcf
+}
+:is(#matches,#predictions) .match-item-actions .match-save:disabled{opacity:.5;cursor:default}
+@media(max-width:650px){
+ :is(#matches,#predictions) .match-item-actions{
+  grid-column:1/-1;
+  flex-direction:row;align-items:center;justify-content:stretch;
+  gap:8px;margin-top:7px
+ }
+ :is(#matches,#predictions) .match-item-actions .match-more,
+ :is(#matches,#predictions) .match-item-actions .match-save{
+  flex:1 1 0;width:auto;min-height:36px;font-size:12px;
+  border:1px solid #dedede;margin:0;padding:7px 8px
+ }
+}
