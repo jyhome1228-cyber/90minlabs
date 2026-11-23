@@ -4,8 +4,6 @@ const root=document.getElementById("kickoffIntro");
 const page=document.documentElement;
 if(!root||!page.classList.contains("intro-pending"))return;
 const counter=document.getElementById("kickoffCounter");
-const bar=document.getElementById("kickoffBar");
-const status=document.getElementById("kickoffStatus");
 const skip=document.getElementById("kickoffSkip");
 const duration=1750,hold=160;
 let frame=0,finished=false,started=0,finishTimer=0;
@@ -25,9 +23,8 @@ function animate(time){
  const minutes=Math.min(90,Math.floor(progress*90));
  const seconds=t>=1?0:Math.min(59,Math.floor((progress*90-minutes)*60));
  counter.textContent=String(minutes).padStart(2,"0")+":"+String(seconds).padStart(2,"0");
- bar.style.width=(t*100).toFixed(1)+"%";
  if(t<1)frame=requestAnimationFrame(animate);
- else{counter.textContent="90:00";status.textContent="FULL TIME. THE STORY BEGINS.";finishTimer=setTimeout(done,hold);}
+ else{counter.textContent="90:00";finishTimer=setTimeout(done,hold);}
 }
 skip.addEventListener("click",done);
 document.addEventListener("keydown",event=>{if(event.key==="Escape")done()},{once:true});
