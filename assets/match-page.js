@@ -111,7 +111,7 @@
     document.title = a.home.name + " vs " + a.away.name + " | 90MIN LABS";
     $("backToMatches").href = backHref(match, false);
     $("relatedListLink").href = backHref(match, true);
-    $("fixtureCompetition").replaceChildren(link(MatchAnalysis.leagueLabel(match.league), "leagues.html?league=" + encodeURIComponent(match.league)));
+    $("fixtureCompetition").replaceChildren(link(MatchAnalysis.leagueLabel(match.league), a.standings ? "leagues.html?league=" + encodeURIComponent(match.league) : backHref(match, true)));
     $("fixtureCompetition").append(document.createTextNode(" · " + (a.coverage.season || "시즌") + (match.round ? " · " + match.round + " ROUND" : "")));
     $("fixtureDate").textContent = fullDate(match.date) + " · " + (match.time || "시간 미정") + " 한국시간";
     const statusText = { finished: "경기 종료", scheduled: "경기 예정", unverified: "결과 확인 중", postponed: "경기 연기", cancelled: "경기 취소" }[status];

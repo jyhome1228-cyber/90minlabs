@@ -71,7 +71,7 @@ section.block{padding:89px 0}
 .league-tile{min-height:112px;justify-content:center}
 @media(max-width:900px){.league-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
-<link rel="stylesheet" href="./assets/matches.css">
+<link rel="stylesheet" href="./assets/matches.css?v=20261123-analysis">
 </head><body>
 <header><div class="wrap head"><a href="#matches" class="logo">90MIN LABS.</a><button class="menu" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
 <nav class="nav" id="nav" aria-label="사이트 메뉴"><a href="#predictions" data-page="predictions">PREDICTIONS</a><a href="#matches" data-page="matches">MATCHES</a><a href="leagues.html">LEAGUES</a><a href="#columns" data-page="columns">COLUMNS</a><a class="write" href="#write" data-page="write">칼럼 작성</a></nav></div></header>
@@ -155,6 +155,6 @@ const fields=["category","author","draftTitle","draftBody"];function formText(){
 document.querySelector("#previewBtn").addEventListener("click",()=>{const t=document.querySelector("#draftPreview");t.classList.remove("hidden");t.textContent=formText();t.scrollIntoView({behavior:"smooth",block:"nearest"})});
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
-<script src="./assets/match-analysis.js" defer></script>
-<script src="./assets/matches.js" defer></script>
+<script src="./assets/match-analysis.js?v=20261123-analysis" defer></script>
+<script src="./assets/matches.js?v=20261123-analysis" defer></script>
 </body></html>
