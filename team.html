@@ -232,28 +232,51 @@ function setCrest(url,name){
  const img=document.createElement("img");img.src=url;img.alt=name+" 구단 엠블럼";
  img.addEventListener("error",()=>setCrest("",name),{once:true});target.append(img);
 }
+function cleanBadgeName(s){return String(s||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]/g,"");}
+function badgeFilenameLooksRight(file,profile){
+ const basename=String(file||"").replace(/^File:/i,"");
+ if(!/logo|crest|badge|emblem|escudo|wappen|herb|symbol|arms/i.test(basename))return false;
+ const tokens=[profile.name,profile.searchName,profile.wikiEn].filter(Boolean)
+  .flatMap(n=>String(n).split(/[\s./-]+/g))
+  .map(cleanBadgeName).filter(n=>n.length>=4&&!["club","sporting","football","united","athletic","soccer"].includes(n));
+ return tokens.some(t=>cleanBadgeName(basename).includes(t));
+}
+async function wikipediaBadge(profile){
+ const title=profile?.wikiEn||profile?.wikiKo;if(!title)return null;
+ const search=new URLSearchParams({action:"query",titles:title,prop:"pageimages|images",pithumbsize:"240",imlimit:"max",redirects:"1",format:"json",origin:"*"});
+ const d=await getJSON("https://en.wikipedia.org/w/api.php?"+search);
+ const pages=Object.values(d.query?.pages||{}),page=pages.find(x=>!x.missing);
+ if(!page)return null;
+ if(page.thumbnail?.source&&badgeFilenameLooksRight(page.pageimage,profile))return page.thumbnail.source;
+ const images=(page.images||[]).map(x=>x.title).filter(x=>badgeFilenameLooksRight(x,profile));
+ if(!images.length)return null;
+ images.sort((a,b)=>{
+   const points=x=>(/logo/i.test(x)?4:0)+(/crest|badge|escudo|wappen/i.test(x)?3:0)-(/old|former|historic|2015|2010|2009|away|version/i.test(x)?2:0);
+   return points(b)-points(a);
+ });
+ const imgSearch=new URLSearchParams({action:"query",titles:images[0],prop:"imageinfo",iiprop:"url",iiurlwidth:"240",format:"json",origin:"*"});
+ const d2=await getJSON("https://en.wikipedia.org/w/api.php?"+imgSearch);
+ const rec=Object.values(d2.query?.pages||{}).find(p=>p.imageinfo?.[0]);
+ const url=rec?.imageinfo?.[0]?.thumburl||rec?.imageinfo?.[0]?.url;
+ return /^https:\/\//.test(url||"")?url:null;
+}
+async function sportsDbBadge(profile){
+ const query=profile?.searchName||profile?.name;if(!query)return null;
+ const url=api+"searchteams.php?t="+encodeURIComponent(query);
+ const data=await getJSON(url);
+ const list=(data.teams||[]).filter(x=>x.strSport==="Soccer"&&/^https:\/\//.test(x.strBadge||""));
+ const normalized=cleanBadgeName(query);
+ const found=list.find(x=>cleanBadgeName(x.strTeam)===normalized||cleanBadgeName(x.strTeamAlternate)===normalized)
+   ||list.find(x=>cleanBadgeName(x.strTeam).includes(normalized)||normalized.includes(cleanBadgeName(x.strTeam)));
+ return found?.strBadge||null;
+}
 async function fallbackBadge(profile){
  if(profile?.crestId)return;
- const ticket=++crestTicket, query=profile?.searchName||profile?.name;
- if(!query)return;
- const normalize=x=>String(x||"").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]/g,"");
- try{
-  const url=api+"searchteams.php?t="+encodeURIComponent(query);
-  const data=await getJSON(url);
-  const list=(data.teams||[]).filter(x=>x.strSport==="Soccer"&&/^https:\/\//.test(x.strBadge||""));
-  const found=list.find(x=>normalize(x.strTeam)===normalize(query)||normalize(x.strTeamAlternate)===normalize(query));
-  if(found&&ticket===crestTicket){setCrest(found.strBadge,profile.name);return}
- }catch(e){}
- // English Wikipedia's page image is used only when the file name indicates a team emblem.
- try{
-  const title=profile.wikiEn||profile.wikiKo;
-  if(!title)return;
-  const url="https://en.wikipedia.org/w/api.php?"+new URLSearchParams({action:"query",prop:"pageimages",pithumbsize:"320",format:"json",origin:"*",titles:title,redirects:"1"});
-  const data=await getJSON(url);
-  const pages=Object.values(data.query?.pages||{});
-  const page=pages.find(p=>p.thumbnail?.source&&/logo|crest|badge|emblem|escudo|symbol/i.test(p.pageimage||""));
-  if(page&&ticket===crestTicket)setCrest(page.thumbnail.source,profile.name);
- }catch(e){}
+ const ticket=++crestTicket;
+ const attempts=[sportsDbBadge(profile),wikipediaBadge(profile)];
+ const results=await Promise.allSettled(attempts);
+ if(ticket!==crestTicket)return;
+ for(const r of results){if(r.status==="fulfilled"&&/^https:\/\//.test(r.value||"")){setCrest(r.value,profile.name);return}}
 }
 function appendLink(container,label,url){
  if(!url)return;
