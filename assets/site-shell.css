@@ -130,3 +130,84 @@ html,body,body *,button,input,select,textarea{font-family:"Pretendard",sans-seri
 /* Shared logos in standings tables and club directories */
 .teamcode:has(img),.club-initial:has(img){background:transparent!important;border-radius:0!important;overflow:hidden}
 .teamcode img,.club-initial img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+
+
+/* Shared navigation: five Korean sections and one language selector. */
+.site-header[data-site-header] .shell-navigation{gap:26px}
+.site-header[data-site-header] .shell-nav-link{font-size:14px;font-weight:600;letter-spacing:-.02em}
+.site-header[data-site-header] .shell-language{
+ display:inline-flex;align-items:center;justify-content:center;
+ gap:0;margin:0 0 0 4px;padding:0 0 0 19px;
+ border:0;border-left:1px solid #dedede;border-radius:0;background:transparent;
+}
+.site-header[data-site-header] .shell-language button{
+ display:inline-flex;align-items:center;justify-content:center;
+ min-width:42px;min-height:34px;padding:7px 9px;
+ border:0;border-radius:0;background:transparent;
+ font-family:"Pretendard",sans-serif;font-size:13px;font-weight:500;
+ color:#777;letter-spacing:-.02em;
+}
+.site-header[data-site-header] .shell-language button + button{border-left:1px solid #e4e4e4}
+.site-header[data-site-header] .shell-language button.is-selected,
+.site-header[data-site-header] .shell-language button[aria-pressed="true"]{
+ background:transparent;color:#181818;font-weight:700;
+}
+.site-header[data-site-header] .shell-language button:focus-visible{outline:2px solid #222;outline-offset:2px}
+@media(max-width:1100px){
+ .site-header[data-site-header] .shell-navigation{gap:17px}
+ .site-header[data-site-header] .shell-language{padding-left:12px;margin-left:0}
+}
+@media(max-width:900px){
+ .site-header[data-site-header] .shell-navigation{gap:0}
+ .site-header[data-site-header] .shell-language{
+  order:10;align-self:flex-start;margin:13px 0 0;padding:15px 0 0;
+  width:100%;justify-content:flex-start;border:0;border-top:1px solid #eee
+ }
+ .site-header[data-site-header] .shell-language button{min-width:58px;min-height:38px;font-size:13px}
+}
+/* One footer design across the entire website. */
+footer.global-footer{
+ width:100%;margin:0;padding:0;background:#f8f8f8;
+ border-top:1px solid #e6e6e6;color:#292929;line-height:1.65;
+}
+.global-footer,.global-footer *{box-sizing:border-box}
+.global-footer-inner{width:min(calc(100% - 88px),1440px);margin:0 auto}
+.global-footer-main{
+ display:grid;grid-template-columns:minmax(0,1.6fr) minmax(135px,.8fr) minmax(210px,.9fr);
+ gap:55px;padding:52px 0 48px;
+}
+.global-footer-about{min-width:0}
+.global-footer-logo{
+ display:inline-block;color:#171717!important;text-decoration:none!important;
+ font-size:21px;font-weight:400;letter-spacing:-.035em;line-height:1.1;
+}
+.global-footer-about p{margin:19px 0 0;font-size:13px;line-height:1.8;color:#666;letter-spacing:-.02em}
+.global-footer-group{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.global-footer-group h2{
+ margin:0 0 11px;padding:0;color:#202020;
+ font-size:13px;line-height:1.5;font-weight:650;letter-spacing:-.02em;
+}
+.global-footer-group a{
+ display:inline-block;color:#656565;text-decoration:none;
+ font-size:13px;font-weight:400;line-height:1.5;letter-spacing:-.02em;
+}
+.global-footer-group a:hover{color:#191919;text-decoration:underline;text-underline-offset:4px}
+.global-footer-group p{max-width:310px;margin:9px 0 0;color:#777;font-size:12px;line-height:1.75;letter-spacing:-.02em}
+.global-footer-bottom{
+ display:flex;justify-content:space-between;align-items:center;gap:16px;
+ padding:20px 0 25px;border-top:1px solid #e5e5e5;
+ font-size:12px;line-height:1.7;color:#838383;
+}
+.global-footer-bottom span{font-weight:400}
+@media(max-width:900px){
+ .global-footer-inner{width:calc(100% - 44px)}
+ .global-footer-main{grid-template-columns:1.2fr 1fr 1fr;gap:28px;padding:42px 0}
+}
+@media(max-width:650px){
+ .global-footer-inner{width:calc(100% - 36px)}
+ .global-footer-main{grid-template-columns:1fr 1fr;gap:30px 15px;padding:35px 0}
+ .global-footer-about{grid-column:1/-1}
+ .global-footer-group h2{margin-bottom:5px}
+ .global-footer-group p{font-size:11px}
+ .global-footer-bottom{flex-direction:column;align-items:flex-start;gap:6px;padding:17px 0 23px;font-size:11px}
+}
