@@ -70,9 +70,7 @@ function render(){
 async function load(){
  const list=byId("colList");
  try{
-  const response=await fetch(DATA,{cache:"no-cache"});
-  if(!response.ok)throw new Error("HTTP "+response.status);
-  const data=await response.json();
+  const data=window.NinetyMinData?await window.NinetyMinData.get(DATA):await (async()=>{const r=await fetch(DATA,{cache:"no-cache"});if(!r.ok)throw Error("HTTP "+r.status);return r.json()})();
   if(!Array.isArray(data.articles))throw new Error("Invalid columns");
   archive=data;render();
  }catch(e){
@@ -112,9 +110,7 @@ async function loadDetail(){
  if(!target)return;
  try{
   if(!id)throw Error("Unknown article");
-  const response=await fetch(DATA,{cache:"no-cache"});
-  if(!response.ok)throw Error("No columns");
-  archive=await response.json();
+  archive=window.NinetyMinData?await window.NinetyMinData.get(DATA):await (async()=>{const r=await fetch(DATA,{cache:"no-cache"});if(!r.ok)throw Error("No columns");return r.json()})();
   const a=archive?.articles?.find(article=>article.id===id&&["sample","published"].includes(article.status));
   if(!a)throw Error("Article not found");
   renderDetail(a);
