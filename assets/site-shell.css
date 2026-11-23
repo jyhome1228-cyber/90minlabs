@@ -31,3 +31,12 @@
 }
 @media(max-width:650px){.site-header[data-site-header] .shell-inner{width:calc(100% - 36px)}.site-header[data-site-header] .shell-brand{font-size:20px}.site-header[data-site-header] .shell-navigation{padding-right:18px;padding-left:18px}}
 @media(prefers-reduced-motion:reduce){.site-header[data-site-header] .shell-menu-button span{transition:none}}
+
+
+/* Language controls share the same placement on every page. */
+.site-header[data-site-header] .shell-language{display:inline-flex;align-items:center;flex-shrink:0;margin-left:3px;padding:3px;border:1px solid #dedede;border-radius:5px;background:#fff;gap:2px}
+.site-header[data-site-header] .shell-language button{font:600 10px/1.4 "DM Sans",sans-serif;color:#777;min-width:33px;padding:6px 7px;border:0;border-radius:3px;background:transparent;cursor:pointer}
+.site-header[data-site-header] .shell-language button.is-selected{background:#242424;color:white}
+.site-header[data-site-header] .shell-language button:focus-visible{outline:2px solid #222;outline-offset:2px}
+@media(max-width:1100px){.site-header[data-site-header] .shell-navigation{gap:15px}.site-header[data-site-header] .shell-inner{gap:14px}}
+@media(max-width:900px){.site-header[data-site-header] .shell-language{margin-left:auto;margin-right:5px}}
