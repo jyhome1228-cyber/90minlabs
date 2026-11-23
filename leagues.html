@@ -82,6 +82,34 @@ main#leagues{scroll-margin-top:82px}
 
 /* Club crest fallback */
 .club-initial{width:24px;height:24px;border-radius:50%;background:#F0F0F0;color:#555;font-size:10px;font-weight:700;display:inline-flex;flex:0 0 24px;justify-content:center;align-items:center}
+
+/* UEFA league phase standings. Grayscale interface, original club crest colors. */
+.uefa-legend{display:flex;gap:24px;align-items:center;flex-wrap:wrap;padding:16px 0 23px;color:#555;font-size:12px}
+.uefa-legend-item{display:flex;gap:9px;align-items:center}
+.uefa-zone{display:inline-block;width:8px;height:18px;border-radius:2px;background:#E5E5E5}
+.uefa-zone.direct{background:#303030}
+.uefa-zone.playoff{background:#979797}
+.uefa-zone.out{background:#E2E2E2;border:1px solid #B7B7B7}
+.uefa-tablebox{margin-top:0}
+.uefa-table th:nth-child(2),.uefa-table td:nth-child(2){min-width:220px;text-align:left}
+.uefa-table td{height:70px}
+.uefa-table .uefa-group td{height:auto;padding:13px 17px;background:#F6F6F6;color:#666;font-size:12px;font-weight:700;text-align:left;border-top:1px solid #E4E4E4}
+.uefa-table .uefa-position span{display:inline-flex;align-items:center;justify-content:center;min-width:32px;min-height:30px;border-radius:3px;font-size:13px;color:#333}
+.uefa-table .uefa-position.direct span{background:#303030;color:white}
+.uefa-table .uefa-position.playoff span{background:#D8D8D8}
+.uefa-table .uefa-position.out span{background:#F4F4F4}
+.uefa-table .teamlink{gap:12px;min-width:0}
+.uefa-table .teamlogo,.uefa-table .club-initial{display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;flex:0 0 29px;object-fit:contain;margin:0;border-radius:0}
+.uefa-table .club-initial{border-radius:50%}
+.uefa-team-name{font-weight:650;white-space:nowrap}
+.uefa-standings-note{font-size:12px;color:#6F6F6F;line-height:1.9;margin:20px 0 0}
+@media(max-width:820px){
+ .uefa-table th,.uefa-table td{padding:15px 12px}
+ .uefa-table .uefa-group td{padding:12px}
+ .uefa-legend{gap:14px}
+ .uefa-table td{height:62px}
+}
+
 </style>
 </head>
 <body>
@@ -93,7 +121,7 @@ main#leagues{scroll-margin-top:82px}
 <main class="container" id="leagues">
 <div class="eyebrow">2026-2027 시즌</div>
 <h1 class="heading">리그별 순위와 득점 기록</h1>
-<p class="intro">프리미어리그, 라리가, 세리에A, 분데스리가, 리그앙의 순위와 득점 기록을 확인하고 챔피언스리그 참가 구단을 살펴볼 수 있습니다.</p>
+<p class="intro">프리미어리그와 라리가 등 5개 리그의 순위, 챔피언스리그·유로파리그·컨퍼런스리그의 리그 페이즈 순위를 확인할 수 있습니다.</p>
 <div role="tablist" aria-label="리그 선택" class="tabs" id="leagueTabs">
 <button class="tab" role="tab" aria-selected="true" data-league="epl"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_premier-league.png" onerror="this.style.display='none'">PREMIER LEAGUE</button>
 <button class="tab" role="tab" aria-selected="false" data-league="laliga">LA LIGA</button>
@@ -101,6 +129,8 @@ main#leagues{scroll-margin-top:82px}
 <button class="tab" role="tab" aria-selected="false" data-league="bundesliga"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_bundesliga.png" onerror="this.style.display='none'">BUNDESLIGA</button>
 <button class="tab" role="tab" aria-selected="false" data-league="ligue1"><img class="league-logo" alt="" src="https://sachawd.github.io/wc26-assets/league-logos/league_ligue-1.png" onerror="this.style.display='none'">LIGUE 1</button>
 <button class="tab" role="tab" aria-selected="false" data-league="ucl">CHAMPIONS LEAGUE</button>
+<button class="tab" role="tab" aria-selected="false" data-league="uel">EUROPA LEAGUE</button>
+<button class="tab" role="tab" aria-selected="false" data-league="uecl">CONFERENCE LEAGUE</button>
 </div>
 <section aria-live="polite">
 <div class="toolbar"><h2 class="section-name" id="leagueName">프리미어리그</h2>
@@ -115,9 +145,9 @@ main#leagues{scroll-margin-top:82px}
 </main>
 <footer><div class="container foot"><span>90MIN LABS. © 2026</span><span>비상업적 축구 데이터 연구 사이트</span></div></footer>
 <script>
-const labels={epl:"프리미어리그",laliga:"라리가",seriea:"세리에 A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그"};
-const state={league:"epl",view:"standings",data:null,registry:null};
-const area=document.querySelector("#dataArea");const selectedLeague=new URLSearchParams(location.search).get('league');if(['epl','laliga','seriea','bundesliga','ligue1','ucl'].includes(selectedLeague))state.league=selectedLeague;
+const labels={epl:"프리미어리그",laliga:"라리가",seriea:"세리에 A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그"};
+const state={league:"epl",view:"standings",data:null,registry:null,uefaData:null,uefaLoadFailed:false};
+const area=document.querySelector("#dataArea");const selectedLeague=new URLSearchParams(location.search).get('league');if(['epl','laliga','seriea','bundesliga','ligue1','ucl','uel','uecl'].includes(selectedLeague))state.league=selectedLeague;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const number=x=>x===null||x===undefined||x===''?'-':Number.isFinite(Number(x))?Number(x):'-';
 const clubSlugs={"Arsenal":"arsenal","Brighton":"brighton","Manchester City":"man-city","Liverpool":"liverpool","Bournemouth":"bournemouth","Leeds United":"leeds-united","Everton":"everton","Chelsea":"chelsea","Tottenham":"tottenham","Brentford":"brentford","Hull City":"hull-city","Aston Villa":"aston-villa","Newcastle":"newcastle","Fulham":"fulham","Ipswich Town":"ipswich-town","Nottingham Forest":"nottingham-forest","Sunderland":"sunderland","Manchester United":"man-united","Crystal Palace":"crystal-palace","Lazio":"lazio","Roma":"roma","Inter":"inter-milan","Milan":"ac-milan","Como":"como","Juventus":"juventus","Frosinone":"frosinone","Napoli":"napoli","Bologna":"bologna","Genoa":"genoa","Cagliari":"cagliari","Atalanta":"atalanta","Torino":"torino","Lecce":"lecce","Fiorentina":"fiorentina","Parma":"parma","Sassuolo":"sassuolo","Monza":"monza","Udinese":"udinese","Venezia":"venezia","Borussia Dortmund":"borussia-dortmund","Bayern München":"bayern-munich","Freiburg":"freiburg","RB Leipzig":"rb-leipzig","Bayer Leverkusen":"bayer-leverkusen","Werder Bremen":"werder-bremen","Eintracht Frankfurt":"eintracht-frankfurt","Stuttgart":"stuttgart","Augsburg":"augsburg","Hoffenheim":"hoffenheim","Hamburg":"hamburg","Mainz":"mainz","Köln":"cologne","Schalke":"schalke","Union Berlin":"union-berlin","Mönchengladbach":"borussia-monchengladbach","Paris Saint-Germain":"psg","Paris FC":"paris-fc","Lille":"lille","Lyon":"lyon","Marseille":"marseille","Brest":"brest","Nice":"nice","Monaco":"monaco","Rennes":"rennes","Lorient":"lorient","Lens":"lens","Toulouse":"toulouse"};
@@ -156,34 +186,114 @@ function retrieveBadge(query){
  }
  return badgeCache.get(query);
 }
+const uefaCodes=new Set(["ucl","uel","uecl"]);
+function uefaTeams(){
+ return state.registry?.uefaCompetitions?.[state.league]?.teams||[];
+}
+function uefaClub(name){
+ return uefaTeams().find(c=>c.name===name)||null;
+}
+function clubLogo(container,club,label){
+ const fallback=document.createElement("span");
+ fallback.className="club-initial";fallback.textContent=(label||"FC").slice(0,2).toUpperCase();
+ if(club?.crestId){
+   const img=document.createElement("img");img.alt="";img.loading="lazy";
+   img.src="https://crests.football-data.org/"+club.crestId+".png";img.onerror=()=>img.replaceWith(fallback);
+   container.append(img);return;
+ }
+ container.append(fallback);
+ const lookup=club?.searchName||club?.name;
+ if(lookup&&uefaCodes.has(state.league)){
+  retrieveBadge(lookup).then(url=>{
+    if(!url||!fallback.isConnected)return;
+    const img=document.createElement("img");img.alt="";img.loading="lazy";img.src=url;
+    img.onerror=()=>img.replaceWith(fallback);fallback.replaceWith(img);
+  });
+ }
+}
 function renderClubGrid(){
  const root=document.querySelector("#clubList");if(!root)return;root.replaceChildren();
  if(!state.registry)return;
- const all=state.league==="ucl"
-  ?(state.registry.uclParticipants?.teams||[]).map(c=>({name:c.team,league:c.league,wikiKo:c.displayName,crestId:c.crestId,searchName:state.registry.clubs[c.league+":"+c.team]?.searchName,cityKo:c.cityKo}))
-  :Object.values(state.registry.clubs||{}).filter(x=>x.league===state.league);
- const rows=all.slice().sort((a,b)=>a.name.localeCompare(b.name));
+ const isUefa=uefaCodes.has(state.league);
+ const list=isUefa?uefaTeams().map(c=>({
+   name:c.team,league:c.league,wikiKo:c.displayName,crestId:c.crestId,
+   searchName:c.searchName||state.registry.clubs?.[c.league+":"+c.team]?.searchName
+ })):Object.values(state.registry.clubs||{}).filter(c=>c.league===state.league);
+ const rows=list.slice().sort((a,b)=>a.name.localeCompare(b.name));
  for(const c of rows){
-  const a=document.createElement("a");a.className="club-link";a.href=clubLink(c.name,c.league);a.title=c.name;
-  if(c.crestId){const img=document.createElement("img");img.alt="";img.loading="lazy";img.src="https://crests.football-data.org/"+c.crestId+".png";img.onerror=()=>img.remove();a.append(img)}
-  else{
-   const fallback=document.createElement("span");fallback.className="club-initial";fallback.textContent=c.name.slice(0,2).toUpperCase();a.append(fallback);
-   if(c.searchName&&(state.league==="ucl"||state.league==="laliga")){
-    retrieveBadge(c.searchName).then(url=>{if(!url||!fallback.isConnected)return;const img=document.createElement("img");img.alt="";img.loading="lazy";img.src=url;img.onerror=()=>img.replaceWith(fallback);fallback.replaceWith(img)});
-   }
-  }
-  const span=document.createElement("span");span.textContent=c.wikiKo||c.name;a.append(span);root.append(a);
+  const a=document.createElement("a");a.className="club-link";a.href=clubLink(c.name,c.league);a.title=c.wikiKo||c.name;
+  clubLogo(a,c,c.name);
+  const span=document.createElement("span");span.textContent=c.wikiKo||c.name;
+  a.append(span);root.append(a);
  }
- const head=document.querySelector(".club-section h3");if(head)head.textContent=state.league==="ucl"?"2026/27 참가팀 "+rows.length+"개":"구단별 상세 정보";
- const hint=document.querySelector(".club-section p");if(hint)hint.textContent=state.league==="ucl"?"UEFA 공식 리그 페이즈 36개 구단. 구단 선택 시 소개와 최근 경기 결과로 이동합니다.":"구단을 선택하면 역사, 경기장, 선수단과 최근 리그 10경기를 확인할 수 있습니다.";
+ const head=document.querySelector(".club-section h3");
+ if(head)head.textContent=isUefa?"참가 구단 "+rows.length+"팀":"구단별 상세 정보";
+ const hint=document.querySelector(".club-section p");
+ if(hint)hint.textContent=isUefa?"구단 선택 시 팀 소개와 확인 가능한 최근 경기 기록으로 이동합니다.":"구단을 선택하면 역사, 경기장, 선수단과 최근 리그 10경기를 확인할 수 있습니다.";
+}
+function renderUefaStandings(){
+ const info=state.uefaData?.competitions?.[state.league];
+ const updated=document.querySelector("#updated"),source=document.querySelector("#source");
+ source.replaceChildren();area.replaceChildren();
+ if(!info){
+  updated.textContent=state.uefaLoadFailed?"UEFA 순위 데이터 조회 실패":"UEFA 순위 데이터 로딩 중";
+  const msg=document.createElement("div");msg.className="empty";
+  const label=document.createElement("strong");label.textContent=state.uefaLoadFailed?"공식 순위 자료를 불러오지 못했습니다.":"공식 리그 페이즈 순위를 불러오는 중입니다.";
+  msg.append(label);area.append(msg);return;
+ }
+ updated.textContent="2026년 11월 23일 기준 · "+info.matchday+"라운드까지 · UEFA 잠정 순위";
+ const a=document.createElement("a");a.href=info.sourceUrl;a.target="_blank";a.rel="noopener noreferrer";a.textContent="UEFA 공식 순위표 확인";source.append(a);
+ const legend=document.createElement("div");legend.className="uefa-legend";
+ for(const [label,kind] of [["1~8위 16강 직행","direct"],["9~24위 플레이오프","playoff"],["25~36위 탈락권","out"]]){
+  const item=document.createElement("span");item.className="uefa-legend-item";
+  const dot=document.createElement("i");dot.className="uefa-zone "+kind;
+  item.append(dot,document.createTextNode(label));legend.append(item);
+ }
+ area.append(legend);
+ const tableBox=document.createElement("div");tableBox.className="tablebox uefa-tablebox";
+ const table=document.createElement("table");table.className="uefa-table";
+ const header=document.createElement("thead");const headers=document.createElement("tr");
+ for(const name of ["순위","구단","경기","승","무","패","득점","실점","득실차","승점"]){const th=document.createElement("th");th.scope="col";th.textContent=name;headers.append(th)}
+ header.append(headers);table.append(header);
+ const body=document.createElement("tbody");
+ for(let i=0;i<info.rows.length;i++){
+  const r=info.rows[i],club=uefaClub(r.team);
+  if([0,8,24].includes(i)){
+   const group=document.createElement("tr");group.className="uefa-group";
+   const cell=document.createElement("td");cell.colSpan=10;
+   cell.textContent=i===0?"16강 직행권":i===8?"토너먼트 플레이오프권":"리그 페이즈 탈락권";
+   group.append(cell);body.append(group);
+  }
+  const tr=document.createElement("tr");tr.className="uefa-standing-row";
+  const pos=document.createElement("td");pos.className="uefa-position "+(i<8?"direct":i<24?"playoff":"out");
+  const mark=document.createElement("span");mark.textContent=r.rank;pos.append(mark);tr.append(pos);
+  const name=document.createElement("td");name.className="team";
+  const a=club?document.createElement("a"):document.createElement("span");
+  a.className="teamlink";
+  if(club){a.href=clubLink(club.team,club.league);a.title=club.displayName||r.team;}
+  clubLogo(a,club,r.team);
+  const label=document.createElement("span");label.className="uefa-team-name";label.textContent=r.team;
+  a.append(label);name.append(a);tr.append(name);
+  for(const value of [r.played,r.won,r.drawn,r.lost,r.goalsFor,r.goalsAgainst,r.goalDifference,r.points]){
+   const td=document.createElement("td");td.textContent=value;
+   tr.append(td);
+  }
+  tr.lastElementChild.classList.add("points");
+  body.append(tr);
+ }
+ table.append(body);tableBox.append(table);area.append(tableBox);
+ const note=document.createElement("p");note.className="uefa-standings-note";
+ note.textContent="UEFA 공식 리그 페이즈 임시 순위입니다. 순위는 대회 진행에 따라 달라질 수 있으며, 최종 진출·탈락 확정 순위가 아닙니다.";
+ area.append(note);
 }
 function render(){
- document.querySelector("#leagueName").textContent=labels[state.league];renderClubGrid();
- const switcher=document.querySelector(".switch");switcher.hidden=state.league==="ucl";
- if(state.league==="ucl"){
-  const meta=document.querySelector("#updated");meta.textContent="2026/27 리그 페이즈 참가팀";
-  const src=document.querySelector("#source");src.replaceChildren();const a=document.createElement("a");a.href="https://www.uefa.com/uefachampionsleague/clubs/";a.target="_blank";a.rel="noopener noreferrer";a.textContent="UEFA 공식 참가팀";src.append(a);
-  area.innerHTML='<div class="note" style="margin:0">챔피언스리그의 36개 참가팀을 아래에서 확인할 수 있습니다. 리그 순위와 득점왕은 공식 기록이 확인된 경우에만 제공됩니다.</div>';return;
+ document.querySelector("#leagueName").textContent=labels[state.league];
+ renderClubGrid();
+ const isUefa=uefaCodes.has(state.league);
+ document.querySelector(".switch").hidden=isUefa;
+ if(isUefa){
+  document.querySelectorAll("[data-league]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.league===state.league)));
+  renderUefaStandings();return;
  }
  document.querySelectorAll("[data-league]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.league===state.league)));
  document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.view===state.view)));
@@ -206,5 +316,9 @@ document.querySelectorAll("[data-league]").forEach(b=>b.addEventListener("click"
 document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render()}));
 fetch("./data/league-data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No data");return r.json()}).then(data=>{state.data=data;render()}).catch(()=>render());
 fetch("./data/team-profiles.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{state.registry=data;render()}).catch(()=>{});
+fetch("./data/uefa-standings.json",{cache:"no-store"})
+ .then(r=>{if(!r.ok)throw Error("No UEFA table");return r.json()})
+ .then(data=>{state.uefaData=data;render()})
+ .catch(()=>{state.uefaLoadFailed=true;render()});
 render();
 </script></body></html>
