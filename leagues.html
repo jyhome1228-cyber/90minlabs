@@ -407,11 +407,12 @@ function render(){
 }
 document.querySelectorAll("[data-league]").forEach(b=>b.addEventListener("click",()=>{state.league=b.dataset.league;render()}));
 document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{state.view=b.dataset.view;render()}));
-fetch("./data/league-data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("No data");return r.json()}).then(data=>{state.data=data;render()}).catch(()=>render());
-fetch("./data/team-profiles.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{state.registry=data;render()}).catch(()=>{});
-fetch("./data/uefa-standings.json",{cache:"no-store"})
- .then(r=>{if(!r.ok)throw Error("No UEFA table");return r.json()})
- .then(data=>{state.uefaData=data;render()})
- .catch(()=>{state.uefaLoadFailed=true;render()});
+const fetchLocal=async path=>{
+ if(window.NinetyMinData)return window.NinetyMinData.get(path);
+ const r=await fetch("./"+path,{cache:"no-cache"});if(!r.ok)throw Error(path+" HTTP "+r.status);return r.json();
+};
+fetchLocal("data/league-data.json").then(data=>{state.data=data;render()}).catch(()=>render());
+fetchLocal("data/team-profiles.json").then(data=>{state.registry=data;render()}).catch(()=>{});
+fetchLocal("data/uefa-standings.json").then(data=>{state.uefaData=data;render()}).catch(()=>{state.uefaLoadFailed=true;render()});
 render();
 </script></body></html>
