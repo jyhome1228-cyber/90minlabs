@@ -81,7 +81,7 @@ footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:
 <div>
 <section class="section" id="clubHistory"><h2>구단 소개와 역사</h2><p class="description" id="history">구단 소개를 불러오는 중이야.</p><div class="source" id="historySource"></div></section>
 <section class="section" id="teamStructure"><h2>감독과 선수단</h2><div class="two-col"><div class="box"><h3>감독</h3><p id="manager">최신 명단 확인 중</p></div><div class="box"><h3>선수단 구성</h3><p id="squadSummary">선수 정보 확인 중</p></div></div><div id="squadGroups"></div><div class="source" id="squadSource">데이터 출처를 확인 중이야.</div></section>
-<section class="section" id="recentMatches"><h2>최근 10경기</h2><div class="b-note" id="matchNotice">공식적으로 확인할 수 있는 경기 기록을 조회하고 있어.</div><div id="matches"></div><div class="source"><a id="resultsSource" href="https://www.thesportsdb.com" target="_blank" rel="noopener noreferrer">경기 기록 제공처</a></div></section>
+<section class="section" id="recentMatches"><h2>최근 리그 10경기</h2><div class="b-note" id="matchNotice">공식적으로 확인할 수 있는 경기 기록을 조회하고 있어.</div><div id="matches"></div><div class="source"><a id="resultsSource" href="https://www.thesportsdb.com" target="_blank" rel="noopener noreferrer">경기 기록 제공처</a></div></section>
 <section class="section" id="clubNow"><h2>최근 팀 소식</h2><p class="description" id="recentDesc">팀 소식은 해당 구단의 공식 채널과 최신 기사에서 확인할 수 있어. 확인되지 않은 기사 제목이나 이적 소식은 임의로 게시하지 않아.</p><div class="two-col" style="margin-top:20px"><a class="box" id="officialNews" target="_blank" rel="noopener noreferrer"><h3>구단 공식 홈페이지</h3><p>구단이 발표한 최근 뉴스와 공지 확인</p></a><a class="box" id="newsSearch" target="_blank" rel="noopener noreferrer"><h3>관련 뉴스 검색</h3><p>구단별 최신 축구 기사 검색</p></a></div></section>
 </div>
 <aside>
@@ -182,7 +182,7 @@ function showMatches(events,tid){
  show("matchNotice",sorted.length===10?"확인된 최근 10개 경기의 최종 결과를 표시합니다.":"무료 데이터 제공 범위에서 확인된 "+sorted.length+"경기만 표시했어. 전체 10경기 기록은 추가 데이터 연동이 필요해.");
 }
 async function loadTeam(){
- const [reg,standings]=await Promise.all([getJSON("data/team-profiles.json"),getJSON("data/league-data.json")]);
+ const [reg,standings,matchHistory]=await Promise.all([getJSON("data/team-profiles.json"),getJSON("data/league-data.json"),getJSON("data/team-results.json").catch(()=>null)]);
  const local=reg.clubs?.[pageKey];
  const leagueData=standings.leagues?.[league];
  if(!local||!leagueData){select("invalid").hidden=false;return}
@@ -191,11 +191,20 @@ async function loadTeam(){
  show("teamTitle",local.wikiKo||teamName);show("teamEnglish",teamName);
  show("crumbTeam",teamName);show("heroLeague",names[league]);show("detailLeague",names[league]);addPill("2026–27 시즌");
  select("crumbLeague").href="leagues.html?league="+encodeURIComponent(league);
- summaryOf(teamName,(leagueData.standings?.rows||[]).map(x=>({name:x.team})));
+ summaryOf(teamName,Object.values(reg.clubs||{}).filter(c=>c.league===league).map(c=>({name:c.name})));
  setCrest(local.crestId?"https://crests.football-data.org/"+local.crestId+".png":"",teamName);
  if(local.cityKo)show("location",local.cityKo);
  if(local.foundedYear)show("founded",local.foundedYear+"년 (구단 역사)");
  setHistory(local);
+ const recent=matchHistory?.teams?.[pageKey];
+ let hasLocalResults=false;
+ if(recent?.matches?.length){
+  const fixtures=recent.matches.map((m,i)=>({idEvent:m.date+"-"+i,dateEvent:m.date,strHomeTeam:m.home,strAwayTeam:m.away,intHomeScore:m.homeScore,intAwayScore:m.awayScore,strLeague:names[league]}));
+  showMatches(fixtures,null);
+  show("matchNotice","최근 리그 10경기 · "+(recent.lastMatchDate||"날짜 미확인")+"까지의 제공처 기록입니다. 컵대회 및 유럽대항전은 제외됩니다.");
+  const src=select("resultsSource");src.href=recent.sourceUrl||"https://github.com/oladeeayo/open-matchday";src.textContent="경기 기록: open-matchday";
+  hasLocalResults=true;
+ }
  const query=local.searchName||teamName;
  select("newsSearch").href="https://news.google.com/search?q="+encodeURIComponent(query+" football")+"&hl=ko&gl=KR&ceid=KR:ko";
  select("officialNews").removeAttribute("href");select("officialNews").style.opacity=".6";
@@ -216,7 +225,7 @@ async function loadTeam(){
   const season="2026-2027";
   const jobs=[
     getJSON(api+"lookup_all_players.php?id="+encodeURIComponent(tid)).then(x=>renderSquad(x.player||[])).catch(()=>{show("manager","현재 감독 정보 미확인");show("squadSummary","선수 정보 조회 실패");}),
-    (async()=>{
+    hasLocalResults?Promise.resolve():(async()=>{
       const results=await Promise.allSettled([getJSON(api+"eventslast.php?id="+encodeURIComponent(tid)),leagueId?getJSON(api+"eventsseason.php?id="+encodeURIComponent(leagueId)+"&s="+season):Promise.resolve({events:[]})]);
       const all=[];
       for(const r of results){if(r.status==="fulfilled"){const d=r.value;all.push(...(d.results||d.events||[]));}}
