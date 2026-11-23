@@ -644,6 +644,54 @@
       "historyKo": null,
       "crestId": 511,
       "cityKo": "툴루즈"
+    },
+    "ligue1:Auxerre": {
+      "name": "Auxerre",
+      "league": "ligue1",
+      "wikiKo": "AJ 오세르",
+      "searchName": "Auxerre",
+      "historyKo": null,
+      "cityKo": "오세르"
+    },
+    "ligue1:Angers": {
+      "name": "Angers",
+      "league": "ligue1",
+      "wikiKo": "앙제 SCO",
+      "searchName": "Angers",
+      "historyKo": null,
+      "cityKo": "앙제"
+    },
+    "ligue1:Troyes": {
+      "name": "Troyes",
+      "league": "ligue1",
+      "wikiKo": "트루아 AC",
+      "searchName": "Troyes",
+      "historyKo": null,
+      "cityKo": "트루아"
+    },
+    "ligue1:Le Havre": {
+      "name": "Le Havre",
+      "league": "ligue1",
+      "wikiKo": "르아브르 AC",
+      "searchName": "Le Havre",
+      "historyKo": null,
+      "cityKo": "르아브르"
+    },
+    "ligue1:Le Mans": {
+      "name": "Le Mans",
+      "league": "ligue1",
+      "wikiKo": "르망 FC",
+      "searchName": "Le Mans",
+      "historyKo": null,
+      "cityKo": "르망"
+    },
+    "ligue1:Strasbourg": {
+      "name": "Strasbourg",
+      "league": "ligue1",
+      "wikiKo": "RC 스트라스부르 알자스",
+      "searchName": "Strasbourg",
+      "historyKo": null,
+      "cityKo": "스트라스부르"
     }
   }
 }
