@@ -168,7 +168,11 @@ async function init(){
   const data=await response.json();
   if(!Array.isArray(data.matches))throw new Error("no fixtures");
   state.matches=data.matches;state.source=data;
-  $("matchUpdated").textContent="저장된 자료 기준: "+data.capturedAtKst+" · 한국시간";
+  const verifiedAt=data.verifiedAtKst?new Date(data.verifiedAtKst):null;
+  const checkedLabel=verifiedAt&&!Number.isNaN(verifiedAt.getTime())
+   ?new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(verifiedAt)
+   :data.capturedAtKst;
+  $("matchUpdated").textContent="경기 자료 확인: "+checkedLabel+" (한국시간)";
   renderList();
   fetch("./data/team-results.json",{cache:"force-cache"}).then(r=>r.ok?r.json():null).then(d=>{state.forms=d}).catch(()=>{});
  }catch(e){
