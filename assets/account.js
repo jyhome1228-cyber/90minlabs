@@ -11,8 +11,8 @@ function local(){const raw=localStorage.getItem(key);return raw?PredictionStore.
 function replaceLocal(value){const verified=validate(value);const old=localStorage.getItem(key);if(old!==null)localStorage.setItem("90minlabs.account-backup."+Date.now(),old);localStorage.setItem(key,JSON.stringify(verified));window.NinetyMinPage?.reloadRecords();}
 function validate(data){const temp=new Map();const storage={getItem:k=>temp.get(k)??null,setItem:(k,v)=>temp.set(k,v)};temp.set(key,JSON.stringify(data));return PredictionStore.createStore(storage).load();}
 function docRef(){return doc(db,"users",user.uid,"private","predictions");}
-function showSignedOut(message){user=null;connected=false;remoteRevision=null;window.NinetyMinPage?.setAccountMode(false);$("accountSignout").hidden=true;$("accountAuth").hidden=false;$("accountConnected").hidden=true;status(message||"로그인하면 계정별 기록을 여러 기기에서 이용할 수 있습니다.");scope("로그인 전 기록은 이 브라우저에만 저장됩니다.");}
-function showSignedIn(u){$("accountSignout").hidden=false;$("accountAuth").hidden=true;$("accountConnected").hidden=false;$("accountDisplay").textContent=(u.displayName||u.email)+" · "+u.email;status("로그인됨");}
+function showSignedOut(message){$("accountPanel").hidden=false;user=null;connected=false;remoteRevision=null;window.NinetyMinPage?.setAccountMode(false);$("accountSignout").hidden=true;$("accountAuth").hidden=false;$("accountConnected").hidden=true;status(message||"로그인하면 계정별 기록을 여러 기기에서 이용할 수 있습니다.");scope("로그인 전 기록은 이 브라우저에만 저장됩니다.");}
+function showSignedIn(u){$("accountPanel").hidden=false;$("accountSignout").hidden=false;$("accountAuth").hidden=true;$("accountConnected").hidden=false;$("accountDisplay").textContent=(u.displayName||u.email)+" · "+u.email;status("로그인됨");}
 function syncMessage(t){$("accountSyncStatus").textContent=t;}
 async function attach(u){
  user=u;connected=false;window.NinetyMinPage?.setAccountMode(false);showSignedIn(u);syncMessage("계정 기록 확인 중…");
@@ -92,7 +92,7 @@ async function execute(action){
   await signInWithEmailAndPassword(auth,email,password);
  }catch(e){fail(e);}
 }
-function disabled(message){status(message);scope("계정 서비스 설정 전에는 기존 브라우저 저장 기능을 사용할 수 있습니다.");$("accountAuth").hidden=true;$("accountConnected").hidden=true;$("accountSignout").hidden=true;}
+function disabled(message){$("accountPanel").hidden=true;status(message);scope("계정 서비스 설정 전에는 기존 브라우저 저장 기능을 사용할 수 있습니다.");$("accountAuth").hidden=true;$("accountConnected").hidden=true;$("accountSignout").hidden=true;}
 async function start(){
  let config;
  try{const module=await import("./firebase-config.js");config=module.firebaseConfig;}catch(e){disabled("계정 연결 준비 중 · Firebase 설정이 필요합니다.");return;}
