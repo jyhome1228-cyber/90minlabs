@@ -263,3 +263,91 @@ footer.global-footer{
  .pick-time .pick-countdown[data-kickoff-kst]{font-size:10px}
  .match-score-area .match-countdown[data-kickoff-kst]{font-size:10px}
 }
+
+
+/* 2026-11-24: unified 1600px layout / separated account utility / footer language control */
+:root{--site-content-max:1600px;--site-content-gutter:40px}
+.site-header[data-site-header] .shell-inner{
+ width:min(calc(100% - 80px),var(--site-content-max));
+ gap:26px;
+}
+.site-header[data-site-header] .shell-navigation{
+ display:flex;gap:27px;margin-left:auto;min-width:0
+}
+.site-header[data-site-header] .shell-utility{
+ display:flex;align-items:center;gap:17px;flex:0 0 auto;
+ margin-left:3px;padding-left:22px;border-left:1px solid #dfdfdf;
+}
+.site-header[data-site-header] .shell-utility-link,
+.site-header[data-site-header] .shell-mobile-utility-link{
+ display:inline-flex;align-items:center;justify-content:center;min-height:40px;
+ padding:7px 0;color:#626262;text-decoration:none;
+ font-size:13px;font-weight:550;line-height:1.5;white-space:nowrap
+}
+.site-header[data-site-header] .shell-utility-link:hover,
+.site-header[data-site-header] .shell-utility-link.is-active{color:#171717}
+.site-header[data-site-header] .shell-utility-link.is-active{font-weight:650}
+.site-header[data-site-header] .shell-mobile-utility{display:none}
+body main.wrap,body main.page-wrap,body main.mypage-wrap,body main.col-detail-main{
+ width:min(calc(100% - 80px),var(--site-content-max));
+ max-width:var(--site-content-max);
+ margin-left:auto;margin-right:auto
+}
+body main.container{
+ width:min(calc(100% - 80px),var(--site-content-max));
+ max-width:var(--site-content-max);padding-left:0;padding-right:0;
+ margin-left:auto;margin-right:auto
+}
+body .home-hero-dual{width:min(calc(100% - 80px),var(--site-content-max))}
+.global-footer-inner{width:min(calc(100% - 80px),var(--site-content-max))}
+.global-footer-main{
+ grid-template-columns:minmax(180px,1.65fr) minmax(130px,.7fr) minmax(175px,1fr) minmax(105px,.5fr);
+ gap:clamp(22px,3.5vw,64px);padding:41px 0 37px
+}
+.global-footer-group{min-width:0;gap:9px}
+.global-footer-group h2{margin-bottom:9px}
+.global-footer-language{
+ display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;
+ margin-top:2px
+}
+.global-footer-language button{
+ border:1px solid #d6d6d6;background:transparent;
+ color:#696969;border-radius:3px;min-width:43px;min-height:33px;
+ padding:6px 9px;font-size:12px;font-weight:600;line-height:1.4;cursor:pointer
+}
+.global-footer-language button[aria-pressed="true"],
+.global-footer-language button.is-selected{background:#242424;border-color:#242424;color:#fff}
+.global-footer-language button:hover:not([aria-pressed="true"]){border-color:#666;color:#222}
+.global-footer-language button:focus-visible{outline:2px solid #222;outline-offset:2px}
+.global-footer-bottom{padding:18px 0 20px}
+@media(min-width:901px) and (max-width:1150px){
+ .site-header[data-site-header] .shell-inner{gap:18px}
+ .site-header[data-site-header] .shell-navigation{gap:16px}
+ .site-header[data-site-header] .shell-utility{gap:12px;padding-left:16px}
+}
+@media(max-width:900px){
+ .site-header[data-site-header] .shell-inner{width:calc(100% - 44px)}
+ .site-header[data-site-header] .shell-navigation{
+  display:none;gap:0;margin:0;padding:12px 22px 20px
+ }
+ .site-header[data-site-header][data-menu-open="true"] .shell-navigation{display:flex}
+ .site-header[data-site-header] .shell-utility{display:none}
+ .site-header[data-site-header] .shell-mobile-utility{
+  display:flex;gap:24px;align-items:center;flex-wrap:wrap;
+  border-top:1px solid #ebebeb;margin-top:6px;padding-top:12px
+ }
+ .site-header[data-site-header] .shell-mobile-utility-link{font-size:13px;min-height:36px}
+ body main.wrap,body main.page-wrap,body main.mypage-wrap,body main.col-detail-main,
+ body main.container,body .home-hero-dual,.global-footer-inner{width:calc(100% - 44px)}
+ .global-footer-main{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px;padding:35px 0}
+ .global-footer-about{grid-column:1/-1}
+}
+@media(max-width:650px){
+ .site-header[data-site-header] .shell-inner{width:calc(100% - 36px)}
+ .site-header[data-site-header] .shell-navigation{padding-right:18px;padding-left:18px}
+ body main.wrap,body main.page-wrap,body main.mypage-wrap,body main.col-detail-main,
+ body main.container,body .home-hero-dual,.global-footer-inner{width:calc(100% - 36px)}
+ .global-footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:27px 18px;padding:31px 0}
+ .global-footer-about{grid-column:1/-1}
+ .global-footer-bottom{gap:7px}
+}
