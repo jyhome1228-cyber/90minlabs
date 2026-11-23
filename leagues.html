@@ -120,7 +120,7 @@ document.addEventListener('error',event=>{
  else{const abbr=(img.alt||'').slice(0,3).toUpperCase();const span=document.createElement('span');span.className='teamcode';span.textContent=abbr;img.replaceWith(span);}
 },true);
 function clubLink(name){return 'team.html?team='+encodeURIComponent(name||'')+'&league='+encodeURIComponent(state.league);}
-function scorerCell(r){const label=esc(r.player)+(r.team?' <span style="color:#8793a3;font-weight:400">· '+esc(r.team)+'</span>':'');return r.team?'<a class="teamlink" href="'+esc(clubLink(r.team))+'">'+crest(r.team)+label+'</a>':label;}
+function scorerCell(r){const label=esc(r.player)+(r.team?' <span style="color:#919191;font-weight:400">· '+esc(r.team)+'</span>':'');return r.team?'<a class="teamlink" href="'+esc(clubLink(r.team))+'">'+crest(r.team)+label+'</a>':label;}
 function renderClubGrid(){
  const root=document.querySelector("#clubList");if(!root)return;root.replaceChildren();
  const rows=Object.values(state.registry?.clubs||{}).filter(x=>x.league===state.league).sort((a,b)=>a.name.localeCompare(b.name));
