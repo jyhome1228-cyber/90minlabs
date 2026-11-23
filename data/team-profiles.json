@@ -608,7 +608,9 @@
       "manager": "Ivan Jurić",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "badgeUrl": "https://assets.footylogos.com/logos/ac-monza/ac-monza-logo-footylogos.svg",
+      "badgeSourceUrl": "https://www.footylogos.com/logos/ac-monza"
     },
     "seriea:Udinese": {
       "name": "Udinese",
@@ -949,7 +951,9 @@
       "manager": "Liam Rosenior",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "badgeUrl": "https://assets.footylogos.com/logos/paris-fc/paris-fc-logo-footylogos.svg",
+      "badgeSourceUrl": "https://www.footylogos.com/logos/paris-fc"
     },
     "ligue1:Lille": {
       "name": "Lille",
@@ -1181,7 +1185,9 @@
       "manager": "Patrick Videira",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Ligue_1",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "badgeUrl": "https://assets.footylogos.com/logos/le-mans-fc/le-mans-fc-logo-footylogos.svg",
+      "badgeSourceUrl": "https://www.footylogos.com/logos/le-mans-fc"
     },
     "ligue1:Strasbourg": {
       "name": "Strasbourg",
@@ -1350,7 +1356,9 @@
       "manager": "Juan Francisco Funes",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "badgeUrl": "https://assets.footylogos.com/logos/malaga-cf/malaga-cf-logo-footylogos.svg",
+      "badgeSourceUrl": "https://www.footylogos.com/logos/malaga-cf"
     },
     "laliga:R. Racing Club": {
       "name": "R. Racing Club",
@@ -1364,7 +1372,9 @@
       "manager": "José Alberto López",
       "managerVerifiedAt": "2026-11-23",
       "managerSourceUrl": "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga",
-      "managerSourceType": "season-summary"
+      "managerSourceType": "season-summary",
+      "badgeUrl": "https://assets.footylogos.com/logos/racing-santander/racing-santander-logo-footylogos.svg",
+      "badgeSourceUrl": "https://www.footylogos.com/logos/racing-santander"
     },
     "laliga:RC Deportivo": {
       "name": "RC Deportivo",
