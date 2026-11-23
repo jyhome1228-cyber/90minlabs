@@ -129,7 +129,7 @@ function renderGames(list,games,fromPreview){
  }
 }
 function renderLoadState(list){
- if(state.loading){list.replaceChildren(element("div","match-empty","경기 일정을 불러오는 중입니다."));return true}
+ if(state.loading){const box=element("div","match-empty match-loading");box.setAttribute("role","status");box.append(element("span","match-loading-spinner"),element("span","","경기 일정을 불러오는 중입니다."));list.replaceChildren(box);return true}
  if(state.error){
   const error=element("div","match-empty");
   error.append(element("strong","","경기 자료를 불러오지 못했습니다."),element("p","","네트워크 연결을 확인한 후 다시 불러와 주세요."));
