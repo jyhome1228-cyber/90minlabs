@@ -5,7 +5,7 @@
 const KEY="90minlabs.myteams.v1",NOTIFY_KEY="90minlabs.myteams.notify.v1",SENT_KEY="90minlabs.myteams.sent.v1",LIMIT=18;
 const $=id=>document.getElementById(id);
 const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=String(text);return node;};
-const norm=value=>String(value||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+const norm=value=>String(value||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^\p{L}\p{N}]/gu,"");
 const language=()=>root.NinetyMinI18n?.language==="en"?"en":"ko";
 const words=(ko,en)=>language()==="en"?en:ko;
 const kstMs=m=>{const value=Date.parse(String(m.date||"")+"T"+String(m.time||"00:00")+":00+09:00");return Number.isFinite(value)?value:NaN;};
@@ -165,7 +165,7 @@ async function toggleNotify(){
  checkReminders();
 }
 function checkReminders(){
- if(!notifyEnabled||Notification.permission!=="granted"||!selected.length)return;
+ if(!notifyEnabled||!("Notification" in root)||Notification.permission!=="granted"||!selected.length)return;
  const now=Date.now();
  let sent={};try{sent=JSON.parse(localStorage.getItem(SENT_KEY)||"{}");}catch(e){}
  let changed=false;
