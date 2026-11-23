@@ -9512,9 +9512,29 @@
       "team": "AEK Athens",
       "league": "ucl",
       "matchName": "AEK Athens",
-      "lastMatchDate": "2026-11-04",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Kalamata",
+          "away": "AEK Athens",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "AEK Athens",
+          "away": "Levadiakos",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-04",
           "home": "AEK Athens",
@@ -9522,7 +9542,28 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Panathinaikos",
+          "away": "AEK Athens",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "AEK Athens",
+          "away": "Panetolikos",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-20",
@@ -9531,7 +9572,8 @@
           "homeScore": 5,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
           "date": "2026-10-14",
@@ -9540,16 +9582,48 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
-          "date": "2026-09-08",
+          "date": "2026-10-10",
           "home": "AEK Athens",
-          "away": "LASK",
-          "homeScore": 1,
+          "away": "OFI Crete",
+          "homeScore": 3,
           "awayScore": 0,
-          "round": "1",
-          "provider": "fixturedl"
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Volos NFC",
+          "away": "AEK Athens",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Asteras Tripoli",
+          "away": "AEK Athens",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/GRE_1_super-league/results_2627.csv"
         }
       ]
     },
@@ -9602,9 +9676,29 @@
       "team": "Club Brugge",
       "league": "ucl",
       "matchName": "Club Brugge",
-      "lastMatchDate": "2026-11-04",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "KV Mechelen",
+          "away": "Club Brugge",
+          "homeScore": 1,
+          "awayScore": 5,
+          "round": "12",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Club Brugge",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-04",
           "home": "PSV",
@@ -9612,7 +9706,28 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-30",
+          "home": "Zulte-Waregem",
+          "away": "Club Brugge",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Club Brugge",
+          "away": "Sint-Truidense",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-21",
@@ -9621,7 +9736,8 @@
           "homeScore": 3,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
           "date": "2026-10-13",
@@ -9630,16 +9746,48 @@
           "homeScore": 3,
           "awayScore": 4,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
-          "date": "2026-09-08",
+          "date": "2026-10-10",
+          "home": "RAAL La Louvière",
+          "away": "Club Brugge",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
           "home": "Club Brugge",
-          "away": "Aston Villa",
-          "homeScore": 2,
-          "awayScore": 3,
-          "round": "1",
-          "provider": "fixturedl"
+          "away": "Racing Genk",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Club Brugge",
+          "away": "Antwerp",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/BEL_1_pro-league/results_2627.csv"
         }
       ]
     },
@@ -9647,9 +9795,29 @@
       "team": "Fenerbahçe",
       "league": "ucl",
       "matchName": "Fenerbahçe",
-      "lastMatchDate": "2026-11-04",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Kocaelispor",
+          "away": "Fenerbahçe",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Çorum",
+          "away": "Fenerbahçe",
+          "homeScore": 0,
+          "awayScore": 5,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-04",
           "home": "Fenerbahçe",
@@ -9657,7 +9825,28 @@
           "homeScore": 3,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Fenerbahçe",
+          "away": "Göztepe",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Galatasaray",
+          "away": "Fenerbahçe",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-20",
@@ -9666,7 +9855,18 @@
           "homeScore": 2,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Fenerbahçe",
+          "away": "Alanyaspor",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-14",
@@ -9675,16 +9875,38 @@
           "homeScore": 6,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
-          "date": "2026-09-10",
+          "date": "2026-10-10",
+          "home": "Çaykur Rizespor",
+          "away": "Fenerbahçe",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
           "home": "Fenerbahçe",
-          "away": "Roma",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl"
+          "away": "Eyüpspor",
+          "homeScore": 8,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/TUR_1_super-lig/results_2627.csv"
         }
       ]
     },
@@ -9692,9 +9914,29 @@
       "team": "Feyenoord",
       "league": "ucl",
       "matchName": "Feyenoord",
-      "lastMatchDate": "2026-11-03",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Feyenoord",
+          "away": "Excelsior Rotterdam",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "sc Heerenveen",
+          "away": "Feyenoord",
+          "homeScore": 5,
+          "awayScore": 3,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-03",
           "home": "Feyenoord",
@@ -9702,7 +9944,28 @@
           "homeScore": 0,
           "awayScore": 3,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Feyenoord",
+          "away": "Fortuna Sittard",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "PSV",
+          "away": "Feyenoord",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-21",
@@ -9711,7 +9974,18 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Telstar",
+          "away": "Feyenoord",
+          "homeScore": 3,
+          "awayScore": 4,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-14",
@@ -9720,16 +9994,38 @@
           "homeScore": 3,
           "awayScore": 2,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
-          "date": "2026-09-09",
-          "home": "Barcelona",
-          "away": "Feyenoord",
+          "date": "2026-10-10",
+          "home": "Feyenoord",
+          "away": "AZ",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Feyenoord",
+          "away": "FC Utrecht",
           "homeScore": 5,
-          "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl"
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/NED_1_eredivisie/results_2627.csv"
         }
       ]
     },
@@ -9737,9 +10033,29 @@
       "team": "Galatasaray",
       "league": "ucl",
       "matchName": "Galatasaray",
-      "lastMatchDate": "2026-11-03",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Galatasaray",
+          "away": "Samsunspor",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-07",
+          "home": "Galatasaray",
+          "away": "Amedspor",
+          "homeScore": 4,
+          "awayScore": 3,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-03",
           "home": "Galatasaray",
@@ -9747,7 +10063,28 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-30",
+          "home": "Konyaspor",
+          "away": "Galatasaray",
+          "homeScore": 0,
+          "awayScore": 4,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Galatasaray",
+          "away": "Fenerbahçe",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-21",
@@ -9756,7 +10093,18 @@
           "homeScore": 2,
           "awayScore": 4,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "Gençlerbirligi",
+          "away": "Galatasaray",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-13",
@@ -9765,16 +10113,38 @@
           "homeScore": 1,
           "awayScore": 4,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
-          "date": "2026-09-09",
-          "home": "Sporting CP",
-          "away": "Galatasaray",
+          "date": "2026-10-09",
+          "home": "Galatasaray",
+          "away": "Kasimpasa",
           "homeScore": 3,
           "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl"
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Trabzonspor",
+          "away": "Galatasaray",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/TUR_1_super-lig/results_2627.csv"
         }
       ]
     },
@@ -9827,9 +10197,29 @@
       "team": "PSV",
       "league": "ucl",
       "matchName": "PSV",
-      "lastMatchDate": "2026-11-04",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "N.E.C. Nijmegen",
+          "away": "PSV",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "SC Cambuur",
+          "away": "PSV",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-04",
           "home": "PSV",
@@ -9837,7 +10227,28 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "PSV",
+          "away": "Willem II",
+          "homeScore": 7,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "PSV",
+          "away": "Feyenoord",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-20",
@@ -9846,7 +10257,18 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-17",
+          "home": "ADO Den Haag",
+          "away": "PSV",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-13",
@@ -9855,16 +10277,38 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
-          "date": "2026-09-10",
+          "date": "2026-10-09",
           "home": "PSV",
-          "away": "Shakhtar",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl"
+          "away": "sc Heerenveen",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "FC Twente",
+          "away": "PSV",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/NED_1_eredivisie/results_2627.csv"
         }
       ]
     },
@@ -9872,9 +10316,19 @@
       "team": "Porto",
       "league": "ucl",
       "matchName": "Porto",
-      "lastMatchDate": "2026-11-04",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Vitória SC",
+          "away": "Porto",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-04",
           "home": "Porto",
@@ -9882,7 +10336,28 @@
           "homeScore": 4,
           "awayScore": 1,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Porto",
+          "away": "Estoril Praia",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-24",
+          "home": "Gil Vicente FC",
+          "away": "Porto",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-20",
@@ -9891,7 +10366,8 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
           "date": "2026-10-14",
@@ -9900,7 +10376,38 @@
           "homeScore": 3,
           "awayScore": 2,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Marítimo M.",
+          "away": "Porto",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Porto",
+          "away": "SL Benfica",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Casa Pia AC",
+          "away": "Porto",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-09-08",
@@ -9909,7 +10416,18 @@
           "homeScore": 0,
           "awayScore": 2,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/POR_1_primeira-liga/results_2627.csv"
         }
       ]
     },
@@ -10097,9 +10615,19 @@
       "team": "Sporting CP",
       "league": "ucl",
       "matchName": "Sporting CP",
-      "lastMatchDate": "2026-11-03",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
+      "lastMatchDate": "2026-11-07",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-07",
+          "home": "Sporting CP",
+          "away": "Moreirense FC",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-03",
           "home": "Shakhtar",
@@ -10107,7 +10635,28 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-30",
+          "home": "Casa Pia AC",
+          "away": "Sporting CP",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Sporting CP",
+          "away": "Académico",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-21",
@@ -10116,7 +10665,8 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
         },
         {
           "date": "2026-10-13",
@@ -10125,7 +10675,38 @@
           "homeScore": 0,
           "awayScore": 2,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        },
+        {
+          "date": "2026-10-09",
+          "home": "SC Braga",
+          "away": "Sporting CP",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Sporting CP",
+          "away": "FC Arouca",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "FC Famalicão",
+          "away": "Sporting CP",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-09-09",
@@ -10134,7 +10715,18 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UCL"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/POR_1_primeira-liga/results_2627.csv"
         }
       ]
     },
@@ -10187,9 +10779,19 @@
       "team": "Benfica",
       "league": "uel",
       "matchName": "Benfica",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Estrela Amadora",
+          "away": "Benfica",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Benfica",
@@ -10197,7 +10799,28 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-11-02",
+          "home": "Benfica",
+          "away": "FC Alverca",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Santa Clara",
+          "away": "Benfica",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10206,7 +10829,8 @@
           "homeScore": 1,
           "awayScore": 4,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
           "date": "2026-10-15",
@@ -10215,7 +10839,28 @@
           "homeScore": 4,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Benfica",
+          "away": "Vitória SC",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "FC Porto",
+          "away": "Benfica",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-09-16",
@@ -10224,7 +10869,28 @@
           "homeScore": 0,
           "awayScore": 2,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Benfica",
+          "away": "Gil Vicente FC",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/POR_1_primeira-liga/results_2627.csv"
         }
       ]
     },
@@ -10277,9 +10943,29 @@
       "team": "Union SG",
       "league": "uel",
       "matchName": "Union SG",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "KV Kortrijk",
+          "away": "Union SG",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "12",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Union SG",
+          "away": "Racing Genk",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Celta",
@@ -10287,7 +10973,28 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Waasland-Beveren",
+          "away": "Union SG",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Union SG",
+          "away": "Cercle Brugge KSV",
+          "homeScore": 5,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10296,7 +11003,8 @@
           "homeScore": 4,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
           "date": "2026-10-15",
@@ -10305,7 +11013,28 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Union SG",
+          "away": "OH Leuven",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Antwerp",
+          "away": "Union SG",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-09-17",
@@ -10314,7 +11043,18 @@
           "homeScore": 0,
           "awayScore": 3,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/BEL_1_pro-league/results_2627.csv"
         }
       ]
     },
@@ -10322,9 +11062,19 @@
       "team": "Olympiacos",
       "league": "uel",
       "matchName": "Olympiacos",
-      "lastMatchDate": "2026-11-04",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Olympiacos",
+          "away": "PAOK",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-04",
           "home": "Rennes",
@@ -10332,7 +11082,28 @@
           "homeScore": 0,
           "awayScore": 0,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Kifisia",
+          "away": "Olympiacos",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Olympiacos",
+          "away": "Kalamata",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10341,7 +11112,18 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Panetolikos",
+          "away": "Olympiacos",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -10350,7 +11132,28 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Olympiacos",
+          "away": "Panathinaikos",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Levadiakos",
+          "away": "Olympiacos",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-09-16",
@@ -10359,17 +11162,48 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/GRE_1_super-league/results_2627.csv"
         }
       ]
     },
     "uel:Beşiktaş": {
       "team": "Beşiktaş",
       "league": "uel",
-      "matchName": "Besiktas",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "matchName": "Beşiktaş",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Konyaspor",
+          "away": "Beşiktaş",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Beşiktaş",
+          "away": "Gençlerbirligi",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Celtic",
@@ -10377,7 +11211,28 @@
           "homeScore": 3,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Kasimpasa",
+          "away": "Beşiktaş",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Beşiktaş",
+          "away": "Istanbul Basaksehir",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10386,7 +11241,18 @@
           "homeScore": 2,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-19",
+          "home": "Trabzonspor",
+          "away": "Beşiktaş",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -10395,16 +11261,38 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
-          "date": "2026-09-17",
-          "home": "Besiktas",
-          "away": "Marseille",
-          "homeScore": 4,
+          "date": "2026-10-11",
+          "home": "Beşiktaş",
+          "away": "Kocaelispor",
+          "homeScore": 2,
           "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl"
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Amedspor",
+          "away": "Beşiktaş",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/TUR_1_super-lig/results_2627.csv"
         }
       ]
     },
@@ -10502,9 +11390,29 @@
       "team": "N.E.C.",
       "league": "uel",
       "matchName": "N.E.C.",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "N.E.C.",
+          "away": "PSV",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "FC Utrecht",
+          "away": "N.E.C.",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "N.E.C.",
@@ -10512,7 +11420,28 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "sc Heerenveen",
+          "away": "N.E.C.",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "N.E.C.",
+          "away": "FC Groningen",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10521,7 +11450,18 @@
           "homeScore": 2,
           "awayScore": 4,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "N.E.C.",
+          "away": "Fortuna Sittard",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -10530,16 +11470,38 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
-          "date": "2026-09-17",
-          "home": "Juventus",
+          "date": "2026-10-10",
+          "home": "Ajax",
           "away": "N.E.C.",
-          "homeScore": 5,
-          "awayScore": 0,
-          "round": "1",
-          "provider": "fixturedl"
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "N.E.C.",
+          "away": "Go Ahead Eagles",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/NED_1_eredivisie/results_2627.csv"
         }
       ]
     },
@@ -10547,9 +11509,29 @@
       "team": "AZ Alkmaar",
       "league": "uel",
       "matchName": "AZ Alkmaar",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Sparta Rotterdam",
+          "away": "AZ Alkmaar",
+          "homeScore": 1,
+          "awayScore": 5,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "AZ Alkmaar",
+          "away": "FC Groningen",
+          "homeScore": 4,
+          "awayScore": 3,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "AZ Alkmaar",
@@ -10557,7 +11539,28 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Ajax",
+          "away": "AZ Alkmaar",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "AZ Alkmaar",
+          "away": "FC Twente",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10566,7 +11569,18 @@
           "homeScore": 0,
           "awayScore": 4,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "SC Cambuur",
+          "away": "AZ Alkmaar",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -10575,16 +11589,38 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
-          "date": "2026-09-16",
-          "home": "Sunderland",
+          "date": "2026-10-10",
+          "home": "Feyenoord",
           "away": "AZ Alkmaar",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "AZ Alkmaar",
+          "away": "Telstar",
           "homeScore": 1,
           "awayScore": 0,
-          "round": "1",
-          "provider": "fixturedl"
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/NED_1_eredivisie/results_2627.csv"
         }
       ]
     },
@@ -10592,9 +11628,19 @@
       "team": "Anderlecht",
       "league": "uel",
       "matchName": "Anderlecht",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Club Brugge",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Anderlecht",
@@ -10602,7 +11648,28 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Anderlecht",
+          "away": "KVC Westerlo",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "KAA Gent",
+          "away": "Anderlecht",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10611,7 +11678,8 @@
           "homeScore": 0,
           "awayScore": 3,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
           "date": "2026-10-15",
@@ -10620,7 +11688,28 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Cercle Brugge KSV",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Anderlecht",
+          "away": "Zulte-Waregem",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-09-16",
@@ -10629,7 +11718,28 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-09-11",
+          "home": "KV Mechelen",
+          "away": "Anderlecht",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/BEL_1_pro-league/results_2627.csv"
         }
       ]
     },
@@ -10637,9 +11747,29 @@
       "team": "OFI Crete",
       "league": "uel",
       "matchName": "OFI Crete",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Panathinaikos",
+          "away": "OFI Crete",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "OFI Crete",
+          "away": "Atromitos",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "H. Beer-Sheva",
@@ -10647,7 +11777,28 @@
           "homeScore": 0,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Panetolikos",
+          "away": "OFI Crete",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "OFI Crete",
+          "away": "PAOK",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -10656,7 +11807,18 @@
           "homeScore": 0,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Kalamata",
+          "away": "OFI Crete",
+          "homeScore": 4,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -10665,16 +11827,38 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
-          "date": "2026-09-17",
-          "home": "OFI Crete",
-          "away": "Hoffenheim",
-          "homeScore": 2,
+          "date": "2026-10-10",
+          "home": "AEK Athens",
+          "away": "OFI Crete",
+          "homeScore": 3,
           "awayScore": 0,
-          "round": "1",
-          "provider": "fixturedl"
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "OFI Crete",
+          "away": "Asteras Tripoli",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/GRE_1_super-league/results_2627.csv"
         }
       ]
     },
@@ -11042,9 +12226,29 @@
       "team": "Celtic",
       "league": "uel",
       "matchName": "Celtic",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Celtic",
+          "away": "St. Mirren",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "14",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Celtic",
+          "away": "Kilmarnock",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Celtic",
@@ -11052,7 +12256,38 @@
           "homeScore": 3,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Falkirk",
+          "away": "Celtic",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-28",
+          "home": "Celtic",
+          "away": "Dundee United",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Hibernian",
+          "away": "Celtic",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11061,7 +12296,18 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Celtic",
+          "away": "Heart of Midlothian",
+          "homeScore": 7,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -11070,16 +12316,28 @@
           "homeScore": 4,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UEL"
         },
         {
-          "date": "2026-09-17",
-          "home": "Celtic",
-          "away": "Ferencváros",
-          "homeScore": 1,
-          "awayScore": 3,
-          "round": "1",
-          "provider": "fixturedl"
+          "date": "2026-10-11",
+          "home": "Motherwell",
+          "away": "Celtic",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/SCO_1_premiership/results_2627.csv"
         }
       ]
     },
@@ -11303,9 +12561,29 @@
       "team": "Panathinaikos",
       "league": "uecl",
       "matchName": "Panathinaikos",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Panathinaikos",
+          "away": "OFI Crete",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Iraklis",
+          "away": "Panathinaikos",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Panathinaikos",
@@ -11313,7 +12591,28 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Panathinaikos",
+          "away": "AEK Athens",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Volos NFC",
+          "away": "Panathinaikos",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11322,7 +12621,18 @@
           "homeScore": 1,
           "awayScore": 5,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Panathinaikos",
+          "away": "Asteras Tripoli",
+          "homeScore": 5,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -11331,7 +12641,38 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "Olympiacos",
+          "away": "Panathinaikos",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Kalamata",
+          "away": "Panathinaikos",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/GRE_1_super-league/results_2627.csv"
         }
       ]
     },
@@ -11339,9 +12680,29 @@
       "team": "Twente",
       "league": "uecl",
       "matchName": "Twente",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Twente",
+          "away": "Willem II",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Twente",
+          "away": "Ajax",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Twente",
@@ -11349,7 +12710,28 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Excelsior Rotterdam",
+          "away": "Twente",
+          "homeScore": 0,
+          "awayScore": 9,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "AZ",
+          "away": "Twente",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11358,7 +12740,18 @@
           "homeScore": 1,
           "awayScore": 4,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Twente",
+          "away": "FC Utrecht",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -11367,7 +12760,38 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Fortuna Sittard",
+          "away": "Twente",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Twente",
+          "away": "PSV",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/NED_1_eredivisie/results_2627.csv"
         }
       ]
     },
@@ -11519,9 +12943,29 @@
       "team": "Sint-Truidense",
       "league": "uecl",
       "matchName": "Sint-Truidense",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Royal Charleroi SC",
+          "away": "Sint-Truidense",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Sint-Truidense",
+          "away": "Zulte-Waregem",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Sint-Truidense",
@@ -11529,7 +12973,28 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Sint-Truidense",
+          "away": "OH Leuven",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Club Brugge",
+          "away": "Sint-Truidense",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11538,7 +13003,8 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
         },
         {
           "date": "2026-10-15",
@@ -11547,7 +13013,48 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-11",
+          "home": "KV Mechelen",
+          "away": "Sint-Truidense",
+          "homeScore": 4,
+          "awayScore": 3,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Sint-Truidense",
+          "away": "KVC Westerlo",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Waasland-Beveren",
+          "away": "Sint-Truidense",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/BEL_1_pro-league/results_2627.csv"
         }
       ]
     },
@@ -11555,9 +13062,29 @@
       "team": "Ajax",
       "league": "uecl",
       "matchName": "Ajax",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Ajax",
+          "away": "ADO Den Haag",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "FC Twente",
+          "away": "Ajax",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Midtjylland",
@@ -11565,7 +13092,28 @@
           "homeScore": 1,
           "awayScore": 6,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-31",
+          "home": "Ajax",
+          "away": "AZ",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Sparta Rotterdam",
+          "away": "Ajax",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11574,7 +13122,18 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "FC Groningen",
+          "away": "Ajax",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -11583,7 +13142,38 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Ajax",
+          "away": "N.E.C. Nijmegen",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Ajax",
+          "away": "Excelsior Rotterdam",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/NED_1_eredivisie/results_2627.csv"
         }
       ]
     },
@@ -11591,9 +13181,19 @@
       "team": "Trabzonspor",
       "league": "uecl",
       "matchName": "Trabzonspor",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Alanyaspor",
+          "away": "Trabzonspor",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Trabzonspor",
@@ -11601,7 +13201,28 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Trabzonspor",
+          "away": "Gaziantep",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-26",
+          "home": "Çaykur Rizespor",
+          "away": "Trabzonspor",
+          "homeScore": 3,
+          "awayScore": 4,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11610,7 +13231,18 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-19",
+          "home": "Trabzonspor",
+          "away": "Besiktas",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -11619,7 +13251,48 @@
           "homeScore": 2,
           "awayScore": 4,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Samsunspor",
+          "away": "Trabzonspor",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Trabzonspor",
+          "away": "Galatasaray",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-12",
+          "home": "Konyaspor",
+          "away": "Trabzonspor",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/TUR_1_super-lig/results_2627.csv"
         }
       ]
     },
@@ -11699,9 +13372,19 @@
       "team": "Braga",
       "league": "uecl",
       "matchName": "Braga",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-08",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-08",
+          "home": "Rio Ave FC",
+          "away": "Braga",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Aarhus",
@@ -11709,7 +13392,28 @@
           "homeScore": 0,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Braga",
+          "away": "FC Famalicão",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "CD Nacional",
+          "away": "Braga",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11718,7 +13422,18 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-19",
+          "home": "Braga",
+          "away": "Gil Vicente FC",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "2",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -11727,7 +13442,48 @@
           "homeScore": 3,
           "awayScore": 0,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-09",
+          "home": "Braga",
+          "away": "Sporting CP",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-20",
+          "home": "Santa Clara",
+          "away": "Braga",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-14",
+          "home": "Braga",
+          "away": "Estoril Praia",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "6",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/POR_1_primeira-liga/results_2627.csv"
         }
       ]
     },
@@ -11735,9 +13491,29 @@
       "team": "Gent",
       "league": "uecl",
       "matchName": "Gent",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-22",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-22",
+          "home": "Waasland-Beveren",
+          "away": "Gent",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Gent",
+          "away": "KV Kortrijk",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "KuPS Kuopio",
@@ -11745,7 +13521,28 @@
           "homeScore": 0,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-11-01",
+          "home": "Lommel SK",
+          "away": "Gent",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "10",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Gent",
+          "away": "Anderlecht",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "9",
+          "provider": "espn",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -11754,7 +13551,8 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
         },
         {
           "date": "2026-10-15",
@@ -11763,7 +13561,48 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Zulte-Waregem",
+          "away": "Gent",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "8",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-18",
+          "home": "Gent",
+          "away": "Standard Liege",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "espn",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-13",
+          "home": "Racing Genk",
+          "away": "Gent",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "6",
+          "provider": "espn",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/BEL_1_pro-league/results_2627.csv"
         }
       ]
     },
@@ -12203,9 +14042,29 @@
       "team": "Hearts",
       "league": "uecl",
       "matchName": "Hearts",
-      "lastMatchDate": "2026-11-05",
-      "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
+      "lastMatchDate": "2026-11-21",
+      "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-21",
+          "home": "Dundee",
+          "away": "Hearts",
+          "homeScore": 0,
+          "awayScore": 8,
+          "round": "14",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-11-08",
+          "home": "Hearts",
+          "away": "Falkirk",
+          "homeScore": 2,
+          "awayScore": 5,
+          "round": "13",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
         {
           "date": "2026-11-05",
           "home": "Thun",
@@ -12213,7 +14072,28 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-28",
+          "home": "Hearts",
+          "away": "Rangers",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "11",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-10-25",
+          "home": "Motherwell",
+          "away": "Hearts",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "10",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-22",
@@ -12222,7 +14102,18 @@
           "homeScore": 2,
           "awayScore": 0,
           "round": "2",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-18",
+          "home": "Celtic",
+          "away": "Hearts",
+          "homeScore": 7,
+          "awayScore": 1,
+          "round": "9",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
         },
         {
           "date": "2026-10-15",
@@ -12231,7 +14122,38 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "1",
-          "provider": "fixturedl"
+          "provider": "fixturedl",
+          "competition": "UECL"
+        },
+        {
+          "date": "2026-10-10",
+          "home": "Hearts",
+          "away": "St. Mirren",
+          "homeScore": 5,
+          "awayScore": 0,
+          "round": "8",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        },
+        {
+          "date": "2026-09-19",
+          "home": "Kilmarnock",
+          "away": "Hearts",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "7",
+          "provider": "fixturedl",
+          "competition": "국내 리그"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "유럽대항전",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv"
+        },
+        {
+          "kind": "국내 리그",
+          "url": "https://github.com/oladeeayo/open-matchday/blob/master/data/SCO_1_premiership/results_2627.csv"
         }
       ]
     },
