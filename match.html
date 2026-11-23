@@ -8,7 +8,7 @@
   <title>경기 분석 | 90MIN LABS</title>
   <link rel="stylesheet" href="assets/match-page.css?v=20261124-refined2">
   <link rel="stylesheet" href="assets/site-shell.css?v=20261124-layout1">
-  <link rel="stylesheet" href="assets/saved-matches.css?v=20261124-save1">
+  <link rel="stylesheet" href="assets/saved-matches.css?v=20261124-toolbarright1">
   <script src="assets/site-shell.js?v=20261124-layout1" defer></script>
 <script src="assets/kickoff-countdown.js?v=20261123-countdown2" defer></script>
 <script src="assets/club-logos.js?v=20261124-crestfast2" defer></script>
@@ -16,7 +16,7 @@
 <script src="assets/site-language.js?v=20261124-layout2" defer></script>
   <script src="assets/match-analysis.js?v=20261123-analysis" defer></script>
   <script src="assets/match-editorial.js?v=20261123-compact" defer></script>
-  <script src="assets/saved-matches.js?v=20261124-save1" defer></script>
+  <script src="assets/saved-matches.js?v=20261124-toolbarright1" defer></script>
   <script src="assets/match-page.js?v=20261124-staged2" defer></script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=90">
 <link rel="preconnect" href="https://crests.football-data.org" crossorigin>
@@ -52,10 +52,12 @@
     <div class="page-tools">
       <a class="back-link" id="backToMatches" href="index.html#matches"><span aria-hidden="true">‹</span> 경기 목록</a>
       <span class="page-kicker">MATCH ANALYSIS</span>
-      <button class="match-pick-link save-fixture-action" id="saveFixture" type="button" aria-pressed="false" disabled>경기 확인 중</button>
-      <a class="match-pick-link saved-fixtures-link" id="viewSavedFixtures" href="mypage.html#savedMatches" hidden>담은 경기 보기</a>
-      <a class="match-pick-link secondary-pick-action" id="recordPrediction" href="mypage.html" hidden>승무패 선택</a>
-      <button class="copy-link" id="copyLink" type="button" disabled>링크 복사</button>
+      <div class="match-header-actions" aria-label="경기 도구">
+        <a class="match-pick-link secondary-pick-action" id="recordPrediction" href="mypage.html" hidden>승무패 선택</a>
+        <button class="match-pick-link save-fixture-action" id="saveFixture" type="button" aria-pressed="false" disabled>경기 저장</button>
+        <a class="match-pick-link saved-fixtures-link" id="viewSavedFixtures" href="mypage.html#savedMatches" hidden>담은 경기 보기</a>
+        <button class="copy-link" id="copyLink" type="button" disabled>링크 복사</button>
+      </div>
     </div>
     <p class="copy-status" id="copyStatus" role="status"></p>
     <p class="saved-match-action-status" id="saveFixtureStatus" role="status" aria-live="polite"></p>
