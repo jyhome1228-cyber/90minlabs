@@ -70,16 +70,22 @@ function badge(container,opts){
    if(!query)return;
    lookup(opts).then(url=>{if(url)insert(url);}).catch(()=>{});
  }
- function begin(){if(started)return;started=true;next();}
+ function begin(){if(started)return;started=true;delete container.dataset.crestPending;next();}
  if(typeof IntersectionObserver!=="undefined"){
    const observer=visibility;
-   observer.observe(container);
    triggers.set(container,begin);
+   container.dataset.crestPending="1";
+   observer.observe(container);
  }else begin();
 }
 const triggers=new WeakMap();
 const visibility=typeof IntersectionObserver==="undefined"?null:new IntersectionObserver(entries=>{
  for(const entry of entries){if(!entry.isIntersecting)continue;visibility.unobserve(entry.target);const go=triggers.get(entry.target);if(go)go();}
 },{rootMargin:"300px 0px",threshold:0});
-root.ClubLogos=Object.freeze({badge});
+function release(parent){
+ if(!visibility||!parent)return;
+ const nodes=[parent,...parent.querySelectorAll("[data-crest-pending]")];
+ for(const node of nodes){visibility.unobserve(node);triggers.delete(node);}
+}
+root.ClubLogos=Object.freeze({badge,release});
 })(window);
