@@ -78,6 +78,7 @@ section.block{padding:89px 0}
 <link rel="stylesheet" href="./assets/matches.css?v=20261123-loadingfix">
 <link rel="stylesheet" href="assets/site-shell.css?v=20261123-compactlang">
 <script src="assets/site-shell.js?v=20261123-konav" defer></script>
+<script src="assets/kickoff-countdown.js?v=20261123-kst1" defer></script>
 <script src="assets/club-logos.js?v=20261123-fast1" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
 <script src="assets/site-language.js?v=20261123-konav" defer></script>
@@ -248,6 +249,6 @@ document.querySelector("#previewBtn").addEventListener("click",()=>{const t=docu
 document.querySelector("#downloadBtn").addEventListener("click",()=>{const title=document.querySelector("#draftTitle");const body=document.querySelector("#draftBody");if(!title.value.trim()||!body.value.trim()){alert("제목과 본문을 입력해주세요.");return}const blob=new Blob([formText()],{type:"text/plain;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="90minlabs-column-draft.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
 </script>
 <script src="./assets/match-analysis.js?v=20261123-analysis" defer></script>
-<script src="./assets/home.js?v=20261123-dual-copy" defer></script>
-<script src="./assets/matches.js?v=20261123-loadingfix" defer></script>
+<script src="./assets/home.js?v=20261123-countdown1" defer></script>
+<script src="./assets/matches.js?v=20261123-countdown1" defer></script>
 </body></html>
