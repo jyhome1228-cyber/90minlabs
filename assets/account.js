@@ -26,7 +26,7 @@ async function attach(u){
   }
   if(cloud.sets.length&&!device.sets.length)replaceLocal(cloud);
   connected=true;window.NinetyMinPage?.setAccountMode(true);
-  syncMessage(cloud.sets.length?"계정 기록 연결됨 · "+cloud.sets.length+"개 묶음":"계정 연결됨 · 첫 기록 저장 시 동기화됩니다.");
+  syncMessage(cloud.sets.length?"계정 기록 연결됨 · "+cloud.sets.length+"개 폴더":"계정 연결됨 · 첫 기록 저장 시 동기화됩니다.");
  }catch(e){syncMessage("동기화 실패 · 브라우저 기록은 유지됩니다. "+e.message);}
 }
 async function push(){
@@ -60,7 +60,7 @@ async function importLocal(){
     if(!byId.has(set.id)){byId.set(set.id,set);added++;}
     else if(JSON.stringify(byId.get(set.id))!==JSON.stringify(set))conflicts++;
    }
-   if(conflicts)throw Error("같은 묶음 ID에 다른 기록이 "+conflicts+"개 있습니다. 자동 덮어쓰기를 중단했습니다. CSV로 먼저 백업해 주세요.");
+   if(conflicts)throw Error("같은 폴더 ID에 다른 기록이 "+conflicts+"개 있습니다. 자동 덮어쓰기를 중단했습니다. CSV로 먼저 백업해 주세요.");
    const merged={version:1,revision:Math.max(cloud.revision,device.revision)+1,sets:[...byId.values()]};
    transaction.set(ref,{payload:merged,cloudRevision:revision+1,updatedAt:new Date().toISOString()});
    return {merged,revision:revision+1,added};
