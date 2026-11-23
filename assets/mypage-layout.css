@@ -1,0 +1,112 @@
+/* Weekly prediction builder: wide folder panel, compact selections, no nested scrollbar.
+   Loaded after both base and shared styles to avoid conflicting breakpoints. */
+#predictionBuilder .builder-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(440px,480px);
+  gap:32px;
+  align-items:start;
+}
+#predictionBuilder .fixture-picker{min-width:0}
+#predictionBuilder .prediction-slip{
+  width:100%;min-width:0;max-width:none;
+  position:static;top:auto;
+  max-height:none;overflow:visible;
+  padding:26px 28px 28px;
+  border:1px solid #dedede;
+  background:#fff;
+}
+#predictionBuilder .prediction-slip form{display:block}
+#predictionBuilder .slip-heading{margin-bottom:20px}
+#predictionBuilder .slip-heading h3{font-size:19px;line-height:1.5}
+#predictionBuilder .set-title-label{margin-bottom:9px}
+#predictionBuilder .prediction-slip input{min-height:46px}
+#predictionBuilder .slip-meta{
+  display:flex;justify-content:space-between;gap:14px;
+  border-bottom:1px solid #e4e4e4;
+  padding:15px 0 17px;margin:0;
+}
+#predictionBuilder #selectedPicks{
+  display:block!important;
+  max-height:none!important;
+  height:auto;min-height:0;overflow:visible!important;
+  overscroll-behavior:auto;padding:0!important;
+  scrollbar-width:auto;
+}
+#predictionBuilder .selected-pick{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 151px;
+  grid-template-areas:"meta meta" "clubs choices";
+  align-items:center;
+  gap:13px 16px;
+  padding:19px 0 21px;
+  border-bottom:1px solid #e7e7e7;
+}
+#predictionBuilder .selected-pick-top{
+  grid-area:meta;display:flex;justify-content:space-between;
+  align-items:center;min-width:0;gap:12px;
+}
+#predictionBuilder .selected-pick-time{font-size:12px;white-space:normal;line-height:1.55}
+#predictionBuilder .remove-pick{font-size:12px;flex-shrink:0}
+#predictionBuilder .selected-pick-clubs{
+  grid-area:clubs;
+  display:flex!important;flex-direction:column;
+  align-items:stretch!important;
+  gap:10px!important;min-width:0;
+  margin:0!important;
+}
+#predictionBuilder .selected-team-row{
+  display:flex;align-items:center;gap:10px;
+  min-width:0;line-height:1.5;
+}
+#predictionBuilder .selected-team-name{
+  flex:1;min-width:0;font-size:14px;font-weight:600;
+  overflow-wrap:break-word;word-break:keep-all;
+}
+#predictionBuilder .selected-team-missing{font-size:13px;color:#777}
+#predictionBuilder .selected-pick-clubs .pick-badge{
+  flex:0 0 27px!important;width:27px!important;
+  min-width:27px!important;height:27px!important;
+  min-height:27px!important;
+}
+#predictionBuilder .selected-pick-bottom{
+  grid-area:choices;display:flex;flex-wrap:wrap;
+  align-items:center;justify-content:flex-end;
+  gap:8px;min-width:0;padding:0;
+}
+#predictionBuilder .selected-pick .choice-group{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  width:100%;min-width:0;max-width:none;
+}
+#predictionBuilder .selected-pick .choice-button{
+  padding:9px 3px;min-height:43px;font-size:13px;
+}
+#predictionBuilder .selected-pick-status{
+  font-size:11px;line-height:1.4;text-align:right;
+}
+#predictionBuilder .slip-note{margin:17px 0 12px}
+#predictionBuilder .save-button{min-height:49px}
+#predictionBuilder .slip-empty{padding:32px 0;max-width:360px}
+@media (max-width:1299px){
+  #predictionBuilder .builder-grid{grid-template-columns:minmax(0,1fr);gap:32px}
+  #predictionBuilder .prediction-slip{max-width:none;position:static;order:-1}
+  #predictionBuilder .prediction-slip form{display:block}
+  #predictionBuilder .picker-filters{grid-template-columns:160px minmax(0,1fr) 160px}
+  #predictionBuilder .picker-filters input{grid-column:auto;grid-row:auto}
+}
+@media (max-width:740px){
+  #predictionBuilder .prediction-slip{padding:21px 18px}
+  #predictionBuilder .selected-pick{grid-template-columns:minmax(0,1fr) 120px;gap:10px}
+  #predictionBuilder .selected-team-name{font-size:13px}
+  #predictionBuilder .selected-pick-bottom .choice-button{min-height:42px}
+  #predictionBuilder .picker-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  #predictionBuilder .picker-filters input{grid-column:1/-1;grid-row:2}
+}
+@media (max-width:380px){
+  #predictionBuilder .selected-pick{
+    grid-template-columns:1fr;
+    grid-template-areas:"meta" "clubs" "choices";
+    gap:12px;
+  }
+  #predictionBuilder .selected-pick-bottom{justify-content:flex-start}
+  #predictionBuilder .selected-pick .choice-group{max-width:230px}
+}
