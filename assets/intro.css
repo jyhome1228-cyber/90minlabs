@@ -1,0 +1,19 @@
+.kickoff-intro{display:none;position:fixed;inset:0;z-index:9999;background:#101317;color:#f6f6f6;overflow:hidden;font-family:Pretendard,sans-serif}
+html.intro-pending{overflow:hidden}
+html.intro-pending .kickoff-intro{display:flex;flex-direction:column}
+.kickoff-intro:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 65% 30%,rgba(65,82,103,.22),transparent 55%);pointer-events:none}
+.kickoff-top,.kickoff-footer{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;padding:35px max(32px,calc((100vw - 1440px)/2));font-size:12px;letter-spacing:.02em}
+.kickoff-top>span{font-size:19px;font-weight:400;letter-spacing:-.03em}
+.kickoff-skip{font:inherit;letter-spacing:.02em;border:1px solid #74777a;color:white;background:transparent;padding:10px 16px;cursor:pointer}
+.kickoff-skip:hover,.kickoff-skip:focus-visible{background:white;color:#111}
+.kickoff-content{position:relative;z-index:1;display:flex;flex:1;align-items:center;justify-content:center;flex-direction:column;padding:25px}
+.kickoff-caption{color:#9b9fa4;font-size:12px;font-weight:500;letter-spacing:.1em;margin-bottom:24px}
+.kickoff-counter{font-variant-numeric:tabular-nums;font-family:Pretendard,sans-serif;font-size:clamp(86px,17vw,260px);font-weight:250;line-height:1.05;letter-spacing:-.085em;padding-right:.085em}
+.kickoff-progress{height:2px;background:#43494e;width:min(420px,70vw);margin-top:36px;overflow:hidden}
+.kickoff-progress span{display:block;width:0;height:100%;background:#fff;transform-origin:left}
+.kickoff-subtitle{font-size:11px;color:#a4a7ac;letter-spacing:.1em;margin-top:20px}
+.kickoff-footer{color:#8f969e;align-items:flex-end}
+.kickoff-intro.is-exiting{opacity:0;transform:translateY(-1%);transition:opacity .38s ease,transform .38s ease}
+html.intro-pending body{overflow:hidden}
+@media(max-width:650px){.kickoff-top,.kickoff-footer{padding:23px 20px}.kickoff-top>span{font-size:16px}.kickoff-counter{font-size:clamp(80px,21vw,150px)}.kickoff-caption{font-size:10px}.kickoff-subtitle{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.kickoff-intro{display:none!important}.kickoff-intro.is-exiting{transition:none}}
