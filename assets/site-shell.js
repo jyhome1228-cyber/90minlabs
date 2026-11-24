@@ -117,17 +117,11 @@
 
   async function observeAuth() {
     try {
-      const { firebaseConfig } = await import("./firebase-config.js");
-      if (!firebaseConfig?.apiKey || !firebaseConfig?.projectId ||
-          !firebaseConfig?.authDomain || !firebaseConfig?.appId) return;
-      // Avoid the Firebase network request entirely on an unconfigured project.
-      const [appSdk, authSdk] = await Promise.all([
-        import("https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js"),
-        import("https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js")
-      ]);
-      const app = appSdk.getApps().find(item => item.name === "[DEFAULT]") ||
-        appSdk.initializeApp(firebaseConfig);
-      firebaseAuth = authSdk.getAuth(app);
+      const { getFirebaseAuthServices } = await import("./firebase-client.js");
+      const services = await getFirebaseAuthServices();
+      if (!services) return; // Credentials not configured: signed-out UI remains.
+      const { auth, authSdk } = services;
+      firebaseAuth = auth;
       firebaseSignOut = authSdk.signOut;
       authSdk.onAuthStateChanged(firebaseAuth, user => {
         authenticated = Boolean(user);
