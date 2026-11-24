@@ -17,7 +17,11 @@ function analyze(home, date, options = {}) {
 const prose = article => article.sentences.join(" ");
 
 test("Monza report has a compact evidence-to-forecast flow without calculation chatter", () => {
-  const report = E.build(analyze("Monza", "2026-11-24"), { profiles: context.profiles });
+  // Preserve the intended pre-kickoff editorial scenario even after that
+  // real match has been finalized in the daily score calendar.
+  const analyzed = analyze("Monza", "2026-11-24");
+  const preview = { ...analyzed, fixture: { ...analyzed.fixture, status: "scheduled", score: null } };
+  const report = E.build(preview, { profiles: context.profiles });
   const text = prose(report);
   assert.ok(report.sentences.length >= 5 && report.sentences.length <= 10);
   assert.ok(report.paragraphs.length <= 3);
