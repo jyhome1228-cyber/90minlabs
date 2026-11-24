@@ -14,6 +14,12 @@ on:
       - 'scripts/build-nearby-fixtures.cjs'
       - 'scripts/build-match-packs.cjs'
       - 'assets/match-analysis.js'
+      # Manual corrections must rebuild packs before the next scheduled sync.
+      - 'data/match-calendar.json'
+      - 'data/team-results.json'
+      - 'data/team-profiles.json'
+      - 'data/league-data.json'
+      - 'data/uefa-standings.json'
       - 'tests/daily-results.test.cjs'
       - '.github/workflows/daily-results.yml'
 
