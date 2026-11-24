@@ -65,7 +65,7 @@ function badge(container,opts){
  function insert(url){
    const img=new Image();img.alt="";img.decoding="async";img.loading="eager";
    const rect=container.getBoundingClientRect();
-   img.fetchPriority=(rect.bottom>=-80&&rect.top<window.innerHeight+120)?"high":"low";
+   img.fetchPriority=opts.eager||(rect.bottom>=-80&&rect.top<window.innerHeight+120)?"high":"low";
    img.onload=()=>{if(container.isConnected){container.replaceChildren(img);}else{container.replaceChildren(img);}};
    img.onerror=()=>{img.remove();next()};
    img.src=url;
@@ -76,6 +76,9 @@ function badge(container,opts){
    lookup(opts).then(url=>{if(url)insert(url);}).catch(()=>{});
  }
  function begin(){if(started)return;started=true;delete container.dataset.crestPending;next();}
+ // The above-fold scoreboard and today's cards should not wait for an
+ // IntersectionObserver paint before requesting an already verified crest.
+ if(opts.eager&&known.length){begin();return;}
  if(typeof IntersectionObserver!=="undefined"){
    const observer=visibility;
    triggers.set(container,begin);
