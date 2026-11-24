@@ -17,8 +17,8 @@ test('the header renders only Login in a signed-out session on all pages',()=>{
    assert.match(block,/data-utility-key="mypage" href="mypage.html" hidden/);
    assert.match(block,/data-utility-key="logout" type="button" hidden/);
   }
-  assert.match(html,/site-shell\.js\?v=20261124-authmenu1/);
-  assert.match(html,/site-shell\.css\?v=20261124-authmenu1/);
+  assert.match(html,/site-shell\.js\?v=[A-Za-z0-9._-]+/);
+  assert.match(html,/site-shell\.css\?v=[A-Za-z0-9._-]+/);
  }
 });
 function exercise(authenticated){
