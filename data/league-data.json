@@ -3,7 +3,7 @@
   "leagues": {
     "epl": {
       "standings": {
-        "updatedAt": "2026-11-23 10:23",
+        "updatedAt": "2026-11-24T09:24:17+09:00",
         "sourceUrl": "https://scoremondo.com/en/competition/england-premier-league-538/standings",
         "rows": [
           {
@@ -58,6 +58,16 @@
           },
           {
             "rank": 6,
+            "team": "Brentford",
+            "played": 11,
+            "won": 4,
+            "drawn": 5,
+            "lost": 2,
+            "goalDifference": 9,
+            "points": 17
+          },
+          {
+            "rank": 7,
             "team": "Leeds United",
             "played": 11,
             "won": 4,
@@ -65,16 +75,6 @@
             "lost": 2,
             "goalDifference": 5,
             "points": 17
-          },
-          {
-            "rank": 7,
-            "team": "Everton",
-            "played": 10,
-            "won": 4,
-            "drawn": 4,
-            "lost": 2,
-            "goalDifference": 2,
-            "points": 16
           },
           {
             "rank": 8,
@@ -88,6 +88,16 @@
           },
           {
             "rank": 9,
+            "team": "Everton",
+            "played": 11,
+            "won": 4,
+            "drawn": 4,
+            "lost": 3,
+            "goalDifference": -2,
+            "points": 16
+          },
+          {
+            "rank": 10,
             "team": "Tottenham",
             "played": 11,
             "won": 4,
@@ -95,16 +105,6 @@
             "lost": 4,
             "goalDifference": 1,
             "points": 15
-          },
-          {
-            "rank": 10,
-            "team": "Brentford",
-            "played": 10,
-            "won": 3,
-            "drawn": 5,
-            "lost": 2,
-            "goalDifference": 5,
-            "points": 14
           },
           {
             "rank": 11,
@@ -206,7 +206,10 @@
             "goalDifference": -15,
             "points": 7
           }
-        ]
+        ],
+        "supplementalSourceUrl": "https://www.skysports.com/football/brentford-vs-everton/report/559546",
+        "provisional": true,
+        "note": "확정 경기의 결과를 추가 반영한 참고 순위. 승점·득실차 후 동률 기준은 대회별 공식 상대전적 규정과 다를 수 있습니다."
       },
       "scorers": {
         "updatedAt": "2026-11-23 10:23",
@@ -265,7 +268,7 @@
     },
     "seriea": {
       "standings": {
-        "updatedAt": "2026. 11. 23. 13:18 (KST)",
+        "updatedAt": "2026-11-24T09:24:17+09:00",
         "sourceUrl": "https://www.legaseriea.it/serie-a/classifica?lang=en",
         "rows": [
           {
@@ -400,6 +403,16 @@
           },
           {
             "rank": 14,
+            "team": "Monza",
+            "played": 12,
+            "won": 3,
+            "drawn": 1,
+            "lost": 8,
+            "goalDifference": -5,
+            "points": 10
+          },
+          {
+            "rank": 15,
             "team": "Lecce",
             "played": 12,
             "won": 3,
@@ -409,17 +422,17 @@
             "points": 10
           },
           {
-            "rank": 15,
+            "rank": 16,
             "team": "Fiorentina",
-            "played": 11,
+            "played": 12,
             "won": 2,
             "drawn": 3,
-            "lost": 6,
-            "goalDifference": -8,
+            "lost": 7,
+            "goalDifference": -11,
             "points": 9
           },
           {
-            "rank": 16,
+            "rank": 17,
             "team": "Parma",
             "played": 12,
             "won": 2,
@@ -429,7 +442,7 @@
             "points": 8
           },
           {
-            "rank": 17,
+            "rank": 18,
             "team": "Sassuolo",
             "played": 12,
             "won": 2,
@@ -437,16 +450,6 @@
             "lost": 8,
             "goalDifference": -15,
             "points": 8
-          },
-          {
-            "rank": 18,
-            "team": "Monza",
-            "played": 11,
-            "won": 2,
-            "drawn": 1,
-            "lost": 8,
-            "goalDifference": -8,
-            "points": 7
           },
           {
             "rank": 19,
@@ -469,8 +472,9 @@
             "points": 6
           }
         ],
-        "supplementalSourceUrl": "https://www.reuters.com/sports/soccer/esposito-hat-trick-not-enough-atalanta-hold-inter-eight-goal-thriller-2026-11-22/",
-        "note": "한국시간 2026-11-23 새벽 종료 경기 반영; 과거 경기 자료는 기존 출처 유지."
+        "supplementalSourceUrl": "https://www.legaseriea.it/serie-a/news/monza-fiorentina-2026-2027-3-0-cronaca-risultato-gol",
+        "note": "확정 경기의 결과를 추가 반영한 참고 순위. 승점·득실차 후 동률 기준은 대회별 공식 상대전적 규정과 다를 수 있습니다.",
+        "provisional": true
       },
       "scorers": {
         "updatedAt": "2026-11-23 10:23",
@@ -996,9 +1000,9 @@
     },
     "laliga": {
       "standings": {
-        "updatedAt": "2026-11-23 · 라리가 공식 확인",
+        "updatedAt": "2026-11-24T09:24:17+09:00",
         "sourceUrl": "https://www.laliga.com/en-GB/laliga-easports/standing",
-        "note": "라리가 공식 순위표의 순위와 승점을 사용합니다. 경기 결과 수집 파일과 갱신 시점이 다를 수 있습니다.",
+        "note": "확정 경기의 결과를 추가 반영한 참고 순위. 승점·득실차 후 동률 기준은 대회별 공식 상대전적 규정과 다를 수 있습니다.",
         "rows": [
           {
             "rank": 1,
@@ -1142,6 +1146,16 @@
           },
           {
             "rank": 15,
+            "team": "Levante UD",
+            "played": 13,
+            "won": 2,
+            "drawn": 6,
+            "lost": 5,
+            "goalDifference": -5,
+            "points": 12
+          },
+          {
+            "rank": 16,
             "team": "Rayo Vallecano",
             "played": 12,
             "won": 3,
@@ -1151,7 +1165,7 @@
             "points": 12
           },
           {
-            "rank": 16,
+            "rank": 17,
             "team": "Valencia CF",
             "played": 13,
             "won": 3,
@@ -1161,7 +1175,7 @@
             "points": 12
           },
           {
-            "rank": 17,
+            "rank": 18,
             "team": "Getafe CF",
             "played": 13,
             "won": 3,
@@ -1171,24 +1185,14 @@
             "points": 12
           },
           {
-            "rank": 18,
-            "team": "Levante UD",
-            "played": 12,
-            "won": 2,
-            "drawn": 5,
-            "lost": 5,
-            "goalDifference": -5,
-            "points": 11
-          },
-          {
             "rank": 19,
             "team": "Elche CF",
-            "played": 12,
+            "played": 13,
             "won": 2,
-            "drawn": 4,
+            "drawn": 5,
             "lost": 6,
             "goalDifference": -6,
-            "points": 10
+            "points": 11
           },
           {
             "rank": 20,
@@ -1200,7 +1204,9 @@
             "goalDifference": -15,
             "points": 5
           }
-        ]
+        ],
+        "supplementalSourceUrl": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-levante-ud-elche-cf-13",
+        "provisional": true
       },
       "scorers": {
         "updatedAt": "2026-11-23 12:00",
