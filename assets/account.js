@@ -110,15 +110,14 @@ function disabled(message){
   }
 }
 async function start(){
- const services = await (async()=>{
-   try{
-     const client = await import("./firebase-client.js");
-     return await client.getFirebaseAccountServices();
-   }catch(error){
-     disabled("계정 연결 오류: "+error.message);
-     return null;
-   }
- })();
+ let services;
+ try {
+   const client = await import("./firebase-client.js");
+   services = await client.getFirebaseAccountServices();
+ } catch(error) {
+   disabled("계정 연결 오류: "+error.message);
+   return;
+ }
  if(!services){
    disabled("계정 연결 준비 중 · Firebase 웹 앱 설정이 필요합니다.");
    return;
