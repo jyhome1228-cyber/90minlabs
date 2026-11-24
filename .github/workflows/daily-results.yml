@@ -2,8 +2,11 @@ name: Daily football results (09:00 KST)
 
 on:
   schedule:
-    # Asia/Seoul is UTC+09:00 year-round. 00:00 UTC = 09:00 KST.
+    # KST is UTC+09:00 year-round. GitHub cron is best effort, not an SLA.
+    # 09:00 primary; 09:17 and 09:47 checks recover a delayed/dropped hourly run.
     - cron: '0 0 * * *'
+    - cron: '17 0 * * *'
+    - cron: '47 0 * * *'
   workflow_dispatch:
   push:
     paths:
@@ -55,4 +58,21 @@ jobs:
             exit 0
           fi
           git commit -m "data: daily verified football scores [09:00 KST]"
-          git push origin HEAD:main
+          # Concurrent website edits can move main between checkout and push.
+          # Rebase our data-only commit onto the newest main; never force-push.
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "Verified result/status data committed successfully."
+              exit 0
+            fi
+            echo "Attempt ${attempt}: main moved; fetching and rebasing data-only commit."
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Data file conflict during rebase; manual review required."
+              exit 1
+            fi
+            sleep 3
+          done
+          echo "::error::Unable to publish data after 5 non-force push attempts."
+          exit 1
