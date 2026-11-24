@@ -63,27 +63,13 @@
     const words = name.replace(/[^\p{L}\p{N}\s]/gu, " ").trim().split(/\s+/).filter(Boolean);
     return words.slice(0, 2).map(word => word[0]).join("").toUpperCase() || "FC";
   }
-  const crestRequests = new Map();
-  async function alternativeCrest(team) {
-    const query = team.profile && team.profile.searchName || team.name;
-    if (crestRequests.has(query)) return crestRequests.get(query);
-    const request = fetch("https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=" + encodeURIComponent(query), { signal: AbortSignal.timeout(6000) })
-      .then(response => response.ok ? response.json() : null)
-      .then(data => {
-        const names = [query, team.name].map(MatchAnalysis.normalize);
-        const row = (data && data.teams || []).find(item => item.strSport === "Soccer" && [item.strTeam].concat(String(item.strTeamAlternate || "").split(";")).some(name => names.includes(MatchAnalysis.normalize(name))));
-        return safeUrl(row && (row.strBadge || row.strTeamBadge));
-      }).catch(() => null);
-    crestRequests.set(query, request);
-    return request;
-  }
   function crest(team) {
     const holder=el("span","club-badge",initials(team.name));
     holder.setAttribute("aria-hidden","true");
     const profile=team.profile||{};
     if(window.ClubLogos)ClubLogos.badge(holder,{name:team.name,
       searchName:profile.searchName||team.name,wikiTitle:profile.wikiEn||null,
-      badgeUrl:profile.badgeUrl||team.badgeUrl,crestId:team.crestId||profile.crestId});
+      badgeUrl:profile.badgeUrl||team.badgeUrl,crestId:team.crestId||profile.crestId,eager:true});
     return holder;
   }
 
