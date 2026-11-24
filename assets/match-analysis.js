@@ -261,7 +261,11 @@
       });
     });
 
-    const records = Array.from(allEvents.values()).sort((a, b) => b.sortMs - a.sortMs || a.id.localeCompare(b.id));
+    // Validated per-fixture packs carry exactly the same normalized historical
+    // event rows as the complete calendar. Keep all downstream analysis unchanged.
+    const records = Array.isArray(input.normalizedRecords)
+      ? input.normalizedRecords.slice().sort((a,b)=>b.sortMs-a.sortMs||a.id.localeCompare(b.id))
+      : Array.from(allEvents.values()).sort((a, b) => b.sortMs - a.sortMs || a.id.localeCompare(b.id));
 
     function table(competition) {
       const domestic = input.standings && (input.standings.leagues || input.standings)[competition];
