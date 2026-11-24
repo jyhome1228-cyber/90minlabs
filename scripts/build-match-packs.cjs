@@ -67,12 +67,18 @@ function validatePack(pack,fixture){
  });
  const target=lean.findMatch(pack.matchId);
  if(!target)throw Error('target fixture was lost');
- for(const limit of [5,10])for(const scope of ['all','competition']){
-  const original=A.analyze(context,fixture,{limit,scope});
-  const reduced=A.analyze(lean,target,{limit,scope});
-  // Covers both teams, historical samples, odds, source citations and standings.
-  assert.deepStrictEqual(reduced,original);
- }
+ // Both analyses must share the identical evaluation instant: before kickoff,
+ // coverage.cutoffMs is Date.now(), not a stable fixture timestamp.
+ const originalNow=Date.now,assessmentMs=originalNow();
+ try{
+  Date.now=()=>assessmentMs;
+  for(const limit of [5,10])for(const scope of ['all','competition']){
+   const original=A.analyze(context,fixture,{limit,scope});
+   const reduced=A.analyze(lean,target,{limit,scope});
+   // Covers both teams, historical samples, models, source links and standings.
+   assert.deepStrictEqual(reduced,original);
+  }
+ }finally{Date.now=originalNow;}
  const targetDate=Date.parse(fixture.date+'T'+(fixture.time||'00:00')+':00+09:00');
  const related=context.matches.filter(row=>row.league===fixture.league&&fixtureId(row)!==pack.matchId)
   .sort((a,b)=>Math.abs(Date.parse(a.date+'T'+(a.time||'00:00')+':00+09:00')-targetDate)-
