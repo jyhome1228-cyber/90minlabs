@@ -264,11 +264,16 @@ async function loadSyncStatus(fallbackLabel){
   const checked=new Intl.DateTimeFormat("ko-KR",{
    timeZone:"Asia/Seoul",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",hourCycle:"h23"
   }).format(timestamp);
+  const verifiedRaw=state.source?.verifiedAtKst;
+  const verifiedDate=verifiedRaw?new Date(verifiedRaw):null;
+  const verified=verifiedDate&&!Number.isNaN(verifiedDate.getTime())
+   ?new Intl.DateTimeFormat("ko-KR",{
+     timeZone:"Asia/Seoul",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",hourCycle:"h23"
+    }).format(verifiedDate)
+   :fallbackLabel;
+  target.textContent=(checkedDay===today?"자동 점검 ":"마지막 자동 점검 ")+checked+" · 결과 확인 "+verified;
   const count=Number.isInteger(source.completedUpdated)?source.completedUpdated:0;
-  target.textContent=checkedDay===today
-   ?"자동 점검 "+checked+" · 신규 확정 "+count+"경기"
-   :"마지막 자동 점검 "+checked+" · 오늘 점검 확인 대기";
-  target.title="마지막 경기 결과 검증: "+fallbackLabel+" (한국시간). 원천 데이터 공개가 늦으면 확정 스코어가 아직 없을 수 있습니다.";
+  target.title="원천 데이터 자동 점검에서 새로 확인한 결과 "+count+"건. 별도 공식 경기 자료를 통한 추가 검증은 결과 확인 시각에 반영됩니다.";
  }catch(e){
   target.textContent="마지막 경기 결과 검증: "+fallbackLabel+" · 자동 점검 기록 확인 불가";
  }
