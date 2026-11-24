@@ -14,10 +14,15 @@ let archive=null,active="전체",term="";
 function meta(a,compact=false){
  const line=create("div","col-meta");
  line.append(create("span","col-tag",en()?(labels[a.category]||a.category):a.category));
- if(!compact){
-  if(a.status!=="published")line.append(create("span","col-sample",t("편집 샘플","Editorial sample")));
-  line.append(create("span","",a.author||"90MIN LABS"));
- }
+ if(a.status==="published"){
+  line.append(create("span","col-published",t("발행","Published")));
+  const stamp=new Date(a.publishedAt||"");
+  if(Number.isFinite(stamp.getTime())){
+   const date=create("time","col-date",stamp.toLocaleDateString(en()?"en-US":"ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit"}));
+   date.setAttribute("datetime",a.publishedAt);line.append(date);
+  }
+ }else line.append(create("span","col-sample",t("편집 샘플","Editorial sample")));
+ if(!compact)line.append(create("span","",a.author||"90MIN LABS"));
  return line;
 }
 function tile(a){
@@ -59,6 +64,12 @@ function render(){
  filters();
  list.replaceChildren();
  const rows=filtered();
+ const notice=byId("colNotice");
+ if(notice){
+  const published=(archive.articles||[]).filter(a=>a.status==="published").length;
+  const samples=(archive.articles||[]).filter(a=>a.status==="sample").length;
+  notice.textContent=published&&samples?t("발행 칼럼과 편집 샘플이 함께 있습니다. 각 글의 상태를 확인해 주세요.","Published columns and editorial examples are shown together. Check each label."):published?t("검수를 거쳐 발행된 칼럼을 확인하세요.","Browse editor-approved published columns."):t("현재 등록된 글은 편집 구성 예시이며 정식 발행 기사가 아닙니다.","Current articles are examples, not published news.");
+ }
  byId("colCount").textContent=t("전체 ","Total ")+rows.length+t("편"," articles");
  if(!rows.length){
   const empty=create("div","col-empty");
@@ -102,8 +113,24 @@ function renderDetail(a){
  const write=create("a","",t("새 칼럼 작성","Write a column"));write.href="index.html#write";
  foot.append(back,write);
  const note=create("p","col-detail-note",a.status!=="published"?t("이 글은 사이트 구성을 위한 편집용 샘플입니다. 공식 취재 기사나 검수 완료 원고가 아닙니다.","This is an editorial sample, not a verified or published news article."):"");
- target.append(heading,content,foot,note);
+ target.append(heading,content,foot);
+ if(a.status==="published"&&Array.isArray(a.sources)&&a.sources.length){
+  const references=create("section","col-detail-sources");
+  references.append(create("h2","",t("참고 자료","References")));
+  for(const entry of a.sources){
+   if(!entry||typeof entry.url!=="string")continue;
+   try{
+    const url=new URL(entry.url);if(url.protocol!=="https:")continue;
+    const link=create("a","col-source-link",entry.label||url.hostname);
+    link.href=url.href;link.rel="noopener noreferrer";link.target="_blank";references.append(link);
+   }catch(e){}
+  }
+  if(references.querySelector("a"))target.append(references);
+ }
+ if(note.textContent)target.append(note);
  document.title=a.title+" | 90MIN LABS";
+ const robots=document.querySelector('meta[name="robots"]');
+ if(robots)robots.setAttribute("content",a.status==="published"?"index,follow":"noindex,follow");
  const desc=document.querySelector('meta[name="description"]');if(desc)desc.setAttribute("content",(a.subtitle||a.title).slice(0,160));
 }
 async function loadDetail(){

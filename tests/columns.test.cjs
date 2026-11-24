@@ -22,8 +22,14 @@ test('editorial examples have unique readable IDs and complete sections',()=>{
  }
 });
 test('sample editorials are labelled as samples and are not implicitly published',()=>{
- assert.equal(data.editorialStatus,'sample');
- assert.ok(data.articles.every(a=>a.status==='sample'));
+ const published=data.articles.filter(a=>a.status==='published'),samples=data.articles.filter(a=>a.status==='sample');
+ assert.equal(data.editorialStatus,published.length&&samples.length?'mixed':published.length?'published':'sample');
+ for(const a of published){
+  assert.ok(Number.isFinite(Date.parse(a.publishedAt)));
+  assert.ok(a.reviewedBy);
+  assert.ok(Array.isArray(a.sources)&&a.sources.length>0);
+  assert.ok(a.sources.every(s=>s.url.startsWith('https://')));
+ }
  const index=fs.readFileSync(path.join(root,'index.html'),'utf8');
  const detail=fs.readFileSync(path.join(root,'column.html'),'utf8');
  assert.ok(index.includes('id="colList"')&&index.includes('id="draftForm"'));
