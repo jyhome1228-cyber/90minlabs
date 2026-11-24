@@ -1,5 +1,14 @@
 # 90MIN LABS
 
+## 2026-11-24 · 1차 운영 안정화
+
+- **전체 QA:** `.github/workflows/quality-gate.yml`이 main 푸시·PR·수동 실행에 따라 Node 22에서 `assets/*.js`, `scripts/*.cjs` 문법 검사와 **전체** `tests/*.test.cjs`를 실행합니다. 캐시 쿼리 버전 변경만으로 테스트가 깨지지 않게 검사 조건을 수정했습니다. 경기 결과가 이미 확정된 뒤에도 "사전 전망" 회귀 테스트가 독립적인 가상 경기 상태로 실행되도록 조정했습니다.
+- **경기 업데이트 모니터링:** `scripts/check-results-health.cjs`로 점검 기록의 한국시간 날짜, 전체/경량 스코어 일치, 경기 시작 6시간 후에도 미확인인 경기, 점검 기록의 기존 결과 충돌을 검사합니다. **새로운 확정 결과 0건 자체는 실패가 아닙니다.** `.github/workflows/results-watchdog.yml`은 KST 10:15·12:15 예약 점검과 관련 코드/데이터 푸시 시 검사를 수행합니다.
+- **실패 알림:** 일일 동기화나 점검에 실패하면 `scripts/report-sync-incident.sh`가 GitHub Issues에 열린 운영 이슈 하나를 생성하거나 갱신합니다. 다음 정상 점검 후 해당 이슈를 닫습니다. 저장소에서 Issues 기능과 GitHub Actions의 issue 쓰기 권한이 허용되어 있어야 합니다. GitHub의 cron은 지연·미실행 가능성이 있어 작업 성공을 보장하지 않습니다. 처음으로 발생하는 **실제 schedule 이벤트**는 이후 실행 기록에서 별도 확인해야 합니다.
+- **Firebase 모듈 중복 제거:** `assets/firebase-client.js`는 인증 앱 초기화를 공유하고, Firestore는 마이페이지 계정 코드가 필요로 할 때만 읽습니다. 헤더는 같은 인증 세션을 관찰하므로 로그인 전/후 버튼 표시를 중복 인스턴스로 판단하지 않습니다. Firebase 공개 웹 설정값이 아직 비어 있으므로 **실제 로그인, 회원가입, 계정별 저장은 활성화되지 않았습니다.**
+- **확인 명령:** `node --test tests/*.test.cjs`, `node scripts/check-results-health.cjs`, `node --check scripts/daily-results.cjs`. 더 상세한 실행 기록은 GitHub의 Actions > Quality Gate, Daily football results, Result Sync Watchdog에서 확인할 수 있습니다.
+
+
 ## 2026-11-24 로그인 상태별 헤더 계정 메뉴
 
 - 비로그인 사용자는 PC·모바일 헤더에서 **로그인** 버튼만 표시합니다. 텍스트 링크가 아니라 공통 헤더의 검정 버튼 스타일을 사용합니다.
