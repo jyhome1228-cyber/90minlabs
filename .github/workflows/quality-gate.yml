@@ -1,0 +1,37 @@
+name: 90MIN LABS Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Validate app, football data, and regression tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout latest code
+        uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate all application and sync JavaScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in assets/*.js scripts/*.cjs; do
+            node --check "$file"
+          done
+      - name: Run all regression suites
+        run: node --test tests/*.test.cjs
