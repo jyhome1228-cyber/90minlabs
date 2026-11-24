@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: daily-football-results
@@ -76,3 +77,13 @@ jobs:
           done
           echo "::error::Unable to publish data after 5 non-force push attempts."
           exit 1
+      - name: Open an incident on synchronization failure
+        if: ${{ failure() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/report-sync-incident.sh failed
+      - name: Close an incident after successful data verification
+        if: ${{ success() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/report-sync-incident.sh healthy
