@@ -32,8 +32,8 @@ function exercise(authenticated){
    setAttribute:(k,v)=>attr.set(k,v),removeAttribute:k=>attr.delete(k)};
  });
  const header={dataset:{}},location={pathname:'/90minlabs/mypage.html',search:'?login=1'};
- new Function('accountNodes','header','location','authenticated','signOutBusy',
-   'function renderAccount(){'+expression[1]+'}\nrenderAccount();')(nodes,header,location,authenticated,false);
+ new Function('accountNodes','header','location','authenticated','signOutBusy','URLSearchParams',
+   'function renderAccount(){'+expression[1]+'}\nrenderAccount();')(nodes,header,location,authenticated,false,class TestURLSearchParams {get(key){return key==='login'?'1':null;}});
  return {nodes,state:header.dataset.authState};
 }
 test('Firebase-authenticated state, not local storage, controls visible account actions',()=>{
