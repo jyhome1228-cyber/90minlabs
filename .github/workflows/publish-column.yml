@@ -1,0 +1,61 @@
+name: Publish reviewed 90MIN LABS column
+
+on:
+  workflow_dispatch:
+    inputs:
+      draft_path:
+        description: 'Reviewed JSON path under editorial/drafts/'
+        required: true
+        type: string
+      reviewer:
+        description: 'Editor who checked the source and factual claims'
+        required: true
+        type: string
+      source_url:
+        description: 'HTTPS source supporting the editorial review'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: editorial-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate and publish approved draft
+        env:
+          EDITORIAL_DRAFT: ${{ inputs.draft_path }}
+          EDITORIAL_REVIEWER: ${{ inputs.reviewer }}
+          EDITORIAL_SOURCE: ${{ inputs.source_url }}
+        run: node scripts/publish-column.cjs "$EDITORIAL_DRAFT" --reviewer "$EDITORIAL_REVIEWER" --source "$EDITORIAL_SOURCE" --publish
+      - name: Check all JavaScript and regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in assets/*.js scripts/*.cjs; do node --check "$file"; done
+          node --test tests/*.test.cjs
+      - name: Commit only the reviewed published article data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "90MIN LABS Editorial Bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/columns.json
+          git commit -m "editorial: publish approved 90MIN LABS article"
+          git push origin HEAD:main
