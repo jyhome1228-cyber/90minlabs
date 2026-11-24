@@ -5,7 +5,7 @@ if(!root)return;
 const leagueNames={epl:"프리미어리그",laliga:"라리가",seriea:"세리에A",bundesliga:"분데스리가",ligue1:"리그앙",ucl:"챔피언스리그",uel:"유로파리그",uecl:"컨퍼런스리그",championship:"잉글랜드 챔피언십"};
 const leagueShort={epl:"EPL",laliga:"LA LIGA",seriea:"SERIE A",bundesliga:"BUNDESLIGA",ligue1:"LIGUE 1",ucl:"UCL",uel:"UEL",uecl:"UECL",championship:"CHAMPIONSHIP"};
 const leagueTabs=[["all","전체"],["epl","프리미어리그"],["championship","챔피언십"],["laliga","라리가"],["seriea","세리에A"],["bundesliga","분데스리가"],["ligue1","리그앙"],["ucl","챔피언스리그"],["uel","유로파리그"],["uecl","컨퍼런스리그"]];
-const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,loading:true,error:false,predictionLeague:"all",predictionVisible:40};
+const state={league:"all",status:"all",selectedDate:null,viewMode:"day",matches:[],source:null,loading:true,error:false,predictionLeague:"all",predictionVisible:40,lastFetchedAt:0};
 const $=id=>document.getElementById(id);
 function element(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined&&value!==null)el.textContent=String(value);return el;}
 function dateObj(iso){return new Date(iso+"T12:00:00Z");}
@@ -216,7 +216,7 @@ async function init(){
  readFilters();
  updateCurrentTime();
  setInterval(updateCurrentTime,30000);
- document.addEventListener("visibilitychange",()=>{if(!document.hidden)updateCurrentTime()});
+ document.addEventListener("visibilitychange",()=>{if(!document.hidden){updateCurrentTime();if(["#matches","#predictions"].includes(location.hash))ensureCalendar();}});
  $("matchPrevWeek").addEventListener("click",()=>{state.selectedDate=shift(state.selectedDate,state.viewMode==="week"?-7:-1);renderList()});
  $("matchNextWeek").addEventListener("click",()=>{state.selectedDate=shift(state.selectedDate,state.viewMode==="week"?7:1);renderList()});
  $("matchGoToday").addEventListener("click",()=>{state.selectedDate=kstToday();state.viewMode="day";renderList()});
@@ -235,20 +235,24 @@ async function init(){
  window.addEventListener("hashchange",()=>{
   if(location.hash==="#matches")syncFilters();
   if(location.hash==="#matches"||location.hash==="#predictions"){
-   if(!state.matches.length)ensureCalendar();
-   else if(location.hash==="#predictions")renderPredictions();
+   ensureCalendar();
+   if(state.matches.length&&location.hash==="#predictions")renderPredictions();
   }
  });
  window.addEventListener("ninetymin:savedmatcheschange",refreshSaveControls);
  window.addEventListener("storage",event=>{if(event.key==="90minlabs.savedMatches.v1")refreshSaveControls();});
  renderTabs();
+ setInterval(()=>{
+  if(!document.hidden&&["#matches","#predictions"].includes(location.hash))ensureCalendar();
+ },REFRESH_MS);
  // Defer the 2700-match calendar until visitors enter Matches or Predictions.
  if(location.hash==="#matches"||location.hash==="#predictions")await ensureCalendar();
 }
 let pendingCalendar=null;
+const REFRESH_MS=4*60*1000;
 function ensureCalendar(){
- if(state.matches.length)return Promise.resolve();
- if(!pendingCalendar)pendingCalendar=loadCalendar().finally(()=>{pendingCalendar=null});
+ if(state.matches.length&&Date.now()-state.lastFetchedAt<REFRESH_MS)return Promise.resolve();
+ if(!pendingCalendar)pendingCalendar=loadCalendar(Boolean(state.matches.length)).finally(()=>{pendingCalendar=null});
  return pendingCalendar;
 }
 async function loadSyncStatus(fallbackLabel){
@@ -278,17 +282,17 @@ async function loadSyncStatus(fallbackLabel){
   target.textContent="마지막 경기 결과 검증: "+fallbackLabel+" · 자동 점검 기록 확인 불가";
  }
 }
-async function loadCalendar(){
- state.loading=true;state.error=false;renderList();renderPredictions();
+async function loadCalendar(revalidate=false){
+ if(!revalidate){state.loading=true;state.error=false;renderList();renderPredictions();}
  try{
   const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
   let data;
   try{
-   if(window.NinetyMinData)data=await window.NinetyMinData.get("data/match-calendar.json",{timeoutMs:15000});
+   if(window.NinetyMinData)data=await window.NinetyMinData.get("data/match-calendar.json",{timeoutMs:15000,force:revalidate});
    else{const response=await fetch("./data/match-calendar.json",{cache:"no-cache",signal:controller.signal});if(!response.ok)throw new Error("calendar HTTP "+response.status);data=await response.json();}
   }finally{clearTimeout(timeout)}
   if(!Array.isArray(data.matches))throw new Error("no fixtures");
-  state.matches=data.matches;state.source=data;state.loading=false;
+  state.matches=data.matches;state.source=data;state.loading=false;state.error=false;state.lastFetchedAt=Date.now();
   const verifiedAt=data.verifiedAtKst?new Date(data.verifiedAtKst):null;
   const checkedLabel=verifiedAt&&!Number.isNaN(verifiedAt.getTime())
    ?new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(verifiedAt)
@@ -297,6 +301,7 @@ async function loadCalendar(){
   renderList();renderPredictions();
   loadSyncStatus(checkedLabel);
  }catch(e){
+  if(revalidate&&state.matches.length){state.lastFetchedAt=Date.now();return;}
   state.loading=false;state.error=true;
   $("matchCounter").textContent="조회 실패";$("predictionCounter").textContent="조회 실패";
   $("matchUpdated").textContent="자료를 다시 불러와 주세요.";
