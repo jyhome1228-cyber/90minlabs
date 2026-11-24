@@ -35,3 +35,11 @@ jobs:
           done
       - name: Run all regression suites
         run: node --test tests/*.test.cjs
+      - name: Audit pre-kickoff model history
+        run: node scripts/backtest-model.cjs --json > model-backtest-report.json
+      - name: Archive model QA report
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-backtest-report
+          path: model-backtest-report.json
+          retention-days: 30

@@ -161,7 +161,7 @@
     const english=window.NinetyMinI18n?.language==="en";
     const model=a.model||{},finished=isFinished(a.fixture);
     const title=$("outcomeProbTitle"),body=$("outcomeBars"),note=$("probabilityNote");
-    title.textContent=finished?(english?"Pre-match record distribution":"경기 전 기록 기준 참고 비율"):(english?"Win / Draw / Loss estimates":"승·무·패 예상 비율");
+    title.textContent=finished?(english?"Pre-match record distribution":"경기 전 기록 기준 참고 비율"):(english?"Home win / Draw / Away win estimates":"승·무·패 예상 비율");
     body.replaceChildren();
     const percentages=model.available?modelPercentages(model):null;
     if(!percentages){
