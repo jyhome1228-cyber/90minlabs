@@ -251,6 +251,28 @@ function ensureCalendar(){
  if(!pendingCalendar)pendingCalendar=loadCalendar().finally(()=>{pendingCalendar=null});
  return pendingCalendar;
 }
+async function loadSyncStatus(fallbackLabel){
+ const target=$("matchUpdated");
+ try{
+  const source=window.NinetyMinData
+   ?await window.NinetyMinData.get("data/auto-sync-status.json",{force:true,timeoutMs:8500})
+   :await (async()=>{const r=await fetch("./data/auto-sync-status.json",{cache:"no-store"});if(!r.ok)throw Error("No status");return r.json()})();
+  const timestamp=new Date(source.lastCheckedAtKst);
+  if(Number.isNaN(timestamp.getTime()))throw Error("Invalid check date");
+  const today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+  const checkedDay=new Date(timestamp.getTime()+9*3600000).toISOString().slice(0,10);
+  const checked=new Intl.DateTimeFormat("ko-KR",{
+   timeZone:"Asia/Seoul",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",hourCycle:"h23"
+  }).format(timestamp);
+  const count=Number.isInteger(source.completedUpdated)?source.completedUpdated:0;
+  target.textContent=checkedDay===today
+   ?"자동 점검 "+checked+" · 신규 확정 "+count+"경기"
+   :"마지막 자동 점검 "+checked+" · 오늘 점검 확인 대기";
+  target.title="마지막 경기 결과 검증: "+fallbackLabel+" (한국시간). 원천 데이터 공개가 늦으면 확정 스코어가 아직 없을 수 있습니다.";
+ }catch(e){
+  target.textContent="마지막 경기 결과 검증: "+fallbackLabel+" · 자동 점검 기록 확인 불가";
+ }
+}
 async function loadCalendar(){
  state.loading=true;state.error=false;renderList();renderPredictions();
  try{
@@ -266,8 +288,9 @@ async function loadCalendar(){
   const checkedLabel=verifiedAt&&!Number.isNaN(verifiedAt.getTime())
    ?new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(verifiedAt)
    :data.capturedAtKst;
-  $("matchUpdated").textContent="경기 자료 확인: "+checkedLabel+" (한국시간)";
+  $("matchUpdated").textContent="마지막 경기 결과 검증: "+checkedLabel+" (한국시간)";
   renderList();renderPredictions();
+  loadSyncStatus(checkedLabel);
  }catch(e){
   state.loading=false;state.error=true;
   $("matchCounter").textContent="조회 실패";$("predictionCounter").textContent="조회 실패";
