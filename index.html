@@ -76,9 +76,9 @@ section.block{padding:89px 0}
 </style>
 <link rel="stylesheet" href="./assets/home.css?v=20261124-heroaction3">
 <link rel="stylesheet" href="./assets/matches.css?v=20261124-daily9">
-<link rel="stylesheet" href="assets/site-shell.css?v=20261124-layout1">
+<link rel="stylesheet" href="assets/site-shell.css?v=20261124-authmenu1">
 <link rel="stylesheet" href="assets/columns.css?v=20261124-grid2">
-<script src="assets/site-shell.js?v=20261124-layout1" defer></script>
+<script src="assets/site-shell.js?v=20261124-authmenu1" defer></script>
 <script src="assets/kickoff-countdown.js?v=20261123-countdown2" defer></script>
 <script src="assets/club-logos.js?v=20261124-crestfast2" defer></script>
 <script src="assets/team-names-ko.js?v=20261123-i18n" defer></script>
@@ -115,12 +115,14 @@ section.block{padding:89px 0}
       <a class="shell-nav-link" data-nav-key="columns" href="index.html#columns">칼럼</a>
       <div class="shell-mobile-utility" aria-label="계정 메뉴">
         <a class="shell-mobile-utility-link" data-utility-key="login" href="mypage.html?login=1#accountPanel">로그인</a>
-        <a class="shell-mobile-utility-link" data-utility-key="mypage" href="mypage.html">마이페이지</a>
+        <a class="shell-mobile-utility-link" data-utility-key="mypage" href="mypage.html" hidden>마이페이지</a>
+        <button class="shell-mobile-utility-link" data-utility-key="logout" type="button" hidden>로그아웃</button>
       </div>
     </nav>
     <div class="shell-utility" aria-label="계정 메뉴">
       <a class="shell-utility-link" data-utility-key="login" href="mypage.html?login=1#accountPanel">로그인</a>
-      <a class="shell-utility-link" data-utility-key="mypage" href="mypage.html">마이페이지</a>
+      <a class="shell-utility-link" data-utility-key="mypage" href="mypage.html" hidden>마이페이지</a>
+      <button class="shell-utility-link" data-utility-key="logout" type="button" hidden>로그아웃</button>
     </div>
   </div>
 </header>
