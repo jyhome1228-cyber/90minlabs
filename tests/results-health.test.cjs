@@ -38,3 +38,16 @@ test('a previously confirmed score conflict blocks a green health report',()=>{
  const r=evaluate({...status(),existingScoreConflicts:[{match:'x'}]});
  assert.equal(r.ok,false);assert.match(r.errors.join(' '),/충돌/);
 });
+
+test('stale match-level snapshots are a health error even if fixtures are valid',()=>{
+ const goodPack={version:1,windowStart:'2026-11-20',windowEnd:'2026-12-08',
+   sourceVerifiedAtKst:'2026-11-25T09:00:00+09:00',
+   files:Object.fromEntries(Array.from({length:15},(_,i)=>['fixture-'+i,'file-'+i+'.json']))};
+ const c=calendar();c.verifiedAtKst='2026-11-25T09:00:00+09:00';
+ const normal=checkHealth({status:status(),calendar:c,nearby:nearby(),packs:goodPack,nowMs:now});
+ assert.equal(normal.ok,true);
+ const stale=checkHealth({status:status(),calendar:c,nearby:nearby(),
+   packs:{...goodPack,sourceVerifiedAtKst:'2026-11-24T09:00:00+09:00'},nowMs:now});
+ assert.equal(stale.ok,false);
+ assert.match(stale.errors.join(' '),/오래되었습니다/);
+});
