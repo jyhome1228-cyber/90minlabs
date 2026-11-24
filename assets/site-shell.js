@@ -27,8 +27,18 @@
       navigation.append(link);
     });
   }
-  // Utility actions are separate from the four editorial navigation sections.
+  // Account actions are rendered from the authenticated Firebase session only.
+  // Local browser predictions must never masquerade as a signed-in account.
   const loginTarget = "mypage.html?login=1#accountPanel";
+  let authenticated = false;
+  let signOutBusy = false;
+  let firebaseAuth = null;
+  let firebaseSignOut = null;
+  const utilities = [
+    { key: "login", label: "로그인", href: loginTarget },
+    { key: "mypage", label: "마이페이지", href: "mypage.html" },
+    { key: "logout", label: "로그아웃" }
+  ];
   const ensureUtility = (parent, className) => {
     let wrapper = parent.querySelector("." + className);
     if (!wrapper) {
@@ -38,18 +48,102 @@
       else navigation.append(wrapper);
     }
     wrapper.replaceChildren();
-    for (const item of [{ label: "로그인", href: loginTarget, key: "login" }, { label: "마이페이지", href: "mypage.html", key: "mypage" }]) {
-      const anchor = document.createElement("a");
-      anchor.href = item.href;
-      anchor.textContent = item.label;
-      anchor.dataset.utilityKey = item.key;
-      anchor.className = className === "shell-utility" ? "shell-utility-link" : "shell-mobile-utility-link";
-      wrapper.append(anchor);
+    for (const item of utilities) {
+      const node = document.createElement(item.href ? "a" : "button");
+      if (item.href) node.href = item.href;
+      else node.type = "button";
+      node.textContent = item.label;
+      node.dataset.utilityKey = item.key;
+      node.className = className === "shell-utility" ? "shell-utility-link" : "shell-mobile-utility-link";
+      node.hidden = item.key !== "login";
+      wrapper.append(node);
     }
+    const feedback = document.createElement("span");
+    feedback.className = "shell-auth-feedback sr-only";
+    feedback.setAttribute("role", "status");
+    wrapper.append(feedback);
     return wrapper;
   };
   const utility = ensureUtility(header.querySelector(".shell-inner"), "shell-utility");
   const mobileUtility = ensureUtility(navigation, "shell-mobile-utility");
+  const accountNodes = [...utility.querySelectorAll("[data-utility-key]"), ...mobileUtility.querySelectorAll("[data-utility-key]")];
+
+  function renderAccount() {
+    const onAccountPage = location.pathname.endsWith("/mypage.html");
+    const params = new URLSearchParams(location.search);
+    const loginRequested = params.get("login") === "1" || params.get("register") === "1";
+    for (const node of accountNodes) {
+      const key = node.dataset.utilityKey;
+      node.hidden = authenticated ? key === "login" : key !== "login";
+      if (key === "logout") node.disabled = signOutBusy;
+      const current = key === (authenticated ? "mypage" : "login") &&
+        onAccountPage && (authenticated || loginRequested);
+      node.classList.toggle("is-active", current);
+      if (current) node.setAttribute("aria-current", "page");
+      else node.removeAttribute("aria-current");
+    }
+    header.dataset.authState = authenticated ? "signed-in" : "signed-out";
+  }
+
+  function feedback(text) {
+    for (const element of [utility, mobileUtility]) {
+      const target = element.querySelector(".shell-auth-feedback");
+      if (target) target.textContent = text;
+    }
+  }
+
+  async function logout() {
+    if (!authenticated || !firebaseAuth || !firebaseSignOut || signOutBusy) return;
+    if (window.NinetyMinPage?.isDirty?.() &&
+        !window.confirm("저장하지 않은 승·무·패 예측이 있습니다. 로그아웃할까요?")) return;
+    signOutBusy = true;
+    renderAccount();
+    feedback("");
+    try {
+      await firebaseSignOut(firebaseAuth);
+      // Firebase onAuthStateChanged confirms logout and updates every button.
+      if (location.pathname.endsWith("/mypage.html")) location.assign("index.html");
+    } catch (error) {
+      feedback("로그아웃에 실패했습니다. 다시 시도해 주세요.");
+    } finally {
+      signOutBusy = false;
+      renderAccount();
+    }
+  }
+
+  for (const node of accountNodes) {
+    if (node.dataset.utilityKey === "logout") node.addEventListener("click", logout);
+  }
+
+  async function observeAuth() {
+    try {
+      const { firebaseConfig } = await import("./firebase-config.js");
+      if (!firebaseConfig?.apiKey || !firebaseConfig?.projectId ||
+          !firebaseConfig?.authDomain || !firebaseConfig?.appId) return;
+      // Avoid the Firebase network request entirely on an unconfigured project.
+      const [appSdk, authSdk] = await Promise.all([
+        import("https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js"),
+        import("https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js")
+      ]);
+      const app = appSdk.getApps().find(item => item.name === "[DEFAULT]") ||
+        appSdk.initializeApp(firebaseConfig);
+      firebaseAuth = authSdk.getAuth(app);
+      firebaseSignOut = authSdk.signOut;
+      authSdk.onAuthStateChanged(firebaseAuth, user => {
+        authenticated = Boolean(user);
+        renderAccount();
+        feedback("");
+      }, () => {
+        authenticated = false;
+        renderAccount();
+        feedback("로그인 상태를 확인하지 못했습니다.");
+      });
+    } catch (error) {
+      // An unavailable auth SDK never displays a fake logged-in menu.
+      authenticated = false;
+      renderAccount();
+    }
+  }
   const links = Array.from(navigation.querySelectorAll("a[data-nav-key]"));
   items.forEach((item, index) => {
     const link = links[index];
@@ -83,14 +177,7 @@
       if (current) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
     });
-    const onAccountPage = location.pathname.endsWith("/mypage.html");
-    const loginRequested = onAccountPage && new URLSearchParams(location.search).get("login") === "1";
-    for (const a of [...utility.querySelectorAll("a"), ...mobileUtility.querySelectorAll("a")]) {
-      const current = onAccountPage && a.dataset.utilityKey === (loginRequested ? "login" : "mypage");
-      a.classList.toggle("is-active", current);
-      if (current) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
-    }
+    renderAccount();
     closeMenu(false);
   }
 
@@ -123,6 +210,7 @@
   window.addEventListener("pageshow", refresh);
   if (mobile.addEventListener) mobile.addEventListener("change", () => closeMenu(false));
   else if (mobile.addListener) mobile.addListener(() => closeMenu(false));
-  window.SiteShell = Object.freeze({ refresh, closeMenu, items });
+  window.SiteShell = Object.freeze({ refresh, closeMenu, items, get isAuthenticated() { return authenticated; } });
   refresh();
+  observeAuth();
 })();
