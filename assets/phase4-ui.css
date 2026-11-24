@@ -1,0 +1,258 @@
+/* Phase 4 / 90MIN LABS: one responsive grid and predictable controls.
+   Loaded last to resolve legacy page-specific width and CTA conflicts. */
+:root{--site-content-max:1600px;--site-outer-gap:44px;--site-action-height:44px}
+.site-header[data-site-header] .shell-inner,
+.global-footer-inner,
+main.wrap,
+main.page-wrap,
+main.mypage-wrap,
+main.col-detail-main{
+  box-sizing:border-box;
+  width:min(calc(100% - 88px),var(--site-content-max));
+  max-width:none;
+  margin-inline:auto;
+}
+main.container{
+  box-sizing:border-box;
+  width:min(calc(100% - 88px),var(--site-content-max));
+  max-width:none;
+  padding-right:0;
+  padding-left:0;
+  margin-inline:auto;
+}
+:where(.site-header,.global-footer,main) :is(a,button,select,input){touch-action:manipulation}
+:where(.site-header,.global-footer,main) :is(a,button,select,input,textarea):focus-visible{
+  outline:2px solid #171717;
+  outline-offset:3px;
+}
+.site-header[data-site-header] .shell-utility-link,
+.site-header[data-site-header] .shell-mobile-utility-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:10px 14px;
+  border:1px solid #dedede;
+  border-radius:4px;
+  background:#fff;
+  color:#242424;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  white-space:nowrap;
+}
+.site-header[data-site-header] .shell-utility-link:hover,
+.site-header[data-site-header] .shell-mobile-utility-link:hover{border-color:#333;color:#111}
+.site-header[data-site-header] [hidden]{display:none!important}
+
+/* Match list: both actions are legible and usable without crowding club names. */
+@media(min-width:1101px){
+  :is(#matches,#predictions) .match-line{
+    grid-template-columns:100px minmax(0,1fr) 136px minmax(0,1fr) 112px;
+    gap:14px;
+  }
+}
+@media(min-width:651px) and (max-width:1100px){
+  :is(#matches,#predictions) .match-line{
+    grid-template-columns:76px minmax(0,1fr) 100px minmax(0,1fr) 104px;
+    gap:10px;
+  }
+}
+:is(#matches,#predictions) .match-line{min-height:108px}
+:is(#matches,#predictions) .match-item-actions{gap:7px}
+:is(#matches,#predictions) .match-item-actions .match-more,
+:is(#matches,#predictions) .match-item-actions .match-save{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:9px 11px;
+  border:1px solid #dcdcdc;
+  border-radius:4px;
+  font-size:12.5px;
+  font-weight:650;
+  line-height:1.45;
+  text-align:center;
+}
+:is(#matches,#predictions) .match-item-actions .match-more{
+  border-color:#222;
+  background:#222;
+  color:#fff;
+}
+:is(#matches,#predictions) .match-item-actions .match-more:hover{background:#3b3b3b}
+:is(#matches,#predictions) .match-item-actions .match-save{background:#fff;color:#303030}
+:is(#matches,#predictions) .match-nav-btn,
+:is(#matches,#predictions) .match-control-right select,
+:is(#matches,#predictions) .match-date-field input,
+#predictions .filter{min-height:42px}
+:is(#matches,#predictions) .match-control-right{min-width:0}
+:is(#matches,#predictions) .match-control-right select{max-width:100%}
+
+/* Match report: one strong first conclusion, then equal-weight reference data. */
+#matchMain .page-tools{gap:18px;min-width:0}
+#matchMain .page-tools .match-header-actions{gap:8px;margin-left:auto}
+#matchMain .page-tools .match-header-actions .match-pick-link,
+#matchMain .page-tools .match-header-actions .copy-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  flex:0 0 auto;
+  min-height:var(--site-action-height);
+  padding:10px 14px;
+  margin:0;
+  border:1px solid #d3d3d3;
+  border-radius:4px;
+  background:#fff;
+  color:#292929;
+  font-size:13px;
+  font-weight:600;
+  line-height:1.5;
+  text-decoration:none;
+  white-space:nowrap;
+}
+#matchMain .page-tools .match-header-actions #saveFixture{
+  min-width:100px;
+  min-height:var(--site-action-height);
+  padding:10px 16px;
+  border-color:#202020;
+  background:#202020;
+  color:#fff;
+  font-size:13px;
+}
+#matchMain .page-tools .match-header-actions #saveFixture:hover:not(:disabled){background:#3a3a3a}
+#matchMain .page-tools .match-header-actions #saveFixture[aria-pressed="true"]{
+  background:#f0f7f3;
+  border-color:#bdd7c7;
+  color:#166442;
+}
+#matchMain .analysis-nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:48px;
+  padding:13px 0;
+  font-size:13px;
+}
+#matchMain .analysis-controls .segmented-control button{min-height:40px;font-size:13px;padding:8px 13px}
+#matchMain .analysis-controls select{min-height:44px;font-size:13px}
+#matchMain .overview-section .compact-report{min-width:0}
+#matchMain .overview-section .report-forecast{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:12px 24px;
+  padding:0 0 16px;
+  border-bottom:1px solid #e6e6e6;
+}
+#matchMain .overview-section #reportForecast{
+  font-size:clamp(22px,2.15vw,33px);
+  font-weight:700;
+  line-height:1.45;
+  color:#191919;
+  overflow-wrap:anywhere;
+}
+#matchMain .overview-section .outcome-prob-top strong{
+  font-size:clamp(24px,2vw,30px);
+  font-variant-numeric:tabular-nums;
+}
+#matchMain .overview-section .outcome-prob-track{height:8px;border-radius:4px}
+#matchMain .overview-section .compact-report-copy{margin-top:15px}
+#matchMain .comparison-table-wrap,
+#matchMain .results-grid,
+#matchMain .standings-content{min-width:0}
+
+/* My Page and editorial desk: controls stay accessible without changing auth. */
+#myPageMain .mypage-quick-links{display:flex;flex-wrap:wrap;gap:8px}
+#myPageMain .mypage-quick-links a,
+#myPageMain .myteam-actions button,
+#myPageMain .saved-matches-heading-actions a,
+#myPageMain .week-navigation .outline-button,
+#myPageMain .week-tools .text-button,
+#myPageMain .outline-button,
+#myPageMain .solid-button,
+#myPageMain .choice-button{
+  min-height:42px;
+}
+#myPageMain .mypage-quick-links a,
+#myPageMain .saved-matches-heading-actions a{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:9px 14px;
+  border:1px solid #dedede;
+  border-radius:4px;
+  background:#fff;
+  font-size:13px;
+  text-decoration:none;
+}
+#myPageMain .mypage-quick-links a:hover,
+#myPageMain .saved-matches-heading-actions a:hover{border-color:#262626}
+.column-page .col-category,
+.column-editor-page .col-button,
+.column-page .col-plain-link,
+.col-detail-back{min-height:42px}
+.column-page .col-category,
+.column-editor-page .col-button{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px}
+.column-page .col-toolbar{min-width:0}
+.column-page .col-search{min-height:44px}
+
+@media(max-width:900px){
+  .site-header[data-site-header] .shell-inner,
+  .global-footer-inner,
+  main.wrap,main.page-wrap,main.mypage-wrap,main.col-detail-main,
+  main.container{width:calc(100% - 44px)}
+  .site-header[data-site-header] .shell-mobile-utility-link{justify-content:flex-start;min-width:130px}
+  #matchMain .section-heading{gap:16px;flex-wrap:wrap}
+  #myPageMain .week-toolbar{gap:14px;flex-wrap:wrap}
+}
+@media(max-width:650px){
+  .site-header[data-site-header] .shell-inner,
+  .global-footer-inner,
+  main.wrap,main.page-wrap,main.mypage-wrap,main.col-detail-main,
+  main.container{width:calc(100% - 36px)}
+  :is(#matches,#predictions) .match-line{grid-template-columns:minmax(0,1fr) 78px minmax(0,1fr);gap:8px;min-height:140px}
+  :is(#matches,#predictions) .match-item-actions{
+    grid-column:1/-1;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+    margin-top:6px;
+  }
+  :is(#matches,#predictions) .match-item-actions .match-more,
+  :is(#matches,#predictions) .match-item-actions .match-save{
+    width:100%;min-height:44px;min-width:0;margin:0;padding:10px 8px;font-size:13px
+  }
+  :is(#matches,#predictions) .match-week-nav{width:100%;justify-content:space-between;gap:8px}
+  :is(#matches,#predictions) .match-week-nav strong{min-width:0;font-size:15px;text-align:center;white-space:normal}
+  :is(#matches,#predictions) .match-control-right{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  :is(#matches,#predictions) .match-date-field{grid-column:1/-1}
+  :is(#matches,#predictions) .match-date-field input[type="date"]{max-width:62%;min-width:0}
+  :is(#matches,#predictions) .match-control-right select{min-width:0;width:100%}
+  #matchMain .page-tools{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;padding-top:17px}
+  #matchMain .page-tools .page-kicker{display:none}
+  #matchMain .page-tools .match-header-actions{
+    grid-column:1/-1;
+    width:100%;margin:0;display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;
+  }
+  #matchMain .page-tools .match-header-actions .match-pick-link,
+  #matchMain .page-tools .match-header-actions .copy-link,
+  #matchMain .page-tools .match-header-actions #saveFixture{
+    width:100%;min-width:0;min-height:44px;
+    padding:10px 8px;margin:0;font-size:13px;white-space:normal;
+  }
+  #matchMain .overview-section .outcome-prob-grid{gap:10px}
+  #matchMain .overview-section .outcome-prob-top strong{font-size:23px}
+  #matchMain .overview-section .outcome-prob-labels small{white-space:normal}
+  #matchMain .analysis-controls{width:100%;flex-wrap:wrap}
+  #myPageMain .mypage-heading{align-items:flex-start;flex-direction:column;gap:9px}
+  #myPageMain .week-navigation{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:7px;width:100%}
+  #myPageMain .week-navigation h3{min-width:0;font-size:14px;white-space:normal}
+  #myPageMain .week-tools{width:100%;justify-content:space-between;flex-wrap:wrap}
+  #myPageMain .mypage-quick-links{width:100%}
+  #myPageMain .mypage-quick-links a{flex:1 1 0;min-width:0}
+  .column-page .col-toolbar{align-items:stretch}
+  .column-page .col-categories{max-width:100%;overflow-x:auto}
+  .column-page .col-search{width:100%;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){
+  :where(.site-header,.global-footer,main) :is(a,button){transition:none!important}
+}
