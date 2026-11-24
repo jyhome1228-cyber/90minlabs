@@ -6,7 +6,7 @@ const status=t=>{$("accountStatus").textContent=t;};
 const scope=t=>{$("storageScope").textContent=t;};
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 let auth,db,user=null,remoteRevision=null,connected=false,busy=false;
-let initializeApp,getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail,signOut,updateProfile,getFirestore,doc,getDoc,runTransaction;
+let onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail,signOut,updateProfile,getFirestore,doc,getDoc,runTransaction;
 function local(){const raw=localStorage.getItem(key);return raw?PredictionStore.createStore(localStorage).load():{version:1,revision:0,sets:[]};}
 function replaceLocal(value){const verified=validate(value);const old=localStorage.getItem(key);if(old!==null)localStorage.setItem("90minlabs.account-backup."+Date.now(),old);localStorage.setItem(key,JSON.stringify(verified));window.NinetyMinPage?.reloadRecords();}
 function validate(data){const temp=new Map();const storage={getItem:k=>temp.get(k)??null,setItem:(k,v)=>temp.set(k,v)};temp.set(key,JSON.stringify(data));return PredictionStore.createStore(storage).load();}
@@ -110,21 +110,24 @@ function disabled(message){
   }
 }
 async function start(){
- let config;
- try{const module=await import("./firebase-config.js");config=module.firebaseConfig;}catch(e){disabled("계정 연결 준비 중 · Firebase 설정이 필요합니다.");return;}
- if(!config?.apiKey||!config?.projectId||!config?.authDomain){disabled("계정 연결 준비 중 · Firebase 프로젝트 설정을 확인해 주세요.");return;}
- try{
-   // The public demo has no Firebase project connected yet. Avoid loading the heavy SDK until configured.
-   const [appSdk,authSdk,storeSdk]=await Promise.all([
-     import("https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js"),
-     import("https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js"),
-     import("https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js")
-   ]);
-   ({initializeApp}=appSdk);
-   ({getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail,signOut,updateProfile}=authSdk);
-   ({getFirestore,doc,getDoc,runTransaction}=storeSdk);
-   const app=initializeApp(config);auth=getAuth(app);db=getFirestore(app);
- }catch(e){disabled("계정 초기화 실패: "+e.message);return;}
+ const services = await (async()=>{
+   try{
+     const client = await import("./firebase-client.js");
+     return await client.getFirebaseAccountServices();
+   }catch(error){
+     disabled("계정 연결 오류: "+error.message);
+     return null;
+   }
+ })();
+ if(!services){
+   disabled("계정 연결 준비 중 · Firebase 웹 앱 설정이 필요합니다.");
+   return;
+ }
+ const {auth:sharedAuth,db:sharedDb,authSdk,firestoreSdk}=services;
+ auth=sharedAuth;db=sharedDb;
+ ({onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,
+   sendPasswordResetEmail,signOut,updateProfile}=authSdk);
+ ({doc,getDoc,runTransaction}=firestoreSdk);
  $("accountLogin").addEventListener("click",()=>execute("login"));
  $("accountRegister").addEventListener("click",()=>execute("register"));
  $("accountReset").addEventListener("click",()=>execute("reset"));
