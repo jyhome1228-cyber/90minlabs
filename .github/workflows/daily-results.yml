@@ -12,6 +12,8 @@ on:
     paths:
       - 'scripts/daily-results.cjs'
       - 'scripts/build-nearby-fixtures.cjs'
+      - 'scripts/build-match-packs.cjs'
+      - 'assets/match-analysis.js'
       - 'tests/daily-results.test.cjs'
       - '.github/workflows/daily-results.yml'
 
@@ -42,11 +44,14 @@ jobs:
         run: |
           node --check scripts/daily-results.cjs
           node --check scripts/build-nearby-fixtures.cjs
+          node --check scripts/build-match-packs.cjs
           node --test tests/daily-results.test.cjs
       - name: Fetch verified 2026/27 results and rebuild snapshots
         run: node scripts/daily-results.cjs
       - name: Prepare lightweight rolling fixtures for homepage
         run: node scripts/build-nearby-fixtures.cjs
+      - name: Build and verify exact per-match analysis packs
+        run: node scripts/build-match-packs.cjs
       - name: Commit only changed data
         shell: bash
         run: |
@@ -54,6 +59,7 @@ jobs:
           git config user.name "90MIN LABS Results Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/match-calendar.json data/team-results.json data/league-data.json data/auto-sync-status.json data/nearby-fixtures.json
+          git add -A data/match-packs
           if git diff --cached --quiet; then
             echo "No new verified results or status updates."
             exit 0
