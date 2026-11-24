@@ -370,6 +370,50 @@
     $("loadingState").hidden = true; $("matchContent").hidden = true; $("errorState").hidden = false;
     $("errorTitle").textContent = title; $("errorMessage").textContent = message; $("retryButton").hidden = !retry; $("copyLink").disabled = true;
   }
+  function scrollToRequestedSection(){
+    const requestedHash=location.hash.slice(1);
+    const hash=/^report/.test(requestedHash)?"overview":requestedHash;
+    if(["overview","comparison","recent","headtohead","standings"].includes(hash)){
+      const target=$(hash);
+      if(target)requestAnimationFrame(()=>target.scrollIntoView());
+    }
+  }
+  async function tryFastMatchPack(id){
+    // Outside the rolling fixture window, avoid an unnecessary manifest request.
+    const date=id.split("~")[1];
+    const dateMs=Date.parse(date+"T12:00:00Z");
+    const today=new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+    const days=Math.round((dateMs-Date.parse(today+"T12:00:00Z"))/86400000);
+    if(!Number.isFinite(days)||days< -8||days>15)return false;
+    try{
+      const manifest=await json("data/match-packs/manifest.json");
+      const file=manifest?.version===1 && Object.hasOwn(manifest.files||{},id) && manifest.files[id];
+      if(typeof file!=="string"||!(/^[a-f0-9]{24}\.json$/.test(file)))return false;
+      // Old builds are ignored instead of producing stale results.
+      const made=Date.parse(String(manifest.generatedAtKst||"")+"T12:00:00Z");
+      if(!Number.isFinite(made)||Math.abs(Date.now()-made)>3*86400000)return false;
+      const pack=await json("data/match-packs/"+file);
+      if(pack?.version!==1||pack.matchId!==id||!Array.isArray(pack.normalizedRecords)||
+         !Array.isArray(pack.calendar?.matches))return false;
+      const ctx=MatchAnalysis.createContext({
+        calendar:pack.calendar,results:pack.results,profiles:pack.profiles,
+        standings:pack.standings,uefa:pack.uefa,normalizedRecords:pack.normalizedRecords
+      });
+      const fixture=ctx.findMatch(id);
+      if(!fixture)return false;
+      state.context=ctx;state.match=fixture;state.partial=[];
+      render(true);
+      $("loadingState").hidden=true;
+      $("detailDataLoading").hidden=true;
+      $("matchContent").dataset.detailsPending="false";
+      $("matchContent").hidden=false;
+      scrollToRequestedSection();
+      return true;
+    }catch(error){
+      // Old or missing snapshots always fall back to the full verified calendar.
+      return false;
+    }
+  }
   // The fixture itself is trustworthy once the calendar arrives; show it while
   // historical form, standings and club profiles continue loading in parallel.
   function renderFixturePreview(fixture,calendar,id){
@@ -397,6 +441,7 @@
     if (!window.MatchAnalysis) { error("분석 화면을 불러오지 못했습니다.", "화면 파일을 가져오지 못했습니다. 새로고침 후 다시 확인해 주세요.", false); return; }
     state.loading = true; $("errorState").hidden = true; $("matchContent").hidden = true; $("matchContent").dataset.detailsPending="false"; $("detailDataLoading").hidden = true; $("loadingState").hidden = false; $("retryButton").disabled = true; document.body.classList.add("is-match-loading");
     try {
+      if(await tryFastMatchPack(id))return;
       const paths = ["data/match-calendar.json", "data/team-results.json", "data/team-profiles.json", "data/league-data.json", "data/uefa-standings.json"];
       // Start all downloads together but do not hold the fixture header hostage
       // to a slow results, profile or standings endpoint.
@@ -428,12 +473,7 @@
       $("detailDataLoading").hidden=true;
       $("matchContent").dataset.detailsPending="false";
       $("loadingState").hidden=true; $("matchContent").hidden=false;
-      const requestedHash = location.hash.slice(1);
-      const hash = /^report/.test(requestedHash) ? "overview" : requestedHash;
-      if (["overview", "comparison", "recent", "headtohead", "standings"].includes(hash)) {
-        const target = $(hash);
-        if (target) requestAnimationFrame(() => target.scrollIntoView());
-      }
+      scrollToRequestedSection();
     } catch (failure) { $("detailDataLoading").hidden=true; $("matchContent").dataset.detailsPending="false"; error("경기 기록을 연결하지 못했습니다.", "일정 자료를 불러오는 중 문제가 생겼습니다. 잠시 후 다시 불러오거나 경기 목록에서 확인해 주세요.", true); }
     finally { state.loading = false; $("retryButton").disabled = false; document.body.classList.remove("is-match-loading"); }
   }
