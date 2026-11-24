@@ -10,7 +10,7 @@ const KST = 9 * HOUR;
 const DAY = 24 * HOUR;
 function kstDay(ms) { return new Date(ms + KST).toISOString().slice(0, 10); }
 function fixtureKey(f) { return [f.league, f.date, f.time, f.home, f.away].join('|'); }
-function checkHealth({status, calendar, nearby, nowMs=Date.now()}) {
+function checkHealth({status, calendar, nearby, packs, nowMs=Date.now()}) {
  const errors=[], warnings=[];
  const checkedMs=Date.parse(status?.lastCheckedAtKst||'');
  const today=kstDay(nowMs);
@@ -38,6 +38,15 @@ function checkHealth({status, calendar, nearby, nowMs=Date.now()}) {
     wrong++;
  }
  if(missing || wrong) errors.push('전체 일정과 빠른 일정이 불일치합니다. 누락 '+missing+', 상태/스코어 불일치 '+wrong+'경기.');
+ if(packs){
+  if(packs.version!==1 || !packs.files || Object.keys(packs.files).length<10)
+   errors.push('경기별 경량 분석 데이터 목록이 비어 있거나 형식이 잘못됐습니다.');
+  if(packs.sourceVerifiedAtKst!==calendar?.verifiedAtKst)
+   errors.push('경기별 분석 데이터가 확정 스코어보다 오래되었습니다. 경량 데이터를 재생성하세요.');
+  if(packs.windowStart && packs.windowEnd &&
+     (today<packs.windowStart || today>packs.windowEnd))
+   errors.push('경기별 분석 파일의 날짜 범위가 오늘을 포함하지 않습니다.');
+ }
  if(nearby?.windowStart && nearby?.windowEnd &&
    (today<nearby.windowStart||today>nearby.windowEnd))
   errors.push('빠른 일정 파일의 제공 날짜 범위가 오늘을 포함하지 않습니다.');
@@ -64,7 +73,8 @@ if(require.main===module){
  const data=name=>JSON.parse(fs.readFileSync(path.join(root,'data',name),'utf8'));
  try{
   const result=checkHealth({status:data('auto-sync-status.json'),
-    calendar:data('match-calendar.json'), nearby:data('nearby-fixtures.json')});
+    calendar:data('match-calendar.json'), nearby:data('nearby-fixtures.json'),
+    packs:data('match-packs/manifest.json')});
   console.log(JSON.stringify(result,null,2));
   if(!result.ok){for(const message of result.errors)console.error('::error::'+message);process.exitCode=1;}
  }catch(error){console.error('::error::'+error.message);process.exitCode=1;}
