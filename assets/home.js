@@ -18,7 +18,7 @@ const club=(m,side)=>{
  const piece=el("span","daily-team");
  const badge=el("span","daily-crest",(translated||"FC").replace(/[^\p{L}\p{N}]/gu,"").slice(0,2).toUpperCase());
  badge.setAttribute("aria-hidden","true");
- window.ClubLogos?.badge(badge,{name:lookup,searchName:lookup,crestId:m[side+"Crest"]});
+ window.ClubLogos?.badge(badge,{name:lookup,searchName:lookup,crestId:m[side+"Crest"],eager:true});
  piece.append(badge,el("span","daily-team-name",translated));return piece;
 };
 function render(){
