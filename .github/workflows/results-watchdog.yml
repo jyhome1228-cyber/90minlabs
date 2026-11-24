@@ -1,0 +1,51 @@
+name: 90MIN LABS Result Sync Watchdog
+
+on:
+  schedule:
+    # KST 10:15 and 12:15. GitHub scheduled runs can be delayed or dropped.
+    - cron: '15 1 * * *'
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/check-results-health.cjs'
+      - 'scripts/report-sync-incident.sh'
+      - 'tests/results-health.test.cjs'
+      - '.github/workflows/results-watchdog.yml'
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: 90min-results-watchdog
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    name: Check sync freshness and missing verified scores
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate watchdog logic
+        run: node --test tests/results-health.test.cjs
+      - name: Check last verified result sync and data consistency
+        run: node scripts/check-results-health.cjs
+      - name: Report failed or missing data sync
+        if: ${{ failure() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/report-sync-incident.sh failed
+      - name: Resolve previous incident after recovery
+        if: ${{ success() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/report-sync-incident.sh healthy
