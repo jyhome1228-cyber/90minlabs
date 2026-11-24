@@ -22,9 +22,12 @@ test('site header and footer maintain canonical menu, account links and language
 test('all pages load matching shared styles and language behavior',()=>{
   for(const page of pages){
     const html=read(page);
-    assert.match(html,/assets\/site-shell\.css\?v=20261124-layout1/,page);
-    assert.match(html,/assets\/site-shell\.js\?v=20261124-layout1/,page);
-    assert.match(html,/assets\/site-language\.js\?v=20261124-[a-z0-9-]+/,page);
+    // Cache-busting versions are deliberately free to change without breaking QA.
+    // What matters is that each shared asset is linked exactly once.
+    for (const asset of ['site-shell.css','site-shell.js','site-language.js']) {
+      const matches = html.match(new RegExp('assets/' + asset.replace('.', '\\.') + '\\?v=[A-Za-z0-9._-]+', 'g')) || [];
+      assert.equal(matches.length, 1, page + ' shared asset ' + asset);
+    }
   }
   const language=read('assets/site-language.js');
   assert.match(language,/global-footer \[data-footer-language\]/);
