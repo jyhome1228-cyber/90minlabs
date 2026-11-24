@@ -11,6 +11,9 @@ on:
       - 'scripts/check-results-health.cjs'
       - 'scripts/report-sync-incident.sh'
       - 'tests/results-health.test.cjs'
+      - 'data/auto-sync-status.json'
+      - 'data/match-calendar.json'
+      - 'data/nearby-fixtures.json'
       - '.github/workflows/results-watchdog.yml'
 
 permissions:
