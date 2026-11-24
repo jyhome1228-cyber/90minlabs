@@ -605,9 +605,19 @@
       "team": "Everton",
       "league": "epl",
       "matchName": "Everton",
-      "lastMatchDate": "2026-11-06",
+      "lastMatchDate": "2026-11-23",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-23",
+          "home": "Brentford",
+          "away": "Everton",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.skysports.com/football/brentford-vs-everton/report/559546"
+        },
         {
           "date": "2026-11-06",
           "home": "Everton",
@@ -687,15 +697,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-22",
-          "home": "Everton",
-          "away": "Crystal Palace",
-          "homeScore": 2,
-          "awayScore": 0,
-          "round": "1",
           "provider": "fixturedl"
         }
       ]
@@ -902,9 +903,19 @@
       "team": "Brentford",
       "league": "epl",
       "matchName": "Brentford",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-23",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-23",
+          "home": "Brentford",
+          "away": "Everton",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "11",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.skysports.com/football/brentford-vs-everton/report/559546"
+        },
         {
           "date": "2026-11-08",
           "home": "Brighton",
@@ -984,15 +995,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "2",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-22",
-          "home": "Brentford",
-          "away": "Spurs",
-          "homeScore": 3,
-          "awayScore": 0,
-          "round": "1",
           "provider": "fixturedl"
         }
       ]
@@ -3392,9 +3394,19 @@
       "team": "Fiorentina",
       "league": "seriea",
       "matchName": "Fiorentina",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-23",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-23",
+          "home": "Monza",
+          "away": "Fiorentina",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.legaseriea.it/serie-a/news/monza-fiorentina-2026-2027-3-0-cronaca-risultato-gol"
+        },
         {
           "date": "2026-11-08",
           "home": "Fiorentina",
@@ -3474,15 +3486,6 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Fiorentina",
-          "away": "Frosinone",
-          "homeScore": 0,
-          "awayScore": 3,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -3689,9 +3692,19 @@
       "team": "Monza",
       "league": "seriea",
       "matchName": "Monza",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-23",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-23",
+          "home": "Monza",
+          "away": "Fiorentina",
+          "homeScore": 3,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.legaseriea.it/serie-a/news/monza-fiorentina-2026-2027-3-0-cronaca-risultato-gol"
+        },
         {
           "date": "2026-11-08",
           "home": "Monza",
@@ -3771,15 +3784,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Monza",
-          "away": "Udinese",
-          "homeScore": 2,
-          "awayScore": 3,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -8069,9 +8073,19 @@
       "team": "Elche CF",
       "league": "laliga",
       "matchName": "Elche CF",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-23",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-23",
+          "home": "Levante UD",
+          "away": "Elche CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-levante-ud-elche-cf-13"
+        },
         {
           "date": "2026-11-08",
           "home": "Elche CF",
@@ -8151,15 +8165,6 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-28",
-          "home": "R. Racing Club",
-          "away": "Elche CF",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "3",
           "provider": "fixturedl"
         }
       ]
@@ -8369,9 +8374,19 @@
       "team": "Levante UD",
       "league": "laliga",
       "matchName": "Levante UD",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-23",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-23",
+          "home": "Levante UD",
+          "away": "Elche CF",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "13",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-levante-ud-elche-cf-13"
+        },
         {
           "date": "2026-11-08",
           "home": "Celta",
@@ -8451,15 +8466,6 @@
           "homeScore": 0,
           "awayScore": 0,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Levante UD",
-          "away": "Real Betis",
-          "homeScore": 5,
-          "awayScore": 2,
-          "round": "3",
           "provider": "fixturedl"
         }
       ]
@@ -16696,6 +16702,6 @@
     }
   },
   "notes": "2026/27 시즌 국내 리그 최근 10경기 스냅샷. 한국시간 2026-11-23 종료 9경기의 양 팀(총 18개 구단)은 LiveScore/Football Web Pages로 검증한 결과를 우선 사용하며, 나머지는 기존 open-matchday 데이터를 사용. 유럽대항전 별도 프로필은 검증 가능한 경기만 표기.",
-  "supplementalVerifiedAtKst": "2026-11-23T13:18:35+09:00",
+  "supplementalVerifiedAtKst": "2026-11-24T09:24:17+09:00",
   "supplementalSourceUrl": "https://www.livescores.com/football/2026-11-22/?tz=2"
 }
