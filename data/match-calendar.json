@@ -16287,12 +16287,19 @@
       "league": "ucl",
       "home": "Bodø/Glimt",
       "away": "LASK",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Bodø/Glimt",
       "homeTeamLeague": "ucl",
       "awayTeam": "LASK",
-      "awayTeamLeague": "ucl"
+      "awayTeamLeague": "ucl",
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16303,10 +16310,17 @@
       "awayTeam": "Aston Villa",
       "awayTeamLeague": "epl",
       "awayCrest": 58,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Galatasaray",
-      "homeTeamLeague": "ucl"
+      "homeTeamLeague": "ucl",
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16320,8 +16334,15 @@
       "awayTeam": "Borussia Dortmund",
       "awayTeamLeague": "bundesliga",
       "awayCrest": 4,
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        1,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16332,10 +16353,17 @@
       "homeTeam": "Como",
       "homeTeamLeague": "seriea",
       "homeCrest": 7397,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "awayTeam": "AEK Athens",
-      "awayTeamLeague": "ucl"
+      "awayTeamLeague": "ucl",
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16343,12 +16371,19 @@
       "league": "ucl",
       "home": "Feyenoord",
       "away": "Porto",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Feyenoord",
       "homeTeamLeague": "ucl",
       "awayTeam": "Porto",
-      "awayTeamLeague": "ucl"
+      "awayTeamLeague": "ucl",
+      "score": [
+        0,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16359,11 +16394,18 @@
       "homeTeam": "RB Leipzig",
       "homeTeamLeague": "bundesliga",
       "homeCrest": 721,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "awayTeam": "Lens",
       "awayTeamLeague": "ligue1",
-      "awayCrest": 546
+      "awayCrest": 546,
+      "score": [
+        3,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16377,8 +16419,15 @@
       "awayTeam": "Napoli",
       "awayTeamLeague": "seriea",
       "awayCrest": 113,
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        2,
+        2
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16386,13 +16435,20 @@
       "league": "ucl",
       "home": "Real Madrid",
       "away": "PSV",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Real Madrid",
       "homeTeamLeague": "laliga",
       "homeCrest": 86,
       "awayTeam": "PSV",
-      "awayTeamLeague": "ucl"
+      "awayTeamLeague": "ucl",
+      "score": [
+        5,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16400,13 +16456,20 @@
       "league": "ucl",
       "home": "S. Bratislava",
       "away": "Real Betis",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "S. Bratislava",
       "homeTeamLeague": "ucl",
       "awayTeam": "Real Betis",
       "awayTeamLeague": "laliga",
-      "awayCrest": 90
+      "awayCrest": 90,
+      "score": [
+        0,
+        2
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16414,8 +16477,15 @@
       "league": "championship",
       "home": "Bristol City",
       "away": "Wrexham",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        1,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16423,8 +16493,15 @@
       "league": "championship",
       "home": "Cardiff City",
       "away": "Preston North End",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        0,
+        4
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16432,8 +16509,15 @@
       "league": "championship",
       "home": "Charlton Athletic",
       "away": "Lincoln City",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        4,
+        0
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16441,8 +16525,15 @@
       "league": "championship",
       "home": "Middlesbrough",
       "away": "Swansea City",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16450,8 +16541,15 @@
       "league": "championship",
       "home": "Norwich City",
       "away": "Queens Park Rangers",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        1,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16459,8 +16557,15 @@
       "league": "championship",
       "home": "Portsmouth",
       "away": "West Ham United",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16468,8 +16573,15 @@
       "league": "championship",
       "home": "Sheffield United",
       "away": "Southampton",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        1,
+        1
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-25",
@@ -16477,8 +16589,15 @@
       "league": "championship",
       "home": "Wolverhampton Wanderers",
       "away": "Derby County",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        3,
+        0
+      ],
+      "scoreSource": "open-matchday",
+      "scoreSourceUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/ENG_2_championship/results_2627.csv",
+      "scoreVerifiedAtKst": "2026-11-25T17:35:44+09:00"
     },
     {
       "date": "2026-11-26",
@@ -39887,7 +40006,7 @@
       "round": "38"
     }
   ],
-  "verifiedAtKst": "2026-11-24T09:24:17+09:00",
+  "verifiedAtKst": "2026-11-25T17:35:44+09:00",
   "verification": {
     "type": "compared-upstream-result-and-fixture-counts",
     "source": "open-matchday",
@@ -39899,5 +40018,5 @@
     "supplementalSourceUrl": "https://www.livescores.com/football/2026-11-22/?tz=2",
     "supplementalVerifiedAtKst": "2026-11-23T13:18:35+09:00"
   },
-  "providerNotes": "open-matchday primary plus verified official league / broadcaster match reports for the 2026-11-23 evening fixtures. Never infer scores from kickoff times."
+  "providerNotes": "Daily verified scores imported from open-matchday (09:00 KST GitHub Actions). Completed existing scores are never overwritten."
 }

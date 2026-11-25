@@ -1,15 +1,192 @@
 {
-  "lastCheckedAtKst": "2026-11-25T15:03:45+09:00",
+  "lastCheckedAtKst": "2026-11-25T17:35:44+09:00",
   "source": "open-matchday",
   "schedule": "09:00 Asia/Seoul daily",
   "providerFiles": 9,
-  "completedUpdated": 0,
+  "completedUpdated": 17,
   "previouslyFinished": 938,
   "existingScoreConflicts": [],
   "ambiguous": [],
   "unmatchedSourceResults": 0,
-  "updatedLeagueStandings": [],
+  "updatedLeagueStandings": [
+    "epl",
+    "seriea",
+    "bundesliga",
+    "ligue1",
+    "laliga"
+  ],
   "skippedStandings": [],
-  "changedMatches": [],
+  "changedMatches": [
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Bristol City",
+      "away": "Wrexham",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Cardiff City",
+      "away": "Preston North End",
+      "score": [
+        0,
+        4
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Charlton Athletic",
+      "away": "Lincoln City",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Middlesbrough",
+      "away": "Swansea City",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Norwich City",
+      "away": "Queens Park Rangers",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Portsmouth",
+      "away": "West Ham United",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Sheffield United",
+      "away": "Southampton",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "league": "championship",
+      "date": "2026-11-25",
+      "home": "Wolverhampton Wanderers",
+      "away": "Derby County",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Bodø/Glimt",
+      "away": "LASK",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Galatasaray",
+      "away": "Aston Villa",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Arsenal",
+      "away": "B. Dortmund",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Como",
+      "away": "AEK Athens",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Feyenoord",
+      "away": "Porto",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Leipzig",
+      "away": "Lens",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Man City",
+      "away": "Napoli",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "Real Madrid",
+      "away": "PSV",
+      "score": [
+        5,
+        1
+      ]
+    },
+    {
+      "league": "ucl",
+      "date": "2026-11-25",
+      "home": "S. Bratislava",
+      "away": "Real Betis",
+      "score": [
+        0,
+        2
+      ]
+    }
+  ],
   "note": "Verified finals only. No guessing; upstream timestamps and scheduling can lag. League standings are derived from the local finished-match calendar."
 }
