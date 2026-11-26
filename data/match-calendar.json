@@ -16605,13 +16605,25 @@
       "league": "ucl",
       "home": "Sabah",
       "away": "Barcelona",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Sabah",
       "homeTeamLeague": "ucl",
       "awayTeam": "FC Barcelona",
       "awayTeamLeague": "laliga",
-      "awayCrest": 81
+      "awayCrest": 81,
+      "score": [
+        1,
+        4
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16619,13 +16631,25 @@
       "league": "ucl",
       "home": "Slavia Praha",
       "away": "Villarreal",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Slavia Praha",
       "homeTeamLeague": "ucl",
       "awayTeam": "Villarreal CF",
       "awayTeamLeague": "laliga",
-      "awayCrest": 94
+      "awayCrest": 94,
+      "score": [
+        0,
+        1
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16633,13 +16657,25 @@
       "league": "ucl",
       "home": "Atleti",
       "away": "Viking",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Atlético de Madrid",
       "homeTeamLeague": "laliga",
       "homeCrest": 78,
       "awayTeam": "Viking",
-      "awayTeamLeague": "ucl"
+      "awayTeamLeague": "ucl",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16650,10 +16686,22 @@
       "awayTeam": "Liverpool",
       "awayTeamLeague": "epl",
       "awayCrest": 64,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Club Brugge",
-      "homeTeamLeague": "ucl"
+      "homeTeamLeague": "ucl",
+      "score": [
+        0,
+        3
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16667,8 +16715,20 @@
       "awayTeam": "Stuttgart",
       "awayTeamLeague": "bundesliga",
       "awayCrest": 10,
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16679,11 +16739,23 @@
       "homeTeam": "Lille",
       "homeTeamLeague": "ligue1",
       "homeCrest": 521,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "awayTeam": "Bayern München",
       "awayTeamLeague": "bundesliga",
-      "awayCrest": 5
+      "awayCrest": 5,
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16694,11 +16766,23 @@
       "awayTeam": "Roma",
       "awayTeamLeague": "seriea",
       "awayCrest": 100,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Paris Saint-Germain",
       "homeTeamLeague": "ligue1",
-      "homeCrest": 524
+      "homeCrest": 524,
+      "score": [
+        2,
+        2
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16706,12 +16790,24 @@
       "league": "ucl",
       "home": "Shakhtar",
       "away": "Fenerbahçe",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Shakhtar",
       "homeTeamLeague": "ucl",
       "awayTeam": "Fenerbahçe",
-      "awayTeamLeague": "ucl"
+      "awayTeamLeague": "ucl",
+      "score": [
+        0,
+        1
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16722,10 +16818,22 @@
       "awayTeam": "Manchester United",
       "awayTeamLeague": "epl",
       "awayCrest": 66,
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeTeam": "Sporting CP",
-      "homeTeamLeague": "ucl"
+      "homeTeamLeague": "ucl",
+      "score": [
+        2,
+        2
+      ],
+      "scoreSource": "UEFA official; Guardian cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--champions-league-league-phase-fixtures-and-results/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16733,8 +16841,20 @@
       "league": "championship",
       "home": "Bolton Wanderers",
       "away": "West Bromwich Albion",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        1,
+        3
+      ],
+      "scoreSource": "RTÉ; Football Web Pages cross-check",
+      "scoreSourceUrl": "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+      "scoreSourceUrls": [
+        "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+        "https://www.footballwebpages.co.uk/essex-senior-league/essex-senior-league/fixtures-results/championship",
+        "https://www.footballwebpages.co.uk/national-league/national-league/fixtures-results/championship"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16742,8 +16862,20 @@
       "league": "championship",
       "home": "Burnley",
       "away": "Birmingham City",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        0,
+        2
+      ],
+      "scoreSource": "RTÉ; Football Web Pages cross-check",
+      "scoreSourceUrl": "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+      "scoreSourceUrls": [
+        "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+        "https://www.footballwebpages.co.uk/essex-senior-league/essex-senior-league/fixtures-results/championship",
+        "https://www.footballwebpages.co.uk/national-league/national-league/fixtures-results/championship"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16751,8 +16883,20 @@
       "league": "championship",
       "home": "Watford",
       "away": "Blackburn Rovers",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        0,
+        1
+      ],
+      "scoreSource": "RTÉ; Football Web Pages cross-check",
+      "scoreSourceUrl": "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+      "scoreSourceUrls": [
+        "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+        "https://www.footballwebpages.co.uk/essex-senior-league/essex-senior-league/fixtures-results/championship",
+        "https://www.footballwebpages.co.uk/national-league/national-league/fixtures-results/championship"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-26",
@@ -16760,8 +16904,20 @@
       "league": "championship",
       "home": "Stoke City",
       "away": "Millwall",
-      "status": "scheduled",
-      "round": "17"
+      "status": "finished",
+      "round": "17",
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "RTÉ; Football Web Pages cross-check",
+      "scoreSourceUrl": "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+      "scoreSourceUrls": [
+        "https://www.rte.ie/sport/results/soccer/championship/38070/results/",
+        "https://www.footballwebpages.co.uk/essex-senior-league/essex-senior-league/fixtures-results/championship",
+        "https://www.footballwebpages.co.uk/national-league/national-league/fixtures-results/championship"
+      ],
+      "scoreVerifiedAtKst": "2026-11-26T09:00:09+09:00"
     },
     {
       "date": "2026-11-27",
@@ -40006,7 +40162,7 @@
       "round": "38"
     }
   ],
-  "verifiedAtKst": "2026-11-25T17:35:44+09:00",
+  "verifiedAtKst": "2026-11-26T09:00:09+09:00",
   "verification": {
     "type": "compared-upstream-result-and-fixture-counts",
     "source": "open-matchday",
@@ -40018,5 +40174,5 @@
     "supplementalSourceUrl": "https://www.livescores.com/football/2026-11-22/?tz=2",
     "supplementalVerifiedAtKst": "2026-11-23T13:18:35+09:00"
   },
-  "providerNotes": "Daily verified scores imported from open-matchday (09:00 KST GitHub Actions). Completed existing scores are never overwritten."
+  "providerNotes": "Verified finals from open-matchday and supplementary official/independent sources; existing final scores are not overwritten."
 }

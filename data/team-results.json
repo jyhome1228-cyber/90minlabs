@@ -8,9 +8,21 @@
       "team": "Arsenal",
       "league": "epl",
       "matchName": "Arsenal",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Arsenal",
+          "away": "B. Dortmund",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Newcastle",
@@ -206,9 +218,21 @@
       "team": "Manchester City",
       "league": "epl",
       "matchName": "Man City",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Man City",
+          "away": "Napoli",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Man City",
@@ -305,9 +329,21 @@
       "team": "Liverpool",
       "league": "epl",
       "matchName": "Liverpool",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Club Brugge",
+          "away": "Liverpool",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Liverpool",
@@ -1102,9 +1138,21 @@
       "team": "Aston Villa",
       "league": "epl",
       "matchName": "Aston Villa",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Galatasaray",
+          "away": "Aston Villa",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Aston Villa",
@@ -1795,9 +1843,21 @@
       "team": "Manchester United",
       "league": "epl",
       "matchName": "Man Utd",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Sporting CP",
+          "away": "Man Utd",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Liverpool",
@@ -2095,9 +2155,21 @@
       "team": "Roma",
       "league": "seriea",
       "matchName": "Roma",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Paris",
+          "away": "Roma",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Parma",
@@ -2194,9 +2266,21 @@
       "team": "Inter",
       "league": "seriea",
       "matchName": "Internazionale",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Inter",
+          "away": "Stuttgart",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Atalanta",
@@ -2398,9 +2482,21 @@
       "team": "Como",
       "league": "seriea",
       "matchName": "Como",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Como",
+          "away": "AEK Athens",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Como",
@@ -2698,9 +2794,21 @@
       "team": "Napoli",
       "league": "seriea",
       "matchName": "Napoli",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Man City",
+          "away": "Napoli",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Napoli",
@@ -3990,9 +4098,21 @@
       "team": "Borussia Dortmund",
       "league": "bundesliga",
       "matchName": "Borussia Dortmund",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Arsenal",
+          "away": "B. Dortmund",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Borussia Mönchengladbach",
@@ -4089,9 +4209,21 @@
       "team": "Bayern München",
       "league": "bundesliga",
       "matchName": "FC Bayern München",
-      "lastMatchDate": "2026-11-20",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Lille",
+          "away": "Bayern München",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-20",
           "home": "FC Bayern München",
@@ -4287,9 +4419,21 @@
       "team": "RB Leipzig",
       "league": "bundesliga",
       "matchName": "RB Leipzig",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Leipzig",
+          "away": "Lens",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "1. FC Union Berlin",
@@ -4686,9 +4830,21 @@
       "team": "Stuttgart",
       "league": "bundesliga",
       "matchName": "VfB Stuttgart",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Inter",
+          "away": "Stuttgart",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "FC Schalke 04",
@@ -5778,9 +5934,21 @@
       "team": "Paris Saint-Germain",
       "league": "ligue1",
       "matchName": "Paris Saint-Germain",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Paris",
+          "away": "Roma",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "OGC Nice",
@@ -5976,9 +6144,21 @@
       "team": "Lille",
       "league": "ligue1",
       "matchName": "LOSC Lille",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Lille",
+          "away": "Bayern München",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "LOSC Lille",
@@ -6777,9 +6957,21 @@
       "team": "Lens",
       "league": "ligue1",
       "matchName": "RC Lens",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Leipzig",
+          "away": "Lens",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "RC Lens",
@@ -7671,9 +7863,21 @@
       "team": "Atlético de Madrid",
       "league": "laliga",
       "matchName": "Atlético de Madrid",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Atleti",
+          "away": "Viking",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Getafe CF",
@@ -8173,9 +8377,21 @@
       "team": "FC Barcelona",
       "league": "laliga",
       "matchName": "FC Barcelona",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Sabah",
+          "away": "Barcelona",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "FC Barcelona",
@@ -8975,9 +9191,21 @@
       "team": "Real Betis",
       "league": "laliga",
       "matchName": "Real Betis",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "S. Bratislava",
+          "away": "Real Betis",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Sevilla FC",
@@ -9074,9 +9302,21 @@
       "team": "Real Madrid",
       "league": "laliga",
       "matchName": "Real Madrid",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Real Madrid",
+          "away": "PSV",
+          "homeScore": 5,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Real Madrid",
@@ -9473,9 +9713,21 @@
       "team": "Villarreal CF",
       "league": "laliga",
       "matchName": "Villarreal CF",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Slavia Praha",
+          "away": "Villarreal",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "FC Barcelona",
@@ -9572,9 +9824,21 @@
       "team": "AEK Athens",
       "league": "ucl",
       "matchName": "AEK Athens",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Como",
+          "away": "AEK Athens",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Kalamata",
@@ -9691,9 +9955,21 @@
       "team": "Bodø/Glimt",
       "league": "ucl",
       "matchName": "Bodø/Glimt",
-      "lastMatchDate": "2026-11-20",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Bodø/Glimt",
+          "away": "LASK",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-20",
           "home": "Molde",
@@ -9810,9 +10086,21 @@
       "team": "Club Brugge",
       "league": "ucl",
       "matchName": "Club Brugge",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Club Brugge",
+          "away": "Liverpool",
+          "homeScore": 0,
+          "awayScore": 3,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "KV Mechelen",
@@ -9929,9 +10217,21 @@
       "team": "Fenerbahçe",
       "league": "ucl",
       "matchName": "Fenerbahçe",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Shakhtar",
+          "away": "Fenerbahçe",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Kocaelispor",
@@ -10048,9 +10348,21 @@
       "team": "Feyenoord",
       "league": "ucl",
       "matchName": "Feyenoord",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Feyenoord",
+          "away": "Porto",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Feyenoord",
@@ -10167,9 +10479,21 @@
       "team": "Galatasaray",
       "league": "ucl",
       "matchName": "Galatasaray",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Galatasaray",
+          "away": "Aston Villa",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Galatasaray",
@@ -10286,9 +10610,21 @@
       "team": "LASK",
       "league": "ucl",
       "matchName": "LASK",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Bodø/Glimt",
+          "away": "LASK",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "LASK",
@@ -10405,9 +10741,21 @@
       "team": "PSV",
       "league": "ucl",
       "matchName": "PSV",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Real Madrid",
+          "away": "PSV",
+          "homeScore": 5,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "N.E.C. Nijmegen",
@@ -10524,9 +10872,21 @@
       "team": "Porto",
       "league": "ucl",
       "matchName": "Porto",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "Feyenoord",
+          "away": "Porto",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Vitória SC",
@@ -10643,9 +11003,21 @@
       "team": "S. Bratislava",
       "league": "ucl",
       "matchName": "S. Bratislava",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-24",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-24",
+          "home": "S. Bratislava",
+          "away": "Real Betis",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "open-matchday",
+          "verificationUrl": "https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/UEFA_1_champions-league/results_2627.csv",
+          "verifiedAtKst": "2026-11-25T17:35:44+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Ruzomberok",
@@ -10762,9 +11134,21 @@
       "team": "Sabah",
       "league": "ucl",
       "matchName": "Sabah",
-      "lastMatchDate": "2026-11-04",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_champions-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Sabah",
+          "away": "Barcelona",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-04",
           "home": "Viking",
@@ -10807,9 +11191,21 @@
       "team": "Shakhtar",
       "league": "ucl",
       "matchName": "Shakhtar",
-      "lastMatchDate": "2026-11-20",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Shakhtar",
+          "away": "Fenerbahçe",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-20",
           "home": "Shakhtar",
@@ -10926,9 +11322,21 @@
       "team": "Slavia Praha",
       "league": "ucl",
       "matchName": "Slavia Praha",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Slavia Praha",
+          "away": "Villarreal",
+          "homeScore": 0,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Sigma Olomouc",
@@ -11045,9 +11453,21 @@
       "team": "Sporting CP",
       "league": "ucl",
       "matchName": "Sporting CP",
-      "lastMatchDate": "2026-11-07",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Sporting CP",
+          "away": "Man Utd",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-07",
           "home": "Sporting CP",
@@ -11164,9 +11584,21 @@
       "team": "Viking",
       "league": "ucl",
       "matchName": "Viking",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-25",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-25",
+          "home": "Atleti",
+          "away": "Viking",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UCL",
+          "provider": "UEFA official; Guardian cross-check",
+          "verificationUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-26T09:00:09+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Tromso",
@@ -16702,7 +17134,7 @@
     }
   },
   "notes": "2026/27 시즌 국내 리그 최근 10경기 스냅샷. 한국시간 2026-11-23 종료 9경기의 양 팀(총 18개 구단)은 LiveScore/Football Web Pages로 검증한 결과를 우선 사용하며, 나머지는 기존 open-matchday 데이터를 사용. 유럽대항전 별도 프로필은 검증 가능한 경기만 표기.",
-  "supplementalVerifiedAtKst": "2026-11-24T09:24:17+09:00",
-  "supplementalSourceUrl": "https://www.livescores.com/football/2026-11-22/?tz=2",
+  "supplementalVerifiedAtKst": "2026-11-26T09:00:09+09:00",
+  "supplementalSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
   "lastAutoSyncAtKst": "2026-11-25T17:35:44+09:00"
 }
