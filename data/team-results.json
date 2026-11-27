@@ -119,9 +119,21 @@
       "team": "Brighton",
       "league": "epl",
       "matchName": "Brighton",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Brighton",
+          "away": "U. Craiova",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Hull",
@@ -201,15 +213,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "Chelsea",
-          "away": "Brighton",
-          "homeScore": 4,
-          "awayScore": 3,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -443,9 +446,21 @@
       "team": "Bournemouth",
       "league": "epl",
       "matchName": "Bournemouth",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Celta",
+          "away": "Bournemouth",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Bournemouth",
@@ -525,15 +540,6 @@
           "homeScore": 2,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Bournemouth",
-          "away": "Everton",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -1744,9 +1750,21 @@
       "team": "Sunderland",
       "league": "epl",
       "matchName": "Sunderland",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Sunderland",
+          "away": "Jagiellonia",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Aston Villa",
@@ -1826,15 +1844,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "Sunderland",
-          "away": "Fulham",
-          "homeScore": 1,
-          "awayScore": 0,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -1957,9 +1966,21 @@
       "team": "Crystal Palace",
       "league": "epl",
       "matchName": "Crystal Palace",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Crystal Palace",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Coventry",
@@ -2039,15 +2060,6 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-28",
-          "home": "Crystal Palace",
-          "away": "Man City",
-          "homeScore": 1,
-          "awayScore": 4,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -2380,9 +2392,21 @@
       "team": "Milan",
       "league": "seriea",
       "matchName": "Milan",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Olympiacos",
+          "away": "Milan",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Milan",
@@ -2463,15 +2487,6 @@
           "homeScore": 2,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-06",
-          "home": "Juventus",
-          "away": "Milan",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "3",
           "provider": "fixturedl"
         }
       ],
@@ -2593,9 +2608,21 @@
       "team": "Juventus",
       "league": "seriea",
       "matchName": "Juventus",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Juventus",
+          "away": "Omonia",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Juventus",
@@ -2675,15 +2702,6 @@
           "homeScore": 3,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-06",
-          "home": "Juventus",
-          "away": "Milan",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "3",
           "provider": "fixturedl"
         }
       ]
@@ -3202,9 +3220,21 @@
       "team": "Atalanta",
       "league": "seriea",
       "matchName": "Atalanta",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Borac",
+          "away": "Atalanta",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official; Atalanta official cross-check",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Atalanta",
@@ -3285,15 +3315,6 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-05",
-          "home": "Roma",
-          "away": "Atalanta",
-          "homeScore": 2,
-          "awayScore": 1,
-          "round": "3",
           "provider": "fixturedl"
         }
       ],
@@ -4320,9 +4341,21 @@
       "team": "Freiburg",
       "league": "bundesliga",
       "matchName": "SC Freiburg",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Freiburg",
+          "away": "Twente",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "SV 07 Elversberg",
@@ -4402,15 +4435,6 @@
           "homeScore": 0,
           "awayScore": 1,
           "round": "2",
-          "provider": "openligadb"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "SC Freiburg",
-          "away": "SV Werder Bremen",
-          "homeScore": 4,
-          "awayScore": 1,
-          "round": "1",
           "provider": "openligadb"
         }
       ]
@@ -4530,9 +4554,21 @@
       "team": "Bayer Leverkusen",
       "league": "bundesliga",
       "matchName": "Bayer 04 Leverkusen",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "GNK Dinamo",
+          "away": "Leverkusen",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Bayer 04 Leverkusen",
@@ -4612,15 +4648,6 @@
           "homeScore": 4,
           "awayScore": 0,
           "round": "2",
-          "provider": "openligadb"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "SV 07 Elversberg",
-          "away": "Bayer 04 Leverkusen",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "1",
           "provider": "openligadb"
         }
       ]
@@ -5139,9 +5166,21 @@
       "team": "Hoffenheim",
       "league": "bundesliga",
       "matchName": "TSG Hoffenheim",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Hoffenheim",
+          "away": "Sturm Graz",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Eintracht Frankfurt",
@@ -5221,15 +5260,6 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "2",
-          "provider": "openligadb"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "1. FC Köln",
-          "away": "TSG Hoffenheim",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "1",
           "provider": "openligadb"
         }
       ]
@@ -6255,9 +6285,21 @@
       "team": "Lyon",
       "league": "ligue1",
       "matchName": "Olympique Lyonnais",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Lyon",
+          "away": "Lillestrøm",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "LOSC Lille",
@@ -6338,15 +6380,6 @@
           "awayScore": 1,
           "round": "3",
           "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Olympique Lyonnais",
-          "away": "Havre Athletic Club",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "2",
-          "provider": "fixturedl"
         }
       ]
     },
@@ -6354,9 +6387,21 @@
       "team": "Marseille",
       "league": "ligue1",
       "matchName": "Olympique de Marseille",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Marseille",
+          "away": "Levski Sofia",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Olympique de Marseille",
@@ -6437,15 +6482,6 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "AS Monaco",
-          "away": "Olympique de Marseille",
-          "homeScore": 2,
-          "awayScore": 0,
-          "round": "2",
           "provider": "fixturedl"
         }
       ],
@@ -6654,9 +6690,21 @@
       "team": "Monaco",
       "league": "ligue1",
       "matchName": "AS Monaco",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Hearts",
+          "away": "Monaco",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "AS Monaco",
@@ -6737,15 +6785,6 @@
           "awayScore": 2,
           "round": "3",
           "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "AS Monaco",
-          "away": "Olympique de Marseille",
-          "homeScore": 2,
-          "awayScore": 0,
-          "round": "2",
-          "provider": "fixturedl"
         }
       ]
     },
@@ -6753,9 +6792,21 @@
       "team": "Rennes",
       "league": "ligue1",
       "matchName": "Stade Rennais FC",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "N.E.C.",
+          "away": "Rennes",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "FC Lorient",
@@ -6836,15 +6887,6 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "Stade Rennais FC",
-          "away": "Le Mans FC",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "2",
           "provider": "fixturedl"
         }
       ],
@@ -8079,9 +8121,21 @@
       "team": "Celta",
       "league": "laliga",
       "matchName": "Celta",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Celta",
+          "away": "Bournemouth",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Real Madrid",
@@ -8161,15 +8215,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-03",
-          "home": "Real Sociedad",
-          "away": "Celta",
-          "homeScore": 0,
-          "awayScore": 0,
-          "round": "6",
           "provider": "fixturedl"
         }
       ]
@@ -8488,9 +8533,21 @@
       "team": "Getafe CF",
       "league": "laliga",
       "matchName": "Getafe CF",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Iberia Tbilisi",
+          "away": "Getafe",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Getafe CF",
@@ -8571,15 +8628,6 @@
           "homeScore": 1,
           "awayScore": 1,
           "round": "5",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-07",
-          "home": "Getafe CF",
-          "away": "Celta",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "4",
           "provider": "fixturedl"
         }
       ],
@@ -9413,9 +9461,21 @@
       "team": "Real Sociedad",
       "league": "laliga",
       "matchName": "Real Sociedad",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Crystal Palace",
+          "away": "Real Sociedad",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "R. Racing Club",
@@ -9496,15 +9556,6 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-03",
-          "home": "Real Sociedad",
-          "away": "Celta",
-          "homeScore": 0,
-          "awayScore": 0,
-          "round": "6",
           "provider": "fixturedl"
         }
       ],
@@ -11715,9 +11766,21 @@
       "team": "Benfica",
       "league": "uel",
       "matchName": "Benfica",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Viktoria Plzen",
+          "away": "Benfica",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Estrela Amadora",
@@ -11807,16 +11870,6 @@
           "round": "1",
           "provider": "fixturedl",
           "competition": "UEL"
-        },
-        {
-          "date": "2026-09-13",
-          "home": "Benfica",
-          "away": "Gil Vicente FC",
-          "homeScore": 3,
-          "awayScore": 1,
-          "round": "6",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -11834,9 +11887,21 @@
       "team": "Ferencváros",
       "league": "uel",
       "matchName": "Ferencváros",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Ferencváros",
+          "away": "Celje",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Milan",
@@ -11879,9 +11944,21 @@
       "team": "Union SG",
       "league": "uel",
       "matchName": "Union SG",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Union SG",
+          "away": "Lech Poznan",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "KV Kortrijk",
@@ -11971,16 +12048,6 @@
           "round": "7",
           "provider": "espn",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-17",
-          "home": "Viktoria Plzen",
-          "away": "Union SG",
-          "homeScore": 0,
-          "awayScore": 3,
-          "round": "1",
-          "provider": "fixturedl",
-          "competition": "UEL"
         }
       ],
       "sources": [
@@ -11998,9 +12065,21 @@
       "team": "Olympiacos",
       "league": "uel",
       "matchName": "Olympiacos",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Olympiacos",
+          "away": "Milan",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Olympiacos",
@@ -12090,16 +12169,6 @@
           "round": "5",
           "provider": "espn",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-16",
-          "home": "Olympiacos",
-          "away": "Jagiellonia",
-          "homeScore": 2,
-          "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl",
-          "competition": "UEL"
         }
       ],
       "sources": [
@@ -12117,9 +12186,21 @@
       "team": "Beşiktaş",
       "league": "uel",
       "matchName": "Beşiktaş",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Besiktas",
+          "away": "H. Beer-Sheva",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Konyaspor",
@@ -12209,16 +12290,6 @@
           "round": "7",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Amedspor",
-          "away": "Beşiktaş",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "6",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12236,9 +12307,21 @@
       "team": "GNK Dinamo",
       "league": "uel",
       "matchName": "GNK Dinamo",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "GNK Dinamo",
+          "away": "Leverkusen",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "GNK Dinamo",
@@ -12328,16 +12411,6 @@
           "round": "9",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "GNK Dinamo",
-          "away": "Lok. Zagreb",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "8",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12355,9 +12428,21 @@
       "team": "Levski Sofia",
       "league": "uel",
       "matchName": "Levski Sofia",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Marseille",
+          "away": "Levski Sofia",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Levski Sofia",
@@ -12400,9 +12485,21 @@
       "team": "N.E.C.",
       "league": "uel",
       "matchName": "N.E.C.",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "N.E.C.",
+          "away": "Rennes",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "N.E.C.",
@@ -12492,16 +12589,6 @@
           "round": "8",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "N.E.C.",
-          "away": "Go Ahead Eagles",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "7",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12519,9 +12606,21 @@
       "team": "AZ Alkmaar",
       "league": "uel",
       "matchName": "AZ Alkmaar",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Sparta Praha",
+          "away": "AZ Alkmaar",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Sparta Rotterdam",
@@ -12611,16 +12710,6 @@
           "round": "8",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "AZ Alkmaar",
-          "away": "Telstar",
-          "homeScore": 1,
-          "awayScore": 0,
-          "round": "7",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12638,9 +12727,21 @@
       "team": "Anderlecht",
       "league": "uel",
       "matchName": "Anderlecht",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "OFI Crete",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Club Brugge",
@@ -12730,16 +12831,6 @@
           "round": "1",
           "provider": "fixturedl",
           "competition": "UEL"
-        },
-        {
-          "date": "2026-09-11",
-          "home": "KV Mechelen",
-          "away": "Anderlecht",
-          "homeScore": 0,
-          "awayScore": 1,
-          "round": "6",
-          "provider": "espn",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12757,9 +12848,21 @@
       "team": "OFI Crete",
       "league": "uel",
       "matchName": "OFI Crete",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "OFI Crete",
+          "away": "Anderlecht",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Panathinaikos",
@@ -12849,16 +12952,6 @@
           "round": "6",
           "provider": "espn",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "OFI Crete",
-          "away": "Asteras Tripoli",
-          "homeScore": 2,
-          "awayScore": 2,
-          "round": "5",
-          "provider": "espn",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12876,9 +12969,21 @@
       "team": "Omonia",
       "league": "uel",
       "matchName": "Omonia",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Juventus",
+          "away": "Omonia",
+          "homeScore": 4,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Omonia",
@@ -12968,16 +13073,6 @@
           "round": "5",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Omonia",
-          "away": "Krasava",
-          "homeScore": 4,
-          "awayScore": 1,
-          "round": "4",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -12995,9 +13090,21 @@
       "team": "Torreense",
       "league": "uel",
       "matchName": "Torreense",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Torreense",
+          "away": "Celtic",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Torreense",
@@ -13040,9 +13147,21 @@
       "team": "Sparta Praha",
       "league": "uel",
       "matchName": "Sparta Praha",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Sparta Praha",
+          "away": "AZ Alkmaar",
+          "homeScore": 2,
+          "awayScore": 4,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Plzen",
@@ -13132,16 +13251,6 @@
           "round": "9",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "competition": "UEL",
-          "date": "2026-09-16",
-          "home": "Ararat-Armenia",
-          "away": "Sparta Praha",
-          "homeScore": 1,
-          "awayScore": 4,
-          "round": "1",
-          "provider": "fixturedl"
         }
       ],
       "sources": [
@@ -13159,9 +13268,21 @@
       "team": "Sturm Graz",
       "league": "uel",
       "matchName": "Sturm Graz",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Hoffenheim",
+          "away": "Sturm Graz",
+          "homeScore": 3,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Altach",
@@ -13251,16 +13372,6 @@
           "competition": "국내 리그",
           "round": "8",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Salzburg",
-          "away": "Sturm Graz",
-          "homeScore": 3,
-          "awayScore": 0,
-          "competition": "국내 리그",
-          "round": "7",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -13278,9 +13389,21 @@
       "team": "Celje",
       "league": "uel",
       "matchName": "Celje",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Ferencváros",
+          "away": "Celje",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Radomlje",
@@ -13370,16 +13493,6 @@
           "round": "10",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "competition": "UEL",
-          "date": "2026-09-16",
-          "home": "Leverkusen",
-          "away": "Celje",
-          "homeScore": 2,
-          "awayScore": 0,
-          "round": "1",
-          "provider": "fixturedl"
         }
       ],
       "sources": [
@@ -13397,9 +13510,21 @@
       "team": "Salzburg",
       "league": "uel",
       "matchName": "Salzburg",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Salzburg",
+          "away": "Ararat-Armenia",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Sturm Graz",
@@ -13489,16 +13614,6 @@
           "competition": "국내 리그",
           "round": "7",
           "provider": "soccerway"
-        },
-        {
-          "competition": "UEL",
-          "date": "2026-09-17",
-          "home": "Levski Sofia",
-          "away": "Salzburg",
-          "homeScore": 0,
-          "awayScore": 1,
-          "round": "1",
-          "provider": "fixturedl"
         }
       ],
       "sources": [
@@ -13516,9 +13631,21 @@
       "team": "Jagiellonia",
       "league": "uel",
       "matchName": "Jagiellonia",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Sunderland",
+          "away": "Jagiellonia",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Cracovia",
@@ -13608,16 +13735,6 @@
           "round": "10",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Jagiellonia",
-          "away": "Legia",
-          "homeScore": 1,
-          "awayScore": 3,
-          "round": "9",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -13635,9 +13752,21 @@
       "team": "Viktoria Plzeň",
       "league": "uel",
       "matchName": "Viktoria Plzeň",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Viktoria Plzen",
+          "away": "Benfica",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Bohemians",
@@ -13727,16 +13856,6 @@
           "round": "10",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Slavia Prague",
-          "away": "Viktoria Plzeň",
-          "homeScore": 2,
-          "awayScore": 1,
-          "round": "9",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -13754,9 +13873,21 @@
       "team": "Celtic",
       "league": "uel",
       "matchName": "Celtic",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Torreense",
+          "away": "Celtic",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Celtic",
@@ -13846,16 +13977,6 @@
           "round": "2",
           "provider": "fixturedl",
           "competition": "UEL"
-        },
-        {
-          "date": "2026-10-11",
-          "home": "Motherwell",
-          "away": "Celtic",
-          "homeScore": 0,
-          "awayScore": 2,
-          "round": "8",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -13873,9 +13994,21 @@
       "team": "H. Beer-Sheva",
       "league": "uel",
       "matchName": "H. Beer-Sheva",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Besiktas",
+          "away": "H. Beer-Sheva",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "H. Beer-Sheva",
@@ -13918,9 +14051,21 @@
       "team": "Lillestrøm",
       "league": "uel",
       "matchName": "Lillestrøm",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Lyon",
+          "away": "Lillestrøm",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Lillestrøm",
@@ -14010,16 +14155,6 @@
           "competition": "국내 리그",
           "round": "22",
           "provider": "soccerway"
-        },
-        {
-          "competition": "UEL",
-          "date": "2026-09-17",
-          "home": "Lillestrøm",
-          "away": "Torreense",
-          "homeScore": 1,
-          "awayScore": 2,
-          "round": "1",
-          "provider": "fixturedl"
         }
       ],
       "sources": [
@@ -14037,9 +14172,21 @@
       "team": "Lech Poznań",
       "league": "uel",
       "matchName": "Lech Poznań",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Union SG",
+          "away": "Lech Poznan",
+          "homeScore": 2,
+          "awayScore": 2,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "GKS Katowice",
@@ -14129,16 +14276,6 @@
           "round": "10",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Lech Poznań",
-          "away": "Radomiak Radom",
-          "homeScore": 5,
-          "awayScore": 1,
-          "round": "9",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -14156,9 +14293,21 @@
       "team": "Ararat-Armenia",
       "league": "uel",
       "matchName": "Ararat-Armenia",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_europa-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Salzburg",
+          "away": "Ararat-Armenia",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "5",
+          "competition": "UEL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Torreense",
@@ -14201,9 +14350,21 @@
       "team": "Lugano",
       "league": "uecl",
       "matchName": "Lugano",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Jablonec",
+          "away": "Lugano",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Lugano",
@@ -14293,16 +14454,6 @@
           "competition": "국내 리그",
           "round": "9",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-16",
-          "home": "Lugano",
-          "away": "St. Gallen",
-          "homeScore": 4,
-          "awayScore": 1,
-          "competition": "국내 리그",
-          "round": "4",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -14320,9 +14471,21 @@
       "team": "Panathinaikos",
       "league": "uecl",
       "matchName": "Panathinaikos",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Nordsjælland",
+          "away": "Panathinaikos",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Panathinaikos",
@@ -14412,16 +14575,6 @@
           "round": "6",
           "provider": "espn",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Kalamata",
-          "away": "Panathinaikos",
-          "homeScore": 0,
-          "awayScore": 1,
-          "round": "5",
-          "provider": "espn",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -14439,9 +14592,21 @@
       "team": "Twente",
       "league": "uecl",
       "matchName": "Twente",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Freiburg",
+          "away": "Twente",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Twente",
@@ -14531,16 +14696,6 @@
           "round": "8",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Twente",
-          "away": "PSV",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "7",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -14558,9 +14713,21 @@
       "team": "Brann",
       "league": "uecl",
       "matchName": "Brann",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Brann",
+          "away": "Aarhus",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Fredrikstad",
@@ -14650,16 +14817,6 @@
           "competition": "국내 리그",
           "round": "22",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-13",
-          "home": "Start",
-          "away": "Brann",
-          "homeScore": 2,
-          "awayScore": 0,
-          "competition": "국내 리그",
-          "round": "21",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -14677,9 +14834,21 @@
       "team": "Copenhagen",
       "league": "uecl",
       "matchName": "Copenhagen",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Inter Escaldes",
+          "away": "Copenhagen",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Copenhagen",
@@ -14769,16 +14938,6 @@
           "competition": "국내 리그",
           "round": "9",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-11",
-          "home": "Copenhagen",
-          "away": "Horsens",
-          "homeScore": 2,
-          "awayScore": 0,
-          "competition": "국내 리그",
-          "round": "8",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -14796,9 +14955,21 @@
       "team": "Univ. Craiova",
       "league": "uecl",
       "matchName": "Univ. Craiova",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Brighton",
+          "away": "U. Craiova",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "UTA Arad",
@@ -14888,16 +15059,6 @@
           "competition": "국내 리그",
           "round": "11",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-19",
-          "home": "Univ. Craiova",
-          "away": "FCSB",
-          "homeScore": 5,
-          "awayScore": 0,
-          "competition": "국내 리그",
-          "round": "10",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -14915,9 +15076,21 @@
       "team": "Mjällby",
       "league": "uecl",
       "matchName": "Mjällby",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Kairat Almaty",
+          "away": "Mjällby",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Mjällby",
@@ -15007,16 +15180,6 @@
           "awayScore": 0,
           "round": "1",
           "provider": "fixturedl"
-        },
-        {
-          "date": "2026-10-10",
-          "home": "Mjällby",
-          "away": "Degerfors",
-          "homeScore": 1,
-          "awayScore": 1,
-          "competition": "국내 리그",
-          "round": "23",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -15034,9 +15197,21 @@
       "team": "Sint-Truidense",
       "league": "uecl",
       "matchName": "Sint-Truidense",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Hajduk Split",
+          "away": "Sint-Truidense",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Royal Charleroi SC",
@@ -15126,16 +15301,6 @@
           "round": "7",
           "provider": "espn",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-12",
-          "home": "Waasland-Beveren",
-          "away": "Sint-Truidense",
-          "homeScore": 2,
-          "awayScore": 0,
-          "round": "6",
-          "provider": "espn",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -15153,9 +15318,21 @@
       "team": "Ajax",
       "league": "uecl",
       "matchName": "Ajax",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Ajax",
+          "away": "Thun",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Ajax",
@@ -15245,16 +15422,6 @@
           "round": "8",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-19",
-          "home": "Ajax",
-          "away": "Excelsior Rotterdam",
-          "homeScore": 2,
-          "awayScore": 2,
-          "round": "7",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -15272,9 +15439,21 @@
       "team": "Trabzonspor",
       "league": "uecl",
       "matchName": "Trabzonspor",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "CSKA Sofia",
+          "away": "Trabzonspor",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Alanyaspor",
@@ -15364,16 +15543,6 @@
           "round": "6",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-12",
-          "home": "Konyaspor",
-          "away": "Trabzonspor",
-          "homeScore": 1,
-          "awayScore": 0,
-          "round": "5",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -15391,9 +15560,21 @@
       "team": "Hajduk Split",
       "league": "uecl",
       "matchName": "Hajduk Split",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Hajduk Split",
+          "away": "Sint-Truidense",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Lok. Zagreb",
@@ -15483,16 +15664,6 @@
           "round": "9",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Rijeka",
-          "away": "Hajduk Split",
-          "homeScore": 3,
-          "awayScore": 0,
-          "round": "8",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -15510,9 +15681,21 @@
       "team": "Crvena Zvezda",
       "league": "uecl",
       "matchName": "Crvena Zvezda",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Gent",
+          "away": "Crvena Zvezda",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Crvena Zvezda",
@@ -15546,9 +15729,21 @@
       "team": "Braga",
       "league": "uecl",
       "matchName": "Braga",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Braga",
+          "away": "KuPS Kuopio",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Rio Ave FC",
@@ -15638,16 +15833,6 @@
           "round": "7",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-14",
-          "home": "Braga",
-          "away": "Estoril Praia",
-          "homeScore": 1,
-          "awayScore": 0,
-          "round": "6",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -15665,9 +15850,21 @@
       "team": "Gent",
       "league": "uecl",
       "matchName": "Gent",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Gent",
+          "away": "Crvena Zvezda",
+          "homeScore": 1,
+          "awayScore": 1,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Waasland-Beveren",
@@ -15757,16 +15954,6 @@
           "round": "7",
           "provider": "espn",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-13",
-          "home": "Racing Genk",
-          "away": "Gent",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "6",
-          "provider": "espn",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -15784,9 +15971,21 @@
       "team": "Riga",
       "league": "uecl",
       "matchName": "Riga",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Kauno Žalgiris",
+          "away": "Riga",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Riga",
@@ -15820,9 +16019,21 @@
       "team": "Thun",
       "league": "uecl",
       "matchName": "Thun",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Ajax",
+          "away": "Thun",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Young Boys",
@@ -15912,16 +16123,6 @@
           "competition": "국내 리그",
           "round": "9",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-16",
-          "home": "Thun",
-          "away": "Servette",
-          "homeScore": 2,
-          "awayScore": 4,
-          "competition": "국내 리그",
-          "round": "4",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -15939,9 +16140,21 @@
       "team": "Borac",
       "league": "uecl",
       "matchName": "Borac",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Borac",
+          "away": "Atalanta",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official; Atalanta official cross-check",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Mjällby",
@@ -15975,9 +16188,21 @@
       "team": "L. Red Imps",
       "league": "uecl",
       "matchName": "L. Red Imps",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Egnatia",
+          "away": "L. Red Imps",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "L. Red Imps",
@@ -16011,9 +16236,21 @@
       "team": "Jablonec",
       "league": "uecl",
       "matchName": "Jablonec",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Jablonec",
+          "away": "Lugano",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Artis Brno",
@@ -16103,16 +16340,6 @@
           "round": "10",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Jablonec",
-          "away": "Zlin",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "9",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -16130,9 +16357,21 @@
       "team": "Aarhus",
       "league": "uecl",
       "matchName": "Aarhus",
-      "lastMatchDate": "2026-11-20",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Brann",
+          "away": "Aarhus",
+          "homeScore": 1,
+          "awayScore": 4,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-20",
           "home": "Aarhus",
@@ -16222,16 +16461,6 @@
           "competition": "국내 리그",
           "round": "10",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-20",
-          "home": "Horsens",
-          "away": "Aarhus",
-          "homeScore": 2,
-          "awayScore": 2,
-          "competition": "국내 리그",
-          "round": "9",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -16249,9 +16478,21 @@
       "team": "Nordsjælland",
       "league": "uecl",
       "matchName": "Nordsjælland",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Nordsjælland",
+          "away": "Panathinaikos",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Randers FC",
@@ -16341,16 +16582,6 @@
           "competition": "국내 리그",
           "round": "9",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-13",
-          "home": "Nordsjælland",
-          "away": "Aarhus",
-          "homeScore": 2,
-          "awayScore": 0,
-          "competition": "국내 리그",
-          "round": "8",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -16368,9 +16599,21 @@
       "team": "Egnatia",
       "league": "uecl",
       "matchName": "Egnatia",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Egnatia",
+          "away": "L. Red Imps",
+          "homeScore": 2,
+          "awayScore": 1,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "U. Craiova",
@@ -16404,9 +16647,21 @@
       "team": "Kairat Almaty",
       "league": "uecl",
       "matchName": "Kairat Almaty",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Kairat Almaty",
+          "away": "Mjällby",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "competition": "UECL",
           "date": "2026-11-05",
@@ -16496,16 +16751,6 @@
           "round": "26",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-09",
-          "home": "Kairat Almaty",
-          "away": "Zhenis",
-          "homeScore": 3,
-          "awayScore": 0,
-          "round": "21",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -16523,9 +16768,21 @@
       "team": "CSKA Sofia",
       "league": "uecl",
       "matchName": "CSKA Sofia",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "CSKA Sofia",
+          "away": "Trabzonspor",
+          "homeScore": 1,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Panathinaikos",
@@ -16559,9 +16816,21 @@
       "team": "Iberia Tbilisi",
       "league": "uecl",
       "matchName": "Iberia Tbilisi",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Iberia Tbilisi",
+          "away": "Getafe",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Copenhagen",
@@ -16595,9 +16864,21 @@
       "team": "Pafos",
       "league": "uecl",
       "matchName": "Pafos",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Pafos",
+          "away": "Midtjylland",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Omonia Aradippou",
@@ -16687,16 +16968,6 @@
           "round": "5",
           "provider": "soccerway",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-18",
-          "home": "Pafos",
-          "away": "AEL Limassol",
-          "homeScore": 0,
-          "awayScore": 2,
-          "round": "4",
-          "provider": "soccerway",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -16714,9 +16985,21 @@
       "team": "Hearts",
       "league": "uecl",
       "matchName": "Hearts",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Hearts",
+          "away": "Monaco",
+          "homeScore": 2,
+          "awayScore": 3,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Dundee",
@@ -16806,16 +17089,6 @@
           "round": "8",
           "provider": "fixturedl",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-09-19",
-          "home": "Kilmarnock",
-          "away": "Hearts",
-          "homeScore": 1,
-          "awayScore": 1,
-          "round": "7",
-          "provider": "fixturedl",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -16833,9 +17106,21 @@
       "team": "KuPS Kuopio",
       "league": "uecl",
       "matchName": "KuPS Kuopio",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Braga",
+          "away": "KuPS Kuopio",
+          "homeScore": 4,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "KuPS Kuopio",
@@ -16919,15 +17204,6 @@
           "awayScore": 0,
           "round": "27",
           "competition": "국내 리그"
-        },
-        {
-          "date": "2026-10-08",
-          "home": "KuPS Kuopio",
-          "away": "AC Oulu",
-          "homeScore": 0,
-          "awayScore": 1,
-          "round": "26",
-          "competition": "국내 리그"
         }
       ],
       "sources": [
@@ -16945,9 +17221,21 @@
       "team": "Midtjylland",
       "league": "uecl",
       "matchName": "Midtjylland",
-      "lastMatchDate": "2026-11-08",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Pafos",
+          "away": "Midtjylland",
+          "homeScore": 0,
+          "awayScore": 2,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-08",
           "home": "Midtjylland",
@@ -17037,16 +17325,6 @@
           "competition": "국내 리그",
           "round": "9",
           "provider": "soccerway"
-        },
-        {
-          "date": "2026-09-14",
-          "home": "Midtjylland",
-          "away": "Brondby",
-          "homeScore": 4,
-          "awayScore": 1,
-          "competition": "국내 리그",
-          "round": "8",
-          "provider": "soccerway"
         }
       ],
       "sources": [
@@ -17064,9 +17342,21 @@
       "team": "Inter Escaldes",
       "league": "uecl",
       "matchName": "Inter Escaldes",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Inter Escaldes",
+          "away": "Copenhagen",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Crvena Zvezda",
@@ -17100,9 +17390,21 @@
       "team": "Kauno Žalgiris",
       "league": "uecl",
       "matchName": "Kauno Žalgiris",
-      "lastMatchDate": "2026-11-05",
+      "lastMatchDate": "2026-11-26",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/UEFA_1_conference-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-26",
+          "home": "Kauno Žalgiris",
+          "away": "Riga",
+          "homeScore": 2,
+          "awayScore": 0,
+          "round": "4",
+          "competition": "UECL",
+          "provider": "UEFA official",
+          "verificationUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+          "verifiedAtKst": "2026-11-27T08:59:18+09:00"
+        },
         {
           "date": "2026-11-05",
           "home": "Lugano",
@@ -17134,7 +17436,7 @@
     }
   },
   "notes": "2026/27 시즌 국내 리그 최근 10경기 스냅샷. 한국시간 2026-11-23 종료 9경기의 양 팀(총 18개 구단)은 LiveScore/Football Web Pages로 검증한 결과를 우선 사용하며, 나머지는 기존 open-matchday 데이터를 사용. 유럽대항전 별도 프로필은 검증 가능한 경기만 표기.",
-  "supplementalVerifiedAtKst": "2026-11-26T09:00:09+09:00",
-  "supplementalSourceUrl": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+  "supplementalVerifiedAtKst": "2026-11-27T08:59:18+09:00",
+  "supplementalSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
   "lastAutoSyncAtKst": "2026-11-25T17:35:44+09:00"
 }

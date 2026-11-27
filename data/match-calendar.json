@@ -16929,8 +16929,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Mjällby",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -16942,8 +16953,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Thun",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        4,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -16955,8 +16977,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Aarhus",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        1,
+        4
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -16968,9 +17001,20 @@
       "homeTeamLeague": "epl",
       "awayTeam": "Univ. Craiova",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
+      "status": "finished",
       "round": "4",
-      "homeCrest": 397
+      "homeCrest": 397,
+      "score": [
+        4,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -16982,8 +17026,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "L. Red Imps",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -16995,9 +17050,20 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Monaco",
       "awayTeamLeague": "ligue1",
-      "status": "scheduled",
+      "status": "finished",
       "round": "4",
-      "awayCrest": 548
+      "awayCrest": 548,
+      "score": [
+        2,
+        3
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17009,9 +17075,20 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Getafe CF",
       "awayTeamLeague": "laliga",
-      "status": "scheduled",
+      "status": "finished",
       "round": "4",
-      "awayCrest": 82
+      "awayCrest": 82,
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17023,8 +17100,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Lugano",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17036,8 +17124,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Riga",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17049,8 +17148,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Midtjylland",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        0,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17062,8 +17172,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "H. Beer-Sheva",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17075,10 +17197,22 @@
       "homeTeamLeague": "laliga",
       "awayTeam": "Bournemouth",
       "awayTeamLeague": "epl",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeCrest": 558,
-      "awayCrest": 1044
+      "awayCrest": 1044,
+      "score": [
+        1,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17090,9 +17224,21 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Bayer Leverkusen",
       "awayTeamLeague": "bundesliga",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "awayCrest": 3
+      "awayCrest": 3,
+      "score": [
+        0,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17104,9 +17250,21 @@
       "homeTeamLeague": "ligue1",
       "awayTeam": "Levski Sofia",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "homeCrest": 516
+      "homeCrest": 516,
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17118,9 +17276,21 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Milan",
       "awayTeamLeague": "seriea",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "awayCrest": 98
+      "awayCrest": 98,
+      "score": [
+        2,
+        4
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17132,8 +17302,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Ararat-Armenia",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17145,8 +17327,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Lech Poznań",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        2,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17158,8 +17352,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Benfica",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        4,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17171,9 +17377,21 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Atalanta",
       "awayTeamLeague": "seriea",
-      "status": "scheduled",
+      "status": "finished",
       "round": "4",
-      "awayCrest": 102
+      "awayCrest": 102,
+      "score": [
+        2,
+        3
+      ],
+      "scoreSource": "UEFA official; Atalanta official cross-check",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://en.atalanta.it/news/comeback-fever-strikes-again-atalanta-snatch-3-2-win-in-banja-luka",
+        "https://www.sofascore.com/news/atalanta-score-three-late-goals-to-beat-nine-man-borac-banja-luka"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17185,8 +17403,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "KuPS Kuopio",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        4,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17198,8 +17427,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Trabzonspor",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        1,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17211,9 +17451,20 @@
       "homeTeamLeague": "bundesliga",
       "awayTeam": "Twente",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
+      "status": "finished",
       "round": "4",
-      "homeCrest": 17
+      "homeCrest": 17,
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17225,8 +17476,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Crvena Zvezda",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        1,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17238,8 +17500,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Sint-Truidense",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        0,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17251,8 +17524,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Copenhagen",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17264,8 +17548,19 @@
       "homeTeamLeague": "uecl",
       "awayTeam": "Panathinaikos",
       "awayTeamLeague": "uecl",
-      "status": "scheduled",
-      "round": "4"
+      "status": "finished",
+      "round": "4",
+      "score": [
+        3,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/",
+        "https://www.uefa.com/uefaconferenceleague/news/02ab-222a90fb4a54-c9b21edef3d8-1000--uefa-conference-league-matchday-4-round-up-ajax-brighton-cr/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17277,10 +17572,22 @@
       "homeTeamLeague": "epl",
       "awayTeam": "Real Sociedad",
       "awayTeamLeague": "laliga",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
       "homeCrest": 354,
-      "awayCrest": 92
+      "awayCrest": 92,
+      "score": [
+        2,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17292,8 +17599,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Celje",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        0,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17305,9 +17624,21 @@
       "homeTeamLeague": "bundesliga",
       "awayTeam": "Sturm Graz",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "homeCrest": 2
+      "homeCrest": 2,
+      "score": [
+        3,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17319,9 +17650,21 @@
       "homeTeamLeague": "seriea",
       "awayTeam": "Omonia",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "homeCrest": 109
+      "homeCrest": 109,
+      "score": [
+        4,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17333,9 +17676,21 @@
       "homeTeamLeague": "ligue1",
       "awayTeam": "Lillestrøm",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "homeCrest": 523
+      "homeCrest": 523,
+      "score": [
+        0,
+        0
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17347,9 +17702,21 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Rennes",
       "awayTeamLeague": "ligue1",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "awayCrest": 529
+      "awayCrest": 529,
+      "score": [
+        3,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17361,8 +17728,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Anderlecht",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        1,
+        3
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17374,8 +17753,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "AZ Alkmaar",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        2,
+        4
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17387,9 +17778,21 @@
       "homeTeamLeague": "epl",
       "awayTeam": "Jagiellonia",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
+      "status": "finished",
       "round": "5",
-      "homeCrest": 71
+      "homeCrest": 71,
+      "score": [
+        1,
+        1
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-27",
@@ -17401,8 +17804,20 @@
       "homeTeamLeague": "uel",
       "awayTeam": "Celtic",
       "awayTeamLeague": "uel",
-      "status": "scheduled",
-      "round": "5"
+      "status": "finished",
+      "round": "5",
+      "score": [
+        1,
+        2
+      ],
+      "scoreSource": "UEFA official",
+      "scoreSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+      "scoreSourceUrls": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-222a8b7281ee-613f6f283146-1000--europa-league-matchday-5-round-up-bournemouth-stay-perfect/",
+        "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-27T08:59:18+09:00"
     },
     {
       "date": "2026-11-28",
@@ -40162,7 +40577,7 @@
       "round": "38"
     }
   ],
-  "verifiedAtKst": "2026-11-26T09:00:09+09:00",
+  "verifiedAtKst": "2026-11-27T08:59:18+09:00",
   "verification": {
     "type": "compared-upstream-result-and-fixture-counts",
     "source": "open-matchday",
