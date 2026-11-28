@@ -1,10 +1,10 @@
 {
-  "lastCheckedAtKst": "2026-11-27T18:07:01+09:00",
+  "lastCheckedAtKst": "2026-11-28T09:01:10+09:00",
   "source": "open-matchday",
   "schedule": "09:00 Asia/Seoul daily",
   "providerFiles": 9,
   "completedUpdated": 0,
-  "previouslyFinished": 968,
+  "previouslyFinished": 1004,
   "existingScoreConflicts": [],
   "ambiguous": [],
   "unmatchedSourceResults": 0,
