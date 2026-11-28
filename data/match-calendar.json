@@ -17831,8 +17831,19 @@
       "awayTeam": "Mönchengladbach",
       "awayTeamLeague": "bundesliga",
       "awayCrest": 18,
-      "status": "scheduled",
-      "round": "11"
+      "status": "finished",
+      "round": "11",
+      "score": [
+        3,
+        3
+      ],
+      "scoreSource": "Bundesliga official; NDR",
+      "scoreSourceUrl": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
+      "scoreSourceUrls": [
+        "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
+        "https://www.ndr.de/sport/fussball/Bundesliga-Werder-Bremen-Gladbach%2Cwerder-724.html"
+      ],
+      "scoreVerifiedAtKst": "2026-11-28T09:00:00+09:00"
     },
     {
       "date": "2026-11-28",
@@ -17845,8 +17856,19 @@
       "homeCrest": 512,
       "awayTeam": "Paris FC",
       "awayTeamLeague": "ligue1",
-      "status": "scheduled",
-      "round": "12"
+      "status": "finished",
+      "round": "12",
+      "score": [
+        1,
+        0
+      ],
+      "scoreSource": "Reuters; Flashscore",
+      "scoreSourceUrl": "https://www.reuters.com/sports/soccer/brest-go-third-ligue-1-with-1-0-win-over-paris-fc-2026-11-27/",
+      "scoreSourceUrls": [
+        "https://www.reuters.com/sports/soccer/brest-go-third-ligue-1-with-1-0-win-over-paris-fc-2026-11-27/",
+        "https://www.flashscore.com.gh/news/soccer-ligue-1-brest-paris-fc-report-november-27th-2026/8fPAyenQ/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-28T09:00:00+09:00"
     },
     {
       "date": "2026-11-28",
@@ -17859,8 +17881,20 @@
       "awayTeam": "Bologna",
       "awayTeamLeague": "seriea",
       "awayCrest": 103,
-      "status": "scheduled",
-      "round": "13"
+      "status": "finished",
+      "round": "13",
+      "score": [
+        0,
+        0
+      ],
+      "scoreSource": "Sky Sport Italia; SportMediaset; Bologna FC official fixture",
+      "scoreSourceUrl": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-13/venezia-bologna/video-highlights",
+      "scoreSourceUrls": [
+        "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-13/venezia-bologna/video-highlights",
+        "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-venezia-bologna-0-0-pali-e-occasioni-ma-nessun-gol_119502723-202602k.shtml",
+        "https://www.bolognafc.it/en/match/venezia-vs-bologna-3/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-28T09:00:00+09:00"
     },
     {
       "date": "2026-11-28",
@@ -17874,8 +17908,19 @@
       "awayTeam": "Chelsea",
       "awayTeamLeague": "epl",
       "awayCrest": 61,
-      "status": "scheduled",
-      "round": "12"
+      "status": "finished",
+      "round": "12",
+      "score": [
+        3,
+        2
+      ],
+      "scoreSource": "Premier League official",
+      "scoreSourceUrl": "https://www.premierleague.com/en/news/4772242/match-report-nottingham-forest-3-2-chelsea",
+      "scoreSourceUrls": [
+        "https://www.premierleague.com/en/news/4772242/match-report-nottingham-forest-3-2-chelsea",
+        "https://www.radiotimes.com/tv/sport/football/football-live-on-tv-tonight/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-28T09:00:00+09:00"
     },
     {
       "date": "2026-11-28",
@@ -17888,17 +17933,43 @@
       "homeCrest": 88,
       "awayTeam": "R. Racing Club",
       "awayTeamLeague": "laliga",
-      "status": "scheduled",
-      "round": "14"
+      "status": "finished",
+      "round": "14",
+      "score": [
+        1,
+        3
+      ],
+      "scoreSource": "Cadena SER; TotalOdds; RTVC fixture",
+      "scoreSourceUrl": "https://cadenaser.com/cantabria/2026/11/27/pablo-garcia-sube-al-racing-a-conference-league-1-3-radio-santander/",
+      "scoreSourceUrls": [
+        "https://cadenaser.com/cantabria/2026/11/27/pablo-garcia-sube-al-racing-a-conference-league-1-3-radio-santander/",
+        "https://totalodds.co.uk/matches/levante-vs-racing-santander-9902233",
+        "https://rtvc.es/levante-ud-vs-racing-de-santander-j14-laliga-ea-sports-26-27/"
+      ],
+      "scoreVerifiedAtKst": "2026-11-28T09:00:00+09:00"
     },
     {
       "date": "2026-11-28",
-      "time": "06:00",
+      "time": "05:00",
       "league": "championship",
       "home": "Southampton",
       "away": "Middlesbrough",
-      "status": "scheduled",
-      "round": "18"
+      "status": "finished",
+      "round": "18",
+      "kickoffSourceUrl": "https://www.southamptonfc.com/en/news/article/match-pack-saints-vs-middlesbrough-nov",
+      "kickoffVerifiedAtKst": "2026-11-28T09:00:00+09:00",
+      "score": [
+        2,
+        0
+      ],
+      "scoreSource": "The Guardian; The Times; Southampton FC official kickoff",
+      "scoreSourceUrl": "https://www.theguardian.com/football/2026/nov/27/southampton-middlesbrough-championship-match-report-spygate-finn-azaz",
+      "scoreSourceUrls": [
+        "https://www.theguardian.com/football/2026/nov/27/southampton-middlesbrough-championship-match-report-spygate-finn-azaz",
+        "https://www.thetimes.com/sport/football/article/middlesbrough-southampton-celebration-fin-azaz-0v9gd6299",
+        "https://www.southamptonfc.com/en/news/article/match-pack-saints-vs-middlesbrough-nov"
+      ],
+      "scoreVerifiedAtKst": "2026-11-28T09:00:00+09:00"
     },
     {
       "date": "2026-11-28",
@@ -40577,7 +40648,7 @@
       "round": "38"
     }
   ],
-  "verifiedAtKst": "2026-11-27T08:59:18+09:00",
+  "verifiedAtKst": "2026-11-28T09:00:00+09:00",
   "verification": {
     "type": "compared-upstream-result-and-fixture-counts",
     "source": "open-matchday",
@@ -40589,5 +40660,5 @@
     "supplementalSourceUrl": "https://www.livescores.com/football/2026-11-22/?tz=2",
     "supplementalVerifiedAtKst": "2026-11-23T13:18:35+09:00"
   },
-  "providerNotes": "Verified finals from open-matchday and supplementary official/independent sources; existing final scores are not overwritten."
+  "providerNotes": "Existing verified scores retained. Supplemental finals verified against official competition/club or independent match reports; see per-fixture source URLs and verification timestamps."
 }

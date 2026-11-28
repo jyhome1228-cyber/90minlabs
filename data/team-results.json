@@ -747,9 +747,24 @@
       "team": "Chelsea",
       "league": "epl",
       "matchName": "Chelsea",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Nott'm Forest",
+          "away": "Chelsea",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.premierleague.com/en/news/4772242/match-report-nottingham-forest-3-2-chelsea",
+          "verificationUrls": [
+            "https://www.premierleague.com/en/news/4772242/match-report-nottingham-forest-3-2-chelsea",
+            "https://www.radiotimes.com/tv/sport/football/football-live-on-tv-tonight/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Chelsea",
@@ -829,15 +844,6 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "Chelsea",
-          "away": "Brighton",
-          "homeScore": 4,
-          "awayScore": 3,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -1651,9 +1657,24 @@
       "team": "Nottingham Forest",
       "league": "epl",
       "matchName": "Nott'm Forest",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ENG_1_premier-league/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Nott'm Forest",
+          "away": "Chelsea",
+          "homeScore": 3,
+          "awayScore": 2,
+          "round": "12",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.premierleague.com/en/news/4772242/match-report-nottingham-forest-3-2-chelsea",
+          "verificationUrls": [
+            "https://www.premierleague.com/en/news/4772242/match-report-nottingham-forest-3-2-chelsea",
+            "https://www.radiotimes.com/tv/sport/football/football-live-on-tv-tonight/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Bournemouth",
@@ -1733,15 +1754,6 @@
           "homeScore": 0,
           "awayScore": 0,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Liverpool",
-          "away": "Nott'm Forest",
-          "homeScore": 2,
-          "awayScore": 2,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -2923,9 +2935,25 @@
       "team": "Bologna",
       "league": "seriea",
       "matchName": "Bologna",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Venezia",
+          "away": "Bologna",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "13",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-13/venezia-bologna/video-highlights",
+          "verificationUrls": [
+            "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-13/venezia-bologna/video-highlights",
+            "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-venezia-bologna-0-0-pali-e-occasioni-ma-nessun-gol_119502723-202602k.shtml",
+            "https://www.bolognafc.it/en/match/venezia-vs-bologna-3/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Bologna",
@@ -3005,15 +3033,6 @@
           "homeScore": 1,
           "awayScore": 0,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-06",
-          "home": "Bologna",
-          "away": "Sassuolo",
-          "homeScore": 2,
-          "awayScore": 2,
-          "round": "3",
           "provider": "fixturedl"
         }
       ]
@@ -4020,9 +4039,25 @@
       "team": "Venezia",
       "league": "seriea",
       "matchName": "Venezia",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ITA_1_serie-a/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Venezia",
+          "away": "Bologna",
+          "homeScore": 0,
+          "awayScore": 0,
+          "round": "13",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-13/venezia-bologna/video-highlights",
+          "verificationUrls": [
+            "https://sport.sky.it/calcio/serie-a/partite/2026/giornata-13/venezia-bologna/video-highlights",
+            "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-venezia-bologna-0-0-pali-e-occasioni-ma-nessun-gol_119502723-202602k.shtml",
+            "https://www.bolognafc.it/en/match/venezia-vs-bologna-3/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Juventus",
@@ -4102,15 +4137,6 @@
           "homeScore": 2,
           "awayScore": 4,
           "round": "4",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-06",
-          "home": "Frosinone",
-          "away": "Venezia",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "3",
           "provider": "fixturedl"
         }
       ]
@@ -4656,9 +4682,24 @@
       "team": "Werder Bremen",
       "league": "bundesliga",
       "matchName": "SV Werder Bremen",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "SV Werder Bremen",
+          "away": "Borussia Mönchengladbach",
+          "homeScore": 3,
+          "awayScore": 3,
+          "round": "11",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
+          "verificationUrls": [
+            "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
+            "https://www.ndr.de/sport/fussball/Bundesliga-Werder-Bremen-Gladbach%2Cwerder-724.html"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "SV Werder Bremen",
@@ -4739,15 +4780,6 @@
           "homeScore": 3,
           "awayScore": 1,
           "round": "2",
-          "provider": "openligadb"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "SC Freiburg",
-          "away": "SV Werder Bremen",
-          "homeScore": 4,
-          "awayScore": 1,
-          "round": "1",
           "provider": "openligadb"
         }
       ],
@@ -5865,9 +5897,24 @@
       "team": "Mönchengladbach",
       "league": "bundesliga",
       "matchName": "Borussia Mönchengladbach",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/GER_1_bundesliga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "SV Werder Bremen",
+          "away": "Borussia Mönchengladbach",
+          "homeScore": 3,
+          "awayScore": 3,
+          "round": "11",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
+          "verificationUrls": [
+            "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
+            "https://www.ndr.de/sport/fussball/Bundesliga-Werder-Bremen-Gladbach%2Cwerder-724.html"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "Borussia Mönchengladbach",
@@ -5947,15 +5994,6 @@
           "homeScore": 3,
           "awayScore": 4,
           "round": "2",
-          "provider": "openligadb"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "RB Leipzig",
-          "away": "Borussia Mönchengladbach",
-          "homeScore": 3,
-          "awayScore": 0,
-          "round": "1",
           "provider": "openligadb"
         }
       ]
@@ -6075,9 +6113,24 @@
       "team": "Paris FC",
       "league": "ligue1",
       "matchName": "Paris FC",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Stade Brestois 29",
+          "away": "Paris FC",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.reuters.com/sports/soccer/brest-go-third-ligue-1-with-1-0-win-over-paris-fc-2026-11-27/",
+          "verificationUrls": [
+            "https://www.reuters.com/sports/soccer/brest-go-third-ligue-1-with-1-0-win-over-paris-fc-2026-11-27/",
+            "https://www.flashscore.com.gh/news/soccer-ligue-1-brest-paris-fc-report-november-27th-2026/8fPAyenQ/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "Paris FC",
@@ -6157,15 +6210,6 @@
           "homeScore": 2,
           "awayScore": 3,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-30",
-          "home": "Paris FC",
-          "away": "OGC Nice",
-          "homeScore": 3,
-          "awayScore": 0,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -6492,9 +6536,24 @@
       "team": "Brest",
       "league": "ligue1",
       "matchName": "Stade Brestois 29",
-      "lastMatchDate": "2026-11-21",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/FRA_1_ligue-1/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Stade Brestois 29",
+          "away": "Paris FC",
+          "homeScore": 1,
+          "awayScore": 0,
+          "round": "12",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://www.reuters.com/sports/soccer/brest-go-third-ligue-1-with-1-0-win-over-paris-fc-2026-11-27/",
+          "verificationUrls": [
+            "https://www.reuters.com/sports/soccer/brest-go-third-ligue-1-with-1-0-win-over-paris-fc-2026-11-27/",
+            "https://www.flashscore.com.gh/news/soccer-ligue-1-brest-paris-fc-report-november-27th-2026/8fPAyenQ/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-21",
           "home": "RC Strasbourg Alsace",
@@ -6574,15 +6633,6 @@
           "homeScore": 1,
           "awayScore": 2,
           "round": "3",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-08-29",
-          "home": "Stade Brestois 29",
-          "away": "Toulouse FC",
-          "homeScore": 2,
-          "awayScore": 2,
-          "round": "2",
           "provider": "fixturedl"
         }
       ]
@@ -8638,9 +8688,25 @@
       "team": "Levante UD",
       "league": "laliga",
       "matchName": "Levante UD",
-      "lastMatchDate": "2026-11-23",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Levante UD",
+          "away": "R. Racing Club",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "14",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://cadenaser.com/cantabria/2026/11/27/pablo-garcia-sube-al-racing-a-conference-league-1-3-radio-santander/",
+          "verificationUrls": [
+            "https://cadenaser.com/cantabria/2026/11/27/pablo-garcia-sube-al-racing-a-conference-league-1-3-radio-santander/",
+            "https://totalodds.co.uk/matches/levante-vs-racing-santander-9902233",
+            "https://rtvc.es/levante-ud-vs-racing-de-santander-j14-laliga-ea-sports-26-27/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-23",
           "home": "Levante UD",
@@ -8721,15 +8787,6 @@
           "homeScore": 2,
           "awayScore": 4,
           "round": "5",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-06",
-          "home": "Málaga CF",
-          "away": "Levante UD",
-          "homeScore": 0,
-          "awayScore": 0,
-          "round": "4",
           "provider": "fixturedl"
         }
       ]
@@ -8840,9 +8897,25 @@
       "team": "R. Racing Club",
       "league": "laliga",
       "matchName": "R. Racing Club",
-      "lastMatchDate": "2026-11-22",
+      "lastMatchDate": "2026-11-27",
       "sourceUrl": "https://github.com/oladeeayo/open-matchday/blob/master/data/ESP_1_la-liga/results_2627.csv",
       "matches": [
+        {
+          "date": "2026-11-27",
+          "home": "Levante UD",
+          "away": "R. Racing Club",
+          "homeScore": 1,
+          "awayScore": 3,
+          "round": "14",
+          "provider": "verified-supplemental",
+          "verificationUrl": "https://cadenaser.com/cantabria/2026/11/27/pablo-garcia-sube-al-racing-a-conference-league-1-3-radio-santander/",
+          "verificationUrls": [
+            "https://cadenaser.com/cantabria/2026/11/27/pablo-garcia-sube-al-racing-a-conference-league-1-3-radio-santander/",
+            "https://totalodds.co.uk/matches/levante-vs-racing-santander-9902233",
+            "https://rtvc.es/levante-ud-vs-racing-de-santander-j14-laliga-ea-sports-26-27/"
+          ],
+          "verifiedAtKst": "2026-11-28T09:00:00+09:00"
+        },
         {
           "date": "2026-11-22",
           "home": "R. Racing Club",
@@ -8923,15 +8996,6 @@
           "homeScore": 2,
           "awayScore": 1,
           "round": "5",
-          "provider": "fixturedl"
-        },
-        {
-          "date": "2026-09-05",
-          "home": "Rayo Vallecano",
-          "away": "R. Racing Club",
-          "homeScore": 3,
-          "awayScore": 2,
-          "round": "4",
           "provider": "fixturedl"
         }
       ],
@@ -17436,7 +17500,7 @@
     }
   },
   "notes": "2026/27 시즌 국내 리그 최근 10경기 스냅샷. 한국시간 2026-11-23 종료 9경기의 양 팀(총 18개 구단)은 LiveScore/Football Web Pages로 검증한 결과를 우선 사용하며, 나머지는 기존 open-matchday 데이터를 사용. 유럽대항전 별도 프로필은 검증 가능한 경기만 표기.",
-  "supplementalVerifiedAtKst": "2026-11-27T08:59:18+09:00",
-  "supplementalSourceUrl": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+  "supplementalVerifiedAtKst": "2026-11-28T09:00:00+09:00",
+  "supplementalSourceUrl": "https://www.bundesliga.com/en/bundesliga/news/werder-bremen-borussia-monchengladbach-match-report-highlights-matchday-11-fullkrug-40169",
   "lastAutoSyncAtKst": "2026-11-25T17:35:44+09:00"
 }
